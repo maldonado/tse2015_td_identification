@@ -39,14 +39,18 @@ tolerance=1e-4
 ## Results
 
 9788 examples in test set
-Cls DESIGN:                 TP=667  FN=134 FP=622 TN=8365; Acc 0.923 P 0.517 R 0.833 F1 0.638
-Cls WITHOUT_CLASSIFICATION: TP=7807 FN=232 FP=234 TN=1515; Acc 0.952 P 0.971 R 0.971 F1 0.971
-Cls BUG_FIX_COMMENT:        TP=4    FN=92  FP=4   TN=9688; Acc 0.990 P 0.500 R 0.042 F1 0.077
-Cls IMPLEMENTATION:         TP=354  FN=297 FP=41  TN=9096; Acc 0.965 P 0.896 R 0.544 F1 0.677
-Cls TEST:                   TP=8    FN=36  FP=7   TN=9737; Acc 0.996 P 0.533 R 0.182 F1 0.271
-Cls DEFECT:                 TP=7    FN=120 FP=31  TN=9630; Acc 0.985 P 0.184 R 0.055 F1 0.085
-Cls DOCUMENTATION:          TP=0    FN=30  FP=2   TN=9756; Acc 0.997 P 0.000 R 0.000 F1 0.000
-Cls :                       TP=0    FN=0   FP=0   TN=9788; Acc 1.000 P 1.000 R 1.000 F1 1.000
+
+|Classification          | TP |FN |FP |TN  |ACC  | P   |  R  | F1  |
+|------------------------|----|---|---|----|-----|-----|-----|-----|
+|DESIGN:                 |667 |134|622|8365|0.923|0.517|0.833|0.638|
+|WITHOUT_CLASSIFICATION: |7807|232|234|1515|0.952|0.971|0.971|0.971|
+|BUG_FIX_COMMENT:        |4   |92 |4  |9688|0.990|0.500|0.042|0.077|
+|IMPLEMENTATION:         |354 |297|41 |9096|0.965|0.896|0.544|0.677|
+|TEST:                   |8   |36 |7  |9737|0.996|0.533|0.182|0.271|
+|DEFECT:                 |7   |120|31 |9630|0.985|0.184|0.055|0.085|
+|DOCUMENTATION:          |0   |30 |2  |9756|0.997|0.000|0.000|0.000|
+|:                       |0   |0  |0  |9788|1.000|1.000|1.000|1.000|
+
 Accuracy/micro-averaged F1: 0.90386
 Macro-averaged F1: 0.46489
 
