@@ -19,16 +19,16 @@ try:
     connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= password)
     cursor = connection.cursor()
  
-    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%apache-jmeter-2.10%'")
+    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%apache-jmeter-2.10%' and classification not in ('BUG_FIX_COMMENT')")
     write_in_file(cursor.fetchall())
 
-    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%apache-ant%'")
+    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%apache-ant%' and classification not in ('BUG_FIX_COMMENT')")
     write_in_file(cursor.fetchall())
 
-    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%jfreechart%'")
+    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%jfreechart%' and classification not in ('BUG_FIX_COMMENT')")
     write_in_file(cursor.fetchall())
 
-    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%columba%'")
+    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%columba%' and classification not in ('BUG_FIX_COMMENT')")
     write_in_file(cursor.fetchall())
 
 except Exception, e:

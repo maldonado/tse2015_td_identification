@@ -11,7 +11,6 @@ WITHOUT_CLASSIFICATION	// NUMBER OF THREADS
 WITHOUT_CLASSIFICATION	// RAMP-UP
 WITHOUT_CLASSIFICATION	// LOOP COUNT
 WITHOUT_CLASSIFICATION	// mainPanel.add(threadPropsPanel, BorderLayout.NORTH); // add(mainPanel, BorderLayout.CENTER);
-BUG_FIX_COMMENT	// Set to running version, to allow function evaluation for the cookie values (bug 28715)
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -160,7 +159,6 @@ WITHOUT_CLASSIFICATION	// Mask should contain all types (but not NOT)
 WITHOUT_CLASSIFICATION	// The string to check (Url or data)
 WITHOUT_CLASSIFICATION	// Allow testing of failure codes
 WITHOUT_CLASSIFICATION	// What are we testing against?
-BUG_FIX_COMMENT	// (bug25052)
 WITHOUT_CLASSIFICATION	// Assume it is the URL
 WITHOUT_CLASSIFICATION	// Assume it is the URL
 WITHOUT_CLASSIFICATION	// do it once outside loop
@@ -268,7 +266,6 @@ WITHOUT_CLASSIFICATION	// These variable names must have .displayName properties
 WITHOUT_CLASSIFICATION	// These group names must have .displayName properties // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	//if we found a TestPlan, then we are on our way to the TestFragment
 WITHOUT_CLASSIFICATION	// only try to load the JMX test plan if there is one
-BUG_FIX_COMMENT	// Bug55375 - don't allow selectedNode to be a ModuleController as can cause recursion
 WITHOUT_CLASSIFICATION	// filter the tree for a TestFragment.
 WITHOUT_CLASSIFICATION	// ensure counts are updated correctly
 WITHOUT_CLASSIFICATION	// These items are shared between threads in a group by the clone() method // They are initialised by testStarted() so don't need to be serialised
@@ -277,11 +274,9 @@ WITHOUT_CLASSIFICATION	// Ensure global counters and lock are shared across thre
 WITHOUT_CLASSIFICATION	// Insert the subControllersAndSamplers into random list positions.
 WITHOUT_CLASSIFICATION	// nodePath.add(selectedNode.getName());
 WITHOUT_CLASSIFICATION	// We clone to avoid enabling existing node
-BUG_FIX_COMMENT	// Use a local variable to avoid replacing reference by modified clone (see Bug 54950)
 WITHOUT_CLASSIFICATION	/*     * Returns the selection value as a int,     * with the value set to zero if it is out of range.     */
 WITHOUT_CLASSIFICATION	// Set the selection once per iteration
 WITHOUT_CLASSIFICATION	// Create a new list containing numElements null elements.
-BUG_FIX_COMMENT	// Bug 39509: iteration to 0 for all controller which not LoopController (and TG)
 WITHOUT_CLASSIFICATION	// Replace subControllersAndSamplers with reordered copy.
 WITHOUT_CLASSIFICATION	//$NON-NLS-1$ //$NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Retrieve the formatted data using the same encoding used to create it
@@ -326,7 +321,6 @@ WITHOUT_CLASSIFICATION	/*================= internal business =================*/
 WITHOUT_CLASSIFICATION	// DROP-DOWN MENU
 WITHOUT_CLASSIFICATION	// number of previous matches
 WITHOUT_CLASSIFICATION	// reset previous result
-BUG_FIX_COMMENT	/* This file is inspired by RegexExtractor. * author <a href="mailto:hpaluch@gitus.cz">Henryk Paluch</a> *            of <a href="http://www.gitus.com">Gitus a.s.</a> * * See Bugzilla: 37183 */
 WITHOUT_CLASSIFICATION	// e.g. DTD not reachable
 WITHOUT_CLASSIFICATION	// this method assumes UTF-8 input data
 WITHOUT_CLASSIFICATION	// Can happen for bad input document
@@ -353,12 +347,9 @@ WITHOUT_CLASSIFICATION	// Save the count
 WITHOUT_CLASSIFICATION	// Original match behaviour
 WITHOUT_CLASSIFICATION	// Original match behaviour
 WITHOUT_CLASSIFICATION	// < 0 means we save all the matches
-BUG_FIX_COMMENT	// Bug 43451 // Bug 43451
 WITHOUT_CLASSIFICATION	// remove any single matches
 WITHOUT_CLASSIFICATION	// Remove any left-over variables
 WITHOUT_CLASSIFICATION	// no need to process further
-BUG_FIX_COMMENT	// Bug 39707
-BUG_FIX_COMMENT	// Bug 36898
 WITHOUT_CLASSIFICATION	// Remove the group count
 WITHOUT_CLASSIFICATION	// How many groups are there?
 WITHOUT_CLASSIFICATION	// remove the remaining _gn vars
@@ -383,7 +374,6 @@ WITHOUT_CLASSIFICATION	// Save the count
 WITHOUT_CLASSIFICATION	// Remove any left-over variables
 WITHOUT_CLASSIFICATION	// no need to process further
 WITHOUT_CLASSIFICATION	// Random match
-BUG_FIX_COMMENT	/* This file is inspired by RegexExtractor. * See Bugzilla: 37183 */
 WITHOUT_CLASSIFICATION	// Next line
 WITHOUT_CLASSIFICATION	// Next line
 WITHOUT_CLASSIFICATION	// Used for per-thread/user storage of increment in Thread Group Main loop
@@ -596,7 +586,6 @@ DESIGN	// Allow JMeter to render frames (and relative images) // Must be done af
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// the child to be removed will always be 0 'cos as the nodes are // removed the nth node will become (n-1)th
 WITHOUT_CLASSIFICATION	// get the text response and image icon // to determine which is NOT null
-BUG_FIX_COMMENT	/*         * Get round problems parsing <META http-equiv='content-type'         * content='text/html; charset=utf-8'> See         * http://issues.apache.org/bugzilla/show_bug.cgi?id=23315         *         * Is this due to a bug in Java?         */
 WITHOUT_CLASSIFICATION	// Bug can generate RTE
 WITHOUT_CLASSIFICATION	// number of nodes
 WITHOUT_CLASSIFICATION	// number of non extreme nodes (_m-2)
@@ -634,7 +623,6 @@ WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// MAIN PANEL
 WITHOUT_CLASSIFICATION	// Settings panes
-BUG_FIX_COMMENT	// Java Bug : http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=9001188. // See https://issues.apache.org/bugzilla/show_bug.cgi?id=54586
 WITHOUT_CLASSIFICATION	// the number of non extreme nodes is the number of intervals // minus 1, i.e. the length of r minus 2
 WITHOUT_CLASSIFICATION	// the upper limit of the curve range belongs by definition // to the last interval
 WITHOUT_CLASSIFICATION	// Jacobi system resolving // results are stored in _rS // computes the coefficients (di, ci, bi, ai) from the results
@@ -717,10 +705,8 @@ WITHOUT_CLASSIFICATION	// Add styles to use for different types of status messag
 WITHOUT_CLASSIFICATION	// Prepare the Results tabbed pane
 WITHOUT_CLASSIFICATION	// Set up the 3rd table 
 WITHOUT_CLASSIFICATION	// Set up the 2nd table 
-BUG_FIX_COMMENT	// set split ratio // see bug jdk 4131528
 WITHOUT_CLASSIFICATION	// Create the split pane
 WITHOUT_CLASSIFICATION	// Create the split pane
-BUG_FIX_COMMENT	// set split ratio // see bug jdk 4131528
 WITHOUT_CLASSIFICATION	// Add search text extension
 WITHOUT_CLASSIFICATION	// Maximum size that we will display
 WITHOUT_CLASSIFICATION	// Add sample
@@ -785,7 +771,6 @@ WITHOUT_CLASSIFICATION	// if the labels are too long, they'll be "squeezed" to m
 WITHOUT_CLASSIFICATION	// Y Axis
 WITHOUT_CLASSIFICATION	//new Font("SansSerif", Font.PLAIN, 10)
 WITHOUT_CLASSIFICATION	// enable embedded html resources
-BUG_FIX_COMMENT	// Bug 55111 - Refresh JEditor pane size depending on the presence or absence of scrollbars
 WITHOUT_CLASSIFICATION	// ----------- get/set methods ------------------- //
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// MAIN PANEL
@@ -880,7 +865,6 @@ WITHOUT_CLASSIFICATION	// TODO Charset ?
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // default: normal
 WITHOUT_CLASSIFICATION	// Label // count // Mean // median // 90% // Min // Max // Error %age // Throughpur // pageSize
 WITHOUT_CLASSIFICATION	// API expects null, not empty array
-BUG_FIX_COMMENT	// see bug jdk 4131528
 WITHOUT_CLASSIFICATION	// API expects null, not empty array
 WITHOUT_CLASSIFICATION	// Changing color for column
 WITHOUT_CLASSIFICATION	// called from ctor, so must not be overridable
@@ -946,13 +930,8 @@ WITHOUT_CLASSIFICATION	// e.g. started from IDE with full classpath // Allow ove
 WITHOUT_CLASSIFICATION	// Add standard jar locations to initial classpath
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ $NON-NLS-2$ // $NON-NLS-1$ $NON-NLS-2$ // $NON-NLS-1$ $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// only accept jar files // $NON-NLS-1$
-BUG_FIX_COMMENT	// Bug 50708 Ensure predictable order of jars
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ $NON-NLS-2$ // $NON-NLS-1$ // $NON-NLS-1$ $NON-NLS-2$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// usesUNC
-BUG_FIX_COMMENT	// See Java bug 4496398
-BUG_FIX_COMMENT	// See Java bug 4496398
-BUG_FIX_COMMENT	// See Java bug 4496398
-BUG_FIX_COMMENT	// See Java bug 4496398
 WITHOUT_CLASSIFICATION	// ClassFinder needs the classpath
 WITHOUT_CLASSIFICATION	// Ensure that directory URLs end in "/" // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// ClassFinder needs this
@@ -982,11 +961,9 @@ WITHOUT_CLASSIFICATION	// Start the server
 WITHOUT_CLASSIFICATION	// most recent
 WITHOUT_CLASSIFICATION	// Update classloader if necessary
 WITHOUT_CLASSIFICATION	//bshinit,log);
-BUG_FIX_COMMENT	// Bug 33845 - allow direct override of Home dir
 WITHOUT_CLASSIFICATION	//Do what would be done earlier
 WITHOUT_CLASSIFICATION	//Do what would be done earlier
 WITHOUT_CLASSIFICATION	// Should not have any text arguments
-BUG_FIX_COMMENT	// Bug 33920 - allow multiple props
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 DESIGN	// Hack to resolve ModuleControllers in non GUI mode
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
@@ -1029,7 +1006,6 @@ WITHOUT_CLASSIFICATION	// Replacement only needs to occur when starting the engi
 WITHOUT_CLASSIFICATION	// Highlight (select) the appropriate row.
 WITHOUT_CLASSIFICATION	// Deliberate use of deprecated ctor // Create non-GUI version to avoid headless problems
 WITHOUT_CLASSIFICATION	// Remove the disabled items // For GUI runs this is done in Start.java
-BUG_FIX_COMMENT	// Used for remote notification of threads start/stop,see BUG 54152 // Summariser uses this feature to compute correctly number of threads  // when NON GUI mode is used
 WITHOUT_CLASSIFICATION	// This cannot be a JMeter class variable, because properties // are not initialised until later.
 WITHOUT_CLASSIFICATION	// This is a daemon thread, which should only reach here if there are other // non-daemon threads still active
 WITHOUT_CLASSIFICATION	// Only accept commands from the local host
@@ -1063,7 +1039,6 @@ WITHOUT_CLASSIFICATION	// Disable DELETE if there are no rows in the table to de
 WITHOUT_CLASSIFICATION	// Because CollectionProperty.mergeIn will not prevent adding two // properties of the same name, we need to select the first value so // that this element's values prevail over defaults provided by // configuration // elements:
 WITHOUT_CLASSIFICATION	// will only contain Argument or HTTPArgument
 WITHOUT_CLASSIFICATION	//add(makeTitlePanel(), BorderLayout.NORTH);
-BUG_FIX_COMMENT	/* This class created for enhancement Bug ID 9101. */
 WITHOUT_CLASSIFICATION	// Force the table to be at least 70 pixels high
 WITHOUT_CLASSIFICATION	// only contains Argument (or HTTPArgument)
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -1104,14 +1079,12 @@ DESIGN	// TODO - should this use setFirst() ?
 WITHOUT_CLASSIFICATION	// for unit test code @see TestIfController
 WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// NOOP
-BUG_FIX_COMMENT	// Cache loop value, see Bug 54467
 WITHOUT_CLASSIFICATION	// If blank, only check previous sample when at end of loop // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// cnd may be null if next() called us // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Evaluation occurs when nbLoops is not yet evaluated  // or when nbLoops is equal to special value INFINITE_LOOP_COUNT
 WITHOUT_CLASSIFICATION	// now evaluate the condition using JavaScript
 WITHOUT_CLASSIFICATION	// We should only evalute the condition if it is the first // time ( first "iteration" ) we are called. // For subsequent calls, we are inside the IfControllerGroup, // so then we just pass the control to the next item inside the if control
 WITHOUT_CLASSIFICATION	// If-test is false, need to re-initialize indexes
-BUG_FIX_COMMENT	// Bug 50032 - reinitialize current index element for all sub controller
 WITHOUT_CLASSIFICATION	// for getIterCount
 WITHOUT_CLASSIFICATION	// Runtime is zero - no point staying around
 WITHOUT_CLASSIFICATION	// ??
@@ -1142,7 +1115,6 @@ WITHOUT_CLASSIFICATION	/* Implements JMeterGUIComponent.modifyTestElement(TestEl
 WITHOUT_CLASSIFICATION	/* Implements JMeterGUIComponent.modifyTestElement(TestElement) */
 WITHOUT_CLASSIFICATION	// Standalone
 WITHOUT_CLASSIFICATION	// Embedded
-BUG_FIX_COMMENT	// See bug 50618  Catches a StackOverflowError when a condition returns  // always false (after at least one iteration with return true) // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// This transaction is done
 WITHOUT_CLASSIFICATION	// Assume success
 WITHOUT_CLASSIFICATION	// Check if it is the start of a new transaction // must be the start of the subtree
@@ -1150,7 +1122,6 @@ WITHOUT_CLASSIFICATION	// We need to call the super.next, instead of this.next, 
 WITHOUT_CLASSIFICATION	// Must be the end of the controller
 WITHOUT_CLASSIFICATION	// We have sampled one of our children
 WITHOUT_CLASSIFICATION	// We must set res to null now, before sending the event for the transaction, // so that we can ignore that event in our sampleOccured method
-BUG_FIX_COMMENT	// bug 50032 
 WITHOUT_CLASSIFICATION	// Check if we are still sampling our children
 WITHOUT_CLASSIFICATION	// Accumulate waiting time for later
 WITHOUT_CLASSIFICATION	//log.warn("Constructor only intended for use in testing");
@@ -1161,7 +1132,6 @@ WITHOUT_CLASSIFICATION	// Set Response code of transaction
 WITHOUT_CLASSIFICATION	// The transaction fails if any sub sample fails
 WITHOUT_CLASSIFICATION	// Add the sub result to the transaction result
 WITHOUT_CLASSIFICATION	// Add current time to total for later use (exclude pause time)
-BUG_FIX_COMMENT	// Bug 50080 (not include pause time when generate parent)
 WITHOUT_CLASSIFICATION	// If selected, then generate parent sample, otherwise as per original controller
 WITHOUT_CLASSIFICATION	// if selected, add duration of timers to total runtime
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -1213,7 +1183,6 @@ WITHOUT_CLASSIFICATION	// Called by JMeter ListenToTest if remoteStop is true
 WITHOUT_CLASSIFICATION	// Sent later
 WITHOUT_CLASSIFICATION	// Should we create our own copy of the RMI registry?
 WITHOUT_CLASSIFICATION	// Create this object using the specified port (0 means anonymous)
-BUG_FIX_COMMENT	// BUG 52469 : Allow loopback address for SSH Tunneling of RMI traffic
 WITHOUT_CLASSIFICATION	// should perhaps be log.warn, but this causes the client-server test to fail
 WITHOUT_CLASSIFICATION	// Throw an Exception to ensure caller knows ...
 WITHOUT_CLASSIFICATION	// close window where another remote client might jump in
@@ -1314,7 +1283,6 @@ WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// NOOP
-BUG_FIX_COMMENT	// see bug jdk 4131528
 WITHOUT_CLASSIFICATION	// Process escaped characters // Store the \
 WITHOUT_CLASSIFICATION	// The application name // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// This is used to keep track of local (non-remote) tests // The name is chosen to be an unlikely host-name // $NON-NLS-1$
@@ -1354,7 +1322,6 @@ WITHOUT_CLASSIFICATION	// Defaults to continue
 WITHOUT_CLASSIFICATION	// space between borders and text
 WITHOUT_CLASSIFICATION	/** * Generates Configure pop-up dialogue for Listeners from all methods in SampleSaveConfiguration * with the signature "boolean saveXXX()". * There must be a corresponding "void setXXX(boolean)" method, and a property save_XXX which is * used to name the field on the dialogue. * */
 WITHOUT_CLASSIFICATION	// Target server panel
-BUG_FIX_COMMENT	// Bug 50221 - ensure label is updated
 WITHOUT_CLASSIFICATION	// Limit length of log content
 WITHOUT_CLASSIFICATION	// If LOGGER_PANEL_MAX_LENGTH is 0, it means all log events are kept
 WITHOUT_CLASSIFICATION	// The current node is now updated
@@ -1394,7 +1361,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Prevent instantiation
 WITHOUT_CLASSIFICATION	// Prevent instantiation
 WITHOUT_CLASSIFICATION	// VK_PLUS + CTRL_DOWN_MASK did not work...
-BUG_FIX_COMMENT	// Bug 47064 - fixes for Mac LAF
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -1447,7 +1413,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// reset previous result
 WITHOUT_CLASSIFICATION	// Hide Window on ESC
-BUG_FIX_COMMENT	// Used for remote notification of threads start/stop,see BUG 54152
 WITHOUT_CLASSIFICATION	// Do not save, user does not want to overwrite
 WITHOUT_CLASSIFICATION	// Note: Windows user preferences are stored relative to: HKEY_CURRENT_USER\Software\JavaSoft\Prefs
 WITHOUT_CLASSIFICATION	// Limit the length of the menu text if needed
@@ -1504,7 +1469,6 @@ WITHOUT_CLASSIFICATION	// This check the state of the TestElement and if returns
 WITHOUT_CLASSIFICATION	// Init the tree // Assumes this is only called from GUI mode
 WITHOUT_CLASSIFICATION	// Let others know that the tree content has changed. // This should not be necessary, but without it, nodes are not shown when the user // uses the Close menu item
 WITHOUT_CLASSIFICATION	// Container endWindow; // JPopupMenu pop;
-BUG_FIX_COMMENT	// Call requestFocusInWindow to ensure current component loses focus and // all values are correctly saved // see https://issues.apache.org/bugzilla/show_bug.cgi?id=55103 // see https://issues.apache.org/bugzilla/show_bug.cgi?id=55459
 WITHOUT_CLASSIFICATION	// Get the Main Frame.
 WITHOUT_CLASSIFICATION	// Close any Main Menu that is open
 WITHOUT_CLASSIFICATION	// updateMainMenu(((JMeterGUIComponent) // getCurrentNode().getUserObject()).createPopupMenu());
@@ -1558,7 +1522,6 @@ WITHOUT_CLASSIFICATION	// HELP MENU //$NON-NLS-1$
 WITHOUT_CLASSIFICATION	// OPTIONS MENU //$NON-NLS-1$ //$NON-NLS-1$
 DESIGN	// Does not appear to be used; called by MainFrame#setEditAddMenu() but that is not called
 WITHOUT_CLASSIFICATION	//$NON-NLS-1$ //$NON-NLS-1$
-BUG_FIX_COMMENT	// DateFormat.parse has some bugs (up to JDK 1.4.2) by which it // throws unchecked exceptions. E.g. see: // http://developer.java.sun.com/developer/bugParade/bugs/4699765.html // // To avoid problems with such situations, we'll catch all // exceptions here and act just as for ParseException above:
 WITHOUT_CLASSIFICATION	// Dummy constructor to allo JUnit tests to work
 WITHOUT_CLASSIFICATION	// Do nothing; the current time will be returned
 WITHOUT_CLASSIFICATION	/*     * Convert position in buffer to Calendar type Assumes that pos >=0 (which     * is true for getCaretPosition())     */
@@ -1879,7 +1842,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	//OK
 WITHOUT_CLASSIFICATION	// variables maintained by server code // @GuardedBy("sampleStore") // maintain separate count of samples for speed
-BUG_FIX_COMMENT	// Bug 33196 - encoding ISO-8859-1 is only suitable for Western countries // However the suggested System.getProperty("file.encoding") is Cp1252 on // Windows // So use a new property with the original value as default // needs to be accessible from test code
 WITHOUT_CLASSIFICATION	/* The default used by {@link #setResponseData(String, String)} */
 WITHOUT_CLASSIFICATION	/* empty arrays which can be returned instead of null */
 WITHOUT_CLASSIFICATION	// Never return null
@@ -1918,7 +1880,6 @@ WITHOUT_CLASSIFICATION	//OK //OK //OK //OK // files is created automatically, an
 WITHOUT_CLASSIFICATION	//OK //OK //OK
 WITHOUT_CLASSIFICATION	//OK //OK // Don't copy this; it is per instance resultFileName = res.resultFileName;
 WITHOUT_CLASSIFICATION	// TODO ?? //OK //OK
-BUG_FIX_COMMENT	// Extend the time to the end of the added sample // Bug 51855 // Include the byte count for the added sample
 WITHOUT_CLASSIFICATION	// N.B. default charset is used deliberately here
 WITHOUT_CLASSIFICATION	// N.B. default charset is used deliberately here
 WITHOUT_CLASSIFICATION	// Extract charset and store as DataEncoding // N.B. The meta tag: // <META http-equiv="content-type" content="text/html; charset=foobar"> // is now processed by HTTPSampleResult#getDataEncodingWithDefault // $NON-NLS-1$
@@ -1928,7 +1889,6 @@ WITHOUT_CLASSIFICATION	// List of types that are known to be binary
 WITHOUT_CLASSIFICATION	// List of types that are known to be ascii, although they may appear to be binary
 WITHOUT_CLASSIFICATION	/*     * Determine if content-type is known to be binary, i.e. not displayable as text.     *     * @param ct content type     * @return true if content-type is of type binary.     */
 WITHOUT_CLASSIFICATION	/*     * Helper methods N.B. setStartTime must be called before setEndTime     *     * setStartTime is used by HTTPSampleResult to clone the parent sampler and     * allow the original start time to be kept     */
-BUG_FIX_COMMENT	// Bug 47394
 WITHOUT_CLASSIFICATION	// how many times we had to wait to queue a sample
 WITHOUT_CLASSIFICATION	// Can now afford to wait a bit longer between checks
 WITHOUT_CLASSIFICATION	// created by client 
@@ -1967,12 +1927,9 @@ WITHOUT_CLASSIFICATION	// Compute bytes before stripping
 WITHOUT_CLASSIFICATION	// Configuration items, set up by readResolve
 WITHOUT_CLASSIFICATION	// should be a user provided class name
 WITHOUT_CLASSIFICATION	// Static fields are resolved on the server
-BUG_FIX_COMMENT	// protected added: Bug 50008 - allow BatchSampleSender to be subclassed
 WITHOUT_CLASSIFICATION	// instance fields are copied from the client instance
 WITHOUT_CLASSIFICATION	// Set clonedSet;
 WITHOUT_CLASSIFICATION	// Server-only work item
-BUG_FIX_COMMENT	// added: Bug 50008 - allow BatchSampleSender to be subclassed
-BUG_FIX_COMMENT	// added: Bug 50008 - allow BatchSampleSender to be subclassed
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Extended property name // $NON-NLS-1$
@@ -2168,8 +2125,6 @@ WITHOUT_CLASSIFICATION	// superclass does not use types
 WITHOUT_CLASSIFICATION	// Don't save empty comments - except for the TestPlan (to maintain compatibility)
 WITHOUT_CLASSIFICATION	// Skip special properties if required
 WITHOUT_CLASSIFICATION	// remap the class name
-BUG_FIX_COMMENT	// Update the test class name if necessary (Bug 52466)
-BUG_FIX_COMMENT	// needed by property converters  (Bug 52466)
 WITHOUT_CLASSIFICATION	// could be null if it has been deleted via NameUpdater
 WITHOUT_CLASSIFICATION	// could be null if it has been deleted via NameUpdater
 WITHOUT_CLASSIFICATION	// No need to check version, just process the attributes if present
@@ -2226,7 +2181,6 @@ WITHOUT_CLASSIFICATION	// Save most things
 WITHOUT_CLASSIFICATION	// Save the new fields - but only if they are not the default
 WITHOUT_CLASSIFICATION	// Helper method to simplify marshall routine
 WITHOUT_CLASSIFICATION	// Maintain backward compatibility (bytes was not in the JMX file)
-BUG_FIX_COMMENT	// Skip formatter (if present) bug 42674 $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Make sure decoding follows input file
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -2281,7 +2235,6 @@ WITHOUT_CLASSIFICATION	/// final because called from ctor
 WITHOUT_CLASSIFICATION	// Localize the bean name // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// not an expression (isn't or can't be), not null.
 WITHOUT_CLASSIFICATION	// Provide an initial edit value if necessary -- this is an // heuristic that tries to provide the most convenient // initial edit value:
-BUG_FIX_COMMENT	// Bug 44314  Number field does not seem to accept ""
 WITHOUT_CLASSIFICATION	//not interested in this method.
 WITHOUT_CLASSIFICATION	// Not an expression (isn't or can't be), not null. // may throw IllegalArgumentExc.
 WITHOUT_CLASSIFICATION	// not an expression (can't be or isn't), not null.
@@ -2401,7 +2354,6 @@ WITHOUT_CLASSIFICATION	// empty collection ok to cast, local var is here to allo
 WITHOUT_CLASSIFICATION	// N.B. Other classes rely on this returning just the string.
 WITHOUT_CLASSIFICATION	/*|| !ctx.isSamplingStarted()*/
 WITHOUT_CLASSIFICATION	// synch is probably not needed as only called before run starts
-BUG_FIX_COMMENT	// Bug 53750: this condition used to be in ObjectPair#addTestElements()
 WITHOUT_CLASSIFICATION	// this is only possible for 3rd party controllers by default
 WITHOUT_CLASSIFICATION	// Called from multiple threads
 WITHOUT_CLASSIFICATION	// Backward compatibility
@@ -2411,7 +2363,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 DESIGN	// TODO - yet another ambiguous name - does it need changing? // See also: Clearable, JMeterGUIComponent
-BUG_FIX_COMMENT	// We don't expect the string values to ever be null. But (as in // bug 19499) sometimes they are. So have null compare less than // any other value. Log a warning so we can try to find the root // cause of the null value.
 WITHOUT_CLASSIFICATION	// Expensive, so // do // once
 WITHOUT_CLASSIFICATION	// i.e. "true"
 WITHOUT_CLASSIFICATION	// NOOP        
@@ -2517,7 +2468,6 @@ WITHOUT_CLASSIFICATION	//NOOP
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// set the start time for the Thread // Duration is in seconds
 WITHOUT_CLASSIFICATION	//@GuardedGy("this")
-BUG_FIX_COMMENT	// Bug 49734 // also interrupt JVM thread
 WITHOUT_CLASSIFICATION	//@GuardedGy("this")
 WITHOUT_CLASSIFICATION	//@GuardedGy("this")
 WITHOUT_CLASSIFICATION	//@GuardedGy("this")
@@ -2627,8 +2577,6 @@ DESIGN	// TODO probably not needed
 DESIGN	// clone will produce correct type // TODO but why do we need to clone the list?
 DESIGN	// All keys in messages.properties are lowercase (historical reasons?)
 WITHOUT_CLASSIFICATION	// for java sockets // for Commons Httpclient sockets
-BUG_FIX_COMMENT	/*         * See bug 29920. getBundle() defaults to the property file for the         * default Locale before it defaults to the base property file, so we         * need to change the default Locale to ensure the base property file is         * found.         */
-BUG_FIX_COMMENT	// Note: cannot use a static variable here, because that would be processed before the JMeter properties // have been defined (Bug 52783)
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$  // $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$  // $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ $NON-NLS-2$
@@ -3213,7 +3161,6 @@ WITHOUT_CLASSIFICATION	// we have a single character; could be a token // it is 
 WITHOUT_CLASSIFICATION	// Remove trailing splitter
 WITHOUT_CLASSIFICATION	// Found splitChar at end of line
 WITHOUT_CLASSIFICATION	// This is the new length
-BUG_FIX_COMMENT	// Bugzilla 54990
 WITHOUT_CLASSIFICATION	// we saw a delimiter last time // so add the default
 WITHOUT_CLASSIFICATION	// "<?xml "
 WITHOUT_CLASSIFICATION	// EOF
@@ -3254,7 +3201,6 @@ WITHOUT_CLASSIFICATION	/**     * Method should add the JUnit testXXX method to t
 WITHOUT_CLASSIFICATION	// The wrapper used to invoke the method
 WITHOUT_CLASSIFICATION	// Assume success
 WITHOUT_CLASSIFICATION	// The name of the class containing the method
-BUG_FIX_COMMENT	// Bug 41522 - don't use rlabel here
 WITHOUT_CLASSIFICATION	// Do not use TestCase.run(TestResult) method, since it will // call setUp and tearDown. Doing that will result in calling // the setUp and tearDown method twice and the elapsed time // will include setup and teardown.
 WITHOUT_CLASSIFICATION	// create a new TestResult
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -3429,7 +3375,6 @@ WITHOUT_CLASSIFICATION	// helper method to save the cache entry
 WITHOUT_CLASSIFICATION	// invalid dates must be treated as expired
 WITHOUT_CLASSIFICATION	// if no-cache is present, ensure that expiresDate remains null, which forces revalidation
 WITHOUT_CLASSIFICATION	// the max-age directive overrides the Expires header,
-BUG_FIX_COMMENT	// Bug 51932 - allow for optional trailing attributes
 WITHOUT_CLASSIFICATION	// No max-age && No expires
 WITHOUT_CLASSIFICATION	// date or lastModified may be null or in bad format
 DOCUMENTATION	// TODO Can't see anything in SPEC
@@ -3444,7 +3389,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	//+ JMX attributes, do not change values // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ //-
 WITHOUT_CLASSIFICATION	// i.e. not using Expires // Check that we are processing Expires/CacheControl
 WITHOUT_CLASSIFICATION	// see https://developer.mozilla.org/en/HTTP_Caching_FAQ // see http://www.ietf.org/rfc/rfc2616.txt#13.2.4 
-BUG_FIX_COMMENT	// Bug 51942 - this map may be used from multiple threads // LRUMap is not generic currently
 WITHOUT_CLASSIFICATION	// cache the value
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// echo back
@@ -3452,7 +3396,6 @@ WITHOUT_CLASSIFICATION	// Check if we have read all the headers
 WITHOUT_CLASSIFICATION	// We know when to stop reading, so we can allow the read method to block
 WITHOUT_CLASSIFICATION	// No divider was found
 WITHOUT_CLASSIFICATION	// use null for no expiry
-BUG_FIX_COMMENT	// Set to running version, to allow function evaluation for the cookie values (bug 28715)
 WITHOUT_CLASSIFICATION	// Store session cookies as well as unexpired ones
 WITHOUT_CLASSIFICATION	// Store session cookies as well as unexpired ones
 WITHOUT_CLASSIFICATION	// Has its own debug log; removes matching cookies
@@ -3487,10 +3430,8 @@ WITHOUT_CLASSIFICATION	// finally, merge the names so it's clear they've been me
 WITHOUT_CLASSIFICATION	// Saves the error if one occurs
 WITHOUT_CLASSIFICATION	// Listen on main socket
 WITHOUT_CLASSIFICATION	// Pass request to new thread
-BUG_FIX_COMMENT	// See bug 33796
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
-BUG_FIX_COMMENT	// See bug 28715 // Package protected for tests
 WITHOUT_CLASSIFICATION	// TODO Charset ? // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// TODO Charset ? // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Only used by GUI
@@ -3663,7 +3604,6 @@ WITHOUT_CLASSIFICATION	// if ! isPathExtension()
 WITHOUT_CLASSIFICATION	// Highlight (select) the appropriate row.
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// all table cells are editable
-BUG_FIX_COMMENT	// Bug 15025 - save session value across samplers
 WITHOUT_CLASSIFICATION	// Don't get tripped up by RE chars in the arg name
 WITHOUT_CLASSIFICATION	// name="sessionid" value="value"
 WITHOUT_CLASSIFICATION	/*     * -----------------------------------------------------------------------     * Methods     * -----------------------------------------------------------------------     */
@@ -3734,7 +3674,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$
-BUG_FIX_COMMENT	// Bugzilla 30713
 WITHOUT_CLASSIFICATION	// Cache of parsers - parsers must be re-usable
 WITHOUT_CLASSIFICATION	// Is there a cached parser?
 WITHOUT_CLASSIFICATION	// cache the parser
@@ -3742,7 +3681,6 @@ WITHOUT_CLASSIFICATION	// The Set is used to ignore duplicated binary files. // 
 DESIGN	/*         * TODO improve string version to better match browser behaviour? e.g.         * do browsers regard http://host/ and http://Host:80/ as the same? If         * so, it would be better to reflect this in the string         */
 DESIGN	// TODO is it the best way ? https://issues.apache.org/bugzilla/show_bug.cgi?id=55634
 WITHOUT_CLASSIFICATION	/*     * A dummy class to pass the pointer of URL.     */
-BUG_FIX_COMMENT	// Bug 51750
 WITHOUT_CLASSIFICATION	// then we need to download the binary
 WITHOUT_CLASSIFICATION	// we check the input tag type for image
 WITHOUT_CLASSIFICATION	// Putting the string first means it works even if the attribute is null
@@ -3752,10 +3690,8 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
-BUG_FIX_COMMENT	// Bugzilla 30713
 WITHOUT_CLASSIFICATION	// we check the input tag type for image
 WITHOUT_CLASSIFICATION	// then we need to download the binary
-BUG_FIX_COMMENT	// Bug 51750
 WITHOUT_CLASSIFICATION	// Putting the string first means it works even if the attribute is null
 WITHOUT_CLASSIFICATION	// Now look for URLs in the STYLE attribute
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -3767,7 +3703,6 @@ WITHOUT_CLASSIFICATION	// Check for a BASE HREF:
 WITHOUT_CLASSIFICATION	// Doesn't even look like a URL? // Maybe it isn't: Ignore the exception.
 WITHOUT_CLASSIFICATION	//url.replace('+',' ');
 WITHOUT_CLASSIFICATION	// No WARN message to avoid performance impact
-BUG_FIX_COMMENT	// No point in adding the URL as String as it will result in null  // returned during iteration, see URLString // See https://issues.apache.org/bugzilla/show_bug.cgi?id=55092
 WITHOUT_CLASSIFICATION	/*     * Private iterator used to unwrap the URL from the URLString class     *     */
 WITHOUT_CLASSIFICATION	/*         * Unwraps the URLString class to return the URL         */
 WITHOUT_CLASSIFICATION	// Noop
@@ -3776,12 +3711,10 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Listen on main socket
 WITHOUT_CLASSIFICATION	// Timeout occurred. Ignore, and keep looping until we're // told to stop running.
 WITHOUT_CLASSIFICATION	/*     * A dummy class to pass the pointer of URL.     */
-BUG_FIX_COMMENT	// Bugzilla 30713
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// NOOP
 WITHOUT_CLASSIFICATION	// we check the input tag type for image
 WITHOUT_CLASSIFICATION	// then we need to download the binary
-BUG_FIX_COMMENT	// Bug 51750
 WITHOUT_CLASSIFICATION	// Putting the string first means it works even if the attribute is null
 WITHOUT_CLASSIFICATION	// Now look for URLs in the STYLE attribute
 WITHOUT_CLASSIFICATION	// Now parse the DOM tree
@@ -3872,7 +3805,6 @@ WITHOUT_CLASSIFICATION	// Find the last controller in the target to store the //
 WITHOUT_CLASSIFICATION	// There's a few properties which are excluded from this processing:
 WITHOUT_CLASSIFICATION	// go on with next property.
 WITHOUT_CLASSIFICATION	// Build the replacer from all the variables in the collection:
-BUG_FIX_COMMENT	// Drop any empty values (Bug 45199)
 WITHOUT_CLASSIFICATION	// TL - TE
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -3934,7 +3866,6 @@ WITHOUT_CLASSIFICATION	// We don't want this passed on to browser
 WITHOUT_CLASSIFICATION	// Fix the content length
 WITHOUT_CLASSIFICATION	// Get rid of the query and the ?
 WITHOUT_CLASSIFICATION	//    Remaining implementations delegate to the wrapped key manager
-BUG_FIX_COMMENT	// made public see Bug 49976
 WITHOUT_CLASSIFICATION	// Only check form tags
 WITHOUT_CLASSIFICATION	// Find the action / form url
 WITHOUT_CLASSIFICATION	// Just use the first one of the possible many charsets
@@ -3955,7 +3886,6 @@ WITHOUT_CLASSIFICATION	// SSL connection
 WITHOUT_CLASSIFICATION	// Don't try to adjust the host name
 WITHOUT_CLASSIFICATION	// it must be a proxied HTTPS request // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// JAVA Impl accepts URLs with unsafe characters so don't do anything
-BUG_FIX_COMMENT	// See Bug 54482
 WITHOUT_CLASSIFICATION	/*     * Split line into name/value pairs and store in headers if relevant     * If name = "content-length", then return value as int, else return 0     */
 WITHOUT_CLASSIFICATION	// Nothing to do
 WITHOUT_CLASSIFICATION	// Get the boundary string for the multiparts from the content type
@@ -4061,7 +3991,6 @@ WITHOUT_CLASSIFICATION	// Cannot be null here
 WITHOUT_CLASSIFICATION	// e.g. text/html; charset=ISO-8859-1
 WITHOUT_CLASSIFICATION	// if either a file or path location is given, // get the file object. // we have a file
 WITHOUT_CLASSIFICATION	// Set details from the actual response // Needs to be done before response can be stored
-BUG_FIX_COMMENT	// Bug 38902 - sometimes -1 seems to be returned unnecessarily // Bug 41902 - NPE
 WITHOUT_CLASSIFICATION	// Sampling proper - establish the connection and read the response: // Repeatedly try to connect:
 WITHOUT_CLASSIFICATION	// Store any cookies received in the cookie manager:
 WITHOUT_CLASSIFICATION	// If we redirected automatically, the URL may have changed
@@ -4141,7 +4070,6 @@ WITHOUT_CLASSIFICATION	// One-time init for this client
 WITHOUT_CLASSIFICATION	// set retry count
 WITHOUT_CLASSIFICATION	// Override the defualt schemes as necessary
 WITHOUT_CLASSIFICATION	// Set up proxy details
-BUG_FIX_COMMENT	// Bug 52126 - we do our own cookie handling
 WITHOUT_CLASSIFICATION	// save the agent for next time round
 WITHOUT_CLASSIFICATION	// Use special field ip source address (for pseudo 'ip spoofing')
 WITHOUT_CLASSIFICATION	// reset in case was set previously
@@ -4202,10 +4130,8 @@ WITHOUT_CLASSIFICATION	// If the request entity is repeatable, we can send it fi
 WITHOUT_CLASSIFICATION	// this probably cannot happen
 WITHOUT_CLASSIFICATION	// Does not need to be synchronised, as all access is from same thread
 WITHOUT_CLASSIFICATION	// don't try twice
-BUG_FIX_COMMENT	// When Retrieve Embedded resources + Concurrent Pool is used // as the instance of Proxy is cloned, we end up with impl being null // testIterationStart will not be executed but it's not a problem for 51380 as it's download of resources // so SSL context is to be reused // Not called from multiple threads, so this is OK
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// may be the empty string
-BUG_FIX_COMMENT	// see https://issues.apache.org/bugzilla/show_bug.cgi?id=51380
 WITHOUT_CLASSIFICATION	// N.B. It's not po ssible to forward threadStarted() to the implementation class. // This is because Config items are not processed until later, and HTTPDefaults may define the implementation
 WITHOUT_CLASSIFICATION	// Forward to sampler
 WITHOUT_CLASSIFICATION	// Forward to sampler
@@ -4270,7 +4196,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Store MD5 hash instead of storing response // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Not synch, but it is not modified after creation
 WITHOUT_CLASSIFICATION	// returns empty array for null
-BUG_FIX_COMMENT	// Bug 49083
 WITHOUT_CLASSIFICATION	////////////////////// Code ///////////////////////////
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Skip parameters with a blank name (allows use of optional variables in parameter lists)
@@ -4283,7 +4208,6 @@ WITHOUT_CLASSIFICATION	// Check if there are any difference between name and val
 WITHOUT_CLASSIFICATION	// If there is no difference, we mark it as not needing encoding
 WITHOUT_CLASSIFICATION	// private method to allow AsyncSample to reset the value without performing checks
 WITHOUT_CLASSIFICATION	// private method to allow AsyncSample to reset the value without performing checks
-BUG_FIX_COMMENT	// Bug 51939
 WITHOUT_CLASSIFICATION	// allow use of relative file URLs
 WITHOUT_CLASSIFICATION	// HTTP URLs must be absolute, allow file to be relative // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Add the query string if it is a HTTP GET or DELETE request
@@ -4296,7 +4220,6 @@ WITHOUT_CLASSIFICATION	// Encode the parameter value in the specified content en
 WITHOUT_CLASSIFICATION	// records the existance of an equal sign
 WITHOUT_CLASSIFICATION	// We do not know the content encoding of the query string
 WITHOUT_CLASSIFICATION	// Append body if it is a post or put
-BUG_FIX_COMMENT	// Bug 39205
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -4327,18 +4250,15 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// kill any remaining tasks
 WITHOUT_CLASSIFICATION	/*     * @param res HTTPSampleResult to check     * @return parser class name (may be "") or null if entry does not exist     */
 WITHOUT_CLASSIFICATION	// Browsers seem to tolerate Location headers with spaces, // replacing them automatically with %20. We want to emulate // this behaviour.
-BUG_FIX_COMMENT	// Change all but HEAD into GET (Bug 55450)
 WITHOUT_CLASSIFICATION	// The redirect URL we got was not a valid URL
 WITHOUT_CLASSIFICATION	// Only add sample if it is a sample of valid url redirect, i.e. that // we have actually sampled the URL
 WITHOUT_CLASSIFICATION	// Now populate the any totalRes fields that need to // come from lastRes:
-BUG_FIX_COMMENT	// Only download page resources if we were not redirected. // If we were redirected, the page resources have already been // downloaded for the sample made for the redirected url // otherwise, use null so the container is created if necessary unless // the flag is false, in which case revert to broken 2.1 behaviour  // Bug 51939 -  https://issues.apache.org/bugzilla/show_bug.cgi?id=51939
 WITHOUT_CLASSIFICATION	/*     * Method to set files list to be uploaded.     *     * @param value     *   HTTPFileArgs object that stores file list to be uploaded.     */
 WITHOUT_CLASSIFICATION	// no point saving an empty list
 WITHOUT_CLASSIFICATION	/*     * Method to get files list to be uploaded.     */
 WITHOUT_CLASSIFICATION	// Weed out the empty files
 WITHOUT_CLASSIFICATION	// NOOP to provide based empty impl and avoid breaking existing implementations
 WITHOUT_CLASSIFICATION	// may also happen if long value > int.max
-BUG_FIX_COMMENT	// Bug 46838 - if there was no data, still need to set latency
 WITHOUT_CLASSIFICATION	// for new test plans that don't have FILE/PARAM/MIME properties
 WITHOUT_CLASSIFICATION	// Updated the property lists
 WITHOUT_CLASSIFICATION	// We don't want to use CacheManager clone but the parent one, and CacheManager is Thread Safe
@@ -4606,7 +4526,6 @@ WITHOUT_CLASSIFICATION	// now we iterate through the operations
 WITHOUT_CLASSIFICATION	// if the first child is soap:operation // we add it to the array
 WITHOUT_CLASSIFICATION	// new WSDLHelper("http://services.bio.ifi.lmu.de:1046/prothesaurus/services/BiologicalNameService?wsdl");
 WITHOUT_CLASSIFICATION	// Remove quotes from charset name
-BUG_FIX_COMMENT	// See Bug 44784
 WITHOUT_CLASSIFICATION	// get ../ or ../../ etc.
 WITHOUT_CLASSIFICATION	// find index of path start
 WITHOUT_CLASSIFICATION	// absolute URL
@@ -4683,7 +4602,6 @@ WITHOUT_CLASSIFICATION	// Parsed request headers
 WITHOUT_CLASSIFICATION	/* (non-Javadoc)     * @see org.apache.jmeter.visualizers.request.RequestView#init()     */
 WITHOUT_CLASSIFICATION	/* (non-Javadoc)     * @see org.apache.jmeter.visualizers.request.RequestView#clearData()     */
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // SOAP request (generally) //blank name // $NON-NLS-1$
-BUG_FIX_COMMENT	// $NON-NLS-1$ // detected invalid syntax (Bug 52491) // Return as for SOAP above
 DESIGN	//TODO: move to utils class (JMeterUtils?)
 WITHOUT_CLASSIFICATION	//blank name // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// empty init // $NON-NLS-1$
@@ -4701,13 +4619,10 @@ WITHOUT_CLASSIFICATION	// Set up the 1st table Result with empty headers
 WITHOUT_CLASSIFICATION	// Set up the 2nd table 
 WITHOUT_CLASSIFICATION	// Set up the 3rd table 
 WITHOUT_CLASSIFICATION	// Create the split pane
-BUG_FIX_COMMENT	// set split ratio // see bug jdk 4131528
 WITHOUT_CLASSIFICATION	// called from ctor, so must not be overridable
 WITHOUT_CLASSIFICATION	//$NON-NLS-1$ // Concatenate query post if exists
 WITHOUT_CLASSIFICATION	// add a message when no http sample //$NON-NLS-1$ //$NON-NLS-1$
-BUG_FIX_COMMENT	// We use substring to keep = sign (Bug 54055), we are sure = is present // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// better ISO-8859-1 than UTF-8
-BUG_FIX_COMMENT	// set split ratio (only 5 lines to display) // see bug jdk 4131528
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Find all the classes which implement the JavaSamplerClient // interface.
 WITHOUT_CLASSIFICATION	// Remove the JavaConfig class from the list since it only // implements the interface for error conditions.
@@ -4924,7 +4839,6 @@ WITHOUT_CLASSIFICATION	//++ These are JMX file attribute names and must not be c
 WITHOUT_CLASSIFICATION	// N.B. Cannot change value, as that is used in JMX files // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Is Destination setup static? else dynamic // $NON-NLS-1$ // default to maintain compatibility
 WITHOUT_CLASSIFICATION	//-- End of JMX file attribute names
-BUG_FIX_COMMENT	// See BUG 45460. We need to keep the resource in order to interpret existing files // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
@@ -5268,8 +5182,6 @@ WITHOUT_CLASSIFICATION	// If set, this is the regex that is used to extract the 
 WITHOUT_CLASSIFICATION	// Are we processing the first sample?
 WITHOUT_CLASSIFICATION	// used for handling interrupt
 WITHOUT_CLASSIFICATION	// Not in cache, so create new one and cache it
-BUG_FIX_COMMENT	// Bug 44910 - close previous socket (if any)
-BUG_FIX_COMMENT	// (re-)Define connection params - Bug 50977 
 WITHOUT_CLASSIFICATION	// Do stuff we cannot do as part of threadStarted()
 WITHOUT_CLASSIFICATION	// Use the test element name for the label
 WITHOUT_CLASSIFICATION	// Calculate response time
@@ -5297,8 +5209,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// ignored
-BUG_FIX_COMMENT	// Bug 33920 - additional // prop files
-BUG_FIX_COMMENT	// Bug 33920 - // allow // multiple // props
 WITHOUT_CLASSIFICATION	// Process command line property definitions (can occur multiple times)
 WITHOUT_CLASSIFICATION	//private ImageIcon runningIcon = JMeterUtils.getImage("thread.enabled.gif");
 WITHOUT_CLASSIFICATION	//private Set hosts = new HashSet();
@@ -5308,8 +5218,6 @@ WITHOUT_CLASSIFICATION	/* Implements JMeterGUIComponent.modifyTestElement(TestEl
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ $NON-NLS-2$
 WITHOUT_CLASSIFICATION	// called from ctor, so must not be overridable
 WITHOUT_CLASSIFICATION	// called from ctor, so must not be overridable
-BUG_FIX_COMMENT	// Bug 33845 - allow direct override of Home dir
-BUG_FIX_COMMENT	// Bug 33920 - allow multiple props
 WITHOUT_CLASSIFICATION	// Set it
 WITHOUT_CLASSIFICATION	// Set it
 WITHOUT_CLASSIFICATION	// Reset it
@@ -5504,7 +5412,6 @@ WITHOUT_CLASSIFICATION	// Convert between eclipse jar name and build.properties 
 WITHOUT_CLASSIFICATION	// remove docs-only jars
 WITHOUT_CLASSIFICATION	// assume default charset is OK here //      <classpathentry kind="lib" path="lib/geronimo-jms_1.1_spec-1.1.1.jar"/> //      <classpathentry kind="lib" path="lib/activation-1.1.1.jar"/> //      <classpathentry kind="lib" path="lib/jtidy-r938.jar"/>
 WITHOUT_CLASSIFICATION	// special handling
-BUG_FIX_COMMENT	// Bug 46831 - check can match dollars
 WITHOUT_CLASSIFICATION	// This would be done by the run command
 WITHOUT_CLASSIFICATION	//testLog.setPriority(org.apache.log.Priority.DEBUG);
 WITHOUT_CLASSIFICATION	// Not present
@@ -5552,7 +5459,6 @@ WITHOUT_CLASSIFICATION	//          log.info("testLastPrevFailed");
 WITHOUT_CLASSIFICATION	// While False, previous sample failed - should not run
 WITHOUT_CLASSIFICATION	//          log.info("testFalsePrevFailed");
 WITHOUT_CLASSIFICATION	// Should behave the same for blank and LAST because success on input
-BUG_FIX_COMMENT	// Tests for Stack Overflow (bug 33954)
 WITHOUT_CLASSIFICATION	// Should be OK
 WITHOUT_CLASSIFICATION	// e.printStackTrace();
 WITHOUT_CLASSIFICATION	// Set up the test plan
@@ -5586,7 +5492,6 @@ WITHOUT_CLASSIFICATION	// Samples inside InterleaveController
 WITHOUT_CLASSIFICATION	// Sample in inner loop        
 WITHOUT_CLASSIFICATION	// Outer only once + ("three" + "only once five and six" + "eight in interleave only once" + ("four" + "interleave" + "eleven") * innerLoopCount) * outerLoopCount;  
 WITHOUT_CLASSIFICATION	// Escaped dollar commma and backslash with no variable reference
-BUG_FIX_COMMENT	// N.B. See Bug 46831 which wanted to changed the behaviour of \$ // It's too late now, as this would invalidate some existing test plans, // so document the current behaviour with some more tests.
 WITHOUT_CLASSIFICATION	// Escaped dollar commma and backslash with variable reference
 WITHOUT_CLASSIFICATION	// N.B. Backslashes are removed before dollar, comma and backslash
 WITHOUT_CLASSIFICATION	// N.B. Backslashes are removed before dollar, comma and backslash
@@ -5594,7 +5499,6 @@ WITHOUT_CLASSIFICATION	// Escaped dollar commma and backslash with missing varia
 WITHOUT_CLASSIFICATION	// Escaped dollar commma and backslash with missing function reference
 WITHOUT_CLASSIFICATION	//log.debug("domain property = " + element.getProperty("domain"));
 WITHOUT_CLASSIFICATION	//log.debug("domain property = " + element.getProperty("domain"));
-BUG_FIX_COMMENT	/*         * This test should be compared with the one above.         * Here, the string contains a valid variable reference, so all         * backslashes are also processed.         *          * See https://issues.apache.org/bugzilla/show_bug.cgi?id=53534         */
 WITHOUT_CLASSIFICATION	// Set up the non-wild variables
 WITHOUT_CLASSIFICATION	// Should not clear this?
 WITHOUT_CLASSIFICATION	// Check when match fails
@@ -5719,7 +5623,6 @@ WITHOUT_CLASSIFICATION	// This should be ignored, as there is no value
 WITHOUT_CLASSIFICATION	// starts empty
 WITHOUT_CLASSIFICATION	// should not be stored
 WITHOUT_CLASSIFICATION	// Test session cookie is returned
-BUG_FIX_COMMENT	// Bug 2063
 WITHOUT_CLASSIFICATION	// Test Old cookie is not returned
 WITHOUT_CLASSIFICATION	// Test multi-cookie header handling
 WITHOUT_CLASSIFICATION	// Test duplicate cookie handling
@@ -5772,7 +5675,6 @@ WITHOUT_CLASSIFICATION	// Write the body
 WITHOUT_CLASSIFICATION	// Write the body
 WITHOUT_CLASSIFICATION	// Check that the request and response matches       
 TEST	// TODO: need more tests
-BUG_FIX_COMMENT	// Bug 50286
 WITHOUT_CLASSIFICATION	// $sid$
 WITHOUT_CLASSIFICATION	// Arguments args = sampler.getArguments();
 WITHOUT_CLASSIFICATION	// No entry; check it is still present
@@ -6199,9 +6101,7 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-
 WITHOUT_CLASSIFICATION	// Condition LABEL // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// If the -j  or -l flag is set to LAST or LAST.log|LAST.jtl, then the last loaded file name is used to // generate the log file name by removing .JMX and replacing it with .log|.jtl
 WITHOUT_CLASSIFICATION	// If a table cell is being edited, we should accept the current value // and stop the editing before adding a new row.
-BUG_FIX_COMMENT	// Use two rows, so that we have room for horisontal scrollbar, if the text is one long line. Fix for 40371 // This is not an optimal solution, but makes it possible to see the line if it is long
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ i.e. boolean saveXXX() // $NON-NLS-1$ i.e. void setXXX(boolean) // $NON-NLS-1$ e.g. save_XXX property
-BUG_FIX_COMMENT	// Bug 47980 - allow override of local hostname // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// Keep the '\' unless it is one of the escapable chars '$' ',' or '\' // N.B. This method is used to parse function parameters, so must treat ',' as special
 WITHOUT_CLASSIFICATION	// en // fr // de // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // ja // zh_CN // zh_TW
 WITHOUT_CLASSIFICATION	//@GuardedBy("LOCK") // Keep track of how many instances are active
@@ -6290,7 +6190,6 @@ WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// record headers size to allow HTTPSampleResult.getBytes() with different options // $NON-NLS-1$ $NON-NLS-2$ // add 2 for a '\r\n' at end of headers (before data) 
-BUG_FIX_COMMENT	// http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html // If the 307 status code is received in response to a request other than GET or HEAD,  // the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, // since this might change the conditions under which the request was issued. // See Bug 54119
 WITHOUT_CLASSIFICATION	// a well-bahaved browser is supposed to send 'Connection: close' // with the last request to an HTTP server. Instead, most browsers // leave it to the server to close the connection after their // timeout period. Leave it to the JMeter user to decide.
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$
@@ -6682,7 +6581,6 @@ WITHOUT_CLASSIFICATION	// The content sent
 WITHOUT_CLASSIFICATION	// Write the headers, and then sleep
 WITHOUT_CLASSIFICATION	// Connect to the http server, and do a simple http post with utf-8 // encoding of the body, which caused problems when reader/writer // classes were used in the HttpMirrorThread
 WITHOUT_CLASSIFICATION	// The response includes the headers from the mirror server, // we want to skip those, to only keep the content mirrored. // Look for the first CRLFCRLF section
-BUG_FIX_COMMENT	// Bug 50286
 WITHOUT_CLASSIFICATION	// Can't instantiate
 WITHOUT_CLASSIFICATION	// Test if can instantiate parser using property name
 WITHOUT_CLASSIFICATION	// Check arguments
@@ -7271,9 +7169,7 @@ WITHOUT_CLASSIFICATION	// If we still can't find it, just try using all of the t
 WITHOUT_CLASSIFICATION	// method called by add is synchronized //this is a different model from the one used by the result collector
 WITHOUT_CLASSIFICATION	// We are displaying an AssertionResult
 WITHOUT_CLASSIFICATION	// /** // * Creates one of the fields used to display the graph's current // * values. // * // * @param color the color used to draw the value. By convention // * this is the same color that is used to draw the // * graph for this value and in the choose panel. // * @param length the number of digits which the field should be // * able to display // * // * @return a text field configured to display one of the // * current graph values // */ // private JTextField createInfoField(Color color, int length) // { // JTextField field = new JTextField(length); // field.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0)); // field.setEditable(false); // field.setForeground(color); // field.setBackground(getBackground()); // // // The text field should expand horizontally, but have // // a fixed height // field.setMaximumSize(new Dimension( // field.getMaximumSize().width, // field.getPreferredSize().height)); // return field; // }
-BUG_FIX_COMMENT	// See Java bug 4496398
 WITHOUT_CLASSIFICATION	/*     * Allow functions etc to register for testStopped notification.     * Only used by the function parser so far.     * The list is merged with the testListeners and then cleared.     */
-BUG_FIX_COMMENT	// Used for remote notification of threads start/stop,see BUG 54152
 WITHOUT_CLASSIFICATION	// Insert the workbench node
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // Look and Feel prefix // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ enable/disable // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$ // $NON-NLS-1$
@@ -7317,7 +7213,6 @@ WITHOUT_CLASSIFICATION	// Note that sampleStarted() and sampleStopped() is not m
 WITHOUT_CLASSIFICATION	// Allow TestResultWrapper to feed back the samples // This is effectively the same as saver.fromXML(InputStream) except we get to provide the DataHolder // Don't know why there is no method for this in the XStream class
 WITHOUT_CLASSIFICATION	//OK
 WITHOUT_CLASSIFICATION	// N.B. default charset is used deliberately here
-BUG_FIX_COMMENT	// Set start/end times // Bug 40954 - ensure start time gets started!
 WITHOUT_CLASSIFICATION	// Catch errors and rethrow as ConversionException so we get location details
 WITHOUT_CLASSIFICATION	// Version information for test plan header // This is written to JMX files by ScriptWrapperConverter // Also to JTL files by ResultCollector // $NON-NLS-1$
 WITHOUT_CLASSIFICATION	// For converters to use
@@ -8162,7 +8057,6 @@ WITHOUT_CLASSIFICATION	//$NON-NLS-1$
 WITHOUT_CLASSIFICATION	//$NON-NLS-1$
 WITHOUT_CLASSIFICATION	//$NON-NLS-1$
 WITHOUT_CLASSIFICATION	/* BuildListener stuff */
-BUG_FIX_COMMENT	//test inspired by bug report 37085
 WITHOUT_CLASSIFICATION	// we don't expect to find this
 WITHOUT_CLASSIFICATION	// ignore expected
 WITHOUT_CLASSIFICATION	// ignore expected
@@ -8229,18 +8123,15 @@ WITHOUT_CLASSIFICATION	// simple test to ensure that the caching does work...
 WITHOUT_CLASSIFICATION	// 2nd run..
 WITHOUT_CLASSIFICATION	// the driver must still be cached.
 WITHOUT_CLASSIFICATION	// look for the driver path...
-BUG_FIX_COMMENT	// #38056
 WITHOUT_CLASSIFICATION	//file time checks for java1.2+
 WITHOUT_CLASSIFICATION	//only test on java1.5+
 WITHOUT_CLASSIFICATION	// AntLikeTasksAtTopLevelTest
 WITHOUT_CLASSIFICATION	//file length checks rely on touch generating a zero byte file
 WITHOUT_CLASSIFICATION	// no-op: not a real business error
-BUG_FIX_COMMENT	// bugzilla report 10262
 WITHOUT_CLASSIFICATION	//dont look for much text here as it is vendor and version dependent
 WITHOUT_CLASSIFICATION	// end of try-catch
 WITHOUT_CLASSIFICATION	// end of try-catch
 WITHOUT_CLASSIFICATION	/*     * PR 11100     */
-BUG_FIX_COMMENT	// bugzilla report 16972
 WITHOUT_CLASSIFICATION	/*     * PR 38973     */
 WITHOUT_CLASSIFICATION	/*     * PR 11100     */
 WITHOUT_CLASSIFICATION	/*     * PR 16213     */
@@ -8318,7 +8209,6 @@ WITHOUT_CLASSIFICATION	// File is not found in specified filepath
 WITHOUT_CLASSIFICATION	// test when file begins with basedir twice
 WITHOUT_CLASSIFICATION	// test for searching parents
 WITHOUT_CLASSIFICATION	// test for not searching parents
-BUG_FIX_COMMENT	// see bugrep 21724 (references not passing through with antcall)
 WITHOUT_CLASSIFICATION	// Output the default excludes
 WITHOUT_CLASSIFICATION	// adding something to the excludes'
 WITHOUT_CLASSIFICATION	// removing something from the defaults
@@ -8330,13 +8220,6 @@ WITHOUT_CLASSIFICATION	// We try to delete the directory created in CopydirTest
 WITHOUT_CLASSIFICATION	// check that both arrays have the same size
 WITHOUT_CLASSIFICATION	//instance variable to allow cleanup
 WITHOUT_CLASSIFICATION	//ignored
-BUG_FIX_COMMENT	// Bugzilla Report 18403
-BUG_FIX_COMMENT	// Bugzilla Report 19449
-BUG_FIX_COMMENT	// Bugzilla Report 22865
-BUG_FIX_COMMENT	// Bugzilla Report 30365
-BUG_FIX_COMMENT	// Bugzilla Report 40258
-BUG_FIX_COMMENT	// Bugzilla Report 25513
-BUG_FIX_COMMENT	// Bugzilla Report 33412
 WITHOUT_CLASSIFICATION	// What's the working directory?  If local, then its the // folder of the input file.  Otherwise, its the "current" dir..
 WITHOUT_CLASSIFICATION	// Set a property on the project to make sure that loading // a property with the same name from an xml file will // *not* change it.
 WITHOUT_CLASSIFICATION	//printProperties(p.getProperties());
@@ -8352,11 +8235,9 @@ WITHOUT_CLASSIFICATION	// where the name contains <>
 WITHOUT_CLASSIFICATION	// where only an address is supplied
 WITHOUT_CLASSIFICATION	// Tests property element, using XML schema properties as an example.
 WITHOUT_CLASSIFICATION	// should print "panic: Cannot find importVocab file 'JavaTokenTypes.txt'" // since it needs to run java.g first before java.tree.g
-BUG_FIX_COMMENT	// Bugzilla Report 12961
 WITHOUT_CLASSIFICATION	// execute
 WITHOUT_CLASSIFICATION	// override some of the code so we can test the handling of the // return code only.
 WITHOUT_CLASSIFICATION	// ask ant to update the properties...
-BUG_FIX_COMMENT	// this test shows that the bug report 21505 is fixed
 WITHOUT_CLASSIFICATION	// to override
 WITHOUT_CLASSIFICATION	// just to be sure
 WITHOUT_CLASSIFICATION	// just to be sure
@@ -8364,7 +8245,6 @@ WITHOUT_CLASSIFICATION	// read in the file
 WITHOUT_CLASSIFICATION	// found the property we set - it's good.
 WITHOUT_CLASSIFICATION	// else
 WITHOUT_CLASSIFICATION	// else
-BUG_FIX_COMMENT	// inspired by bug 22541
 WITHOUT_CLASSIFICATION	// ReplaceRegExpTest
 WITHOUT_CLASSIFICATION	// test for 10 consecutives transform
 WITHOUT_CLASSIFICATION	//java keywords are not special
@@ -8377,8 +8257,6 @@ WITHOUT_CLASSIFICATION	// byte - byte compare
 WITHOUT_CLASSIFICATION	// avoid endless loop
 WITHOUT_CLASSIFICATION	// those would fail because of the way BuildFileTest captures output
 WITHOUT_CLASSIFICATION	//To change body of implemented methods use File | Settings | File Templates.
-BUG_FIX_COMMENT	// Bugzilla Report 34963
-BUG_FIX_COMMENT	// Bugzilla Report 38477
 WITHOUT_CLASSIFICATION	// tests one the file object
 TEST	// JUNIT3 test //assertEquals(error, JUnitTestRunner.FAILURES, runner.getRetCode()); //@fixme as of now does not report the original stacktrace. //assertTrue(error, error.indexOf("thrown on purpose") != -1);
 WITHOUT_CLASSIFICATION	// father and child pattern test
@@ -8389,10 +8267,7 @@ WITHOUT_CLASSIFICATION	// On junit3 this is a FAILURE, on junit4 this is an ERRO
 WITHOUT_CLASSIFICATION	// conversion to URL via FileUtils like in XMLResultAggregator, not as suggested in the bug report
 WITHOUT_CLASSIFICATION	// conversion to URL via FileUtils like in XMLResultAggregator, not as suggested in the bug report
 WITHOUT_CLASSIFICATION	// conversion to URL via FileUtils like in XMLResultAggregator, not as suggested in the bug report
-BUG_FIX_COMMENT	//Bugzilla Report 39708
-BUG_FIX_COMMENT	//Bugzilla Report 39708
 WITHOUT_CLASSIFICATION	// mandatory constructor
-BUG_FIX_COMMENT	//Bugzilla Report 40021
 WITHOUT_CLASSIFICATION	// check that a suite generates no errors
 WITHOUT_CLASSIFICATION	// check that having no suite generates no errors
 WITHOUT_CLASSIFICATION	// check that something which is not a testcase generates no errors // at first even though this is incorrect.
@@ -8447,7 +8322,6 @@ WITHOUT_CLASSIFICATION	// check that a reference zipfileset gets the same attrib
 WITHOUT_CLASSIFICATION	//check that dir and src are incompatible
 WITHOUT_CLASSIFICATION	// // These shenanigans are necessary b/c Norm Walsh's resolver // has a different idea of how file URLs are created on windoze // ie file://c:/foo instead of file:///c:/foo //
 WITHOUT_CLASSIFICATION	//check that dir and src are incompatible
-BUG_FIX_COMMENT	// inspired by Bugzilla Report 23913 // a problem used to happen under Windows when the location of the DTD was given as an absolute path // possibly with a mixture of file separators
 WITHOUT_CLASSIFICATION	//check that fullpath and prefix are incompatible
 WITHOUT_CLASSIFICATION	// try a netware-volume length path, see how it is handled
 WITHOUT_CLASSIFICATION	// actually tests constructor as well as setPath
@@ -8594,7 +8468,6 @@ WITHOUT_CLASSIFICATION	// Passed test
 WITHOUT_CLASSIFICATION	// Expected exception caught
 WITHOUT_CLASSIFICATION	// Expected exception caught
 WITHOUT_CLASSIFICATION	// null parent dir
-BUG_FIX_COMMENT	// bugzilla report 19979
 WITHOUT_CLASSIFICATION	//preserve case on Cygwin when using 1.4 toURI:
 WITHOUT_CLASSIFICATION	// OK, Java 1.3.
 WITHOUT_CLASSIFICATION	//get a time
@@ -8640,7 +8513,6 @@ WITHOUT_CLASSIFICATION	// use wrappers for primitive classes, e.g. int and // In
 WITHOUT_CLASSIFICATION	// Check if a create of this property is already present // add takes preference over create for CB purposes
 WITHOUT_CLASSIFICATION	/*                         *  Ignore this method as there is an addConfigured                         *  form of this method that has a higher                         *  priority                         */
 WITHOUT_CLASSIFICATION	// If a helper cannot be found, or if the helper is for another // classloader, create a new IH
-BUG_FIX_COMMENT	// #30162: do *not* cache this if there is no project, as we // cannot guarantee that the cache will be cleared.
 WITHOUT_CLASSIFICATION	// Ignore attribute from unknown uri's
 WITHOUT_CLASSIFICATION	// impossible as getMethods should only return public methods
 WITHOUT_CLASSIFICATION	// impossible as getMethods should only return public methods
@@ -9175,7 +9047,6 @@ WITHOUT_CLASSIFICATION	// override with pathsep=
 WITHOUT_CLASSIFICATION	// override with dirsep=
 WITHOUT_CLASSIFICATION	// Check if used by attributes
 WITHOUT_CLASSIFICATION	// ? is there an xml api for this ?
-BUG_FIX_COMMENT	// Allow two macro definitions with the same location // to be treated as similar - bugzilla 31215
 WITHOUT_CLASSIFICATION	////////////////////////////////////////////////////////////////////// // ATTRIBUTES
 WITHOUT_CLASSIFICATION	////////////////////////////////////////////////////////////////////// // CONSTRUCTORS / INITIALIZERS
 WITHOUT_CLASSIFICATION	////////////////////////////////////////////////////////////////////// // ACCESSOR METHODS
@@ -9206,7 +9077,6 @@ WITHOUT_CLASSIFICATION	// create a recorder entry
 WITHOUT_CLASSIFICATION	// Use '/' to calculate digest based on file name. // This is required in order to get the same result // on different platforms.
 WITHOUT_CLASSIFICATION	// Read the checksum from disk.
 WITHOUT_CLASSIFICATION	// A separate directory was explicitly declared
-BUG_FIX_COMMENT	//bug 37386. this should not occur, but it has, once.
 WITHOUT_CLASSIFICATION	// Empty statement
 WITHOUT_CLASSIFICATION	//can either be a property name string or a file
 WITHOUT_CLASSIFICATION	// file is on wrong format, swallow
@@ -9734,7 +9604,6 @@ WITHOUT_CLASSIFICATION	//was -1
 WITHOUT_CLASSIFICATION	//There were no revisions in this changelog //entry so lets move onto next file
 WITHOUT_CLASSIFICATION	//Reset comment to empty here as we can accumulate multiple lines //in the processComment method
 WITHOUT_CLASSIFICATION	// We want something of the form: -d ">=YYYY-MM-dd"
-BUG_FIX_COMMENT	// Supply '-d' as a separate argument - Bug# 14397
 WITHOUT_CLASSIFICATION	// Check if list of files to check has been specified
 WITHOUT_CLASSIFICATION	//for now skip entries which are missing a date
 WITHOUT_CLASSIFICATION	//Skip dates that are too early
@@ -10523,12 +10392,10 @@ WITHOUT_CLASSIFICATION	// Snapshot of the system properties
 WITHOUT_CLASSIFICATION	//add the timestamp
 WITHOUT_CLASSIFICATION	//and the hostname.
 WITHOUT_CLASSIFICATION	// Output properties
-BUG_FIX_COMMENT	// Fix for bug #5637 - if a junit.extensions.TestSetup is // used and throws an exception during setUp then startTest // would never have been called
 WITHOUT_CLASSIFICATION	// a TestSuite can contain Tests from multiple classes, // even tests with the same name - disambiguate them.
 WITHOUT_CLASSIFICATION	// XMLJUnitResultFormatter
 WITHOUT_CLASSIFICATION	// Do we send output to the formatters ?
 WITHOUT_CLASSIFICATION	//   Attributes for basetest
-BUG_FIX_COMMENT	// get a build exception if there is a missing key or value // see bugzilla report 21684
 WITHOUT_CLASSIFICATION	// forceLoadClass is not convenient here since it would not // properly deal with inner classes of these classes.
 WITHOUT_CLASSIFICATION	/* forkMode.getValue().equals(ForkMode.PER_BATCH) */
 DESIGN	// there's a convenient xsltc class version but data are // private so use package information
@@ -10812,7 +10679,6 @@ WITHOUT_CLASSIFICATION	// Tell user what he is doing
 WITHOUT_CLASSIFICATION	// set the local folder.
 WITHOUT_CLASSIFICATION	// set the local folder.
 WITHOUT_CLASSIFICATION	// ATTRIBUTES
-BUG_FIX_COMMENT	// handle the case where lnk points to a directory (bug 25181)
 WITHOUT_CLASSIFICATION	// create a hashtable to group them by parent directory:
 WITHOUT_CLASSIFICATION	// else lnk exists, do nothing
 WITHOUT_CLASSIFICATION	// get an Iterator of file objects representing links (canonical):
@@ -10939,7 +10805,6 @@ WITHOUT_CLASSIFICATION	// // Success!  The xml-commons resolver library is // av
 WITHOUT_CLASSIFICATION	// // The xml-commons resolver library is not // available, so we can't use it. //
 WITHOUT_CLASSIFICATION	// the following line seems to be necessary on Windows under JDK 1.2
 WITHOUT_CLASSIFICATION	// // The ResourceLocation may specify a relative path for its // location attribute.  This is resolved using the appropriate // base. //
-BUG_FIX_COMMENT	// this processing is useful under Windows when the location of the DTD // has been given as an absolute path // see Bugzilla Report 23913
 WITHOUT_CLASSIFICATION	// // for classpath lookup we ignore the base directory //
 WITHOUT_CLASSIFICATION	// // The ResourceLocation may specify a relative url for its // location attribute.  This is resolved using the appropriate // base. //
 WITHOUT_CLASSIFICATION	// // We didn't match a ResourceLocation, but since we // only support PUBLIC and URI entry types internally, // it is still possible that there is another entry in // an external catalog that will match.  We call // Apache resolver's resolveEntity method to cover // this possibility. //
@@ -11418,15 +11283,12 @@ WITHOUT_CLASSIFICATION	// ensure always \r\n
 WITHOUT_CLASSIFICATION	// UNDONE
 WITHOUT_CLASSIFICATION	// create a TarEntry for the LongLink, the contents // of which are the entry's name
 WITHOUT_CLASSIFICATION	// Strip off drive letters! // REVIEW Would a better check be "(File.separator == '\')"?
-BUG_FIX_COMMENT	// Ensure that we do not read gigabytes of zeros // for a corrupt tar file. // See http://issues.apache.org/bugzilla/show_bug.cgi?id=39924
 WITHOUT_CLASSIFICATION	// CheckStyle:VisibilityModifier ON
 WITHOUT_CLASSIFICATION	// CheckStyle:VisibilityModifier ON
-BUG_FIX_COMMENT	// However, just leaving the unread portion of the buffer dirty does // cause problems in some cases.  This problem is described in // http://issues.apache.org/bugzilla/show_bug.cgi?id=29877 // // The solution is to fill the unused portion of the buffer with zeros.
 WITHOUT_CLASSIFICATION	// No absolute pathnames // Windows (and Posix?) paths can start with "\\NetworkDrive\", // so we loop on starting /'s.
 WITHOUT_CLASSIFICATION	/* start of the central directory  */
 WITHOUT_CLASSIFICATION	// REVIEW // This is horribly inefficient, but it ensures that we // properly skip over bytes via the TarBuffer... //
 WITHOUT_CLASSIFICATION	// read in the name
-BUG_FIX_COMMENT	// Bugzilla: 40334 // Malformed tar file - long entry name not followed by entry
 WITHOUT_CLASSIFICATION	// remove trailing null terminator
 WITHOUT_CLASSIFICATION	// Unexpected EOF!
 WITHOUT_CLASSIFICATION	// ---------------------------------------------------------- // somewhat arbitrary choices that are quite common for shared // installations // -----------------------------------------------------------
@@ -11492,7 +11354,6 @@ WITHOUT_CLASSIFICATION	/* size of the central directory   */
 WITHOUT_CLASSIFICATION	/* offset of start of central      */
 WITHOUT_CLASSIFICATION	// empty
 WITHOUT_CLASSIFICATION	// wait 2 second extras // the test failed with 100 ms of margin on cvs.apache.org on August 1st, 2003
-BUG_FIX_COMMENT	// see bugrep 11418 (In repeated calls to the same target, // params will not be passed in)
 WITHOUT_CLASSIFICATION	// dummy1 --> dummy2 --> dummy3 // (which holds a glob mapper from "*.java" to "*.class"
 WITHOUT_CLASSIFICATION	// // *****  initialize test environment (called "bed")  ***** //
 WITHOUT_CLASSIFICATION	// THIS WILL FAIL. //compareBytes("abc", "utf-16");
@@ -11537,7 +11398,6 @@ WITHOUT_CLASSIFICATION	// // Static //
 WITHOUT_CLASSIFICATION	//we mark the file to be deleted on exit. //the alternative would be to cache the filename and delete //after execution finished, which is much better for long-lived runtimes //though spawning complicates things...
 WITHOUT_CLASSIFICATION	// Protected first so if any GUI tool offers a default // based on enum #0, it will be right.
 WITHOUT_CLASSIFICATION	// CheckStyle:VisibilityModifier OFF - bc // the source file // the destination file // the destination directory
-BUG_FIX_COMMENT	// start the hook thread, a unstarted thread may not be // eligible for garbage collection // Cf.: http://developer.java.sun.com/developer/bugParade/bugs/4533087.html
 WITHOUT_CLASSIFICATION	// add dest dir to classpath so that previously compiled and // untouched classes are on classpath
 WITHOUT_CLASSIFICATION	// build the command line from what we got the format is // cleartool checkout [options...] [viewpath ...] // as specified in the CLEARTOOL.EXE help
 WITHOUT_CLASSIFICATION	// build the command line from what we got. the format is // cleartool mkelem [options...] [viewpath ...] // as specified in the CLEARTOOL.EXE help
@@ -11563,7 +11423,6 @@ WITHOUT_CLASSIFICATION	// // -----  The "Singleton"  ----- //
 WITHOUT_CLASSIFICATION	// If we had child elements, we need to indent before we close // the element, otherwise we're on the same line and don't need // to indent
 WITHOUT_CLASSIFICATION	// The key is in the dictionary but cannot be retrieved // This is usually due references that refer to tasks // that have not been taskdefed in the current run. // Ignore
 WITHOUT_CLASSIFICATION	// write magic: done by caller who created this stream //this.out.write('B'); //this.out.write('Z');
-BUG_FIX_COMMENT	// See Bugzilla 28776 for a discussion on this // http://issues.apache.org/bugzilla/show_bug.cgi?id=28776
 WITHOUT_CLASSIFICATION	// CRC // Mode // SizDev // UID // GID
 IMPLEMENTATION	//if there was any text before this, add it as a fragment //TODO, this check could be modified to go if pos>prev; //seems like this current version could stick empty strings //into the list
 IMPLEMENTATION	/*     * The displayName variable stores the value of the "display-name" element     * from the standard EJB descriptor.  As a future enhancement to this task,     * we may determine the name of the EJB JAR file using this display-name,     * but this has not be implemented yet.     */
@@ -11732,7 +11591,6 @@ WITHOUT_CLASSIFICATION	// All three specified and all three exist -> true
 WITHOUT_CLASSIFICATION	// Specified class is "" -> can not exist
 WITHOUT_CLASSIFICATION	// Core class that exists in system classpath is ignored, but found in specified classpath
 WITHOUT_CLASSIFICATION	// File is not found in specified filepath
-BUG_FIX_COMMENT	// see bugrep 21724 (references not passing through with antcall)
 WITHOUT_CLASSIFICATION	//ignored
 WITHOUT_CLASSIFICATION	// basedir of subant/subant-test2/subant.xml is .. // therefore we expect here the subant subdirectory
 WITHOUT_CLASSIFICATION	// 2 is != 0 and even, so it is considered // failure on any platform currently supported // by Execute#isFailure.
@@ -11761,7 +11619,6 @@ WITHOUT_CLASSIFICATION	// info text // list of files // expected result // resul
 WITHOUT_CLASSIFICATION	//  =====================  helper methods and classes  ====================
 WITHOUT_CLASSIFICATION	// should be full moon
 WITHOUT_CLASSIFICATION	// Try a silly case
-BUG_FIX_COMMENT	// a test with ant for germans // the escaped character used for the test is the "a umlaut" // this is the fix for the bug 37348
 WITHOUT_CLASSIFICATION	// java.home is bogus
 WITHOUT_CLASSIFICATION	// 60s // a further 30s
 WITHOUT_CLASSIFICATION	// 60s // a further 30s
@@ -12027,7 +11884,6 @@ WITHOUT_CLASSIFICATION	// ClearCase items
 WITHOUT_CLASSIFICATION	// ClearCase items
 WITHOUT_CLASSIFICATION	// -branch
 WITHOUT_CLASSIFICATION	// -c
-BUG_FIX_COMMENT	//bug#30471 //this is caused by Date.after throwing a NullPointerException //for some reason there's no date set in the CVSEntry //Java 1.3.1 API //http://java.sun.com/j2se/1.3/docs/api/java/util/Date.html#after(java.util.Date) //doesn't throw NullPointerException //Java 1.4.2 + 1.5 API //http://java.sun.com/j2se/1.4.2/docs/api/java/util/Date.html#after(java.util.Date) //according to the docs it doesn't throw, according to the bug report it does //http://java.sun.com/j2se/1.5.0/docs/api/java/util/Date.html#after(java.util.Date) //according to the docs it does throw
 WITHOUT_CLASSIFICATION	// entries are of the form: //CVS 1.11 // File module/filename is new; current revision 1.1 //CVS 1.11.9 // File module/filename is new; cvstag_2003_11_03_2  revision 1.1 // or // File module/filename changed from revision 1.4 to 1.6 // or // File module/filename is removed; not included in // release tag SKINLF_12 //CVS 1.11.9 // File testantoine/antoine.bat is removed; TESTANTOINE_1 revision 1.1.1.1 // // get rid of 'File module/"
 WITHOUT_CLASSIFICATION	// CheckStyle:MemberNameCheck OFF - bc
 WITHOUT_CLASSIFICATION	// We need character encoding aware printing here. // So, using PrintWriter over OutputStreamWriter instead of PrintStream
@@ -12371,7 +12227,6 @@ WITHOUT_CLASSIFICATION	// pass the click on to the plot... // rely on the plot t
 WITHOUT_CLASSIFICATION	// don't zoom unless the mouse pointer is in the plot's data area
 WITHOUT_CLASSIFICATION	// draw the label
 WITHOUT_CLASSIFICATION	// now try to reject equality...
-BUG_FIX_COMMENT	// line is clipped to avoid JRE bug 6574155, for more info // see JFreeChart bug 2221495
 WITHOUT_CLASSIFICATION	// no plot, no data
 WITHOUT_CLASSIFICATION	// no plot, no data
 WITHOUT_CLASSIFICATION	// if fixed auto range, then derive lower bound...
@@ -12853,7 +12708,6 @@ WITHOUT_CLASSIFICATION	// if we've been panning, we need to reset now that the m
 WITHOUT_CLASSIFICATION	// for mouseReleased event, (horizontalZoom || verticalZoom) // will be true, so we can just test for either being false; // otherwise both are true
 WITHOUT_CLASSIFICATION	// erase the zoom rectangle
 WITHOUT_CLASSIFICATION	// force a redraw // new entity code...
-BUG_FIX_COMMENT	// we can only generate events if the panel's chart is not null // (see bug report 1556951)
 WITHOUT_CLASSIFICATION	// we need to guard against this.zoomPoint being null
 WITHOUT_CLASSIFICATION	// we need to guard against this.zoomPoint being null
 WITHOUT_CLASSIFICATION	// Set XOR mode to draw the zoom rectangle
@@ -13131,7 +12985,6 @@ WITHOUT_CLASSIFICATION	// milliseconds
 WITHOUT_CLASSIFICATION	// look at lower and upper bounds...
 WITHOUT_CLASSIFICATION	// create a new space object if one wasn't supplied...
 WITHOUT_CLASSIFICATION	// if the axis is not visible, no additional space is required...
-BUG_FIX_COMMENT	// need to peg the month in case the time zone isn't the // default - see bug 2078057
 WITHOUT_CLASSIFICATION	// seconds
 WITHOUT_CLASSIFICATION	// minutes
 WITHOUT_CLASSIFICATION	// hours
@@ -13246,7 +13099,6 @@ WITHOUT_CLASSIFICATION	// don't draw this tick label
 WITHOUT_CLASSIFICATION	// don't draw this tick label
 WITHOUT_CLASSIFICATION	// remember these values for next comparison
 WITHOUT_CLASSIFICATION	// remember these values for next comparison
-BUG_FIX_COMMENT	// see bug report 1549218
 WITHOUT_CLASSIFICATION	// first check that autoPopulate==false works as expected
 WITHOUT_CLASSIFICATION	// if the axis is not visible, don't draw it...
 WITHOUT_CLASSIFICATION	// even though the axis is not visible, we need ticks for the // gridlines...
@@ -13259,7 +13111,6 @@ DEFECT	// TODO: we didn't check the height yet
 WITHOUT_CLASSIFICATION	// start with the current tick unit...
 WITHOUT_CLASSIFICATION	// then extrapolate...
 WITHOUT_CLASSIFICATION	// then extrapolate...
-BUG_FIX_COMMENT	// the following is never used, but it seems that DateFormat requires // it to be non-null.  It isn't well covered in the spec, refer to // bug parade 5061189 for more info.
 WITHOUT_CLASSIFICATION	// check a series with no items
 WITHOUT_CLASSIFICATION	// must be top or bottom
 WITHOUT_CLASSIFICATION	// catches null also
@@ -13588,7 +13439,6 @@ WITHOUT_CLASSIFICATION	/* ======================================================
 WITHOUT_CLASSIFICATION	// allocate storage for dataset, axes and renderers
 WITHOUT_CLASSIFICATION	// delegate...
 WITHOUT_CLASSIFICATION	// delegate...
-BUG_FIX_COMMENT	// check lookup values that are outside the bounds - see bug report // 1767315
 DESIGN	// TODO: need to fetch this from localised resources
 DESIGN	// TODO: use a generator here
 WITHOUT_CLASSIFICATION	// calculate the data area...
@@ -14404,7 +14254,6 @@ WITHOUT_CLASSIFICATION	// Add the last point (x,0)
 WITHOUT_CLASSIFICATION	// draw an outline around the Area.
 WITHOUT_CLASSIFICATION	// Check if the item is the last item for the series. // and number of items > 0.  We can't draw an area for a single point.
 WITHOUT_CLASSIFICATION	// a new map always has 1 group (the default group)
-BUG_FIX_COMMENT	// Java2D has some issues drawing dashed lines around "large" // geometrical shapes - for example, see bug 6620013 in the // Java bug database.  So, we'll check if the outline is // dashed and, if it is, do our own clipping before drawing // the outline...
 WITHOUT_CLASSIFICATION	// we make the clip region slightly larger than the // dataArea so that the clipped edges don't show lines // on the chart
 WITHOUT_CLASSIFICATION	// no change
 WITHOUT_CLASSIFICATION	// here we use BooleanUtilities to remain compatible with JDKs < 1.4
@@ -14729,7 +14578,6 @@ WITHOUT_CLASSIFICATION	// sum of x, x^2, x * y, y
 WITHOUT_CLASSIFICATION	// holds the moving average sum
 WITHOUT_CLASSIFICATION	// defer null argument checks
 WITHOUT_CLASSIFICATION	// make sure bins[bins.length]'s upper boundary ends at maximum // to avoid the rounding issue. the bins[0] lower boundary is // guaranteed start from min
-BUG_FIX_COMMENT	// rounding could result in binIndex being equal to bins // which will cause an IndexOutOfBoundsException - see bug // report 1553088
 WITHOUT_CLASSIFICATION	// iterate over all data items and update mins and maxes
 WITHOUT_CLASSIFICATION	// if this cell held a maximum and/or minimum value, we'll need to // update the cached bounds...
 WITHOUT_CLASSIFICATION	// ********* stat function for linear slope ******** // y = a + bx // a = ybar - b * xbar //     sum(x * y) - (sum (x) * sum(y)) / n // b = ------------------------------------ //     sum (x^2) - (sum(x)^2 / n // *************************************************
@@ -16422,8 +16270,6 @@ WITHOUT_CLASSIFICATION	// still 2.
 WITHOUT_CLASSIFICATION	// ****************************************************************** //  More than 150 demo applications are included with the JFreeChart //  Developer Guide...for more information, see: // //  >   http://www.object-refinery.com/jfreechart/guide.html // // ******************************************************************
 WITHOUT_CLASSIFICATION	// here we do a check to see if the user is installing the "Legacy" // theme, and reset the bar painters in that case...
 DESIGN	// here we tweak the notify flag on the plot so that only // one notification happens even though we update multiple // axes...
-BUG_FIX_COMMENT	// this method is deprecated because we really need the plotArea // when drawing the labels - see bug 1277726
-BUG_FIX_COMMENT	// the following is never used, but it seems that DateFormat requires // it to be non-null.  It isn't well covered in the spec, refer to // bug parade 5061189 for more info.
 WITHOUT_CLASSIFICATION	// since the flow layout is relatively straightforward, // no information needs to be recorded here
 WITHOUT_CLASSIFICATION	// nothing is drawn if the row index is not included in the list with // the indices of the visible rows...
 IMPLEMENTATION	// TODO: I think we need to make sure the keys are actually cloned, // whereas the stroke instances are always immutable so they're OK
@@ -16500,7 +16346,6 @@ WITHOUT_CLASSIFICATION	/////////////////////////////////////////////////////////
 WITHOUT_CLASSIFICATION	// we use ValueMarker for the tests, because we need a concrete // subclass...
 WITHOUT_CLASSIFICATION	// now check that all datasets, renderers and axes are being listened // too...
 WITHOUT_CLASSIFICATION	// now check that all datasets, renderers and axes are being listened // too...
-BUG_FIX_COMMENT	// the following checks that the plot registers itself as a listener // with the dataset passed to the constructor - see patch 1943021
 WITHOUT_CLASSIFICATION	// after clearing, reverts to // default group
 WITHOUT_CLASSIFICATION	// regular equality for the datasets doesn't check the fields, just // the data values...so let's check some more things...
 WITHOUT_CLASSIFICATION	// these methods should throw an IndexOutOfBoundsException since the // column is too high...
@@ -16541,8 +16386,6 @@ WITHOUT_CLASSIFICATION	// what is our alignment?
 WITHOUT_CLASSIFICATION	// seem to be the same...
 WITHOUT_CLASSIFICATION	// slope
 WITHOUT_CLASSIFICATION	// complicate things a little...
-BUG_FIX_COMMENT	// see Java Bug ID 4960215
-BUG_FIX_COMMENT	// see Java Bug ID 4960215
 IMPLEMENTATION	// TODO: draw the interval marker with a 3D effect
 IMPLEMENTATION	/**     * Returns a string representing the week (e.g. "Week 9, 2002").     *     * TODO: look at internationalisation.     *     * @return A string representing the week.     */
 IMPLEMENTATION	// TODO see if we need to apply some line color and style to the // axis traces
@@ -16729,8 +16572,6 @@ DESIGN	// defer argument checking
 DESIGN	// defer argument checking
 DESIGN	// defer argument checking...
 WITHOUT_CLASSIFICATION	// check defaults
-BUG_FIX_COMMENT	// see Java Bug ID 4960215
-BUG_FIX_COMMENT	// see Java Bug ID 4960215
 WITHOUT_CLASSIFICATION	// nothing to do
 WITHOUT_CLASSIFICATION	// nothing to do
 WITHOUT_CLASSIFICATION	// OK
@@ -17041,7 +16882,6 @@ WITHOUT_CLASSIFICATION	// Sanity tests
 WITHOUT_CLASSIFICATION	// update headerlist of destination-folder // -> this is necessary to reflect the changes visually // but only do it if the target folder is still in sync!
 WITHOUT_CLASSIFICATION	// super(node, folderItem); // super(getDefaultItem("IMAPRootFolder", getDefaultProperties()));
 WITHOUT_CLASSIFICATION	// if have already a suitable folder skip the search
-BUG_FIX_COMMENT	/*         * *20031231, karlpeder* Using InputStream instead of rawString         * directly. Ensures size is set correctly by addMessage (bug #843657)         */
 WITHOUT_CLASSIFICATION	// parse line by line
 WITHOUT_CLASSIFICATION	// if line doesn't start with "From" or line length is 0 //  -> save everything in StringBuffer
 WITHOUT_CLASSIFICATION	// setup filter configuration
@@ -17513,7 +17353,6 @@ WITHOUT_CLASSIFICATION	/*AdapterNode name;AdapterNode uid;AdapterNode type;Adapt
 WITHOUT_CLASSIFICATION	/*this.rootNode = root;parse();createMissingElements();*/
 WITHOUT_CLASSIFICATION	//filterList = new Vector();
 IMPLEMENTATION	// TODO: @author fdietz replace with regular expression
-BUG_FIX_COMMENT	// java bugs // http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4197699 // // For JDK1.2.1_003, WEEK_OF_YEAR returns 1 instead of 53 for 12/31/1999 and also // 1 instead of 54 for 12/31/2000, (It returns 1 for 1/1/1999 and 1/1/2000).
 WITHOUT_CLASSIFICATION	/* (non-Javadoc) * @see org.columba.addressbook.gui.tree.AddressbookTreeNode#getName() */
 WITHOUT_CLASSIFICATION	// Process the listeners last to first, notifying // those that are interested in this event
 WITHOUT_CLASSIFICATION	// Guaranteed to return a non-null array
@@ -18551,8 +18390,6 @@ WITHOUT_CLASSIFICATION	//topPanel.setLayout( );
 WITHOUT_CLASSIFICATION	//topBorderPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 5, // 0));
 WITHOUT_CLASSIFICATION	//mainPanel.add( topBorderPanel, BorderLayout.NORTH );
 WITHOUT_CLASSIFICATION	//c.fill = GridBagConstraints.HORIZONTAL;
-BUG_FIX_COMMENT	// bug #996381 (fdietz), directories only!!
-BUG_FIX_COMMENT	// bug #996381 (fdietz), directories only!!
 WITHOUT_CLASSIFICATION	// add profile to profiles.xml
 WITHOUT_CLASSIFICATION	// add profile to profiles.xml
 WITHOUT_CLASSIFICATION	// add to listmodel
@@ -18568,7 +18405,6 @@ WITHOUT_CLASSIFICATION	// can't delete currently running profile
 WITHOUT_CLASSIFICATION	// delete directory recursivly
 WITHOUT_CLASSIFICATION	// delete all files
 WITHOUT_CLASSIFICATION	// create a form builder
-BUG_FIX_COMMENT	// @author hubms: wait until the first frame is displayable // fix for bug [#CA-177]
 DESIGN	// TODO (@author fdietz): add import feature
 DESIGN	// TODO (@author fdietz): add export feature
 WITHOUT_CLASSIFICATION	// get current list selection
@@ -20742,7 +20578,6 @@ WITHOUT_CLASSIFICATION	// set double-click action for attachment viewer
 WITHOUT_CLASSIFICATION	// Display resulting MimeParts
 WITHOUT_CLASSIFICATION	// Get Text for Icon
 WITHOUT_CLASSIFICATION	// Get Tooltip for Icon
-BUG_FIX_COMMENT	// bug #999990 (fdietz): make sure popup menu is created correctly
 WITHOUT_CLASSIFICATION	// definition of a second
 WITHOUT_CLASSIFICATION	// timer to use
 WITHOUT_CLASSIFICATION	// Singleton
@@ -21228,7 +21063,6 @@ WITHOUT_CLASSIFICATION	// We have a special Command for VFolders
 WITHOUT_CLASSIFICATION	// sorting is enabled
 WITHOUT_CLASSIFICATION	// if the character / is found shows the user a error message
 WITHOUT_CLASSIFICATION	// sorting is disabled
-BUG_FIX_COMMENT	// fixing bug with id 553176
 WITHOUT_CLASSIFICATION	/*		 * RIYAD: Even though we don't do anything with this value, what it is		 * doing is setting up the selection colors and such as implemented per		 * the default cell rendered.		 */
 WITHOUT_CLASSIFICATION	// If no exception happened we have successfully logged // in
 WITHOUT_CLASSIFICATION	// successfully connected and autenthenticated to SMTP server
@@ -21272,7 +21106,6 @@ WITHOUT_CLASSIFICATION	// if IMAP selectable folder // -> lightgray font color a
 WITHOUT_CLASSIFICATION	// draw folder name and unseen count // -> using bold font
 WITHOUT_CLASSIFICATION	// append recent message count // -> using blue font
 WITHOUT_CLASSIFICATION	//tstich: Someone added <html> tags here. This is not the right place!
-BUG_FIX_COMMENT	// bug #999969 (fdietz): classcast exception // if mediator contains a JTree
 WITHOUT_CLASSIFICATION	// only update if timestamp is equal
 WITHOUT_CLASSIFICATION	/*	 * (non-Javadoc)	 * 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)	 */
 WITHOUT_CLASSIFICATION	/* (non-Javadoc)	 * @see org.columba.mail.imap.IImapServer#getDelimiter()	 */
@@ -21426,7 +21259,6 @@ WITHOUT_CLASSIFICATION	// Process the listeners last to first, notifying // thos
 WITHOUT_CLASSIFICATION	// skip
 WITHOUT_CLASSIFICATION	// Check if Columba is the default mail client
 WITHOUT_CLASSIFICATION	// message colour should be black as default
-BUG_FIX_COMMENT	// fix for bug [#CA-199] java 1.6.0-b105 trick
 WITHOUT_CLASSIFICATION	// Copy the commandline from the client info to the Classes mailto entry
 WITHOUT_CLASSIFICATION	// We save only the first item in the to-list
 WITHOUT_CLASSIFICATION	// use default account
@@ -21444,7 +21276,6 @@ WITHOUT_CLASSIFICATION	// found contact item in contact component
 WITHOUT_CLASSIFICATION	// check if its a group item
 WITHOUT_CLASSIFICATION	// the first token is irrelevant
 IMPLEMENTATION	// update status message // TODO (@author fdietz): i18n
-BUG_FIX_COMMENT	//do the bug [997599] "\\b([^\\s@]+@[^\\s]+)\\b";
 WITHOUT_CLASSIFICATION	// The Stream finished before the header was completely // read!
 WITHOUT_CLASSIFICATION	// just look if the first character alrady an < // so can use this mailaddress as the correct address
 WITHOUT_CLASSIFICATION	// due to bug CA-174 changed: return EMAIL_PATTERN.matcher(s).replaceAll("<A HREF=\"mailto:$1\">$1</A>");

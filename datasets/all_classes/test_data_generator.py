@@ -37,8 +37,8 @@ try:
     cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%argouml%'  and a.classification in ('WITHOUT_CLASSIFICATION') order by 2")
     write_in_file(cursor.fetchall())
 
-    cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%argouml%'  and a.classification in ('BUG_FIX_COMMENT') order by 2")
-    write_in_file(cursor.fetchall())
+    # cursor.execute("select a.classification, a.commenttext from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname like '%argouml%'  and a.classification in ('BUG_FIX_COMMENT') order by 2")
+    # write_in_file(cursor.fetchall())
 
 except Exception, e:
     raise e
