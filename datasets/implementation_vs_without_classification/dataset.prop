@@ -28,11 +28,5 @@ tolerance=1e-4
 #
 # Training input
 #
-trainFile=/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/classified_seq.train
-testFile=/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/classified_seq.test
-
-
-
-
-
-
+trainFile=/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/classified_seq.train
+testFile=/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/classified_seq.test

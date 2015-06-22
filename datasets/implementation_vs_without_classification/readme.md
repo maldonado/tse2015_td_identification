@@ -2,11 +2,11 @@
 Cross project validation
 
 ## Train 
-All design and without classification comments from Apache Ant, Apache Jmeter, JfreeChart and Columba
+All implementation and without classification comments from Apache Ant, Apache Jmeter, JfreeChart and Columba
 
 ## Test
 
-All design and without classification comments from ArgoUml. 
+All implementation and without classification comments from ArgoUml. 
 
 ## Parameters
 ###Features
@@ -38,13 +38,13 @@ tolerance=1e-4
 
 ## Results
 
-8840 examples in test set
+8690 examples in test set
 
 |Classification          | TP |FN |FP |TN  |ACC  | P   |  R  | F1  |
 |------------------------|----|---|---|----|-----|-----|-----|-----|
-|DESIGN:                 |722 |79 |229|7810|0.965|0.759|0.901|0.824|
-|WITHOUT_CLASSIFICATION: |7810|229|79 |722 |0.965|0.990|0.972|0.981|
+|WITHOUT_CLASSIFICATION: |7918|121|139|512 |0.970|0.983|0.985|0.984|
+|IMPLEMENTATION:         |512 |139|121|7918|0.970|0.809|0.786|0.798|
 
-Accuracy/micro-averaged F1: 0.96516
-Macro-averaged F1: 0.90243
+Accuracy/micro-averaged F1: 0.97008
+Macro-averaged F1: 0.89068
 
