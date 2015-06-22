@@ -38,19 +38,13 @@ tolerance=1e-4
 
 ## Results
 
-9788 examples in test set
+8840 examples in test set
 
 |Classification          | TP |FN |FP |TN  |ACC  | P   |  R  | F1  |
 |------------------------|----|---|---|----|-----|-----|-----|-----|
-|DESIGN:                 |667 |134|622|8365|0.923|0.517|0.833|0.638|
-|WITHOUT_CLASSIFICATION: |7807|232|234|1515|0.952|0.971|0.971|0.971|
-|BUG_FIX_COMMENT:        |4   |92 |4  |9688|0.990|0.500|0.042|0.077|
-|IMPLEMENTATION:         |354 |297|41 |9096|0.965|0.896|0.544|0.677|
-|TEST:                   |8   |36 |7  |9737|0.996|0.533|0.182|0.271|
-|DEFECT:                 |7   |120|31 |9630|0.985|0.184|0.055|0.085|
-|DOCUMENTATION:          |0   |30 |2  |9756|0.997|0.000|0.000|0.000|
-|:                       |0   |0  |0  |9788|1.000|1.000|1.000|1.000|
+|DESIGN:                 |722 |79 |229|7810|0.965|0.759|0.901|0.824|
+|WITHOUT_CLASSIFICATION: |7810|229|79 |722 |0.965|0.990|0.972|0.981|
 
-Accuracy/micro-averaged F1: 0.90386
-Macro-averaged F1: 0.46489
+Accuracy/micro-averaged F1: 0.96516
+Macro-averaged F1: 0.90243
 

@@ -103,3 +103,6 @@ docs/_build/
 # PyBuilder
 target/
 
+# sublime projects
+*.sublime-project
+*.sublime-workspace
