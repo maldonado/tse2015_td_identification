@@ -56,7 +56,40 @@ tolerance=1e-4
 Accuracy/micro-averaged F1: 0.91271
 Macro-averaged F1: 0.44650
 
+.usePrefixSuffixNGrams = true
+QNsize = 15
+useQN = true
+goldAnswerColumn = 0
+1.minNGramLeng = 1
+trainFile = /Users/evermal/git/npl_tools/datasets/all_classes/ant_tested/classified_seq.train
+tolerance = 1e-4
+1.maxNGramLeng = 4
+testFile = /Users/evermal/git/npl_tools/datasets/all_classes/ant_tested/classified_seq.test
+sigma = 3
+printClassifierParam = 200
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.binnedLengths = 10,20,30
+1.useNGrams = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/all_classes/ant_tested/classified_seq.train ...
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/all_classes/ant_tested/classified_seq.train varies between 2 and 51
+done [5.1s, 28727 items].
+numDatums: 28727
+numDatumsPerLabel: {DOCUMENTATION=49.0, DESIGN=1427.0, TEST=63.0, WITHOUT_CLASSIFICATION=26185.0, DEFECT=171.0, IMPLEMENTATION=832.0}
+numLabels: 6 [DESIGN, WITHOUT_CLASSIFICATION, IMPLEMENTATION, TEST, DEFECT, DOCUMENTATION]
+numFeatures (Phi(X) types): 104548 [CLASS, 1-#- F, 1-#E- */, 1-#-ets , 1-#-t , ...]
 
+
+4101 examples in test set
+Cls DESIGN: TP=28 FN=67 FP=34 TN=3972; Acc 0.975 P 0.452 R 0.295 F1 0.357
+Cls WITHOUT_CLASSIFICATION: TP=3940 FN=27 FP=85 TN=49; Acc 0.973 P 0.979 R 0.993 F1 0.986
+Cls IMPLEMENTATION: TP=4 FN=12 FP=9 TN=4076; Acc 0.995 P 0.308 R 0.250 F1 0.276
+Cls TEST: TP=0 FN=10 FP=0 TN=4091; Acc 0.998 P 1.000 R 0.000 F1 0.000
+Cls DEFECT: TP=0 FN=13 FP=1 TN=4087; Acc 0.997 P 0.000 R 0.000 F1 0.000
+Cls DOCUMENTATION: TP=0 FN=0 FP=0 TN=4101; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Accuracy/micro-averaged F1: 0.96854
+Macro-averaged F1: 0.43642
 
 
 

@@ -41,6 +41,34 @@ QNsize=15
 tolerance=1e-4
 
 ## Results
+1.usePrefixSuffixNGrams = true
+QNsize = 15
+useQN = true
+goldAnswerColumn = 0
+1.minNGramLeng = 1
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/jfreechart_tested/classified_seq.train
+tolerance = 1e-4
+1.maxNGramLeng = 4
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/jfreechart_tested/classified_seq.test
+sigma = 3
+printClassifierParam = 200
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.binnedLengths = 10,20,30
+1.useNGrams = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/jfreechart_tested/classified_seq.train ...
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/jfreechart_tested/classified_seq.train varies between 2 and 51
+done [5.4s, 27291 items].
+numDatums: 27291
+numDatumsPerLabel: {DESIGN=1338.0, WITHOUT_CLASSIFICATION=25953.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 106084 [CLASS, 1-#-*, 1-#E- */, 1-#-tuff, 1-#-en, ...]
+4383 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4160 FN=39 FP=125 TN=59; Acc 0.963 P 0.971 R 0.991 F1 0.981
+Cls DESIGN: TP=59 FN=125 FP=39 TN=4160; Acc 0.963 P 0.602 R 0.321 F1 0.418
+Accuracy/micro-averaged F1: 0.96258
+Macro-averaged F1: 0.69955
 
 8840 examples in test set
 

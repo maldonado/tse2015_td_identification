@@ -41,6 +41,42 @@ QNsize=15
 tolerance=1e-4
 
 ## Results
+ColumnDataClassifier invoked on Tue Jun 23 11:56:43 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/dataset.prop
+1.usePrefixSuffixNGrams = true
+QNsize = 15
+useQN = true
+goldAnswerColumn = 0
+1.minNGramLeng = 1
+trainFile = /Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/classified_seq.train
+tolerance = 1e-4
+1.maxNGramLeng = 4
+testFile = /Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/classified_seq.test
+sigma = 3
+printClassifierParam = 200
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.binnedLengths = 10,20,30
+1.useNGrams = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/classified_seq.train ...
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/classified_seq.train varies between 2 and 51
+done [5.2s, 28410 items].
+numDatums: 28410
+numDatumsPerLabel: {DOCUMENTATION=49.0, DESIGN=1338.0, TEST=72.0, WITHOUT_CLASSIFICATION=25953.0, DEFECT=175.0, IMPLEMENTATION=823.0}
+numLabels: 6 [WITHOUT_CLASSIFICATION, DESIGN, TEST, DEFECT, IMPLEMENTATION, DOCUMENTATION]
+numFeatures (Phi(X) types): 109464 [CLASS, 1-#-*, 1-#E- */, 1-#-tuff, 1-#-en, ...]
+
+4418 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4157 FN=42 FP=126 TN=93; Acc 0.962 P 0.971 R 0.990 F1 0.980
+Cls DESIGN: TP=40 FN=144 FP=40 TN=4194; Acc 0.958 P 0.500 R 0.217 F1 0.303
+Cls TEST: TP=0 FN=1 FP=0 TN=4417; Acc 1.000 P 1.000 R 0.000 F1 0.000
+Cls DEFECT: TP=0 FN=9 FP=14 TN=4395; Acc 0.995 P 0.000 R 0.000 F1 0.000
+Cls IMPLEMENTATION: TP=19 FN=6 FP=22 TN=4371; Acc 0.994 P 0.463 R 0.760 F1 0.576
+Cls DOCUMENTATION: TP=0 FN=0 FP=0 TN=4418; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Accuracy/micro-averaged F1: 0.95428
+Macro-averaged F1: 0.47650
+
 
 9692 examples in test set
 

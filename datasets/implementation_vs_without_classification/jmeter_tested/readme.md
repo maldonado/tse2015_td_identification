@@ -41,7 +41,35 @@ QNsize=15
 tolerance=1e-4
 
 ## Results
+.usePrefixSuffixNGrams = true
+QNsize = 15
+useQN = true
+goldAnswerColumn = 0
+1.minNGramLeng = 1
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/jmeter_tested/classified_seq.train
+tolerance = 1e-4
+1.maxNGramLeng = 4
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/jmeter_tested/classified_seq.test
+sigma = 3
+printClassifierParam = 200
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.binnedLengths = 10,20,30
+1.useNGrams = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/jmeter_tested/classified_seq.train ...
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/jmeter_tested/classified_seq.train varies between 2 and 51
+done [4.3s, 23295 items].
+numDatums: 23295
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=22469.0, IMPLEMENTATION=826.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, IMPLEMENTATION]
+numFeatures (Phi(X) types): 95746 [CLASS, 1-#-,, 1-#--, 1-#-/, 1-#-0, ...]
 
+7705 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7674 FN=9 FP=8 TN=14; Acc 0.998 P 0.999 R 0.999 F1 0.999
+Cls IMPLEMENTATION: TP=14 FN=8 FP=9 TN=7674; Acc 0.998 P 0.609 R 0.636 F1 0.622
+Accuracy/micro-averaged F1: 0.99779
+Macro-averaged F1: 0.81056
 8690 examples in test set
 
 |Classification          | TP |FN |FP |TN  |ACC  | P   |  R  | F1  |

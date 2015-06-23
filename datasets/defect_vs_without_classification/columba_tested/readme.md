@@ -42,6 +42,36 @@ tolerance=1e-4
 
 ## Results
 
+.usePrefixSuffixNGrams = true
+QNsize = 15
+useQN = true
+goldAnswerColumn = 0
+1.minNGramLeng = 1
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/columba_tested/classified_seq.train
+tolerance = 1e-4
+1.maxNGramLeng = 4
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/columba_tested/classified_seq.test
+sigma = 3
+printClassifierParam = 200
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.binnedLengths = 10,20,30
+1.useNGrams = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/columba_tested/classified_seq.train ...
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/columba_tested/classified_seq.train varies between 2 and 23
+done [4.5s, 24059 items].
+numDatums: 24059
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=23888.0, DEFECT=171.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 96286 [CLASS, 1-#-*, 1-#E- */, 1-#-tuff, 1-#-en, ...]
+
+6277 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6264 FN=0 FP=11 TN=2; Acc 0.998 P 0.998 R 1.000 F1 0.999
+Cls DEFECT: TP=2 FN=11 FP=0 TN=6264; Acc 0.998 P 1.000 R 0.154 F1 0.267
+Accuracy/micro-averaged F1: 0.99825
+Macro-averaged F1: 0.63289
+
 8166 examples in test set
 
 |Classification          | TP |FN |FP |TN  |ACC  | P   |  R  | F1  |

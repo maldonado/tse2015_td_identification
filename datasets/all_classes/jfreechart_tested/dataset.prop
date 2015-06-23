@@ -28,5 +28,5 @@ tolerance=1e-4
 #
 # Training input
 #
-trainFile=/Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/jfreechart_tested/classified_seq.train
-testFile=/Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/jfreechart_tested/classified_seq.test
+trainFile=/Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/classified_seq.train
+testFile=/Users/evermal/git/npl_tools/datasets/all_classes/jfreechart_tested/classified_seq.test
