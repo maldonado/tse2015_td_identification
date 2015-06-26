@@ -37,29 +37,13 @@ QNsize=15
 tolerance=1e-4
 
 ## Results
-1.usePrefixSuffixNGrams = true
-QNsize = 15
-useQN = true
-goldAnswerColumn = 0
-1.minNGramLeng = 1
-trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/argo_tested/classified_seq.train
-tolerance = 1e-4
-1.maxNGramLeng = 4
-testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/argo_tested/classified_seq.test
-sigma = 3
-printClassifierParam = 200
-displayedColumn = 1
-intern = true
-useClassFeature = true
-1.binnedLengths = 10,20,30
-1.useNGrams = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/argo_tested/classified_seq.train ...
+
 WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/argo_tested/classified_seq.train varies between 2 and 51
 done [3.6s, 22834 items].
+
 numDatums: 22834
 numDatumsPerLabel: {DESIGN=721.0, WITHOUT_CLASSIFICATION=22113.0}
 numLabels: 2 [DESIGN, WITHOUT_CLASSIFICATION]
-numFeatures (Phi(X) types): 93393 [CLASS, 1-#- F, 1-#E- */, 1-#-ets , 1-#-t , ...]
 
 
 8840 examples in test set
