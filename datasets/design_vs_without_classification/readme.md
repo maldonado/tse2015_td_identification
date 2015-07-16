@@ -16,7 +16,7 @@
 |Squirel      |     |0.5|     |0.699|0.488|0.575| 
 |Average      |     |0.5|     |-----|-----|-----|
 
-Cls DESIGN: TP=102 FN=107 FP=44 TN=6885; Acc 0.979 P 0.699 R 0.488 F1 0.575
+
 
 ## Without classification
 |Project      |  Pr |Rr | F1r |  P  |  R  | F1  |
