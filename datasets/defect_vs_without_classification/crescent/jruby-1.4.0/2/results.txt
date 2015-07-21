@@ -1,0 +1,37 @@
+ColumnDataClassifier invoked on Mon Jul 20 21:02:55 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.train ... done [2.1s, 8502 items].
+numDatums: 8502
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=8485.0, DEFECT=17.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 53421 [CLASS, 1-#-io, 1-#-tri, 1-#-uti, 1-#-., ...]
+..................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.test ... done [0.8s, 4436 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4436 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4274 FN=1 FP=161 TN=0; Acc 0.963 P 0.964 R 1.000 F1 0.981
+Cls DEFECT: TP=0 FN=161 FP=1 TN=4274; Acc 0.963 P 0.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.96348
+Macro-averaged F1: 0.49070

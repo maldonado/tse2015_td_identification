@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Mon Jul 20 19:47:18 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/classified_seq.train varies between 2 and 93
+done [10.0s, 55108 items].
+numDatums: 55108
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=53918.0, IMPLEMENTATION=1190.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 165801 [CLASS, 1-#-: , 1-#-Also, 1-#-cho, 1-#E-or, ...]
+.....................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/emf-2.4.1/9/classified_seq.test ... done [1.0s, 4302 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4302 examples in test set
+Cls IMPLEMENTATION: TP=4 FN=12 FP=0 TN=4286; Acc 0.997 P 1.000 R 0.250 F1 0.400
+Cls WITHOUT_CLASSIFICATION: TP=4286 FN=0 FP=12 TN=4; Acc 0.997 P 0.997 R 1.000 F1 0.999
+Accuracy/micro-averaged F1: 0.99721
+Macro-averaged F1: 0.69930

@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Mon Jul 20 19:40:18 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.train varies between 2 and 54
+done [4.1s, 22589 items].
+numDatums: 22589
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=22518.0, IMPLEMENTATION=71.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 89350 [CLASS, 1-#-: , 1-#-Also, 1-#-cho, 1-#E-or, ...]
+.......................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.test ... done [1.2s, 7705 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7705 examples in test set
+Cls IMPLEMENTATION: TP=10 FN=12 FP=7 TN=7676; Acc 0.998 P 0.588 R 0.455 F1 0.513
+Cls WITHOUT_CLASSIFICATION: TP=7676 FN=7 FP=12 TN=10; Acc 0.998 P 0.998 R 0.999 F1 0.999
+Accuracy/micro-averaged F1: 0.99753
+Macro-averaged F1: 0.75579

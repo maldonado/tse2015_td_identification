@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 21:50:37 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/classified_seq.train varies between 2 and 23
+done [2.7s, 8690 items].
+numDatums: 8690
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=8039.0, IMPLEMENTATION=651.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 51867 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
+..........................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/1/classified_seq.test varies between 2 and 93
+done [1.6s, 7079 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7079 examples in test set
+Cls IMPLEMENTATION: TP=117 FN=33 FP=17 TN=6912; Acc 0.993 P 0.873 R 0.780 F1 0.824
+Cls WITHOUT_CLASSIFICATION: TP=6912 FN=17 FP=33 TN=117; Acc 0.993 P 0.995 R 0.998 F1 0.996
+Accuracy/micro-averaged F1: 0.99294
+Macro-averaged F1: 0.91017

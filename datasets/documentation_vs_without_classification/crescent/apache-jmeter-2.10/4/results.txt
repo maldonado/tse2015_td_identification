@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:14:48 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.train varies between 2 and 93
+done [4.1s, 19985 items].
+numDatums: 19985
+numDatumsPerLabel: {DOCUMENTATION=21.0, WITHOUT_CLASSIFICATION=19964.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
+numFeatures (Phi(X) types): 109183 [CLASS, 1-#-er:, 1-#-e op, 1-#-/, 1-#-ze, ...]
+.........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/apache-jmeter-2.10/4/classified_seq.test ... done [1.2s, 7686 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7686 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7683 FN=0 FP=3 TN=0; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Cls DOCUMENTATION: TP=0 FN=3 FP=0 TN=7683; Acc 1.000 P 1.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.99961
+Macro-averaged F1: 0.49990

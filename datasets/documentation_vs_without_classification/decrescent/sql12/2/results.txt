@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 22:19:44 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/classified_seq.train varies between 2 and 51
+done [3.1s, 14349 items].
+numDatums: 14349
+numDatumsPerLabel: {DOCUMENTATION=46.0, WITHOUT_CLASSIFICATION=14303.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
+numFeatures (Phi(X) types): 68767 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
+....................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/2/classified_seq.test varies between 2 and 93
+done [1.5s, 6931 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+6931 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6928 FN=1 FP=1 TN=1; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Cls DOCUMENTATION: TP=1 FN=1 FP=1 TN=6928; Acc 1.000 P 0.500 R 0.500 F1 0.500
+Accuracy/micro-averaged F1: 0.99971
+Macro-averaged F1: 0.74993

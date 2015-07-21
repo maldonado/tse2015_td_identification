@@ -1,0 +1,502 @@
+LinearClassifier [printing top 500 features]
+(CLASS,WITHOUT_CLASSIFICATION)        0.8984
+(1-#-/,WITHOUT_CLASSIFICATION)        0.8984
+(1-#B-/,WITHOUT_CLASSIFICATION)       0.8984
+(1-#E-/**,TEST)                       0.7863
+(1-#E-**,TEST)                        0.7775
+(1-#E-/*,WITHOUT_CLASSIFICATION)      0.7248
+(1-#B-/**,TEST)                       0.6964
+(1-#-/**,TEST)                        0.6957
+(1-#B-//,WITHOUT_CLASSIFICATION)      0.6932
+(1-#-//,WITHOUT_CLASSIFICATION)       0.6931
+(1-#-**,TEST)                         0.6846
+(1-#- ,WITHOUT_CLASSIFICATION)        0.5000
+(1-Len-0-10,WITHOUT_CLASSIFICATION)   0.4754
+(1-#- tes,TEST)                       0.4049
+(1-#-test,TEST)                       0.3929
+(1-#-est,TEST)                        0.3894
+(1-#- te,TEST)                        0.3697
+(1-Len-11-20,WITHOUT_CLASSIFICATION)  0.3679
+(1-#-tes,TEST)                        0.3671
+(1-#E-/,WITHOUT_CLASSIFICATION)       0.3417
+(1-#-c,WITHOUT_CLASSIFICATION)        0.2839
+(1-#B-// ,WITHOUT_CLASSIFICATION)     0.2566
+(1-#-e,WITHOUT_CLASSIFICATION)        0.2507
+(1-#-/ ,WITHOUT_CLASSIFICATION)       0.2384
+(1-#-// ,WITHOUT_CLASSIFICATION)      0.2383
+(1-#-*/,WITHOUT_CLASSIFICATION)       0.2363
+(1-#E-*/,WITHOUT_CLASSIFICATION)      0.2355
+(1-#-/*,WITHOUT_CLASSIFICATION)       0.2057
+(1-#B-/*,WITHOUT_CLASSIFICATION)      0.2050
+(1-#-n,WITHOUT_CLASSIFICATION)        0.2000
+(1-#-*,WITHOUT_CLASSIFICATION)        0.1990
+(1-#-t,WITHOUT_CLASSIFICATION)        0.1935
+(1-#-est ,TEST)                       0.1915
+(1-#-st,TEST)                         0.1911
+(1-#-es,TEST)                         0.1904
+(1-#-an a,TEST)                       0.1854
+(1-#- N,TEST)                         0.1851
+(1-#-e t,WITHOUT_CLASSIFICATION)      0.1802
+(1-#-d,WITHOUT_CLASSIFICATION)        0.1801
+(1-#-pl,TEST)                         0.1792
+(1-#-d is,TEST)                       0.1773
+(1-#-l,WITHOUT_CLASSIFICATION)        0.1761
+(1-#- h,TEST)                         0.1749
+(1-#-A,WITHOUT_CLASSIFICATION)        0.1747
+(1-#-sser,TEST)                       0.1733
+(1-#-O,TEST)                          0.1700
+(1-#-her,TEST)                        0.1661
+(1-#-a,WITHOUT_CLASSIFICATION)        0.1627
+(1-#-ODO,TEST)                        0.1623
+(1-#-TOD,TEST)                        0.1623
+(1-#-TODO,TEST)                       0.1623
+(1-#-DO,TEST)                         0.1604
+(1-#-sert,TEST)                       0.1602
+(1-#-here,TEST)                       0.1590
+(1-#-rt ,TEST)                        0.1590
+(1-#-ODO ,TEST)                       0.1589
+(1-#- TOD,TEST)                       0.1581
+(1-#-u,WITHOUT_CLASSIFICATION)        0.1575
+(1-#-OD,TEST)                         0.1561
+(1-#-rt,TEST)                         0.1546
+(1-#-N,TEST)                          0.1529
+(1-#-/ te,WITHOUT_CLASSIFICATION)     0.1526
+(1-#-DO ,TEST)                        0.1511
+(1-#- TO,TEST)                        0.1511
+(1-#- an ,TEST)                       0.1509
+(1-#-n as,TEST)                       0.1493
+(1-#-/ TO,TEST)                       0.1485
+(1-#-eed,TEST)                        0.1480
+(1-#-ert,TEST)                        0.1471
+(1-#-TO,TEST)                         0.1450
+(1-#-ert ,TEST)                       0.1417
+(1-#-sse,TEST)                        0.1416
+(1-#-asse,TEST)                       0.1406
+(1-#- Nee,TEST)                       0.1405
+(1-#-Need,TEST)                       0.1400
+(1-#-Nee,TEST)                        0.1400
+(1-#-O ,TEST)                         0.1392
+(1-#-n a,TEST)                        0.1392
+(1-#-d be,TEST)                       0.1377
+(1-#-at,WITHOUT_CLASSIFICATION)       0.1363
+(1-#-d b,TEST)                        0.1349
+(1-#-r,WITHOUT_CLASSIFICATION)        0.1349
+(1-#- Ne,TEST)                        0.1336
+(1-#- is ,TEST)                       0.1322
+(1-#- her,TEST)                       0.1322
+(1-#-t ,TEST)                         0.1317
+(1-#-eed ,TEST)                       0.1316
+(1-#-?,TEST)                          0.1315
+(1-#-i,WITHOUT_CLASSIFICATION)        0.1313
+(1-#-la,WITHOUT_CLASSIFICATION)       0.1304
+(1-#-Ne,TEST)                         0.1302
+(1-#-ns,WITHOUT_CLASSIFICATION)       0.1299
+(1-#-ere,TEST)                        0.1287
+(1-#-t f,TEST)                        0.1278
+(1-#-an ,TEST)                        0.1276
+(1-#-ed b,TEST)                       0.1254
+(1-#-O ma,TEST)                       0.1251
+(1-#-/ th,TEST)                       0.1250
+(1-#-rt h,TEST)                       0.1249
+(1-#-nt,WITHOUT_CLASSIFICATION)       0.1233
+(1-#E-},WITHOUT_CLASSIFICATION)       0.1230
+(1-#-a ,WITHOUT_CLASSIFICATION)       0.1230
+(1-#-//},WITHOUT_CLASSIFICATION)      0.1230
+(1-#-/},WITHOUT_CLASSIFICATION)       0.1230
+(1-#B-//},WITHOUT_CLASSIFICATION)     0.1230
+(1-#-bett,TEST)                       0.1230
+(1-#-: ,TEST)                         0.1223
+(1-#-d i,TEST)                        0.1218
+(1-#- is,TEST)                        0.1217
+(1-#B-// T,TEST)                      0.1215
+(1-#-}}},WITHOUT_CLASSIFICATION)      0.1213
+(1-#-/}},WITHOUT_CLASSIFICATION)      0.1213
+(1-#-//}},WITHOUT_CLASSIFICATION)     0.1213
+(1-#-/}}},WITHOUT_CLASSIFICATION)     0.1213
+(1-#-}},WITHOUT_CLASSIFICATION)       0.1213
+(1-#B-//}},WITHOUT_CLASSIFICATION)    0.1212
+(1-#-/* ,WITHOUT_CLASSIFICATION)      0.1212
+(1-#B-/* ,WITHOUT_CLASSIFICATION)     0.1212
+(1-Len-21-30,WITHOUT_CLASSIFICATION)  0.1212
+(1-#E-}}},WITHOUT_CLASSIFICATION)     0.1209
+(1-#E-}},WITHOUT_CLASSIFICATION)      0.1209
+(1-#E-/}}},WITHOUT_CLASSIFICATION)    0.1209
+(1-#- ass,TEST)                       0.1206
+(1-#-k,TEST)                          0.1201
+(1-#-ee,TEST)                         0.1201
+(1-#-te,TEST)                         0.1197
+(1-#-s,WITHOUT_CLASSIFICATION)        0.1187
+(1-#-ri,WITHOUT_CLASSIFICATION)       0.1183
+(1-#- bet,TEST)                       0.1179
+(1-#-e h,TEST)                        0.1179
+(1-#- m,TEST)                         0.1176
+(1-#-er,TEST)                         0.1173
+(1-#-ke a,TEST)                       0.1171
+(1-#- s,WITHOUT_CLASSIFICATION)       0.1167
+(1-#-bet,TEST)                        0.1167
+(1-#- he,TEST)                        0.1156
+(1-#-ss,TEST)                         0.1149
+(1-#-DO m,TEST)                       0.1148
+(1-#-O m,TEST)                        0.1148
+(1-#-r Wi,TEST)                       0.1143
+(1-#-T te,TEST)                       0.1143
+(1-#-or W,TEST)                       0.1143
+(1-#-r W,TEST)                        0.1143
+(1-#-OT t,TEST)                       0.1143
+(1-#-T t,TEST)                        0.1142
+(1-#-ie,TEST)                         0.1140
+(1-#E-sted,TEST)                      0.1139
+(1-#-},WITHOUT_CLASSIFICATION)        0.1131
+(1-#-is N,TEST)                       0.1130
+(1-#-ec,WITHOUT_CLASSIFICATION)       0.1130
+(1-#-s NO,TEST)                       0.1126
+(1-#-e an,TEST)                       0.1110
+(1-#-ette,TEST)                       0.1106
+(1-#E-here,TEST)                      0.1102
+(1-#E-ere,TEST)                       0.1102
+(1-#-ot f,TEST)                       0.1096
+(1-#-/ FI,TEST)                       0.1090
+(1-#-s N,TEST)                        0.1088
+(1-#-@,TEST)                          0.1084
+(1-#- le,TEST)                        0.1083
+(1-#- T,TEST)                         0.1081
+(1-#- n,WITHOUT_CLASSIFICATION)       0.1079
+(1-#-ser,TEST)                        0.1065
+(1-#E-//,WITHOUT_CLASSIFICATION)      0.1060
+(1-#-m,TEST)                          0.1060
+(1-#-:,TEST)                          0.1053
+(1-#-st ,TEST)                        0.1051
+(1-#E-re,TEST)                        0.1050
+(1-#-NOT ,TEST)                       0.1049
+(1-#-OT ,TEST)                        0.1047
+(1-#- FI,TEST)                        0.1046
+(1-#-lot ,TEST)                       0.1044
+(1-#-**/,WITHOUT_CLASSIFICATION)      0.1042
+(1-#E-ted,TEST)                       0.1039
+(1-#-e th,WITHOUT_CLASSIFICATION)     0.1037
+(1-#E-**/,WITHOUT_CLASSIFICATION)     0.1036
+(1-#-/**/,WITHOUT_CLASSIFICATION)     0.1036
+(1-#E-/**/,WITHOUT_CLASSIFICATION)    0.1036
+(1-#B-/**/,WITHOUT_CLASSIFICATION)    0.1036
+(1-#-s f,TEST)                        0.1036
+(1-#-e pl,TEST)                       0.1028
+(1-#- an,TEST)                        0.1026
+(1-#- plo,TEST)                       0.1022
+(1-#-e re,TEST)                       0.1017
+(1-#-/ Ne,TEST)                       0.1017
+(1-#-o,WITHOUT_CLASSIFICATION)        0.1013
+(1-#-plot,TEST)                       0.1012
+(1-#-FI,TEST)                         0.1008
+(1-#-plo,TEST)                        0.1008
+(1-#-ler,TEST)                        0.1003
+(1-#-s ,TEST)                         0.0999
+(1-#-lot,TEST)                        0.0998
+(1-#-e p,TEST)                        0.0995
+(1-#E-dows,TEST)                      0.0991
+(1-#-e //,TEST)                       0.0990
+(1-#-ch,WITHOUT_CLASSIFICATION)       0.0988
+(1-#-e /,TEST)                        0.0987
+(1-#-e ha,TEST)                       0.0987
+(1-#-este,TEST)                       0.0985
+(1-#E-ows,TEST)                       0.0985
+(1-#-DO: ,TEST)                       0.0985
+(1-#E-ws,TEST)                        0.0984
+(1-#- NOT,TEST)                       0.0984
+(1-#-ld i,TEST)                       0.0979
+(1-#-O: ,TEST)                        0.0978
+(1-#-et,TEST)                         0.0976
+(1-#-t he,TEST)                       0.0975
+(1-#-t fi,TEST)                       0.0970
+(1-#-NOT,TEST)                        0.0969
+(1-#-ot ,TEST)                        0.0968
+(1-#-XM,TEST)                         0.0968
+(1-#-ake ,TEST)                       0.0968
+(1-#-sted,TEST)                       0.0963
+(1-#-ett,TEST)                        0.0963
+(1-#-t h,TEST)                        0.0962
+(1-#-S,WITHOUT_CLASSIFICATION)        0.0959
+(1-#-st i,TEST)                       0.0953
+(1-#-OT,TEST)                         0.0951
+(1-#-ass,TEST)                        0.0948
+(1-#-IXM,TEST)                        0.0941
+(1-#-XME,TEST)                        0.0941
+(1-#-FIXM,TEST)                       0.0941
+(1-#-IXME,TEST)                       0.0941
+(1-#-s fo,TEST)                       0.0935
+(1-#-1,WITHOUT_CLASSIFICATION)        0.0934
+(1-#-, //,TEST)                       0.0932
+(1-#-, /,TEST)                        0.0932
+(1-#-* ,WITHOUT_CLASSIFICATION)       0.0930
+(1-#-eld ,TEST)                       0.0926
+(1-#-C,WITHOUT_CLASSIFICATION)        0.0921
+(1-#-or ,TEST)                        0.0917
+(1-#-tr,WITHOUT_CLASSIFICATION)       0.0914
+(1-#-ake,TEST)                        0.0913
+(1-#- mis,TEST)                       0.0912
+(1-#- be,TEST)                        0.0909
+(1-#-ti,WITHOUT_CLASSIFICATION)       0.0905
+(1-#-L,WITHOUT_CLASSIFICATION)        0.0905
+(1-#-T,TEST)                          0.0899
+(1-#-y t,TEST)                        0.0899
+(1-#-// F,TEST)                       0.0896
+(1-#- Win,TEST)                       0.0893
+(1-#-e f,WITHOUT_CLASSIFICATION)      0.0893
+(1-#- FIX,TEST)                       0.0893
+(1-#-er t,TEST)                       0.0891
+(1-#- a ,WITHOUT_CLASSIFICATION)      0.0888
+(1-#E-ed,TEST)                        0.0887
+(1-#-ter ,TEST)                       0.0887
+(1-#- Wi,TEST)                        0.0884
+(1-#-s d,TEST)                        0.0883
+(1-#-e r,TEST)                        0.0883
+(1-#-he p,TEST)                       0.0882
+(1-#-FIX,TEST)                        0.0881
+(1-#- lo,WITHOUT_CLASSIFICATION)      0.0876
+(1-#-/ F,TEST)                        0.0873
+(1-#-do,TEST)                         0.0872
+(1-#-s a,WITHOUT_CLASSIFICATION)      0.0870
+(1-#-e a,TEST)                        0.0868
+(1-#-T ,TEST)                         0.0864
+(1-#-ue i,TEST)                       0.0864
+(1-#-ta,WITHOUT_CLASSIFICATION)       0.0863
+(1-#-O: t,TEST)                       0.0861
+(1-#-ap ,TEST)                        0.0861
+(1-#-e s,WITHOUT_CLASSIFICATION)      0.0860
+(1-#- pl,TEST)                        0.0859
+(1-#-E mi,TEST)                       0.0857
+(1-#-ME m,TEST)                       0.0857
+(1-#- F,TEST)                         0.0857
+(1-#-E m,TEST)                        0.0857
+(1-#E-year,TEST)                      0.0856
+(1-#E-ear,TEST)                       0.0855
+(1-#-. ,TEST)                         0.0855
+(1-#-IX,TEST)                         0.0853
+(1-#-p y,TEST)                        0.0853
+(1-#-ap y,TEST)                       0.0853
+(1-#-p ye,TEST)                       0.0853
+(1-#-leap,TEST)                       0.0853
+(1-#-g fu,TEST)                       0.0852
+(1-#-he r,TEST)                       0.0852
+(1-#-Wind,TEST)                       0.0850
+(1-#-Win,TEST)                        0.0850
+(1-#-mpl,TEST)                        0.0849
+(1-#-r le,TEST)                       0.0847
+(1-#-Is g,TEST)                       0.0845
+(1-#-ok? ,TEST)                       0.0845
+(1-#-h 1.,TEST)                       0.0845
+(1-#-?  t,TEST)                       0.0845
+(1-#-) ok,TEST)                       0.0845
+(1-#-k?  ,TEST)                       0.0844
+(1-#-k? ,TEST)                        0.0844
+(1-#E-1.1,TEST)                       0.0843
+(1-#E- 1.1,TEST)                      0.0843
+(1-#E-.1,TEST)                        0.0843
+(1-#-?  ,TEST)                        0.0842
+(1-#- yea,TEST)                       0.0839
+(1-#-t wi,TEST)                       0.0839
+(1-#-year,TEST)                       0.0839
+(1-#-yea,TEST)                        0.0839
+(1-#- ok?,TEST)                       0.0839
+(1-#-ok?,TEST)                        0.0839
+(1-#-dows,TEST)                       0.0835
+(1-#-k?,TEST)                         0.0835
+(1-#-s ge,TEST)                       0.0828
+(1-#-ts,WITHOUT_CLASSIFICATION)       0.0828
+(1-#-() o,TEST)                       0.0828
+(1-#-XME ,TEST)                       0.0827
+(1-#- g,TEST)                         0.0827
+(1-#-eap ,TEST)                       0.0827
+(1-#-e te,WITHOUT_CLASSIFICATION)     0.0824
+(1-#- fie,TEST)                       0.0823
+(1-#- 1.1,TEST)                       0.0823
+(1-#-/ Is,TEST)                       0.0823
+(1-#-eap,TEST)                        0.0822
+(1-#-thin,TEST)                       0.0821
+(1-#-1.1,TEST)                        0.0821
+(1-#-t su,TEST)                       0.0820
+(1-#-ak,TEST)                         0.0818
+(1-#-Wi,TEST)                         0.0817
+(1-#- S,WITHOUT_CLASSIFICATION)       0.0816
+(1-#-) o,TEST)                        0.0815
+(1-#--,WITHOUT_CLASSIFICATION)        0.0814
+(1-#-mis,TEST)                        0.0812
+(1-#- ful,TEST)                       0.0812
+(1-#- ok,TEST)                        0.0812
+(1-#-.1,TEST)                         0.0812
+(1-#-t if,TEST)                       0.0809
+(1-#-is i,TEST)                       0.0803
+(1-#- imp,TEST)                       0.0803
+(1-#-P,WITHOUT_CLASSIFICATION)        0.0801
+(1-#-ten,TEST)                        0.0801
+(1-#-n w,TEST)                        0.0798
+(1-#E-ar,TEST)                        0.0798
+(1-#-ts f,TEST)                       0.0795
+(1-#- mi,TEST)                        0.0791
+(1-#-h 1,TEST)                        0.0791
+(1-#-th 1,TEST)                       0.0791
+(1-#-hing,TEST)                       0.0789
+(1-#-t.,TEST)                         0.0788
+(1-#-no,WITHOUT_CLASSIFICATION)       0.0787
+(1-#-fiel,TEST)                       0.0784
+(1-#-s s,WITHOUT_CLASSIFICATION)      0.0784
+(1-#-H,WITHOUT_CLASSIFICATION)        0.0783
+(1-#-full,TEST)                       0.0782
+(1-#-nd ,WITHOUT_CLASSIFICATION)      0.0782
+(1-#-n t,WITHOUT_CLASSIFICATION)      0.0778
+(1-#-ra,WITHOUT_CLASSIFICATION)       0.0778
+(1-#- lea,TEST)                       0.0777
+(1-#-he,TEST)                         0.0775
+(1-#- sur,TEST)                       0.0775
+(1-#-bo,TEST)                         0.0774
+(1-#-// T,TEST)                       0.0771
+(1-#-/ T,TEST)                        0.0771
+(1-#-lea,TEST)                        0.0769
+(1-#-etNa,TEST)                       0.0769
+(1-#-s l,TEST)                        0.0768
+(1-#-? ,TEST)                         0.0766
+(1-#-ue,TEST)                         0.0762
+(1-#-ame(,TEST)                       0.0762
+(1-#-getN,TEST)                       0.0760
+(1-#- Is ,TEST)                       0.0760
+(1-#- Is,TEST)                        0.0760
+(1-#E-1,TEST)                         0.0760
+(1-#-ons,WITHOUT_CLASSIFICATION)      0.0760
+(1-#-  te,TEST)                       0.0760
+(1-#- */,WITHOUT_CLASSIFICATION)      0.0759
+(1-#E- */,WITHOUT_CLASSIFICATION)     0.0758
+(1-#- e,WITHOUT_CLASSIFICATION)       0.0758
+(1-#-ke,TEST)                         0.0757
+(1-#-ful,TEST)                        0.0756
+(1-#-s g,TEST)                        0.0755
+(1-#-etN,TEST)                        0.0755
+(1-#-ke ,TEST)                        0.0755
+(1-#-DO:,TEST)                        0.0754
+(1-#-ODO:,TEST)                       0.0754
+(1-#-die,TEST)                        0.0754
+(1-#-impl,TEST)                       0.0754
+(1-#-R,WITHOUT_CLASSIFICATION)        0.0754
+(1-#-Is ,TEST)                        0.0753
+(1-#-mp,TEST)                         0.0752
+(1-#-ga,TEST)                         0.0749
+(1-#-O:,TEST)                         0.0747
+(1-#-tNam,TEST)                       0.0746
+(1-#-tNa,TEST)                        0.0746
+(1-#- f,TEST)                         0.0746
+(1-#-Is,TEST)                         0.0746
+(1-#-t th,TEST)                       0.0745
+(1-#-h ,TEST)                         0.0744
+(1-#-me(),TEST)                       0.0744
+(1-#-tter,TEST)                       0.0741
+(1-#-D,TEST)                          0.0741
+(1-#-me(,TEST)                        0.0740
+(1-#-issi,TEST)                       0.0738
+(1-#- t,TEST)                         0.0737
+(1-#-miss,TEST)                       0.0736
+(1-#-ler ,TEST)                       0.0735
+(1-#- fu,TEST)                        0.0727
+(1-#-  ,TEST)                         0.0726
+(1-#-nc,WITHOUT_CLASSIFICATION)       0.0726
+(1-#-iel,TEST)                        0.0725
+(1-#-ield,TEST)                       0.0725
+(1-#- se,WITHOUT_CLASSIFICATION)      0.0725
+(1-#E-O,WITHOUT_CLASSIFICATION)       0.0724
+(1-#-ows,TEST)                        0.0723
+(1-#-ON,WITHOUT_CLASSIFICATION)       0.0722
+(1-#-eld,TEST)                        0.0721
+(1-#-rue,TEST)                        0.0720
+(1-#-s do,TEST)                       0.0719
+(1-#E-TODO,WITHOUT_CLASSIFICATION)    0.0719
+(1-#E-DO,WITHOUT_CLASSIFICATION)      0.0719
+(1-#E-ODO,WITHOUT_CLASSIFICATION)     0.0719
+(1-#-ybo,TEST)                        0.0719
+(1-#-iss,TEST)                        0.0718
+(1-#-s th,WITHOUT_CLASSIFICATION)     0.0717
+(1-#-d.,TEST)                         0.0713
+(1-#- it.,TEST)                       0.0712
+(1-#-ws,TEST)                         0.0712
+(1-#- NO,TEST)                        0.0710
+(1-#-hin,TEST)                        0.0709
+(1-#-us,WITHOUT_CLASSIFICATION)       0.0707
+(1-#-yb,TEST)                         0.0706
+(1-#-ssin,TEST)                       0.0704
+(1-#- i,WITHOUT_CLASSIFICATION)       0.0704
+(1-#-sur,TEST)                        0.0703
+(1-#-tN,TEST)                         0.0702
+(1-#-e is,TEST)                       0.0700
+(1-#-make,TEST)                       0.0699
+(1-#-sing,TEST)                       0.0698
+(1-#- mak,TEST)                       0.0696
+(1-#-or l,TEST)                       0.0695
+(1-#-p ,TEST)                         0.0694
+(1-#-is ,TEST)                        0.0692
+(1-#-ok,TEST)                         0.0690
+(1-#-mak,TEST)                        0.0689
+(1-#-it.,TEST)                        0.0688
+(1-#- ye,TEST)                        0.0688
+(1-#- in,WITHOUT_CLASSIFICATION)      0.0686
+(1-#-fie,TEST)                        0.0685
+(1-#-imp,TEST)                        0.0685
+(1-#- A,WITHOUT_CLASSIFICATION)       0.0685
+(1-#-  t,TEST)                        0.0685
+(1-#- the,WITHOUT_CLASSIFICATION)     0.0684
+(1-#-t s,TEST)                        0.0684
+(1-#-ho,TEST)                         0.0682
+(1-#-tte,TEST)                        0.0682
+(1-#E-est,TEST)                       0.0682
+(1-#-ou,WITHOUT_CLASSIFICATION)       0.0681
+(1-#-ith ,TEST)                       0.0681
+(1-#-the,WITHOUT_CLASSIFICATION)      0.0677
+(1-#-X,TEST)                          0.0675
+(1-#-ty,WITHOUT_CLASSIFICATION)       0.0675
+(1-#- as,TEST)                        0.0673
+(1-#-sa,WITHOUT_CLASSIFICATION)       0.0672
+(1-#- *,WITHOUT_CLASSIFICATION)       0.0671
+(1-#E-gal.,TEST)                      0.0669
+(1-#-gal.,TEST)                       0.0669
+(1-#-fu,TEST)                         0.0667
+(1-#E-al.,TEST)                       0.0667
+(1-Len-31-Inf,TEST)                   0.0665
+(1-#-rt o,TEST)                       0.0665
+(1-#-rrog,TEST)                       0.0664
+(1-#-roga,TEST)                       0.0664
+(1-#-ogat,TEST)                       0.0664
+(1-#-oga,TEST)                        0.0664
+(1-#-st f,TEST)                       0.0662
+(1-#-surr,TEST)                       0.0662
+(1-#-oh w,TEST)                       0.0661
+(1-#-gone,TEST)                       0.0661
+(1-#-3 go,TEST)                       0.0661
+(1-#-e oh,TEST)                       0.0661
+(1-#- 3 g,TEST)                       0.0661
+(1-#- gon,TEST)                       0.0661
+(1-#-3 g,TEST)                        0.0661
+(1-#E-one?,TEST)                      0.0661
+(1-#-oh ,TEST)                        0.0661
+(1-#- oh ,TEST)                       0.0661
+(1-#- oh,TEST)                        0.0660
+(1-#-urro,TEST)                       0.0660
+(1-#E-ne?,TEST)                       0.0660
+(1-#-h wh,TEST)                       0.0660
+(1-#-ye,TEST)                         0.0659
+(1-#-oh,TEST)                         0.0659
+(1-#-/whe,TEST)                       0.0658
+(1-#-e 3 ,TEST)                       0.0658
+(1-#-te v,TEST)                       0.0657
+(1-#-gon,TEST)                        0.0657
+(1-#-ent ,TEST)                       0.0656
+(1-#-my t,TEST)                       0.0656
+(1-#-se 3,TEST)                       0.0655
+(1-#- my ,TEST)                       0.0655
+(1-#-e by,TEST)                       0.0654
+(1-#-: te,TEST)                       0.0654
+(1-#B-//wh,TEST)                      0.0652
+(1-#-//wh,TEST)                       0.0652
+(1-#-/wh,TEST)                        0.0651
+(1-#-re t,WITHOUT_CLASSIFICATION)     0.0647
+(1-#-hor,TEST)                        0.0646
+(1-#-as m,TEST)                       0.0646
+(1-#-ad,WITHOUT_CLASSIFICATION)       0.0645
+(1-#-one?,TEST)                       0.0644
+(1-#-eal ,TEST)                       0.0644
+(1-#-t 1,WITHOUT_CLASSIFICATION)      0.0644
+

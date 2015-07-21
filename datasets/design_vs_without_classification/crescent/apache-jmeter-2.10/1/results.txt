@@ -1,0 +1,37 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:24:56 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/classified_seq.train ... done [1.5s, 4364 items].
+numDatums: 4364
+numDatumsPerLabel: {DESIGN=78.0, WITHOUT_CLASSIFICATION=4286.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 38583 [CLASS, 1-#-io, 1-#-tri, 1-#-uti, 1-#-., ...]
+....................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/apache-jmeter-2.10/1/classified_seq.test ... done [1.4s, 7999 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7999 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7671 FN=12 FP=191 TN=125; Acc 0.975 P 0.976 R 0.998 F1 0.987
+Cls DESIGN: TP=125 FN=191 FP=12 TN=7671; Acc 0.975 P 0.912 R 0.396 F1 0.552
+Accuracy/micro-averaged F1: 0.97462
+Macro-averaged F1: 0.76941

@@ -4,6 +4,7 @@ import os
 import sys
 import psycopg2
 import subprocess
+from subprocess import Popen, PIPE
 
 password = sys.argv[1]
 
@@ -40,6 +41,13 @@ def write_classifier_file(file_name, result):
     with open (file_name,'a') as classified_seq:
         for line in result:
             classified_seq.write("{0}\t{1}\n".format(line[0], line[1].replace('\n','').replace('\r\n', '').replace('\r', '')))
+        classified_seq.close()
+
+def write_output_file(file_name, output):
+    with open (file_name,'a') as classified_seq:
+        for line in output:
+            classified_seq.write(line)
+        classified_seq.close()
 
 def write_classifier_properties_file(path):
     f = open(path + "/dataset.prop", "wb")
@@ -54,15 +62,16 @@ def write_classifier_properties_file(path):
     f.write("1.binnedLengths=10,20,30\n")
     f.write("#\n")
     f.write("# Printing\n")
-    f.write("#\n")
-    f.write("# printClassifier=HighWeight\n")
-    f.write("printClassifierParam=200\n")
-    f.write("printTo="+path+"/output.txt\n")
+    f.write("#\n") 
+    f.write("printClassifier=HighWeight\n")
+    f.write("printClassifierParam=500\n")
+    f.write("displayAllAnswers=true\n")
+    f.write("printTo="+path+"/top_features.txt\n")
     f.write("#\n")
     f.write("# Mapping\n")
     f.write("#\n")
     f.write("goldAnswerColumn=0\n")
-    f.write("displayedColumn=-1\n")
+    f.write("displayedColumn=1\n")
     f.write("#\n")
     f.write("# Optimization\n")
     f.write("#\n")
@@ -84,6 +93,7 @@ try:
     # connect to the database 
     connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= password)
     cursor = connection.cursor()
+
 
     # Choose execution options
     print 'Choose execution mode: \n [1] - All types \n [2] - Defect vs Without classification \n [3] - Design vs Without classification \n [4] - Documentation vs Without classification \n [5] - Implementation vs Without classification \n [6] - Test vs Without classification'
@@ -130,13 +140,18 @@ try:
         # copy files from the root folder to the right one
         subprocess.call(["cp", "classified_seq.train", path_to_store_data])
         subprocess.call(["cp", "classified_seq.test", path_to_store_data])
-        write_classifier_properties_file(path_to_store_data)
-        subprocess.call(["java", "-jar", "stanford-classifier.jar", "-prop", path_to_store_data + "/dataset.prop"])
-
-    # remove the train and the test files from the root folder
+        write_classifier_properties_file(path_to_store_data) 
+        # output = subprocess.check_output(["java -jar stanford-classifier.jar -prop "+path_to_store_data+"/dataset.prop"], stderr=subprocess.STDOUT, shell=True)
+        print "Analysis started for " + project
+        output = subprocess.Popen(["java -jar stanford-classifier.jar -prop "+path_to_store_data+"/dataset.prop"], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+        print "Analysis finished"
+        write_output_file(path_to_store_data+"/output.txt",  output[0])
+        write_output_file(path_to_store_data+"/results.txt", output[1])
+        
     subprocess.call(["rm", "classified_seq.train"])
     subprocess.call(["rm", "classified_seq.test"])
     subprocess.call(["rm", "stanford-classifier.jar"])
 
 except Exception, e:
+    print e
     raise e

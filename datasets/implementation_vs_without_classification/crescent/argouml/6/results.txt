@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 19:42:38 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/classified_seq.train varies between 2 and 54
+done [5.7s, 32854 items].
+numDatums: 32854
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=32697.0, IMPLEMENTATION=157.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 113307 [CLASS, 1-#-: , 1-#-Also, 1-#-cho, 1-#E-or, ...]
+...........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/argouml/6/classified_seq.test varies between 2 and 23
+done [2.1s, 8690 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+8690 examples in test set
+Cls IMPLEMENTATION: TP=502 FN=149 FP=155 TN=7884; Acc 0.965 P 0.764 R 0.771 F1 0.768
+Cls WITHOUT_CLASSIFICATION: TP=7884 FN=155 FP=149 TN=502; Acc 0.965 P 0.981 R 0.981 F1 0.981
+Accuracy/micro-averaged F1: 0.96502
+Macro-averaged F1: 0.87433

@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:45:27 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/classified_seq.train varies between 2 and 54
+done [4.7s, 29461 items].
+numDatums: 29461
+numDatumsPerLabel: {DESIGN=679.0, WITHOUT_CLASSIFICATION=28782.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 104880 [CLASS, 1-#-io, 1-#-tri, 1-#-uti, 1-#-., ...]
+...........................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/sql12/5/classified_seq.test varies between 2 and 93
+done [1.6s, 7138 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7138 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6864 FN=65 FP=85 TN=124; Acc 0.979 P 0.988 R 0.991 F1 0.989
+Cls DESIGN: TP=124 FN=85 FP=65 TN=6864; Acc 0.979 P 0.656 R 0.593 F1 0.623
+Accuracy/micro-averaged F1: 0.97899
+Macro-averaged F1: 0.80615

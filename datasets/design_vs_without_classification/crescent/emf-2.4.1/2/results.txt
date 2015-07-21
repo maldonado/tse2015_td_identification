@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:32:42 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/classified_seq.train varies between 2 and 51
+done [2.6s, 10452 items].
+numDatums: 10452
+numDatumsPerLabel: {DESIGN=221.0, WITHOUT_CLASSIFICATION=10231.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 64533 [CLASS, 1-#-*, 1-#E- */, 1-#-tuff, 1-#-en, ...]
+............................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/emf-2.4.1/2/classified_seq.test ... done [0.8s, 4364 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4364 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4273 FN=13 FP=63 TN=15; Acc 0.983 P 0.985 R 0.997 F1 0.991
+Cls DESIGN: TP=15 FN=63 FP=13 TN=4273; Acc 0.983 P 0.536 R 0.192 F1 0.283
+Accuracy/micro-averaged F1: 0.98258
+Macro-averaged F1: 0.63710

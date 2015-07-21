@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:16:03 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/classified_seq.train varies between 2 and 54
+done [0.8s, 2497 items].
+numDatums: 2497
+numDatumsPerLabel: {DOCUMENTATION=1.0, WITHOUT_CLASSIFICATION=2496.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
+numFeatures (Phi(X) types): 33784 [CLASS, 1-#-er:, 1-#-e op, 1-#-/, 1-#-ze, ...]
+.......................
+QNMinimizer terminated due to sufficient decrease in gradient norms: |g|/|g0| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/crescent/columba-1.4-src/1/classified_seq.test varies between 2 and 51
+done [0.8s, 6280 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+6280 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6264 FN=0 FP=16 TN=0; Acc 0.997 P 0.997 R 1.000 F1 0.999
+Cls DOCUMENTATION: TP=0 FN=16 FP=0 TN=6264; Acc 0.997 P 1.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.99745
+Macro-averaged F1: 0.49936

@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 19:50:05 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/classified_seq.train varies between 2 and 54
+done [4.5s, 22774 items].
+numDatums: 22774
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=22631.0, IMPLEMENTATION=143.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 99889 [CLASS, 1-#-pro, 1-#-is s, 1-#-t , 1-#-shou, ...]
+.........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/crescent/jEdit-4.2/5/classified_seq.test varies between 2 and 54
+done [1.0s, 10080 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+10080 examples in test set
+Cls IMPLEMENTATION: TP=2 FN=12 FP=0 TN=10066; Acc 0.999 P 1.000 R 0.143 F1 0.250
+Cls WITHOUT_CLASSIFICATION: TP=10066 FN=0 FP=12 TN=2; Acc 0.999 P 0.999 R 1.000 F1 0.999
+Accuracy/micro-averaged F1: 0.99881
+Macro-averaged F1: 0.62470

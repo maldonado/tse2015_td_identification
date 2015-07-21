@@ -1,0 +1,502 @@
+LinearClassifier [printing top 500 features]
+(1-#B-// h,DESIGN)                     1.4009
+(1-#-?,DESIGN)                         1.3574
+(1-#-hack,DESIGN)                      1.2600
+(1-#-hac,DESIGN)                       1.2600
+(1-#- hac,DESIGN)                      1.2038
+(1-#E-/* ,DESIGN)                      1.1951
+(1-#E-* ,DESIGN)                       1.1893
+(1-#E-ded?,DESIGN)                     1.0940
+(1-#-ded?,DESIGN)                      1.0446
+(1-#-ot u,DESIGN)                      1.0443
+(1-#-uck,DESIGN)                       1.0431
+(1-#-ODO ,DESIGN)                      1.0380
+(1-#-: ,DESIGN)                        1.0082
+(1-#E-*/,WITHOUT_CLASSIFICATION)       1.0010
+(1-#E-//,DESIGN)                       0.9992
+(1-#-DO ,DESIGN)                       0.9683
+(1-#-*/,WITHOUT_CLASSIFICATION)        0.9649
+(1-#B-/,WITHOUT_CLASSIFICATION)        0.8532
+(1-#-/,WITHOUT_CLASSIFICATION)         0.8532
+(CLASS,WITHOUT_CLASSIFICATION)         0.8532
+(1-#E-used,DESIGN)                     0.8411
+(1-#-is h,WITHOUT_CLASSIFICATION)      0.8313
+(1-#B-//,WITHOUT_CLASSIFICATION)       0.8291
+(1-#-//,WITHOUT_CLASSIFICATION)        0.8180
+(1-#- ,WITHOUT_CLASSIFICATION)         0.7906
+(1-#-ck,DESIGN)                        0.7815
+(1-#-O ,DESIGN)                        0.7783
+(1-#-e pu,DESIGN)                      0.7737
+(1-Len-31-Inf,WITHOUT_CLASSIFICATION)  0.7602
+(1-#E-king,DESIGN)                     0.7345
+(1-#E-hat?,WITHOUT_CLASSIFICATION)     0.7144
+(1-#E-at?,WITHOUT_CLASSIFICATION)      0.7144
+(1-#-hat?,WITHOUT_CLASSIFICATION)      0.7142
+(1-#-at?,WITHOUT_CLASSIFICATION)       0.7142
+(1-#-: b,DESIGN)                       0.7121
+(1-#-r: b,DESIGN)                      0.6821
+(1-#-: ba,DESIGN)                      0.6746
+(1-#E-sed,DESIGN)                      0.6739
+(1-#-used,DESIGN)                      0.6734
+(1-#-HA,DESIGN)                        0.6629
+(1-#E-*,DESIGN)                        0.6621
+(1-#-arou,DESIGN)                      0.6613
+(1-#-aro,DESIGN)                       0.6607
+(1-#-s?,DESIGN)                        0.6519
+(1-#B-/* T,WITHOUT_CLASSIFICATION)     0.6440
+(1-#E-ed?,DESIGN)                      0.6270
+(1-#-Hack,DESIGN)                      0.6250
+(1-#- Hac,DESIGN)                      0.6250
+(1-#-Hac,DESIGN)                       0.6250
+(1-#E-w,WITHOUT_CLASSIFICATION)        0.6223
+(1-#-rk a,DESIGN)                      0.6181
+(1-#E-ow,WITHOUT_CLASSIFICATION)       0.6158
+(1-#-karo,DESIGN)                      0.6158
+(1-#-// n,DESIGN)                      0.6140
+(1-#-/ n,DESIGN)                       0.6081
+(1-#-gly,DESIGN)                       0.6074
+(1-#-be s,DESIGN)                      0.6035
+(1-#-O: ,DESIGN)                       0.5977
+(1-#E-DO: ,WITHOUT_CLASSIFICATION)     0.5976
+(1-#E-O: ,WITHOUT_CLASSIFICATION)      0.5976
+(1-#-rka,DESIGN)                       0.5972
+(1-#-orka,DESIGN)                      0.5972
+(1-#-rkar,DESIGN)                      0.5972
+(1-#-/* T,WITHOUT_CLASSIFICATION)      0.5967
+(1-#-kar,DESIGN)                       0.5941
+(1-#-t ch,DESIGN)                      0.5919
+(1-#-is e,WITHOUT_CLASSIFICATION)      0.5902
+(1-#E-ve,DESIGN)                       0.5895
+(1-#-sed,DESIGN)                       0.5841
+(1-#-t us,DESIGN)                      0.5838
+(1-#-gl,DESIGN)                        0.5768
+(1-#-ded ,WITHOUT_CLASSIFICATION)      0.5767
+(1-#-ugl,DESIGN)                       0.5747
+(1-#-ugly,DESIGN)                      0.5739
+(1-#E-eck!,WITHOUT_CLASSIFICATION)     0.5730
+(1-#-eck!,WITHOUT_CLASSIFICATION)      0.5730
+(1-#-is r,DESIGN)                      0.5724
+(1-#-defe,DESIGN)                      0.5701
+(1-#-/ HA,DESIGN)                      0.5683
+(1-#-her,DESIGN)                       0.5660
+(1-#-s ri,DESIGN)                      0.5655
+(1-#-k a,DESIGN)                       0.5628
+(1-#-ack ,DESIGN)                      0.5619
+(1-#-k, j,DESIGN)                      0.5613
+(1-#- HA,DESIGN)                       0.5611
+(1-#- bac,WITHOUT_CLASSIFICATION)      0.5529
+(1-#E-t?,WITHOUT_CLASSIFICATION)       0.5515
+(1-#-od i,DESIGN)                      0.5511
+(1-#-DO: ,DESIGN)                      0.5496
+(1-#E-ase:,DESIGN)                     0.5492
+(1-#-: ch,WITHOUT_CLASSIFICATION)      0.5491
+(1-#E-?,DESIGN)                        0.5485
+(1-#-k ar,DESIGN)                      0.5485
+(1-#E-: ,WITHOUT_CLASSIFICATION)       0.5479
+(1-#-/ ne,DESIGN)                      0.5476
+(1-#-ull?,WITHOUT_CLASSIFICATION)      0.5423
+(1-#-D ,DESIGN)                        0.5418
+(1-#-:,DESIGN)                         0.5414
+(1-#-ant ,DESIGN)                      0.5391
+(1-#-/ a ,DESIGN)                      0.5389
+(1-#-y do,DESIGN)                      0.5364
+(1-#-s re,WITHOUT_CLASSIFICATION)      0.5293
+(1-#-he /,WITHOUT_CLASSIFICATION)      0.5273
+(1-#B-// /,WITHOUT_CLASSIFICATION)     0.5255
+(1-#-r no,DESIGN)                      0.5230
+(1-#-nd h,DESIGN)                      0.5220
+(1-#-ka,DESIGN)                        0.5217
+(1-#-t cl,WITHOUT_CLASSIFICATION)      0.5191
+(1-#-y,DESIGN)                         0.5170
+(1-#-t wo,WITHOUT_CLASSIFICATION)      0.5169
+(1-#-ted ,DESIGN)                      0.5131
+(1-#-his,DESIGN)                       0.5112
+(1-#-se.,WITHOUT_CLASSIFICATION)       0.5109
+(1-#-_,WITHOUT_CLASSIFICATION)         0.5105
+(1-#-uc,DESIGN)                        0.5105
+(1-#- TOD,DESIGN)                      0.5105
+(1-#-tr,WITHOUT_CLASSIFICATION)        0.5080
+(1-#-AC,DESIGN)                        0.5075
+(1-#- ha,DESIGN)                       0.5071
+(1-#- w,DESIGN)                        0.5061
+(1-#-/ ,WITHOUT_CLASSIFICATION)        0.5049
+(1-#-/ un,DESIGN)                      0.5039
+(1-#-TU,DESIGN)                        0.5017
+(1-#-eas,DESIGN)                       0.5011
+(1-#- TO,DESIGN)                       0.5005
+(1-#-vi,WITHOUT_CLASSIFICATION)        0.5004
+(1-#-? ,DESIGN)                        0.5004
+(1-#-// ,WITHOUT_CLASSIFICATION)       0.4992
+(1-#-ME: ,DESIGN)                      0.4981
+(1-#-O,WITHOUT_CLASSIFICATION)         0.4976
+(1-#-/ fu,DESIGN)                      0.4976
+(1-#-XXX ,DESIGN)                      0.4970
+(1-#-XX ,DESIGN)                       0.4970
+(1-#-t cu,DESIGN)                      0.4968
+(1-#-c vi,DESIGN)                      0.4967
+(1-#-ks.,WITHOUT_CLASSIFICATION)       0.4955
+(1-#-e su,WITHOUT_CLASSIFICATION)      0.4948
+(1-#E-ity,DESIGN)                      0.4945
+(1-#-back,WITHOUT_CLASSIFICATION)      0.4937
+(1-#- tes,WITHOUT_CLASSIFICATION)      0.4917
+(1-#-g s,WITHOUT_CLASSIFICATION)       0.4875
+(1-#-t a ,WITHOUT_CLASSIFICATION)      0.4872
+(1-#-s at,DESIGN)                      0.4866
+(1-#-ort ,DESIGN)                      0.4862
+(1-#-HAC,DESIGN)                       0.4855
+(1-#-HACK,DESIGN)                      0.4855
+(1-#-ary,DESIGN)                       0.4841
+(1-#-rt ,DESIGN)                       0.4831
+(1-#-es p,WITHOUT_CLASSIFICATION)      0.4825
+(1-#- ugl,DESIGN)                      0.4818
+(1-#-ic v,DESIGN)                      0.4815
+(1-#-c v,DESIGN)                       0.4815
+(1-#-eck,,DESIGN)                      0.4794
+(1-#- ug,DESIGN)                       0.4788
+(1-#E-se:,DESIGN)                      0.4785
+(1-#-: va,WITHOUT_CLASSIFICATION)      0.4783
+(1-#-ed. ,DESIGN)                      0.4764
+(1-#-re n,WITHOUT_CLASSIFICATION)      0.4761
+(1-#-ACK,DESIGN)                       0.4759
+(1-#-a,WITHOUT_CLASSIFICATION)         0.4739
+(1-#-eck ,WITHOUT_CLASSIFICATION)      0.4703
+(1-#E-0,WITHOUT_CLASSIFICATION)        0.4684
+(1-#-r: /,WITHOUT_CLASSIFICATION)      0.4667
+(1-#-a ch,DESIGN)                      0.4655
+(1-#-k,DESIGN)                         0.4652
+(1-#-k:,DESIGN)                        0.4635
+(1-#- arg,DESIGN)                      0.4635
+(1-#-er o,WITHOUT_CLASSIFICATION)      0.4621
+(1-#-May,DESIGN)                       0.4619
+(1-#-a co,WITHOUT_CLASSIFICATION)      0.4616
+(1-#-ch,WITHOUT_CLASSIFICATION)        0.4611
+(1-#-t?,WITHOUT_CLASSIFICATION)        0.4604
+(1-#-/ TO,DESIGN)                      0.4579
+(1-#-at r,DESIGN)                      0.4578
+(1-#-kin,DESIGN)                       0.4576
+(1-#-ed?,DESIGN)                       0.4573
+(1-#-TODO,DESIGN)                      0.4567
+(1-#-TOD,DESIGN)                       0.4567
+(1-#-ODO,DESIGN)                       0.4567
+(1-#-Not ,DESIGN)                      0.4561
+(1-#-, j,DESIGN)                       0.4558
+(1-#-s pu,WITHOUT_CLASSIFICATION)      0.4555
+(1-#-r o,WITHOUT_CLASSIFICATION)       0.4554
+(1-#-nuse,DESIGN)                      0.4544
+(1-#-s us,WITHOUT_CLASSIFICATION)      0.4543
+(1-#-be r,DESIGN)                      0.4529
+(1-#- T,WITHOUT_CLASSIFICATION)        0.4528
+(1-#-d,DESIGN)                         0.4524
+(1-#-de p,DESIGN)                      0.4516
+(1-#-ecki,DESIGN)                      0.4514
+(1-#-f th,WITHOUT_CLASSIFICATION)      0.4510
+(1-#-/ Wh,DESIGN)                      0.4508
+(1-#-: /,WITHOUT_CLASSIFICATION)       0.4507
+(1-#-se?,DESIGN)                       0.4483
+(1-#-bac,WITHOUT_CLASSIFICATION)       0.4467
+(1-#E- */,WITHOUT_CLASSIFICATION)      0.4462
+(1-#-ase:,DESIGN)                      0.4461
+(1-#-ll s,DESIGN)                      0.4452
+(1-#-wt,DESIGN)                        0.4447
+(1-#- I,DESIGN)                        0.4442
+(1-#-ick!,DESIGN)                      0.4437
+(1-#-: //,WITHOUT_CLASSIFICATION)      0.4436
+(1-#-e we,WITHOUT_CLASSIFICATION)      0.4429
+(1-#-cks.,WITHOUT_CLASSIFICATION)      0.4426
+(1-#-/ ba,WITHOUT_CLASSIFICATION)      0.4419
+(1-#-d we,DESIGN)                      0.4412
+(1-#E-se,WITHOUT_CLASSIFICATION)       0.4412
+(1-#E-d?,DESIGN)                       0.4409
+(1-#-thes,DESIGN)                      0.4405
+(1-#-=,WITHOUT_CLASSIFICATION)         0.4400
+(1-#-to a,DESIGN)                      0.4396
+(1-#-d re,DESIGN)                      0.4382
+(1-#-// H,DESIGN)                      0.4377
+(1-#-/ H,DESIGN)                       0.4376
+(1-#- HAC,DESIGN)                      0.4357
+(1-#-as,WITHOUT_CLASSIFICATION)        0.4353
+(1-#-: v,WITHOUT_CLASSIFICATION)       0.4346
+(1-#-tes,WITHOUT_CLASSIFICATION)       0.4337
+(1-#-ck, ,DESIGN)                      0.4334
+(1-#-ck,,DESIGN)                       0.4334
+(1-#-d st,DESIGN)                      0.4326
+(1-#-ns?,DESIGN)                       0.4324
+(1-#E-f?,DESIGN)                       0.4319
+(1-#B-// u,DESIGN)                     0.4315
+(1-#-O: v,WITHOUT_CLASSIFICATION)      0.4313
+(1-#-wtf,DESIGN)                       0.4309
+(1-#- wt,DESIGN)                       0.4309
+(1-#- wtf,DESIGN)                      0.4309
+(1-#-a be,DESIGN)                      0.4300
+(1-#E-wtf?,DESIGN)                     0.4300
+(1-#E-tf?,DESIGN)                      0.4300
+(1-#-/ wt,DESIGN)                      0.4300
+(1-#-wtf?,DESIGN)                      0.4300
+(1-#-tf?,DESIGN)                       0.4300
+(1-#-ite,WITHOUT_CLASSIFICATION)       0.4297
+(1-#-e co,WITHOUT_CLASSIFICATION)      0.4293
+(1-#-/ is,DESIGN)                      0.4291
+(1-#-vara,WITHOUT_CLASSIFICATION)      0.4288
+(1-#-rarg,WITHOUT_CLASSIFICATION)      0.4288
+(1-#-arar,WITHOUT_CLASSIFICATION)      0.4288
+(1-Len-0-10,DESIGN)                    0.4277
+(1-#-orte,WITHOUT_CLASSIFICATION)      0.4273
+(1-#-ed i,WITHOUT_CLASSIFICATION)      0.4268
+(1-#-ien,DESIGN)                       0.4256
+(1-#- ni,DESIGN)                       0.4253
+(1-#-th c,DESIGN)                      0.4247
+(1-#- wi,DESIGN)                       0.4242
+(1-#-ng s,WITHOUT_CLASSIFICATION)      0.4240
+(1-#-// /,WITHOUT_CLASSIFICATION)      0.4230
+(1-#-nus,DESIGN)                       0.4223
+(1-#-CK,DESIGN)                        0.4216
+(1-#-s ca,WITHOUT_CLASSIFICATION)      0.4199
+(1-#-ype ,DESIGN)                      0.4186
+(1-#-e up,DESIGN)                      0.4174
+(1-#-ckin,DESIGN)                      0.4174
+(1-#E-ght?,DESIGN)                     0.4171
+(1-#E-ht?,DESIGN)                      0.4171
+(1-#-stup,DESIGN)                      0.4168
+(1-#-cki,DESIGN)                       0.4165
+(1-#-user,WITHOUT_CLASSIFICATION)      0.4159
+(1-#-tupi,DESIGN)                      0.4157
+(1-#-upid,DESIGN)                      0.4157
+(1-#E-p?,WITHOUT_CLASSIFICATION)       0.4155
+(1-#-upi,DESIGN)                       0.4144
+(1-#E-tic,DESIGN)                      0.4140
+(1-#- ho,DESIGN)                       0.4139
+(1-#-y?,DESIGN)                        0.4133
+(1-#-yuc,DESIGN)                       0.4132
+(1-#-yuck,DESIGN)                      0.4132
+(1-#E-elp?,WITHOUT_CLASSIFICATION)     0.4130
+(1-#-lp?,WITHOUT_CLASSIFICATION)       0.4130
+(1-#E-lp?,WITHOUT_CLASSIFICATION)      0.4130
+(1-#-elp?,WITHOUT_CLASSIFICATION)      0.4130
+(1-#-yu,DESIGN)                        0.4126
+(1-#-le r,DESIGN)                      0.4124
+(1-#-t wi,DESIGN)                      0.4123
+(1-#-hars,WITHOUT_CLASSIFICATION)      0.4121
+(1-#-def,DESIGN)                       0.4120
+(1-#-e ch,WITHOUT_CLASSIFICATION)      0.4117
+(1-#-, n,WITHOUT_CLASSIFICATION)       0.4117
+(1-#-t su,DESIGN)                      0.4114
+(1-#-e, i,DESIGN)                      0.4110
+(1-#E-rent,DESIGN)                     0.4108
+(1-#-/ me,DESIGN)                      0.4102
+(1-#-chan,DESIGN)                      0.4099
+(1-#-ast,DESIGN)                       0.4099
+(1-#E-ting,WITHOUT_CLASSIFICATION)     0.4088
+(1-#-ar n,DESIGN)                      0.4087
+(1-#-lit,DESIGN)                       0.4087
+(1-#-e. *,DESIGN)                      0.4083
+(1-#- */,WITHOUT_CLASSIFICATION)       0.4080
+(1-#E-ce,DESIGN)                       0.4079
+(1-#-lif,DESIGN)                       0.4078
+(1-#-pid,DESIGN)                       0.4078
+(1-#E-d,DESIGN)                        0.4072
+(1-#-: is,WITHOUT_CLASSIFICATION)      0.4072
+(1-#-f w,WITHOUT_CLASSIFICATION)       0.4069
+(1-#-es .,DESIGN)                      0.4067
+(1-#- Na,DESIGN)                       0.4060
+(1-#-ght?,DESIGN)                      0.4060
+(1-#-ht?,DESIGN)                       0.4060
+(1-#B-// s,DESIGN)                     0.4054
+(1-#-* T,WITHOUT_CLASSIFICATION)       0.4052
+(1-#-ge t,DESIGN)                      0.4050
+(1-#-L,WITHOUT_CLASSIFICATION)         0.4044
+(1-#E-tor?,DESIGN)                     0.4043
+(1-#-ks..,WITHOUT_CLASSIFICATION)      0.4043
+(1-#-2,WITHOUT_CLASSIFICATION)         0.4040
+(1-#-ong.,DESIGN)                      0.4040
+(1-#-y er,DESIGN)                      0.4039
+(1-#E-et,DESIGN)                       0.4036
+(1-#- O,WITHOUT_CLASSIFICATION)        0.4020
+(1-#-des,WITHOUT_CLASSIFICATION)       0.4006
+(1-#-*,DESIGN)                         0.3997
+(1-#-ce s,WITHOUT_CLASSIFICATION)      0.3997
+(1-#-/ic,DESIGN)                       0.3996
+(1-#-//ic,DESIGN)                      0.3996
+(1-#E-ick!,DESIGN)                     0.3996
+(1-#-/ick,DESIGN)                      0.3996
+(1-#B-//ic,DESIGN)                     0.3996
+(1-#-: I,DESIGN)                       0.3992
+(1-#-de,DESIGN)                        0.3978
+(1-#-ds,WITHOUT_CLASSIFICATION)        0.3970
+(1-#-al c,DESIGN)                      0.3967
+(1-#E-se?,DESIGN)                      0.3967
+(1-#-suck,DESIGN)                      0.3965
+(1-#-ull ,DESIGN)                      0.3963
+(1-#-o u,DESIGN)                       0.3956
+(1-#-e ev,DESIGN)                      0.3954
+(1-#-ord,WITHOUT_CLASSIFICATION)       0.3952
+(1-#-? *,WITHOUT_CLASSIFICATION)       0.3950
+(1-#- XXX,DESIGN)                      0.3949
+(1-#-OD,DESIGN)                        0.3945
+(1-#-nd r,DESIGN)                      0.3937
+(1-#-ll?,WITHOUT_CLASSIFICATION)       0.3931
+(1-#-item,WITHOUT_CLASSIFICATION)      0.3919
+(1-#-id c,DESIGN)                      0.3916
+(1-#-Why,DESIGN)                       0.3912
+(1-#-l,WITHOUT_CLASSIFICATION)         0.3912
+(1-#- XX,DESIGN)                       0.3911
+(1-#B-/**,DESIGN)                      0.3905
+(1-#-/ ma,WITHOUT_CLASSIFICATION)      0.3898
+(1-#- way,DESIGN)                      0.3896
+(1-#-ee n,DESIGN)                      0.3892
+(1-#-tor?,DESIGN)                      0.3889
+(1-#-st ,WITHOUT_CLASSIFICATION)       0.3888
+(1-#-k to,DESIGN)                      0.3875
+(1-#-ient,DESIGN)                      0.3874
+(1-#-E: i,WITHOUT_CLASSIFICATION)      0.3872
+(1-#-atio,WITHOUT_CLASSIFICATION)      0.3868
+(1-#-ale,DESIGN)                       0.3867
+(1-#-ME,DESIGN)                        0.3866
+(1-#-**  ,DESIGN)                      0.3859
+(1-#-/ /,WITHOUT_CLASSIFICATION)       0.3858
+(1-#-, ju,DESIGN)                      0.3858
+(1-#-/ //,WITHOUT_CLASSIFICATION)      0.3855
+(1-#-/ en,DESIGN)                      0.3846
+(1-#-ot,DESIGN)                        0.3846
+(1-#-n pa,DESIGN)                      0.3838
+(1-#-, no,WITHOUT_CLASSIFICATION)      0.3836
+(1-#-cou,DESIGN)                       0.3833
+(1-#-ld n,WITHOUT_CLASSIFICATION)      0.3831
+(1-#-r e,WITHOUT_CLASSIFICATION)       0.3830
+(1-#-co,DESIGN)                        0.3829
+(1-#E-**,DESIGN)                       0.3824
+(1-#-ork,DESIGN)                       0.3815
+(1-#-O: T,DESIGN)                      0.3813
+(1-#-!,DESIGN)                         0.3809
+(1-#-se..,WITHOUT_CLASSIFICATION)      0.3799
+(1-#-ck f,DESIGN)                      0.3792
+(1-#-in p,DESIGN)                      0.3782
+(1-#-d no,WITHOUT_CLASSIFICATION)      0.3780
+(1-#-',WITHOUT_CLASSIFICATION)         0.3773
+(1-#-e ne,DESIGN)                      0.3768
+(1-#-re r,WITHOUT_CLASSIFICATION)      0.3767
+(1-#-we m,DESIGN)                      0.3764
+(1-#-?),DESIGN)                        0.3761
+(1-#-age,WITHOUT_CLASSIFICATION)       0.3754
+(1-#- par,DESIGN)                      0.3752
+(1-#-c nu,DESIGN)                      0.3750
+(1-#- so ,WITHOUT_CLASSIFICATION)      0.3747
+(1-#-test,WITHOUT_CLASSIFICATION)      0.3739
+(1-#-d r,DESIGN)                       0.3736
+(1-#-au,WITHOUT_CLASSIFICATION)        0.3733
+(1-#- fix,DESIGN)                      0.3731
+(1-#E-atic,DESIGN)                     0.3727
+(1-#- me,DESIGN)                       0.3722
+(1-#-ts a,WITHOUT_CLASSIFICATION)      0.3719
+(1-#E- ...,DESIGN)                     0.3719
+(1-#-for ,DESIGN)                      0.3718
+(1-#-IXM,DESIGN)                       0.3715
+(1-#-FIXM,DESIGN)                      0.3715
+(1-#-XME,DESIGN)                       0.3715
+(1-#-IXME,DESIGN)                      0.3715
+(1-#-ld j,WITHOUT_CLASSIFICATION)      0.3714
+(1-#-c f,WITHOUT_CLASSIFICATION)       0.3713
+(1-#-ng,DESIGN)                        0.3712
+(1-#E-s.,DESIGN)                       0.3711
+(1-#-ix ,DESIGN)                       0.3711
+(1-#-nse ,DESIGN)                      0.3708
+(1-#-t cr,WITHOUT_CLASSIFICATION)      0.3698
+(1-#-E we,DESIGN)                      0.3694
+(1-#- at ,DESIGN)                      0.3693
+(1-#-ed f,WITHOUT_CLASSIFICATION)      0.3688
+(1-#-ppos,DESIGN)                      0.3683
+(1-#-ov,DESIGN)                        0.3682
+(1-#-his.,WITHOUT_CLASSIFICATION)      0.3681
+(1-#-ory,WITHOUT_CLASSIFICATION)       0.3680
+(1-#-/ re,DESIGN)                      0.3679
+(1-#-pack,WITHOUT_CLASSIFICATION)      0.3672
+(1-#-plif,DESIGN)                      0.3669
+(1-#-o :,DESIGN)                       0.3664
+(1-#-do :,DESIGN)                      0.3664
+(1-#-o : ,DESIGN)                      0.3664
+(1-#-sm,DESIGN)                        0.3658
+(1-#-the ,WITHOUT_CLASSIFICATION)      0.3655
+(1-#-ean,DESIGN)                       0.3655
+(1-#- va,WITHOUT_CLASSIFICATION)       0.3654
+(1-#-at t,WITHOUT_CLASSIFICATION)      0.3653
+(1-#-re p,DESIGN)                      0.3649
+(1-#E-ong.,DESIGN)                     0.3647
+(1-#-ucks,DESIGN)                      0.3641
+(1-#E-ucks,DESIGN)                     0.3641
+(1-#-ic,DESIGN)                        0.3638
+(1-#-lse ,WITHOUT_CLASSIFICATION)      0.3637
+(1-#E-his,DESIGN)                      0.3636
+(1-#E-this,DESIGN)                     0.3636
+(1-#-ial ,WITHOUT_CLASSIFICATION)      0.3634
+(1-#B-// t,DESIGN)                     0.3624
+(1-#-**,DESIGN)                        0.3623
+(1-#-ser,WITHOUT_CLASSIFICATION)       0.3623
+(1-#-ill ,WITHOUT_CLASSIFICATION)      0.3623
+(1-#-lem ,DESIGN)                      0.3620
+(1-#E-now,WITHOUT_CLASSIFICATION)      0.3619
+(1-#E- now,WITHOUT_CLASSIFICATION)     0.3617
+(1-#-  /,DESIGN)                       0.3613
+(1-#-o al,DESIGN)                      0.3612
+(1-#-O: n,DESIGN)                      0.3609
+(1-#- evi,DESIGN)                      0.3609
+(1-#-if t,WITHOUT_CLASSIFICATION)      0.3608
+(1-#-at s,WITHOUT_CLASSIFICATION)      0.3607
+(1-#-ath,DESIGN)                       0.3606
+(1-#-Thes,WITHOUT_CLASSIFICATION)      0.3604
+(1-#E-home,DESIGN)                     0.3599
+(1-#-'t n,WITHOUT_CLASSIFICATION)      0.3598
+(1-#-rset,WITHOUT_CLASSIFICATION)      0.3594
+(1-#E-is,DESIGN)                       0.3593
+(1-#-f we,WITHOUT_CLASSIFICATION)      0.3593
+(1-#-e p,DESIGN)                       0.3591
+(1-#-nF,DESIGN)                        0.3586
+(1-#-be p,DESIGN)                      0.3580
+(1-#-/**,DESIGN)                       0.3574
+(1-#-: Wh,WITHOUT_CLASSIFICATION)      0.3562
+(1-#-DO,DESIGN)                        0.3561
+(1-#-ver ,WITHOUT_CLASSIFICATION)      0.3561
+(1-#-'t c,DESIGN)                      0.3559
+(1-#-ick ,WITHOUT_CLASSIFICATION)      0.3557
+(1-#-I ,DESIGN)                        0.3557
+(1-#-nl,WITHOUT_CLASSIFICATION)        0.3556
+(1-#-DO:?,WITHOUT_CLASSIFICATION)      0.3555
+(1-#E-DO:?,WITHOUT_CLASSIFICATION)     0.3555
+(1-#-O:?,WITHOUT_CLASSIFICATION)       0.3555
+(1-#E-O:?,WITHOUT_CLASSIFICATION)      0.3555
+(1-#-:?,WITHOUT_CLASSIFICATION)        0.3555
+(1-#E-:?,WITHOUT_CLASSIFICATION)       0.3555
+(1-#- // ,DESIGN)                      0.3550
+(1-#-fac,DESIGN)                       0.3550
+(1-#-shor,DESIGN)                      0.3549
+(1-#-w sh,DESIGN)                      0.3543
+(1-#-he l,DESIGN)                      0.3536
+(1-#-1,WITHOUT_CLASSIFICATION)         0.3533
+(1-#-ta,WITHOUT_CLASSIFICATION)        0.3531
+(1-#-very,DESIGN)                      0.3528
+(1-#-inc,WITHOUT_CLASSIFICATION)       0.3525
+(1-#-lear,WITHOUT_CLASSIFICATION)      0.3524
+(1-#-ut t,DESIGN)                      0.3520
+(1-#-y, b,DESIGN)                      0.3518
+(1-#E-ater,DESIGN)                     0.3517
+(1-#-'t l,DESIGN)                      0.3516
+(1-#-asty,DESIGN)                      0.3513
+(1-#B-// I,WITHOUT_CLASSIFICATION)     0.3507
+(1-#E-2,WITHOUT_CLASSIFICATION)        0.3502
+(1-#-hort,DESIGN)                      0.3502
+(1-#-he d,WITHOUT_CLASSIFICATION)      0.3501
+(1-#-nd p,WITHOUT_CLASSIFICATION)      0.3500
+(1-#-e wh,DESIGN)                      0.3499
+(1-#-se:,DESIGN)                       0.3498
+(1-#-o ev,DESIGN)                      0.3497
+(1-#-ot c,WITHOUT_CLASSIFICATION)      0.3496
+(1-#-U,DESIGN)                         0.3494
+(1-#-XM,DESIGN)                        0.3494
+(1-#-erha,DESIGN)                      0.3493
+(1-#-rha,DESIGN)                       0.3493
+(1-#-ad h,WITHOUT_CLASSIFICATION)      0.3491
+(1-#-sen,DESIGN)                       0.3486
+(1-#-s ch,DESIGN)                      0.3485
+(1-#-vil,DESIGN)                       0.3483
+(1-#-rhap,DESIGN)                      0.3483
+(1-#-haps,DESIGN)                      0.3483
+(1-#-as a,WITHOUT_CLASSIFICATION)      0.3481
+

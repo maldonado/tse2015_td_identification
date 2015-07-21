@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Mon Jul 20 21:04:54 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/classified_seq.train ... done [2.1s, 8502 items].
+numDatums: 8502
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=8485.0, DEFECT=17.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 53421 [CLASS, 1-#-io, 1-#-tri, 1-#-uti, 1-#-., ...]
+..................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/sql12/2/classified_seq.test varies between 2 and 93
+done [1.4s, 6953 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+6953 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6929 FN=0 FP=24 TN=0; Acc 0.997 P 0.997 R 1.000 F1 0.998
+Cls DEFECT: TP=0 FN=24 FP=0 TN=6929; Acc 0.997 P 1.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.99655
+Macro-averaged F1: 0.49914

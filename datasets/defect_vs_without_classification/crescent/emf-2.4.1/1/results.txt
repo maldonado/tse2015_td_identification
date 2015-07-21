@@ -1,0 +1,37 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:55:09 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/classified_seq.train ... done [1.0s, 4208 items].
+numDatums: 4208
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=4199.0, DEFECT=9.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 30600 [CLASS, 1-#-,, 1-#--, 1-#-/, 1-#-0, ...]
+.............................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/crescent/emf-2.4.1/1/classified_seq.test ... done [0.8s, 4294 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4294 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4286 FN=0 FP=8 TN=0; Acc 0.998 P 0.998 R 1.000 F1 0.999
+Cls DEFECT: TP=0 FN=8 FP=0 TN=4286; Acc 0.998 P 1.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.99814
+Macro-averaged F1: 0.49953

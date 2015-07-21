@@ -1,0 +1,37 @@
+ColumnDataClassifier invoked on Mon Jul 20 20:42:39 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.train ... done [2.2s, 8426 items].
+numDatums: 8426
+numDatumsPerLabel: {DESIGN=173.0, WITHOUT_CLASSIFICATION=8253.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 61721 [CLASS, 1-#-io, 1-#-tri, 1-#-uti, 1-#-., ...]
+..............................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/crescent/jruby-1.4.0/2/classified_seq.test ... done [0.8s, 4618 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4618 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4245 FN=30 FP=217 TN=126; Acc 0.947 P 0.951 R 0.993 F1 0.972
+Cls DESIGN: TP=126 FN=217 FP=30 TN=4245; Acc 0.947 P 0.808 R 0.367 F1 0.505
+Accuracy/micro-averaged F1: 0.94651
+Macro-averaged F1: 0.73837

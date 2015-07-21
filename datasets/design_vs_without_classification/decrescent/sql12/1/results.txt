@@ -1,0 +1,41 @@
+ColumnDataClassifier invoked on Mon Jul 20 22:49:37 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/classified_seq.train varies between 2 and 23
+done [4.6s, 8840 items].
+numDatums: 8840
+numDatumsPerLabel: {DESIGN=801.0, WITHOUT_CLASSIFICATION=8039.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 56877 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
+................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/sql12/1/classified_seq.test varies between 2 and 93
+done [1.7s, 7138 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7138 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6914 FN=15 FP=132 TN=77; Acc 0.979 P 0.981 R 0.998 F1 0.989
+Cls DESIGN: TP=77 FN=132 FP=15 TN=6914; Acc 0.979 P 0.837 R 0.368 F1 0.512
+Accuracy/micro-averaged F1: 0.97941
+Macro-averaged F1: 0.75055
