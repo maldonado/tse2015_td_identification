@@ -1,0 +1,89 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{ifpdf}
+\usepackage[cmex10]{amsmath}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage[pdftex]{graphicx}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{algorithmic}
+\usepackage{times}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[tight,footnotesize]{subfigure}
+\usepackage{fancybox}
+\usepackage{color}
+\usepackage{array}
+\usepackage{balance}
+\usepackage[font=footnotesize]{subfig}
+\usepackage{epstopdf}
+\usepackage{array}
+\usepackage{fixltx2e}
+\usepackage{stfloats}
+
+
+
+\newcommand{\everton}[1]{\textcolor{blue}{{\it [Everton: #1]}}}
+\newcommand{\todo}[1]{\colorbox{yellow}{\textbf{[#1]}}}
+
+
+\newcommand{\conclusionbox}[1]{%
+	\vspace{2mm}
+	\framebox[0.45\textwidth][c]{%
+		\parbox[b]{0.42\textwidth}{%
+			{\it #1}
+		}
+	}
+	\vspace{2mm}
+}
+
+\newcommand{\rqi}{\textbf{}}
+\newcommand{\rqii}{\textbf{}}
+\newcommand{\rqiii}{\textbf{}}
+
+\begin{document}
+\title{Paper Title here}
+
+\author{\IEEEauthorblockN{Everton da S. Maldonado}
+
+\IEEEauthorblockA{Department of Computer Science and Software Engineering\\Concordia University,
+Montreal, Canada\\
+\url{everton.maldonado@gmail.com}}}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+
+\section{Related Work}
+\label{sec:related_work}
+\input{related_work}
+
+\section{Approach}
+\label{sec:approach}
+\input{approach}
+
+\section{Case Study Results}
+\label{sec:results}
+\input{results}
+
+\section{Threats to validity}
+\label{sec:threats_to_validity}
+\input{threats_to_validity}
+
+\section{Conclusion and Future work}
+\label{sec:conclusion}
+\input{conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{bib}
+
+\end{document}

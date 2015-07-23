@@ -1,7 +1,7 @@
 library(RPostgreSQL)
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
-mongoose <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%ant%' and category = 'DEFECT' and trainingorder like 'decrescent%' order by 1,2")
+mongoose <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%argouml%' and category = 'DEFECT' and trainingorder like 'decrescent%' order by 1,2")
 data1 <- fetch(mongoose,n=-1)
 dim(data1)
 dbHasCompleted(mongoose)
