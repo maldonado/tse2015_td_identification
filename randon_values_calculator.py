@@ -14,7 +14,7 @@ execution_types = {
                      'DOCUMENTATION': {'DOCUMENTATION'}, 
                      'IMPLEMENTATION': {'IMPLEMENTATION'}, 
                      'TEST': {'TEST'},
-                     'WITHOUT_CLASSIFICATION': {'WITHOUT_CLASSIFICATION', 'BUG_FIX_COMMENT'}
+                     'WITHOUT_CLASSIFICATION': {'WITHOUT_CLASSIFICATION'}
 }
 
 try:
@@ -60,11 +60,13 @@ try:
                         randon_precision = 0.0
                         randon_recall = 0.0
                         randon_f1 = 0.0
+                    cursor.execute("update classifier_results set classifiedRandomPrecision = '"+str(round(randon_precision, 3))+"', classifiedRandomRecall = '"+str(round(randon_recall, 3))+"' , classifiedRandomF1 = '"+str(round(randon_f1, 3))+"'  where projectname = '"+test_project+"' and category = '"+execution_td_type+"'")
                 else:
                     randon_precision = float(technical_debt_comments[0]) / float((total_comments[0]))
                     print randon_precision
                     randon_recall = 0.5
                     randon_f1 = ((randon_precision * randon_recall) / (randon_precision + randon_recall)) * 2
+                    cursor.execute("update classifier_results set withoutclassificatiorandomprecision = '"+str(round(randon_precision, 3))+"', withoutclassificatiorandomrecall = '"+str(round(randon_recall, 3))+"' , withoutclassificatiorandomf1 = '"+str(round(randon_f1, 3))+"'  where projectname = '"+test_project+"'")
 
                 #formating blank spaces
                 project_name_blank_spaces = ""
@@ -93,4 +95,8 @@ try:
 
 except Exception, e:
     print e
+    connection.rollback()
+
+finally:
+    connection.commit()
     
