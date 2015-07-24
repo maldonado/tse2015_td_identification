@@ -1,19 +1,4 @@
-
-
-
 Thus far, our study has focused on determining comment patterns that can be used to detect \SADTD and examining the effectiveness of our comment patterns in detecting \SADTD. However, how our approach compares to existing approaches is an interesting question that is left unanswered. Therefore, in this section, we compare our approach to existing state-of-the-art approaches that have been used to detect design technical debt~\cite{Zazworka2011MTD}. Then, we discuss the applicability of using refactoring recommendation systems to address \SADTD. 
-
-
-%\subsection{Applicability of \SADTD~Comment Patterns on Different Projects}
-%
-%When determining the comment patterns to detect \SADTD, we analyzed the comments of the Apache Ant project. As shown in Section~\ref{sec:case_study_results}, the precision and recall values for the Apache Ant project is high. However, when the same comment patterns are applied to different projects, we are able to obtain high precision values (between 74.04 - 88.57\%), but the recall decreases significantly (between 10.87-27.16\%).
-%
-%This observations highlights an important issue with using our approach. Since software projects tend to use specific terms when describing their \SADTD, it is best to derive comment patterns from the same project. However, it is not all bad news. What our results show is that the comment patterns extracted from one project can achieve high precision. This means that the comment patterns from one project can be applied to another project, however, these comment patterns are likely to be conservative (i.e., achieving high precision), but miss many of the \SADTD~in the new/different project (i.e., the low recall).  One can improve recall by aggregating comment patterns from multiple projects, however, such an approach will impact the precision values.
-%
-%Constructing a global set of comment patterns that can be used to detect \SADTD~in all projects and examining the tradeoff between precision and recall is an area for future work, however, we see this work as a contribution in the right direction.
-%
-
-
 
 \subsection{Comparing our Comment-based Approach to the State-of-the-art in Design Technical Debt Detection}
 

@@ -7,11 +7,6 @@ To perform our study, we obtain the source of ten large open source projects, na
 Table~\ref{tab:projDetails} provides statistics about each of the projects used in our study. In total, we obtained more than 258,878 comments, found in 16,249 files. We also include the release used, the number of classes, and the total lines of code (LOC). In our study, we only use the Java files to calculate the LOC. It is important to notice that the number of comments shown for each project does not represent the number of commented lines, but rather the number of individual line, block, and Javadoc comments. 
 
 
-%All the projects were downloaded from their respective websites, except from ArgoUml that we extracted the latest version,at the date, from its repository.  
-%It represents the number of identified comments by the parsing tool. For example, a block comment of 10 lines will be treated as one comment, the same applies for Javadoc comments. It Does not matter how long a block or Javadoc comment can be, it will be always be counted as a single comment by the tool.
-
-%Specific details for each one the projects are provided in table \ref{tab:projDetails}, including the release of each one of them, the number of classes, the number of comments and the number of lines of code. As a reference, we also added the number of contributors reported at OpenHub.net \cite{Openhub:home}. 
-
 \begin{table*}[!tbh]
     \begin{center}
         \caption{Case Study Project Details and Statistics}
@@ -41,30 +36,8 @@ Table~\ref{tab:projDetails} provides statistics about each of the projects used 
 
 After obtaining the source code of all projects, we extract the comments from their source code. We use JDeodorant~\cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. Once extracted, we store all comments in a relational database to facilitate the processing of the data.
 
-%keep this information in memory while it executes source code analysis. We took advantage of the parsing functionality and developed our own version of the tool, that stores the parsed information of the comments in the database. We list the number of classes found and number of comments for each project in table \ref{tab:projDetails}. In order parse the code properly, it is necessary that all analyzed projects can be compiled and built in the Eclipse environment. 
-
 \subsection{Identification of \SADTD~Comment Patterns}
 Once we store all comments in the database, our next step is to identify the \SADTD~comment patterns. Since we are dealing with natural language in the comments, it is challenging to automatically determine what comments indicate design technical debt. Therefore, we opted to use two different approaches to determine comment patterns that indicate design technical debt. First, we use the terms mentioned in prior work~\cite{fowler1999refactoring,brown1998antipatterns,martin2009clean} (i.e., code smell and anti-pattern names) as indicators of design problems to determine comments that are indicative of design technical debt. Second, we manually examined and classified all  comments of one project i.e., Apache Ant, in order to determine comment patterns that are indicative of \SADTD. After analyzing the results, we found that combining comment patterns from the two aforementioned approaches provides the best results. We detail the steps taken to achieve each of the two approaches.
-
-%\noindent \textbf{Using well-known terms to identify \SADTD comments}
-%
-%To create the Design Technical Debt patterns we took advantage of the design flaws names that can be found in Fowler's book \cite{fowler1999refactoring}, Brown et al book \cite{brown1998antipatterns} and Martin's book \cite{martin2009clean}. Based on the words extracted from these books and our experience, we searched for synonyms in the database. The first step is verify if the selected word has a match in the database, then we read all the comments related to it. Doing so, we were able to identify new words and more than that, understand the frequency that this word is used as \SADTD. 
-%Following this approach we were able to come up with three different dictionaries for patterns to find \SADTD comments. 
-%  
-%The first group of patterns we called the ``-ilities'' patterns. It possesses words like ``Configurability'', ``Security'', etc. It contains 17 words and in our preliminary analysis we matched 181 comments. After a quick inspection we kept 14 of these comments as potential \SADTD comments. The following are examples of the kept comments: \textit{ ``Apparently in some environments you can't catch the security exception at all... will probably have to work around''} and \textit{``pretty weak and don't provide real security.''}.
-% 
-%We based the second group of patterns in the names of well-know bad smells and anti-patterns like ``Clone'',``Dead'', etc. Using these patterns we found the following potential  \SADTD comments in the source code: \textit{``this class is considered to be dead code by the Ant developers and is unmaintained. Don't use it''}. The anti-patterns patterns contains 8 words, in our preliminary analysis we matched 1,316 comments and after a quick inspection we kept 148 of these comments.
-%
-%The last group of patterns we put the words that can be related with Design such as: ``Ambiguous'', ``Avoid'', ``Big'', etc. We found 3,449 matches using 14 different words. Of those we kept 196. The following are examples of the kept comments:\textit{``...find a way to avoid the cost of creating a String here''}. 
-%
-%At the end of this step, we were able to come up with three different dictionaries for patterns to find \SADTD comments.
-%
-%To test the performance of the dictionaries we have quantified the number of comments that matches with any of the words contained in one of the dictionaries, then we did a quick manual examination to inspect the results obtained. The manual inspection done in this phase took about 8 hours. 
-%
-%Using the three group of patterns we matched 4,946 comments. Out of that we classified 358 comments as potential \SADTD comments.
-%To classify the comment as a potential \SADTD comment we read trough the 4,946 comments where patterns matched the words in the comment and then we  eliminated the matches that clearly did not represent a \SADTD. 
-%
-%During this analysis we notice that the number of matches is way higher than the number of \SADTD. Which means that we are obtaining a high number of false positives. To mitigate this problem we took action in two dimensions: the comments and the \SADTD patterns. First, we need to eliminate comments that are irrelevant and second, we need to improve our \SADTD patterns to be more precise. 
 
 \subsubsection{Applying Heuristics to Eliminate Irrelevant Comments}
 
@@ -109,7 +82,6 @@ If a commented piece of source code contains Java keywords like ``long'' or ``bi
 \item{\textbf{Heuristic to remove Javadoc comments.}}
 The Javadoc comments contain information about the purpose and use of methods and classes. That said, Javadoc comments rarely mention \SADTD. Therefore, we create a heuristic that removes Javadoc comments. To mitigate the risk of eliminating some correct cases, we added one exception - if the comment contains one of the task-reserved words (e.g. ``todo'', ``fixme'', or ``xxx'') we keep that Javadoc comment. 
 
-%We argue that since these comments appear in the public documentation of projects, it is less likely that a developer will add a \SADTD~comment there. 
 \item{\textbf{Post processing technique to merge multiple line comments}}
 Another problem that we found while analyzing the comments was that some times developers make long comments, using multiple single-line comments instead of a Block comment. Treating every single line of a long comment as an individual comment causes us to miss important context details that could be recovered by treating all single-line comments as a single block comment. Therefore, we create a post processing technique that searches for consecutive single-line comments and groups them. 
 
@@ -117,9 +89,7 @@ Another problem that we found while analyzing the comments was that some times d
 
 The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Apache Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,436 comments.
 
-
 \subsubsection{Manual investigation of identified \SADTD~comments} 
-%Once we understand the pattens in the one dataset, we can add then to our \SADTD patterns. The first necessary step to do that is to create the dataset, as to the best of our knowledge, there is none available to the date. We choose one of the projects to manually classify all comments and create this dataset, the selected project was Apache Ant. 
 
 In addition to using the words that indicate design issues to detect \SADTD, we also manually examine our dataset to extract comment patterns that indicate~\SADTD~comments. We started by examining all of the 4,436 comments for the Apache Ant project and classified each comment as being related to \SADTD or not. Since our focus in this work is on design debt, comments related to other types of technical debt were not labeled as \SADTD comments. The classification of the Apache Ant comments took approximately 32 hours and was performed by the first author of the paper.
 
@@ -129,17 +99,9 @@ In the end of the classification we identified 93 \SADTD~related comments out of
 
 Our next goal was to abstract the comments and come up with a set of \emph{comment patterns} that indicate \SADTD. Comment patterns are general patterns that represent one or more comments. Simply using a single word to identify \SADTD~comments can be misleading since the context that the word appears in can completely change the meaning of that word. In order to address this issue, we take into consideration some of the other words that appear in the same sentence to combine them into what we call comment patterns. 
 
-%To create comment patterns, we combine multiple \SADTD~words, so that some context is considered.
-
-% with word task indicators ones, (e.g, ``todo'', ``fixme'', ``xxx'') in addition to the expressions that we were creating observing the \SADTD comments in the dataset. 
-
-%For every new \SADTD comment pattern that was created we manually sample the results in two different databases, one had all the comments for Apache Ant and the other one had all the comments for all the remaining projects. While exploring the results we notice that small variations in the expression used to find  \SADTD comments can improve the results. For example we apply the patterns ``place some where else'' and ``move somewhere else'' to identify misplaced code.
-
 By the end of this step, we had identified the comment patterns that indicate \SADTD. \textbf{In total, we had 176 comment patterns that can be used to detect \SADTD}. To facilitate future work in the area, we make our dataset and the comment patterns publicly available \footnote{http://users.encs.concordia.ca/~e\_silvam/publications.html}. 
 
-Table \ref{tab:dictionarySample} provides a sample of the comment patterns that we used to identify \SADTD~comments. 
-%The first column of Table~\ref{tab:dictionarySample} shows  the type of design issue and the second column shows the \SADTD~ comment pattern capturing the corresponding design issue. 
-The `\%' symbol indicates that the pattern uses the SQL language wildcards. Wildcards make the query to match anything before or after the wildcard symbol. For example, ``dependen\%'' would result in positive results for comments that contains the words ``dependency'' or ``dependencies''.
+Table \ref{tab:dictionarySample} provides a sample of the comment patterns that we used to identify \SADTD~comments. The `\%' symbol indicates that the pattern uses the SQL language wildcards. Wildcards make the query to match anything before or after the wildcard symbol. For example, ``dependen\%'' would result in positive results for comments that contains the words ``dependency'' or ``dependencies''.
 
 \begin{table}[t!]
     \begin{center}
@@ -163,20 +125,4 @@ The `\%' symbol indicates that the pattern uses the SQL language wildcards. Wild
     \end{center}    
 \end{table}
 
-
 Once we derive the 176 comment patterns that indicate \SADTD, we use these patterns to answer our research questions, which we detail in the next section.
-
-
-%\subsection{Applying Comment Patterns and Measuring their Performance}
-%\label{sec:applying_comment_patterns_measuring_performance}
-%We conduct an experiment to measure the performance of our approach using precision and recall. \emph{Precision} measures how many of the comments flagged using our comment patterns are indeed \SADTD. \emph{Recall} measures how many of the comments indicating \SADTD~our approach can catch. To measure recall we first needed to classify a dataset and labeling all of the \SADTD~comments of the project. Since measuring recall is a difficult and time consuming task, we report recall values for three projects, Apache Ant, Jakarta Jmeter and JFreeChart.
-%
-%We measure first the results of the three first dictionaries, ``-ilities'', ``design'' and ``bad smells''. As our first classified dataset was Apache Ant, we use it to measure precision and recall of the dictionaries. 
-
-%Table \ref{tab:dictionaryEvaluation} shows the results for each one of the dictionaries found analyzing the Apache Ant dataset, which has 93 \SADTD comments. When running the ``-ilities'' patterns we found 10 matches of which 2 were classified  as \SADTD comments. That represents a precision of 20\% and recall of 2.15\%.  Using the Design patterns we found 54 matches of which 5 were classified  as \SADTD comments. For the Bad Smell patterns we found 39 matches and 1 \SADTD comment. The precision and recall for these dictionaries were 9.26\% , 5.38\% and 2.56\% , 1.01\% respectively. 
-
-%The performance of the three dictionaries was not in the desired level yet, and as we analyze the \SADTD comments from Apache Ant we notice that expressions patterns represents better our desired dataset than single words patterns. We created then expressions for the three dictionaries combining their words with task specific ones like ``todo'',``fixme'' and ``xxx''. 
-
-%As a result we come up with a unified expression group of patterns that have expressions based on the three previous group of patterns and expressions based on the \SADTD comments of Apache Ant project. The performance of this new group of pattern can be found in details in Table \ref{tab:expressiondictionary_precision} and Table \ref{tab:expressiondictionary_recall}. For Apache Ant we got 96.30\% precision and 83.87\% recall. For Jakarta Jmeter we found 75 matches of that 66 were \SADTD comments, the recall as of 27.16\%. JFreeChart we found 12 matches out of that 10 was classified as \SADTD comments. The recall for JFreeChart was 10.87\%.
-
-%Finally we measured performance for the other seven projects remaining to be analyzed. As it is necessary to classify the dataset to measure recall, and this task is very time consuming, we did not classify them due time constrains. The precision achieved considering the comments of all projects was of 85.86\%. We found 964 comments out of 825 \SADTD comments.
