@@ -1,0 +1,38 @@
+As mentioned earlier, one of the first works on self-admitted technical debt was the work by Potdar and Shihab~\cite{Potdar2014ICSME}. Their work showed that it is possible to identify self-admitted technical debt using source code comments. However, in their work, Potdar and Shihab studied \textit{generic} technical debt, i.e., they did not discriminate between the different types of technical debt. For example, technical debt can be in the form of design debt, testing debt, defect debt, and documentation debt. 
+
+Since our work focuses on \SADTD, we first examined the effectiveness of using the general comments used by Potdar and Shihab to detect design technical debt. We applied the comment patterns that we derived (which we present later in the paper) and the comment patterns from Potdar and Shihab on the studied open source projects. As expected, the results produced by the general comment patterns identified all types of technical debt, indicating the need for more specific comment patterns that can be used to effectively identify design technical debt.
+
+To illustrate our point, we show some example comments flagged by Potdar and Shihab's approach in the first column of Table~\ref{tab:satdmotivation}. The second column of the table shows the comments that are detected by the comment patterns we propose in this paper, which focus on \SADTD. A comparison of the comments in Table~\ref{tab:satdmotivation} clearly shows that the more specific comment patterns detect design issues. 
+
+This simple example shows that comment patterns that specifically target design technical debt are needed. Simply using the general comment patterns may yield unfavourable results. We elaborate more on the performance of using the general comment patterns to detect \SADTD in Section~\ref{sec:case_study_results}.
+
+%Comparing the comments in the table \ref{tab:satdmotivation} with the comments in table \ref{tab:sadtdmotivation} it is clear  that the first approach would not make any distinction between different categories of technical debt like design debt. All of the comments listed is table \ref{tab:sadtdmotivation} are related with design debt in the other hand in table \ref{tab:satdmotivation} is not what happens. We also argue that identifying each specific category of technical debt is important since they are managed and corrected in different ways. 
+
+\begin{table*}[!hbt]
+    \begin{center}
+        \caption{Example of General/Design Self-admitted Technical Debt Comments}
+        \vspace{-2mm}
+        \label{tab:satdmotivation}
+        \begin{tabular}{ p{3in} | p{3in} } 
+            \toprule
+            \textbf{General Self-Admitted Technical Debt} &  \textbf{Self-Admitted Design Technical Debt}  \\ 
+            \midrule
+            \textit{remove this code once bug 62405 is fixed for the mainstream GTK} & \textit{This can lead to code smell, meh! Do we care}\\
+            \textit{FIXME - This caching thing should not be here; it's brittle.} & \textit{This is an absurdly long method! Break it up.}\\
+            \textit{FIXME compat: updateActionBars : should do something useful} & \textit{there should be an interface, instead of the         AbstractMessageFolder}\\
+            \textit{FIXME this does not actually set the default since it is the wrong} & \textit{rethink where exactly some of the following methods belong (GenModel or GenPackage)}\\
+            \textit{TODO: - please add some javadoc - ugly classname also} & \textit{Cyclic dependency with PersistenceManager}\\
+
+            %\textit{FIXME: this is killing at least SSE editors, see bug 318034} & \textit{hack to support dockable view title update replace with listener pattern}\\
+            %\textit{FIXME: this is not 64-bit clean} & \textit{This is in the wrong place.  It's not profile specific. It needs to be moved to main XMI reading code. }\\
+            %\textit{HACK. Calling super.read() installs a required preferences change listener.} & \textit{This appears unused.  If it's needed, the Model API should be enhanced to provide a method that does this directly.}\\
+            %\textit{This test is problematic. It makes assumptions about the behavior} & \textit{What does the magic number 6000 represent here? Put it in an explanatory literal! }\\
+            %\textit{TODO: Won't our use of PathComparator take care of uniqueness?} & \textit{Downcast to avoid using an interface?  Yuck.}\\
+            %\textit{FIXME: why override if nobody uses?} & \textit{We should actually rework this class to not implement Parser}\\
+            %\textit{not exist yet. Throws a CoreException if there is a problem} & \textit{unhappy about this being public ... is there a better way?}\\
+            %\textit{TODO this is such a hack it is silly.  There are still cases for race conditions etc} & \textit{remove use of instanceof!}\\
+            %\textit{KLUDGE!! Test commented out until bug 170353 is fixed...} & \textit{a design flaw, it doesn't update properly}\\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{table*}

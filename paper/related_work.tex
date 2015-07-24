@@ -1,0 +1,47 @@
+Our work uses code comments to detect \SADTD. Therefore, we divide the related work into three categories: source code comments, technical debt, and code smell detection.
+
+\subsection{Source Code Comments}
+
+A number of studies examined the co-evolution of source code comments and the rationale for changing code comments. For example, Fluri \textit{et al.}~\cite{Fluri2007WCRE} analyzed the co-evolution of source code and code comments, and found that 97\% of the comment changes are consistent. Tan \textit{et al.}~\cite{Tan2012ICST} proposed a novel approach to identify inconsistencies between Javadoc comments and method signatures. Malik \textit{et al.} \cite{Malik2008ICSM} studied the likelihood of a comment to be updated and Found that   call dependencies, control statements, the age of the function containing the comment, and the number of co-changed dependent functions are the most important factors to predict comment updates.
+
+Other work used code comments to understand developer tasks. For example. Storey \textit{et al.}~\cite{Storey2008ICSE} analyzed how task annotations (e.g., TODO, FIXME) play a role in improving team articulation and communication. The work closest to ours is the work by Potdar and Shihab~\cite{Potdar2014ICSME}, where code comments were used to identify technical debt. 
+
+Similar to some of the prior work. we also use source code comments to identify technical debt. However, our main focus is on the detection of \SADTD. As we have shown, our approach yield different and better results in detection \SADTD. Furthermore, we propose comment patterns, that are derived from source code comments, to detect \SADTD.
+
+%Our goal is to find comment patterns that can recover such information and compute the accuracy of those patterns.
+%in contrast to prior work that identifies comments that needs to be updated.
+%Second, we use task annotations in combination with word patterns in the comments to enhance the identification of \SADTD.
+
+\subsection{Technical Debt}
+
+A number of studies have focused on the study of, detection and management of technical debt. Much of this work has been driven by the Managing Technical Debt Workshop effort. Fore example, Seaman \textit{et al.}~\cite{Seaman2011}, Kruchten \textit{et al.}~\cite{Kruchten2013IWMTD} and Brown \textit{et al.}~\cite{Brown2010MTD} make several reflections about the term technical debt and how it has been used to communicate the issues that developers find in the code in a way that managers can understand. Other work focused on the detection of technical debt. Zazworka \textit{et al.} \cite{Zazworka2013CSE} conducted an experiment to compare the efficiency of automated tools in comparison with human elicitation regarding the detection of technical debt. They found that there is small overlap between the two approaches, and thus it is better to combine them than replace one with the other. In addition, they concluded that automated tools are more efficient in finding defect debt, whereas developers can realize more abstract categories of technical debt.
+In follow on work, Zazworka \textit{et al.}~\cite{Zazworka2011MTD} conducted a study to measure the impact of technical debt on software quality. They focused on a particular kind of design debt, namely God Classes. They found that God Classes are more likely to change, and therefore, have a higher impact in software quality. Fontana \textit{et al.}~\cite{Fontana2012MTD} investigated design technical debt appearing in the form of code smells. They used metrics to find three different code smells, namely God Classes, Data Classes and Duplicated Code. They proposed an approach to classify which one of the different code smells should be addressed first, based on a risk scale. Also related here, Potdar and Shihab~\cite{Potdar2014ICSME} used code comments to detect technical debt.They extracted the comments of four projects and analyzed more than 101,762 comments to come up with 62  patterns that indicates self-admitted technical debt. Their findings show that 2.4\% - 31\% of the files in a project contain self-admitted technical debt.
+
+Our work is different from the work that uses code smells to detect design technical debt since we use code comments to detect design technical debt. Also, our focus is on \emph{self-admitted} design technical debt. As we have shown in the discussion section, there is very little overlap between the \SADTD that our approach detects and the design technical debt detected using code smells (in particular God classes).
+
+% First, we propose an approach to identify \SADTD~comments specifically, instead of the more general approach that takes in consideration all kinds of TD. We also evaluate this approach in means of precision and recall, which corroborate with prior findings especially the work in \cite{Potdar2014ICSME}. Second, our study proposes a light-weight technique to find \SADTD~using source code comments.
+%in addition to that we complement the proposed technical debt landscape giving a taxonomy of \SADTD~and we also discuss how much of these \SADTD~can me automatically refactored by tools.
+
+\subsection{Code Smell Detection}
+
+Other work build tools and techniques to facilitate the detection of code smells. Moha \textit{et al.} \cite{Moha2010TSE} proposed DECOR, a tool that incorporates a set of techniques to identify code smells in the source code. They used a domain specific language (DSL) to specify code smell detection rules. Their approach automatically generates detection algorithms based on the code smell specifications. They evaluated their techniques in 11 open-source projects and found that DECOR can effectively detect code smells, with an average precision of 60.5\% and recall of 100\%. Palomba \textit{et al.} \cite{Palomba2013} proposed an approach to identify code smells based on the evolution of the source code. In order to do that they mined the history change from the source code repository and then they searched for bad smells. They show that using their approach (HIST), they are able to identify 5 different bad smells. Tsantalis \textit{et al.} \cite{Tsantalis2009TSE} proposed a methodology that identified Feature Envy bad smells and evaluated the refactoring to remove the bad smell.
+
+Our work complements the prior work on code smell detection, since we propose the use of code comments to detect \SADTD. In particular, we propose 176 comment patterns to identify \SADTD. Analyzing the source code comments using our approach in addition to the source code analysis techniques already employed in prior work can lead to optimal results, since our analysis showed that our approach yields results that are complementary to what code smell approaches detects.
+
+\section{Threats to validity}
+\label{sec:threats_to_validity}
+
+
+\noindent\textbf{Internal validity} consider the relationship between theory and observation, in case the measured variables do not measure the actual factors. The comment patterns derived by us heavily relied on manual analysis of the code comments from Apache Ant. Like any human activity, our manual classification is subject to personal bias. To reduce this bias, any comment that was questionable was discussed between the three authors of the paper. When performing our study, we used well-commented Java projects. Since our technique heavily depends on code comments, our results and performance measures may be impacted by the quantity and quality of comments in a software project.  
+
+When we investigate if there are refactoring recommendations to address the detected \SADTD, we essentially examine if the methods in which design debt is found participate in any of the refactoring opportunities suggested by JDeodorant.
+The presence of a refactoring opportunity for a given method, may not necessarily address the same kind of design debt described in the comment. In the future, we plan to investigate in a more fine-grained level the applicability of the suggested refactorings to \SADTD.
+
+When calculating the precision and recall values, we needed to manually examine the comments and label them as related to \SADTD or not. Any errors in our labeling may impact the precision and recall values reported.
+ 
+%To mitigate this risk, we ask for other reviewers to examine samples of the classified data. Changing this dataset may impact our finding. 
+
+\noindent \textbf{External validity} consider the generalization of our findings. All of our findings were derived from comments in open source projects. To minimize external validity, we chose open source projects from different domains. That said, our results may not generalize to other open source or commercial projects. In particular, our results may not generalize to projects that have a low number or no comments.
+ 
+%In this study we analyzed open source projects from different domains, therefore our findings may not generalize to other open source or commercial projects. 
+%There are different domains to be explored and projects can have a variety of factors that can impact the number of comments like size of project, domain complexity number of contributors etc and therefore our results may not generalize to all of them.

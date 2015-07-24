@@ -1,200 +1,119 @@
-\section{Case study Results}
-\label{sec:case_study_results}
 
-The goal of our study is develop an effective way to detect \SADTD. To do so, we first derive comment patterns that can be used to detect \SADTD (RQ1). Then, we examine the effectiveness of the derived comment patterns in detecting \SADTD in real-life open source projects (RQ2). We detail the motivation, approach and present the results of each of our research questions in the remainder of this section.
-
-%We perform an exploratory study using the data of ten open source projects namely - Apache Ant, Jakarta Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel SQL Client. Our first question is related to the patterns to identify \SADTD~comments. 
+The main goal of this study is to determine if comments in the source code can be used to identify \emad{self-admitted?} Design Technical Debt. We perform an exploratory study using the data of ten open source projects namely - Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel SQL Client. In particular, we would like to 1) develop a taxonomy to help us identify design debt from the code comments, 2) determine the effectiveness of our taxonomy at detecting design debt and 3) quantify how much of the self-admitted design debt we can automatically refactor with refactoring tools.  \emad{This should be moved earlier in the approach section maybe.}
 
 \rqi
 
 \noindent \textbf{Motivation:} 
-Prior work has shown that comments, embedded in the source code, are a good indicator of technical debt~\cite{Potdar2014ICSME}. However, the prior work did not discriminate between the different types of debt. Since we know that design technical debt is one of the most impactful types of technical debt~\cite{Marinescu2012IBM}, we would like to derive specific comment patterns that are indicative of design technical debt.
 
-%know that there are different categories under the big umbrella that technical debt represents \cite{Alves2014MTD},so we would like to propose comment patterns that are specific to design debt as it is mentioned as the kind of debt that has most impact in software quality \cite{Marinescu2012IBM}. Therefore, our first task is to derive a set of comment patterns that indicate \SADTD~comments.
+\begin{itemize}
+\item prior work showed that comments are good indicators of technical debt
+\item However, we know there are different types, so we would like to propose comment patterns that are specific to design debt.
+\item Therefore, our first task is to derive a set of comment patterns that indicate \SADTD
+\end{itemize}
 
-\noindent \textbf{Approach:} Our general approach to derive the \SADTD comment patterns was detailed in Section~\ref{sec:approach}. In a nutshell, we start by using common words that are indicative of design issues listed in prior work (e.g.,~\cite{fowler1999refactoring, brown1998antipatterns,martin2009clean}). Since using these words returns many irrelevant comments (e.g., licensing and Javadoc comments), we use a number of heuristics to reduce the number of comments so that the most relevant comments are returned. Finally, we perform a manual examination to derive the final list of 176 comment patterns that best indicate \SADTD.
+As shown in a previous study, self-admitted technical debt can be found in the comments of a project \cite{Potdar2014ICSME}. However  technical debt is a broad concept, and classifying it into more specific categories will allow us to address the occurrences of technical debt in a more efficient way \emad{how?}. Finding and quantifying these words is the first step. We want to know which are the words that accurately identifies design technical debt and how can we extract them. 
 
-Once we have the comment patterns, we apply them on ten open source projects namely - Apache Ant, Jakarta Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel SQL Client - in order to determine what comments are flagged and how common the different comment patterns indicate \SADTD. 
+\noindent \textbf{Approach:} To determine what comment patterns best indicate \SADTD, we use the approach shown in \todo{Section}~\ref{sec:approach}. In a nut shell, we started by using common words that prior work~\cite{fowler1999refactoring, brown1998antipatterns,martin2009clean} associated with design paradigms (e.g., \todo{add sample words}). Since using this list did not yield favourable results, we manually examined source code comments of the Ant project. To minimize the large cost of manual examination, we used a number of heuristics that reduced the set of comments to inspect to a reasonable set. 
 
-Furthermore, we compare the similarity of the comments detected using the comment patterns we derive in this paper to the \emph{generic} comment patterns proposed in prior work~\cite{Potdar2014ICSME}. To do so, we manually read the comments of three projects (i.e., Apache Ant, Jmeter and JFreeChart\footnote{Note: since this analysis required us to manually examine and label each comment, we only performed this analysis on three of the ten projects.}) and labeled each comment as a design technical debt related comment or not. Then, we used our comment patterns and the generic comment patterns from prior work to detect the labeled design technical debt comments. Finally, to see how different (or similar) the comment patterns are, we report the amount of overlap for each of the three projects.
+In total, the Apache Ant project 21,587 comments across in 1475 Java classes. After applying our heuristics, we ended up with a total of 4,678 comments that required manual inspection. After the manual inspection of the 4,678 comments,  we ended up with a final list of 81 \SADTD. \emad{not sure if we should add this: During this classification we focused specifically in design technical debt, other kinds of technical debt, when found, were classified as without classification} The entire process of determining these \SADTD comment patterns took one masters student (the first author) approximately 32 hours to complete. 
 
-%To determine what comment patterns best indicate \SADTD, we applied the approach shown in ~\ref{sec:approach}. In a nut shell, we started by using common words that prior work~\cite{fowler1999refactoring, brown1998antipatterns,martin2009clean} associated with design paradigms (e.g., ``Clone", ``Bad Smell", ``Duplicated", etc). Since using this list did not yield favorable results, we manually examined source code comments of the Apache Ant project. To minimize the large cost of manual examination, we used a number of heuristics that reduced the set of comments to inspect to a reasonable set. 
+%To find what words indicates self-admitted design technical debt we use 
+%two different approaches. First, we \emad{try?} to suggest words based in terms that are used in the literature \cite{fowler1999refactoring}\cite{brown1998antipatterns}\cite{martin2009clean}, in the research community and our own experience. Second, extract and analyze all comments from a project, classifying the ones that represent design technical debt and then, search for patterns between them. We apply several queries in the database, one for each of the words in the dictionaries. In our queries we are ignoring case sensitivity and we also use wild cards in the search, which means that we are searching for the specific word within the entire content of the comment. \emad{do we have those words listed in the paper? We should also say what we applied these patterns on}
+%Using wild cards allows us to search for similar words using the same query, for example one query using the word "\%dependen\%" would result in positive results for comments that contains the words "dependency" or "dependencies".
 
-%In total, the Apache Ant project 21,587 comments across 1,475 Java classes. After applying our heuristics, we ended up with a total of 4,678 comments that required manual inspection. Doing the manual inspection we identified 93 \SADTD~comments. By analyzing the common patterns in this dataset, we ended up with a final list of 175 \SADTD~patterns. The entire process of determining these \SADTD~comment patterns took one masters student (the first author) approximately 32 hours to complete. 
- 
+%In order to execute the second approach \emad{it?} is necessary a classified dataset to look for patterns in the design technical debt comments. To the best of our knowledge, there is not a dataset with that data  available so we choose  a project, Apache Ant, and manually classified it. Before executing the heuristics \emad{mention the heuristics explicitly} Apache Ant had 21587 comments distributed in 1475 Java classes, after the execution of the heuristics and the post-processing technique the remaining comments were 4678. That was the total number of comments that we manually classified \emad{elaborate more on this...there is a lot of work that went into this.}. The classification took a total time of 32 hours of one master student who has industrial experience in the Java programming language. The comments were classified into the following categories: "design\_related" or  "whitout\_classification" \emad{what is the other option man?... this is super obvious}. During this classification we focused specifically in design technical debt, other kinds of technical debt, when found, were classified as "without\_classification". 
 
 \noindent \textbf{Results:} 
-In total, we derived 176 different comment patterns that indicate \SADTD. Table~\ref{tab:topperformingpatterns} shows the ten top most common comment patterns that indicate \SADTD~in all projects. The first column of Table~\ref{tab:topperformingpatterns} lists the comment pattern and the second column lists the frequency that the comment pattern matched one of the manually labeled design technical debt comments in the three studied projects. From the table, we observe that ``hack'' is the most common pattern, followed by ``todo+remove'' and so on. It is important to note here that Table~\ref{tab:topperformingpatterns} only lists the top ten most common patterns, we provide a full list of all the 176 comment patterns in \footnote{http://users.encs.concordia.ca/~e\_silvam/publications.html}.
 
-When we examined the comment patterns derived in our paper and the general comment patterns from the prior work, we noticed a significant difference. However, we also noticed some similarities. For example, the comment pattern ``hack'' shows up in both, our design specific comment patterns and the generic comment patterns. Therefore, to compare how different (or similar) the two approaches are, we applied both approaches on the three projects with the manually labeled comments.
+Table \todo{add table} shows the list of comment patterns that indicate \SADTD. In total, we determined a total of 81 unique comment patterns. In addition to the unique comment patterns, we also combined patterns to come up with more descriptive comment patterns of \SADTD. In total, we had 175 different comment patterns that indicate \SADTD. 
 
-Table~\ref{tab:approach_comparisson} shows the number of comments that indicate design technical debt (second column), the number of comments flagged by our comment patterns (third column), the number of comments flagged by the generic comment patterns (fourth column), and the overlap between the comments flagged by both approaches. First, we find that our approach flags more \SADTD comments, with the exception of JFreeChart. Second, we notice that the overlap is small, but close to the number of comments flagged by the generic comment patterns. This means that in most cases, the comments flagged by the generic comment patterns will be covered by the comments flagged using our approach, since the overlap is close to the generic comment patterns value.
+We also compare the comment patterns derived here to the more general comment patterns derived by Potdar and Shihab~\todo{cite Potdar and Shihab} used to determine self-admitted technical debt in general (i.e., design debt, defect debt, testing debt and so forth). Comparing to Table \todo{Add Potdar and Shihab's table}, the comment patterns indicating \SADTD are different. This observation shows that although comments are good indicators of self-admitted technical debt \todo{cite Potdar}, different types of technical debt are indicated by different comment patterns.
 
-
-%In total, we determined a total of 175 unique comment patterns. We first present the pattern that we applied, including the wild cards that give our patterns more flexibility in the search. Then we shown the number of \SADTD~comments that were found in Ant project for each pattern, including the percentage that each one represents from the total found. 
-
-
-\begin{table}[t]
-	\begin{center}
-		\caption{The Top Ten Most Common \SADTD Comment Patterns Across All Ten Projects}
-		\vspace{-2mm}
-		\label{tab:topperformingpatterns}
-		\begin{tabular}{l| c  c}
-			\toprule
-			\textbf{Pattern}          & \textbf{Number of occurrences} & \textbf{Percentage} \\ 
-			\midrule
-			`\%hack\%'                    & 32                             & 19.75\%             \\
-           		 `\%not \%sure \%'             & 9                              & 5.56\%              \\
-          		  `\%should\%instead\%'         & 9                              & 5.56\%              \\
-          		  `\%todo\%remove\%'            & 8                              & 4.94\%              \\
-          		  `\%ugly\%'                    & 6                              & 3.70\%              \\
-            		`\% fix for \%'               & 6                              & 3.70\%              \\
-            		`\%why\%not\%'                & 6                              & 3.70\%              \\
-            		`\%todo\%duplicat\%'          & 5                              & 3.09\%              \\
-           		 `\%todo\%public\%'            & 5                              & 3.09\%              \\
-           		 `\%idea?\%'                   & 4                              & 2.47\%              \\
-            \bottomrule
-		\end{tabular}
-	\end{center}
-\end{table}
+\emad{Add a lit of the most common patterns}
+In addition to determining the comment patterns that indicate \SADTD, we also investigated the most common \SADTD comment patterns. Our findings show that the top 5 most common \SADTD comment patters are: \todo{list the most common terms and their percentage}. We see that the top 5 most common comment patterns indicate the \emad{majority?} of the \SADTD, accounting for more than \todo{add number\%} of the \SADTD occurrences.
 
 
-\begin{table*}[!hbt]
-	\begin{center}
-		\caption{Comparing the Use of Design-Specific Comment Patterns and the Generic Comment Patterns in Detecting \SADTD}
-		\vspace{-2mm}
-		\label{tab:approach_comparisson}
-		\begin{tabular}{l| p{1in} p{1in} p{1.2in} p{1in}  }
-			\toprule
-			\textbf{Project} &\textbf{Total \# of Design Comments} &\textbf{\# of Comments Our Approach Flags} &\textbf{\# of Comments Generic Approach Flags} &\textbf{Overlap}  \\ 
-			\midrule
-			Apache Ant      & 93 & 78 & 16 & 13   \\
-			Jakarta Jmeter  & 243 & 66 & 24 & 23   \\
-			JFreeChart      & 92 & 10 & 13 & 5  \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
-\end{table*}
+%The first approach described generated 3 different dictionaries that we evaluated separately \emad{you need to elaborate on the fact that you had 3 dictionaries in the approach...}. The "-ilities" dictionary containing 18 words like maintainability, flexibility, portability, etc. the "Design" dictionary which has 14 words and the "Bad Smells" dictionary with 8 words. 
+%
+%
+%Using the classified dataset, we were able to create a new dictionary that contains 81 different words \emad{don't say words. Call them comment patterns...just sounds more formal}, that we call root words, the root words are combined in a strategical way to generate 175 different combinations that can identify self-admitted design technical debt. Part of these 81 words were obtained using the previous dictionaries. The false positives could be drastically reduced by the use of the combinations of words.
+%
+%After executing the second approach, we noticed that is much more efficient to combine words into expressions than use single words. We also find that looking into classified data and then searching for patterns has shown better results than suggesting words. \emad{I don't understand the last sentence}
+%
 
-%\begin{table}[!hbt]
-%	\begin{center}
-%		\caption{Sample of General Self-Admitted TD patterns VS Sample of Design Self-Admitted TD}
-%		\label{tab:general_vs_sadtd}
-%		\begin{tabular}{l|l}
-%			\toprule
-%			\textbf{General Self-Admitted TD} & \textbf{Design Self-Admitted TD} \\ 
-%			\midrule
-%			this is uncool                    & `\%hack\%'                       \\
-%			risk of this blowing up           & `\%todo\%remove\%'               \\
-%			remove this code                  & `\%not \%sure \%'                \\
-%			something's gone wrong            & `\%why\%not\%'                   \\
-%			certainly buggy                   & `\%should\%instead\%'            \\
-%			treat this as a soft error        & `\%todo\%dependenc\%'            \\
-%			probably a bug                    & `\%better\%way\%'                \\
-%			this isn't very solid             & `\%ugly\%'                       \\
-%			is this line really safe          & `\%todo\%public\%'               \\
-%			something serious is wrong        & `\%for\%some\%reason\%'          \\ 
-%			\bottomrule
-%		\end{tabular}
-%	\end{center}
-%\end{table}
+\conclusionbox{FILL THIS IN LATER, WHEN THE RESULTS ARE IN}
 
-%\everton{Elaborate the discussion between the differences of Self-Admitted design techinical debt patterns and the general Self-Admitted techinical debt patterns. DESIGN vs GENERAL and Phrases vs Patterns  }
-%We also compare the comment patterns derived here to the more general comment patterns derived by Potdar and Shihab~\cite{Potdar2014ICSME} used to determine self-admitted technical debt in general (i.e., design debt, defect debt, testing debt and so forth). Comparing to Table \ref{tab:general_vs_sadtd}, the comment patterns indicating \SADTD~are different. This observation shows that although comments are good indicators of self-admitted technical debt \cite{Potdar2014ICSME}, different types of technical debt are indicated by different comment patterns.
-%\everton{Add more discussion about the nature of the comments}
-
-%We also evaluated the performance of both approaches in 3 projects, as shown in Table \ref{tab:approach_comparisson}. In the table we present the number of false positives and true positives for each approach. False positives (FP) represent the number of comments that were identified but is not \SADTD. True positives (TP) represents the number of comments that were identified and were indeed a \SADTD. We also present the overlap between the comments found by each approach. Finally we calculate the total of comments that can be found by both approaches, by the summing the TP's and subtracting the overlap. Then we calculate the percentage of \SADTD~comments found for each approach. In the only case that the General Self-Admitted TD approach perform better than the Design Self-Admitted TD approach is in JFreeChart, at cost of precision.  
-
-%In addition to determining the comment patterns that indicate \SADTD, we also investigated the most common \SADTD~comment patterns. Our findings show that the top 5 most common \SADTD~comment patterns are: ``hack" 15.1\%, ``todo+remove" 11.5\%,``not+sure" 6\%, ``why+not" 4\% and ``should+instead" 3.6\% . We see that the top 5 most common comment patterns indicate almost the majority of the \SADTD, accounting for more than 40\% of the \SADTD~occurrences. 
-
-To perform this analysis we took in consideration all the matches that each of the patterns retrieve. It's possible that one or more patterns match the same comment.
-
-\conclusionbox{We find that the top 5 most common comment patterns are: hack, not+sure, should+instead, todo+remove and ugly. The comment patterns proposed in our approach flag more \SADTD compared to the generic comment patterns proposed in prior work.}
-\vspace{0.3in}
-
-%\begin{table*}[!hbt]
-%	\begin{center}
-%		\caption{Approach comparison between General Self-Admitted TD and Design Self-Admitted TD}
-%		\label{tab:approach_comparisson}
-%		\begin{tabular}{l| c c c c c c }
-%			\toprule
-%			\textbf{Project} &\textbf{FP+TP/TP Design} &\textbf{FP+TP/TP General} &\textbf{Overlap} &\textbf{TP Union} & \textbf{Design} & \textbf{General} \\ 
-%			\midrule
-%			Apache Ant      & 81/78 & 31/16 & 13  & 81  & 96.29\% & 19.75\%   \\
-%			Jakarta Jmeter  & 75/66 & 46/24 & 23  & 67  & 98.51\% & 35.82\%   \\
-%			JFreeChart      & 12/10 & 77/13 & 5   & 18  & 55.55\% & 72.22\%   \\ 
-%			\bottomrule
-%		\end{tabular}
-%	\end{center}
-%\end{table*}
 
 \rqii
 
-\noindent \textbf{Motivation:} After deriving the comment patterns to detect \SADTD, one of the first questions that comes to mind is - how effective are the proposed comment patterns in detecting \SADTD. Determining the effectiveness of the comment patterns will give us confidence in their ability to detect \SADTD in software projects.
+\noindent \textbf{Motivation:} Just identify the words that can represent design technical debt is not enough. In order to make a real collaboration \emad{collaboration?} in this subject we need to know how good our approach is in finding design technical debt. We want to know exactly how many comments we can correctly identify and how many comments could have been identified in an ideal situation. Only then we will be able to know if our proposed approach is viable and if it is retrieving interesting results.  
 
-%After identifying the \SADTD~patterns we address our second research question, about evaluating the performance of our patterns in means of precision and recall. We manually examined the comments to determine design debt. However, we need to determine the effectiveness of these patterns. If the patterns are too general, then we will have many false positives leading to a waste of effort. If it is too restrictive, then we will miss many of the actual \SADTD. Therefore, our goal here is to find out how well our \SADTD~comment patterns do at detecting \SADTD.
+\emad{We manually examined the comments to determine design debt. However, we need to determine the effectiveness of these words. If the words are too general, then we will have many false positives leading to a waste of effort. If it is too restrictive, then we will miss many of the actual \SADTD. Therefore, our goal here is to find out how well our \SADTD comment patterns do at detecting \SADTD.}
 
-\par \noindent \textbf{Approach:} To measure the effectiveness of our proposed comment patterns in detecting \SADTD, we use the common measure of precision and recall. Precision measures how many of the comments our patterns flag as being \SADTD, actually are \SADTD. To calculate precision, we apply the 176 comment patterns to all the comments in the ten projects and then manually determine which of the flagged comments are actually \SADTD. Recall measures how many of the actual \SADTD in each project, our comment patterns are able to detect. To calculate recall, we apply our comment patterns on the three projects that we manually classified each comment for. Then, we measure the percentage of all the comments that are actually \SADTD comments (true occurrences) that were detected by our comment patterns. Since the calculation of recall requires that we read each comment manually, we only calculate the recall for three of the ten projects.
+\par \noindent \textbf{Approach:} To quantify the effectiveness of our technique, we want to evaluate the results of our dictionary  using precision and recall values. As there is no automated way to identify if a found comment is in fact a match for design technical debt and, to the best of our knowledge to the present date there is not an available dataset containing the required information that we need to do this assertion, we manually classified all the comments of three well-know projects: Apache-ant 1.7.0, Apache JMeter 2.10 and JFreeChart 1.0.19. In order to classify this data set we first remove the unnecessary comments by running the heuristics and the post-processing technique. \emad{why these two projects? Why is this different from RQ1?}
+
+For Apache Ant, before we execute the heuristics we had 21587 comments distributed in 1475 Java classes, after the execution of the heuristic the remaining comments were 4678. That was the total number of comments that we manually classified. The classification took a total time of 32 hours of one master student who has industrial experience in the Java programming language. \emad{I don't think you need to talk about the heuristics here.}
+
+For Apache Jmeter, the reaming  comments to manually analyze were 8102, The classification took a total time of 54 hours of one master student who has industrial experience in the Java programming language. Finally the number of manually canalized comments for JFreeChart  were 4452 and it took 29 hours to the same student to classify it. Regardless of the project, the comments were classified into the following categories: "design\_related" or "whitout\_classification". During this classification we focused specifically in design technical debt, other kinds of technical debt, when found, were classified as "without\_classification". 
+
+\emad{I am thinking of maybe combining RQ1 and RQ2...The approach seems very similar and they seem very related in general...}
+
+\noindent \textbf{Results:} Our first analysis aims only the comments found in the Apache-ant project, as we have the classified dataset to validate precision and recall \emad{not sure what this sentence means}. Table 4 \emad{reference properly} shows the results for the three proposed dictionaries. For the "-ilities" dictionary we matched 10 comments but only 2 were real design technical debt comments. The recall is even lower as we found 2 matches out of 93 available. For the "design dictionary" we matched 54 comments, of them 5 represented a design technical debt comment. Finally we found 39 comments using the "bad smells" dictionary but comparing with the our manual classification only one represented a design technical debt.
+
+We find that even with the improvement that the heuristic did to the dataset removing good part of the false positives we still do not have a good precision with any of the proposed dictionaries. The precision and recall were respectively 20\% and 2.15\%, 9.26\% and 5.38\% and finally 2.56\% and 1.01\%.
 
 
 
-
-%First we evaluate the precision of the \SADTD~patterns. We want to assert how many of the comments found by our patterns really represents a \SADTD. First, we developed a simple Java program to match the patterns of the expression dictionary with the comments in the database. Then, as there is no automated way to identify if a comment is in fact a \SADTD~comment, we manually assert the results. We repeated these steps to determine the precision of our \SADTD~patterns for each project. 
-
-%The next step is to evaluate recall. Supposing that you know all of \SADTD~comments existent in a project, recall is measured by comparing the number of \SADTD~comments that the approach was able to find out of the total number of \SADTD~comments existent in the project. Then, this number is represented as a percentage. As mentioned before, the necessary dataset to conduct this evaluation needs to be created as there is none available to the best of our knowledge. Therefore, we manually classified all the comments of two more projects namely - Jakarta Jmeter and JFreeChart in addition to the already classified Apache Ant. As manual classification of all comments is a very time consuming task, we limited our classification to these three projects. However, these projects represents different application domains and therefore, we considered as a good sample of the analyzed projects. We classified   8,102 comments in Jakarta Jmeter project and 4,452 comments in JFreeChart project. The first author took 54 and 29 hours respectively to create the classified dataset for this experiment. 
-
-%Finally, we evaluate recall analyzing the number of found \SADTD~comments with the total number of \SADTD~comments in the classified datasets. While measuring precision and recall we just take in consideration the total number of unique \SADTD~comments matched. For example, if two different \SADTD~patterns matches the same comment we consider as one unique \SADTD~comment instead of two. 
-
-\noindent \textbf{Results:} Table~\ref{tab:precision_and_recall} shows the precision and recall values of our approach. As explained earlier, since recall required the manual examination of all code comments, we only present the recall of three of the ten projects. We observe that the precision values for all the projects is good, ranging between 74.07-96.30\%. However, the recall values are not as high, ranging between 10.87-83.87\%. It is important to note here that the highest precision and recall values are achieved for Apache Ant, which is the project we mainly used to derive the comment patterns.
-
-The consistently high precision values show that our comment patterns have a low false positive rate, i.e., comments flagged using our comment patterns are most likely \SADTD. However, the low recall values (on the projects other than Apache Ant) indicate that our comment patterns will not flag all the \emph{actual} comments indicating \SADTD. In a nutshell, our comment patterns tend to be more conservative, reducing wasted effort, however the price to pay is that we may miss some of the \SADTD comments in the code. 
-
-To better understand the reason for the low recall values, we manually investigated some of the comments that indicate \SADTD in Jmeter and JFreeChart and found that some projects use project specific comment conventions that our comment patterns miss to capture. For example, in JFreeChart most of the \SADTD comments were preceded with a ``FIXME:''. That said, the high recall value achieved for Apache Ant shows that high recall values are achievable, however, one needs to examine and take into account the specific comment conventions used in that specific project. In the future, we plan to use Natural Language Processing techniques in order to derive comment patterns that may be applied across projects to detect \SADTD.
-%First we shown how many matches we got for each project and then we present the result of the manual assertion of each one of the \SADTD~comments. In general, our approach had achieved precision higher than 80\% for the majority of the projects. Without taking into consideration Apache Ant, which a high precision was already expected (96.30\%), our highest precision value has of 88.57\% in Squirrel SQL Client project and our lowest mark was of 74.07\% in Columba project. We achieved an high overall precision of 84.93\% considering all projects analyzed except Apache Ant. 
-
-%We present the recall of our approach in Table \ref{tab:expressiondictionary_recall}, for each classified dataset that we have - Apache Ant, Jakarta Jmeter and JFreeChart - we show the total number of \SADTD~comments, the number of matches that really represent a \SADTD~found by our approach as the true positives and the calculated recall percentage. The overall recall measured was of 19.01\% as we are not taking Apache Ant in consideration as it was used to come up with the expression dictionary at first place. Therefore our highest result while measuring recall was of 27.16\% in Jmeter and our lowest result was 10.87\% in JFreeChart.
-
-%We consider that the perfect result would be achieving hight values in both of the measured dimensions, precision and recall. What happens in the majority of times though, is that one can always improve one of the dimension while willing to sacrifice the other one. We argue that for our approach the same principle can be applied. We achieved a high overall precision (84.93\%) and a low overall recall (19.01\%). 
-
-\conclusionbox{Our comment patterns can detect \SADTD comments with a precision between 74.07-96.30\% and a recall between 10.87-83.87\%.}
-
-%We also consider that one possible way to improve recall without significantly losing precision is to apply natural language processing techniques to improve the approach once that is possible to see that the combination of certain words into \SADTD patterns has a high precision matching \SADTD comments.
 
 \begin{table}[!hbt]
-	\begin{center}
-		\caption{Precision and Recall of Our Approach}
-		\label{tab:precision_and_recall}
-		\begin{tabular}{l| c c c }
-			\toprule
-			\textbf{Project} & \textbf{Precision} & \textbf{Recall}\\ 
-			\midrule
-			Apache Ant        & 96.30\%  &    83.87\%      \\
-			Jakarta Jmeter   & 88.00\%  &    27.16\%      \\
-			JFreeChart         & 83.33\%  &    10.87\%      \\
-			ArgoUML            & 88.05\%  &       -   \\
-			Columba             & 74.07\%  &       -   \\
-			EMF                    & 85.18\%  &       -   \\
-			Hibernate            & 87.18\%  &       -   \\
-			JEdit                    & 81.92\%  &       -   \\
-			JRuby                  & 88.07\%  &       -   \\
-			SQuirrel               & 88.57\%  &       -   \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
+    \begin{center}
+        \caption{Dictionaries Evaluation}
+        \label{tab:dictionaryEvaluation}
+        \begin{tabular}{l| c c c c} 
+            \toprule
+            \textbf{Dictionary} & \textbf{Found} &  \textbf{Match}  &  \textbf{Precision} & \textbf{Recall} \\ 
+            \midrule
+            "-ilities" & 10 & 2 & 20\% & 2.15\% \\ 
+            Design & 54 & 5 & 9.26\% & 5.38\% \\
+            Bad Smell  & 39 & 1 & 2.56\% & 1.01\% \\ 
+            \bottomrule
+        \end{tabular}
+    \end{center}
 \end{table}
 
-%\begin{table}[!hbt]
-%	\begin{center}
-%		\caption{Expression dictionary recall}
-%		\label{tab:expressiondictionary_recall}
-%		\begin{tabular}{l| c c c}
-%			\toprule
-%			\textbf{Project} & \textbf{All TP} & \textbf{Found TP} & \textbf{Recall} \\ 
-%			\midrule
-%			Apache Ant       & 93           & 78                      & 83.87\%         \\
-%			Jakarta Jmeter   & 243          & 66                      & 27.16\%         \\
-%			JFreeChart       & 92           & 10                      & 10.87\%         \\ 
-%			\bottomrule
-%		\end{tabular}
-%	\end{center}
-%\end{table}
+\begin{table}[!hbt]
+    \begin{center}
+        \caption{Expression Dictionary}
+        \label{tab:dictionaryExpression}
+        \begin{tabular}{l| c c c c} 
+            \toprule
+            \textbf{Dataset} & \textbf{Found} &  \textbf{Match}  &  \textbf{Precision} & \textbf{Recall} \\
+            \midrule
+            Apache-Ant    & 81 & 78 & 96.30\% & 83.87\% \\ 
+            Apache-Jmeter & 75 & 66 & 88.00\% & 27.16\% \\ 
+            JFreeChart    & 12 & 10 & 83.33\% & 10.87\% \\ 
+            All Projects  & 964 & 825 & 85.58\% & - \\  
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{table}
+
+
+After the conception of the expression dictionary, we first evaluate the precision and recall in the Apache-ant project. As the project was mainly used to compose the words in the dictionary we expect precision and recall values to be very high. We find that out of the 81 comments that was matched 78 was related with \emad{self-admitted?} design technical debt. The precision of this new dictionary was 96.30\% and the recall 83.87\%. We were impressed with the results because of the improvement in the results \emad{please remove this sentence...we cannot say that we are awesome}. 
+
+We analyzed the performance of the dictionary in the database that contained the comments of all of ten used projects. As all the classification done so far has to be manual, the effort needed to classify all the comments of all the projects  in the same way that we did for Apache Ant, Apache JMeter and JFreeChart projects would be unfeasible due time constrains. So we decided to measure just precision in this case. 
+
+Nevertheless, we manually checked the 964 comments that were matched when using the dictionary in this dataset. The number of positive matches if the manual analysis was 825 comments, with means a precision of 85.58\%. The analysis took 8 hours of work of one master student. Refer to Table 5 \emad{reference properly} for the results.
+
+
+%\vspace{5mm} 
+%\par \noindent \textbf{RQ1.} What words indicate self-admitted design technical debt?
+%\vspace{5mm} 
+%\par \textit{Our results shows that the following words and combinations of words has a high precision identifying design technical debt. Future, Quick Fix, Temporary, Place some where else, Used other place, It may change, Not sure, Dependency Cycle, Code copied from, Any reason, Wrong Place, Hairy, Instead-Could, Ugly, Avoid, Pathological, Stolen, Not Well Formed, No Sense Since, Without noticing, Brittle, Really Necessary, Cares, No Idea, Doing, Elsewhere, Rather complex, Held, Though unused, Don't Know, Not fond, More elegant, Clean Way, Remove, Don't want, Fix for, Irritating, Duplication), Why not, Rethink, Rework, Pointless, Not nice, Hack, Only Developer Knows, Use help, Hammer, Redundant, For some reason, Alternatively-Could, Technically, Forces us, Better Way, Hard Coded, Kludge, Wrong visibility, Messy, Should-Instead, Weird, Availability, Extensibility, Flexibility, Scalability, Security, Ambiguous, Big, Clean, Complex, Consistency-Sake, Lack, Long, Large, Maintenan ce, Unused, bad, Clone, Dead Code, Design, Magic and  Smell.}
+
+
+%\vspace{5mm} 
+%\par \noindent \textbf{RQ2.} How effective is the proposed technique at detecting self-admitted design technical debt?
+%\vspace{5mm} 
+
+\conclusionbox{We find that our expression dictionary obtained a precision of 96.30\% and recall of 83.87\% in the Apache-ant project, for the Apache JMeter and JFreeChart projects we have 88.00\% precision 27.16\% recall and 83.33\% precision 10.87\% recall respectively. Finally when  using the whole dataset the precision obtained was of 85.58\%.}
