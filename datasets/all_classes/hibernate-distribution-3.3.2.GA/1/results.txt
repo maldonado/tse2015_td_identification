@@ -1,0 +1,45 @@
+ColumnDataClassifier invoked on Fri Jul 24 13:38:45 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/classified_seq.train varies between 2 and 23
+done [2.9s, 9692 items].
+numDatums: 9692
+numDatumsPerLabel: {DOCUMENTATION=30.0, DESIGN=801.0, TEST=44.0, WITHOUT_CLASSIFICATION=8039.0, DEFECT=127.0, IMPLEMENTATION=651.0}
+numLabels: 6 [IMPLEMENTATION, WITHOUT_CLASSIFICATION, DOCUMENTATION, DEFECT, DESIGN, TEST]
+numFeatures (Phi(X) types): 60373 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
+......................................................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/all_classes/hibernate-distribution-3.3.2.GA/1/classified_seq.test varies between 2 and 54
+done [0.6s, 2968 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+2968 examples in test set
+Cls IMPLEMENTATION: TP=10 FN=54 FP=30 TN=2874; Acc 0.972 P 0.250 R 0.156 F1 0.192
+Cls WITHOUT_CLASSIFICATION: TP=2473 FN=23 FP=306 TN=166; Acc 0.889 P 0.890 R 0.991 F1 0.938
+Cls DOCUMENTATION: TP=0 FN=1 FP=0 TN=2967; Acc 1.000 P 1.000 R 0.000 F1 0.000
+Cls DEFECT: TP=5 FN=47 FP=10 TN=2906; Acc 0.981 P 0.333 R 0.096 F1 0.149
+Cls DESIGN: TP=92 FN=263 FP=42 TN=2571; Acc 0.897 P 0.687 R 0.259 F1 0.376
+Cls TEST: TP=0 FN=0 FP=0 TN=2968; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Accuracy/micro-averaged F1: 0.86927
+Macro-averaged F1: 0.44258
