@@ -5,7 +5,7 @@
 %% Electrical and Electronics Engineers (IEEE) Transactions journals and
 %% conferences.
 %% 
-%% Support sites
+%% Support sites:
 %% http://www.michaelshell.org/tex/ieeetran/
 %% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
 %% and
