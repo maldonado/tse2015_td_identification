@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 20:54:47 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/classified_seq.train ... done [0.6s, 32316 items].
+numDatums: 32316
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=31807.0, IMPLEMENTATION=509.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 26979 [CLASS, 1-SW-back, 1-SW-TODO:, 1-SW-clause, 1-SW-Put, ...]
+.....................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/6/classified_seq.test ... done [0.1s, 8669 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+8669 examples in test set
+Cls IMPLEMENTATION: TP=482 FN=169 FP=155 TN=7863; Acc 0.963 P 0.757 R 0.740 F1 0.748
+Cls WITHOUT_CLASSIFICATION: TP=7863 FN=155 FP=169 TN=482; Acc 0.963 P 0.979 R 0.981 F1 0.980
+Accuracy/micro-averaged F1: 0.96263
+Macro-averaged F1: 0.86413

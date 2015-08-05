@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:19:37 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 20:41:18 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classi
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/top_features.txt
 displayedColumn = 1
@@ -16,26 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.train varies between 2 and 23
-done [2.6s, 8069 items].
-numDatums: 8069
-numDatumsPerLabel: {DOCUMENTATION=30.0, WITHOUT_CLASSIFICATION=8039.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.train ... done [2.4s, 8048 items].
+numDatums: 8048
+numDatumsPerLabel: {DOCUMENTATION=30.0, WITHOUT_CLASSIFICATION=8018.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
-numFeatures (Phi(X) types): 50156 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
-.......................................
+numFeatures (Phi(X) types): 53606 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+.........................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.test ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.test varies between 2 and 93
-done [1.3s, 6931 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/sql12/1/classified_seq.test ... done [1.5s, 6911 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-6931 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=6929 FN=0 FP=2 TN=0; Acc 1.000 P 1.000 R 1.000 F1 1.000
-Cls DOCUMENTATION: TP=0 FN=2 FP=0 TN=6929; Acc 1.000 P 1.000 R 0.000 F1 0.000
+6911 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6909 FN=0 FP=2 TN=0; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Cls DOCUMENTATION: TP=0 FN=2 FP=0 TN=6909; Acc 1.000 P 1.000 R 0.000 F1 0.000
 Accuracy/micro-averaged F1: 0.99971
 Macro-averaged F1: 0.49993

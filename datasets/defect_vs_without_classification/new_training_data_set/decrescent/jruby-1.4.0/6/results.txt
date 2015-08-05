@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 21:13:05 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/classified_seq.train ... done [0.9s, 39405 items].
+numDatums: 39405
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=39124.0, DEFECT=281.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 29688 [CLASS, 1-SW-java.lang.Object#hashCode(), 1-Len-31-Inf, 1-SW-@see, 1-SW-copy?, ...]
+..........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/6/classified_seq.test ... done [0.1s, 4436 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4436 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4272 FN=3 FP=145 TN=16; Acc 0.967 P 0.967 R 0.999 F1 0.983
+Cls DEFECT: TP=16 FN=145 FP=3 TN=4272; Acc 0.967 P 0.842 R 0.099 F1 0.178
+Accuracy/micro-averaged F1: 0.96664
+Macro-averaged F1: 0.58038

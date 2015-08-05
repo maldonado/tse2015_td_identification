@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 21:13:32 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/classified_seq.train ... done [0.8s, 32928 items].
+numDatums: 32928
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=32523.0, DEFECT=405.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 24230 [CLASS, 1-SW-they're, 1-SW-constants, 1-SW-set, 1-SW-that, ...]
+.....................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/sql12/5/classified_seq.test ... done [0.1s, 6933 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+6933 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6900 FN=9 FP=17 TN=7; Acc 0.996 P 0.998 R 0.999 F1 0.998
+Cls DEFECT: TP=7 FN=17 FP=9 TN=6900; Acc 0.996 P 0.438 R 0.292 F1 0.350
+Accuracy/micro-averaged F1: 0.99625
+Macro-averaged F1: 0.67406

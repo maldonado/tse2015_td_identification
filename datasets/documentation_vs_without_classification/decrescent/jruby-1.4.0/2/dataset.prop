@@ -3,7 +3,8 @@
 #
 useClassFeature=true
 1.useNGrams=true
-1.usePrefixSuffixNGrams=true
+1.useSplitWords
+1.splitWordsRegexp "\s"
 1.maxNGramLeng=4
 1.minNGramLeng=1
 1.binnedLengths=10,20,30

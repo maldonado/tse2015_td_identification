@@ -1,0 +1,502 @@
+LinearClassifier [printing top 500 features]
+(CLASS,WITHOUT_CLASSIFICATION)                      3.1894
+(1-Len-31-Inf,WITHOUT_CLASSIFICATION)               1.2532
+(1-Len-11-20,WITHOUT_CLASSIFICATION)                1.1910
+(1-Len-21-30,WITHOUT_CLASSIFICATION)                1.1538
+(1-#-TODO: ,IMPLEMENTATION)                         0.6332
+(1-#- TODO: ,IMPLEMENTATION)                        0.6035
+(1-#E-/ TODO: ,WITHOUT_CLASSIFICATION)              0.5598
+(1-#E-// TODO: ,WITHOUT_CLASSIFICATION)             0.5598
+(1-#E- TODO: ,WITHOUT_CLASSIFICATION)               0.5598
+(1-#E-TODO: ,WITHOUT_CLASSIFICATION)                0.5598
+(1-#-// TODO ,IMPLEMENTATION)                       0.4443
+(1-#-/ TODO ,IMPLEMENTATION)                        0.4443
+(1-#- TODO ,IMPLEMENTATION)                         0.4440
+(1-#B-// TODO ,IMPLEMENTATION)                      0.4317
+(1-#-// TODO: ,IMPLEMENTATION)                      0.4296
+(1-#-/ TODO: ,IMPLEMENTATION)                       0.4296
+(1-#E-// TODO,WITHOUT_CLASSIFICATION)               0.4272
+(1-#E-/ TODO,WITHOUT_CLASSIFICATION)                0.4272
+(1-#B-// TODO: ,IMPLEMENTATION)                     0.3884
+(1-Len-0-10,IMPLEMENTATION)                         0.3856
+(1-#- TODO:,IMPLEMENTATION)                         0.2910
+(1-#E-needed,IMPLEMENTATION)                        0.2372
+(1-#E- needed,IMPLEMENTATION)                       0.2372
+(1-#E- not needed,IMPLEMENTATION)                   0.2274
+(1-#E-t needed,IMPLEMENTATION)                      0.2274
+(1-#E-// not needed,IMPLEMENTATION)                 0.2274
+(1-#E-not needed,IMPLEMENTATION)                    0.2274
+(1-#E-ot needed,IMPLEMENTATION)                     0.2274
+(1-#E-/ not needed,IMPLEMENTATION)                  0.2274
+(1-#E-/ TODO:,WITHOUT_CLASSIFICATION)               0.2082
+(1-#E-// TODO:,WITHOUT_CLASSIFICATION)              0.2082
+(1-#E- TODO:,WITHOUT_CLASSIFICATION)                0.2082
+(1-#-IXME: ,IMPLEMENTATION)                         0.2063
+(1-#-FIXME:,IMPLEMENTATION)                         0.2063
+(1-#-FIXME: ,IMPLEMENTATION)                        0.2063
+(1-#- FIXME,IMPLEMENTATION)                         0.2041
+(1-#- FIXME:,IMPLEMENTATION)                        0.1984
+(1-#- FIXME: ,IMPLEMENTATION)                       0.1984
+(1-#-ODO: I,IMPLEMENTATION)                         0.1983
+(1-#-TODO: I,IMPLEMENTATION)                        0.1983
+(1-#- TODO: I,IMPLEMENTATION)                       0.1886
+(1-#-* TODO:,IMPLEMENTATION)                        0.1644
+(1-#-* TODO: ,IMPLEMENTATION)                       0.1644
+(1-#-* TODO,IMPLEMENTATION)                         0.1644
+(1-#B-//i18n,WITHOUT_CLASSIFICATION)                0.1635
+(1-#-//i18n,WITHOUT_CLASSIFICATION)                 0.1635
+(1-#-// TODO: I,IMPLEMENTATION)                     0.1629
+(1-#-/ TODO: I,IMPLEMENTATION)                      0.1629
+(1-#-/ not needed,IMPLEMENTATION)                   0.1616
+(1-#-/ not need,IMPLEMENTATION)                     0.1616
+(1-#-// not need,IMPLEMENTATION)                    0.1616
+(1-#B-// not need,IMPLEMENTATION)                   0.1616
+(1-#-// not nee,IMPLEMENTATION)                     0.1616
+(1-#B-// not nee,IMPLEMENTATION)                    0.1616
+(1-#B-// not neede,IMPLEMENTATION)                  0.1616
+(1-#-/ not nee,IMPLEMENTATION)                      0.1616
+(1-#B-// not needed,IMPLEMENTATION)                 0.1616
+(1-#-/ not neede,IMPLEMENTATION)                    0.1616
+(1-#-// not needed,IMPLEMENTATION)                  0.1616
+(1-#-// not neede,IMPLEMENTATION)                   0.1616
+(1-#B-// TODO: I,IMPLEMENTATION)                    0.1604
+(1-#B-// not ne,IMPLEMENTATION)                     0.1603
+(1-#B-// not n,IMPLEMENTATION)                      0.1603
+(1-#-// not ne,IMPLEMENTATION)                      0.1603
+(1-#-/ not ne,IMPLEMENTATION)                       0.1603
+(1-#-// not n,IMPLEMENTATION)                       0.1603
+(1-#-/ not n,IMPLEMENTATION)                        0.1603
+(1-#- needed,IMPLEMENTATION)                        0.1580
+(1-#- neede,IMPLEMENTATION)                         0.1580
+(1-#-needed,IMPLEMENTATION)                         0.1569
+(1-#- not needed,IMPLEMENTATION)                    0.1531
+(1-#- not neede,IMPLEMENTATION)                     0.1531
+(1-#-not neede,IMPLEMENTATION)                      0.1525
+(1-#-not needed,IMPLEMENTATION)                     0.1525
+(1-#E-NOI18N,WITHOUT_CLASSIFICATION)                0.1472
+(1-#-NOI18N,WITHOUT_CLASSIFICATION)                 0.1472
+(1-#-t needed,IMPLEMENTATION)                       0.1466
+(1-#-t neede,IMPLEMENTATION)                        0.1466
+(1-#- not nee,IMPLEMENTATION)                       0.1465
+(1-#- not need,IMPLEMENTATION)                      0.1465
+(1-#-not nee,IMPLEMENTATION)                        0.1458
+(1-#-not need,IMPLEMENTATION)                       0.1458
+(1-#-ot needed,IMPLEMENTATION)                      0.1450
+(1-#-ot neede,IMPLEMENTATION)                       0.1450
+(1-#- not ne,IMPLEMENTATION)                        0.1440
+(1-#-not ne,IMPLEMENTATION)                         0.1433
+(1-#-/ TODO,IMPLEMENTATION)                         0.1394
+(1-#-// TOD,IMPLEMENTATION)                         0.1394
+(1-#-// TODO,IMPLEMENTATION)                        0.1394
+(1-#-ot nee,IMPLEMENTATION)                         0.1384
+(1-#-ot need,IMPLEMENTATION)                        0.1384
+(1-#-ODO: i,IMPLEMENTATION)                         0.1335
+(1-#-TODO: i,IMPLEMENTATION)                        0.1335
+(1-#-switch,WITHOUT_CLASSIFICATION)                 0.1333
+(1-#-// FIX,IMPLEMENTATION)                         0.1328
+(1-#B-// not ,IMPLEMENTATION)                       0.1314
+(1-#- not n,IMPLEMENTATION)                         0.1308
+(1-#E- UML 2,WITHOUT_CLASSIFICATION)                0.1288
+(1-#E-switch,WITHOUT_CLASSIFICATION)                0.1287
+(1-#B-// FIX,IMPLEMENTATION)                        0.1276
+(1-#-// not ,IMPLEMENTATION)                        0.1271
+(1-#-/ not ,IMPLEMENTATION)                         0.1269
+(1-#B-/*    ,WITHOUT_CLASSIFICATION)                0.1266
+(1-#-/*    ,WITHOUT_CLASSIFICATION)                 0.1266
+(1-#E- TODO I18N,IMPLEMENTATION)                    0.1259
+(1-#-/ TODO I18N,IMPLEMENTATION)                    0.1259
+(1-#- TODO I18,IMPLEMENTATION)                      0.1259
+(1-#-ODO I18,IMPLEMENTATION)                        0.1259
+(1-#B-// TODO I1,IMPLEMENTATION)                    0.1259
+(1-#E-DO I18N,IMPLEMENTATION)                       0.1259
+(1-#B-// TODO I18,IMPLEMENTATION)                   0.1259
+(1-#E-/ TODO I18N,IMPLEMENTATION)                   0.1259
+(1-#-ODO I18N,IMPLEMENTATION)                       0.1259
+(1-#-/ TODO I1,IMPLEMENTATION)                      0.1259
+(1-#-// TODO I1,IMPLEMENTATION)                     0.1259
+(1-#-DO I18N,IMPLEMENTATION)                        0.1259
+(1-#-TODO I,IMPLEMENTATION)                         0.1259
+(1-#B-// TODO I,IMPLEMENTATION)                     0.1259
+(1-#-// TODO I18,IMPLEMENTATION)                    0.1259
+(1-#-// TODO I18N,IMPLEMENTATION)                   0.1259
+(1-#-TODO I18,IMPLEMENTATION)                       0.1259
+(1-#-TODO I18N,IMPLEMENTATION)                      0.1259
+(1-#- TODO I1,IMPLEMENTATION)                       0.1259
+(1-#-O I18N,IMPLEMENTATION)                         0.1259
+(1-#-/ TODO I18,IMPLEMENTATION)                     0.1259
+(1-#-DO I18,IMPLEMENTATION)                         0.1259
+(1-#E-O I18N,IMPLEMENTATION)                        0.1259
+(1-#E-TODO I18N,IMPLEMENTATION)                     0.1259
+(1-#E-// TODO I18N,IMPLEMENTATION)                  0.1259
+(1-#B-// TODO I18N,IMPLEMENTATION)                  0.1259
+(1-#-TODO I1,IMPLEMENTATION)                        0.1259
+(1-#-ODO I1,IMPLEMENTATION)                         0.1259
+(1-#- TODO I,IMPLEMENTATION)                        0.1259
+(1-#- TODO I18N,IMPLEMENTATION)                     0.1259
+(1-#-// TODO I,IMPLEMENTATION)                      0.1259
+(1-#E-ODO I18N,IMPLEMENTATION)                      0.1259
+(1-#-/ TODO I,IMPLEMENTATION)                       0.1259
+(1-#E-//i18n,WITHOUT_CLASSIFICATION)                0.1240
+(1-#- line ,WITHOUT_CLASSIFICATION)                 0.1236
+(1-#- class,WITHOUT_CLASSIFICATION)                 0.1229
+(1-#-t need,IMPLEMENTATION)                         0.1229
+(1-#- TODO: i,IMPLEMENTATION)                       0.1219
+(1-#-// FIXME,IMPLEMENTATION)                       0.1206
+(1-#-/ FIXM,IMPLEMENTATION)                         0.1206
+(1-#-// FIXM,IMPLEMENTATION)                        0.1206
+(1-#-/ FIXME,IMPLEMENTATION)                        0.1206
+(1-#-// TODO: I1,IMPLEMENTATION)                    0.1205
+(1-#-/ TODO: I1,IMPLEMENTATION)                     0.1205
+(1-#-TODO: I1,IMPLEMENTATION)                       0.1205
+(1-#-DO: I1,IMPLEMENTATION)                         0.1205
+(1-#-O: I18,IMPLEMENTATION)                         0.1205
+(1-#B-// TODO: I1,IMPLEMENTATION)                   0.1205
+(1-#-// TODO: I18,IMPLEMENTATION)                   0.1205
+(1-#- TODO: I1,IMPLEMENTATION)                      0.1205
+(1-#-ODO: I18,IMPLEMENTATION)                       0.1205
+(1-#-ODO: I1,IMPLEMENTATION)                        0.1205
+(1-#-/ TODO: I18,IMPLEMENTATION)                    0.1205
+(1-#- TODO: I18,IMPLEMENTATION)                     0.1205
+(1-#-DO: I18,IMPLEMENTATION)                        0.1205
+(1-#-TODO: I18,IMPLEMENTATION)                      0.1205
+(1-#B-// TODO: I18,IMPLEMENTATION)                  0.1205
+(1-#-mplement,IMPLEMENTATION)                       0.1201
+(1-#-mplemen,IMPLEMENTATION)                        0.1201
+(1-#-plement,IMPLEMENTATION)                        0.1201
+(1-#-plemen,IMPLEMENTATION)                         0.1201
+(1-#-mpleme,IMPLEMENTATION)                         0.1187
+(1-#-// Row,WITHOUT_CLASSIFICATION)                 0.1182
+(1-#-// TODO:,IMPLEMENTATION)                       0.1177
+(1-#-/ TODO:,IMPLEMENTATION)                        0.1177
+(1-#B-// Row,WITHOUT_CLASSIFICATION)                0.1172
+(1-#- implement,IMPLEMENTATION)                     0.1166
+(1-#- implemen,IMPLEMENTATION)                      0.1166
+(1-#-// TODO: i,IMPLEMENTATION)                     0.1153
+(1-#-/ TODO: i,IMPLEMENTATION)                      0.1153
+(1-#- imple,IMPLEMENTATION)                         0.1152
+(1-#- implem,IMPLEMENTATION)                        0.1152
+(1-#- impleme,IMPLEMENTATION)                       0.1152
+(1-#B-// FIXM,IMPLEMENTATION)                       0.1151
+(1-#B-// FIXME,IMPLEMENTATION)                      0.1151
+(1-#-/ FIXME: ,IMPLEMENTATION)                      0.1149
+(1-#-// FIXME: ,IMPLEMENTATION)                     0.1149
+(1-#-// FIXME:,IMPLEMENTATION)                      0.1149
+(1-#-/ FIXME:,IMPLEMENTATION)                       0.1149
+(1-#B-// TODO: i,IMPLEMENTATION)                    0.1147
+(1-#E- in UML 2,WITHOUT_CLASSIFICATION)             0.1118
+(1-#E-in UML 2,WITHOUT_CLASSIFICATION)              0.1118
+(1-#E-n UML 2,WITHOUT_CLASSIFICATION)               0.1118
+(1-#B-// FIXME:,IMPLEMENTATION)                     0.1094
+(1-#B-// FIXME: ,IMPLEMENTATION)                    0.1094
+(1-#B-// lin,WITHOUT_CLASSIFICATION)                0.1071
+(1-#-// i18,WITHOUT_CLASSIFICATION)                 0.1067
+(1-#-/ i18n,WITHOUT_CLASSIFICATION)                 0.1067
+(1-#-// i18n,WITHOUT_CLASSIFICATION)                0.1067
+(1-#-// lin,WITHOUT_CLASSIFICATION)                 0.1065
+(1-#-: i18n,IMPLEMENTATION)                         0.1064
+(1-#B-// line,WITHOUT_CLASSIFICATION)               0.1063
+(1-#B-// line ,WITHOUT_CLASSIFICATION)              0.1063
+(1-#-/ TODO:?,WITHOUT_CLASSIFICATION)               0.1056
+(1-#E- TODO:?,WITHOUT_CLASSIFICATION)               0.1056
+(1-#- TODO:?,WITHOUT_CLASSIFICATION)                0.1056
+(1-#-TODO:?,WITHOUT_CLASSIFICATION)                 0.1056
+(1-#E-/ TODO:?,WITHOUT_CLASSIFICATION)              0.1056
+(1-#E-// TODO:?,WITHOUT_CLASSIFICATION)             0.1056
+(1-#-// TODO:?,WITHOUT_CLASSIFICATION)              0.1056
+(1-#B-// TODO:?,WITHOUT_CLASSIFICATION)             0.1056
+(1-#E-TODO:?,WITHOUT_CLASSIFICATION)                0.1056
+(1-#-// line,WITHOUT_CLASSIFICATION)                0.1056
+(1-#-/ line,WITHOUT_CLASSIFICATION)                 0.1056
+(1-#B-// i18n,WITHOUT_CLASSIFICATION)               0.1056
+(1-#B-// i18,WITHOUT_CLASSIFICATION)                0.1056
+(1-#-/ NOI18N,WITHOUT_CLASSIFICATION)               0.1051
+(1-#-// NOI1,WITHOUT_CLASSIFICATION)                0.1051
+(1-#-// NOI,WITHOUT_CLASSIFICATION)                 0.1051
+(1-#E-/ NOI18N,WITHOUT_CLASSIFICATION)              0.1051
+(1-#-// NOI18,WITHOUT_CLASSIFICATION)               0.1051
+(1-#-// NOI18N,WITHOUT_CLASSIFICATION)              0.1051
+(1-#E- NOI18N,WITHOUT_CLASSIFICATION)               0.1051
+(1-#- NOI18N,WITHOUT_CLASSIFICATION)                0.1051
+(1-#E-// NOI18N,WITHOUT_CLASSIFICATION)             0.1051
+(1-#- NOI18,WITHOUT_CLASSIFICATION)                 0.1051
+(1-#-/ NOI1,WITHOUT_CLASSIFICATION)                 0.1051
+(1-#-/ NOI18,WITHOUT_CLASSIFICATION)                0.1051
+(1-#B-// NOI,WITHOUT_CLASSIFICATION)                0.1051
+(1-#B-// NOI18N,WITHOUT_CLASSIFICATION)             0.1051
+(1-#B-// NOI1,WITHOUT_CLASSIFICATION)               0.1051
+(1-#B-// NOI18,WITHOUT_CLASSIFICATION)              0.1051
+(1-#-// line ,WITHOUT_CLASSIFICATION)               0.1049
+(1-#-/ line ,WITHOUT_CLASSIFICATION)                0.1049
+(1-#B-// icon,WITHOUT_CLASSIFICATION)               0.1026
+(1-#-// icon,WITHOUT_CLASSIFICATION)                0.1026
+(1-#-/ icon,WITHOUT_CLASSIFICATION)                 0.1026
+(1-#B-// ico,WITHOUT_CLASSIFICATION)                0.1026
+(1-#-// ico,WITHOUT_CLASSIFICATION)                 0.1026
+(1-#-ODO: i18,IMPLEMENTATION)                       0.1014
+(1-#-DO: i18n,IMPLEMENTATION)                       0.1014
+(1-#-TODO: i18,IMPLEMENTATION)                      0.1014
+(1-#-TODO: i18n,IMPLEMENTATION)                     0.1014
+(1-#-O: i18,IMPLEMENTATION)                         0.1014
+(1-#-DO: i18,IMPLEMENTATION)                        0.1014
+(1-#-ODO: i18n,IMPLEMENTATION)                      0.1014
+(1-#-ODO: i1,IMPLEMENTATION)                        0.1014
+(1-#-O: i18n,IMPLEMENTATION)                        0.1014
+(1-#- TODO: i18n,IMPLEMENTATION)                    0.1014
+(1-#-DO: i1,IMPLEMENTATION)                         0.1014
+(1-#- TODO: i1,IMPLEMENTATION)                      0.1014
+(1-#-TODO: i1,IMPLEMENTATION)                       0.1014
+(1-#- TODO: i18,IMPLEMENTATION)                     0.1014
+(1-#E-: i18n,IMPLEMENTATION)                        0.0998
+(1-#-/* TOD,IMPLEMENTATION)                         0.0989
+(1-#B-/* TODO:,IMPLEMENTATION)                      0.0989
+(1-#-/* TODO: ,IMPLEMENTATION)                      0.0989
+(1-#B-/* TODO,IMPLEMENTATION)                       0.0989
+(1-#B-/* TODO: ,IMPLEMENTATION)                     0.0989
+(1-#B-/* TOD,IMPLEMENTATION)                        0.0989
+(1-#-/* TODO,IMPLEMENTATION)                        0.0989
+(1-#-/* TODO:,IMPLEMENTATION)                       0.0989
+(1-#-ed in ,WITHOUT_CLASSIFICATION)                 0.0985
+(1-#- from ,WITHOUT_CLASSIFICATION)                 0.0972
+(1-#-/ i18n[,WITHOUT_CLASSIFICATION)                0.0954
+(1-#- i18n[,WITHOUT_CLASSIFICATION)                 0.0954
+(1-#-// i18n[,WITHOUT_CLASSIFICATION)               0.0954
+(1-#-/ TODO: i18,IMPLEMENTATION)                    0.0948
+(1-#B-// TODO: i1,IMPLEMENTATION)                   0.0948
+(1-#E-TODO: i18n,IMPLEMENTATION)                    0.0948
+(1-#E-// TODO: i18n,IMPLEMENTATION)                 0.0948
+(1-#-// TODO: i1,IMPLEMENTATION)                    0.0948
+(1-#E-ODO: i18n,IMPLEMENTATION)                     0.0948
+(1-#E- TODO: i18n,IMPLEMENTATION)                   0.0948
+(1-#-/ TODO: i18n,IMPLEMENTATION)                   0.0948
+(1-#E-DO: i18n,IMPLEMENTATION)                      0.0948
+(1-#-// TODO: i18,IMPLEMENTATION)                   0.0948
+(1-#E-/ TODO: i18n,IMPLEMENTATION)                  0.0948
+(1-#B-// TODO: i18n,IMPLEMENTATION)                 0.0948
+(1-#B-// TODO: i18,IMPLEMENTATION)                  0.0948
+(1-#-// TODO: i18n,IMPLEMENTATION)                  0.0948
+(1-#E-O: i18n,IMPLEMENTATION)                       0.0948
+(1-#-/ TODO: i1,IMPLEMENTATION)                     0.0948
+(1-#B-// i18n[,WITHOUT_CLASSIFICATION)              0.0942
+(1-#-in UML,WITHOUT_CLASSIFICATION)                 0.0939
+(1-#- in UM,WITHOUT_CLASSIFICATION)                 0.0938
+(1-#- in UML,WITHOUT_CLASSIFICATION)                0.0938
+(1-#-implemen,IMPLEMENTATION)                       0.0938
+(1-#-implement,IMPLEMENTATION)                      0.0938
+(1-#E- gone in UML 2.1,IMPLEMENTATION)              0.0938
+(1-#-: gone in UML 2.,IMPLEMENTATION)               0.0938
+(1-#E-DO: gone in UML 2.1,IMPLEMENTATION)           0.0938
+(1-#- gone in UML 2.,IMPLEMENTATION)                0.0938
+(1-#E-: gone in UML 2.1,IMPLEMENTATION)             0.0938
+(1-#-O: gone in UML 2.,IMPLEMENTATION)              0.0938
+(1-#- gone in UML 2.1,IMPLEMENTATION)               0.0938
+(1-#-DO: gone in UML 2.1,IMPLEMENTATION)            0.0938
+(1-#-DO: gone in UML 2.,IMPLEMENTATION)             0.0938
+(1-#E-one in UML 2.1,IMPLEMENTATION)                0.0938
+(1-#-ODO: gone in UML 2.,IMPLEMENTATION)            0.0938
+(1-#E-gone in UML 2.1,IMPLEMENTATION)               0.0938
+(1-#-O: gone in UML 2.1,IMPLEMENTATION)             0.0938
+(1-#-ODO: gone in UML 2.1,IMPLEMENTATION)           0.0938
+(1-#E-O: gone in UML 2.1,IMPLEMENTATION)            0.0938
+(1-#-gone in UML 2.1,IMPLEMENTATION)                0.0938
+(1-#-: gone in UML 2.1,IMPLEMENTATION)              0.0938
+(1-#-TODO: gone in UML 2.,IMPLEMENTATION)           0.0938
+(1-#E-ODO: gone in UML 2.1,IMPLEMENTATION)          0.0938
+(1-#-gone in UML 2.,IMPLEMENTATION)                 0.0938
+(1-#E-ne in UML 2.1,IMPLEMENTATION)                 0.0938
+(1-#- TODO: T,IMPLEMENTATION)                       0.0936
+(1-#-ODO: T,IMPLEMENTATION)                         0.0928
+(1-#-TODO: T,IMPLEMENTATION)                        0.0928
+(1-#E-e in UML 2.1,IMPLEMENTATION)                  0.0926
+(1-#E-e in UML 2,WITHOUT_CLASSIFICATION)            0.0925
+(1-#E-ne in UML 2,WITHOUT_CLASSIFICATION)           0.0925
+(1-#E-one in UML 2,WITHOUT_CLASSIFICATION)          0.0925
+(1-#-ignore,WITHOUT_CLASSIFICATION)                 0.0925
+(1-#-implem,IMPLEMENTATION)                         0.0924
+(1-#-impleme,IMPLEMENTATION)                        0.0924
+(1-#-one in UML 2.1,IMPLEMENTATION)                 0.0923
+(1-#-ne in UML 2.1,IMPLEMENTATION)                  0.0923
+(1-#B-//    ,WITHOUT_CLASSIFICATION)                0.0920
+(1-#E-ot implemented,IMPLEMENTATION)                0.0919
+(1-#- ignore,WITHOUT_CLASSIFICATION)                0.0912
+(1-#-ne in UML 2.,IMPLEMENTATION)                   0.0889
+(1-#-one in UML 2.,IMPLEMENTATION)                  0.0889
+(1-#-eeded ,WITHOUT_CLASSIFICATION)                 0.0881
+(1-#-ot implemente,IMPLEMENTATION)                  0.0878
+(1-#-ot implemented,IMPLEMENTATION)                 0.0878
+(1-#- ignor,WITHOUT_CLASSIFICATION)                 0.0878
+(1-#E-ML 2.1,IMPLEMENTATION)                        0.0873
+(1-#E- UML 2.1,IMPLEMENTATION)                      0.0873
+(1-#E-UML 2.1,IMPLEMENTATION)                       0.0873
+(1-#E-in UML 2.1,IMPLEMENTATION)                    0.0873
+(1-#E- in UML 2.1,IMPLEMENTATION)                   0.0873
+(1-#E-n UML 2.1,IMPLEMENTATION)                     0.0873
+(1-#-//    ,WITHOUT_CLASSIFICATION)                 0.0872
+(1-#E-t implemented,IMPLEMENTATION)                 0.0871
+(1-#E-TODO: gone in UML 2,WITHOUT_CLASSIFICATION)   0.0865
+(1-#E-gone in UML 2,WITHOUT_CLASSIFICATION)         0.0865
+(1-#E- TODO: gone in UML 2,WITHOUT_CLASSIFICATION)  0.0865
+(1-#E-DO: gone in UML 2,WITHOUT_CLASSIFICATION)     0.0865
+(1-#E-O: gone in UML 2,WITHOUT_CLASSIFICATION)      0.0865
+(1-#E-: gone in UML 2,WITHOUT_CLASSIFICATION)       0.0865
+(1-#E- gone in UML 2,WITHOUT_CLASSIFICATION)        0.0865
+(1-#E-ODO: gone in UML 2,WITHOUT_CLASSIFICATION)    0.0865
+(1-#-ot imp,IMPLEMENTATION)                         0.0861
+(1-#B-// TODO,IMPLEMENTATION)                       0.0858
+(1-#B-// TOD,IMPLEMENTATION)                        0.0858
+(1-#-needed ,WITHOUT_CLASSIFICATION)                0.0856
+(1-#-n UML ,WITHOUT_CLASSIFICATION)                 0.0853
+(1-#-// set,WITHOUT_CLASSIFICATION)                 0.0852
+(1-#-TODO: I18N,IMPLEMENTATION)                     0.0850
+(1-#- TODO: I18N,IMPLEMENTATION)                    0.0850
+(1-#-DO: I18N,IMPLEMENTATION)                       0.0850
+(1-#-ODO: I18N,IMPLEMENTATION)                      0.0850
+(1-#-O: I18N,IMPLEMENTATION)                        0.0850
+(1-#-: I18N,IMPLEMENTATION)                         0.0850
+(1-#-// TODO: I18N,IMPLEMENTATION)                  0.0850
+(1-#B-// TODO: I18N,IMPLEMENTATION)                 0.0850
+(1-#-/ TODO: I18N,IMPLEMENTATION)                   0.0850
+(1-#B-// set,WITHOUT_CLASSIFICATION)                0.0847
+(1-#- needed ,WITHOUT_CLASSIFICATION)               0.0844
+(1-#-// ...,WITHOUT_CLASSIFICATION)                 0.0842
+(1-#-e in UML 2.1,IMPLEMENTATION)                   0.0842
+(1-#- icons,WITHOUT_CLASSIFICATION)                 0.0841
+(1-#-essage,WITHOUT_CLASSIFICATION)                 0.0837
+(1-#B-// ...,WITHOUT_CLASSIFICATION)                0.0835
+(1-#E-: What?,WITHOUT_CLASSIFICATION)               0.0832
+(1-#- What?,WITHOUT_CLASSIFICATION)                 0.0832
+(1-#-: What?,WITHOUT_CLASSIFICATION)                0.0832
+(1-#E- What?,WITHOUT_CLASSIFICATION)                0.0832
+(1-#-in UML ,WITHOUT_CLASSIFICATION)                0.0831
+(1-#- in UML ,WITHOUT_CLASSIFICATION)               0.0830
+(1-#-ot imple,IMPLEMENTATION)                       0.0827
+(1-#-ot implement,IMPLEMENTATION)                   0.0827
+(1-#-ot impleme,IMPLEMENTATION)                     0.0827
+(1-#-ot implem,IMPLEMENTATION)                      0.0827
+(1-#-ot implemen,IMPLEMENTATION)                    0.0827
+(1-#-ot impl,IMPLEMENTATION)                        0.0827
+(1-#-DO: What?,WITHOUT_CLASSIFICATION)              0.0827
+(1-#E-// TODO: What?,WITHOUT_CLASSIFICATION)        0.0827
+(1-#E-ODO: What?,WITHOUT_CLASSIFICATION)            0.0827
+(1-#E-TODO: What?,WITHOUT_CLASSIFICATION)           0.0827
+(1-#E-O: What?,WITHOUT_CLASSIFICATION)              0.0827
+(1-#E- TODO: What?,WITHOUT_CLASSIFICATION)          0.0827
+(1-#B-// TODO: What?,WITHOUT_CLASSIFICATION)        0.0827
+(1-#E-DO: What?,WITHOUT_CLASSIFICATION)             0.0827
+(1-#- TODO: What?,WITHOUT_CLASSIFICATION)           0.0827
+(1-#-O: What?,WITHOUT_CLASSIFICATION)               0.0827
+(1-#-ODO: What?,WITHOUT_CLASSIFICATION)             0.0827
+(1-#-TODO: What?,WITHOUT_CLASSIFICATION)            0.0827
+(1-#E-/ TODO: What?,WITHOUT_CLASSIFICATION)         0.0827
+(1-#-// TODO: What?,WITHOUT_CLASSIFICATION)         0.0827
+(1-#-/ TODO: What?,WITHOUT_CLASSIFICATION)          0.0827
+(1-#E-/*    ,WITHOUT_CLASSIFICATION)                0.0826
+(1-#-ot needed ,WITHOUT_CLASSIFICATION)             0.0824
+(1-#-/ icons,WITHOUT_CLASSIFICATION)                0.0824
+(1-#-// icons,WITHOUT_CLASSIFICATION)               0.0824
+(1-#B-// icons,WITHOUT_CLASSIFICATION)              0.0824
+(1-#E-Not implemented,IMPLEMENTATION)               0.0819
+(1-#E- Not implemented,IMPLEMENTATION)              0.0819
+(1-#E-/ icons,WITHOUT_CLASSIFICATION)               0.0818
+(1-#E- icons,WITHOUT_CLASSIFICATION)                0.0818
+(1-#E-// icons,WITHOUT_CLASSIFICATION)              0.0818
+(1-#-// get,WITHOUT_CLASSIFICATION)                 0.0816
+(1-#E-// Not implemented,IMPLEMENTATION)            0.0813
+(1-#E-/ Not implemented,IMPLEMENTATION)             0.0813
+(1-#-e in UML 2.,IMPLEMENTATION)                    0.0808
+(1-#-t needed ,WITHOUT_CLASSIFICATION)              0.0807
+(1-#-// no ,WITHOUT_CLASSIFICATION)                 0.0807
+(1-#- case ,WITHOUT_CLASSIFICATION)                 0.0805
+(1-#-// add,WITHOUT_CLASSIFICATION)                 0.0798
+(1-#B-// no ,WITHOUT_CLASSIFICATION)                0.0796
+(1-#E-// ...,WITHOUT_CLASSIFICATION)                0.0796
+(1-#B-// get,WITHOUT_CLASSIFICATION)                0.0795
+(1-#- here?,IMPLEMENTATION)                         0.0791
+(1-#B-// TODO: What,WITHOUT_CLASSIFICATION)         0.0791
+(1-#B-// TODO: Wha,WITHOUT_CLASSIFICATION)          0.0791
+(1-#-/ TODO: Wha,WITHOUT_CLASSIFICATION)            0.0791
+(1-#-// TODO: What,WITHOUT_CLASSIFICATION)          0.0791
+(1-#-/ TODO: What,WITHOUT_CLASSIFICATION)           0.0791
+(1-#- TODO: What,WITHOUT_CLASSIFICATION)            0.0791
+(1-#- TODO: Wha,WITHOUT_CLASSIFICATION)             0.0791
+(1-#-// TODO: Wha,WITHOUT_CLASSIFICATION)           0.0791
+(1-#E- here?,IMPLEMENTATION)                        0.0790
+(1-#-n UML 2.1,IMPLEMENTATION)                      0.0789
+(1-#-in UML 2.1,IMPLEMENTATION)                     0.0789
+(1-#- in UML 2.1,IMPLEMENTATION)                    0.0789
+(1-#-efault,WITHOUT_CLASSIFICATION)                 0.0788
+(1-#B-// add,WITHOUT_CLASSIFICATION)                0.0783
+(1-#-othing,WITHOUT_CLASSIFICATION)                 0.0780
+(1-#E-ODO: I18N,IMPLEMENTATION)                     0.0779
+(1-#E-// TODO: I18N,IMPLEMENTATION)                 0.0779
+(1-#E- TODO: I18N,IMPLEMENTATION)                   0.0779
+(1-#E-DO: I18N,IMPLEMENTATION)                      0.0779
+(1-#E-TODO: I18N,IMPLEMENTATION)                    0.0779
+(1-#E-O: I18N,IMPLEMENTATION)                       0.0779
+(1-#E-: I18N,IMPLEMENTATION)                        0.0779
+(1-#E-/ TODO: I18N,IMPLEMENTATION)                  0.0779
+(1-#-ML 2.1,IMPLEMENTATION)                         0.0777
+(1-#- UML 2.1,IMPLEMENTATION)                       0.0777
+(1-#-UML 2.1,IMPLEMENTATION)                        0.0777
+(1-#B-// TODO:,IMPLEMENTATION)                      0.0765
+(1-#-/ TODO: Re,IMPLEMENTATION)                     0.0763
+(1-#-// TODO: Re,IMPLEMENTATION)                    0.0763
+(1-#B-// TODO: Re,IMPLEMENTATION)                   0.0763
+(1-#-/ TODO: R,IMPLEMENTATION)                      0.0762
+(1-#-// TODO: R,IMPLEMENTATION)                     0.0762
+(1-#B-// TODO: R,IMPLEMENTATION)                    0.0762
+(1-#-TODO: Re,IMPLEMENTATION)                       0.0762
+(1-#-DO: Re,IMPLEMENTATION)                         0.0762
+(1-#-ODO: Re,IMPLEMENTATION)                        0.0762
+(1-#- TODO: Re,IMPLEMENTATION)                      0.0762
+(1-#-ODO: R,IMPLEMENTATION)                         0.0761
+(1-#- TODO: R,IMPLEMENTATION)                       0.0761
+(1-#-TODO: R,IMPLEMENTATION)                        0.0761
+(1-#-// Rows,WITHOUT_CLASSIFICATION)                0.0757
+(1-#B-// Rows,WITHOUT_CLASSIFICATION)               0.0757
+(1-#-/ Rows,WITHOUT_CLASSIFICATION)                 0.0757
+(1-#B-/*self,WITHOUT_CLASSIFICATION)                0.0751
+(1-#-*self*,WITHOUT_CLASSIFICATION)                 0.0751
+(1-#E-/*self*/,WITHOUT_CLASSIFICATION)              0.0751
+(1-#-/*self*/,WITHOUT_CLASSIFICATION)               0.0751
+(1-#B-/*self*/,WITHOUT_CLASSIFICATION)              0.0751
+(1-#-self*/,WITHOUT_CLASSIFICATION)                 0.0751
+(1-#E-*self*/,WITHOUT_CLASSIFICATION)               0.0751
+(1-#-/*self,WITHOUT_CLASSIFICATION)                 0.0751
+(1-#B-/*self*,WITHOUT_CLASSIFICATION)               0.0751
+(1-#-/*self*,WITHOUT_CLASSIFICATION)                0.0751
+(1-#-*self*/,WITHOUT_CLASSIFICATION)                0.0751
+(1-#E-self*/,WITHOUT_CLASSIFICATION)                0.0751
+(1-#-not needed ,WITHOUT_CLASSIFICATION)            0.0749
+(1-#- switc,WITHOUT_CLASSIFICATION)                 0.0747
+(1-#- switch,WITHOUT_CLASSIFICATION)                0.0747
+(1-#-t implemente,IMPLEMENTATION)                   0.0745
+(1-#-t implemented,IMPLEMENTATION)                  0.0745
+(1-#- not needed ,WITHOUT_CLASSIFICATION)           0.0742
+(1-#-/ ignore,WITHOUT_CLASSIFICATION)               0.0735
+(1-#-// ignore,WITHOUT_CLASSIFICATION)              0.0735
+(1-#B-// igno,WITHOUT_CLASSIFICATION)               0.0734
+(1-#B-// ignor,WITHOUT_CLASSIFICATION)              0.0734
+(1-#B-// ignore,WITHOUT_CLASSIFICATION)             0.0734
+(1-#B-// ign,WITHOUT_CLASSIFICATION)                0.0734
+(1-#-// Add,WITHOUT_CLASSIFICATION)                 0.0732
+(1-#-select,WITHOUT_CLASSIFICATION)                 0.0731
+(1-#B-// Add,WITHOUT_CLASSIFICATION)                0.0726
+(1-#E- implemented,IMPLEMENTATION)                  0.0725
+(1-#-// switc,WITHOUT_CLASSIFICATION)               0.0719
+(1-#-// switch,WITHOUT_CLASSIFICATION)              0.0719
+(1-#-// swit,WITHOUT_CLASSIFICATION)                0.0719
+(1-#-/ swit,WITHOUT_CLASSIFICATION)                 0.0719
+(1-#-/ switch,WITHOUT_CLASSIFICATION)               0.0719
+(1-#-/ switc,WITHOUT_CLASSIFICATION)                0.0719
+(1-#-// swi,WITHOUT_CLASSIFICATION)                 0.0719
+(1-#B-// switch,WITHOUT_CLASSIFICATION)             0.0717
+(1-#B-// swit,WITHOUT_CLASSIFICATION)               0.0717
+(1-#B-// switc,WITHOUT_CLASSIFICATION)              0.0717
+(1-#B-// swi,WITHOUT_CLASSIFICATION)                0.0717
+(1-#E- switch,WITHOUT_CLASSIFICATION)               0.0700
+(1-#-/ ignor,WITHOUT_CLASSIFICATION)                0.0700
+(1-#-// igno,WITHOUT_CLASSIFICATION)                0.0700
+(1-#-/ igno,WITHOUT_CLASSIFICATION)                 0.0700
+(1-#-// ign,WITHOUT_CLASSIFICATION)                 0.0700
+(1-#-// ignor,WITHOUT_CLASSIFICATION)               0.0700
+

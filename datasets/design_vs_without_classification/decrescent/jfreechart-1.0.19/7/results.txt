@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:44:05 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:08:24 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.train varies between 2 and 93
-done [11.9s, 48098 items].
-numDatums: 48098
-numDatumsPerLabel: {DESIGN=2346.0, WITHOUT_CLASSIFICATION=45752.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.train ... done [8.6s, 48037 items].
+numDatums: 48037
+numDatumsPerLabel: {DESIGN=2346.0, WITHOUT_CLASSIFICATION=45691.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
-numFeatures (Phi(X) types): 157980 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
-......................................................................................
+numFeatures (Phi(X) types): 186573 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+......................................................................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.test ... done [0.7s, 4383 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/7/classified_seq.test ... done [0.9s, 4382 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-4383 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=4155 FN=44 FP=120 TN=64; Acc 0.963 P 0.972 R 0.990 F1 0.981
-Cls DESIGN: TP=64 FN=120 FP=44 TN=4155; Acc 0.963 P 0.593 R 0.348 F1 0.438
-Accuracy/micro-averaged F1: 0.96258
-Macro-averaged F1: 0.70950
+4382 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4153 FN=45 FP=124 TN=60; Acc 0.961 P 0.971 R 0.989 F1 0.980
+Cls DESIGN: TP=60 FN=124 FP=45 TN=4153; Acc 0.961 P 0.571 R 0.326 F1 0.415
+Accuracy/micro-averaged F1: 0.96143
+Macro-averaged F1: 0.69764

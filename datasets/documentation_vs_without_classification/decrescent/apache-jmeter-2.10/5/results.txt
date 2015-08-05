@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:12:28 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 20:32:29 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classi
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train varies between 2 and 93
-done [6.1s, 28054 items].
-numDatums: 28054
-numDatumsPerLabel: {DOCUMENTATION=51.0, WITHOUT_CLASSIFICATION=28003.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train ... done [7.3s, 28007 items].
+numDatums: 28007
+numDatumsPerLabel: {DOCUMENTATION=51.0, WITHOUT_CLASSIFICATION=27956.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
-numFeatures (Phi(X) types): 125765 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
-.........................................
+numFeatures (Phi(X) types): 144895 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+.............................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test ... done [1.1s, 7686 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test ... done [2.0s, 7674 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-7686 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=7683 FN=0 FP=2 TN=1; Acc 1.000 P 1.000 R 1.000 F1 1.000
-Cls DOCUMENTATION: TP=1 FN=2 FP=0 TN=7683; Acc 1.000 P 1.000 R 0.333 F1 0.500
+7674 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7671 FN=0 FP=2 TN=1; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Cls DOCUMENTATION: TP=1 FN=2 FP=0 TN=7671; Acc 1.000 P 1.000 R 0.333 F1 0.500
 Accuracy/micro-averaged F1: 0.99974
 Macro-averaged F1: 0.74993

@@ -1,0 +1,502 @@
+LinearClassifier [printing top 500 features]
+(1-#-//,WITHOUT_CLASSIFICATION)       0.9091
+(1-#B-//,WITHOUT_CLASSIFICATION)      0.9075
+(CLASS,WITHOUT_CLASSIFICATION)        0.8398
+(1-#B-/,WITHOUT_CLASSIFICATION)       0.8398
+(1-#-/,WITHOUT_CLASSIFICATION)        0.8398
+(1-#E-/* ,DEFECT)                     0.7641
+(1-#E-* ,DEFECT)                      0.7615
+(1-#-: ,DEFECT)                       0.7368
+(1-#-:,DEFECT)                        0.6193
+(1-Len-21-30,WITHOUT_CLASSIFICATION)  0.5624
+(1-#- ,WITHOUT_CLASSIFICATION)        0.5542
+(1-#-*/,WITHOUT_CLASSIFICATION)       0.5061
+(1-#E-*/,WITHOUT_CLASSIFICATION)      0.5058
+(1-#-..,DEFECT)                       0.4909
+(1-#E-/,WITHOUT_CLASSIFICATION)       0.4734
+(1-#-ug,DEFECT)                       0.4723
+(1-#-s,WITHOUT_CLASSIFICATION)        0.4560
+(1-#-O: n,DEFECT)                     0.4418
+(1-#-ot i,DEFECT)                     0.4246
+(1-#E-/**,DEFECT)                     0.4241
+(1-#-...,DEFECT)                      0.4224
+(1-#E-**,DEFECT)                      0.4167
+(1-#-ars,DEFECT)                      0.4157
+(1-#B-/**,DEFECT)                     0.3969
+(1-#-/**,DEFECT)                      0.3969
+(1-#-: n,DEFECT)                      0.3935
+(1-#-!,DEFECT)                        0.3905
+(1-#-**,DEFECT)                       0.3860
+(1-#-rok,DEFECT)                      0.3840
+(1-#-roke,DEFECT)                     0.3840
+(1-#-ro,DEFECT)                       0.3811
+(1-#-O: ,DEFECT)                      0.3808
+(1-#-X,DEFECT)                        0.3521
+(1-#- wo,DEFECT)                      0.3514
+(1-#-a,WITHOUT_CLASSIFICATION)        0.3509
+(1-#-Brok,DEFECT)                     0.3442
+(1-#-s f,DEFECT)                      0.3440
+(1-#E-: ,WITHOUT_CLASSIFICATION)      0.3438
+(1-#-: no,DEFECT)                     0.3437
+(1-#E-DO: ,WITHOUT_CLASSIFICATION)    0.3419
+(1-#E-O: ,WITHOUT_CLASSIFICATION)     0.3419
+(1-#-C,WITHOUT_CLASSIFICATION)        0.3408
+(1-#-: g,WITHOUT_CLASSIFICATION)      0.3404
+(1-#-O: g,WITHOUT_CLASSIFICATION)     0.3373
+(1-#-en c,DEFECT)                     0.3366
+(1-#-e th,WITHOUT_CLASSIFICATION)     0.3316
+(1-#- B,DEFECT)                       0.3309
+(1-Len-11-20,WITHOUT_CLASSIFICATION)  0.3280
+(1-#E-...,DEFECT)                     0.3232
+(1-#E-..,DEFECT)                      0.3214
+(1-#-be g,DEFECT)                     0.3193
+(1-#-Bro,DEFECT)                      0.3176
+(1-#-not ,DEFECT)                     0.3147
+(1-#-e,WITHOUT_CLASSIFICATION)        0.3143
+(1-#-DO: ,DEFECT)                     0.3122
+(1-#-n cl,DEFECT)                     0.3115
+(1-#-B,DEFECT)                        0.3099
+(1-#-e g,DEFECT)                      0.3098
+(1-#-: go,WITHOUT_CLASSIFICATION)     0.3040
+(1-#-Br,DEFECT)                       0.3008
+(1-#-Appe,DEFECT)                     0.2992
+(1-#-wo,DEFECT)                       0.2946
+(1-#-T,WITHOUT_CLASSIFICATION)        0.2938
+(1-#-gs ,DEFECT)                      0.2935
+(1-#-y o,DEFECT)                      0.2900
+(1-#-ars ,DEFECT)                     0.2900
+(1-#- FIX,DEFECT)                     0.2897
+(1-#E- ,DEFECT)                       0.2896
+(1-#- FI,DEFECT)                      0.2889
+(1-#-oke,DEFECT)                      0.2887
+(1-#-XME,DEFECT)                      0.2842
+(1-#-IXME,DEFECT)                     0.2842
+(1-#-FIXM,DEFECT)                     0.2842
+(1-#-IXM,DEFECT)                      0.2842
+(1-#-! ,DEFECT)                       0.2833
+(1-#- he,DEFECT)                      0.2831
+(1-#-s ,DEFECT)                       0.2796
+(1-#-h,WITHOUT_CLASSIFICATION)        0.2796
+(1-#E-*,DEFECT)                       0.2783
+(1-#-ot ,DEFECT)                      0.2783
+(1-#- *,WITHOUT_CLASSIFICATION)       0.2778
+(1-#- i,DEFECT)                       0.2773
+(1-#-th,WITHOUT_CLASSIFICATION)       0.2760
+(1-#-e go,DEFECT)                     0.2731
+(1-#-ery ,DEFECT)                     0.2725
+(1-#-ng i,DEFECT)                     0.2706
+(1-#-ere.,DEFECT)                     0.2690
+(1-#- */,WITHOUT_CLASSIFICATION)      0.2684
+(1-#E- */,WITHOUT_CLASSIFICATION)     0.2684
+(1-#-ken ,DEFECT)                     0.2672
+(1-#-li,WITHOUT_CLASSIFICATION)       0.2671
+(1-#-FIX,DEFECT)                      0.2669
+(1-#- wor,DEFECT)                     0.2666
+(1-#-IX,DEFECT)                       0.2659
+(1-#-m,WITHOUT_CLASSIFICATION)        0.2639
+(1-#-is t,WITHOUT_CLASSIFICATION)     0.2637
+(1-#-/ TO,DEFECT)                     0.2631
+(1-#-FI,DEFECT)                       0.2631
+(1-#-ork,DEFECT)                      0.2626
+(1-#-t wo,DEFECT)                     0.2621
+(1-#-ME,DEFECT)                       0.2610
+(1-#-ly o,DEFECT)                     0.2607
+(1-#-he,DEFECT)                       0.2602
+(1-#-O: T,DEFECT)                     0.2583
+(1-#-we,WITHOUT_CLASSIFICATION)       0.2576
+(1-#-rong,DEFECT)                     0.2574
+(1-#-work,DEFECT)                     0.2569
+(1-#-/ Ap,DEFECT)                     0.2543
+(1-#E-t...,DEFECT)                    0.2534
+(1-#-t cl,WITHOUT_CLASSIFICATION)     0.2532
+(1-#-: T,DEFECT)                      0.2531
+(1-#-App,DEFECT)                      0.2521
+(1-#-t c,WITHOUT_CLASSIFICATION)      0.2518
+(1-#- Ap,DEFECT)                      0.2516
+(1-#- App,DEFECT)                     0.2516
+(1-#-ron,DEFECT)                      0.2508
+(1-#-e e,DEFECT)                      0.2505
+(1-#-Ap,DEFECT)                       0.2503
+(1-#-us,WITHOUT_CLASSIFICATION)       0.2495
+(1-#-iss,DEFECT)                      0.2490
+(1-#-ears,DEFECT)                     0.2482
+(1-#-t in,DEFECT)                     0.2474
+(1-#-{ Br,DEFECT)                     0.2471
+(1-#-XM,DEFECT)                       0.2454
+(1-#- not,DEFECT)                     0.2453
+(1-#- Bro,DEFECT)                     0.2452
+(1-#-t...,DEFECT)                     0.2429
+(1-#-ear,DEFECT)                      0.2428
+(1-#E-pop,DEFECT)                     0.2413
+(1-#E- pop,DEFECT)                    0.2413
+(1-#-ba,DEFECT)                       0.2404
+(1-#-ppea,DEFECT)                     0.2403
+(1-#-pear,DEFECT)                     0.2403
+(1-#-ra,WITHOUT_CLASSIFICATION)       0.2398
+(1-#-oken,DEFECT)                     0.2395
+(1-#-pp,DEFECT)                       0.2388
+(1-#-2 ,DEFECT)                       0.2375
+(1-#- Br,DEFECT)                      0.2374
+(1-#-not,DEFECT)                      0.2367
+(1-#-rs t,DEFECT)                     0.2362
+(1-#-_,WITHOUT_CLASSIFICATION)        0.2357
+(1-#-ery,DEFECT)                      0.2356
+(1-#-y,DEFECT)                        0.2354
+(1-#-O:,DEFECT)                       0.2354
+(1-#-re.,DEFECT)                      0.2345
+(1-#-t..,DEFECT)                      0.2342
+(1-#-n ,DEFECT)                       0.2328
+(1-#-e i,WITHOUT_CLASSIFICATION)      0.2324
+(1-#-ken,DEFECT)                      0.2323
+(1-#-ins,DEFECT)                      0.2303
+(1-#-t i,DEFECT)                      0.2298
+(1-#- no ,WITHOUT_CLASSIFICATION)     0.2295
+(1-#-or t,WITHOUT_CLASSIFICATION)     0.2293
+(1-#- TOD,DEFECT)                     0.2292
+(1-#-gins,DEFECT)                     0.2281
+(1-#-c,WITHOUT_CLASSIFICATION)        0.2274
+(1-#-ot w,DEFECT)                     0.2269
+(1-#-s l,WITHOUT_CLASSIFICATION)      0.2269
+(1-#-ers ,WITHOUT_CLASSIFICATION)     0.2268
+(1-#-is s,DEFECT)                     0.2267
+(1-#- TO,DEFECT)                      0.2262
+(1-#-e in,WITHOUT_CLASSIFICATION)     0.2258
+(1-#-le ,WITHOUT_CLASSIFICATION)      0.2255
+(1-#-ngs ,DEFECT)                     0.2254
+(1-#-{{ B,DEFECT)                     0.2245
+(1-#-{ B,DEFECT)                      0.2245
+(1-#-e o,WITHOUT_CLASSIFICATION)      0.2242
+(1-#-g i,DEFECT)                      0.2242
+(1-#-ssu,DEFECT)                      0.2227
+(1-#-ME: ,DEFECT)                     0.2221
+(1-#-XME:,DEFECT)                     0.2221
+(1-#-ME:,DEFECT)                      0.2219
+(1-#-ssue,DEFECT)                     0.2217
+(1-#-sue,DEFECT)                      0.2217
+(1-#-: Th,DEFECT)                     0.2214
+(1-#E-sign,DEFECT)                    0.2213
+(1-#E-ign,DEFECT)                     0.2213
+(1-#E-gn,DEFECT)                      0.2212
+(1-#-s i,DEFECT)                      0.2210
+(1-#-?,WITHOUT_CLASSIFICATION)        0.2206
+(1-#-t an,DEFECT)                     0.2206
+(1-#-el,WITHOUT_CLASSIFICATION)       0.2205
+(1-#-O: p,DEFECT)                     0.2198
+(1-#-o s,WITHOUT_CLASSIFICATION)      0.2195
+(1-#-'t r,DEFECT)                     0.2189
+(1-#-on h,DEFECT)                     0.2189
+(1-#-ti,WITHOUT_CLASSIFICATION)       0.2188
+(1-#-ne,WITHOUT_CLASSIFICATION)       0.2187
+(1-#-oth,WITHOUT_CLASSIFICATION)      0.2185
+(1-#-er t,DEFECT)                     0.2177
+(1-#-s ba,DEFECT)                     0.2172
+(1-#-es a,DEFECT)                     0.2160
+(1-#-a bu,DEFECT)                     0.2158
+(1-#-ain,WITHOUT_CLASSIFICATION)      0.2156
+(1-#- f,DEFECT)                       0.2153
+(1-#-e co,DEFECT)                     0.2148
+(1-#-k,DEFECT)                        0.2128
+(1-#-but.,DEFECT)                     0.2123
+(1-#- O,WITHOUT_CLASSIFICATION)       0.2118
+(1-#-ppe,DEFECT)                      0.2103
+(1-#-X ,DEFECT)                       0.2102
+(1-#-sue ,DEFECT)                     0.2099
+(1-#-? ,WITHOUT_CLASSIFICATION)       0.2098
+(1-#- bug,DEFECT)                     0.2097
+(1-#-s is,DEFECT)                     0.2096
+(1-#-ble ,WITHOUT_CLASSIFICATION)     0.2091
+(1-#-ers,WITHOUT_CLASSIFICATION)      0.2089
+(1-#-Rac,DEFECT)                      0.2087
+(1-#-Race,DEFECT)                     0.2087
+(1-#- Rac,DEFECT)                     0.2087
+(1-#-t?,WITHOUT_CLASSIFICATION)       0.2085
+(1-#-e on,WITHOUT_CLASSIFICATION)     0.2080
+(1-#-per ,DEFECT)                     0.2068
+(1-#- as,WITHOUT_CLASSIFICATION)      0.2063
+(1-#-00,DEFECT)                       0.2059
+(1-#-no ,WITHOUT_CLASSIFICATION)      0.2058
+(1-#E-op,DEFECT)                      0.2050
+(1-#-pea,DEFECT)                      0.2045
+(1-#E-e,WITHOUT_CLASSIFICATION)       0.2022
+(1-#-/ XX,DEFECT)                     0.2005
+(1-#- a b,DEFECT)                     0.2005
+(1-#-, bu,DEFECT)                     0.2004
+(1-#-er s,DEFECT)                     0.2003
+(1-#-ODO,DEFECT)                      0.2000
+(1-#-TODO,DEFECT)                     0.2000
+(1-#-TOD,DEFECT)                      0.2000
+(1-#-l ca,DEFECT)                     0.1998
+(1-#-y t,WITHOUT_CLASSIFICATION)      0.1988
+(1-#-e p,DEFECT)                      0.1984
+(1-#-ong,DEFECT)                      0.1978
+(1-#-/ Ra,DEFECT)                     0.1975
+(1-#-s c,DEFECT)                      0.1970
+(1-#-st,WITHOUT_CLASSIFICATION)       0.1969
+(1-#-o,DEFECT)                        0.1968
+(1-#-rk,DEFECT)                       0.1965
+(1-#-re,DEFECT)                       0.1962
+(1-#-17,DEFECT)                       0.1961
+(1-#-DO,DEFECT)                       0.1956
+(1-#-ne i,WITHOUT_CLASSIFICATION)     0.1953
+(1-#-sys,DEFECT)                      0.1948
+(1-#-n he,DEFECT)                     0.1947
+(1-#-e s,DEFECT)                      0.1945
+(1-#- sys,DEFECT)                     0.1944
+(1-#-if,WITHOUT_CLASSIFICATION)       0.1941
+(1-#-d ,WITHOUT_CLASSIFICATION)       0.1937
+(1-#- sig,DEFECT)                     0.1936
+(1-#-s b,DEFECT)                      0.1935
+(1-#-ath,DEFECT)                      0.1928
+(1-#E-this,DEFECT)                    0.1928
+(1-#E-his,DEFECT)                     0.1928
+(1-#B-// X,DEFECT)                    0.1925
+(1-#-te,WITHOUT_CLASSIFICATION)       0.1924
+(1-#- pa,DEFECT)                      0.1921
+(1-#E-is,DEFECT)                      0.1912
+(1-#-g in,DEFECT)                     0.1911
+(1-#-nks,WITHOUT_CLASSIFICATION)      0.1902
+(1-#- o,WITHOUT_CLASSIFICATION)       0.1902
+(1-#-bar,DEFECT)                      0.1902
+(1-#-le,WITHOUT_CLASSIFICATION)       0.1900
+(1-#-nks ,WITHOUT_CLASSIFICATION)     0.1900
+(1-#- fo,WITHOUT_CLASSIFICATION)      0.1899
+(1-#-ex,DEFECT)                       0.1886
+(1-#- Ra,DEFECT)                      0.1886
+(1-#-.. ,DEFECT)                      0.1885
+(1-#-ut..,DEFECT)                     0.1884
+(1-#-: D,WITHOUT_CLASSIFICATION)      0.1883
+(1-#-In,DEFECT)                       0.1882
+(1-#-2,DEFECT)                        0.1881
+(1-#-e t,WITHOUT_CLASSIFICATION)      0.1877
+(1-#-TO,DEFECT)                       0.1877
+(1-#- X,DEFECT)                       0.1872
+(1-#-t p,DEFECT)                      0.1865
+(1-#-r si,DEFECT)                     0.1862
+(1-#-efe,WITHOUT_CLASSIFICATION)      0.1862
+(1-#- la,DEFECT)                      0.1858
+(1-#- t,DEFECT)                       0.1855
+(1-#- bu,DEFECT)                      0.1851
+(1-#-efer,WITHOUT_CLASSIFICATION)     0.1850
+(1-#-ok,DEFECT)                       0.1847
+(1-#- plu,DEFECT)                     0.1846
+(1-#-t li,DEFECT)                     0.1846
+(1-#-// X,DEFECT)                     0.1845
+(1-#-/ X,DEFECT)                      0.1845
+(1-#-pla,WITHOUT_CLASSIFICATION)      0.1843
+(1-#- R,DEFECT)                       0.1842
+(1-#-ot r,WITHOUT_CLASSIFICATION)     0.1837
+(1-#- op,WITHOUT_CLASSIFICATION)      0.1837
+(1-#-ut.,DEFECT)                      0.1834
+(1-#-issu,DEFECT)                     0.1827
+(1-#B-// T,DEFECT)                    0.1826
+(1-#-O: d,DEFECT)                     0.1825
+(1-#- her,DEFECT)                     0.1825
+(1-#-a b,DEFECT)                      0.1819
+(1-#-OD,DEFECT)                       0.1817
+(1-#- pop,DEFECT)                     0.1812
+(1-#-n a,WITHOUT_CLASSIFICATION)      0.1812
+(1-#-s do,DEFECT)                     0.1810
+(1-#E-:,WITHOUT_CLASSIFICATION)       0.1806
+(1-#-pop,DEFECT)                      0.1800
+(1-#-E: ,DEFECT)                      0.1799
+(1-#-'t,DEFECT)                       0.1798
+(1-#-cor,DEFECT)                      0.1798
+(1-#-ue ,DEFECT)                      0.1797
+(1-#-E:,DEFECT)                       0.1795
+(1-#-ns ,DEFECT)                      0.1795
+(1-#-ond,DEFECT)                      0.1792
+(1-#-le s,DEFECT)                     0.1791
+(1-#-hat,WITHOUT_CLASSIFICATION)      0.1789
+(1-#-e ty,DEFECT)                     0.1788
+(1-#- de,WITHOUT_CLASSIFICATION)      0.1785
+(1-#- ne,DEFECT)                      0.1781
+(1-#-to,WITHOUT_CLASSIFICATION)       0.1779
+(1-#-c ,WITHOUT_CLASSIFICATION)       0.1773
+(1-#-e),DEFECT)                       0.1767
+(1-#-tr,WITHOUT_CLASSIFICATION)       0.1766
+(1-#- XX,DEFECT)                      0.1765
+(1-#- XXX,DEFECT)                     0.1765
+(1-#-t w,DEFECT)                      0.1762
+(1-#-ite,WITHOUT_CLASSIFICATION)      0.1761
+(1-#-on't,DEFECT)                     0.1761
+(1-#-: V,DEFECT)                      0.1761
+(1-#-: Ve,DEFECT)                     0.1761
+(1-#-rt,WITHOUT_CLASSIFICATION)       0.1759
+(1-#-Ra,DEFECT)                       0.1759
+(1-#-s fa,DEFECT)                     0.1757
+(1-#-le,,DEFECT)                      0.1756
+(1-#- we,WITHOUT_CLASSIFICATION)      0.1752
+(1-#-s lo,WITHOUT_CLASSIFICATION)     0.1748
+(1-#- W,DEFECT)                       0.1747
+(1-#-ly?,DEFECT)                      0.1743
+(1-#E-tly?,DEFECT)                    0.1743
+(1-#-tly?,DEFECT)                     0.1743
+(1-#E-ly?,DEFECT)                     0.1743
+(1-#-U,WITHOUT_CLASSIFICATION)        0.1738
+(1-#-m is,DEFECT)                     0.1736
+(1-#E-ss,DEFECT)                      0.1732
+(1-#-re p,DEFECT)                     0.1731
+(1-#-: We,DEFECT)                     0.1717
+(1-#-rrec,DEFECT)                     0.1704
+(1-#-att,DEFECT)                      0.1704
+(1-#-ed,WITHOUT_CLASSIFICATION)       0.1703
+(1-#-s sh,DEFECT)                     0.1699
+(1-#-al c,DEFECT)                     0.1699
+(1-#-nor,WITHOUT_CLASSIFICATION)      0.1698
+(1-#-is l,WITHOUT_CLASSIFICATION)     0.1698
+(1-#-: do,DEFECT)                     0.1695
+(1-#-plu,DEFECT)                      0.1694
+(1-#-/ d,DEFECT)                      0.1693
+(1-#-// d,DEFECT)                     0.1693
+(1-#- iss,DEFECT)                     0.1691
+(1-#-nore,WITHOUT_CLASSIFICATION)     0.1691
+(1-#-gno,WITHOUT_CLASSIFICATION)      0.1688
+(1-#-gnor,WITHOUT_CLASSIFICATION)     0.1688
+(1-#B-// R,DEFECT)                    0.1687
+(1-#-plug,DEFECT)                     0.1686
+(1-#-: d,DEFECT)                      0.1683
+(1-#-on',DEFECT)                      0.1683
+(1-#-d th,WITHOUT_CLASSIFICATION)     0.1679
+(1-#- Th,DEFECT)                      0.1675
+(1-#-ow,DEFECT)                       0.1670
+(1-#-DO:,DEFECT)                      0.1668
+(1-#-ODO:,DEFECT)                     0.1668
+(1-#-n s,WITHOUT_CLASSIFICATION)      0.1665
+(1-#-ll,DEFECT)                       0.1664
+(1-#-N,WITHOUT_CLASSIFICATION)        0.1664
+(1-#-(a,DEFECT)                       0.1663
+(1-#-as t,WITHOUT_CLASSIFICATION)     0.1659
+(1-#-any,DEFECT)                      0.1655
+(1-#-e pr,DEFECT)                     0.1655
+(1-#-hat?,WITHOUT_CLASSIFICATION)     0.1655
+(1-#-at?,WITHOUT_CLASSIFICATION)      0.1655
+(1-#E-at?,WITHOUT_CLASSIFICATION)     0.1655
+(1-#E-hat?,WITHOUT_CLASSIFICATION)    0.1655
+(1-#- req,DEFECT)                     0.1654
+(1-#-mo,DEFECT)                       0.1652
+(1-#- a,WITHOUT_CLASSIFICATION)       0.1651
+(1-#B-// ,WITHOUT_CLASSIFICATION)     0.1648
+(1-#-ace ,DEFECT)                     0.1646
+(1-#-tB,DEFECT)                       0.1645
+(1-#-nt,WITHOUT_CLASSIFICATION)       0.1644
+(1-#- ke,WITHOUT_CLASSIFICATION)      0.1644
+(1-#-n an,WITHOUT_CLASSIFICATION)     0.1642
+(1-#-f i,DEFECT)                      0.1641
+(1-#-O: I,DEFECT)                     0.1641
+(1-#-rou,WITHOUT_CLASSIFICATION)      0.1640
+(1-#-: C,WITHOUT_CLASSIFICATION)      0.1638
+(1-#- ch,WITHOUT_CLASSIFICATION)      0.1636
+(1-#- ta,WITHOUT_CLASSIFICATION)      0.1636
+(1-#-ty,WITHOUT_CLASSIFICATION)       0.1632
+(1-#-rea,WITHOUT_CLASSIFICATION)      0.1630
+(1-#-ble,,DEFECT)                     0.1630
+(1-#-m i,DEFECT)                      0.1629
+(1-#- sy,DEFECT)                      0.1626
+(1-#-t of,WITHOUT_CLASSIFICATION)     0.1625
+(1-#-wor,DEFECT)                      0.1625
+(1-#-: sy,DEFECT)                     0.1625
+(1-#-.  ,DEFECT)                      0.1624
+(1-#- so ,WITHOUT_CLASSIFICATION)     0.1624
+(1-#E-p,DEFECT)                       0.1623
+(1-#-is b,DEFECT)                     0.1622
+(1-#E-y?,DEFECT)                      0.1617
+(1-#-// ,WITHOUT_CLASSIFICATION)      0.1616
+(1-#-dl,WITHOUT_CLASSIFICATION)       0.1607
+(1-#-5,DEFECT)                        0.1607
+(1-#-: I,DEFECT)                      0.1606
+(1-#-// T,DEFECT)                     0.1603
+(1-#-bug,DEFECT)                      0.1603
+(1-#-/ T,DEFECT)                      0.1603
+(1-#-S,WITHOUT_CLASSIFICATION)        0.1603
+(1-#-ent ,WITHOUT_CLASSIFICATION)     0.1601
+(1-#- rea,WITHOUT_CLASSIFICATION)     0.1601
+(1-#-pe c,DEFECT)                     0.1599
+(1-#-n, b,DEFECT)                     0.1597
+(1-#-s to,DEFECT)                     0.1596
+(1-#-ess ,WITHOUT_CLASSIFICATION)     0.1594
+(1-#E-x,DEFECT)                       0.1593
+(1-#-x,DEFECT)                        0.1592
+(1-#-uire,DEFECT)                     0.1590
+(1-#-dit,DEFECT)                      0.1590
+(1-#-nin,WITHOUT_CLASSIFICATION)      0.1589
+(1-#-or n,DEFECT)                     0.1588
+(1-#-s cl,DEFECT)                     0.1587
+(1-#-ning,WITHOUT_CLASSIFICATION)     0.1586
+(1-#-ng,DEFECT)                       0.1585
+(1-#- thi,DEFECT)                     0.1584
+(1-#-inks,WITHOUT_CLASSIFICATION)     0.1584
+(1-#-vent,DEFECT)                     0.1584
+(1-#- (a,DEFECT)                      0.1583
+(1-#-e u,DEFECT)                      0.1578
+(1-#-n p,WITHOUT_CLASSIFICATION)      0.1576
+(1-#-nd a,DEFECT)                     0.1575
+(1-#-ven,DEFECT)                      0.1574
+(1-#- cla,DEFECT)                     0.1574
+(1-#-tf,WITHOUT_CLASSIFICATION)       0.1574
+(1-#-matt,DEFECT)                     0.1571
+(1-#-d t,WITHOUT_CLASSIFICATION)      0.1570
+(1-#-en,,DEFECT)                      0.1569
+(1-#-en, ,DEFECT)                     0.1569
+(1-#-tter,DEFECT)                     0.1566
+(1-#-no,WITHOUT_CLASSIFICATION)       0.1561
+(1-#-rg,WITHOUT_CLASSIFICATION)       0.1556
+(1-#-str,WITHOUT_CLASSIFICATION)      0.1556
+(1-#-fi,WITHOUT_CLASSIFICATION)       0.1554
+(1-#-ab,WITHOUT_CLASSIFICATION)       0.1554
+(1-#-migh,DEFECT)                     0.1552
+(1-#-/ ,WITHOUT_CLASSIFICATION)       0.1551
+(1-#-fer,WITHOUT_CLASSIFICATION)      0.1551
+(1-#- mig,DEFECT)                     0.1551
+(1-#-mig,DEFECT)                      0.1551
+(1-#- fa,DEFECT)                      0.1549
+(1-#-ndi,DEFECT)                      0.1544
+(1-#- l,DEFECT)                       0.1536
+(1-#- how,DEFECT)                     0.1536
+(1-#-ce c,DEFECT)                     0.1533
+(1-#-l h,DEFECT)                      0.1532
+(1-#E-y...,DEFECT)                    0.1531
+(1-#-y...,DEFECT)                     0.1531
+(1-#-y..,DEFECT)                      0.1531
+(1-#-y?,DEFECT)                       0.1529
+(1-#-shou,DEFECT)                     0.1528
+(1-#-ins ,DEFECT)                     0.1527
+(1-#-s e,WITHOUT_CLASSIFICATION)      0.1527
+(1-#-s),DEFECT)                       0.1525
+(1-#-blem,DEFECT)                     0.1525
+(1-#-robl,DEFECT)                     0.1525
+(1-#-on,DEFECT)                       0.1525
+(1-#-oble,DEFECT)                     0.1525
+(1-#-s a,WITHOUT_CLASSIFICATION)      0.1524
+(1-#-nex,DEFECT)                      0.1524
+(1-#E-!,DEFECT)                       0.1518
+(1-#-'t w,DEFECT)                     0.1515
+(1-#-ect,DEFECT)                      0.1514
+(1-#-o p,DEFECT)                      0.1512
+(1-#-Y,WITHOUT_CLASSIFICATION)        0.1512
+(1-#-/ b,WITHOUT_CLASSIFICATION)      0.1511
+(1-#-// b,WITHOUT_CLASSIFICATION)     0.1511
+(1-#-pen,,DEFECT)                     0.1507
+(1-#-p ,WITHOUT_CLASSIFICATION)       0.1506
+(1-#-O: D,WITHOUT_CLASSIFICATION)     0.1505
+(1-#-his ,DEFECT)                     0.1502
+(1-#-ng s,WITHOUT_CLASSIFICATION)     0.1501
+(1-#E-t?,WITHOUT_CLASSIFICATION)      0.1501
+(1-#-* I,WITHOUT_CLASSIFICATION)      0.1500
+(1-Len-31-Inf,DEFECT)                 0.1499
+(1-#-wron,DEFECT)                     0.1499
+(1-#-em,DEFECT)                       0.1496
+(1-#-o L,WITHOUT_CLASSIFICATION)      0.1493
+(1-#-y on,DEFECT)                     0.1490
+(1-#-no L,WITHOUT_CLASSIFICATION)     0.1486
+(1-#-o Li,WITHOUT_CLASSIFICATION)     0.1486
+(1-#-ts a,WITHOUT_CLASSIFICATION)     0.1484
+(1-#-asse,WITHOUT_CLASSIFICATION)     0.1482
+(1-#-rre,DEFECT)                      0.1475
+(1-#-, s,WITHOUT_CLASSIFICATION)      0.1475
+(1-#-, b,DEFECT)                      0.1475
+(1-#-cte,WITHOUT_CLASSIFICATION)      0.1474
+(1-#-ot,DEFECT)                       0.1473
+(1-#-qui,DEFECT)                      0.1472
+(1-#-hou,DEFECT)                      0.1472
+(1-#-corr,DEFECT)                     0.1472
+

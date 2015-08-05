@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 21:37:34 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 19:55:33 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_class
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/top_features.txt
 displayedColumn = 1
@@ -16,26 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.train varies between 2 and 93
-done [10.9s, 53012 items].
-numDatums: 53012
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=51940.0, IMPLEMENTATION=1072.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.train ... done [8.2s, 52941 items].
+numDatums: 52941
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=51869.0, IMPLEMENTATION=1072.0}
 numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
-numFeatures (Phi(X) types): 165760 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
-..........................................................................
+numFeatures (Phi(X) types): 191107 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
+....................................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.test ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.test varies between 2 and 51
-done [1.1s, 6398 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/columba-1.4-src/9/classified_seq.test ... done [0.9s, 6393 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-6398 examples in test set
-Cls IMPLEMENTATION: TP=126 FN=8 FP=9 TN=6255; Acc 0.997 P 0.933 R 0.940 F1 0.937
-Cls WITHOUT_CLASSIFICATION: TP=6255 FN=9 FP=8 TN=126; Acc 0.997 P 0.999 R 0.999 F1 0.999
-Accuracy/micro-averaged F1: 0.99734
-Macro-averaged F1: 0.96772
+6393 examples in test set
+Cls IMPLEMENTATION: TP=125 FN=9 FP=15 TN=6244; Acc 0.996 P 0.893 R 0.933 F1 0.912
+Cls WITHOUT_CLASSIFICATION: TP=6244 FN=15 FP=9 TN=125; Acc 0.996 P 0.999 R 0.998 F1 0.998
+Accuracy/micro-averaged F1: 0.99625
+Macro-averaged F1: 0.95525

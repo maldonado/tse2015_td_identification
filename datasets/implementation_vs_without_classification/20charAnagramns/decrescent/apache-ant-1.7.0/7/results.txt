@@ -1,0 +1,40 @@
+ColumnDataClassifier invoked on Wed Jul 29 20:14:18 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 6
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 20
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/classified_seq.train varies between 2 and 93
+done [1177.7s, 97042 items].
+numDatums: 97042
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=92828.0, IMPLEMENTATION=4214.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 12645249 [CLASS, 1-#-hat to ha, 1-#-t this method, 1-#-en, then do     , 1-#-oDoItem can     *, ...]
+...Caught OutOfMemoryError, changing m = 2
+.....................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/7/classified_seq.test ... done [493.1s, 19915 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+19915 examples in test set
+Cls IMPLEMENTATION: TP=15 FN=65 FP=0 TN=19835; Acc 0.997 P 1.000 R 0.188 F1 0.316
+Cls WITHOUT_CLASSIFICATION: TP=19835 FN=0 FP=65 TN=15; Acc 0.997 P 0.997 R 1.000 F1 0.998
+Accuracy/micro-averaged F1: 0.99674
+Macro-averaged F1: 0.65708

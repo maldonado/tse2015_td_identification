@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 23:00:57 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:26:13 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/top_features.txt
 displayedColumn = 1
@@ -16,26 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.train varies between 2 and 93
-done [7.8s, 43897 items].
-numDatums: 43897
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=43455.0, DEFECT=442.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.train ... done [8.1s, 43841 items].
+numDatums: 43841
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=43399.0, DEFECT=442.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
-numFeatures (Phi(X) types): 149390 [CLASS, 1-#-set , 1-#-/ se, 1-#-/, 1-#-'r, ...]
-................................................................
+numFeatures (Phi(X) types): 171944 [CLASS, 1-#-set , 1-#-'r, 1-#-it, 1-#-al, ...]
+..................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.test ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.test varies between 2 and 51
-done [1.0s, 6277 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/columba-1.4-src/7/classified_seq.test ... done [1.4s, 6272 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-6277 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=6262 FN=2 FP=8 TN=5; Acc 0.998 P 0.999 R 1.000 F1 0.999
-Cls DEFECT: TP=5 FN=8 FP=2 TN=6262; Acc 0.998 P 0.714 R 0.385 F1 0.500
-Accuracy/micro-averaged F1: 0.99841
-Macro-averaged F1: 0.74960
+6272 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6257 FN=2 FP=9 TN=4; Acc 0.998 P 0.999 R 1.000 F1 0.999
+Cls DEFECT: TP=4 FN=9 FP=2 TN=6257; Acc 0.998 P 0.667 R 0.308 F1 0.421
+Accuracy/micro-averaged F1: 0.99825
+Macro-averaged F1: 0.71009

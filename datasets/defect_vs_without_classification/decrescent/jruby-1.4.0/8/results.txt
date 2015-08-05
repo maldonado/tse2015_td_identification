@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 23:12:32 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:38:50 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train varies between 2 and 93
-done [8.7s, 49946 items].
-numDatums: 49946
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=49643.0, DEFECT=303.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train ... done [7.6s, 49884 items].
+numDatums: 49884
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=49581.0, DEFECT=303.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
-numFeatures (Phi(X) types): 152147 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
-..............................................................
+numFeatures (Phi(X) types): 179874 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+...................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.test ... done [0.7s, 4436 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.test ... done [1.0s, 4436 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 4436 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=4267 FN=8 FP=121 TN=40; Acc 0.971 P 0.972 R 0.998 F1 0.985
-Cls DEFECT: TP=40 FN=121 FP=8 TN=4267; Acc 0.971 P 0.833 R 0.248 F1 0.383
-Accuracy/micro-averaged F1: 0.97092
-Macro-averaged F1: 0.68394
+Cls WITHOUT_CLASSIFICATION: TP=4271 FN=4 FP=131 TN=30; Acc 0.970 P 0.970 R 0.999 F1 0.984
+Cls DEFECT: TP=30 FN=131 FP=4 TN=4271; Acc 0.970 P 0.882 R 0.186 F1 0.308
+Accuracy/micro-averaged F1: 0.96957
+Macro-averaged F1: 0.64607

@@ -1,0 +1,111 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{amssymb,amsmath}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{times}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage{fancybox}
+\usepackage{color}
+\usepackage{array}
+\usepackage{subfigure}
+\usepackage{balance}
+\usepackage{epstopdf}
+\usepackage{array}
+\usepackage{xspace}
+\usepackage{pdfpages}
+
+
+\newcommand{\emad}[1]{\textcolor{red}{{\it [Emad: #1]}}}
+\newcommand{\nikos}[1]{\textcolor{red}{{\it [Nikos: #1]}}}
+\newcommand{\everton}[1]{\textcolor{blue}{{\it [Everton: #1]}}}
+
+\newcommand{\todo}[1]{\colorbox{yellow}{\textbf{[#1]}}}
+
+\newcommand{\conclusionbox}[1]{%
+	\vspace{2mm}
+	\framebox[0.45\textwidth][c]{%
+		\parbox[b]{0.42\textwidth}{%
+			{\it #1}
+		}
+	}
+	\vspace{2mm}
+}
+\newcommand{\rqi}{\textbf{RQ1. What comment patterns indicate self-admitted design technical debt? How are these comment patterns different than previously proposed comment patterns?\\}}
+\newcommand{\rqii}{\textbf{RQ2. Can we effectively detect self-admitted design technical debt using the proposed comment patterns?\\}}
+\newcommand{\rqiii}{\textbf{RQ3. How much of the detected self-admitted design technical debt can we automatically address with state-of-the-art refactoring techniques?\\}}
+
+\newcommand{\SADTD}{Self-admitted Design Technical Debt\xspace}
+\newcommand{\SATD}{Self-admitted Technical Debt\xspace}
+
+\begin{document}
+\title{Using Source Code Comments to Detect \SADTD}
+
+\author{\IEEEauthorblockN{Everton da S. Maldonado,
+Nikolaos Tsantalis and
+Emad Shihab}
+
+\IEEEauthorblockA{Department of Computer Science and Software Engineering\\Concordia University,
+Montreal, Canada\\
+\url{e_silvam@encs.concordia.ca}, \url{nikolaos.tsantalis@concordia.ca},
+\url{emad.shihab@concordia.ca}}
+}
+
+\maketitle
+
+\begin{abstract}
+During the development and maintenance of a software system, developers face unpredictable difficulties or pressures, and in many cases are forced to apply unconventional solutions to overcome these difficulties. For example, they might adopt insufficiently tested or temporary solutions (i.e., workarounds and hacks), neglect good design practices, and introduce inaccurate or incomplete documentation due to time constraints and pressure to meet deadlines. This phenomenon has been explained through the metaphor of Technical Debt.
+
+Prior work has shown that one of the most impacting types of technical debt is design debt and that code comments embedded in the code can be used to detect \emph{self-admitted} technical debt. Therefore, in this paper our main goal is to study \SADTD. 
+
+% More specifically, we derive comment patterns that can be used to detect \SADTD. Then, we perform a case study to determine the effectiveness of our approach at detecting \SADTD. We also compare the effectiveness of our approach to prior approaches that use code smells to detect design technical debt and quantify how much of the self-admitted design debt can be automatically refactored with refactoring tools. We suggest 176 different comment patterns that can be used to detect \SADTD. Our approach can achieve precision and recall values between 74.07-96.30\% and 10.87-83.87\%, respectively. We also show that our approach detects design technical debt that is different from alternative state-of-the-art techniques used for finding design technical debt. Lastly, our findings also show that 24.58\% of the \SADTD is detected in the form of refactoring opportunities by a state-of-the-art refactoring recommendation tool. 
+\end{abstract}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction.tex}
+
+\section{Motivating Example}
+\label{sec:motivating_example}
+\input{motivation.tex}
+
+\section{Approach}
+\label{sec:approach}
+\input{approach.tex}
+
+\section{Case study Results}
+\label{sec:case_study_results}
+\input{results}
+
+\section{Discussion}
+\label{sec:discussion}
+\input{discussion}
+
+\section{Related Work}
+\label{sec:related_work}
+\input{related_work.tex}
+
+\section{Conclusion and Future work}
+\label{sec:conclusion}
+\input{conclusion.tex}
+
+\bibliographystyle{IEEEtran}
+\balance
+\bibliography{bibliography}
+
+
+% \includepdf{figures/all_graphs_implementation.pdf}
+\includepdf{figures/all_graphs_defect.pdf}
+
+% \include{figures/all_graphs_design.pdf}
+
+
+\end{document}

@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 21:09:57 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/classified_seq.train ... done [1.0s, 50907 items].
+numDatums: 50907
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=50457.0, DEFECT=450.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 38496 [CLASS, 1-SW-they're, 1-SW-constants, 1-SW-set, 1-SW-that, ...]
+...........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-jmeter-2.10/9/classified_seq.test ... done [0.1s, 7693 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7693 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7667 FN=4 FP=17 TN=5; Acc 0.997 P 0.998 R 0.999 F1 0.999
+Cls DEFECT: TP=5 FN=17 FP=4 TN=7667; Acc 0.997 P 0.556 R 0.227 F1 0.323
+Accuracy/micro-averaged F1: 0.99727
+Macro-averaged F1: 0.66061

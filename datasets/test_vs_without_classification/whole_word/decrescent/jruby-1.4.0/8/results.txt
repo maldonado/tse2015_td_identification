@@ -1,0 +1,37 @@
+ColumnDataClassifier invoked on Thu Jul 30 17:42:27 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.train varies between 2 and 93
+done [0.8s, 51512 items].
+numDatums: 51512
+numDatumsPerLabel: {TEST=79.0, WITHOUT_CLASSIFICATION=51433.0}
+numLabels: 2 [TEST, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 33921 [CLASS, 1-SW-as, 1-SW-with, 1-SW-on., 1-SW-TODO:, ...]
+......................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/8/classified_seq.test ... done [0.1s, 4281 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4281 examples in test set
+Cls TEST: TP=1 FN=5 FP=2 TN=4273; Acc 0.998 P 0.333 R 0.167 F1 0.222
+Cls WITHOUT_CLASSIFICATION: TP=4273 FN=2 FP=5 TN=1; Acc 0.998 P 0.999 R 1.000 F1 0.999
+Accuracy/micro-averaged F1: 0.99836
+Macro-averaged F1: 0.61070

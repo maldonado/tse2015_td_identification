@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 21:02:09 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/classified_seq.train ... done [0.7s, 25137 items].
+numDatums: 25137
+numDatumsPerLabel: {DOCUMENTATION=23.0, WITHOUT_CLASSIFICATION=25114.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
+numFeatures (Phi(X) types): 21570 [CLASS, 1-SW-background, 1-SW-for, 1-SW-up., 1-SW-MUST, ...]
+.............................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/argouml/4/classified_seq.test ... done [0.1s, 8048 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+8048 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=8018 FN=0 FP=30 TN=0; Acc 0.996 P 0.996 R 1.000 F1 0.998
+Cls DOCUMENTATION: TP=0 FN=30 FP=0 TN=8018; Acc 0.996 P 1.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.99627
+Macro-averaged F1: 0.49907

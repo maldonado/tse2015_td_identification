@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 21:29:19 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 19:48:26 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_class
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.train varies between 2 and 93
-done [11.3s, 55427 items].
-numDatums: 55427
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=54237.0, IMPLEMENTATION=1190.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.train ... done [8.3s, 55351 items].
+numDatums: 55351
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=54161.0, IMPLEMENTATION=1190.0}
 numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
-numFeatures (Phi(X) types): 166134 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
-......................................................................
+numFeatures (Phi(X) types): 194463 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
+.................................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.test ... done [0.9s, 3983 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/9/classified_seq.test ... done [0.7s, 3983 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 3983 examples in test set
-Cls IMPLEMENTATION: TP=11 FN=5 FP=4 TN=3963; Acc 0.998 P 0.733 R 0.688 F1 0.710
-Cls WITHOUT_CLASSIFICATION: TP=3963 FN=4 FP=5 TN=11; Acc 0.998 P 0.999 R 0.999 F1 0.999
-Accuracy/micro-averaged F1: 0.99774
-Macro-averaged F1: 0.85427
+Cls IMPLEMENTATION: TP=9 FN=7 FP=6 TN=3961; Acc 0.997 P 0.600 R 0.562 F1 0.581
+Cls WITHOUT_CLASSIFICATION: TP=3961 FN=6 FP=7 TN=9; Acc 0.997 P 0.998 R 0.998 F1 0.998
+Accuracy/micro-averaged F1: 0.99674
+Macro-averaged F1: 0.78950

@@ -1,0 +1,502 @@
+LinearClassifier [printing top 500 features]
+(CLASS,WITHOUT_CLASSIFICATION)               3.0603
+(1-Len-31-Inf,WITHOUT_CLASSIFICATION)        0.9500
+(1-Len-11-20,WITHOUT_CLASSIFICATION)         0.7610
+(1-Len-21-30,WITHOUT_CLASSIFICATION)         0.7053
+(1-Len-0-10,WITHOUT_CLASSIFICATION)          0.6410
+(1-#-e the ,WITHOUT_CLASSIFICATION)          0.1016
+(1-#-t the ,WITHOUT_CLASSIFICATION)          0.0846
+(1-#-lement,WITHOUT_CLASSIFICATION)          0.0793
+(1-#- class,WITHOUT_CLASSIFICATION)          0.0729
+(1-#- TODO: T,TEST)                          0.0623
+(1-#-TODO: T,TEST)                           0.0623
+(1-#-ODO: T,TEST)                            0.0623
+(1-#- Test ,TEST)                            0.0570
+(1-#-othing,WITHOUT_CLASSIFICATION)          0.0554
+(1-#-// the,WITHOUT_CLASSIFICATION)          0.0547
+(1-#- TODO: Test ,TEST)                      0.0541
+(1-#-ODO: Test ,TEST)                        0.0541
+(1-#-: Test ,TEST)                           0.0541
+(1-#-TODO: Tes,TEST)                         0.0541
+(1-#-ODO: Te,TEST)                           0.0541
+(1-#-TODO: Test,TEST)                        0.0541
+(1-#-O: Test,TEST)                           0.0541
+(1-#- TODO: Te,TEST)                         0.0541
+(1-#-DO: Test ,TEST)                         0.0541
+(1-#- TODO: Tes,TEST)                        0.0541
+(1-#-TODO: Test ,TEST)                       0.0541
+(1-#-O: Test ,TEST)                          0.0541
+(1-#-ODO: Tes,TEST)                          0.0541
+(1-#-DO: Tes,TEST)                           0.0541
+(1-#-ODO: Test,TEST)                         0.0541
+(1-#-DO: Test,TEST)                          0.0541
+(1-#-O: Tes,TEST)                            0.0541
+(1-#-DO: Te,TEST)                            0.0541
+(1-#-TODO: Te,TEST)                          0.0541
+(1-#- TODO: Test,TEST)                       0.0541
+(1-#-: Test,TEST)                            0.0541
+(1-#B-/*    ,WITHOUT_CLASSIFICATION)         0.0529
+(1-#-/*    ,WITHOUT_CLASSIFICATION)          0.0529
+(1-#-n the ,WITHOUT_CLASSIFICATION)          0.0520
+(1-#-* TODO,TEST)                            0.0516
+(1-#-* TODO:,TEST)                           0.0516
+(1-#-* TODO: ,TEST)                          0.0516
+(1-#- ignore,WITHOUT_CLASSIFICATION)         0.0504
+(1-#- ignor,WITHOUT_CLASSIFICATION)          0.0504
+(1-#-ignore,WITHOUT_CLASSIFICATION)          0.0504
+(1-#-nothing,WITHOUT_CLASSIFICATION)         0.0491
+(1-#-nothin,WITHOUT_CLASSIFICATION)          0.0491
+(1-#- case ,WITHOUT_CLASSIFICATION)          0.0488
+(1-#-ation ,WITHOUT_CLASSIFICATION)          0.0488
+(1-#- TODO: ,TEST)                           0.0487
+(1-#- nothi,WITHOUT_CLASSIFICATION)          0.0481
+(1-#- nothing,WITHOUT_CLASSIFICATION)        0.0481
+(1-#- nothin,WITHOUT_CLASSIFICATION)         0.0481
+(1-#B-// the,WITHOUT_CLASSIFICATION)         0.0480
+(1-#-d the ,WITHOUT_CLASSIFICATION)          0.0480
+(1-#- the s,WITHOUT_CLASSIFICATION)          0.0474
+(1-#-* TODO: T,TEST)                         0.0472
+(1-#-class ,WITHOUT_CLASSIFICATION)          0.0471
+(1-#- the p,WITHOUT_CLASSIFICATION)          0.0464
+(1-#- the c,WITHOUT_CLASSIFICATION)          0.0463
+(1-#-return,WITHOUT_CLASSIFICATION)          0.0459
+(1-#-et the,WITHOUT_CLASSIFICATION)          0.0457
+(1-#-et the ,WITHOUT_CLASSIFICATION)         0.0449
+(1-#-thing ,WITHOUT_CLASSIFICATION)          0.0447
+(1-#-// The,WITHOUT_CLASSIFICATION)          0.0435
+(1-#- have ,WITHOUT_CLASSIFICATION)          0.0435
+(1-#- class ,WITHOUT_CLASSIFICATION)         0.0433
+(1-#- event,WITHOUT_CLASSIFICATION)          0.0430
+(1-#- of th,WITHOUT_CLASSIFICATION)          0.0424
+(1-#-element,WITHOUT_CLASSIFICATION)         0.0420
+(1-#-elemen,WITHOUT_CLASSIFICATION)          0.0420
+(1-#-s the ,WITHOUT_CLASSIFICATION)          0.0416
+(1-#-* TODO: Tes,TEST)                       0.0414
+(1-#-* TODO: Test ,TEST)                     0.0414
+(1-#-* TODO: Te,TEST)                        0.0414
+(1-#-* TODO: Test,TEST)                      0.0414
+(1-#-e test,TEST)                            0.0413
+(1-#B-// The,WITHOUT_CLASSIFICATION)         0.0412
+(1-#- retur,WITHOUT_CLASSIFICATION)          0.0412
+(1-#- return,WITHOUT_CLASSIFICATION)         0.0412
+(1-#-/ igno,WITHOUT_CLASSIFICATION)          0.0411
+(1-#-// igno,WITHOUT_CLASSIFICATION)         0.0411
+(1-#-/ ignor,WITHOUT_CLASSIFICATION)         0.0411
+(1-#-/ ignore,WITHOUT_CLASSIFICATION)        0.0411
+(1-#-// ignore,WITHOUT_CLASSIFICATION)       0.0411
+(1-#-// ignor,WITHOUT_CLASSIFICATION)        0.0411
+(1-#-// ign,WITHOUT_CLASSIFICATION)          0.0411
+(1-#B-// ignor,WITHOUT_CLASSIFICATION)       0.0409
+(1-#B-// ignore,WITHOUT_CLASSIFICATION)      0.0409
+(1-#B-// igno,WITHOUT_CLASSIFICATION)        0.0409
+(1-#B-// ign,WITHOUT_CLASSIFICATION)         0.0409
+(1-#- model,WITHOUT_CLASSIFICATION)          0.0409
+(1-#-//    ,WITHOUT_CLASSIFICATION)          0.0401
+(1-#-f the ,WITHOUT_CLASSIFICATION)          0.0392
+(1-#-/ the ,WITHOUT_CLASSIFICATION)          0.0391
+(1-#-// the ,WITHOUT_CLASSIFICATION)         0.0391
+(1-#-change,WITHOUT_CLASSIFICATION)          0.0388
+(1-#-of the,WITHOUT_CLASSIFICATION)          0.0382
+(1-#B-//    ,WITHOUT_CLASSIFICATION)         0.0381
+(1-#- elemen,WITHOUT_CLASSIFICATION)         0.0380
+(1-#- element,WITHOUT_CLASSIFICATION)        0.0380
+(1-#- eleme,WITHOUT_CLASSIFICATION)          0.0380
+(1-#- of the,WITHOUT_CLASSIFICATION)         0.0379
+(1-#- from ,WITHOUT_CLASSIFICATION)          0.0378
+(1-#- the m,WITHOUT_CLASSIFICATION)          0.0378
+(1-#-essage,WITHOUT_CLASSIFICATION)          0.0377
+(1-#-gnored,WITHOUT_CLASSIFICATION)          0.0375
+(1-#- tests,TEST)                            0.0375
+(1-#-efault,WITHOUT_CLASSIFICATION)          0.0373
+(1-#- ignored,WITHOUT_CLASSIFICATION)        0.0368
+(1-#-ignored,WITHOUT_CLASSIFICATION)         0.0368
+(1-#- the n,WITHOUT_CLASSIFICATION)          0.0364
+(1-#-reate ,WITHOUT_CLASSIFICATION)          0.0364
+(1-#-Test t,TEST)                            0.0364
+(1-#- Test t,TEST)                           0.0364
+(1-#-Test th,TEST)                           0.0364
+(1-#- Test th,TEST)                          0.0364
+(1-#-d clas,WITHOUT_CLASSIFICATION)          0.0362
+(1-#-d class,WITHOUT_CLASSIFICATION)         0.0362
+(1-#-TODO: ,TEST)                            0.0362
+(1-#- change,WITHOUT_CLASSIFICATION)         0.0362
+(1-#B-// TODO:,WITHOUT_CLASSIFICATION)       0.0359
+(1-#-/ The ,WITHOUT_CLASSIFICATION)          0.0359
+(1-#-// The ,WITHOUT_CLASSIFICATION)         0.0359
+(1-#-/*     ,WITHOUT_CLASSIFICATION)         0.0359
+(1-#B-/*     ,WITHOUT_CLASSIFICATION)        0.0359
+(1-#-tests ,TEST)                            0.0356
+(1-#- tests ,TEST)                           0.0356
+(1-#-of the ,WITHOUT_CLASSIFICATION)         0.0355
+(1-#- of the ,WITHOUT_CLASSIFICATION)        0.0352
+(1-#-iagram,WITHOUT_CLASSIFICATION)          0.0352
+(1-#-action,WITHOUT_CLASSIFICATION)          0.0351
+(1-#- remov,WITHOUT_CLASSIFICATION)          0.0351
+(1-#- the t,WITHOUT_CLASSIFICATION)          0.0349
+(1-#-o nothing,WITHOUT_CLASSIFICATION)       0.0347
+(1-#-o nothin,WITHOUT_CLASSIFICATION)        0.0347
+(1-#-o nothi,WITHOUT_CLASSIFICATION)         0.0347
+(1-#-o noth,WITHOUT_CLASSIFICATION)          0.0347
+(1-#-// ignored,WITHOUT_CLASSIFICATION)      0.0347
+(1-#-/ ignored,WITHOUT_CLASSIFICATION)       0.0347
+(1-#B-// ignored,WITHOUT_CLASSIFICATION)     0.0347
+(1-#B-// The ,WITHOUT_CLASSIFICATION)        0.0345
+(1-#-emove ,WITHOUT_CLASSIFICATION)          0.0344
+(1-#-in UML,WITHOUT_CLASSIFICATION)          0.0344
+(1-#- in UM,WITHOUT_CLASSIFICATION)          0.0341
+(1-#- in UML,WITHOUT_CLASSIFICATION)         0.0341
+(1-#-e name,WITHOUT_CLASSIFICATION)          0.0338
+(1-#B-// the ,WITHOUT_CLASSIFICATION)        0.0338
+(1-#- in th,WITHOUT_CLASSIFICATION)          0.0336
+(1-#-roject,WITHOUT_CLASSIFICATION)          0.0334
+(1-#E-TODO: Test this. */,TEST)              0.0334
+(1-#B-/* TODO: Test thi,TEST)                0.0334
+(1-#-: Test th,TEST)                         0.0334
+(1-#- Test this.,TEST)                       0.0334
+(1-#B-/* TODO: Tes,TEST)                     0.0334
+(1-#-/* TODO: Test t,TEST)                   0.0334
+(1-#-: Test this. ,TEST)                     0.0334
+(1-#-: Test this. */,TEST)                   0.0334
+(1-#-ODO: Test t,TEST)                       0.0334
+(1-#B-/* TODO: Test this.,TEST)              0.0334
+(1-#-Test this. *,TEST)                      0.0334
+(1-#-DO: Test this.,TEST)                    0.0334
+(1-#-O: Test this. */,TEST)                  0.0334
+(1-#B-/* TODO: Test th,TEST)                 0.0334
+(1-#E-O: Test this. */,TEST)                 0.0334
+(1-#E-: Test this. */,TEST)                  0.0334
+(1-#-est this. ,TEST)                        0.0334
+(1-#- TODO: Test th,TEST)                    0.0334
+(1-#-t this.,TEST)                           0.0334
+(1-#-/* TODO: Te,TEST)                       0.0334
+(1-#-/* TODO: Test,TEST)                     0.0334
+(1-#B-/* TODO: Te,TEST)                      0.0334
+(1-#- Test this,TEST)                        0.0334
+(1-#-his. */,TEST)                           0.0334
+(1-#-ODO: Test thi,TEST)                     0.0334
+(1-#E-this. */,TEST)                         0.0334
+(1-#-O: Test thi,TEST)                       0.0334
+(1-#- TODO: Test this. *,TEST)               0.0334
+(1-#-/* TODO: Tes,TEST)                      0.0334
+(1-#-* TODO: Test t,TEST)                    0.0334
+(1-#-TODO: Test this. *,TEST)                0.0334
+(1-#-/* TODO: Test this. ,TEST)              0.0334
+(1-#-Test thi,TEST)                          0.0334
+(1-#-ODO: Test this,TEST)                    0.0334
+(1-#-t this. ,TEST)                          0.0334
+(1-#-TODO: Test this. ,TEST)                 0.0334
+(1-#-DO: Test thi,TEST)                      0.0334
+(1-#- Test this. *,TEST)                     0.0334
+(1-#-DO: Test this. *,TEST)                  0.0334
+(1-#- TODO: Test this.,TEST)                 0.0334
+(1-#E-Test this. */,TEST)                    0.0334
+(1-#E-t this. */,TEST)                       0.0334
+(1-#- TODO: Test this. */,TEST)              0.0334
+(1-#-* TODO: Test this. *,TEST)              0.0334
+(1-#E- Test this. */,TEST)                   0.0334
+(1-#-st this. *,TEST)                        0.0334
+(1-#-O: Test this.,TEST)                     0.0334
+(1-#-/* TODO: Test this.,TEST)               0.0334
+(1-#-st this. */,TEST)                       0.0334
+(1-#-est this. *,TEST)                       0.0334
+(1-#-* TODO: Test th,TEST)                   0.0334
+(1-#-Test this,TEST)                         0.0334
+(1-#- Test thi,TEST)                         0.0334
+(1-#-: Test this. *,TEST)                    0.0334
+(1-#-/* TODO: Test this,TEST)                0.0334
+(1-#E-is. */,TEST)                           0.0334
+(1-#-est this.,TEST)                         0.0334
+(1-#-TODO: Test t,TEST)                      0.0334
+(1-#-/* TODO: Test ,TEST)                    0.0334
+(1-#-t this. *,TEST)                         0.0334
+(1-#- TODO: Test this. ,TEST)                0.0334
+(1-#E-DO: Test this. */,TEST)                0.0334
+(1-#E-his. */,TEST)                          0.0334
+(1-#- Test this. */,TEST)                    0.0334
+(1-#-st this.,TEST)                          0.0334
+(1-#-O: Test t,TEST)                         0.0334
+(1-#-est this. */,TEST)                      0.0334
+(1-#B-/* TODO: Test,TEST)                    0.0334
+(1-#-TODO: Test this. */,TEST)               0.0334
+(1-#B-/* TODO: Test ,TEST)                   0.0334
+(1-#-: Test this.,TEST)                      0.0334
+(1-#-DO: Test this. ,TEST)                   0.0334
+(1-#-DO: Test this. */,TEST)                 0.0334
+(1-#-is. */,TEST)                            0.0334
+(1-#-O: Test this. *,TEST)                   0.0334
+(1-#-DO: Test th,TEST)                       0.0334
+(1-#E-est this. */,TEST)                     0.0334
+(1-#-Test this. */,TEST)                     0.0334
+(1-#-t this. */,TEST)                        0.0334
+(1-#-O: Test this. ,TEST)                    0.0334
+(1-#E- this. */,TEST)                        0.0334
+(1-#-ODO: Test this. *,TEST)                 0.0334
+(1-#-: Test t,TEST)                          0.0334
+(1-#-O: Test this,TEST)                      0.0334
+(1-#-Test this.,TEST)                        0.0334
+(1-#-* TODO: Test this,TEST)                 0.0334
+(1-#B-/* TODO: Test this,TEST)               0.0334
+(1-#-/* TODO: Test th,TEST)                  0.0334
+(1-#-DO: Test t,TEST)                        0.0334
+(1-#- TODO: Test this,TEST)                  0.0334
+(1-#-ODO: Test this. */,TEST)                0.0334
+(1-#B-/* TODO: Test t,TEST)                  0.0334
+(1-#E- TODO: Test this. */,TEST)             0.0334
+(1-#-/* TODO: Test thi,TEST)                 0.0334
+(1-#- TODO: Test t,TEST)                     0.0334
+(1-#-* TODO: Test thi,TEST)                  0.0334
+(1-#-* TODO: Test this.,TEST)                0.0334
+(1-#- TODO: Test thi,TEST)                   0.0334
+(1-#-: Test thi,TEST)                        0.0334
+(1-#-TODO: Test this,TEST)                   0.0334
+(1-#E-st this. */,TEST)                      0.0334
+(1-#B-/* TODO: Test this. ,TEST)             0.0334
+(1-#-Test this. ,TEST)                       0.0334
+(1-#-TODO: Test thi,TEST)                    0.0334
+(1-#-TODO: Test this.,TEST)                  0.0334
+(1-#-: Test this,TEST)                       0.0334
+(1-#-O: Test th,TEST)                        0.0334
+(1-#-this. */,TEST)                          0.0334
+(1-#- Test this. ,TEST)                      0.0334
+(1-#-TODO: Test th,TEST)                     0.0334
+(1-#E-ODO: Test this. */,TEST)               0.0334
+(1-#-ODO: Test th,TEST)                      0.0334
+(1-#-DO: Test this,TEST)                     0.0334
+(1-#-ODO: Test this.,TEST)                   0.0334
+(1-#-* TODO: Test this. ,TEST)               0.0334
+(1-#-ODO: Test this. ,TEST)                  0.0334
+(1-#-st this. ,TEST)                         0.0334
+(1-#- this. */,TEST)                         0.0334
+(1-#-his. *,TEST)                            0.0334
+(1-#- this. *,TEST)                          0.0334
+(1-#-this. *,TEST)                           0.0334
+(1-#-ration,WITHOUT_CLASSIFICATION)          0.0333
+(1-#-te the,WITHOUT_CLASSIFICATION)          0.0332
+(1-#- chang,WITHOUT_CLASSIFICATION)          0.0332
+(1-#-this. ,TEST)                            0.0331
+(1-#- this. ,TEST)                           0.0331
+(1-#-// If ,WITHOUT_CLASSIFICATION)          0.0330
+(1-#- TODO:,TEST)                            0.0329
+(1-#-// Add,WITHOUT_CLASSIFICATION)          0.0329
+(1-#B-// Add,WITHOUT_CLASSIFICATION)         0.0328
+(1-#B-// If ,WITHOUT_CLASSIFICATION)         0.0326
+(1-#- remove,WITHOUT_CLASSIFICATION)         0.0326
+(1-#-est thi,TEST)                           0.0324
+(1-#-est this,TEST)                          0.0324
+(1-#- * TODO,TEST)                           0.0324
+(1-#- * TODO: ,TEST)                         0.0324
+(1-#- * TOD,TEST)                            0.0324
+(1-#- * TODO:,TEST)                          0.0324
+(1-#-st this,TEST)                           0.0324
+(1-#-st thi,TEST)                            0.0324
+(1-#-/$NON-NLS,WITHOUT_CLASSIFICATION)       0.0322
+(1-#-ON-NLS,WITHOUT_CLASSIFICATION)          0.0322
+(1-#-NON-NLS-,WITHOUT_CLASSIFICATION)        0.0322
+(1-#-//$NON-NL,WITHOUT_CLASSIFICATION)       0.0322
+(1-#-N-NLS-,WITHOUT_CLASSIFICATION)          0.0322
+(1-#-//$NON-NLS-,WITHOUT_CLASSIFICATION)     0.0322
+(1-#-/$NON-,WITHOUT_CLASSIFICATION)          0.0322
+(1-#-ON-NLS-,WITHOUT_CLASSIFICATION)         0.0322
+(1-#-NON-NL,WITHOUT_CLASSIFICATION)          0.0322
+(1-#-//$NON-NLS,WITHOUT_CLASSIFICATION)      0.0322
+(1-#-$NON-NLS-,WITHOUT_CLASSIFICATION)       0.0322
+(1-#-NON-NLS,WITHOUT_CLASSIFICATION)         0.0322
+(1-#-/$NON-NL,WITHOUT_CLASSIFICATION)        0.0322
+(1-#-/$NON-N,WITHOUT_CLASSIFICATION)         0.0322
+(1-#-$NON-N,WITHOUT_CLASSIFICATION)          0.0322
+(1-#-/$NON-NLS-,WITHOUT_CLASSIFICATION)      0.0322
+(1-#-//$NON-,WITHOUT_CLASSIFICATION)         0.0322
+(1-#-//$NON-N,WITHOUT_CLASSIFICATION)        0.0322
+(1-#-$NON-NLS,WITHOUT_CLASSIFICATION)        0.0322
+(1-#-//$NON,WITHOUT_CLASSIFICATION)          0.0322
+(1-#-$NON-NL,WITHOUT_CLASSIFICATION)         0.0322
+(1-#-remove,WITHOUT_CLASSIFICATION)          0.0322
+(1-#B-//$NON-NL,WITHOUT_CLASSIFICATION)      0.0321
+(1-#B-//$NON-N,WITHOUT_CLASSIFICATION)       0.0321
+(1-#B-//$NON-NLS,WITHOUT_CLASSIFICATION)     0.0321
+(1-#B-//$NON-,WITHOUT_CLASSIFICATION)        0.0321
+(1-#B-//$NON,WITHOUT_CLASSIFICATION)         0.0321
+(1-#B-//$NON-NLS-,WITHOUT_CLASSIFICATION)    0.0321
+(1-#E-ignored,WITHOUT_CLASSIFICATION)        0.0319
+(1-#E- ignored,WITHOUT_CLASSIFICATION)       0.0319
+(1-#E-gnored,WITHOUT_CLASSIFICATION)         0.0319
+(1-#-eturn ,WITHOUT_CLASSIFICATION)          0.0318
+(1-#- this.,TEST)                            0.0318
+(1-#-// add,WITHOUT_CLASSIFICATION)          0.0317
+(1-#-t this,TEST)                            0.0317
+(1-#B-// add,WITHOUT_CLASSIFICATION)         0.0314
+(1-#E-/ ignored,WITHOUT_CLASSIFICATION)      0.0313
+(1-#E-// ignored,WITHOUT_CLASSIFICATION)     0.0313
+(1-#- end c,WITHOUT_CLASSIFICATION)          0.0312
+(1-#-o test,TEST)                            0.0312
+(1-#-in the,WITHOUT_CLASSIFICATION)          0.0312
+(1-#-in the ,WITHOUT_CLASSIFICATION)         0.0312
+(1-#-d class ,WITHOUT_CLASSIFICATION)        0.0311
+(1-#-//////,WITHOUT_CLASSIFICATION)          0.0311
+(1-#-nitial,WITHOUT_CLASSIFICATION)          0.0310
+(1-#-projec,WITHOUT_CLASSIFICATION)          0.0309
+(1-#-project,WITHOUT_CLASSIFICATION)         0.0309
+(1-#-te the ,WITHOUT_CLASSIFICATION)         0.0308
+(1-#-est th,TEST)                            0.0307
+(1-#- the d,WITHOUT_CLASSIFICATION)          0.0305
+(1-#-/* TODO: T,TEST)                        0.0305
+(1-#B-/* TODO: T,TEST)                       0.0305
+(1-#-* end ,WITHOUT_CLASSIFICATION)          0.0304
+(1-#B-/* end,WITHOUT_CLASSIFICATION)         0.0304
+(1-#-/* end,WITHOUT_CLASSIFICATION)          0.0304
+(1-#-/* end ,WITHOUT_CLASSIFICATION)         0.0304
+(1-#B-/* end ,WITHOUT_CLASSIFICATION)        0.0304
+(1-#-tested,TEST)                            0.0304
+(1-#-ON-NLS-1$,WITHOUT_CLASSIFICATION)       0.0303
+(1-#-/$NON-NLS-1,WITHOUT_CLASSIFICATION)     0.0303
+(1-#--NLS-1,WITHOUT_CLASSIFICATION)          0.0303
+(1-#-N-NLS-1,WITHOUT_CLASSIFICATION)         0.0303
+(1-#-NLS-1$,WITHOUT_CLASSIFICATION)          0.0303
+(1-#-$NON-NLS-1,WITHOUT_CLASSIFICATION)      0.0303
+(1-#--NLS-1$,WITHOUT_CLASSIFICATION)         0.0303
+(1-#-NON-NLS-1$,WITHOUT_CLASSIFICATION)      0.0303
+(1-#-$NON-NLS-1$,WITHOUT_CLASSIFICATION)     0.0303
+(1-#-N-NLS-1$,WITHOUT_CLASSIFICATION)        0.0303
+(1-#-NON-NLS-1,WITHOUT_CLASSIFICATION)       0.0303
+(1-#-ON-NLS-1,WITHOUT_CLASSIFICATION)        0.0303
+(1-#-//$NON-NLS-1$,WITHOUT_CLASSIFICATION)   0.0303
+(1-#-//$NON-NLS-1,WITHOUT_CLASSIFICATION)    0.0303
+(1-#-/$NON-NLS-1$,WITHOUT_CLASSIFICATION)    0.0303
+(1-#- check,WITHOUT_CLASSIFICATION)          0.0303
+(1-#B-//$NON-NLS-1$,WITHOUT_CLASSIFICATION)  0.0302
+(1-#B-//$NON-NLS-1,WITHOUT_CLASSIFICATION)   0.0302
+(1-#-       ,WITHOUT_CLASSIFICATION)         0.0302
+(1-#E-//$NON-NLS-1$,WITHOUT_CLASSIFICATION)  0.0298
+(1-#E--NLS-1$,WITHOUT_CLASSIFICATION)        0.0298
+(1-#E-ON-NLS-1$,WITHOUT_CLASSIFICATION)      0.0298
+(1-#E-$NON-NLS-1$,WITHOUT_CLASSIFICATION)    0.0298
+(1-#E-NON-NLS-1$,WITHOUT_CLASSIFICATION)     0.0298
+(1-#E-/$NON-NLS-1$,WITHOUT_CLASSIFICATION)   0.0298
+(1-#E-NLS-1$,WITHOUT_CLASSIFICATION)         0.0298
+(1-#E-N-NLS-1$,WITHOUT_CLASSIFICATION)       0.0298
+(1-#-     *,WITHOUT_CLASSIFICATION)          0.0298
+(1-#-    * ,WITHOUT_CLASSIFICATION)          0.0297
+(1-#- inter,WITHOUT_CLASSIFICATION)          0.0296
+(1-#-        ,WITHOUT_CLASSIFICATION)        0.0296
+(1-#-     * ,WITHOUT_CLASSIFICATION)         0.0296
+(1-#-ate th,WITHOUT_CLASSIFICATION)          0.0295
+(1-#-nd class ,WITHOUT_CLASSIFICATION)       0.0295
+(1-#-nd class,WITHOUT_CLASSIFICATION)        0.0295
+(1-#-nd cla,WITHOUT_CLASSIFICATION)          0.0295
+(1-#-nd clas,WITHOUT_CLASSIFICATION)         0.0295
+(1-#-lassif,WITHOUT_CLASSIFICATION)          0.0294
+(1-#B-/*     * ,WITHOUT_CLASSIFICATION)      0.0293
+(1-#B-/*     *,WITHOUT_CLASSIFICATION)       0.0293
+(1-#-/*     *,WITHOUT_CLASSIFICATION)        0.0293
+(1-#-/*     * ,WITHOUT_CLASSIFICATION)       0.0293
+(1-#-// Set,WITHOUT_CLASSIFICATION)          0.0292
+(1-#B-// Set,WITHOUT_CLASSIFICATION)         0.0292
+(1-#-// cas,WITHOUT_CLASSIFICATION)          0.0290
+(1-#- first,WITHOUT_CLASSIFICATION)          0.0288
+(1-#-diagram,WITHOUT_CLASSIFICATION)         0.0287
+(1-#-diagra,WITHOUT_CLASSIFICATION)          0.0287
+(1-#- end clas,WITHOUT_CLASSIFICATION)       0.0284
+(1-#- end class,WITHOUT_CLASSIFICATION)      0.0284
+(1-#-end class,WITHOUT_CLASSIFICATION)       0.0284
+(1-#-end cl,WITHOUT_CLASSIFICATION)          0.0284
+(1-#-end class ,WITHOUT_CLASSIFICATION)      0.0284
+(1-#-end clas,WITHOUT_CLASSIFICATION)        0.0284
+(1-#-end cla,WITHOUT_CLASSIFICATION)         0.0284
+(1-#- end cla,WITHOUT_CLASSIFICATION)        0.0284
+(1-#- end class ,WITHOUT_CLASSIFICATION)     0.0284
+(1-#- end cl,WITHOUT_CLASSIFICATION)         0.0284
+(1-#B-// cas,WITHOUT_CLASSIFICATION)         0.0284
+(1-#-iation,WITHOUT_CLASSIFICATION)          0.0284
+(1-#-tereot,WITHOUT_CLASSIFICATION)          0.0283
+(1-#-tereotype,WITHOUT_CLASSIFICATION)       0.0283
+(1-#-ereoty,WITHOUT_CLASSIFICATION)          0.0283
+(1-#-tereoty,WITHOUT_CLASSIFICATION)         0.0283
+(1-#-reotyp,WITHOUT_CLASSIFICATION)          0.0283
+(1-#-ereotyp,WITHOUT_CLASSIFICATION)         0.0283
+(1-#-tereotyp,WITHOUT_CLASSIFICATION)        0.0283
+(1-#-ereotype,WITHOUT_CLASSIFICATION)        0.0283
+(1-#-reotype,WITHOUT_CLASSIFICATION)         0.0283
+(1-#-eotype,WITHOUT_CLASSIFICATION)          0.0283
+(1-#-check ,WITHOUT_CLASSIFICATION)          0.0281
+(1-#-target,WITHOUT_CLASSIFICATION)          0.0281
+(1-#- the r,WITHOUT_CLASSIFICATION)          0.0281
+(1-#-lassifi,WITHOUT_CLASSIFICATION)         0.0280
+(1-#-assifi,WITHOUT_CLASSIFICATION)          0.0280
+(1-#-assifie,WITHOUT_CLASSIFICATION)         0.0280
+(1-#-sifier,WITHOUT_CLASSIFICATION)          0.0280
+(1-#-lassifie,WITHOUT_CLASSIFICATION)        0.0280
+(1-#-ssifier,WITHOUT_CLASSIFICATION)         0.0280
+(1-#-lassifier,WITHOUT_CLASSIFICATION)       0.0280
+(1-#-ssifie,WITHOUT_CLASSIFICATION)          0.0280
+(1-#-assifier,WITHOUT_CLASSIFICATION)        0.0280
+(1-#- in the,WITHOUT_CLASSIFICATION)         0.0280
+(1-#- in the ,WITHOUT_CLASSIFICATION)        0.0280
+(1-#-default,WITHOUT_CLASSIFICATION)         0.0279
+(1-#-defaul,WITHOUT_CLASSIFICATION)          0.0279
+(1-#-return ,WITHOUT_CLASSIFICATION)         0.0278
+(1-#- check ,WITHOUT_CLASSIFICATION)         0.0277
+(1-#-//     ,WITHOUT_CLASSIFICATION)         0.0277
+(1-#-/     ,WITHOUT_CLASSIFICATION)          0.0277
+(1-#-fault ,WITHOUT_CLASSIFICATION)          0.0276
+(1-#-efault ,WITHOUT_CLASSIFICATION)         0.0276
+(1-#-// Set ,WITHOUT_CLASSIFICATION)         0.0275
+(1-#-/ Set ,WITHOUT_CLASSIFICATION)          0.0275
+(1-#B-// Set ,WITHOUT_CLASSIFICATION)        0.0275
+(1-#-Action,WITHOUT_CLASSIFICATION)          0.0275
+(1-#-/ case,WITHOUT_CLASSIFICATION)          0.0274
+(1-#-// case,WITHOUT_CLASSIFICATION)         0.0274
+(1-#- the a,WITHOUT_CLASSIFICATION)          0.0274
+(1-#- project,WITHOUT_CLASSIFICATION)        0.0274
+(1-#- projec,WITHOUT_CLASSIFICATION)         0.0274
+(1-#- proje,WITHOUT_CLASSIFICATION)          0.0274
+(1-#- test ,TEST)                            0.0273
+(1-#- default,WITHOUT_CLASSIFICATION)        0.0272
+(1-#- defau,WITHOUT_CLASSIFICATION)          0.0272
+(1-#- defaul,WITHOUT_CLASSIFICATION)         0.0272
+(1-#-tation,WITHOUT_CLASSIFICATION)          0.0270
+(1-#- tested,TEST)                           0.0270
+(1-#- teste,TEST)                            0.0270
+(1-#-profil,WITHOUT_CLASSIFICATION)          0.0270
+(1-#-profile,WITHOUT_CLASSIFICATION)         0.0270
+(1-#-o the ,WITHOUT_CLASSIFICATION)          0.0269
+(1-#B-// case,WITHOUT_CLASSIFICATION)        0.0269
+(1-#-// case ,WITHOUT_CLASSIFICATION)        0.0269
+(1-#B-// case ,WITHOUT_CLASSIFICATION)       0.0269
+(1-#-/ case ,WITHOUT_CLASSIFICATION)         0.0269
+(1-#-ate the,WITHOUT_CLASSIFICATION)         0.0269
+(1-#- the e,WITHOUT_CLASSIFICATION)          0.0268
+(1-#- name ,WITHOUT_CLASSIFICATION)          0.0266
+(1-#-// no ,WITHOUT_CLASSIFICATION)          0.0266
+(1-#B-// TOD,WITHOUT_CLASSIFICATION)         0.0264
+(1-#B-// TODO,WITHOUT_CLASSIFICATION)        0.0264
+(1-#B-//     ,WITHOUT_CLASSIFICATION)        0.0264
+(1-#-/* 4.5,WITHOUT_CLASSIFICATION)          0.0263
+(1-#B-/* 4.5.,WITHOUT_CLASSIFICATION)        0.0263
+(1-#B-/* 4.5,WITHOUT_CLASSIFICATION)         0.0263
+(1-#-* 4.5.,WITHOUT_CLASSIFICATION)          0.0263
+(1-#-/* 4.5.,WITHOUT_CLASSIFICATION)         0.0263
+(1-#- the l,WITHOUT_CLASSIFICATION)          0.0263
+(1-#- value,WITHOUT_CLASSIFICATION)          0.0262
+(1-#-         ,WITHOUT_CLASSIFICATION)       0.0260
+(1-#- there,WITHOUT_CLASSIFICATION)          0.0260
+(1-#B-// no ,WITHOUT_CLASSIFICATION)         0.0259
+(1-#-ate the ,WITHOUT_CLASSIFICATION)        0.0256
+(1-#- to th,WITHOUT_CLASSIFICATION)          0.0256
+(1-#-* end c,WITHOUT_CLASSIFICATION)         0.0256
+(1-#B-/* end c,WITHOUT_CLASSIFICATION)       0.0256
+(1-#-/* end c,WITHOUT_CLASSIFICATION)        0.0256
+(1-#B-/* 4.5.2,WITHOUT_CLASSIFICATION)       0.0256
+(1-#B-/* 4.5.2.,WITHOUT_CLASSIFICATION)      0.0256
+(1-#- 4.5.2.,WITHOUT_CLASSIFICATION)         0.0256
+(1-#-/* 4.5.2,WITHOUT_CLASSIFICATION)        0.0256
+(1-#-* 4.5.2.,WITHOUT_CLASSIFICATION)        0.0256
+(1-#-/* 4.5.2.,WITHOUT_CLASSIFICATION)       0.0256
+(1-#- 4.5.2,WITHOUT_CLASSIFICATION)          0.0256
+(1-#-4.5.2.,WITHOUT_CLASSIFICATION)          0.0256
+(1-#-* 4.5.2,WITHOUT_CLASSIFICATION)         0.0256
+(1-#-istene,WITHOUT_CLASSIFICATION)          0.0255
+(1-#-rofile,WITHOUT_CLASSIFICATION)          0.0255
+(1-#-/      ,WITHOUT_CLASSIFICATION)         0.0255
+(1-#-//      ,WITHOUT_CLASSIFICATION)        0.0255
+(1-#-stener,WITHOUT_CLASSIFICATION)          0.0254
+

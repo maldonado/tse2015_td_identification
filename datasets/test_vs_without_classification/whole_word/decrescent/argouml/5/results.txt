@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Thu Jul 30 17:40:19 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/classified_seq.train varies between 2 and 54
+done [0.6s, 32292 items].
+numDatums: 32292
+numDatumsPerLabel: {TEST=37.0, WITHOUT_CLASSIFICATION=32255.0}
+numLabels: 2 [TEST, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 21633 [CLASS, 1-SW-what, 1-SW-should, 1-SW-even, 1-SW-not, ...]
+.............................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/classified_seq.test ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/argouml/5/classified_seq.test varies between 2 and 23
+done [0.2s, 8083 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+8083 examples in test set
+Cls TEST: TP=14 FN=30 FP=22 TN=8017; Acc 0.994 P 0.389 R 0.318 F1 0.350
+Cls WITHOUT_CLASSIFICATION: TP=8017 FN=22 FP=30 TN=14; Acc 0.994 P 0.996 R 0.997 F1 0.997
+Accuracy/micro-averaged F1: 0.99357
+Macro-averaged F1: 0.67338

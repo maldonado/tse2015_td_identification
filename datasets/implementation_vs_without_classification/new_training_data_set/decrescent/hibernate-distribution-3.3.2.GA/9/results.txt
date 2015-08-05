@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 20:56:08 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.train ... done [0.9s, 56775 items].
+numDatums: 56775
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=55633.0, IMPLEMENTATION=1142.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 38794 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-TODO:, 1-SW-does, ...]
+................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.test ... done [0.0s, 2559 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+2559 examples in test set
+Cls IMPLEMENTATION: TP=38 FN=26 FP=15 TN=2480; Acc 0.984 P 0.717 R 0.594 F1 0.650
+Cls WITHOUT_CLASSIFICATION: TP=2480 FN=15 FP=26 TN=38; Acc 0.984 P 0.990 R 0.994 F1 0.992
+Accuracy/micro-averaged F1: 0.98398
+Macro-averaged F1: 0.82069

@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:54:28 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:19:14 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train varies between 2 and 93
-done [9.3s, 50402 items].
-numDatums: 50402
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=49951.0, DEFECT=451.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train ... done [8.0s, 50340 items].
+numDatums: 50340
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=49889.0, DEFECT=451.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
-numFeatures (Phi(X) types): 156714 [CLASS, 1-#-set , 1-#-/ se, 1-#-/, 1-#-'r, ...]
-...............................................................
+numFeatures (Phi(X) types): 183793 [CLASS, 1-#-set , 1-#-'r, 1-#-it, 1-#-al, ...]
+................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.test ... done [0.8s, 3980 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.test ... done [1.0s, 3980 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 3980 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=3966 FN=1 FP=10 TN=3; Acc 0.997 P 0.997 R 1.000 F1 0.999
-Cls DEFECT: TP=3 FN=10 FP=1 TN=3966; Acc 0.997 P 0.750 R 0.231 F1 0.353
-Accuracy/micro-averaged F1: 0.99724
-Macro-averaged F1: 0.67578
+Cls WITHOUT_CLASSIFICATION: TP=3964 FN=3 FP=10 TN=3; Acc 0.997 P 0.997 R 0.999 F1 0.998
+Cls DEFECT: TP=3 FN=10 FP=3 TN=3964; Acc 0.997 P 0.500 R 0.231 F1 0.316
+Accuracy/micro-averaged F1: 0.99673
+Macro-averaged F1: 0.65708

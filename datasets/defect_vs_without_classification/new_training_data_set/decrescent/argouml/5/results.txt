@@ -1,0 +1,35 @@
+ColumnDataClassifier invoked on Sun Aug 02 21:10:12 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+QNsize = 15
+printClassifier = HighWeight
+useQN = true
+displayAllAnswers = true
+goldAnswerColumn = 0
+1.splitWordsRegexp = \s
+trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/classified_seq.train
+tolerance = 1e-4
+testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/classified_seq.test
+sigma = 3
+printClassifierParam = 500
+displayedColumn = 1
+intern = true
+useClassFeature = true
+1.useSplitWords = true
+1.binnedLengths = 10,20,30
+printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/classified_seq.train ... done [0.7s, 31716 items].
+numDatums: 31716
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=31414.0, DEFECT=302.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
+numFeatures (Phi(X) types): 25604 [CLASS, 1-SW-they're, 1-SW-constants, 1-SW-set, 1-SW-that, ...]
+.............................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/5/classified_seq.test ... done [0.1s, 8145 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+8145 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7954 FN=64 FP=59 TN=68; Acc 0.985 P 0.993 R 0.992 F1 0.992
+Cls DEFECT: TP=68 FN=59 FP=64 TN=7954; Acc 0.985 P 0.515 R 0.535 F1 0.525
+Accuracy/micro-averaged F1: 0.98490
+Macro-averaged F1: 0.75871

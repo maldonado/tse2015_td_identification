@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:03:18 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 20:21:14 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/top_features.txt
 displayedColumn = 1
@@ -16,26 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.train varies between 2 and 93
-done [9.4s, 55793 items].
-numDatums: 55793
-numDatumsPerLabel: {TEST=85.0, WITHOUT_CLASSIFICATION=55708.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.train ... done [9.0s, 55718 items].
+numDatums: 55718
+numDatumsPerLabel: {TEST=85.0, WITHOUT_CLASSIFICATION=55633.0}
 numLabels: 2 [TEST, WITHOUT_CLASSIFICATION]
-numFeatures (Phi(X) types): 166628 [CLASS, 1-#-d no, 1-#-t , 1-#-teEx, 1-#B-// T, ...]
-...................................................
+numFeatures (Phi(X) types): 193535 [CLASS, 1-#-d no, 1-#-t , 1-#-teEx, 1-#-shou, ...]
+....................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.test ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.test varies between 2 and 54
-done [0.6s, 2496 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/9/classified_seq.test ... done [0.6s, 2495 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-2496 examples in test set
-Cls TEST: TP=0 FN=0 FP=0 TN=2496; Acc 1.000 P 1.000 R 1.000 F1 1.000
-Cls WITHOUT_CLASSIFICATION: TP=2496 FN=0 FP=0 TN=0; Acc 1.000 P 1.000 R 1.000 F1 1.000
+2495 examples in test set
+Cls TEST: TP=0 FN=0 FP=0 TN=2495; Acc 1.000 P 1.000 R 1.000 F1 1.000
+Cls WITHOUT_CLASSIFICATION: TP=2495 FN=0 FP=0 TN=0; Acc 1.000 P 1.000 R 1.000 F1 1.000
 Accuracy/micro-averaged F1: 1.00000
 Macro-averaged F1: 1.00000

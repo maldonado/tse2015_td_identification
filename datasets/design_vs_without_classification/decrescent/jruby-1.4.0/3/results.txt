@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:46:21 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:10:32 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/classified_seq.train varies between 2 and 54
-done [6.5s, 19690 items].
-numDatums: 19690
-numDatumsPerLabel: {DESIGN=1472.0, WITHOUT_CLASSIFICATION=18218.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/classified_seq.train ... done [4.0s, 19656 items].
+numDatums: 19656
+numDatumsPerLabel: {DESIGN=1472.0, WITHOUT_CLASSIFICATION=18184.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
-numFeatures (Phi(X) types): 90931 [CLASS, 1-#-*, 1-#E- */, 1-#-*  , 1-#B-/*  , ...]
-.................................................................................
+numFeatures (Phi(X) types): 101334 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+................................................................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/top_features.txt
 Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/3/classified_seq.test ... done [1.0s, 4618 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 4618 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=4220 FN=55 FP=90 TN=253; Acc 0.969 P 0.979 R 0.987 F1 0.983
-Cls DESIGN: TP=253 FN=90 FP=55 TN=4220; Acc 0.969 P 0.821 R 0.738 F1 0.777
-Accuracy/micro-averaged F1: 0.96860
-Macro-averaged F1: 0.88019
+Cls WITHOUT_CLASSIFICATION: TP=4208 FN=67 FP=74 TN=269; Acc 0.969 P 0.983 R 0.984 F1 0.984
+Cls DESIGN: TP=269 FN=74 FP=67 TN=4208; Acc 0.969 P 0.801 R 0.784 F1 0.792
+Accuracy/micro-averaged F1: 0.96947
+Macro-averaged F1: 0.88793

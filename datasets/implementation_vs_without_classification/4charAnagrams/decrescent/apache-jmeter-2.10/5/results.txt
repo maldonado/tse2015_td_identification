@@ -1,0 +1,39 @@
+ColumnDataClassifier invoked on Mon Jul 20 21:30:39 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/dataset.prop
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train
+1.usePrefixSuffixNGrams = true
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train ... 
+WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train varies between 2 and 93
+done [6.4s, 29116 items].
+numDatums: 29116
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=28003.0, IMPLEMENTATION=1113.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 127390 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
+.................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test ... done [1.1s, 7705 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7705 examples in test set
+Cls IMPLEMENTATION: TP=17 FN=5 FP=16 TN=7667; Acc 0.997 P 0.515 R 0.773 F1 0.618
+Cls WITHOUT_CLASSIFICATION: TP=7667 FN=16 FP=5 TN=17; Acc 0.997 P 0.999 R 0.998 F1 0.999
+Accuracy/micro-averaged F1: 0.99727
+Macro-averaged F1: 0.80841

@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 23:02:26 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:28:10 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.train varies between 2 and 54
-done [4.6s, 25259 items].
-numDatums: 25259
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=24876.0, DEFECT=383.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.train ... done [4.0s, 25235 items].
+numDatums: 25235
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=24852.0, DEFECT=383.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
-numFeatures (Phi(X) types): 101658 [CLASS, 1-#-set , 1-#-/ se, 1-#-/, 1-#-'r, ...]
-..........................................................
+numFeatures (Phi(X) types): 113332 [CLASS, 1-#-set , 1-#-'r, 1-#-it, 1-#-al, ...]
+............................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.test ... done [0.9s, 4294 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/emf-2.4.1/4/classified_seq.test ... done [0.9s, 4280 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-4294 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=4285 FN=1 FP=6 TN=2; Acc 0.998 P 0.999 R 1.000 F1 0.999
-Cls DEFECT: TP=2 FN=6 FP=1 TN=4285; Acc 0.998 P 0.667 R 0.250 F1 0.364
-Accuracy/micro-averaged F1: 0.99837
-Macro-averaged F1: 0.68141
+4280 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4271 FN=1 FP=8 TN=0; Acc 0.998 P 0.998 R 1.000 F1 0.999
+Cls DEFECT: TP=0 FN=8 FP=1 TN=4271; Acc 0.998 P 0.000 R 0.000 F1 0.000
+Accuracy/micro-averaged F1: 0.99790
+Macro-averaged F1: 0.49947

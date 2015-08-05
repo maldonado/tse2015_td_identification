@@ -34,7 +34,9 @@ dataset_directories = {'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs
 def write_classifier_file(file_name, result):
     with open (file_name,'a') as classified_seq:
         for line in result:
-            classified_seq.write("{0}\t{1}\n".format(line[0], line[1].replace('\n','').replace('\r\n', '').replace('\r', '')))
+            sentence = " ".join(line[1].replace('\n','').replace('\r\n', '').replace('\r', '').replace('\t', '').replace('//','').replace('/**','').replace('*/','').replace('/*','').replace('*','').split())
+            if sentence :
+                classified_seq.write("{0}\t{1}\n".format(line[0], sentence))
         classified_seq.close()
 
 def write_output_file(file_name, output):
@@ -50,7 +52,9 @@ def write_classifier_properties_file(path):
     f.write("#\n")
     f.write("useClassFeature=true\n")
     f.write("1.useNGrams=true\n")
-    f.write("1.usePrefixSuffixNGrams=true\n")
+    f.write("1.useSplitWords\n") 
+    f.write('1.splitWordsRegexp "\s"\n')
+    # f.write("1.usePrefixSuffixNGrams=true\n")
     f.write("1.maxNGramLeng=4\n")
     f.write("1.minNGramLeng=1\n")
     f.write("1.binnedLengths=10,20,30\n")
@@ -136,7 +140,7 @@ try:
                 # output = subprocess.check_output(["java -jar stanford-classifier.jar -prop "+path_to_store_data+"/dataset.prop"], stderr=subprocess.STDOUT, shell=True)
                 print "Add comments from " + project + " to training data:"
                 print "Start analysis"
-                output = subprocess.Popen(["java -jar stanford-classifier.jar -prop "+path_to_store_data+"/dataset.prop"], stdout=PIPE, stderr=PIPE, shell=True).communicate()
+                output = subprocess.Popen(['java -mx6144m -jar stanford-classifier.jar -prop '+path_to_store_data+'/dataset.prop -1.useSplitWords -1.splitWordsRegexp "\s"'], stdout=PIPE, stderr=PIPE, shell=True).communicate()
                 print "Analysis finished"
                 write_output_file(path_to_store_data+"/output.txt",  output[0])
                 write_output_file(path_to_store_data+"/results.txt", output[1])
