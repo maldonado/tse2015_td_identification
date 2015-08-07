@@ -1,4 +1,4 @@
-LinearClassifier [printing top 500 features]
+ILinearClassifier [printing top 500 features]
 (1-SW-hack,DESIGN)                                                4.9368
 (1-SW-workaround,DESIGN)                                          4.7006
 (1-SW-TODO:,DESIGN)                                               4.5983

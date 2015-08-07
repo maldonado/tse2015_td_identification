@@ -18,8 +18,7 @@
 \usepackage{balance}
 \usepackage{epstopdf}
 \usepackage{array}
-
-\graphicspath{ {../images/} }
+\usepackage{xspace}
 
 % author comments with colors 
 \newcommand{\emad}[1]{\textcolor{red}{{\it [Emad: #1]}}}
@@ -39,12 +38,12 @@
 }
 
 % research questions 
-\newcommand{\rqi}{\textbf{RQ1. \\}}
-\newcommand{\rqii}{\textbf{RQ2. \\}}
-\newcommand{\rqiii}{\textbf{RQ3. \\}}
+\newcommand{\rqi}{\textbf{RQ1. Is it possible to effectively identify/predict \SATD using NLP techniques ?\\}}
+\newcommand{\rqii}{\textbf{RQ2. What are the most common comment patterns that indicates \SATD ?\\}}
+\newcommand{\rqiii}{\textbf{RQ3. How much training data is necessary for successfully predict \SATD ?\\}}
 
 % commands for common terms in the text
-\newcommand{\SADTD}{Self-admitted Design Technical Debt\xspace}
+
 \newcommand{\SATD}{self-admitted technical debt\xspace}
 
 
@@ -56,7 +55,7 @@
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
-\title{Paper title here}
+\title{Using Source Code Comments to Detect Self-Admitted Technical Debt}
 
 \numberofauthors{1} 
 \author{
@@ -91,8 +90,6 @@ More recently, our work shown that one possible source to detect technical debt 
 
 Therefore, in this paper we present an approach to efficiently identify these types of self-admitted technical debt. 
 % More specifically,  using natural language processing techniques. 
-
-
 
 \end{abstract}
 
