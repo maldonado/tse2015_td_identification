@@ -2,13 +2,18 @@
 \noindent\rqi
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} As shown in previous work \cite{Potdar2014ICSME, Maldonado2015MTD}, \SATD comments can be found in the source code. However, there is not a optimal way to identify these technical debt comments yet. The methods proposed so far heavily relies on manual examination, and there are too little evidence on how well these approaches perform and how applicable they are. Answering this question is important to help us understand the opportunities and limitations of NLP techniques in identifying \SATD comments. 
+\noindent \textbf{Motivation:} As shown in previous work \cite{Potdar2014ICSME, Maldonado2015MTD}, \SATD comments can be found in the source code. However, there is not an optimal way to identify these technical debt comments yet. The methods proposed so far heavily relies on manual examination, and there are too little evidence on how well these approaches perform and how applicable they are. Answering this question is important to help us understand the opportunities and limitations of NLP techniques in identifying \SATD comments. 
 
 \vspace{1mm}
-\noindent \textbf{Approach:} As described 
+\noindent \textbf{Approach:} As described in Section \ref{sec:approach}, we manually classify comments from ten open source projects into one of the following types of \SATD: design debt, defect debt, implementation debt, documentation debt and test debt. However, as shown in our previous work \cite{Maldonado2015MTD}, the most frequent \SATD comments are classified as design debt, implementation debt or defect debt respectively. Therefore, in our case study we focuses our attention in these three \SATD types. 
+
+We design our case study to test how well the a maximum entropy classifier can perform when trained with our dataset. In order to do that, we first prepare the training data set. The training dataset is composed by two different columns, one is the classification and the other one is the source code comment. Then, we select all comments that were classified as not containing \SATD and the comments classified as the specific type of \SATD  that we want to predict. these comments from 9 out of 10 projects that we analyzed. Second, for the test dataset, we use the comments in the one project that was out of the training dataset and run the analysis.  
+
+For example, if we want to classify the \SATD comments in Apache Ant project we create a training dataset using all comments from the other nine projects, namely Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. Then, we use the comments of Apache Ant project to create the test dataset. 
+
 
 \vspace{1mm}
-\noindent \textbf{Results:} 
+\noindent \textbf{Results:} Following this approach we executed the classifier for all projects, collecting results for three different types of \SATD design debt, implementation debt and defect debt. We find that the maximum entropy classifier can
 
 \conclusionbox{}
 
