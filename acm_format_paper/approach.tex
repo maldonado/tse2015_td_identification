@@ -5,12 +5,12 @@
   \label{fig:approach}
 \end{figure*}
 
-The main goal of our study is to effectively identify \SATD. To achieve that, we first extract comments from ten open source projects. Then, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments and commented source code) \cite{Maldonado2015MTD}. Finally, we manually classify the remainder of comments into \SATD types, and use these comments as training data for a maximum entropy classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each step of it.
+The main goal of our study is to effectively identify \SATD. To achieve that, we apply the same approach as proposed in our previous work by Maldonado and Shihab ~\cite{Maldonado2015MTD}. In a nutshell we first extract comments from ten open source projects. Then, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments and commented source code). Finally, we manually classify the remainder of comments into \SATD types, and use these comments as training data for a maximum entropy classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each step of it.
    
 \subsection{Data Extraction} % (fold)
 \label{sub:data_extraction}
 
-To perform our study, we extract the source code from ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors.
+To perform our study, we extract the source code from ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors. 
 
 Table \ref{tab:project_details} provides statistics about each one of the projects used in our study. We provide details about the release used, the number of classes, the total source lines of code (SLOC), the total extracted comments and the number of contributors. A source line of code contain at least one valid character, which is not a blank space or a source code comment. In our study, we only use the Java files to calculate the SLOC, and to do so, we use the tool SLOCCount \cite{wheeler2004:home}. 
 
@@ -18,6 +18,7 @@ The number of contributors was extracted from OpenHub, an on-line community and 
 
 \begin{table*}[!tbh]
     \begin{center}
+    \caption{Project Details}
     \label{tab:project_details}
             \begin{tabular}{l| c c r c c | p{2.0in}}
             \toprule
@@ -28,11 +29,10 @@ The number of contributors was extracted from OpenHub, an on-line community and 
             Columba        & 1.4      & 1,711 & 100,200 & 33,895 & 9   & A desktop email client written in Java.\\
             Hibernate      & 3.3.2 GA & 1,356 & 173,467 & 11,630 & 226 & An Object Relational Mapping framework.\\
             EMF            & 2.4.1    & 1,458 & 228,191 & 25,229 & 30  & Eclipse Modeling Framework.\\
-            JEdit          & 4.2      &   800 &  88,583 & 1,6991 & 57  & A light weight text editor.\\
+            JEdit          & 4.2      &   800 &  88,583 & 16,991 & 57  & A light weight text editor.\\
             JFreeChart     & 1.0.19   & 1,065 & 132,296 & 23,474 & 19  & A Java library to display graphics and charts.\\
             SQuirrel       & 3.0.3    & 3,108 & 215,234 & 27,474 & 46  & A graphical SQL client written in Java.\\ 
             JRuby          & 1.4.0    & 1,486 & 150,060 & 11,149 & 328 & Is the implementation of the Ruby language using the Java Virtual Machine.\\ \bottomrule
-            
         \end{tabular}
     \end{center}
 \end{table*}
@@ -42,18 +42,67 @@ The number of contributors was extracted from OpenHub, an on-line community and 
 \subsection{Parse Source Code} % (fold)
 \label{sub:parse_source_code}
 
+After obtaining the source code of all projects, we extract the comments from their source code. We use JDeodorant \cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. JDeodorant is capable of identify design flaws (i.e., bad smells) in Java projects, and suggest refactoring opportunities to solve them. JDeodrant uses the Eclipse AST framework to create an Abstract Syntax Tree (AST) map of the source code. The AST map contains detailed information about the project such as: the source code comments, its type (i.e., Block, Single-line or Javadoc), the line where each one of these comments begins and finishes. We extract the aforementioned information and store all comments in a relational database to facilitate the processing of the data.
+
 % subsection parse_source_code (end)
 \subsection{Filter Comments} % (fold)
 \label{sub:filter_comments}
 
+Source code comments can be used for different purposes in a project like giving context, as part of the documentation, to express thoughts, opinions and authorship, and in some cases, to remove source code from the program. Comments are used freely for developers and with few formalities, if any at all. This informal environment allows developers to bring to light opinions, insights and even confessions (e.g., self-admitted technical debt). 
+
+As shown in prior work by Potdar and Shihab \cite{Potdar2014ICSME}, part of these comments can be identified as self-admitted technical debt, but they are not the majority of cases. With that in mind, we develop and apply 4 filtering heuristics to narrow down the comments eliminating the ones that are less likely to be classified as self-admitted technical debt.
+
+To do so, we developed a Java based tool that reads from the database the data obtained by parsing the source code. Next, it executes the filtering heuristics and stores the result back in the database. The retrieved data contains information like the line number that a class/comment begins/ends and the type, considering the Java syntax, of the comment (i.e., Block, Single-line or Javadoc). With this information we process the filtering heuristics as described next.
+
+We found that license comments are very not likely to contain self-admitted technical debt, and that license comments are commonly added before the declaration of the class. Therefore, we create a heuristic that removes comments that are placed before the class declaration. Since we know the line number that the class was declared we can easily check for comments that are placed before that line and remove them. In order to decrease the chances of removing a self-admitted technical debt comment while executing this filter we calibrated this heuristic to not remove comments containing one of task-reserved words (i.e., ``todo'', ``fixme'', or ``xxx'').
+
+We also notice that some times developers make long comments, using multiple \emph{single-line} comments instead of a Block comment. This characteristic can hinder the understanding of the message. Consider the case that the reader (i.e., human or machine) analyze each one of these comments independently, the message would be incomplete and the meaning lost. To solve that problem, we create a heuristic that searches for consecutive single-line comments and groups them as one. We identify consecutive comments by subtracting the line number of both comments. If the result of the difference is equals a -1 we have a consecutive comment. For example, Single-line comment A is placed in line number 100 and Single-line comment B is placed in line 101. The subtraction of the line numbers will result in -1, therefore the comments are consecutive.
+ 
+Similarly, is common to find commented source code across the projects, and this can be due to many different reasons. One of the possibilities is that the code is not being used, other is that the code is used for debug purposes only. Based on our analysis, commented source code does not have self-admitted technical debt. Our heuristic remove commented source code using a simple regular expression that captures typical Java code structures.
+
+Lastly, when analyzing Javadoc comments we found that they rarely mention self-admitted technical debt. For the Javadoc comments that does mention self-admitted technical debt we notice that they usually contains one of the task-reserved words (i.e., ``todo'', ``fixme'', or ``xxx''). Based on this, our heuristic remove all comments of the type Javadoc unless they contain at least one of the task-reserved words. To do so, we create a simple regular expression that search for the task-reserved words before removing the comment.  
+
+The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Apache Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,140 comments meaning that 19.17\% of the comments were kept for analysis. Table \ref{tab:filtering_heuristics_details} provides details for each one of the projects.
 % subsection filtering_comments (end)
 
+\begin{table}[!hbt]
+      \begin{center}
+            \caption{Filtering heuristics details}
+            \label{tab:filtering_heuristics_details}
+            \begin{tabular}{l| p{0.55in} p{0.60in} p{0.61in} }
+            \toprule
+            \thead{\textbf{Project}}   & \textbf{Total \# of comments}  & \textbf{\# of comments after filtering} & \textbf{\%  of TD-related comments}\\ \midrule 
+              Apache Ant       & 21,587                & 4,140                   & 19.17 \% \\ 
+              Apache Jmeter    & 20,084                & 8,163                   & 40.64 \% \\
+              ArgoUML          & 67,716                & 9,788                   & 14.45 \% \\              
+              Columba          & 33,895                & 6,569                   & 19.38 \% \\
+              Hibernate        & 11,630                & 2,968                   & 25.52 \% \\
+              EMF              & 25,229                & 4,401                   & 17.44 \% \\
+              JEdit            & 16,991                & 10,322                  & 60.74 \% \\
+              JFreeChart       & 23,474                & 4,436                   & 18.89 \% \\ 
+              SQuirrel         & 27,474                & 7,330                   & 26.67 \% \\
+              JRuby            & 11,149                & 4,901                   & 43.92 \% \\ \bottomrule
+            \end{tabular}
+      \end{center}
+\end{table}
+
+\subsection{Manual Classification} % (fold)
+\label{sub:manual_classification}
+
+To classify the comments, we developed a Java based tool that shows one comment at a time and gives a list of possible classifications that can be manually assigned to the comment. The list of possible classifications is based on previous work by Alves \textit{et al.}~\cite{Alves2014MTD}. After applying the different filtering steps, we successfully classified 63,015 comments. The more than 63 thousand comments were classified into five different types of self-admitted technical debt, i.e., design debt, defect debt, documentation debt, requirement debt and test debt.
+ 
+The first author who made the classification has more than 8 years of experience working in the industry as a software engineer, during this time he designed, implemented and maintained several programs using, in particular the Java programming language. He developed solid skills in object orientated programming and design patterns. We consider that these qualifications provide the necessary background to conduct the manual classification of the comments.   
+
+% subsection manual_classification (end)
+
 % subsection heuristics_to_remove_irrelevant_comments (end)
-\subsection{Creating Training Datasets} % (fold)
-\label{sub:creating_training_datasets}
+\subsection{Run the NLP Classifier} % (fold)
+\label{sub:run_the_nlp_classifier}
+ 
+Our next step is to use the classified \SATD comments to create a training dataset that can be used in a classifier. A classifier is a machine learning tool that take as input a number of data items along with the class that this data item belongs, we choose to use the Stanford Classifier \todo{cite} as our machine learning tool. In our case, the training data is composed by a comment and the manual classification that was attributed to it. According to our findings in previous work \cite{Maldonado2015MTD} the most frequent types of \SATD are design debt, implementation debt and defect debt, and therefore we focuses our approach in the prediction of theses types of \SATD comments.
 
-% subsection creating_training_datasets (end)
-\subsection{Run NLP Classifier} % (fold)
-\label{sub:run_nlp_classifier}
+For each comment in our training dataset we remove the characters structures and symbols that are inherent from the Java language syntax and used to indicate a comment (i.e., `//' or `/* and */') or that represent a escape sequence such as `\textbackslash t' or `\textbackslash n'. Lastly, we remove the excess of blank spaces from the comments, and the resulting sentence is added to training dataset with its classification. 
 
-% subsection run_nlp_classifier (end)
+After creating the training dataset we also create a test dataset in order to measure to performance of the Stanford Classifier in predicting \SATD comments. The test dataset is created following the same formatting rules as described above for the training dataset. 
+
+% subsection run_the_nlp_classifier)
