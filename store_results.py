@@ -16,11 +16,11 @@ execution_types = {'DEFECT': {'DEFECT'},
                      'TEST': {'TEST'}
 }
 
-dataset_directories = {'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/', 
-                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/',
-                       'DOCUMENTATION':'/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/',
-                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/',
-                       'TEST':'/Users/evermal/git/npl_tools/datasets/test_vs_without_classification/'
+dataset_directories = {'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/new_training_data_set/', 
+                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/new_training_data_set/',
+                       'DOCUMENTATION':'/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/new_training_data_set/',
+                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/new_training_data_set/',
+                       'TEST':'/Users/evermal/git/npl_tools/datasets/test_vs_without_classification/new_training_data_set/'
 }
 
 
@@ -40,7 +40,7 @@ try:
     macro_averaged_f1_regex = "(?:Macro.*:\s)(\d*\.?\d+)"
 
     connection = None
-    order = "crescent/"
+    order = "decrescent/"
     # connect to the database 
     connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= password)
     cursor = connection.cursor()
