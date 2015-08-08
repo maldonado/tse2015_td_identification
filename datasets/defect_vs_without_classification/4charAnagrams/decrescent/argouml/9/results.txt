@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 22:59:24 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:24:23 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/top_features.txt
 displayedColumn = 1
@@ -16,26 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.train ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.train varies between 2 and 93
-done [8.5s, 50510 items].
-numDatums: 50510
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=50165.0, DEFECT=345.0}
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.train ... done [9.5s, 50455 items].
+numDatums: 50455
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=50110.0, DEFECT=345.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
-numFeatures (Phi(X) types): 161841 [CLASS, 1-#-set , 1-#-/ se, 1-#-/, 1-#-'r, ...]
-...................................................
+numFeatures (Phi(X) types): 188059 [CLASS, 1-#-set , 1-#-'r, 1-#-it, 1-#-al, ...]
+.........................................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.test ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.test varies between 2 and 23
-done [2.0s, 8166 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/argouml/9/classified_seq.test ... done [3.7s, 8145 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-8166 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=7934 FN=105 FP=56 TN=71; Acc 0.980 P 0.993 R 0.987 F1 0.990
-Cls DEFECT: TP=71 FN=56 FP=105 TN=7934; Acc 0.980 P 0.403 R 0.559 F1 0.469
-Accuracy/micro-averaged F1: 0.98028
-Macro-averaged F1: 0.72930
+8145 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7939 FN=79 FP=67 TN=60; Acc 0.982 P 0.992 R 0.990 F1 0.991
+Cls DEFECT: TP=60 FN=67 FP=79 TN=7939; Acc 0.982 P 0.432 R 0.472 F1 0.451
+Accuracy/micro-averaged F1: 0.98207
+Macro-averaged F1: 0.72101

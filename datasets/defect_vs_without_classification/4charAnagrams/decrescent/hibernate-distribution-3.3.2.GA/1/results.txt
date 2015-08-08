@@ -1,5 +1,5 @@
-ColumnDataClassifier invoked on Mon Jul 20 23:04:18 EDT 2015 with arguments:
-   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/dataset.prop
+ColumnDataClassifier invoked on Mon Aug 03 21:30:23 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.test
@@ -7,6 +7,7 @@ testFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classificatio
 1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
+1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/top_features.txt
 displayedColumn = 1
@@ -16,24 +17,22 @@ QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.train
-1.usePrefixSuffixNGrams = true
 1.maxNGramLeng = 4
 printClassifier = HighWeight
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.train ... done [1.2s, 4436 items].
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.train ... done [1.1s, 4436 items].
 numDatums: 4436
 numDatumsPerLabel: {WITHOUT_CLASSIFICATION=4275.0, DEFECT=161.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DEFECT]
-numFeatures (Phi(X) types): 44677 [CLASS, 1-#-set , 1-#-/ se, 1-#-/, 1-#-'r, ...]
-.....................................
+numFeatures (Phi(X) types): 44764 [CLASS, 1-#-set , 1-#-'r, 1-#-it, 1-#-al, ...]
+....................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.test ... 
-WARNING: Number of tab-separated columns in /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.test varies between 2 and 54
-done [0.6s, 2548 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.test ... done [0.6s, 2547 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-2548 examples in test set
-Cls WITHOUT_CLASSIFICATION: TP=2494 FN=2 FP=38 TN=14; Acc 0.984 P 0.985 R 0.999 F1 0.992
-Cls DEFECT: TP=14 FN=38 FP=2 TN=2494; Acc 0.984 P 0.875 R 0.269 F1 0.412
-Accuracy/micro-averaged F1: 0.98430
-Macro-averaged F1: 0.70190
+2547 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=2491 FN=4 FP=37 TN=15; Acc 0.984 P 0.985 R 0.998 F1 0.992
+Cls DEFECT: TP=15 FN=37 FP=4 TN=2491; Acc 0.984 P 0.789 R 0.288 F1 0.423
+Accuracy/micro-averaged F1: 0.98390
+Macro-averaged F1: 0.70719
