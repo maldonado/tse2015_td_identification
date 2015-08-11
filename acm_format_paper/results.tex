@@ -12,7 +12,15 @@ We design our case study to test how well the a maximum entropy classifier can p
 For example, if we want to classify the \SATD comments in Apache Ant project we create a training dataset using all comments from the other nine projects, namely Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. Then, we use the comments of Apache Ant project to create the test dataset. 
 
 \vspace{1mm}
-\noindent \textbf{Results:} Following this approach we executed the classifier for all projects, collecting results for three different types of \SATD design debt, implementation debt and defect debt. Table \ref{tab:classifier_results} .
+\noindent \textbf{Results:} Following this approach we executed the classifier for all projects, collecting results for three different types of \SATD: design debt, implementation debt and defect debt. Tables \ref{tbl:classifier_results_design}, \ref{tbl:classifier_results_implementation} and \ref{tbl:classifier_results_defect} presents precision, recall, F1 measure, random precision, random recall and random F1 measure for each project. Taking JRuby as an example while classifying design debt in Table \ref{tbl:classifier_results_design}, we find that the classifier reached a precision of 82\% and recall of 76\% resulting in a F1 measure of 79\%. For the same project, the calculated random values for precision, recall and F1 measure are 7\%, 50\% and 13\% respectively. Comparing both F1 measures, the result obtained with the classifier is over than 6 times higher than the random one.
+
+Regarding the results for design debt in Table \ref{tbl:classifier_results_design}, ArgoUml \SATD comments were classified with precision of 76.9\% and recall of 87.9\%, and was the higher F1 measure (i.e., 81.9\%) within our selected projects. On the contrary, EMF was classified with a precision of 52.1\%, recall of 32.1\% resulting in a F1 measure of 39.7\%. The average F1 measure considering  all projects is of 59.75\%, whereas the random F1 measure is of 8.61\%. 
+
+For requirement debt results shown in Table \ref{tbl:classifier_results_implementation} we find that the F1 measure of the classification ranges from 11.8\% to 93.5\% for EMF and Columba. Although 11.8\% is not a very hight value the random F1 measure for EMF is less than 0\%. In average the F1 measure of all projects is of 52.28\%, and the random F1 measure is of 3.2\%. 
+
+Finally for the defect debt classification results shown in Table \ref{tbl:classifier_results_defect} we achieved a F1 measure average of 25.32\% while the random F1 measure is of 1.6\%/. It is important to notice that for some projects there were no \SATD comments classified as defect debt, and we argue that the number of comments used in the training data was to few and had not a good fit in the project as we discuss in details in RQ3.
+
+For all the types above, the random values are particularly low due to the fact that the number of comments that does not represent any kind of \SATD is much higher than the ones which represent. The number of \SATD comments are presented in Table \ref{tbl:td_distribution}. We show in this table the exact number of \SATD comments found in each project separated by the specific technical debt type: design debt, requirement debt, defect debt. Documentation debt and test debt are shown under the column `Other' as they number of occurrences were not as frequent as of the other types. 
 
 \begin{table}[!hbt]
     \begin{center}
@@ -23,13 +31,13 @@ For example, if we want to classify the \SATD comments in Apache Ant project we 
         \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
         \midrule
         Apache Ant    &               0.597 &            0.389 &        0.471 &                     0.023 &                    0.5 &              0.045 \\
-        Apache Jmeter &               0.848 &            0.601 &        0.704 &                      0.04 &                    0.5 &              0.075 \\
+        Apache Jmeter &               0.848 &            0.601 &        0.704 &                     0.04  &                    0.5 &              0.075 \\
         ArgoUML       &               0.769 &            0.875 &        0.819 &                     0.089 &                    0.5 &              0.151 \\
-        Columba       &               0.862 &            0.444 &        0.586 &                      0.02 &                    0.5 &              0.038 \\
+        Columba       &               0.862 &            0.444 &        0.586 &                     0.020 &                    0.5 &              0.038 \\
         EMF           &               0.521 &            0.321 &        0.397 &                     0.018 &                    0.5 &              0.035 \\
         Hibernate     &               0.882 &            0.569 &        0.692 &                     0.136 &                    0.5 &              0.214 \\
-        JEdit         &               0.840 &            0.321 &        0.465 &                     0.019 &                    0.5 &              0.037 \\
-        JFreeChart    &               0.689 &            0.397 &        0.503 &                     0.043 &                    0.5 &               0.08 \\
+        JEdit         &                0.84 &            0.321 &        0.465 &                     0.019 &                    0.5 &              0.037 \\
+        JFreeChart    &               0.689 &            0.397 &        0.503 &                     0.043 &                    0.5 &              0.080 \\
         JRuby         &               0.824 &            0.767 &        0.795 &                     0.075 &                    0.5 &              0.131 \\
         SQuirrel      &               0.598 &            0.498 &        0.543 &                     0.029 &                    0.5 &              0.055 \\
         \bottomrule
@@ -60,6 +68,7 @@ For example, if we want to classify the \SATD comments in Apache Ant project we 
     \end{center}    
 \end{table}
 
+
 \begin{table}[!hbt]
     \begin{center}
         \caption{Classification results for Defect Debt}
@@ -72,7 +81,10 @@ For example, if we want to classify the \SATD comments in Apache Ant project we 
          Apache Jmeter  &               0.556 &            0.227 &        0.323 &                     0.003 &                    0.5 &              0.005 \\
          ArgoUML        &               0.490 &            0.551 &        0.519 &                     0.013 &                    0.5 &              0.026 \\
          Columba        &               0.429 &            0.231 &        0.300 &                     0.002 &                    0.5 &              0.004 \\
+         EMF            &               1.000 &            0.000 &        0.000 &                     0.002 &                    0.5 &              0.004 \\
          Hibernate      &               0.944 &            0.327 &        0.486 &                     0.018 &                    0.5 &              0.034 \\
+         JEdit          &               0.000 &            0.000 &        0.000 &                     0.004 &                    0.5 &              0.008 \\
+         JFreeChart     &               0.000 &            0.000 &        0.000 &                     0.002 &                    0.5 &              0.004 \\
          JRuby          &               0.842 &            0.099 &        0.178 &                     0.034 &                    0.5 &              0.064 \\
          SQuirrel       &               0.538 &            0.292 &        0.378 &                     0.003 &                    0.5 &              0.007 \\
         \bottomrule
@@ -80,9 +92,29 @@ For example, if we want to classify the \SATD comments in Apache Ant project we 
     \end{center}    
 \end{table}
 
-comparar com a random , explicar como chegamos no random e falar como o numero de without classification e maior que o numero de techinical debt que temos proporcionalmente. colocar o numero de commentarios que foram usados para classificar esses caras
+\begin{table}
+    \begin{center}
+        \caption{Technical Debt distribution per type}
+        \label{tbl:td_distribution}
+        \begin{tabular}{l|SSSSS}
+        \toprule
+        \multirow{2}{*}{Project} & \multicolumn{4}{c}{TD Distribution} \\ & {Design} & {Req.} & {Defect} & {Other} &  \multirow{-2}{*}{TD \%} \\
+        \midrule
+        Ant            &  95  & 16 & 13 & 10 & 3.2 \\
+        Jmeter         &  316 & 22 & 22 & 15 & 4.6 \\
+        ArgoUML        &  801 & 651& 127& 74 & 16.8\\
+        Columba        &  126 & 134& 13 & 22 & 4.4\\
+        EMF            &  78  & 16 & 8  & 2  & 2.3\\
+        Hibernate      &  355 & 64 & 52 & 1  & 15.9\\
+        JEdit          &  196 & 14 & 43 & 3  & 2.4\\
+        JFreeChart     &  184 & 25 & 9  & 1  & 4.9\\
+        JRuby          &  343 & 114& 161& 8  & 12.7\\
+        SQuirrel       &  209 & 150& 24 & 3  & 5.2\\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table}
 
-finaliizar com o conclusion box c;
 
 \conclusionbox{}
 
