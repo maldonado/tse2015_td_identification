@@ -18,28 +18,29 @@ Regarding the results for design debt in Table \ref{tbl:classifier_results_desig
 
 For requirement debt results shown in Table \ref{tbl:classifier_results_implementation} we find that the F1 measure of the classification ranges from 11.8\% to 93.5\% for EMF and Columba. Although 11.8\% is not a very hight value the random F1 measure for EMF is less than 0\%. In average the F1 measure of all projects is of 52.28\%, and the random F1 measure is of 3.2\%. 
 
-Finally for the defect debt classification results shown in Table \ref{tbl:classifier_results_defect} we achieved a F1 measure average of 25.32\% while the random F1 measure is of 1.6\%/. It is important to notice that for some projects there were no \SATD comments classified as defect debt, and we argue that the number of comments used in the training data was to few and had not a good fit in the project as we discuss in details in RQ3.
+Lastly, for the defect debt classification results shown in Table \ref{tbl:classifier_results_defect} we achieved a F1 measure average of 25.32\% while the random F1 measure is of 1.6\%/. 
+Although the F1 measure average still higher than the random F1 measure average, defect debt classification has the lowest performance. We argue that the low number of \SATD comments used in the training dataset plays a major role in this result. 
 
 For all the types above, the random values are particularly low due to the fact that the number of comments that does not represent any kind of \SATD is much higher than the ones which represent. The number of \SATD comments are presented in Table \ref{tbl:td_distribution}. We show in this table the exact number of \SATD comments found in each project separated by the specific technical debt type: design debt, requirement debt, defect debt. Documentation debt and test debt are shown under the column `Other' as they number of occurrences were not as frequent as of the other types. 
 
 \begin{table}[!hbt]
     \begin{center}
-        \caption{Classification results for Design Debt}
-        \label{tbl:classifier_results_design}
-        \begin{tabular}{l| c c c c c c}
+        \caption{Improvement over the random F1 measure for design}
+        \label{tbl:improvement_f1measure_design}
+        \begin{tabular}{l| c c c }
         \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
+        \textbf{Project} & \textbf{F1} & \thead{Rnd\\F1} & \textbf{Improvement}\\
         \midrule
-        Apache Ant    &               0.597 &            0.389 &        0.471 &                     0.023 &                    0.5 &              0.045 \\
-        Apache Jmeter &               0.848 &            0.601 &        0.704 &                     0.04  &                    0.5 &              0.075 \\
-        ArgoUML       &               0.769 &            0.875 &        0.819 &                     0.089 &                    0.5 &              0.151 \\
-        Columba       &               0.862 &            0.444 &        0.586 &                     0.020 &                    0.5 &              0.038 \\
-        EMF           &               0.521 &            0.321 &        0.397 &                     0.018 &                    0.5 &              0.035 \\
-        Hibernate     &               0.882 &            0.569 &        0.692 &                     0.136 &                    0.5 &              0.214 \\
-        JEdit         &                0.84 &            0.321 &        0.465 &                     0.019 &                    0.5 &              0.037 \\
-        JFreeChart    &               0.689 &            0.397 &        0.503 &                     0.043 &                    0.5 &              0.080 \\
-        JRuby         &               0.824 &            0.767 &        0.795 &                     0.075 &                    0.5 &              0.131 \\
-        SQuirrel      &               0.598 &            0.498 &        0.543 &                     0.029 &                    0.5 &              0.055 \\
+         Apache Ant      &  0.471      &  0.045          & 10x\\
+         Apache Jmeter   &  0.704      &  0.075          & 9x\\
+         ArgoUML         &  0.819      &  0.151          & 5x\\
+         Columba         &  0.586      &  0.038          & 15x\\
+         EMF             &  0.397      &  0.035          & 11x\\
+         Hibernate       &  0.692      &  0.214          & 3x\\
+         JEdit           &  0.465      &  0.037          & 12x\\
+         JFreeChart      &  0.503      &  0.080          & 6x\\
+         JRuby           &  0.795      &  0.131          & 6x\\
+         SQuirrel        &  0.543      &  0.055          & 9x\\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -47,89 +48,51 @@ For all the types above, the random values are particularly low due to the fact 
 
 \begin{table}[!hbt]
     \begin{center}
-        \caption{Classification results for Implementation Debt}
-        \label{tbl:classifier_results_implementation}
-        \begin{tabular}{l| c c c c c c}
+        \caption{Improvement over the random F1 measure for requirements}
+        \label{tbl:improvement_f1measure_requirement}
+        \begin{tabular}{l| c c c }
         \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
+        \textbf{Project} & \textbf{F1} & \thead{Rnd\\F1} & \textbf{Improvement}\\
         \midrule
-        Apache Ant     &               0.600 &            0.375 &        0.462 &                     0.004 &                    0.5 &              0.008 \\
-        Apache Jmeter  &               0.324 &            0.500 &        0.393 &                     0.003 &                    0.5 &              0.005 \\
-        ArgoUML        &               0.748 &            0.734 &        0.741 &                     0.071 &                    0.5 &              0.125 \\
-        Columba        &               0.908 &            0.963 &        0.935 &                     0.021 &                    0.5 &               0.04 \\
-        EMF            &               1.000 &            0.062 &        0.118 &                     0.004 &                    0.5 &              0.007 \\
-        Hibernate      &               0.717 &            0.594 &        0.650 &                     0.022 &                    0.5 &              0.042 \\
-        JEdit          &               0.167 &            0.071 &        0.100 &                     0.001 &                    0.5 &              0.003 \\
-        JFreeChart     &               0.377 &            0.800 &        0.513 &                     0.006 &                    0.5 &              0.011 \\
-        JRuby          &               0.651 &            0.360 &        0.463 &                     0.024 &                    0.5 &              0.045 \\
-        SQuirrel       &               0.922 &            0.793 &        0.853 &                     0.021 &                    0.5 &               0.04 \\
+         Apache Ant      & 0.462       &  0.008          & 57x\\
+         Apache Jmeter   & 0.393       &  0.005          & 78x\\
+         ArgoUML         & 0.741       &  0.125          & 5x \\
+         Columba         & 0.935       &   0.04          & 23x\\
+         EMF             & 0.118       &  0.007          & 16x\\
+         Hibernate       & 0.650       &  0.042          & 15x\\
+         JEdit           & 0.100       &  0.003          & 33x\\
+         JFreeChart      & 0.513       &  0.011          & 46x\\
+         JRuby           & 0.463       &  0.045          & 10x\\
+         SQuirrel        & 0.853       &   0.04          & 21x\\
         \bottomrule
         \end{tabular}
     \end{center}    
 \end{table}
 
 
-\begin{table}[!hbt]
-    \begin{center}
-        \caption{Classification results for Defect Debt}
-        \label{tbl:classifier_results_defect}
-        \begin{tabular}{l| c c c c c c}
-        \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
-        \midrule
-         Apache Ant     &               0.400 &            0.308 &        0.348 &                     0.003 &                    0.5 &              0.006 \\
-         Apache Jmeter  &               0.556 &            0.227 &        0.323 &                     0.003 &                    0.5 &              0.005 \\
-         ArgoUML        &               0.490 &            0.551 &        0.519 &                     0.013 &                    0.5 &              0.026 \\
-         Columba        &               0.429 &            0.231 &        0.300 &                     0.002 &                    0.5 &              0.004 \\
-         EMF            &               1.000 &            0.000 &        0.000 &                     0.002 &                    0.5 &              0.004 \\
-         Hibernate      &               0.944 &            0.327 &        0.486 &                     0.018 &                    0.5 &              0.034 \\
-         JEdit          &               0.000 &            0.000 &        0.000 &                     0.004 &                    0.5 &              0.008 \\
-         JFreeChart     &               0.000 &            0.000 &        0.000 &                     0.002 &                    0.5 &              0.004 \\
-         JRuby          &               0.842 &            0.099 &        0.178 &                     0.034 &                    0.5 &              0.064 \\
-         SQuirrel       &               0.538 &            0.292 &        0.378 &                     0.003 &                    0.5 &              0.007 \\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
-
-\begin{table}
-    \begin{center}
-        \caption{Technical Debt distribution per type}
-        \label{tbl:td_distribution}
-        \begin{tabular}{l|SSSSS}
-        \toprule
-        \multirow{2}{*}{Project} & \multicolumn{4}{c}{TD Distribution} \\ & {Design} & {Req.} & {Defect} & {Other} &  \multirow{-2}{*}{TD \%} \\
-        \midrule
-        Ant            &  95  & 16 & 13 & 10 & 3.2 \\
-        Jmeter         &  316 & 22 & 22 & 15 & 4.6 \\
-        ArgoUML        &  801 & 651& 127& 74 & 16.8\\
-        Columba        &  126 & 134& 13 & 22 & 4.4\\
-        EMF            &  78  & 16 & 8  & 2  & 2.3\\
-        Hibernate      &  355 & 64 & 52 & 1  & 15.9\\
-        JEdit          &  196 & 14 & 43 & 3  & 2.4\\
-        JFreeChart     &  184 & 25 & 9  & 1  & 4.9\\
-        JRuby          &  343 & 114& 161& 8  & 12.7\\
-        SQuirrel       &  209 & 150& 24 & 3  & 5.2\\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
-
-
-\conclusionbox{}
+\conclusionbox{We find that NLP techniques, such as maximum entropy classifiers, can be used effectively to find \SATD comments. We achieved an average F1 measure of \todo{} for design debt, an average of \todo{} while classifying requirement debt, and for defect debt our average was of \todo{}. For all three types that we classify using our dataset we perform better than the random F1 measure average, moreover our classified F1 measure is \todo{x} times better than the random F1 measure.}
 
 \vspace{3mm}
 \noindent\rqii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} 
+\noindent \textbf{Motivation:} After asserting the efficiency of NPL classifiers predicting \SATD we want to better understand which are the comment patterns or the most common features that developers use when writing \SATD comments. Answering this question will provide insightful information that can point future research direction and broaden our understanding on \SATD.     
 
 \vspace{1mm}
 \noindent \textbf{Approach:} 
+explicar o que eh feature
+falar sobre como o peso eh atribuido a cada feature , citar o eh atraves da obsevacao empirica ... se nao me engano
+explicar como o voto para uma categoria eh feito
+falar que coletamos as features que tem um peso maior peso
 
 \vspace{1mm}
 \noindent \textbf{Results:} 
+coletar as tops features de todos os projetos
+mostrar as features para design 
+mostrar as features para requirement
+comentar sobre as features, provavelmente vai existir overlapping
 
+concluir com as features mais comuns.
 \conclusionbox{}
 
 \vspace{3mm}
