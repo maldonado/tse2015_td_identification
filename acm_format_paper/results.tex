@@ -76,17 +76,46 @@ For all the types above, the random values are particularly low due to the fact 
 \noindent\rqii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} After asserting the efficiency of NPL classifiers predicting \SATD we want to better understand which are the comment patterns or the most common features that developers use when writing \SATD comments. Answering this question will provide insightful information that can guide future research direction and broaden our understanding on \SATD.     
+\noindent \textbf{Motivation:} After asserting the efficiency of NPL classifiers predicting \SATD we want to better understand which are the comment patterns that developers use when writing \SATD comments. Answering this question will provide insightful information that can guide future research direction and broaden our understanding on \SATD.     
 
 \vspace{1mm}
-\noindent \textbf{Approach:} In order to 
-explicar o que eh feature
-falar sobre como o peso eh atribuido a cada feature , citar o eh atraves da obsevacao empirica ... se nao me engano
-explicar como o voto para uma categoria eh feito
-falar que coletamos as features que tem um peso maior peso
+\noindent \textbf{Approach:} As mentioned before, we use the Stanford Classifier to predict \SATD comments, and the first part of the prediction process is to generate the features that will be used to classify the comments. Features, in our case, are fragments of data that possesses a class (i.e., design debt, requirement debt or without technical debt) and a weight. These features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class that has more weight, therefore positive weight features that matches the comment being classified will result in a higher weight, and the class that has the higher weight will be assumed as the predicted class.
+
+% maybe explain more details of how the weight is given to each feature
+
+For example, given three different features: `hack' with a weight of 5.3 , `dirty' with weigh of 3.2 both for design debt and `ignore' meaning that the comment is not a technical debt with a weight of 4.1. When classifying the following comment ``this is a dirty hack and should not be ignored'', all features would have been matched, and the vote decision would be like this: design debt weight = 8.5 (i.e., feature 1 plus feature 2) and without classification weight = 4.1 resulting in a comment classified as  design debt.
+
+Lastly, we extract these features from each project analyzed in our work and analyze the results. 
+
 
 \vspace{1mm}
-\noindent \textbf{Results:} 
+\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 features identifying \SATD in the ten studied projects.
+
+\begin{table}[!hbt]
+    \begin{center}
+        \caption{Top ten features for Self-Admitted Technical Debt}
+        \label{tbl:top_ten_features}
+        \begin{tabular}{l | l }
+        \toprule
+        \thead{Design\\TD} & \thead{Requirement\\TD} \\
+        \midrule
+         hack                  &  TODO:           \\
+         workaround            &  FIXME:          \\
+         yuck!                 &  needed          \\
+         kludge                &  implementation  \\
+         stupidity             &  ends?           \\
+         needed?               &  Apparently      \\
+         Unused?               &  XXX             \\
+         columns??             &  configurable    \\
+         FIXME:                &  Auto-generated  \\
+         wtf?                  &  Empty           \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table}
+
+
+
 coletar as tops features de todos os projetos
 mostrar as features para design 
 mostrar as features para requirement
