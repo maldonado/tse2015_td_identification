@@ -85,44 +85,37 @@ For all the types above, the random values are particularly low due to the fact 
 
 For example, given three different features: `hack' with a weight of 5.3 , `dirty' with weigh of 3.2 both for design debt and `ignore' meaning that the comment is not a technical debt with a weight of 4.1. When classifying the following comment ``this is a dirty hack and should not be ignored'', all features would have been matched, and the vote decision would be like this: design debt weight = 8.5 (i.e., feature 1 plus feature 2) and without classification weight = 4.1 resulting in a comment classified as  design debt.
 
-Lastly, we extract these features from each project analyzed in our work and analyze the results. 
-
-
 \vspace{1mm}
-\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 features identifying \SATD in the ten studied projects.
+\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 features identifying \SATD in the ten studied projects ordered by weight. The first column we list the features with higher weights classifying  
 
 \begin{table}[!hbt]
     \begin{center}
         \caption{Top ten features for Self-Admitted Technical Debt}
         \label{tbl:top_ten_features}
-        \begin{tabular}{l | l }
+        \begin{tabular}{l| l c | l c }
         \toprule
-        \thead{Design\\TD} & \thead{Requirement\\TD} \\
+        \textbf{Order} & \thead{Design\\TD} & \textbf{Weight} & \thead{Requirement\\TD}  & \textbf{Weight}\\
         \midrule
-         hack                  &  TODO:           \\
-         workaround            &  FIXME:          \\
-         yuck!                 &  needed          \\
-         kludge                &  implementation  \\
-         stupidity             &  ends?           \\
-         needed?               &  Apparently      \\
-         Unused?               &  XXX             \\
-         columns??             &  configurable    \\
-         FIXME:                &  Auto-generated  \\
-         wtf?                  &  Empty           \\
+         1  & hack        &  4.9536 &  TODO:           &  4.9423 \\
+         2  & workaround  &  4.8585 &  FIXME:          &  4.2058 \\
+         3  & yuck!       &  4.7122 &  needed          &  4.1327 \\
+         4  & kludge      &  3.0526 &  implementation  &  3.5116 \\
+         5  & stupidity   &  4.6330 &  ends?           &  2.8646 \\
+         6  & needed?     &  4.2578 &  Apparently      &  2.7069 \\
+         7  & Unused?     &  4.2550 &  XXX             &  2.6626 \\
+         8  & columns??   &  4.5500 &  configurable    &  2.5866 \\
+         9  & FIXME:      &  3.8658 &  Auto-generated  &  2.5255 \\
+         10 & wtf?        &  3.7930 &  Empty           &  2.3390 \\
         \bottomrule
         \end{tabular}
     \end{center}    
 \end{table}
 
+It is possible that the same feature is used to classify design debt and requirement debt. However, the weight of this feature can be different accordingly with the type being classified. As we can see in Table \ref{tbl:top_ten_features}, `FIXME:' appears in both columns although it has a higher weight when classifying requirement debt than design debt. 
 
+In spite of the fact that features with higher weights will have more impact during the classification the final vote is given based on the combined weight of all matching features. In average the number of features to classify design debt was of 6,196 whereas for requirement debt was of 2,889.
 
-coletar as tops features de todos os projetos
-mostrar as features para design 
-mostrar as features para requirement
-comentar sobre as features, provavelmente vai existir overlapping
-
-concluir com as features mais comuns.
-\conclusionbox{}
+\conclusionbox{We find that the most common comment patterns for self-admitted design debt are: `hack', `workaround', `yuck!', `kludge', `stupidity', `needed?', `unused?', `columns??', `FIXME:' and `wtf?'. Whereas, for self-admitted requirement debt, the patterns are: `TODO:', `FIXME:', `needed', `implementation', `ends?', `apparently', `XXX', `configurable', `Auto-generated' and `empty'.}
 
 \vspace{3mm}
 \noindent\rqiii

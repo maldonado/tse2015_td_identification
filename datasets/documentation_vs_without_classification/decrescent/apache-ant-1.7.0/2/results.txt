@@ -1,34 +1,32 @@
-ColumnDataClassifier invoked on Mon Aug 03 20:30:08 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Sat Aug 15 13:32:51 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/classified_seq.test
 1.binnedLengths = 10,20,30
-1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
 1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/top_features.txt
 displayedColumn = 1
-printClassifierParam = 500
-1.useNGrams = true
+printClassifierParam = 60000
+1.useNGrams = false
 QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/classified_seq.train
-1.maxNGramLeng = 4
 printClassifier = HighWeight
 1.useSplitWords = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/classified_seq.train ... done [3.6s, 14323 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/classified_seq.train ... done [0.5s, 14323 items].
 numDatums: 14323
 numDatumsPerLabel: {DOCUMENTATION=46.0, WITHOUT_CLASSIFICATION=14277.0}
 numLabels: 2 [WITHOUT_CLASSIFICATION, DOCUMENTATION]
-numFeatures (Phi(X) types): 77695 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
-......................................
+numFeatures (Phi(X) types): 12359 [CLASS, 1-SW-java.lang.Object#hashCode(), 1-Len-31-Inf, 1-SW-@see, 1-SW-copy?, ...]
+..............................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/classified_seq.test ... done [0.8s, 3967 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/apache-ant-1.7.0/2/classified_seq.test ... done [0.1s, 3967 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 3967 examples in test set

@@ -2,17 +2,15 @@
 # Features
 #
 useClassFeature=true
-1.useNGrams=true
+1.useNGrams=false
 1.useSplitWords
 1.splitWordsRegexp "\s"
-1.maxNGramLeng=4
-1.minNGramLeng=1
 1.binnedLengths=10,20,30
 #
 # Printing
 #
 printClassifier=HighWeight
-printClassifierParam=500
+printClassifierParam=60000
 displayAllAnswers=true
 printTo=/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/decrescent/jfreechart-1.0.19/3/top_features.txt
 #

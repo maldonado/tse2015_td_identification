@@ -1,38 +1,36 @@
-ColumnDataClassifier invoked on Mon Aug 03 20:25:32 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Sat Aug 15 13:31:52 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
 testFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/classified_seq.test
 1.binnedLengths = 10,20,30
-1.minNGramLeng = 1
 displayAllAnswers = true
 intern = true
 1.splitWordsRegexp = \s
 goldAnswerColumn = 0
 printTo = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/top_features.txt
 displayedColumn = 1
-printClassifierParam = 500
-1.useNGrams = true
+printClassifierParam = 60000
+1.useNGrams = false
 QNsize = 15
 sigma = 3
 tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/classified_seq.train
-1.maxNGramLeng = 4
 printClassifier = HighWeight
 1.useSplitWords = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/classified_seq.train ... done [2.8s, 15745 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/classified_seq.train ... done [0.4s, 15745 items].
 numDatums: 15745
 numDatumsPerLabel: {TEST=56.0, WITHOUT_CLASSIFICATION=15689.0}
 numLabels: 2 [TEST, WITHOUT_CLASSIFICATION]
-numFeatures (Phi(X) types): 76869 [CLASS, 1-#-d no, 1-#-t , 1-#-teEx, 1-#-shou, ...]
-......................................
+numFeatures (Phi(X) types): 12294 [CLASS, 1-SW-as, 1-SW-with, 1-SW-on., 1-SW-TODO:, ...]
+..................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/classified_seq.test ... done [0.9s, 4281 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/test_vs_without_classification/decrescent/jruby-1.4.0/2/classified_seq.test ... done [0.1s, 4281 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 4281 examples in test set
-Cls TEST: TP=0 FN=6 FP=1 TN=4274; Acc 0.998 P 0.000 R 0.000 F1 0.000
-Cls WITHOUT_CLASSIFICATION: TP=4274 FN=1 FP=6 TN=0; Acc 0.998 P 0.999 R 1.000 F1 0.999
-Accuracy/micro-averaged F1: 0.99836
-Macro-averaged F1: 0.49959
+Cls TEST: TP=1 FN=5 FP=1 TN=4274; Acc 0.999 P 0.500 R 0.167 F1 0.250
+Cls WITHOUT_CLASSIFICATION: TP=4274 FN=1 FP=5 TN=1; Acc 0.999 P 0.999 R 1.000 F1 0.999
+Accuracy/micro-averaged F1: 0.99860
+Macro-averaged F1: 0.62465
