@@ -124,7 +124,11 @@ In spite of the fact that features with higher weights will have more impact dur
 \noindent \textbf{Motivation:} Answering this research question will allow us to better estimate effort for future research in the area. More specifically, it will be beneficial to 1) make this kind of analysis more efficient, so manual classification of comments, that is time consuming and difficult by nature, can be kept to a minimum. 2) Helping researchers interested in applying the same technique to analyze \SATD in domains not covered in our study, another programming languages than Java, or even comments written in languages other than English. 
 
 \vspace{1mm}
-\noindent \textbf{Approach:} 
+\noindent \textbf{Approach:} To be able to answer this question we executed the classification process several times with an increasing training dataset while collecting the results to analyze the changes between each iteration. 
+
+We first select a project that will be used to create the test dataset and we keep it separated from the other nine projects. Second, we take the comments of one of the nine remainder projects to create the training dataset. Third, we run the classification process and collect the results. Fourth, we incrementally add the comments of a second project to the training dataset and repeat the classification process collecting the results. We cycle trough this steps until we had added all nine projects comments to the training dataset. 
+
+To be throughout in this analysis, we apply this approach for each one of our ten studied projects for design and requirement \SATD comments. We also experimented with the order that the comments were added to the training dataset. We ranked the projects that contained more \SATD of the specific type being classified so that they can be added first to training dataset. Then, we repeat the experiment adding first the projects which has less \SATD of the specific type being classified.       
 
 \vspace{1mm}
 \noindent \textbf{Results:} 
