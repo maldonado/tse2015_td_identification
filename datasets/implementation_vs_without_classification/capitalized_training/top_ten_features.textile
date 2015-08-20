@@ -1,0 +1,10 @@
+(1-SW-TODO:,IMPLEMENTATION)                                       4.9423
+(1-SW-FIXME:,IMPLEMENTATION)                                      4.2058
+(1-SW-needed,IMPLEMENTATION)                                      4.1327
+(1-SW-implementation.,IMPLEMENTATION)                             3.5116
+(1-SW-ends?,IMPLEMENTATION)                                       2.8646
+(1-SW-Apparently,,IMPLEMENTATION)                                 2.7069
+(1-SW-XXX,IMPLEMENTATION)                                         2.6626
+(1-SW-configurable,IMPLEMENTATION)                                2.5866
+(1-SW-Auto-generated,IMPLEMENTATION)                              2.5255
+(1-SW-Empty,IMPLEMENTATION)                                       2.3390

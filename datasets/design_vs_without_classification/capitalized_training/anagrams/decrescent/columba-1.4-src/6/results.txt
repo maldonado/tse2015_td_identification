@@ -1,0 +1,38 @@
+ColumnDataClassifier invoked on Mon Aug 03 20:53:39 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/classified_seq.train
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/classified_seq.train ... done [7.1s, 41652 items].
+numDatums: 41652
+numDatumsPerLabel: {DESIGN=2220.0, WITHOUT_CLASSIFICATION=39432.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 172297 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+......................................................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/columba-1.4-src/6/classified_seq.test ... done [1.1s, 6385 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+6385 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=6209 FN=50 FP=53 TN=73; Acc 0.984 P 0.992 R 0.992 F1 0.992
+Cls DESIGN: TP=73 FN=53 FP=50 TN=6209; Acc 0.984 P 0.593 R 0.579 F1 0.586
+Accuracy/micro-averaged F1: 0.98387
+Macro-averaged F1: 0.78906

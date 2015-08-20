@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Wed Aug 19 23:43:02 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/classified_seq.train ... done [0.7s, 31387 items].
+numDatums: 31387
+numDatumsPerLabel: {DESIGN=2024.0, WITHOUT_CLASSIFICATION=29363.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 23824 [CLASS, 1-SW-java.lang.object#hashcode(), 1-Len-31-Inf, 1-SW-@see, 1-SW-copy?, ...]
+.......................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jEdit-4.2/5/classified_seq.test ... done [0.1s, 10260 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+10260 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=10042 FN=22 FP=137 TN=59; Acc 0.985 P 0.987 R 0.998 F1 0.992
+Cls DESIGN: TP=59 FN=137 FP=22 TN=10042; Acc 0.985 P 0.728 R 0.301 F1 0.426
+Accuracy/micro-averaged F1: 0.98450
+Macro-averaged F1: 0.70907

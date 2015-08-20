@@ -1,0 +1,33 @@
+#
+# Features
+#
+useClassFeature=true
+1.useNGrams=false
+1.useSplitWords
+1.splitWordsRegexp "\s"
+1.binnedLengths=10,20,30
+#
+# Printing
+#
+printClassifier=HighWeight
+printClassifierParam=60000
+displayAllAnswers=true
+printTo=/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/1/top_features.txt
+#
+# Mapping
+#
+goldAnswerColumn=0
+displayedColumn=1
+#
+# Optimization
+#
+intern=true
+sigma=3
+useQN=true
+QNsize=15
+tolerance=1e-4
+#
+# Training input
+#
+trainFile=/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/1/classified_seq.train
+testFile= /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/1/classified_seq.test

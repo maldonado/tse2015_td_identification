@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Sat Aug 15 13:27:46 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/classified_seq.train ... done [0.4s, 19451 items].
+numDatums: 19451
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=18552.0, IMPLEMENTATION=899.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 17063 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-TODO:, 1-SW-does, ...]
+...........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/sql12/3/classified_seq.test ... done [0.1s, 7059 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7059 examples in test set
+Cls IMPLEMENTATION: TP=117 FN=33 FP=14 TN=6895; Acc 0.993 P 0.893 R 0.780 F1 0.833
+Cls WITHOUT_CLASSIFICATION: TP=6895 FN=14 FP=33 TN=117; Acc 0.993 P 0.995 R 0.998 F1 0.997
+Accuracy/micro-averaged F1: 0.99334
+Macro-averaged F1: 0.91467

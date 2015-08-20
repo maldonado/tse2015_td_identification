@@ -1,0 +1,38 @@
+ColumnDataClassifier invoked on Mon Aug 03 21:13:18 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/classified_seq.train
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/classified_seq.train ... done [10.4s, 56213 items].
+numDatums: 56213
+numDatumsPerLabel: {DESIGN=2360.0, WITHOUT_CLASSIFICATION=53853.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 199899 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+............................................................................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/9/classified_seq.test ... done [1.1s, 4618 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4618 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4204 FN=71 FP=57 TN=286; Acc 0.972 P 0.987 R 0.983 F1 0.985
+Cls DESIGN: TP=286 FN=57 FP=71 TN=4204; Acc 0.972 P 0.801 R 0.834 F1 0.817
+Accuracy/micro-averaged F1: 0.97228
+Macro-averaged F1: 0.90107

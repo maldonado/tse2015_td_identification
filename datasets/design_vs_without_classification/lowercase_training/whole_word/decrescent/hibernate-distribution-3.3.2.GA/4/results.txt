@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Wed Aug 19 23:42:20 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/classified_seq.train ... done [0.6s, 28537 items].
+numDatums: 28537
+numDatumsPerLabel: {DESIGN=1669.0, WITHOUT_CLASSIFICATION=26868.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 21433 [CLASS, 1-SW-java.lang.object#hashcode(), 1-Len-31-Inf, 1-SW-@see, 1-SW-copy?, ...]
+......................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/4/classified_seq.test ... done [0.1s, 2850 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+2850 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=2467 FN=28 FP=128 TN=227; Acc 0.945 P 0.951 R 0.989 F1 0.969
+Cls DESIGN: TP=227 FN=128 FP=28 TN=2467; Acc 0.945 P 0.890 R 0.639 F1 0.744
+Accuracy/micro-averaged F1: 0.94526
+Macro-averaged F1: 0.85681

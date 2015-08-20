@@ -1,0 +1,38 @@
+ColumnDataClassifier invoked on Mon Aug 03 20:46:34 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train ... done [6.1s, 33665 items].
+numDatums: 33665
+numDatumsPerLabel: {DESIGN=1904.0, WITHOUT_CLASSIFICATION=31761.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 157923 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+............................................................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test ... done [1.1s, 7987 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7987 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=7645 FN=26 FP=125 TN=191; Acc 0.981 P 0.984 R 0.997 F1 0.990
+Cls DESIGN: TP=191 FN=125 FP=26 TN=7645; Acc 0.981 P 0.880 R 0.604 F1 0.717
+Accuracy/micro-averaged F1: 0.98109
+Macro-averaged F1: 0.85346

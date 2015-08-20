@@ -1,0 +1,38 @@
+ColumnDataClassifier invoked on Mon Aug 03 21:12:00 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/classified_seq.train
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/classified_seq.train ... done [8.2s, 47801 items].
+numDatums: 47801
+numDatumsPerLabel: {DESIGN=2187.0, WITHOUT_CLASSIFICATION=45614.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 179217 [CLASS, 1-#-., 1-#-ode(, 1-#-an, 1-#-t#, ...]
+..................................................................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jruby-1.4.0/7/classified_seq.test ... done [1.8s, 4618 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4618 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4204 FN=71 FP=63 TN=280; Acc 0.971 P 0.985 R 0.983 F1 0.984
+Cls DESIGN: TP=280 FN=63 FP=71 TN=4204; Acc 0.971 P 0.798 R 0.816 F1 0.807
+Accuracy/micro-averaged F1: 0.97098
+Macro-averaged F1: 0.89561

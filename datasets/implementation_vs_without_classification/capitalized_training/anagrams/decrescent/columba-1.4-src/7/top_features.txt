@@ -1,0 +1,502 @@
+LinearClassifier [printing top 500 features]
+(CLASS,WITHOUT_CLASSIFICATION)                3.7691
+(1-#-: ,IMPLEMENTATION)                       1.4517
+(1-Len-0-10,WITHOUT_CLASSIFICATION)           1.3809
+(1-Len-11-20,WITHOUT_CLASSIFICATION)          1.2605
+(1-#-DO ,IMPLEMENTATION)                      1.1755
+(1-#-ODO ,IMPLEMENTATION)                     1.1250
+(1-#-DO: ,IMPLEMENTATION)                     1.1177
+(1-#-O ,IMPLEMENTATION)                       1.1148
+(1-#-O: ,IMPLEMENTATION)                      1.1119
+(1-#- not,WITHOUT_CLASSIFICATION)             0.9406
+(1-#-ot n,IMPLEMENTATION)                     0.7812
+(1-SW-not,IMPLEMENTATION)                     0.7747
+(1-SW-implemented,IMPLEMENTATION)             0.7475
+(1-#-ot i,IMPLEMENTATION)                     0.7449
+(1-#- no,WITHOUT_CLASSIFICATION)              0.7441
+(1-#-t?,WITHOUT_CLASSIFICATION)               0.7195
+(1-#-ded ,WITHOUT_CLASSIFICATION)             0.6771
+(1-#-X,IMPLEMENTATION)                        0.6466
+(1-#-? ,IMPLEMENTATION)                       0.6416
+(1-Len-21-30,WITHOUT_CLASSIFICATION)          0.6259
+(1-#-not ,IMPLEMENTATION)                     0.6155
+(1-#- ,WITHOUT_CLASSIFICATION)                0.5879
+(1-#-t im,IMPLEMENTATION)                     0.5449
+(1-SW-Empty,IMPLEMENTATION)                   0.5437
+(1-SW-implementation.,IMPLEMENTATION)         0.5320
+(1-SW-empty,WITHOUT_CLASSIFICATION)           0.5230
+(1-#-les,WITHOUT_CLASSIFICATION)              0.5156
+(1-#-c,WITHOUT_CLASSIFICATION)                0.5117
+(1-#-Empt,IMPLEMENTATION)                     0.5069
+(1-#-Emp,IMPLEMENTATION)                      0.5058
+(1-#-Em,IMPLEMENTATION)                       0.5006
+(1-#-m ,WITHOUT_CLASSIFICATION)               0.4951
+(1-#-t ne,IMPLEMENTATION)                     0.4907
+(1-#-ME: ,IMPLEMENTATION)                     0.4860
+(1-#-not,IMPLEMENTATION)                      0.4848
+(1-#-n?,IMPLEMENTATION)                       0.4841
+(1-#- i,IMPLEMENTATION)                       0.4805
+(1-#-d,IMPLEMENTATION)                        0.4756
+(1-#-r,WITHOUT_CLASSIFICATION)                0.4743
+(1-#-a,WITHOUT_CLASSIFICATION)                0.4693
+(1-#-e u,IMPLEMENTATION)                      0.4654
+(1-#-DO,IMPLEMENTATION)                       0.4649
+(1-#-TO,IMPLEMENTATION)                       0.4632
+(1-Len-31-Inf,WITHOUT_CLASSIFICATION)         0.4621
+(1-SW-implementation,WITHOUT_CLASSIFICATION)  0.4598
+(1-#-e sh,WITHOUT_CLASSIFICATION)             0.4572
+(1-#-empt,WITHOUT_CLASSIFICATION)             0.4571
+(1-#-nted,IMPLEMENTATION)                     0.4534
+(1-#-XX,IMPLEMENTATION)                       0.4499
+(1-#-XXX,IMPLEMENTATION)                      0.4499
+(1-#-at?,WITHOUT_CLASSIFICATION)              0.4480
+(1-#-hat?,WITHOUT_CLASSIFICATION)             0.4480
+(1-#-u,WITHOUT_CLASSIFICATION)                0.4433
+(1-#-ty i,IMPLEMENTATION)                     0.4389
+(1-#-TODO,IMPLEMENTATION)                     0.4363
+(1-#-ODO,IMPLEMENTATION)                      0.4363
+(1-#-TOD,IMPLEMENTATION)                      0.4363
+(1-#-ble ,WITHOUT_CLASSIFICATION)             0.4353
+(1-#-L 2.,IMPLEMENTATION)                     0.4339
+(1-#-no,IMPLEMENTATION)                       0.4320
+(1-#-0,WITHOUT_CLASSIFICATION)                0.4284
+(1-#-ed ,WITHOUT_CLASSIFICATION)              0.4191
+(1-#-in,WITHOUT_CLASSIFICATION)               0.4191
+(1-#-emp,WITHOUT_CLASSIFICATION)              0.4164
+(1-SW-2.1,IMPLEMENTATION)                     0.4150
+(1-#-dd e,IMPLEMENTATION)                     0.4147
+(1-SW-XXX,IMPLEMENTATION)                     0.4113
+(1-#-E: ,IMPLEMENTATION)                      0.4098
+(1-#-ck!,WITHOUT_CLASSIFICATION)              0.4074
+(1-#-eck!,WITHOUT_CLASSIFICATION)             0.4074
+(1-SW-check!,WITHOUT_CLASSIFICATION)          0.4074
+(1-#-k!,WITHOUT_CLASSIFICATION)               0.4068
+(1-#- 2.,IMPLEMENTATION)                      0.4065
+(1-#- 2.1,IMPLEMENTATION)                     0.4026
+(1-#-2.1,IMPLEMENTATION)                      0.4014
+(1-#-o no,WITHOUT_CLASSIFICATION)             0.3952
+(1-#-X ad,IMPLEMENTATION)                     0.3939
+(1-#-y im,IMPLEMENTATION)                     0.3932
+(1-#-O: s,WITHOUT_CLASSIFICATION)             0.3920
+(1-#-X ,IMPLEMENTATION)                       0.3916
+(1-#-o n,WITHOUT_CLASSIFICATION)              0.3883
+(1-#-t i,IMPLEMENTATION)                      0.3856
+(1-#-: fo,IMPLEMENTATION)                     0.3817
+(1-#-FI,IMPLEMENTATION)                       0.3800
+(1-#-OD,IMPLEMENTATION)                       0.3792
+(1-SW-needed,IMPLEMENTATION)                  0.3787
+(1-#-2.,IMPLEMENTATION)                       0.3738
+(1-#-.1,IMPLEMENTATION)                       0.3721
+(1-#-: ch,WITHOUT_CLASSIFICATION)             0.3686
+(1-#- nee,IMPLEMENTATION)                     0.3676
+(1-#-th,IMPLEMENTATION)                       0.3658
+(1-#-FIX,IMPLEMENTATION)                      0.3656
+(1-#-XX ,IMPLEMENTATION)                      0.3644
+(1-#-XXX ,IMPLEMENTATION)                     0.3644
+(1-#-d ex,IMPLEMENTATION)                     0.3622
+(1-#-gs?,WITHOUT_CLASSIFICATION)              0.3617
+(1-#-O: f,IMPLEMENTATION)                     0.3567
+(1-#-ts ,WITHOUT_CLASSIFICATION)              0.3539
+(1-#-nts,WITHOUT_CLASSIFICATION)              0.3531
+(1-#-XX a,IMPLEMENTATION)                     0.3512
+(1-#-IX,IMPLEMENTATION)                       0.3492
+(1-#-No,WITHOUT_CLASSIFICATION)               0.3484
+(1-#-O ch,IMPLEMENTATION)                     0.3482
+(1-#-DO c,IMPLEMENTATION)                     0.3482
+(1-#-O c,IMPLEMENTATION)                      0.3481
+(1-#-d m,IMPLEMENTATION)                      0.3479
+(1-#-X a,IMPLEMENTATION)                      0.3469
+(1-#-T,WITHOUT_CLASSIFICATION)                0.3469
+(1-#-n U,WITHOUT_CLASSIFICATION)              0.3466
+(1-#-Do w,IMPLEMENTATION)                     0.3445
+(1-SW-exceptions,IMPLEMENTATION)              0.3435
+(1-#-oc,WITHOUT_CLASSIFICATION)               0.3422
+(1-#-2,WITHOUT_CLASSIFICATION)                0.3407
+(1-#-at ,IMPLEMENTATION)                      0.3393
+(1-#-ke t,IMPLEMENTATION)                     0.3378
+(1-#-s ?,IMPLEMENTATION)                      0.3375
+(1-#- ne,IMPLEMENTATION)                      0.3325
+(1-#-2 ,IMPLEMENTATION)                       0.3316
+(1-#- we ,IMPLEMENTATION)                     0.3303
+(1-#-: f,IMPLEMENTATION)                      0.3301
+(1-#-his.,WITHOUT_CLASSIFICATION)             0.3283
+(1-#-nts ,WITHOUT_CLASSIFICATION)             0.3269
+(1-#-ente,IMPLEMENTATION)                     0.3263
+(1-#-....,WITHOUT_CLASSIFICATION)             0.3257
+(1-#-is.,WITHOUT_CLASSIFICATION)              0.3244
+(1-#-k ,IMPLEMENTATION)                       0.3228
+(1-SW-this....,WITHOUT_CLASSIFICATION)        0.3213
+(1-#-al,IMPLEMENTATION)                       0.3200
+(1-#-el,WITHOUT_CLASSIFICATION)               0.3195
+(1-#-: Re,IMPLEMENTATION)                     0.3193
+(1-SW-What?,WITHOUT_CLASSIFICATION)           0.3191
+(1-#-is h,WITHOUT_CLASSIFICATION)             0.3168
+(1-#-) ,WITHOUT_CLASSIFICATION)               0.3160
+(1-#-o,IMPLEMENTATION)                        0.3160
+(1-#-ld m,IMPLEMENTATION)                     0.3159
+(1-#-et h,IMPLEMENTATION)                     0.3153
+(1-#-'t k,IMPLEMENTATION)                     0.3152
+(1-#-art,WITHOUT_CLASSIFICATION)              0.3146
+(1-#-n UM,WITHOUT_CLASSIFICATION)             0.3127
+(1-#- D,WITHOUT_CLASSIFICATION)               0.3107
+(1-#-in U,WITHOUT_CLASSIFICATION)             0.3094
+(1-#-at,WITHOUT_CLASSIFICATION)               0.3093
+(1-#-) h,WITHOUT_CLASSIFICATION)              0.3092
+(1-#-Not ,WITHOUT_CLASSIFICATION)             0.3078
+(1-SW-now,WITHOUT_CLASSIFICATION)             0.3064
+(1-#-eded,IMPLEMENTATION)                     0.3054
+(1-#-eede,IMPLEMENTATION)                     0.3053
+(1-#-Do ,IMPLEMENTATION)                      0.3049
+(1-#-n v,IMPLEMENTATION)                      0.3048
+(1-#-do o,IMPLEMENTATION)                     0.3040
+(1-#-s lo,WITHOUT_CLASSIFICATION)             0.3019
+(1-#-C,WITHOUT_CLASSIFICATION)                0.3013
+(1-#- imp,IMPLEMENTATION)                     0.3012
+(1-#-ese,IMPLEMENTATION)                      0.3008
+(1-#-'t n,WITHOUT_CLASSIFICATION)             0.3005
+(1-SW-2,WITHOUT_CLASSIFICATION)               0.3003
+(1-#-e a,WITHOUT_CLASSIFICATION)              0.3001
+(1-#-k if,IMPLEMENTATION)                     0.2999
+(1-#-le c,WITHOUT_CLASSIFICATION)             0.2998
+(1-#-s.,WITHOUT_CLASSIFICATION)               0.2991
+(1-#-oo,WITHOUT_CLASSIFICATION)               0.2986
+(1-#-ed i,WITHOUT_CLASSIFICATION)             0.2979
+(1-#-H,WITHOUT_CLASSIFICATION)                0.2975
+(1-#-O: p,IMPLEMENTATION)                     0.2965
+(1-#-t.,IMPLEMENTATION)                       0.2960
+(1-#- is,WITHOUT_CLASSIFICATION)              0.2954
+(1-SW-method,IMPLEMENTATION)                  0.2951
+(1-#-at t,IMPLEMENTATION)                     0.2950
+(1-#-ue ,IMPLEMENTATION)                      0.2944
+(1-#-ed,IMPLEMENTATION)                       0.2943
+(1-#-ted,IMPLEMENTATION)                      0.2939
+(1-#-,,WITHOUT_CLASSIFICATION)                0.2929
+(1-#-K ,WITHOUT_CLASSIFICATION)               0.2913
+(1-#-ocal,WITHOUT_CLASSIFICATION)             0.2909
+(1-#-oca,WITHOUT_CLASSIFICATION)              0.2888
+(1-#-ot t,WITHOUT_CLASSIFICATION)             0.2882
+(1-#-need,IMPLEMENTATION)                     0.2873
+(1-#-d ma,IMPLEMENTATION)                     0.2866
+(1-#-cali,WITHOUT_CLASSIFICATION)             0.2865
+(1-#-e?,IMPLEMENTATION)                       0.2859
+(1-#-g a,IMPLEMENTATION)                      0.2852
+(1-#-e b,IMPLEMENTATION)                      0.2852
+(1-#-o we,IMPLEMENTATION)                     0.2850
+(1-#-d e,IMPLEMENTATION)                      0.2850
+(1-#- : ,IMPLEMENTATION)                      0.2848
+(1-SW-:,IMPLEMENTATION)                       0.2846
+(1-SW-here,IMPLEMENTATION)                    0.2845
+(1-#-: s,WITHOUT_CLASSIFICATION)              0.2841
+(1-#-ede,IMPLEMENTATION)                      0.2824
+(1-#-O: R,IMPLEMENTATION)                     0.2817
+(1-#-hat ,IMPLEMENTATION)                     0.2808
+(1-#- li,IMPLEMENTATION)                      0.2802
+(1-#-er,IMPLEMENTATION)                       0.2798
+(1-#-O ??,WITHOUT_CLASSIFICATION)             0.2797
+(1-#-ow t,IMPLEMENTATION)                     0.2791
+(1-#-s..,WITHOUT_CLASSIFICATION)              0.2782
+(1-#-s...,WITHOUT_CLASSIFICATION)             0.2781
+(1-#-ur,IMPLEMENTATION)                       0.2778
+(1-#-ot ,IMPLEMENTATION)                      0.2776
+(1-#-res,IMPLEMENTATION)                      0.2775
+(1-#-: v,WITHOUT_CLASSIFICATION)              0.2768
+(1-#-O: n,IMPLEMENTATION)                     0.2765
+(1-#-ere ,WITHOUT_CLASSIFICATION)             0.2764
+(1-#-: va,WITHOUT_CLASSIFICATION)             0.2761
+(1-#- Ma,IMPLEMENTATION)                      0.2758
+(1-#-o ot,IMPLEMENTATION)                     0.2758
+(1-#-s o,WITHOUT_CLASSIFICATION)              0.2754
+(1-#-et i,WITHOUT_CLASSIFICATION)             0.2749
+(1-#-O: v,WITHOUT_CLASSIFICATION)             0.2748
+(1-#-dles,WITHOUT_CLASSIFICATION)             0.2741
+(1-#-set,WITHOUT_CLASSIFICATION)              0.2741
+(1-SW-this,IMPLEMENTATION)                    0.2729
+(1-#-e us,IMPLEMENTATION)                     0.2724
+(1-SW-handles,WITHOUT_CLASSIFICATION)         0.2719
+(1-#-ubl,WITHOUT_CLASSIFICATION)              0.2710
+(1-#-ther,WITHOUT_CLASSIFICATION)             0.2707
+(1-#-oe,WITHOUT_CLASSIFICATION)               0.2702
+(1-#- I,IMPLEMENTATION)                       0.2701
+(1-#-t n,IMPLEMENTATION)                      0.2694
+(1-#-n va,IMPLEMENTATION)                     0.2691
+(1-#-ort ,IMPLEMENTATION)                     0.2690
+(1-#-ow,IMPLEMENTATION)                       0.2686
+(1-#-as ?,IMPLEMENTATION)                     0.2686
+(1-#- end,IMPLEMENTATION)                     0.2672
+(1-#-dle ,IMPLEMENTATION)                     0.2671
+(1-#- :,IMPLEMENTATION)                       0.2669
+(1-#-wi,IMPLEMENTATION)                       0.2668
+(1-SW-what,IMPLEMENTATION)                    0.2660
+(1-#-de h,WITHOUT_CLASSIFICATION)             0.2658
+(1-#- im,IMPLEMENTATION)                      0.2656
+(1-#-s, t,WITHOUT_CLASSIFICATION)             0.2654
+(1-#-: ca,IMPLEMENTATION)                     0.2652
+(1-#-pp,IMPLEMENTATION)                       0.2643
+(1-#-: R,IMPLEMENTATION)                      0.2642
+(1-#-r ,WITHOUT_CLASSIFICATION)               0.2638
+(1-#-plem,IMPLEMENTATION)                     0.2628
+(1-SW-varargs?,WITHOUT_CLASSIFICATION)        0.2621
+(1-#-rgs?,WITHOUT_CLASSIFICATION)             0.2621
+(1-#-d l,WITHOUT_CLASSIFICATION)              0.2621
+(1-#-f th,WITHOUT_CLASSIFICATION)             0.2620
+(1-#-w,WITHOUT_CLASSIFICATION)                0.2618
+(1-#-X: ,IMPLEMENTATION)                      0.2618
+(1-#-e ,WITHOUT_CLASSIFICATION)               0.2617
+(1-#-X:,IMPLEMENTATION)                       0.2616
+(1-#-ot s,WITHOUT_CLASSIFICATION)             0.2604
+(1-#- sid,WITHOUT_CLASSIFICATION)             0.2603
+(1-SW-configurable,IMPLEMENTATION)            0.2591
+(1-#-hat,WITHOUT_CLASSIFICATION)              0.2589
+(1-#-a n,WITHOUT_CLASSIFICATION)              0.2577
+(1-#-dde,WITHOUT_CLASSIFICATION)              0.2573
+(1-#-w i,WITHOUT_CLASSIFICATION)              0.2573
+(1-#-er c,IMPLEMENTATION)                     0.2568
+(1-#-int,WITHOUT_CLASSIFICATION)              0.2567
+(1-#-: L,WITHOUT_CLASSIFICATION)              0.2563
+(1-#-do :,IMPLEMENTATION)                     0.2556
+(1-#-o : ,IMPLEMENTATION)                     0.2556
+(1-#-o :,IMPLEMENTATION)                      0.2556
+(1-SW-Apparently,,IMPLEMENTATION)             0.2554
+(1-SW-there,WITHOUT_CLASSIFICATION)           0.2552
+(1-SW-Do,IMPLEMENTATION)                      0.2551
+(1-SW-handle,IMPLEMENTATION)                  0.2550
+(1-#-pl,IMPLEMENTATION)                       0.2540
+(1-#-nee,IMPLEMENTATION)                      0.2539
+(1-#- se,WITHOUT_CLASSIFICATION)              0.2538
+(1-#-on e,IMPLEMENTATION)                     0.2537
+(1-#-nte,IMPLEMENTATION)                      0.2533
+(1-#-x ,IMPLEMENTATION)                       0.2532
+(1-#- ca,IMPLEMENTATION)                      0.2531
+(1-#- a n,WITHOUT_CLASSIFICATION)             0.2529
+(1-#-E: p,WITHOUT_CLASSIFICATION)             0.2526
+(1-#- an,WITHOUT_CLASSIFICATION)              0.2525
+(1-#-ppe,WITHOUT_CLASSIFICATION)              0.2523
+(1-#- A,IMPLEMENTATION)                       0.2520
+(1-#-f i,IMPLEMENTATION)                      0.2512
+(1-#-d o,IMPLEMENTATION)                      0.2510
+(1-SW-side,WITHOUT_CLASSIFICATION)            0.2510
+(1-SW-formulas,IMPLEMENTATION)                0.2510
+(1-#-las ,IMPLEMENTATION)                     0.2509
+(1-#-d st,IMPLEMENTATION)                     0.2505
+(1-#-her,IMPLEMENTATION)                      0.2484
+(1-#-ock,IMPLEMENTATION)                      0.2482
+(1-#- Do,WITHOUT_CLASSIFICATION)              0.2473
+(1-#-s a ,IMPLEMENTATION)                     0.2469
+(1-#-: Lo,WITHOUT_CLASSIFICATION)             0.2465
+(1-#-O: L,WITHOUT_CLASSIFICATION)             0.2465
+(1-#-see,WITHOUT_CLASSIFICATION)              0.2464
+(1-#-Not,WITHOUT_CLASSIFICATION)              0.2461
+(1-#-and,IMPLEMENTATION)                      0.2452
+(1-#-o o,IMPLEMENTATION)                      0.2452
+(1-#-urab,IMPLEMENTATION)                     0.2450
+(1-#-dd f,WITHOUT_CLASSIFICATION)             0.2442
+(1-#-me ?,WITHOUT_CLASSIFICATION)             0.2442
+(1-#-ion?,IMPLEMENTATION)                     0.2439
+(1-#-on?,IMPLEMENTATION)                      0.2438
+(1-#- her,IMPLEMENTATION)                     0.2431
+(1-#-d j,WITHOUT_CLASSIFICATION)              0.2429
+(1-#-O: I,IMPLEMENTATION)                     0.2415
+(1-#-s do,WITHOUT_CLASSIFICATION)             0.2414
+(1-#-? p,IMPLEMENTATION)                      0.2412
+(1-#-ke ,IMPLEMENTATION)                      0.2408
+(1-#-eed,IMPLEMENTATION)                      0.2401
+(1-#-od i,IMPLEMENTATION)                     0.2398
+(1-#-we,WITHOUT_CLASSIFICATION)               0.2390
+(1-SW-Need,IMPLEMENTATION)                    0.2387
+(1-#-: M,IMPLEMENTATION)                      0.2383
+(1-#-d ju,WITHOUT_CLASSIFICATION)             0.2380
+(1-#-ld j,WITHOUT_CLASSIFICATION)             0.2380
+(1-#-pe,WITHOUT_CLASSIFICATION)               0.2376
+(1-#-he u,IMPLEMENTATION)                     0.2374
+(1-#-Appa,IMPLEMENTATION)                     0.2367
+(1-#-ppar,IMPLEMENTATION)                     0.2366
+(1-#-ppa,IMPLEMENTATION)                      0.2366
+(1-#-rte,WITHOUT_CLASSIFICATION)              0.2366
+(1-#-oul,IMPLEMENTATION)                      0.2363
+(1-#-ould,IMPLEMENTATION)                     0.2363
+(1-#-uld,IMPLEMENTATION)                      0.2363
+(1-#-Why,IMPLEMENTATION)                      0.2363
+(1-#-n in,IMPLEMENTATION)                     0.2361
+(1-#- R,IMPLEMENTATION)                       0.2359
+(1-#-d th,WITHOUT_CLASSIFICATION)             0.2357
+(1-#-f it,IMPLEMENTATION)                     0.2347
+(1-#-ts?,IMPLEMENTATION)                      0.2339
+(1-#-aren,IMPLEMENTATION)                     0.2336
+(1-#-t us,WITHOUT_CLASSIFICATION)             0.2333
+(1-#- c,IMPLEMENTATION)                       0.2331
+(1-#- H,WITHOUT_CLASSIFICATION)               0.2328
+(1-#-ck i,IMPLEMENTATION)                     0.2325
+(1-#-, ,WITHOUT_CLASSIFICATION)               0.2323
+(1-#-d i,WITHOUT_CLASSIFICATION)              0.2321
+(1-#-ve,IMPLEMENTATION)                       0.2320
+(1-#-do n,WITHOUT_CLASSIFICATION)             0.2318
+(1-#- ad,IMPLEMENTATION)                      0.2313
+(1-#-ove.,WITHOUT_CLASSIFICATION)             0.2311
+(1-#-rabl,IMPLEMENTATION)                     0.2311
+(1-SW-above.,WITHOUT_CLASSIFICATION)          0.2311
+(1-SW-TODO:,IMPLEMENTATION)                   0.2302
+(1-#-ory,WITHOUT_CLASSIFICATION)              0.2300
+(1-SW-called.,IMPLEMENTATION)                 0.2300
+(1-#-od ,IMPLEMENTATION)                      0.2300
+(1-#-: Ma,IMPLEMENTATION)                     0.2299
+(1-#-K,WITHOUT_CLASSIFICATION)                0.2298
+(1-#-y w,IMPLEMENTATION)                      0.2296
+(1-#-impl,IMPLEMENTATION)                     0.2293
+(1-#-ve.,WITHOUT_CLASSIFICATION)              0.2291
+(1-#-oes,WITHOUT_CLASSIFICATION)              0.2287
+(1-#-aste,IMPLEMENTATION)                     0.2284
+(1-#-ss o,WITHOUT_CLASSIFICATION)             0.2282
+(1-#-hod ,IMPLEMENTATION)                     0.2282
+(1-#-nd i,WITHOUT_CLASSIFICATION)             0.2280
+(1-#-e:,WITHOUT_CLASSIFICATION)               0.2275
+(1-#- see,WITHOUT_CLASSIFICATION)             0.2272
+(1-#-ex,IMPLEMENTATION)                       0.2270
+(1-#-y, t,IMPLEMENTATION)                     0.2267
+(1-#-w wh,IMPLEMENTATION)                     0.2266
+(1-#-ow w,IMPLEMENTATION)                     0.2264
+(1-#-o ch,WITHOUT_CLASSIFICATION)             0.2260
+(1-#-nds?,IMPLEMENTATION)                     0.2260
+(1-#-ve 2,IMPLEMENTATION)                     0.2260
+(1-SW-ends?,IMPLEMENTATION)                   0.2260
+(1-#-ds?,IMPLEMENTATION)                      0.2259
+(1-#-he e,WITHOUT_CLASSIFICATION)             0.2258
+(1-#-t u,WITHOUT_CLASSIFICATION)              0.2257
+(1-#-noth,WITHOUT_CLASSIFICATION)             0.2251
+(1-#-rab,IMPLEMENTATION)                      0.2244
+(1-#-w w,IMPLEMENTATION)                      0.2242
+(1-#-s w,WITHOUT_CLASSIFICATION)              0.2241
+(1-#-ba,IMPLEMENTATION)                       0.2238
+(1-#-n it,IMPLEMENTATION)                     0.2230
+(1-#-led,IMPLEMENTATION)                      0.2229
+(1-#-n t,WITHOUT_CLASSIFICATION)              0.2228
+(1-#-ames,IMPLEMENTATION)                     0.2227
+(1-#-e al,IMPLEMENTATION)                     0.2225
+(1-#-s as,WITHOUT_CLASSIFICATION)             0.2225
+(1-#-odo ,IMPLEMENTATION)                     0.2223
+(1-SW-todo,IMPLEMENTATION)                    0.2222
+(1-#-: T,IMPLEMENTATION)                      0.2222
+(1-#-: a,IMPLEMENTATION)                      0.2221
+(1-SW-above,IMPLEMENTATION)                   0.2218
+(1-#-pare,IMPLEMENTATION)                     0.2218
+(1-#-it t,WITHOUT_CLASSIFICATION)             0.2217
+(1-#-he n,WITHOUT_CLASSIFICATION)             0.2216
+(1-#-ite,WITHOUT_CLASSIFICATION)              0.2214
+(1-#-OK ,WITHOUT_CLASSIFICATION)              0.2208
+(1-#-hing,WITHOUT_CLASSIFICATION)             0.2207
+(1-#-t sh,IMPLEMENTATION)                     0.2203
+(1-#-ng a,IMPLEMENTATION)                     0.2200
+(1-#-: n,IMPLEMENTATION)                      0.2200
+(1-#-lon,WITHOUT_CLASSIFICATION)              0.2198
+(1-#-d we,IMPLEMENTATION)                     0.2196
+(1-#-n an,WITHOUT_CLASSIFICATION)             0.2194
+(1-#- h,IMPLEMENTATION)                       0.2193
+(1-#-d:,WITHOUT_CLASSIFICATION)               0.2189
+(1-#-ise ,WITHOUT_CLASSIFICATION)             0.2186
+(1-#- pr,IMPLEMENTATION)                      0.2182
+(1-#-r ca,IMPLEMENTATION)                     0.2182
+(1-#-av,WITHOUT_CLASSIFICATION)               0.2180
+(1-#-ura,IMPLEMENTATION)                      0.2176
+(1-#-n en,IMPLEMENTATION)                     0.2176
+(1-#-s l,WITHOUT_CLASSIFICATION)              0.2174
+(1-#-k i,IMPLEMENTATION)                      0.2172
+(1-#- y,IMPLEMENTATION)                       0.2171
+(1-#-led.,IMPLEMENTATION)                     0.2169
+(1-SW-filename,WITHOUT_CLASSIFICATION)        0.2168
+(1-#-ne t,WITHOUT_CLASSIFICATION)             0.2167
+(1-#- 2 ,IMPLEMENTATION)                      0.2166
+(1-#-he t,IMPLEMENTATION)                     0.2163
+(1-#-is..,WITHOUT_CLASSIFICATION)             0.2161
+(1-#- b,WITHOUT_CLASSIFICATION)               0.2160
+(1-#-re ,WITHOUT_CLASSIFICATION)              0.2159
+(1-#-d fi,WITHOUT_CLASSIFICATION)             0.2158
+(1-SW-Localize,WITHOUT_CLASSIFICATION)        0.2154
+(1-#-appe,WITHOUT_CLASSIFICATION)             0.2152
+(1-#-d fr,IMPLEMENTATION)                     0.2151
+(1-#-. ,IMPLEMENTATION)                       0.2149
+(1-#-ty ,IMPLEMENTATION)                      0.2148
+(1-#- a,IMPLEMENTATION)                       0.2148
+(1-#-r p,WITHOUT_CLASSIFICATION)              0.2148
+(1-#- v,WITHOUT_CLASSIFICATION)               0.2143
+(1-#-or,IMPLEMENTATION)                       0.2143
+(1-#-ot a,WITHOUT_CLASSIFICATION)             0.2142
+(1-#-ow i,WITHOUT_CLASSIFICATION)             0.2142
+(1-SW-Needs,WITHOUT_CLASSIFICATION)           0.2140
+(1-#- le,WITHOUT_CLASSIFICATION)              0.2139
+(1-#-DO s,IMPLEMENTATION)                     0.2138
+(1-#-O s,IMPLEMENTATION)                      0.2137
+(1-#- L,WITHOUT_CLASSIFICATION)               0.2135
+(1-#-on.,IMPLEMENTATION)                      0.2129
+(1-#-fa,WITHOUT_CLASSIFICATION)               0.2128
+(1-#-ds l,WITHOUT_CLASSIFICATION)             0.2128
+(1-#-ee ,WITHOUT_CLASSIFICATION)              0.2128
+(1-SW-localization,WITHOUT_CLASSIFICATION)    0.2127
+(1-#-as,WITHOUT_CLASSIFICATION)               0.2127
+(1-#-: de,IMPLEMENTATION)                     0.2119
+(1-#-is s,IMPLEMENTATION)                     0.2115
+(1-#-dled,IMPLEMENTATION)                     0.2111
+(1-SW-is,WITHOUT_CLASSIFICATION)              0.2110
+(1-#-d t,WITHOUT_CLASSIFICATION)              0.2109
+(1-#- ye,IMPLEMENTATION)                      0.2108
+(1-#-y b,WITHOUT_CLASSIFICATION)              0.2107
+(1-#-orte,WITHOUT_CLASSIFICATION)             0.2101
+(1-#-cou,IMPLEMENTATION)                      0.2099
+(1-#-uby,IMPLEMENTATION)                      0.2099
+(1-#-I,IMPLEMENTATION)                        0.2098
+(1-#-hod:,WITHOUT_CLASSIFICATION)             0.2097
+(1-#-od:,WITHOUT_CLASSIFICATION)              0.2097
+(1-SW-method:,WITHOUT_CLASSIFICATION)         0.2097
+(1-#-(t,IMPLEMENTATION)                       0.2096
+(1-#-er w,IMPLEMENTATION)                     0.2096
+(1-#-lem,IMPLEMENTATION)                      0.2094
+(1-#-an ,IMPLEMENTATION)                      0.2094
+(1-#-f,WITHOUT_CLASSIFICATION)                0.2089
+(1-#-d lo,WITHOUT_CLASSIFICATION)             0.2088
+(1-#-k -,WITHOUT_CLASSIFICATION)              0.2088
+(1-#-k - ,WITHOUT_CLASSIFICATION)             0.2088
+(1-#-use ,IMPLEMENTATION)                     0.2087
+(1-#-ck -,WITHOUT_CLASSIFICATION)             0.2087
+(1-#-ntu,WITHOUT_CLASSIFICATION)              0.2086
+(1-#-? pr,IMPLEMENTATION)                     0.2084
+(1-#-!,WITHOUT_CLASSIFICATION)                0.2084
+(1-#-tar,WITHOUT_CLASSIFICATION)              0.2083
+(1-#-e be,IMPLEMENTATION)                     0.2082
+(1-#-led ,WITHOUT_CLASSIFICATION)             0.2077
+(1-#-",WITHOUT_CLASSIFICATION)                0.2074
+(1-#-oub,WITHOUT_CLASSIFICATION)              0.2074
+(1-#-dou,WITHOUT_CLASSIFICATION)              0.2073
+(1-#-2 co,IMPLEMENTATION)                     0.2070
+(1-#- is ,WITHOUT_CLASSIFICATION)             0.2066
+(1-#-n c,WITHOUT_CLASSIFICATION)              0.2064
+(1-#- yet,IMPLEMENTATION)                     0.2063
+(1-#-: si,WITHOUT_CLASSIFICATION)             0.2063
+(1-#-OK,WITHOUT_CLASSIFICATION)               0.2059
+(1-#-doub,WITHOUT_CLASSIFICATION)             0.2059
+(1-#-yet,IMPLEMENTATION)                      0.2058
+(1-#-L,WITHOUT_CLASSIFICATION)                0.2056
+(1-#-st p,IMPLEMENTATION)                     0.2056
+(1-#- ja,IMPLEMENTATION)                      0.2054
+(1-#- dou,WITHOUT_CLASSIFICATION)             0.2051
+(1-#-va,WITHOUT_CLASSIFICATION)               0.2048
+(1-#-or ,IMPLEMENTATION)                      0.2048
+(1-#-uble,WITHOUT_CLASSIFICATION)             0.2047
+(1-#-call,IMPLEMENTATION)                     0.2047
+(1-#-() h,WITHOUT_CLASSIFICATION)             0.2045
+(1-#-oubl,WITHOUT_CLASSIFICATION)             0.2045
+(1-#-: I,IMPLEMENTATION)                      0.2045
+(1-#-e s,WITHOUT_CLASSIFICATION)              0.2045
+(1-#-y it,WITHOUT_CLASSIFICATION)             0.2043
+(1-#-he l,WITHOUT_CLASSIFICATION)             0.2043
+(1-#-s ,WITHOUT_CLASSIFICATION)               0.2039
+(1-#-tory,WITHOUT_CLASSIFICATION)             0.2036
+(1-#-fini,IMPLEMENTATION)                     0.2036
+(1-#-pla,IMPLEMENTATION)                      0.2034
+(1-#-En,WITHOUT_CLASSIFICATION)               0.2033
+(1-#-entu,WITHOUT_CLASSIFICATION)             0.2032
+(1-#-ntua,WITHOUT_CLASSIFICATION)             0.2032
+(1-#-nd t,IMPLEMENTATION)                     0.2032
+(1-#-g l,IMPLEMENTATION)                      0.2030
+(1-#- ty,IMPLEMENTATION)                      0.2029
+(1-#- typ,IMPLEMENTATION)                     0.2029
+(1-#-dded,WITHOUT_CLASSIFICATION)             0.2029
+(1-#- i18,IMPLEMENTATION)                     0.2025
+

@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Sat Aug 15 13:23:11 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/classified_seq.train ... done [0.3s, 7059 items].
+numDatums: 7059
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=6909.0, IMPLEMENTATION=150.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 9767 [CLASS, 1-SW-back, 1-SW-TODO:, 1-SW-clause, 1-SW-Put, ...]
+..................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/1/classified_seq.test ... done [0.2s, 8669 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+8669 examples in test set
+Cls IMPLEMENTATION: TP=472 FN=179 FP=159 TN=7859; Acc 0.961 P 0.748 R 0.725 F1 0.736
+Cls WITHOUT_CLASSIFICATION: TP=7859 FN=159 FP=179 TN=472; Acc 0.961 P 0.978 R 0.980 F1 0.979
+Accuracy/micro-averaged F1: 0.96101
+Macro-averaged F1: 0.85765

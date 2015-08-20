@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Wed Aug 19 23:27:09 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.train ... done [0.9s, 29065 items].
+numDatums: 29065
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=27952.0, IMPLEMENTATION=1113.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 22271 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-does, 1-SW-material, ...]
+............................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/5/classified_seq.test ... done [0.2s, 7692 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+7692 examples in test set
+Cls IMPLEMENTATION: TP=11 FN=11 FP=57 TN=7613; Acc 0.991 P 0.162 R 0.500 F1 0.244
+Cls WITHOUT_CLASSIFICATION: TP=7613 FN=57 FP=11 TN=11; Acc 0.991 P 0.999 R 0.993 F1 0.996
+Accuracy/micro-averaged F1: 0.99116
+Macro-averaged F1: 0.62000

@@ -1,0 +1,38 @@
+ColumnDataClassifier invoked on Mon Aug 03 19:59:31 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/classified_seq.test
+1.binnedLengths = 10,20,30
+1.minNGramLeng = 1
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/top_features.txt
+displayedColumn = 1
+printClassifierParam = 500
+1.useNGrams = true
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/classified_seq.train
+1.maxNGramLeng = 4
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/classified_seq.train ... done [6.4s, 38426 items].
+numDatums: 38426
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=37330.0, IMPLEMENTATION=1096.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 159577 [CLASS, 1-#-pro, 1-#-ends, 1-#-ally, 1-#-ific, ...]
+..............................................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/6/classified_seq.test ... done [0.5s, 2559 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+2559 examples in test set
+Cls IMPLEMENTATION: TP=36 FN=28 FP=5 TN=2490; Acc 0.987 P 0.878 R 0.562 F1 0.686
+Cls WITHOUT_CLASSIFICATION: TP=2490 FN=5 FP=28 TN=36; Acc 0.987 P 0.989 R 0.998 F1 0.993
+Accuracy/micro-averaged F1: 0.98710
+Macro-averaged F1: 0.83957

@@ -1,0 +1,10 @@
+(1-SW-hack,DESIGN)                                                4.9536
+(1-SW-workaround,DESIGN)                                          4.8585
+(1-SW-yuck!,DESIGN)                                               4.7122
+(1-SW-kludge,DESIGN)                                              3.0526
+(1-SW-stupidity,DESIGN)                                           4.6330
+(1-SW-needed?,DESIGN)                                             4.2578
+(1-SW-Unused?,DESIGN)                                             4.2550
+(1-SW-columns??,DESIGN)                                           4.5500
+(1-SW-FIXME:,DESIGN)                                              3.8658
+(1-SW-wtf?,DESIGN)                                                3.7930

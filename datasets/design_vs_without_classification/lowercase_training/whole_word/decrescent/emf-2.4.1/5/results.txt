@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Wed Aug 19 23:41:47 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/classified_seq.train ... done [0.7s, 31387 items].
+numDatums: 31387
+numDatumsPerLabel: {DESIGN=2024.0, WITHOUT_CLASSIFICATION=29363.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 23824 [CLASS, 1-SW-java.lang.object#hashcode(), 1-Len-31-Inf, 1-SW-@see, 1-SW-copy?, ...]
+.......................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/emf-2.4.1/5/classified_seq.test ... done [0.1s, 4349 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4349 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4257 FN=14 FP=55 TN=23; Acc 0.984 P 0.987 R 0.997 F1 0.992
+Cls DESIGN: TP=23 FN=55 FP=14 TN=4257; Acc 0.984 P 0.622 R 0.295 F1 0.400
+Accuracy/micro-averaged F1: 0.98413
+Macro-averaged F1: 0.69598

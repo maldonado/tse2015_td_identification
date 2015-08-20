@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Wed Aug 19 23:29:17 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.train ... done [0.3s, 8666 items].
+numDatums: 8666
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=8015.0, IMPLEMENTATION=651.0}
+numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
+numFeatures (Phi(X) types): 7064 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-does, 1-SW-material, ...]
+.........................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/1/classified_seq.test ... done [0.1s, 2559 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+2559 examples in test set
+Cls IMPLEMENTATION: TP=28 FN=36 FP=15 TN=2480; Acc 0.980 P 0.651 R 0.438 F1 0.523
+Cls WITHOUT_CLASSIFICATION: TP=2480 FN=15 FP=36 TN=28; Acc 0.980 P 0.986 R 0.994 F1 0.990
+Accuracy/micro-averaged F1: 0.98007
+Macro-averaged F1: 0.75659

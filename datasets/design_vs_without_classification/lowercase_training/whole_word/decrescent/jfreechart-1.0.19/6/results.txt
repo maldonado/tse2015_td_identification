@@ -1,0 +1,36 @@
+ColumnDataClassifier invoked on Wed Aug 19 23:43:41 EDT 2015 with arguments:
+   -prop /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
+useQN = true
+useClassFeature = true
+testFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/classified_seq.test
+1.binnedLengths = 10,20,30
+displayAllAnswers = true
+intern = true
+1.splitWordsRegexp = \s
+goldAnswerColumn = 0
+printTo = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/top_features.txt
+displayedColumn = 1
+printClassifierParam = 60000
+1.useNGrams = false
+QNsize = 15
+sigma = 3
+tolerance = 1e-4
+trainFile = /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/classified_seq.train
+printClassifier = HighWeight
+1.useSplitWords = true
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/classified_seq.train ... done [0.8s, 41647 items].
+numDatums: 41647
+numDatumsPerLabel: {DESIGN=2220.0, WITHOUT_CLASSIFICATION=39427.0}
+numLabels: 2 [WITHOUT_CLASSIFICATION, DESIGN]
+numFeatures (Phi(X) types): 27770 [CLASS, 1-SW-java.lang.object#hashcode(), 1-Len-31-Inf, 1-SW-@see, 1-SW-copy?, ...]
+..........................................................
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Built classifier described in file /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/top_features.txt
+Reading dataset from /Users/evermal/git/npl_tools/datasets/design_vs_without_classification/decrescent/jfreechart-1.0.19/6/classified_seq.test ... done [0.1s, 4382 items].
+Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
+
+4382 examples in test set
+Cls WITHOUT_CLASSIFICATION: TP=4153 FN=45 FP=112 TN=72; Acc 0.964 P 0.974 R 0.989 F1 0.981
+Cls DESIGN: TP=72 FN=112 FP=45 TN=4153; Acc 0.964 P 0.615 R 0.391 F1 0.478
+Accuracy/micro-averaged F1: 0.96417
+Macro-averaged F1: 0.72993
