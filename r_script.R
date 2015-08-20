@@ -1,8 +1,13 @@
 
 # generate figure to compare precision, recall and f1measure of all projects
-mydata <- data.frame(Ant=c(70.89,11.94,9.7,7.46,0), Jmeter=c(84.26,5.86,5.86,3.2,0.8), ArgoUml=c(48.45,39.38,7.68,2.66,1.81), JFreeChart=c(84.01,11.41,4.10,0.45,0), Columba=c(42.71,45.71,4.40,2.03,5.42))
-barplot(as.matrix(mydata),  ylab="Percentage",  ylim=c(0, 100), beside=TRUE, col=1, density=c(25,20,15,10,5), angle = c(15, 45, 100, 120, 160))
-legend(23, 90, c("Design debt", "Requirement debt", "Defect debt","Test debt", "Documentation debt"), cex=0.8, fill=terrain.colors(5))
+mydata <- data.frame(Ant= c(0.597,0.389,0.471,0.55 ,0.082,0.142),Jmeter= c(0.848,0.601,0.704,0.733,0.058,0.108),ArgoUML= c(0.769,0.875,0.819,0.790,0.020,0.040),Columba= c(0.862,0.444,0.586,0.833,0.033,0.065),EMF= c(0.521,0.321,0.397,0.5  ,0.048,0.087),Hibernate= c(0.882,0.569,0.692,0.909,0.063,0.118),JEdit= c( 0.84,0.321,0.465,0.869,0.156,0.264),JFreeChart= c(0.689,0.397,0.503,0.833,0.022,0.044),JRuby= c(0.824,0.767,0.795,0.764,0.041,0.078),SQuirrel= c(0.598,0.498,0.543,0.5  ,0.023,0.044))
+barplot(as.matrix(mydata),  ylab="Percentage",  ylim=c(0, 1), beside=TRUE, col= terrain.colors(6))
+legend("topright", c("Precision", "Recall", "F1","Baseline P", "Baseline R", "Baseline F1"), cex=0.8, fill=terrain.colors(6))
+
+# generate figure to compare precision, recall and f1measure of all projects
+mydata <- data.frame(Ant= c(0.597,0.389,0.471,0.55 ,0.082,0.142),Jmeter= c(0.848,0.601,0.704,0.733,0.058,0.108),ArgoUML= c(0.769,0.875,0.819,0.790,0.020,0.040),Columba= c(0.862,0.444,0.586,0.833,0.033,0.065),EMF= c(0.521,0.321,0.397,0.5  ,0.048,0.087),Hibernate= c(0.882,0.569,0.692,0.909,0.063,0.118),JEdit= c( 0.84,0.321,0.465,0.869,0.156,0.264),JFreeChart= c(0.689,0.397,0.503,0.833,0.022,0.044),JRuby= c(0.824,0.767,0.795,0.764,0.041,0.078),SQuirrel= c(0.598,0.498,0.543,0.5  ,0.023,0.044))
+barplot(as.matrix(mydata),  ylab="Percentage",  ylim=c(0, 1), beside=TRUE, col= terrain.colors(6))
+legend("topright", c("Precision", "Recall", "F1","Baseline P", "Baseline R", "Baseline F1"), cex=0.8, fill=terrain.colors(6))
 
 
 # generate comparison between td classified and random measured
@@ -32,16 +37,16 @@ postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classif
 library(RPostgreSQL)
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%ant%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jmeter%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%argo%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%columba%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%emf%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%hibernate%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jEdit%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jfreechart%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jruby%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
-# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%sql12%' and category = 'DESIGN' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%ant%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jmeter%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%argo%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%columba%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%emf%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%hibernate%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jEdit%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jfreechart%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%jruby%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1 from classifier_results where projectname like '%sql12%' and category = 'IMPLEMENTATION' and trainingorder like 'decrescent%' order by 1,2")
 data1 <- fetch(postgresql, n=-1)
 dim(data1)
 dbHasCompleted(postgresql)
