@@ -8,25 +8,28 @@ from subprocess import Popen, PIPE
 
 password = sys.argv[1]
 
-execution_options = {'DEFECT': {'DEFECT', 'WITHOUT_CLASSIFICATION'}, 
+execution_options = {
+                     # 'DEFECT': {'DEFECT', 'WITHOUT_CLASSIFICATION'}, 
                      'DESIGN': {'DESIGN', 'WITHOUT_CLASSIFICATION'}, 
-                     'DOCUMENTATION': {'DOCUMENTATION', 'WITHOUT_CLASSIFICATION'}, 
-                     'IMPLEMENTATION': {'IMPLEMENTATION', 'WITHOUT_CLASSIFICATION'}, 
-                     'TEST': {'TEST', 'WITHOUT_CLASSIFICATION'}
+                     # 'DOCUMENTATION': {'DOCUMENTATION', 'WITHOUT_CLASSIFICATION'}, 
+                     'IMPLEMENTATION': {'IMPLEMENTATION', 'WITHOUT_CLASSIFICATION'} 
+                     # 'TEST': {'TEST', 'WITHOUT_CLASSIFICATION'}
 }
 
-execution_types = {'DEFECT': {'DEFECT'}, 
+execution_types = {  
+                     # 'DEFECT': {'DEFECT'}, 
                      'DESIGN': {'DESIGN'}, 
-                     'DOCUMENTATION': {'DOCUMENTATION'}, 
-                     'IMPLEMENTATION': {'IMPLEMENTATION'}, 
-                     'TEST': {'TEST'}
+                     # 'DOCUMENTATION': {'DOCUMENTATION'}, 
+                     'IMPLEMENTATION': {'IMPLEMENTATION'}
+                     # 'TEST': {'TEST'}
 }
 
-dataset_directories = {'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/', 
+dataset_directories = {
+                       # 'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/', 
                        'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/',
-                       'DOCUMENTATION':'/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/',
-                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/',
-                       'TEST':'/Users/evermal/git/npl_tools/datasets/test_vs_without_classification/'
+                       # 'DOCUMENTATION':'/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/',
+                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/'
+                       # 'TEST':'/Users/evermal/git/npl_tools/datasets/test_vs_without_classification/'
 }
 
 

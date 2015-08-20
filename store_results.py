@@ -3,28 +3,29 @@
 import os
 import sys
 import psycopg2
-
 import re
-
 
 password = sys.argv[1]
 
-execution_types = {'DEFECT': {'DEFECT'}, 
+execution_types = {
+                     # 'DEFECT': {'DEFECT'}, 
                      'DESIGN': {'DESIGN'}, 
-                     'DOCUMENTATION': {'DOCUMENTATION'}, 
-                     'IMPLEMENTATION': {'IMPLEMENTATION'}, 
-                     'TEST': {'TEST'}
+                     'IMPLEMENTATION': {'IMPLEMENTATION'}
+                     
 }
 
-dataset_directories = {'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/new_training_data_set/', 
-                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/new_training_data_set/',
-                       'DOCUMENTATION':'/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/new_training_data_set/',
-                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/new_training_data_set/',
-                       'TEST':'/Users/evermal/git/npl_tools/datasets/test_vs_without_classification/new_training_data_set/'
+dataset_directories = {
+                       # 'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/capitalized_training/whole_word/', 
+                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/lowercase_training/whole_word/',
+                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/lowercase_training/whole_word/'
 }
-
 
 try:
+    # fill this information before execution
+    order = "decrescent/"
+    classification_id = '3'
+    classification_description = 'classification with whole words as features, training dataset without capital letters and pontuation'
+
     # getting training dataset numbers
     coments_in_training_data_regex = "(?:numDatums:\s)(\d*)?"
     without_classification_regex = "(?:WITHOUT\_CLASSIFICATION=)(\d*)?"
@@ -40,7 +41,7 @@ try:
     macro_averaged_f1_regex = "(?:Macro.*:\s)(\d*\.?\d+)"
 
     connection = None
-    order = "decrescent/"
+    
     # connect to the database 
     connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= password)
     cursor = connection.cursor()
@@ -107,8 +108,7 @@ try:
                     cursor.execute("select count(*) from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname = '"+test_project+"' and a.classification in ('WITHOUT_CLASSIFICATION')")
                     project_without_classification_comments = cursor.fetchone()[0]
 
-
-                    cursor.execute("insert into classifier_results (projectName,trainingOrder,category,projectsTrainedWith,totalTrainingComments,withoutClassificationCommentsTrain,classifiedCommentsTrain,totalTestComments,withoutClassificationCommentsTest,classifiedCommentsTest,classifiedTP, classifiedFN,classifiedFP,classifiedTN, classifiedAccuracy,classifiedPrecision,classifiedRecall,classifiedF1,classifiedRandomPrecision,classifiedRandomRecall,classifiedRandomF1,withoutClassificationTP, withoutClassificationFN,withoutClassificationFP,withoutClassificationTN, withoutClassificationAccuracy,withoutClassificationPrecision,withoutClassificationRecall,withoutClassificationF1,withoutClassificatioRandomPrecision,withoutClassificatioRandomRecall,withoutClassificatioRandomF1,microAveragedF1,macroAveragedF1) values ('"+test_project+"','"+order+"','"+execution_td_type+"','"+str(current_folder)+"','"+str(total_training_comments)+"','"+str(without_classification_comments)+"','"+str(other_categories_comments)+"','"+str(number_of_comments_test)+"','"+str(project_without_classification_comments)+"','"+str(project_classified_comments)+"','"+str(other_categories_tp)+"','"+str(other_categories_fn)+"','"+str(other_categories_fp)+"','"+str(other_categories_tn)+"','"+str(other_categories_acc)+"','"+str(other_categories_precision)+"','"+str(other_categories_recall)+"','"+str(other_categories_f1)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(without_classification_tp)+"','"+str(without_classification_fn)+"','"+str(without_classification_fp)+"','"+str(without_classification_tn)+"','"+str(without_classification_acc)+"','"+str(without_classification_precision)+"','"+str(without_classification_recall)+"','"+str(without_classification_f1)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(micro_averaged_f1)+"','"+str(macro_averaged_f1)+"')")
+                    cursor.execute("insert into classifier_results (projectName,classificationid,classificationDescription,category,projectsTrainedWith,totalTrainingComments,withoutClassificationCommentsTrain,classifiedCommentsTrain,totalTestComments,withoutClassificationCommentsTest,classifiedCommentsTest,classifiedTP, classifiedFN,classifiedFP,classifiedTN, classifiedAccuracy,classifiedPrecision,classifiedRecall,classifiedF1,classifiedRandomPrecision,classifiedRandomRecall,classifiedRandomF1,withoutClassificationTP, withoutClassificationFN,withoutClassificationFP,withoutClassificationTN, withoutClassificationAccuracy,withoutClassificationPrecision,withoutClassificationRecall,withoutClassificationF1,withoutClassificatioRandomPrecision,withoutClassificatioRandomRecall,withoutClassificatioRandomF1,microAveragedF1,macroAveragedF1, baselineprecision, baselinerecall, baselinef1) values ('"+test_project+"','"+classification_id+"','"+classification_description+"','"+execution_td_type+"','"+str(current_folder)+"','"+str(total_training_comments)+"','"+str(without_classification_comments)+"','"+str(other_categories_comments)+"','"+str(number_of_comments_test)+"','"+str(project_without_classification_comments)+"','"+str(project_classified_comments)+"','"+str(other_categories_tp)+"','"+str(other_categories_fn)+"','"+str(other_categories_fp)+"','"+str(other_categories_tn)+"','"+str(other_categories_acc)+"','"+str(other_categories_precision)+"','"+str(other_categories_recall)+"','"+str(other_categories_f1)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(without_classification_tp)+"','"+str(without_classification_fn)+"','"+str(without_classification_fp)+"','"+str(without_classification_tn)+"','"+str(without_classification_acc)+"','"+str(without_classification_precision)+"','"+str(without_classification_recall)+"','"+str(without_classification_f1)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(micro_averaged_f1)+"','"+str(macro_averaged_f1)+"','"+str(0.0)+"','"+str(0.0)+"','"+str(0.0)+"')")
                     print "result inserted"
 except Exception, e:
     connection.rollback()
