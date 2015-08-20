@@ -34,7 +34,7 @@ dataset_directories = {'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs
 def write_classifier_file(file_name, result):
     with open (file_name,'a') as classified_seq:
         for line in result:
-            sentence = " ".join(line[1].replace('\n','').replace('\r\n', '').replace('\r', '').replace('\t', '').replace('//','').replace('/**','').replace('*/','').replace('/*','').replace('*','').split())
+            sentence = " ".join(line[1].lower().replace('\n','').replace('\r\n', '').replace('\r', '').replace('\t', '').replace('//','').replace('/**','').replace('*/','').replace('/*','').replace('*','').replace(',','').replace(':','').replace('...','').replace(';','').split())
             if sentence :
                 classified_seq.write("{0}\t{1}\n".format(line[0], sentence))
         classified_seq.close()
