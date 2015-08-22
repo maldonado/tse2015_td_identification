@@ -20,17 +20,3 @@ Our work is different from the work that uses code smells to detect design techn
 Other work build tools and techniques to facilitate the detection of code smells. Moha \textit{et al.} \cite{Moha2010TSE} proposed DECOR, a tool that incorporates a set of techniques to identify code smells in the source code. They used a domain specific language (DSL) to specify code smell detection rules. Their approach automatically generates detection algorithms based on the code smell specifications. They evaluated their techniques in 11 open-source projects and found that DECOR can effectively detect code smells, with an average precision of 60.5\% and recall of 100\%. Palomba \textit{et al.} \cite{Palomba2013} proposed an approach to identify code smells based on the evolution of the source code. In order to do that they mined the history change from the source code repository and then they searched for bad smells. They show that using their approach (HIST), they are able to identify 5 different bad smells. Tsantalis \textit{et al.} \cite{Tsantalis2009TSE} proposed a methodology that identified Feature Envy bad smells and evaluated the refactoring to remove the bad smell.
 
 Our work complements the prior work on code smell detection, since we propose the use of code comments to detect \SATD. In particular, we propose 176 comment patterns to identify \SATD. Analyzing the source code comments using our approach in addition to the source code analysis techniques already employed in prior work can lead to optimal results, since our analysis showed that our approach yields results that are complementary to what code smell approaches detects.
-
-\section{Threats to validity}
-\label{sec:threats_to_validity}
-
-
-\noindent\textbf{Internal validity} consider the relationship between theory and observation, in case the measured variables do not measure the actual factors. The comment patterns derived by us heavily relied on manual analysis of the code comments from Apache Ant. Like any human activity, our manual classification is subject to personal bias. To reduce this bias, any comment that was questionable was discussed between the three authors of the paper. When performing our study, we used well-commented Java projects. Since our technique heavily depends on code comments, our results and performance measures may be impacted by the quantity and quality of comments in a software project.  
-
-When we investigate if there are refactoring recommendations to address the detected \SATD, we essentially examine if the methods in which design debt is found participate in any of the refactoring opportunities suggested by JDeodorant.
-The presence of a refactoring opportunity for a given method, may not necessarily address the same kind of design debt described in the comment. In the future, we plan to investigate in a more fine-grained level the applicability of the suggested refactorings to \SATD.
-
-When calculating the precision and recall values, we needed to manually examine the comments and label them as related to \SATD or not. Any errors in our labeling may impact the precision and recall values reported.
-
-
-\noindent \textbf{External validity} consider the generalization of our findings. All of our findings were derived from comments in open source projects. To minimize external validity, we chose open source projects from different domains. That said, our results may not generalize to other open source or commercial projects. In particular, our results may not generalize to projects that have a low number or no comments.
