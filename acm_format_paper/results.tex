@@ -124,14 +124,20 @@ In spite of the fact that features with higher weights will have more impact dur
 \noindent \textbf{Motivation:} Answering this research question will allow us to better estimate effort for future research in the area. More specifically, it will be beneficial to 1) make this kind of analysis more efficient, so manual classification of comments, that is time consuming and difficult by nature, can be kept to a minimum. 2) Helping researchers interested in applying the same technique to analyze \SATD in domains not covered in our study, another programming languages than Java, or even comments written in languages other than English. 
 
 \vspace{1mm}
-\noindent \textbf{Approach:} To be able to answer this question we executed the classification process several times with an increasing training dataset while collecting the results to analyze the changes between each iteration. 
+\noindent \textbf{Approach:} We executed the classification process several times with an increasing training dataset while collecting the results to analyze the changes between each iteration. 
 
-We first select a project that will be used to create the test dataset and we keep it separated from the other nine projects. Second, we take the comments of one of the nine remainder projects to create the training dataset. Third, we run the classification process and collect the results. Fourth, we incrementally add the comments of a second project to the training dataset and repeat the classification process collecting the results. We cycle trough this steps until we had added all nine projects comments to the training dataset. 
+We first select a project that will be used to create the test dataset and we keep it separated from the other nine projects. Second, we take the comments of one of the nine remainder projects to create the training dataset. Third, we run the classification process and collect the results. Fourth, we incrementally add the comments of another project to the training dataset and repeat the classification process collecting the results. We cycle trough this steps until we had added all nine projects comments to the training dataset. 
 
-To be throughout in this analysis, we apply this approach for each one of our ten studied projects classifying design and requirement \SATD comments. We also experimented with the order that the comments were added to the training dataset. We ranked the projects that contained more \SATD of the specific type being classified so that they can be added first to training dataset. Then, we repeat the experiment adding first the projects which has less \SATD of the specific type being classified.       
+We apply this approach for each one of our ten studied projects classifying design and requirement \SATD comments. We ranked the projects that contained more \SATD of the specific type being classified so that they can be added first to training dataset. 
+
+Intuitively we expect that the performance of the classifier would improve with each iteration as more comments are being added to the dataset. However, we find that this is not what always happen, and that the addition of more comments can decrease the performance of the classifier in given scenarios.
+
+Due to that, we determined which iteration has the highest performance for each project. We called this iteration as the maximum F1 measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1 measure value to calculate the percentage of the maximum F1 measure it represents.
+
+Lastly, for each type of technical debt classified we determined which is the iteration that is the most significant across all projects by calculating the average of the percentage of the maximum F1 measure.
 
 \vspace{1mm}
-\noindent \textbf{Results:} While classifying design \SATD comments we find that there is significant improvement in the F1 measure during the first 3 iterations. After that, the classification will keep improving in a more stead pace. Figure \ref{fig:design_jfreechart_result} and Figure \ref{fig:design_jruby_result} shows the evolution of the F1 measure over the iterations for JFreeChart and JRuby. Each iteration of the classification is represented by a triangle in the figure, and the square stands for the random F1 measure. 
+\noindent \textbf{Results:} We find that the F1 measure improves significantly in the firsts iterations and, after that, the improvement rate keep a more stead pace. Figures \ref{fig:design_jfreechart_result}, \ref{fig:design_jruby_result} shows this behavior for design \SATD. Similarly, Figure \ref{fig:implementation_argo_result} shows the evolution of the F1 measure over the iterations for requirement \SATD in ArgoUml. 
 
 \begin{figure}[thb!]
    \centering
@@ -149,9 +155,47 @@ To be throughout in this analysis, we apply this approach for each one of our te
   \label{fig:design_jruby_result}
 \end{figure}
 
+\begin{figure}[thb!]
+  \centering
+  \includegraphics[width=0.48\textwidth]{figures/implementation_argo.pdf}
+  \vspace{-3mm}
+  \caption{ArgoUml Requirement Debt classification}
+  \label{fig:implementation_argo_result}
+\end{figure}
+
 JFreeChart has F1 measure of 0.237 during the first iteration, 0.477 in the third iteration and 0.503 in the ninth iteration which was the highest F1 measure achieved. The improvement in the F1 measure between the first and third iteration is greater than the improvement between the third and ninth iteration. In the third iteration the classifier was trained with 59\% of the comments that where used in the ninth iteration. A reduction of 41\% of the necessary training data to achieve almost the same result in terms of F1 measure. 
 
-Similarly, JRuby has a F1 measure value of 0.748 in the third iteration and 0.795 in the ninth iteration which is the maximum F1 measure achieved for the project. The F1 measure achieved in the third iteration represents 94\% of the maximum F1 measure achieved in the ninth iteration, and this percentage was reached using 1,472 comments whereas the maximum F1 measure used 2,360 comments in the training dataset. Therefore, for JRuby we could achieve 94\% of the maximum result using only 62\% of the comments.
+
+In the same way, JRuby has a F1 measure value of 0.748 in the third iteration and 0.795 in the ninth iteration which is the maximum F1 measure achieved for the project. The F1 measure achieved in the third iteration represents 94\% of the maximum F1 measure achieved in the ninth iteration, and this percentage was reached using 1,472 comments whereas the maximum F1 measure used 2,360 comments in the training dataset. Therefore, for JRuby we could achieve 94\% of the maximum result using only 62\% of the comments.
+
+parei aqui ; 
+
+however, we see that using the whole data set can be misleading ... 
+as melhores iteration nao sao as ultimas 
+em media elas usam menos commenatarios e alcancao uma boa media 
+falar da relacao de comentatios e apresentar a tabela 
+respoder na conclusion box que pode se ter bons resultados com x commentarios de design and y de requirement. 
+
+% start a discussion session maybe?
+During the execution of the experiment we notice that the classification can vary accordingly with the project being classified and the data used as test. We also intuitively know that developers from different projects express them selfs differently. These characteristics can be observed during the iterative classification where the addition of more comments not necessarily implies in a improvement on the F1 measure.
+
+One of the reasons for this is that the weight of features is given trough empirical probability, and consequently features that appears with more frequency will have a higher weight. Although this is an effective process, it can be misleading when classifying comments that has different context. With smaller datasets such as the training data for requirement \SATD, the addition of comments that does not represent the way that developers write comments in the classified project will actually decrease the F1 measure performance. 
+
+
+
+
+Each iteration of the classification is represented by a triangle in the figure, and the square stands for the random F1 measure. 
+
+Table \ref{tbl:design_iteration_performance} present the percentage of the maximum F1 measure for each one 
+
+We compare each iteration across all the projects and calculate the average of the percentage of the maximum F1 measure each iteration had.
+
+
+
+
+
+
+
 
 While classifying Requirement \SATD comments we analyze the highest percentage of maximum F1 measure for each project. 
 
@@ -161,9 +205,9 @@ We also find that the first iteration has a hight average of percentage of the m
 to classify requirement \SATD comments.
 
 % start a discussion session maybe?
-During the execution of the experiment we notice that the classification can vary accordingly with the project being classified and the data used as test. We also intuitively know that developers from different projects express them selfs differently. These characteristics can be observed during the iterative classification where the addition of more comments not necessarily implies in a improvement on the F1 measure.
+% During the execution of the experiment we notice that the classification can vary accordingly with the project being classified and the data used as test. We also intuitively know that developers from different projects express them selfs differently. These characteristics can be observed during the iterative classification where the addition of more comments not necessarily implies in a improvement on the F1 measure.
 
-One of the reasons for this is that the weight of features is given trough empirical probability, and consequently features that appears with more frequency will have a higher weight. Although this is an effective process, it can be misleading when classifying comments that has different context. With smaller datasets such as the training data for requirement \SATD, the addition of comments that does not represent the way that developers write comments in the classified project will actually decrease the F1 measure performance. 
+% One of the reasons for this is that the weight of features is given trough empirical probability, and consequently features that appears with more frequency will have a higher weight. Although this is an effective process, it can be misleading when classifying comments that has different context. With smaller datasets such as the training data for requirement \SATD, the addition of comments that does not represent the way that developers write comments in the classified project will actually decrease the F1 measure performance. 
 %
 
 Table \ref{tbl:design_iteration_performance} summarizes how much the F1 measure of each iteration represents of the maximum F1 measure in average.  
