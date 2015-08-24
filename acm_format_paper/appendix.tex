@@ -10,26 +10,27 @@
 
 \begin{table*}[!hbt]
     \begin{center}
-        \caption{Classification results vs Baseline for Design Debt}
+        \caption{Classification results vs Baseline vs Random for Design Debt}
         \label{tbl:classifier_results_vs_baseline_design}
-        \begin{tabular}{l| c c c c c c}
+        \begin{tabular}{l| c c c c c c c c c}
         \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Baseline\\P} & \thead{Baseline\\R} & \thead{Baseline\\F1} \\
+        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Baseline\\P} & \thead{Baseline\\R} & \thead{Baseline\\F1} & \thead{Rdn\\P} & \thead{Rdn\\R} & \thead{Rdn\\F1} \\
         \midrule
-        Apache Ant    &               0.597 &            0.389 &        0.471     & 0.55           & 0.082     & 0.142  \\
-        Apache Jmeter &               0.848 &            0.601 &        0.704     & 0.733          & 0.058     & 0.108  \\
-        ArgoUML       &               0.769 &            0.875 &        0.819     & 0.790          & 0.020     & 0.040  \\
-        Columba       &               0.862 &            0.444 &        0.586     & 0.833          & 0.033     & 0.065  \\
-        EMF           &               0.521 &            0.321 &        0.397     & 0.5            & 0.048     & 0.087  \\
-        Hibernate     &               0.882 &            0.569 &        0.692     & 0.909          & 0.063     & 0.118  \\
-        JEdit         &                0.84 &            0.321 &        0.465     & 0.869          & 0.156     & 0.264  \\
-        JFreeChart    &               0.689 &            0.397 &        0.503     & 0.833          & 0.022     & 0.044  \\
-        JRuby         &               0.824 &            0.767 &        0.795     & 0.764          & 0.041     & 0.078  \\
-        SQuirrel      &               0.598 &            0.498 &        0.543     & 0.5            & 0.023     & 0.044  \\
+        Apache Ant    &  0.554   &  0.484  &  0.517  & 0.55    & 0.082  & 0.142  &  0.023 &  0.5 &  0.045  \\
+        Apache Jmeter &  0.808   &  0.668  &  0.731  & 0.733   & 0.058  & 0.108  &  0.04  &  0.5 &  0.075  \\
+        ArgoUML       &  0.788   &  0.843  &  0.814  & 0.790   & 0.020  & 0.040  &  0.089 &  0.5 &  0.151  \\
+        Columba       &  0.792   &  0.484  &  0.601  & 0.833   & 0.033  & 0.065  &  0.020 &  0.5 &  0.038  \\
+        EMF           &  0.574   &  0.397  &  0.470  & 0.5     & 0.048  & 0.087  &  0.018 &  0.5 &  0.035  \\
+        Hibernate     &  0.877   &  0.645  &  0.744  & 0.909   & 0.063  & 0.118  &  0.136 &  0.5 &  0.214  \\
+        JEdit         &  0.779   &  0.378  &  0.509  & 0.869   & 0.156  & 0.264  &  0.019 &  0.5 &  0.037  \\
+        JFreeChart    &  0.646   &  0.397  &  0.492  & 0.833   & 0.022  & 0.044  &  0.043 &  0.5 &  0.080  \\
+        JRuby         &  0.798   &  0.770  &  0.783  & 0.764   & 0.041  & 0.078  &  0.075 &  0.5 &  0.131  \\
+        SQuirrel      &  0.544   &  0.536  &  0.540  & 0.5     & 0.023  & 0.044  &  0.029 &  0.5 &  0.055  \\
         \bottomrule
         \end{tabular}
     \end{center}    
 \end{table*}
+
 
 % \begin{figure*}[thb!]
 %   \centering
@@ -40,97 +41,26 @@
 
 \begin{table*}[!hbt]
     \begin{center}
-        \caption{Classification results vs Baseline for Requirement Debt}
+        \caption{Classification results vs Baseline vs Random for Requirement Debt}
         \label{tbl:classifier_results_vs_baseline_requirement}
-        \begin{tabular}{l| c c c c c c}
+        \begin{tabular}{l| c c c c c c c c c}
         \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Baseline\\P} & \thead{Baseline\\R} & \thead{Baseline\\F1} \\
+        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Baseline\\P} & \thead{Baseline\\R} & \thead{Baseline\\F1} & \thead{Rdn\\P} & \thead{Rdn\\R} & \thead{Rdn\\F1} \\
         \midrule
-        Apache Ant    &                  0.600 &            0.375 &        0.462 &      0.55           & 0.082     & 0.142  \\
-        Apache Jmeter &                  0.324 &            0.500 &        0.393 &      0.733          & 0.058     & 0.108  \\
-        ArgoUML       &                  0.748 &            0.734 &        0.741 &      0.790          & 0.020     & 0.040  \\
-        Columba       &                  0.908 &            0.963 &        0.935 &      0.833          & 0.033     & 0.065  \\
-        EMF           &                  1.000 &            0.062 &        0.118 &      0.5            & 0.048     & 0.087  \\
-        Hibernate     &                  0.717 &            0.594 &        0.650 &      0.909          & 0.063     & 0.118  \\
-        JEdit         &                  0.167 &            0.071 &        0.100 &      0.869          & 0.156     & 0.264  \\
-        JFreeChart    &                  0.377 &            0.800 &        0.513 &      0.833          & 0.022     & 0.044  \\
-        JRuby         &                  0.651 &            0.360 &        0.463 &      0.764          & 0.041     & 0.078  \\
-        SQuirrel      &                  0.922 &            0.793 &        0.853 &      0.5            & 0.023     & 0.044  \\
+        Apache Ant    & 1.000 &  0.974 &  0.987 & 0.55  & 0.082 & 0.142  & 0.004 &0.5 & 0.008  \\
+        Apache Jmeter & 0.167 &  0.545 &  0.255 & 0.733 & 0.058 & 0.108  & 0.003 &0.5 & 0.005  \\
+        ArgoUML       & 0.802 &  0.722 &  0.760 & 0.790 & 0.020 & 0.040  & 0.071 &0.5 & 0.125  \\
+        Columba       & 0.914 &  0.955 &  0.934 & 0.833 & 0.033 & 0.065  & 0.021 &0.5 &  0.04  \\
+        EMF           & 0.800 &  0.250 &  0.381 & 0.5   & 0.048 & 0.087  & 0.004 &0.5 & 0.007  \\
+        Hibernate     & 0.610 &  0.391 &  0.476 & 0.909 & 0.063 & 0.118  & 0.022 &0.5 & 0.042  \\
+        JEdit         & 0.125 &  0.071 &  0.091 & 0.869 & 0.156 & 0.264  & 0.001 &0.5 & 0.003  \\
+        JFreeChart    & 0.373 &  0.760 &  0.500 & 0.833 & 0.022 & 0.044  & 0.006 &0.5 & 0.011  \\
+        JRuby         & 0.709 &  0.342 &  0.462 & 0.764 & 0.041 & 0.078  & 0.024 &0.5 & 0.045  \\
+        SQuirrel      & 0.913 &  0.840 &  0.875 & 0.5   & 0.023 & 0.044  & 0.021 &0.5 &  0.04  \\
         \bottomrule
         \end{tabular}
     \end{center}    
 \end{table*}
-
-
-
-\begin{table}[!hbt]
-    \begin{center}
-        \caption{Classification results for Design Debt}
-        \label{tbl:classifier_results_design}
-        \begin{tabular}{l| c c c c c c}
-        \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
-        \midrule
-        Apache Ant    &               0.597 &            0.389 &        0.471 &                     0.023 &                    0.5 &              0.045 \\
-        Apache Jmeter &               0.848 &            0.601 &        0.704 &                     0.04  &                    0.5 &              0.075 \\
-        ArgoUML       &               0.769 &            0.875 &        0.819 &                     0.089 &                    0.5 &              0.151 \\
-        Columba       &               0.862 &            0.444 &        0.586 &                     0.020 &                    0.5 &              0.038 \\
-        EMF           &               0.521 &            0.321 &        0.397 &                     0.018 &                    0.5 &              0.035 \\
-        Hibernate     &               0.882 &            0.569 &        0.692 &                     0.136 &                    0.5 &              0.214 \\
-        JEdit         &                0.84 &            0.321 &        0.465 &                     0.019 &                    0.5 &              0.037 \\
-        JFreeChart    &               0.689 &            0.397 &        0.503 &                     0.043 &                    0.5 &              0.080 \\
-        JRuby         &               0.824 &            0.767 &        0.795 &                     0.075 &                    0.5 &              0.131 \\
-        SQuirrel      &               0.598 &            0.498 &        0.543 &                     0.029 &                    0.5 &              0.055 \\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
-
-\begin{table}[!hbt]
-    \begin{center}
-        \caption{Classification results for Implementation Debt}
-        \label{tbl:classifier_results_implementation}
-        \begin{tabular}{l| c c c c c c}
-        \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
-        \midrule
-        Apache Ant     &               0.600 &            0.375 &        0.462 &                     0.004 &                    0.5 &              0.008 \\
-        Apache Jmeter  &               0.324 &            0.500 &        0.393 &                     0.003 &                    0.5 &              0.005 \\
-        ArgoUML        &               0.748 &            0.734 &        0.741 &                     0.071 &                    0.5 &              0.125 \\
-        Columba        &               0.908 &            0.963 &        0.935 &                     0.021 &                    0.5 &               0.04 \\
-        EMF            &               1.000 &            0.062 &        0.118 &                     0.004 &                    0.5 &              0.007 \\
-        Hibernate      &               0.717 &            0.594 &        0.650 &                     0.022 &                    0.5 &              0.042 \\
-        JEdit          &               0.167 &            0.071 &        0.100 &                     0.001 &                    0.5 &              0.003 \\
-        JFreeChart     &               0.377 &            0.800 &        0.513 &                     0.006 &                    0.5 &              0.011 \\
-        JRuby          &               0.651 &            0.360 &        0.463 &                     0.024 &                    0.5 &              0.045 \\
-        SQuirrel       &               0.922 &            0.793 &        0.853 &                     0.021 &                    0.5 &               0.04 \\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
-
-\begin{table}[!hbt]
-    \begin{center}
-        \caption{Classification results for Defect Debt}
-        \label{tbl:classifier_results_defect}
-        \begin{tabular}{l| c c c c c c}
-        \toprule
-        \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Rnd\\P} & \thead{Rnd\\R} & \thead{Rnd\\F1} \\
-        \midrule
-         Apache Ant     &               0.400 &            0.308 &        0.348 &                     0.003 &                    0.5 &              0.006 \\
-         Apache Jmeter  &               0.556 &            0.227 &        0.323 &                     0.003 &                    0.5 &              0.005 \\
-         ArgoUML        &               0.490 &            0.551 &        0.519 &                     0.013 &                    0.5 &              0.026 \\
-         Columba        &               0.429 &            0.231 &        0.300 &                     0.002 &                    0.5 &              0.004 \\
-         EMF            &               1.000 &            0.000 &        0.000 &                     0.002 &                    0.5 &              0.004 \\
-         Hibernate      &               0.944 &            0.327 &        0.486 &                     0.018 &                    0.5 &              0.034 \\
-         JEdit          &               0.000 &            0.000 &        0.000 &                     0.004 &                    0.5 &              0.008 \\
-         JFreeChart     &               0.000 &            0.000 &        0.000 &                     0.002 &                    0.5 &              0.004 \\
-         JRuby          &               0.842 &            0.099 &        0.178 &                     0.034 &                    0.5 &              0.064 \\
-         SQuirrel       &               0.538 &            0.292 &        0.378 &                     0.003 &                    0.5 &              0.007 \\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
 
 \clearpage
 
