@@ -1,0 +1,12 @@
+Technical debt is a term being used to express non optimal solutions, such as hacks and workarounds, that are applied during the software development process. 
+Although these non optimal solutions can provide a way to achieve immediate pressing goals, most often they will have a negative impact in the project maintainability, and will require an increased effort to be properly addressed in the long run. Our work focuses in the identification of \SATD through the use of Natural Processing Language. \SATD is the technical debt deliberately introduced by the developers and reported through source code comments.
+
+In our study we analyzed the comments of 10 open source projects which are Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. These projects are considered well commented and they belong to different application domains. We classified the comments of these project into technical debt types (i.e., design debt and requirement debt) creating a rich dataset with more than 63,000 classified comments. Then, we used this dataset as training data to a maximum entropy classifier tool and analyzed how well can we identify \SATD.
+
+We find that NLP techniques, such as maximum entropy classifiers, can be used effectively to find \SATD comments. We achieved an average F1 measure of \todo{} for design debt and an average of \todo{} while classifying requirement debt. For the two types that we classify using our dataset we perform better than the random F1 measure average, moreover our classified F1 measure is \todo{} times better than the random F1 measure.
+
+We find that the most common comment patterns for self-admitted design debt are: `hack', `workaround', `yuck!', `kludge', `stupidity', `needed?', `unused?', `columns??', `FIXME:' and `wtf?'. Whereas, for self-admitted requirement debt, the patterns are: `TODO:', `FIXME:', `needed', `implementation', `ends?', `apparently', `XXX', `configurable', `Auto-generated' and `empty'.
+
+We find that the design \SATD comments can be classified effectively using a training dataset of 1,444 these comments. Similarly requirement \SATD can be classified building a training dataset with 1,055 comments of this category.
+
+We also contribute with the dataset used in this study, we believe that it will be a good starting point for researchers interested in identifying technical debt trough comments and even using different types of Natural Processing Language techniques. 

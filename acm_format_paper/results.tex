@@ -18,7 +18,6 @@ Regarding the results for design debt in Table \ref{tbl:classifier_results_desig
 
 For requirement debt results shown in Table \ref{tbl:classifier_results_implementation} we find that the F1 measure of the classification ranges from 11.8\% to 93.5\% for EMF and Columba. Although 11.8\% is not a very hight value the random F1 measure for EMF is less than 0\%. In average the F1 measure of all projects is of 52.28\%, and the random F1 measure is of 3.2\%. 
 
-Lastly, for the defect debt classification results shown in Table \ref{tbl:classifier_results_defect} we achieved a F1 measure average of 25.32\% while the random F1 measure is of 1.6\%/. 
 Although the F1 measure average still higher than the random F1 measure average, defect debt classification has the lowest performance. We argue that the low number of \SATD comments used in the training dataset plays a major role in this result. 
 
 For all the types above, the random values are particularly low due to the fact that the number of comments that does not represent any kind of \SATD is much higher than the ones which represent. The number of \SATD comments are presented in Table \ref{tbl:td_distribution}. We show in this table the exact number of \SATD comments found in each project separated by the specific technical debt type: design debt, requirement debt, defect debt. Documentation debt and test debt are shown under the column `Other' as they number of occurrences were not as frequent as of the other types. 
@@ -226,4 +225,4 @@ During the execution of the experiment we notice that the classification can var
 
 One of the reasons for this is that the weight of features is given trough empirical probability, and consequently features that appears with more frequency will have a higher weight. Although this is an effective process for the majority of cases that we studied, it can be misleading when classifying comments that has different context. With smaller datasets such as the training data for requirement \SATD, the addition of comments that does not represent the way that developers write comments in the classified project will actually decrease the F1 measure performance. 
 
-\conclusionbox{We find that the design \SATD comments can be classified effetivelly using a training dataset of 1,444 these comments. Simirlaly requirement \SATD can be classified building a training dataset with 1,055 comments of this category.}
+\conclusionbox{We find that the design \SATD comments can be classified effectively using a training dataset of 1,444 these comments. Similarly requirement \SATD can be classified building a training dataset with 1,055 comments of this category.}
