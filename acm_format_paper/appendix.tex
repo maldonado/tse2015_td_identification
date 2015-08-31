@@ -62,14 +62,14 @@
     \end{center}    
 \end{table*}
 
-\clearpage
+% \clearpage
 
-\begin{figure*}[thb!]
-  \centering
-  \includegraphics[width=0.70\textwidth]{figures/baseline_comparison_design.pdf}
-  \caption{Hibernate Design Debt classification}
-  \label{fig:design_hibernate}
-\end{figure*}
+% \begin{figure*}[thb!]
+%   \centering
+%   \includegraphics[width=0.70\textwidth]{figures/baseline_comparison_design.pdf}
+%   \caption{Hibernate Design Debt classification}
+%   \label{fig:design_hibernate}
+% \end{figure*}
 
 \clearpage
 
@@ -77,20 +77,20 @@
     \begin{center}
         \caption{Technical Debt distribution per type}
         \label{tbl:td_distribution}
-        \begin{tabular}{l|SSSSS}
+        \begin{tabular}{l|SSSSSSS}
         \toprule
-        \multirow{2}{*}{Project} & \multicolumn{4}{c}{TD Distribution} \\ & {Design} & {Req.} & {Defect} & {Other} &  \multirow{-2}{*}{TD \%} \\
+        \multirow{2}{*}{Project} & \multicolumn{4}{c}{TD Distribution} \\ & {Design} & {Req.} & {Defect} & {Other} & \multirow{-2}{*}{Total TD comments} & \multirow{-2}{*}{Total comments} &  \multirow{-2}{*}{TD \%} \\
         \midrule
-        Ant            &  95  & 16 & 13 & 10 & 3.2 \\
-        Jmeter         &  316 & 22 & 22 & 15 & 4.6 \\
-        ArgoUML        &  801 & 651& 127& 74 & 16.8\\
-        Columba        &  126 & 134& 13 & 22 & 4.4\\
-        EMF            &  78  & 16 & 8  & 2  & 2.3\\
-        Hibernate      &  355 & 64 & 52 & 1  & 15.9\\
-        JEdit          &  196 & 14 & 43 & 3  & 2.4\\
-        JFreeChart     &  184 & 25 & 9  & 1  & 4.9\\
-        JRuby          &  343 & 114& 161& 8  & 12.7\\
-        SQuirrel       &  209 & 150& 24 & 3  & 5.2\\
+        Ant             & 95  & 16 & 13 & 10  & 134   & 4,140  & 3.2       \\
+        Jmeter          & 316 & 22 & 22 & 15  & 375   & 8,163  & 4.6       \\
+        ArgoUML         & 801 & 651& 127& 74  & 1653  & 9,788  & 16.8      \\
+        Columba         & 126 & 134& 13 & 22  & 295   & 6,569  & 4.4       \\
+        EMF             & 78  & 16 & 8  & 2   & 104   & 4,401  & 2.3       \\
+        Hibernate       & 355 & 64 & 52 & 1   & 472   & 2,968  & 15.9      \\
+        JEdit           & 196 & 14 & 43 & 3   & 256   & 10,322 & 2.4       \\
+        JFreeChart      & 184 & 25 & 9  & 1   & 219   & 4,436  & 4.9       \\
+        JRuby           & 343 & 114& 161& 8   & 626   & 4,901  & 12.7      \\
+        SQuirrel        & 209 & 150& 24 & 3   & 386   & 7,330  & 5.2       \\
         \bottomrule
         \end{tabular}
     \end{center}    

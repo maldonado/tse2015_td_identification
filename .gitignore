@@ -121,3 +121,5 @@ target/
 *.sublime-workspace
 
 # datasets
+.test
+.train
