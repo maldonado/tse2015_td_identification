@@ -5,14 +5,18 @@
   \label{fig:approach}
 \end{figure*}
 
-The main goal of our study is to effectively identify \SATD. To achieve that, we apply the same approach as proposed in our previous work by Maldonado and Shihab ~\cite{Maldonado2015MTD}. In a nutshell we first extract comments from ten open source projects. Then, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments and commented source code). Finally, we manually classify the remainder of comments into \SATD types, and use these comments as training data for a maximum entropy classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each step of it.
-   
-\subsection{Data Extraction} % (fold)
+The main goal of our study is to effectively identify \SATD trough source code comments. To do that, we first extract comments from ten open source projects. Second, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remainder of comments into \SATD types (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data for a maximum entropy classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each step of it.
+
+\subsection{Project Data Extraction} % (fold)
 \label{sub:data_extraction}
 
-To perform our study, we extract the source code from ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors. 
+To perform our study, we extract the source code from the source code repository of ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors. 
 
-Table \ref{tab:project_details} provides statistics about each one of the projects used in our study. We provide details about the release used, the number of classes, the total source lines of code (SLOC), the total extracted comments and the number of contributors. A source line of code contain at least one valid character, which is not a blank space or a source code comment. In our study, we only use the Java files to calculate the SLOC, and to do so, we use the tool SLOCCount \cite{wheeler2004:home}. 
+Half of the projects in this study (i.e., Apache Ant, Apache Jmeter, ArgoUML, Columba and JFreeChart) had the data collected in our previous work by Maldonado and Shihab ~\cite{Maldonado2015MTD}, and the approach applied to collect the data from all projects were the same in both works. 
+
+Table \ref{tab:project_details} provides more information about each one of the projects used in our study. The second column provides the release used, followed by the number of classes, the total source lines of code (SLOC), the total extracted comments, the number of comments analyzed after filtering the comments not related with \SATD, the number of comments that were classified as \SATD, the percentage of these comments that represent design debt, in the next column we have the percentage of \SATD comments classified as requirement debt and the number of contributors. 
+
+A source line of code contain at least one valid character, which is not a blank space or a source code comment. In our study, we only use the Java files to calculate the SLOC, and to do so, we use the tool SLOCCount \cite{wheeler2004:home}. 
 
 The number of contributors was extracted from OpenHub, an on-line community and public directory that offers analytics, search services and tools for open source software \cite{Openhub:home}. It is important to notice that the number of comments shown for each project does not represent the number of commented lines, but rather the number of individual line, block, and Javadoc comments. In total, we obtained more than \todo{} comments, found in \todo{} Java classes.
 
@@ -22,7 +26,6 @@ The number of contributors was extracted from OpenHub, an on-line community and 
     \label{tab:project_details}
             \begin{tabular}{l| c c r c c c c c c}
             \toprule
-            % \textbf{Project}   & \textbf{Release}  & \textbf{\# of classes}   & \textbf{SLOC}  & \textbf{\# of comments} & \textbf{\# of TD comments} & \textbf{\# of contributors} & \textbf{\% of Design Debt} & \textbf{\% of Requirement Debt}\\ 
             \thead{Project}   & \thead{Release}  & \thead{\# of \\classes}   & \thead{SLOC}  & \thead{\# of \\comments} & \thead{\# of \\comments \\after filtering} & \thead{\# of \\TD comments} & \thead{\% of \\Design \\Debt} & \thead{\% of \\Requirement \\Debt} & \thead{\# of \\contributors}\\ 
             \midrule 
             Apache Ant     & 1.7.0    & 1,475 & 115,881 & 21,587 &  4,140  & 134   & 70.89 & 11.94 & 74 \\
@@ -68,27 +71,6 @@ Lastly, when analyzing Javadoc comments we found that they rarely mention self-a
 The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Apache Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,140 comments meaning that 19.17\% of the comments were kept for analysis. Table \ref{tab:filtering_heuristics_details} provides details for each one of the projects.
 % subsection filtering_comments (end)
 
-% \begin{table}[!hbt]
-%       \begin{center}
-%             \caption{Filtering heuristics details}
-%             \label{tab:filtering_heuristics_details}
-%             \begin{tabular}{l| p{0.55in} p{0.60in} p{0.61in} }
-%             \toprule
-%             \textbf{Project}   & \textbf{Total \# of comments}  & \textbf{\# of comments after filtering} & \textbf{\%  of TD-related comments}\\ \midrule 
-%               Apache Ant       & 21,587                & 4,140                   & 19.17 \% \\ 
-%               Apache Jmeter    & 20,084                & 8,163                   & 40.64 \% \\
-%               ArgoUML          & 67,716                & 9,788                   & 14.45 \% \\              
-%               Columba          & 33,895                & 6,569                   & 19.38 \% \\
-%               EMF              & 25,229                & 4,401                   & 17.44 \% \\
-%               Hibernate        & 11,630                & 2,968                   & 25.52 \% \\              
-%               JEdit            & 16,991                & 10,322                  & 60.74 \% \\
-%               JFreeChart       & 23,474                & 4,436                   & 18.89 \% \\ 
-%               JRuby            & 11,149                & 4,901                   & 43.92 \% \\ 
-%               SQuirrel         & 27,474                & 7,330                   & 26.67 \% \\ \bottomrule
-%             \end{tabular}
-%       \end{center}
-% \end{table}
-
 \subsection{Manual Classification} % (fold)
 \label{sub:manual_classification}
 
@@ -104,7 +86,7 @@ The first author who made the classification has more than 8 years of experience
  
 Our next step is to use the classified \SATD comments to create a training dataset that can be used in a classifier. A classifier is a machine learning tool that take as input a number of data items along with the class that this data item belongs, we choose to use the Stanford Classifier \todo{cite} as our machine learning tool. In our case, the training data is composed by a comment and the manual classification that was attributed to it. According to our findings in previous work \cite{Maldonado2015MTD} the most frequent types of \SATD are design debt, implementation debt and defect debt, and therefore we focuses our approach in the prediction of theses types of \SATD comments.
 
-For each comment in our training dataset we remove the characters structures and symbols that are inherent from the Java language syntax and used to indicate a comment (i.e., `//' or `/* and */') or that represent a escape sequence such as `\textbackslash t' or `\textbackslash n'. Lastly, we remove the excess of blank spaces from the comments, and the resulting sentence is added to training dataset with its classification. 
+For each comment in our training dataset we remove the characters structures and symbols that are inherent from the Java language syntax and used to indicate a comment (i.e., `//' or `/* and */') or that represent a escape sequence such as `\textbackslash t' or `\textbackslash n'. We also remove the excess of blank spaces from the comments, and the resulting sentence is added to training dataset with its classification. Lastly, we make all the comments lowercase, to create a more uniform training dataset.  
 
 After creating the training dataset we also create a test dataset in order to measure to performance of the Stanford Classifier in predicting \SATD comments. The test dataset is created following the same formatting rules as described above for the training dataset. 
 
