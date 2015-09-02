@@ -10,15 +10,15 @@ The main goal of our study is to effectively identify \SATD trough source code c
 \subsection{Project Data Extraction} % (fold)
 \label{sub:data_extraction}
 
-To perform our study, we extract the source code from the source code repository of ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors. 
+To perform our study, we extract the source code of ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors. 
 
 Half of the projects in this study (i.e., Apache Ant, Apache Jmeter, ArgoUML, Columba and JFreeChart) had the data collected in our previous work by Maldonado and Shihab ~\cite{Maldonado2015MTD}, and the approach applied to collect the data from all projects were the same in both works. 
 
-Table \ref{tab:project_details} provides more information about each one of the projects used in our study. The second column provides the release used, followed by the number of classes, the total source lines of code (SLOC), the total extracted comments, the number of comments analyzed after filtering the comments not related with \SATD, the number of comments that were classified as \SATD, the percentage of these comments that represent design debt, in the next column we have the percentage of \SATD comments classified as requirement debt and the number of contributors. 
+Table \ref{tab:project_details} provides more information about each one of the projects used in our study, listed in the first column. The second column provides the release used, followed by the number of classes, the total source lines of code (SLOC), the total extracted comments, the number of comments analyzed after applying our filtering heuristics, the number of comments that were classified as \SATD, the percentage of these comments that represent design debt, the percentage of \SATD comments classified as requirement debt and the number of contributors. 
 
-A source line of code contain at least one valid character, which is not a blank space or a source code comment. In our study, we only use the Java files to calculate the SLOC, and to do so, we use the tool SLOCCount \cite{wheeler2004:home}. 
+A source line of code contains at least one valid character, which is not a blank space or a source code comment. In our study, we only use the Java files to calculate the SLOC, and to do so, we use the tool SLOCCount \cite{wheeler2004:home}. 
 
-The number of contributors was extracted from OpenHub, an on-line community and public directory that offers analytics, search services and tools for open source software \cite{Openhub:home}. It is important to notice that the number of comments shown for each project does not represent the number of commented lines, but rather the number of individual line, block, and Javadoc comments. In total, we obtained more than \todo{} comments, found in \todo{} Java classes.
+The number of contributors was extracted from OpenHub, an on-line community and public directory that offers analytics, search services and tools for open source software \cite{Openhub:home}. It is important to notice that the number of comments shown for each project does not represent the number of commented lines, but rather the number of individual line, block, and Javadoc comments. In total, we obtained 259,229 comments, found in 16,249 Java classes.
 
 \begin{table*}[!tbh]
     \begin{center}
@@ -48,7 +48,9 @@ The number of contributors was extracted from OpenHub, an on-line community and 
 \subsection{Parse Source Code} % (fold)
 \label{sub:parse_source_code}
 
-After obtaining the source code of all projects, we extract the comments from their source code. We use JDeodorant \cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. JDeodorant is capable of identify design flaws (i.e., bad smells) in Java projects, and suggest refactoring opportunities to solve them. JDeodrant uses the Eclipse AST framework to create an Abstract Syntax Tree (AST) map of the source code. The AST map contains detailed information about the project such as: the source code comments, its type (i.e., Block, Single-line or Javadoc), the line where each one of these comments begins and finishes. We extract the aforementioned information and store all comments in a relational database to facilitate the processing of the data.
+After obtaining the source code of all projects, we extract the comments from their source code. We use JDeodorant \cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. JDeodorant is capable of identify design flaws (i.e., bad smells) in Java projects, and suggest refactoring opportunities to solve them. JDeodrant uses the Eclipse AST framework to create an Abstract Syntax Tree (AST) map of the source code. The AST map contains detailed information about the project such as: the source code comments, its type (i.e., Block, Single-line or Javadoc) and the line where each one of these comments begins and finishes. 
+
+Due to these features of the tool, we adapted JDeodorant to extract the aforementioned information about source code comments, and store it in a relational database to facilitate the processing of the data.
 
 % subsection parse_source_code (end)
 \subsection{Filter Comments} % (fold)
