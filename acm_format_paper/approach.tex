@@ -48,9 +48,9 @@ The number of contributors was extracted from OpenHub, an on-line community and 
 \subsection{Parse Source Code} % (fold)
 \label{sub:parse_source_code}
 
-After obtaining the source code of all projects, we extract the comments from their source code. We use JDeodorant \cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. JDeodorant is capable of identify design flaws (i.e., bad smells) in Java projects, and suggest refactoring opportunities to solve them. JDeodrant uses the Eclipse AST framework to create an Abstract Syntax Tree (AST) map of the source code. The AST map contains detailed information about the project such as: the source code comments, its type (i.e., Block, Single-line or Javadoc) and the line where each one of these comments begins and finishes. 
+After obtaining the source code of all projects, we extract the comments from the source code. We use JDeodorant \cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. JDeodorant is capable of identify design flaws (i.e., bad smells) in Java projects, and suggest refactoring opportunities to solve them. JDeodrant uses the Eclipse AST framework to create an Abstract Syntax Tree (AST) map of the source code. The AST map contains detailed information about the project such as: the source code comments, its type (i.e., Block, Single-line or Javadoc) and the line where each one of these comments begins and finishes. 
 
-Due to these features of the tool, we adapted JDeodorant to extract the aforementioned information about source code comments, and store it in a relational database to facilitate the processing of the data.
+Due to these features of the tool, we adapted JDeodorant to extract the aforementioned information about source code comments, and then store it in a relational database to facilitate the processing of the data.
 
 % subsection parse_source_code (end)
 \subsection{Filter Comments} % (fold)
@@ -70,15 +70,23 @@ Similarly, is common to find commented source code across the projects, and this
 
 Lastly, when analyzing Javadoc comments we found that they rarely mention self-admitted technical debt. For the Javadoc comments that does mention self-admitted technical debt we notice that they usually contains one of the task-reserved words (i.e., ``todo'', ``fixme'', or ``xxx''). Based on this, our heuristic remove all comments of the type Javadoc unless they contain at least one of the task-reserved words. To do so, we create a simple regular expression that search for the task-reserved words before removing the comment.  
 
-The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Apache Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,140 comments meaning that 19.17\% of the comments were kept for analysis. Table \ref{tab:filtering_heuristics_details} provides details for each one of the projects.
+The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Apache Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,140 comments meaning that 19.17\% of the comments were kept for analysis. Table \ref{tab:project_details} provides details for each one of the projects.
 % subsection filtering_comments (end)
 
 \subsection{Manual Classification} % (fold)
 \label{sub:manual_classification}
 
-To classify the comments, we developed a Java based tool that shows one comment at a time and gives a list of possible classifications that can be manually assigned to the comment. The list of possible classifications is based on previous work by Alves \textit{et al.}~\cite{Alves2014MTD}. After applying the different filtering steps, we successfully classified 63,015 comments. The more than 63 thousand comments were classified into five different types of self-admitted technical debt, i.e., design debt, defect debt, documentation debt, requirement debt and test debt.
+To classify the comments, we developed a Java based tool that shows one comment at a time and gives a list of possible classifications that can be manually assigned to the comment. The list of possible classifications is based on previous work ~\cite{Alves2014MTD}. After applying the different filtering steps, we successfully classified more than 63 thousand comments into five different types of self-admitted technical debt: design debt, defect debt, documentation debt, requirement debt and test debt.
+
+ In total we read and classified 63,015 comments from ten open source projects. The classification took approximately 185 hours and was performed by the first author of the paper.  
+
+To mitigate the risk of creating a dataset too biased we created a significative sample of our dataset and asked for a master student to classify it. To prepare the student for this task we gave an 1 hour explanation about the different kinds of \SATD, and walked the student throught a couple of examples of each diferent type of \SATD comment. 
+
+The signicative sample was created based on the total number of comments (63,015) with a confidence level of 99\% and a confidence interval of 5\%. Wich means that the significative sample has 659 comments. We composed significative sample accordingly with the percentage of each classification found in the original dataset. Therefore, the significative sample was comporsed of: 92\% of comments with no \SATD (609 comments), 4\% of design debt comments (29 comments), 2\% of requeriments debt comments (5 comments), 0.75\% test debt (2 comments) and 0.15\% of documentation debt (1 comment).
+
+Lastly, we evaluate the level of agreement between both reviewers of the significative sample by calculatint the Cohen's kappa coefficient ~\cite{cohen1960coefficient}. The level of agreement measured between the reviewers was of \todo{}.   
  
-The first author who made the classification has more than 8 years of experience working in the industry as a software engineer, during this time he designed, implemented and maintained several programs using, in particular the Java programming language. He developed solid skills in object orientated programming and design patterns. We consider that these qualifications provide the necessary background to conduct the manual classification of the comments.   
+% The first author who made the classification has more than 8 years of experience working in the industry as a software engineer, during this time he designed, implemented and maintained several programs using, in particular the Java programming language. He developed solid skills in object orientated programming and design patterns. We consider that these qualifications provide the necessary background to conduct the manual classification of the comments.   
 
 % subsection manual_classification (end)
 
@@ -86,7 +94,7 @@ The first author who made the classification has more than 8 years of experience
 \subsection{Run the NLP Classifier} % (fold)
 \label{sub:run_the_nlp_classifier}
  
-Our next step is to use the classified \SATD comments to create a training dataset that can be used in a classifier. A classifier is a machine learning tool that take as input a number of data items along with the class that this data item belongs, we choose to use the Stanford Classifier \todo{cite} as our machine learning tool. In our case, the training data is composed by a comment and the manual classification that was attributed to it. According to our findings in previous work \cite{Maldonado2015MTD} the most frequent types of \SATD are design debt, implementation debt and defect debt, and therefore we focuses our approach in the prediction of theses types of \SATD comments.
+Our next step is to use the classified \SATD comments to create a training dataset that can be used with a NLP classifier. A NPL classifier is a machine learning tool that take as input a number of data items along with the classification that this data item belongs, we choose to use the Stanford Classifier ~\cite{Manning2014ACL} as our machine learning tool. In our case, the training data is composed by a comment and the manual classification that was attributed to it. According to our findings in previous work \cite{Maldonado2015MTD} the most frequent types of \SATD are design debt, implementation debt and defect debt, and therefore we focuses our approach in the prediction of these two types of \SATD comments.
 
 For each comment in our training dataset we remove the characters structures and symbols that are inherent from the Java language syntax and used to indicate a comment (i.e., `//' or `/* and */') or that represent a escape sequence such as `\textbackslash t' or `\textbackslash n'. We also remove the excess of blank spaces from the comments, and the resulting sentence is added to training dataset with its classification. Lastly, we make all the comments lowercase, to create a more uniform training dataset.  
 
