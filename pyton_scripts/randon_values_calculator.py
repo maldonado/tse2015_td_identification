@@ -11,7 +11,7 @@ password = sys.argv[1]
 
 execution_types = {  
                      # 'DEFECT': {'DEFECT'}, 
-                     'DESIGN': {'DESIGN'}, 
+                     # 'DESIGN': {'DESIGN'}, 
                      # 'DOCUMENTATION': {'DOCUMENTATION'}, 
                      'IMPLEMENTATION': {'IMPLEMENTATION'}, 
                      # 'TEST': {'TEST'},

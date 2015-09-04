@@ -9,15 +9,15 @@ password = sys.argv[1]
 
 execution_types = {
                      # 'DEFECT': {'DEFECT'}, 
-                     'DESIGN': {'DESIGN'}, 
+                     # 'DESIGN': {'DESIGN'}, 
                      'IMPLEMENTATION': {'IMPLEMENTATION'}
                      
 }
 
 dataset_directories = {
                        # 'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/capitalized_training/whole_word/', 
-                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/lowercase_training/whole_word/',
-                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/lowercase_training/whole_word/'
+                       # 'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/lowercase_training/whole_word/',
+                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/'
 }
 
 try:
