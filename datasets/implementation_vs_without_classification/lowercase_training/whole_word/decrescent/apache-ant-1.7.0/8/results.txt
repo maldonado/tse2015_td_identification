@@ -1,4 +1,4 @@
-ColumnDataClassifier invoked on Wed Aug 19 23:26:43 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Fri Sep 04 14:36:37 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
@@ -18,19 +18,19 @@ tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train
 printClassifier = HighWeight
 1.useSplitWords = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train ... done [1.3s, 96903 items].
-numDatums: 96903
-numDatumsPerLabel: {WITHOUT_CLASSIFICATION=94543.0, IMPLEMENTATION=2360.0}
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.train ... done [0.8s, 45267 items].
+numDatums: 45267
+numDatumsPerLabel: {WITHOUT_CLASSIFICATION=44091.0, IMPLEMENTATION=1176.0}
 numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
-numFeatures (Phi(X) types): 36604 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-does, 1-SW-material, ...]
-........................................................
+numFeatures (Phi(X) types): 28531 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-does, 1-SW-material, ...]
+...............................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.test ... done [0.1s, 11675 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-ant-1.7.0/8/classified_seq.test ... done [0.1s, 3983 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
-11675 examples in test set
-Cls IMPLEMENTATION: TP=37 FN=1 FP=0 TN=11637; Acc 1.000 P 1.000 R 0.974 F1 0.987
-Cls WITHOUT_CLASSIFICATION: TP=11637 FN=0 FP=1 TN=37; Acc 1.000 P 1.000 R 1.000 F1 1.000
-Accuracy/micro-averaged F1: 0.99991
-Macro-averaged F1: 0.99331
+3983 examples in test set
+Cls IMPLEMENTATION: TP=6 FN=10 FP=13 TN=3954; Acc 0.994 P 0.316 R 0.375 F1 0.343
+Cls WITHOUT_CLASSIFICATION: TP=3954 FN=13 FP=10 TN=6; Acc 0.994 P 0.997 R 0.997 F1 0.997
+Accuracy/micro-averaged F1: 0.99423
+Macro-averaged F1: 0.66998

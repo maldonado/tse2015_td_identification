@@ -1,4 +1,4 @@
-ColumnDataClassifier invoked on Wed Aug 19 23:27:50 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Fri Sep 04 14:37:36 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/argouml/7/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true

@@ -1,4 +1,4 @@
-ColumnDataClassifier invoked on Wed Aug 19 23:27:05 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Fri Sep 04 14:36:52 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/4/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
@@ -26,7 +26,7 @@ numFeatures (Phi(X) types): 20166 [CLASS, 1-SW-yet., 1-SW-todo, 1-SW-does, 1-SW-
 .............................................
 QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
 Built classifier described in file /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/4/top_features.txt
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/4/classified_seq.test ... done [0.2s, 7692 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/apache-jmeter-2.10/4/classified_seq.test ... done [0.1s, 7692 items].
 Output format: dataColumn1	goldAnswer	[P(class) class]+ {sorted by probability}
 
 7692 examples in test set

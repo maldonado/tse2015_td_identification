@@ -1,4 +1,4 @@
-ColumnDataClassifier invoked on Wed Aug 19 23:31:02 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Fri Sep 04 14:40:24 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/jruby-1.4.0/1/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
@@ -18,7 +18,7 @@ tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/jruby-1.4.0/1/classified_seq.train
 printClassifier = HighWeight
 1.useSplitWords = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/jruby-1.4.0/1/classified_seq.train ... done [0.4s, 8666 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/jruby-1.4.0/1/classified_seq.train ... done [0.3s, 8666 items].
 numDatums: 8666
 numDatumsPerLabel: {WITHOUT_CLASSIFICATION=8015.0, IMPLEMENTATION=651.0}
 numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]

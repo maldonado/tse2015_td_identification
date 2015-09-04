@@ -1,4 +1,4 @@
-ColumnDataClassifier invoked on Wed Aug 19 23:29:26 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Fri Sep 04 14:39:00 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/5/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
@@ -18,7 +18,7 @@ tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/5/classified_seq.train
 printClassifier = HighWeight
 1.useSplitWords = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/5/classified_seq.train ... done [0.6s, 30729 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/hibernate-distribution-3.3.2.GA/5/classified_seq.train ... done [0.7s, 30729 items].
 numDatums: 30729
 numDatumsPerLabel: {WITHOUT_CLASSIFICATION=29655.0, IMPLEMENTATION=1074.0}
 numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]

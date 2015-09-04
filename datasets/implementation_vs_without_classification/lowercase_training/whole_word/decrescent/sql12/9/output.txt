@@ -1,11 +1,7 @@
 todo put throws clause back in empty method.	IMPLEMENTATION	0.8459462299865509	IMPLEMENTATION	0.1540537700134491	WITHOUT_CLASSIFICATION
-
 called when app shutdown. todo put throws clause back in	IMPLEMENTATION	0.96689093644006	WITHOUT_CLASSIFICATION	0.03310906355994001	IMPLEMENTATION
-
 not implemented	IMPLEMENTATION	0.6112153497495302	IMPLEMENTATION	0.3887846502504699	WITHOUT_CLASSIFICATION
-
 move any i18n files that are located in the core downloads dir to the i18n downloads dir. the spring application context will not load properly (for some unknown reason) when there are i18n jars in the classpath. so as a work-around we simply ensure that they are where they should be anyway. previously we were not as careful about this so it is possible that i18n jars were copied into the core downloads directory.	IMPLEMENTATION	0.999996542135963	WITHOUT_CLASSIFICATION	3.4578640371359054E-6	IMPLEMENTATION
-
 ?? future may want to create tablepopupmenu to allow cut/copy/paste operations	IMPLEMENTATION	0.9997127879483395	WITHOUT_CLASSIFICATION	2.872120516604453E-4	IMPLEMENTATION
 todo?? columndisplaydefinition should also have the type (string date doubleintegerboolean)	IMPLEMENTATION	0.9999746521405682	WITHOUT_CLASSIFICATION	2.5347859431807384E-5	IMPLEMENTATION
 a dialect delegate for the sun microsystems hadb (high-availability) database. todo this dialect is not yet complete. need to provide implementations wherever "not yet implemented" appears. @author manningr	IMPLEMENTATION	0.9999992351387553	IMPLEMENTATION	7.648612446891468E-7	WITHOUT_CLASSIFICATION

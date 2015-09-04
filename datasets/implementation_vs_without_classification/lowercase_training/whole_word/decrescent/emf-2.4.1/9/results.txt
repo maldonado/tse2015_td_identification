@@ -1,4 +1,4 @@
-ColumnDataClassifier invoked on Wed Aug 19 23:29:12 EDT 2015 with arguments:
+ColumnDataClassifier invoked on Fri Sep 04 14:38:46 EDT 2015 with arguments:
    -prop /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/emf-2.4.1/9/dataset.prop -1.useSplitWords -1.splitWordsRegexp \s
 useQN = true
 useClassFeature = true
@@ -18,7 +18,7 @@ tolerance = 1e-4
 trainFile = /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/emf-2.4.1/9/classified_seq.train
 printClassifier = HighWeight
 1.useSplitWords = true
-Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/emf-2.4.1/9/classified_seq.train ... done [0.9s, 55041 items].
+Reading dataset from /Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/decrescent/emf-2.4.1/9/classified_seq.train ... done [0.8s, 55041 items].
 numDatums: 55041
 numDatumsPerLabel: {WITHOUT_CLASSIFICATION=53851.0, IMPLEMENTATION=1190.0}
 numLabels: 2 [IMPLEMENTATION, WITHOUT_CLASSIFICATION]
