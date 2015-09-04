@@ -104,23 +104,27 @@ Table \ref{tbl:improvement_f1measure_requirement} shows the improvement of our a
 \noindent\rqii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} After asserting the efficiency of NPL classifiers predicting \SATD we want to better understand which are the comment patterns that developers use when writing \SATD comments. Answering this question will provide insightful information that can guide future research direction and broaden our understanding on \SATD.     
+\noindent \textbf{Motivation:} After asserting the efficiency of NLP classifiers predicting \SATD we want to better understand which are the words that developers use when writing \SATD comments. Answering this question will provide insightful information that can guide future research direction and broaden our understanding on \SATD.     
 
 \vspace{1mm}
-\noindent \textbf{Approach:} As mentioned before, we use the Stanford Classifier to predict \SATD comments, and the first part of the prediction process is to generate the features that will be used to classify the comments. Features, in our case, are fragments of data that possesses a class (i.e., design debt, requirement debt or without technical debt) and a weight. These features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class that has more weight, therefore positive weight features that matches the comment being classified will result in a higher weight, and the class that has the higher weight will be assumed as the predicted class.
+\noindent \textbf{Approach:} As mentioned before, we use the Stanford Classifier to predict \SATD comments, and the first part of the prediction process is to generate the features (i.e., words) that will be used to classify the comments. These features, are fragments of data that possesses a class (i.e., design debt, requirement debt or without technical debt) and a weight. These features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class that has more weight, therefore positive weight features that matches the comment being classified will result in a higher weight, and the class that has the higher weight will be assumed as the predicted class.
 
 % maybe explain more details of how the weight is given to each feature
 
 For example, given three different features: `hack' with a weight of 5.3 , `dirty' with weigh of 3.2 both for design debt and `ignore' meaning that the comment is not a technical debt with a weight of 4.1. When classifying the following comment ``this is a dirty hack and should not be ignored'', all features would have been matched, and the vote decision would be like this: design debt weight = 8.5 (i.e., feature 1 plus feature 2) and without classification weight = 4.1 resulting in a comment classified as  design debt.
 
+For each project analyzed we collect the features used to predict the \SATD comments. These features are provided by the tool as output and stored in a text file. The features are written in the file based on the weight that it has, ordered by highest weight to the lowest weight meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different files. 
+
+That way, we determined the top 10 features (i.e, most relevant based on the weight) for design \SATD and requirement \SATD.
+
 \vspace{1mm}
-\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 features identifying \SATD in the ten studied projects ordered by weight. The first column we list the features with higher weights classifying  
+\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 features for the identification of \SATD in the ten studied projects ordered by relevance. The first column we  present the ranking of the word. The second column we list the features used in the identification of design \SATD, and the third column is the list of features used to identify requirement \SATD.
 
 \begin{table}[!hbt]
     \begin{center}
         \caption{Top ten features for Self-Admitted Technical Debt}
         \label{tbl:top_ten_features}
-        \begin{tabular}{l| l c | l c }
+        \begin{tabular}{l| l l }
         \toprule
         \textbf{Order} & \thead{Design\\TD} & \thead{Requirement\\TD}  \\
         \midrule
@@ -139,11 +143,11 @@ For example, given three different features: `hack' with a weight of 5.3 , `dirt
     \end{center}    
 \end{table}
 
-It is possible that the same feature is used to classify design debt and requirement debt. However, the weight of this feature can be different accordingly with the type being classified. As we can see in Table \ref{tbl:top_ten_features}, `FIXME:' appears in both columns although it has a higher weight when classifying requirement debt than design debt. 
+It is possible that the same feature is used to classify design debt and requirement debt. However, the weight of this feature can be different accordingly with the type being classified. As we can see in Table \ref{tbl:top_ten_features}, `FIXME:' appears in both columns although it has a higher ranking when classifying requirement debt than design debt. 
 
 In spite of the fact that features with higher weights will have more impact during the classification the final vote is given based on the combined weight of all matching features. In average the number of features to classify design debt was of 6,196 whereas for requirement debt was of 2,889.
 
-\conclusionbox{We find that the most common comment patterns for self-admitted design debt are: `hack', `workaround', `yuck!', `kludge', `stupidity', `needed?', `unused?', `columns??', `FIXME:' and `wtf?'. Whereas, for self-admitted requirement debt, the patterns are: `TODO:', `FIXME:', `needed', `implementation', `ends?', `apparently', `XXX', `configurable', `Auto-generated' and `empty'.}
+\conclusionbox{We find that the most common words in design \SATD comments: `hack', `workaround', `kludge', `yuck!', `fixme', `todo', `stupidity', `ugly', `unused?' and `sucks'. Whereas, for requirement \SATD comments the most common words are: `todo', `needed', `implementation', `fixme', `xxx', `auto-generated', `ends?', `configurable', `convention' and `apparently'.}
 
 \vspace{3mm}
 \noindent\rqiii
