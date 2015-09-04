@@ -15,12 +15,45 @@ Third, the classifier is executed and based on the training dataset it gives a c
 
 In order to determine if the classification of the NLP tool are being effective or not we compare the obtained results with the results of two other baselines. The first one is the state-of-the-art approach in detection of \SATD comments devised by Potdar and Shihab ~\cite{Potdar2014ICSME}. This approach uses 62 comment patterns (i.e., key words) that were noticed as recurrent in \SATD comments while doing a manual inspection of 101,762 comments. The second approach used is weighed random. In fact, \SATD comments are not as frequent as comments that does not have \SATD. Through weighed random precision, recall and F1 measure is possible to show this discrepancy in the data distribution, and show how well the classifier performs compared with a random prediction.
 
+Lastly, for each project we calculated both baselines and executed the classification process storing the results in the database to perform our analysis.
+
 \vspace{1mm}
-\noindent \textbf{Results:} Following this approach we executed the classifier for all projects, collecting results for three different types of \SATD: design debt, implementation debt and defect debt. Tables \ref{tbl:classifier_results_design}, \ref{tbl:classifier_results_implementation} and \ref{tbl:classifier_results_defect} presents precision, recall, F1 measure, random precision, random recall and random F1 measure for each project. Taking JRuby as an example while classifying design debt in Table \ref{tbl:classifier_results_design}, we find that the classifier reached a precision of 82\% and recall of 76\% resulting in a F1 measure of 79\%. For the same project, the calculated random values for precision, recall and F1 measure are 7\%, 50\% and 13\% respectively. Comparing both F1 measures, the result obtained with the classifier is over than 6 times higher than the random one.
 
-Regarding the results for design debt in Table \ref{tbl:classifier_results_design}, ArgoUml \SATD comments were classified with precision of 76.9\% and recall of 87.9\%, and was the higher F1 measure (i.e., 81.9\%) within our selected projects. On the contrary, EMF was classified with a precision of 52.1\%, recall of 32.1\% resulting in a F1 measure of 39.7\%. The average F1 measure considering  all projects is of 59.75\%, whereas the random F1 measure is of 8.61\%. 
+\noindent \textbf{Results:} We find that the predicted classification of the NLP tool greatly outperforms the current state-of-the-art approach to identify \SATD baseline and the weighed random baseline as well. Figure \ref{fig:f1_measure_comparison_design_debt} presents the comparison between the predicted F1 measure, the state-of-the-art baseline F1 measure and the weighed random F1 measure obtained during the classification of design debt. We choose to use the F1 measure to compare the approach as this measurement takes into consideration the combination of precision and recall.
 
-For requirement debt results shown in Table \ref{tbl:classifier_results_implementation} we find that the F1 measure of the classification ranges from 11.8\% to 93.5\% for EMF and Columba. Although 11.8\% is not a very hight value the random F1 measure for EMF is less than 0\%. In average the F1 measure of all projects is of 52.28\%, and the random F1 measure is of 3.2\%. 
+It is important to notice that each one of the selected baselines for comparison has one strong point. The comment patterns approach has a high precision, but it lacks recall, i.e., this approach points correctly to \SATD comments, but it identifies a very small set of all the \SATD comments in the project. The less sophisticated weighed random baseline provides a high recall because of the two categories that we try to predicted i.e, therefore 50\% chance to randomly get one of the two classifications. 
+
+\begin{figure}[thb!]
+   \centering
+  \includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design_2.pdf}
+  \vspace{-3mm}
+  \caption{F1 measure comparison Design Debt}
+  \label{fig:f1_measure_comparison_design_debt}
+\end{figure}
+
+For all the projects, the F1 measure achieved by the NLP classifier is higher than the the others F1 measures. The highest F1 measure obtained for design debt was in ArgoUML with a value of 0.814. In the other hand, the lowest F1 measure obtained was in EMF with a value of 0.470. In average the F1 measure obtained was of 0.620. In comparison, the average F1 measure obtained using the state-of-the-art approach was of 0.099, and the weighed random F1 measure 0.0861. Consequently, our approach to identify design debt represent, in average, a improvement of 6 times the state of the art approach and 7 times the weighed random value. In the  Table \ref{tbl:improvement_f1measure_design} shows the improvement of our approach over the other the comment pattern baseline for each project. 
+ 
+Similarly, Figure \ref{fig:f1_measure_comparison_requeriment} shows the comparison between the three F1 measures while identifying requirement \SATD.
+
+\begin{figure}[thb!]
+  \centering
+  \includegraphics[width=0.48\textwidth]{figures/f1_measure_comparison_requirement_2.pdf}
+  \vspace{-3mm}
+  \caption{F1 measure comparison Requirement Debt}
+  \label{fig:f1_measure_comparison_requeriment}
+\end{figure}
+
+We find that in 90\% of the analyzed projects the F1 measure obtained by our approach surpass the comment pattern baseline, and in 100\% of the cases we outperform the weighed random baseline. In addition to that, the comment patterns baseline calculated is the same for design debt and for requirement debt, since this approach does not distinguish between different types of \SATD as ours. 
+
+The highest F1 measure achieved by our approach was on Apache Ant with 0.987, and the lowest value was off 0.091. Although there was a big fluctuation between the maximum and minimum value obtained our average F1 measure was of 0.572. Despite the fact that this number is lower than the average obtained for the identification of design debt, this average still impressive due the reduced amount of requirement \SATD comments that are in the projects. For example, Apache Ant has only 16 occurrences of requirement \SATD scattered among 4,045 comments.  
+
+Table \ref{tbl:improvement_f1measure_requirement} shows
+
+ % Tables \ref{tbl:classifier_results_design}, \ref{tbl:classifier_results_implementation} and \ref{tbl:classifier_results_defect} presents precision, recall, F1 measure, random precision, random recall and random F1 measure for each project. Taking JRuby as an example while classifying design debt in Table \ref{tbl:classifier_results_design}, we find that the classifier reached a precision of 82\% and recall of 76\% resulting in a F1 measure of 79\%. For the same project, the calculated random values for precision, recall and F1 measure are 7\%, 50\% and 13\% respectively. Comparing both F1 measures, the result obtained with the classifier is over than 6 times higher than the random one.
+
+% Regarding the results for design debt in Table \ref{tbl:classifier_results_design}, ArgoUml \SATD comments were classified with precision of 76.9\% and recall of 87.9\%, and was the higher F1 measure (i.e., 81.9\%) within our selected projects. On the contrary, EMF was classified with a precision of 52.1\%, recall of 32.1\% resulting in a F1 measure of 39.7\%. The average F1 measure considering  all projects is of 59.75\%, whereas the random F1 measure is of 8.61\%. 
+
+% For requirement debt results shown in Table \ref{tbl:classifier_results_implementation} we find that the F1 measure of the classification ranges from 11.8\% to 93.5\% for EMF and Columba. Although 11.8\% is not a very hight value the random F1 measure for EMF is less than 0\%. In average the F1 measure of all projects is of 52.28\%, and the random F1 measure is of 3.2\%. 
 
 Although the F1 measure average still higher than the random F1 measure average, defect debt classification has the lowest performance. We argue that the low number of \SATD comments used in the training dataset plays a major role in this result. 
 
@@ -32,18 +65,18 @@ For all the types above, the random values are particularly low due to the fact 
         \label{tbl:improvement_f1measure_design}
         \begin{tabular}{l| c c c }
         \toprule
-        \textbf{Project} & \textbf{F1} & \thead{Rnd\\F1} & \textbf{Improvement}\\
+        \textbf{Project} & \textbf{F1} & \thead{Baseline\\F1} & \textbf{Improvement}\\
         \midrule
-         Apache Ant      &  0.471      &  0.045          & 10x\\
-         Apache Jmeter   &  0.704      &  0.075          & 9x\\
-         ArgoUML         &  0.819      &  0.151          & 5x\\
-         Columba         &  0.586      &  0.038          & 15x\\
-         EMF             &  0.397      &  0.035          & 11x\\
-         Hibernate       &  0.692      &  0.214          & 3x\\
-         JEdit           &  0.465      &  0.037          & 12x\\
-         JFreeChart      &  0.503      &  0.080          & 6x\\
-         JRuby           &  0.795      &  0.131          & 6x\\
-         SQuirrel        &  0.543      &  0.055          & 9x\\
+         Apache Ant      &  0.517      &  0.142          &  3.6  x\\
+         Apache Jmeter   &  0.731      &  0.108          &  6.7  x\\
+         ArgoUML         &  0.814      &  0.040          &  20.3 x\\
+         Columba         &  0.601      &  0.065          &  9.2  x\\
+         EMF             &  0.470      &  0.087          &  5.4  x\\
+         Hibernate       &  0.744      &  0.118          &  6.3  x\\
+         JEdit           &  0.509      &  0.264          &  1.9  x\\
+         JFreeChart      &  0.492      &  0.044          &  11.1 x\\
+         JRuby           &  0.783      &  0.078          &  10   x\\
+         SQuirrel        &  0.540      &  0.044          &  12.2 x\\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -57,16 +90,16 @@ For all the types above, the random values are particularly low due to the fact 
         \toprule
         \textbf{Project} & \textbf{F1} & \thead{Rnd\\F1} & \textbf{Improvement}\\
         \midrule
-         Apache Ant      & 0.462       &  0.008          & 57x\\
-         Apache Jmeter   & 0.393       &  0.005          & 78x\\
-         ArgoUML         & 0.741       &  0.125          & 5x \\
-         Columba         & 0.935       &   0.04          & 23x\\
-         EMF             & 0.118       &  0.007          & 16x\\
-         Hibernate       & 0.650       &  0.042          & 15x\\
-         JEdit           & 0.100       &  0.003          & 33x\\
-         JFreeChart      & 0.513       &  0.011          & 46x\\
-         JRuby           & 0.463       &  0.045          & 10x\\
-         SQuirrel        & 0.853       &   0.04          & 21x\\
+         Apache Ant      & 0.987       & 0.142          &  6.9  x\\
+         Apache Jmeter   & 0.255       & 0.108          &  2.3  x\\
+         ArgoUML         & 0.760       & 0.040          &  19   x\\
+         Columba         & 0.934       & 0.065          &  14.3 x\\
+         EMF             & 0.381       & 0.087          &  4.3  x\\
+         Hibernate       & 0.476       & 0.118          &  4    x\\
+         JEdit           & 0.091       & 0.264          &  2.9  x\\
+         JFreeChart      & 0.500       & 0.044          &  11.3 x\\
+         JRuby           & 0.462       & 0.078          &  5.9  x\\
+         SQuirrel        & 0.875       & 0.044          &  19.8 x\\
         \bottomrule
         \end{tabular}
     \end{center}    
