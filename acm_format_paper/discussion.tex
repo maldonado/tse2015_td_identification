@@ -1,0 +1,13 @@
+In this paper we propose an approach to identify \SATD comments using a maximum entropy classifier tool. This machine learning process heavily relies on the training dataset to produce the expected outcome, and therefore the better is the training dataset the better will be the prediction of the tool. 
+
+During our study we analyzed the performance of the classifier across 10 different projects that belongs to different application domains, what granted us a diversified training dataset that allowed us to identify \SATD in all projects. However, it was clear that for some projects our training dataset had a better fit than for others. For example, while identifying design \SATD in ArgoUML we achieved a F1 measure of 0.814 whereas for JFreeChart the F1 measure is only 0.492. 
+
+Intuitively we know that each project has its own particularities, and that each group of developers, must often, create a unique way to communicate their concerns with each other. This unique trait of source code comments is inherited from the natural language itself and render the fully automated prediction of every single \SATD very unlikely. Even analyzing a old aged project, changes in the context of the application and turnover of developers can reflect changes in the way that source code comments are written. 
+
+However, for a great deal of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers feeling that this is not the appropriate solution for the problem in hand. By addressing these most identifiable traits of source code comments we shown that our approach can detect \SATD effectively. 
+
+We envision our approach being used to identify \SATD in other projects and ultimately evolving to a tool that will help developers to keep track and solve problems related with technical debt. Using the same methodology as ours future research in the technical debt area can extend the approach to other programming languages either making use of our already classified comments dataset or with brand new classified comments belonging to different contexts. 
+
+More analysis is needed to fine tune the use of the current training dataset in order to achieve maximum efficiency in the prediction of \SATD comments. For example, using subsets of our training dataset can be more suitable for some applications than using the whole dataset due to domain particularities. 
+
+However, the results thus far are not to be neglected as our approach performs 20 times better than the current state-of-the-art approach in some cases.
