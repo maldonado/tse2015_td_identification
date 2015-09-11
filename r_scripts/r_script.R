@@ -83,3 +83,24 @@ plot(data1$projectstrainedwith, data1$classifiedf1*100, type="b",
 lines(data1$projectstrainedwith, data1$classifiedrandomf1*100, type="b", pch=22, col="blue", lty=2)
 lines(data1$projectstrainedwith, data1$baselinef1*100, type="b", pch=21, col="darkgreen", lty=2)
 legend(8, 80, c("Classifier", "Baseline", "Random" ), col= c("red", "darkgreen",  "blue"), pch = c(2, 21, 22), bty = "n" , cex=0.9)
+
+
+# Cohen's kappa FOR THE DATASET
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
+postgresql <- dbSendQuery(con, "select classification from significative_sample order by processedcommentid")
+reviewer1 <- fetch(postgresql, n=-1)
+dim(reviewer1)
+dbHasCompleted(postgresql)
+
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
+postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample order by processedcommentid")
+reviewer2 <- fetch(postgresql, n=-1)
+dim(reviewer2)
+dbHasCompleted(postgresql)
+xy.df <- data.frame(reviewer1,reviewer2)
+
+
