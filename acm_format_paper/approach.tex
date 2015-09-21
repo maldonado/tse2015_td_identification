@@ -66,7 +66,7 @@ License comments are very not likely to contain self-admitted technical debt, an
 
 Long comments that are created using multiples \emph{Single-line} comments instead of a \emph{Block} comment can hinder the understanding of the message considering the case that the reader (i.e., human or machine) analyzes each one of these comments independently. To solve that problem, we create a heuristic that searches for consecutive Single-line comments and groups them as one. We identify consecutive comments by subtracting the line number of both comments. If the result of the difference is equals a -1 we have a consecutive comment. For example, Single-line comment A is placed in line number 100 and Single-line comment B is placed in line 101. The subtraction of the line numbers will result in -1, therefore the comments are consecutive.
  
-Commented source code is found in the projects due to many different reasons. One of the posible possibilities is that the code is not curently being used, other is that, the code is used for debuging purposes only. Based on our analysis, commented source code does not have self-admitted technical debt. Our heuristic remove commented source code using a simple regular expression that captures typical Java code structures.
+Commented source code is found in the projects due to many different reasons. One of the possible possibilities is that the code is not currently being used, other is that, the code is used for debugging purposes only. Based on our analysis, commented source code does not have self-admitted technical debt. Our heuristic remove commented source code using a simple regular expression that captures typical Java code structures.
 
 Javadoc comments rarely mention self-admitted technical debt. For the Javadoc comments that does mention self-admitted technical debt, we notice that they usually contains one of the task-reserved words (i.e., ``todo'', ``fixme'', or ``xxx''). Therefore, our heuristic remove all comments of the type Javadoc unless they contain at least one of the task-reserved words. To do so, we create a simple regular expression that search for the task-reserved words before removing the comment.  
 
@@ -75,8 +75,7 @@ The steps mentioned above significantly reduced the number of comments in our da
 
 \subsection{Manual Classification} % (fold)
 \label{sub:manual_classification}
-
-To classify the comments, we developed a Java based tool that shows one comment at a time and gives a list of possible classifications that can be manually assigned to the comment. The list of possible classifications is based on previous work ~\cite{Alves2014MTD}. After applying the different filtering steps, we successfully classified more than 63 thousand comments into five different types of self-admitted technical debt: design debt, defect debt, documentation debt, requirement debt and test debt.
+Our goal is to inspect each one of the remaining comments and attribute to it the suitable technical debt classification. Since there are many comments, we developed a Java based tool that shows one comment at a time and gives a list of possible classifications that can be manually assigned to the comment (i.e., ). The list of possible classifications is based on previous work ~\cite{Alves2014MTD}. After applying the different filtering steps, we successfully classified more than 63 thousand comments into five different types of self-admitted technical debt: design debt, defect debt, documentation debt, requirement debt and test debt.
 
  In total we read and classified 63,015 comments from ten open source projects. The classification took approximately 185 hours and was performed by the first author of the paper.  
 
