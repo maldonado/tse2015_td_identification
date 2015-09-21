@@ -5,14 +5,12 @@
   \label{fig:approach}
 \end{figure*}
 
-The main goal of our study is to effectively identify \SATD trough source code comments. To do that, we first extract comments from ten open source projects. Second, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remainder of comments into \SATD types (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data for a maximum entropy classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each step of it.
+The main goal of our study is to automatically identify \SATD trough source code comments. To do that, we first extract comments from ten open source projects. Second, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remainder of comments into \SATD types (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data to the Stanford  Classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each.
 
 \subsection{Project Data Extraction} % (fold)
 \label{sub:data_extraction}
 
 To perform our study, we extract the source code of ten open source projects, namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We selected these projects since they belong to different application domains, and vary in size (e.g., SLOC), and in the number of contributors. 
-
-Half of the projects in this study (i.e., Apache Ant, Apache Jmeter, ArgoUML, Columba and JFreeChart) had the data collected in our previous work by Maldonado and Shihab ~\cite{Maldonado2015MTD}, and the approach applied to collect the data from all projects were the same in both works. 
 
 Table \ref{tab:project_details} provides more information about each one of the projects used in our study, listed in the first column. The second column provides the release used, followed by the number of classes, the total source lines of code (SLOC), the total extracted comments, the number of comments analyzed after applying our filtering heuristics, the number of comments that were classified as \SATD, the percentage of these comments that represent design debt, the percentage of \SATD comments classified as requirement debt and the number of contributors. 
 
