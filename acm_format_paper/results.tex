@@ -1,8 +1,10 @@
+The goal of our research is to develop an automatic way to detect design and requirement \SATD comments. To do so, we first manually classify a large number of comments identifying which ones are \SATD. With the resulting dataset, we train Stanford Classifier to identify design and requirement \SATD (RQ1). Second, we inspect the features used by Stanford Classifier to identify \SATD. These features are words frequently found in comments with technical debt. We present which are the 10 most common words that indicates design and requirement \SATD (RQ2). Then, we investigate how variations in the amount of training data affects the performance of Stanford Classifier classification (RQ3). We detail the motivation, approach and present the results of each of our research questions in the remainder of this section.    
+
 \vspace{3mm}
 \noindent\rqi
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} As shown in previous work \cite{Potdar2014ICSME, Maldonado2015MTD}, \SATD comments can be found in the source code. However, there is not an optimal way to identify these technical debt comments yet. The methods proposed so far heavily relies on manual examination, and there are too little evidence on how well these approaches perform and how applicable they are. Answering this question is important to help us understand the opportunities and limitations of NLP techniques in identifying \SATD comments. 
+\noindent \textbf{Motivation:} As shown in previous work \cite{Potdar2014ICSME, Maldonado2015MTD}, \SATD comments can be found in the source code. However, there is not an automatic way to identify \SATD comments yet. The identification methods proposed so far heavily relies on manual examination, and have to be . Answering this question is important to help us understand the opportunities and limitations of NLP techniques in identifying \SATD comments. 
 
 \vspace{1mm}
 \noindent \textbf{Approach:} As described in Section \ref{sec:approach}, we manually classify comments from ten open source projects into one of the following types of \SATD: design debt, defect debt, implementation debt, documentation debt and test debt. However, as shown in our previous work \cite{Maldonado2015MTD}, the most frequent \SATD comments are classified as design debt and implementation debt respectively. Therefore, in our case study we focuses our attention in these two \SATD types. 
@@ -212,7 +214,7 @@ We analyzed the average percentage of the maximum F1 measure while identifying r
 
 We find that the first iteration has a hight average of percentage of the maximum F1 across all projects (i.e., 83\%). Although this percentage still lower than the achieved at the seventh iteration (i.e., 88\%), the training dataset used an average of 600 \SATD comments representing a reduction of 44\% in the necessary comments to create an effective training dataset to classify requirement \SATD comments. Table \ref{tbl:requirement_iteration_performance} shows the average maximum F1 measure for each iteration. 
 
-\begin{table}[!hbt]
+\begin{table}[!thb]
     \begin{center}
         \caption{Average maximum F1 measure for Design Debt}
         \label{tbl:design_iteration_performance}
@@ -234,7 +236,7 @@ We find that the first iteration has a hight average of percentage of the maximu
     \end{center}    
 \end{table}
 
-\begin{table}[!hbt]
+\begin{table}[!thb]
 	\begin{center}
 		\caption{Average maximum F1 measure for Requirement Debt}
 		\label{tbl:requirement_iteration_performance}
