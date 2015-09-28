@@ -59,7 +59,7 @@ Our highest F1 measure was obtained for Columba project with 0.934, and the lowe
 
 Table \ref{tbl:improvement_f1measure_requirement} shows the improvement of our approach over the comment patterns approach. For SQuirrel the F1 measure was of 0.875 whereas the comment pattern F1 measure was of 0.044, which means that there was an improvement of 19.8 times in the identification of requirement \SATD comments using our approach. The exception is JEdit where the F1 measure was of 0.091 and the comment pattern F1 measure was of 0.264. However, we argue that using the comment patterns approach is not guaranteed that every \SATD found will be a requirement \SATD as our approach proposes. Even though 0.091 is our lowest F1 measure we still outperform the naive baseline F1 measured by 30 times, i.e., the naive baseline F1 measure was of 0.003 for JEdit. 
 
-\begin{table}[!hbt]
+\begin{table}[!thb]
     \begin{center}
         \caption{Improvement over the random F1 measure for design}
         \label{tbl:improvement_f1measure_design}
@@ -82,7 +82,7 @@ Table \ref{tbl:improvement_f1measure_requirement} shows the improvement of our a
     \end{center}    
 \end{table}
 
-\begin{table}[!hbt]
+\begin{table}[!thb]
     \begin{center}
         \caption{Improvement over the random F1 measure for requirements}
         \label{tbl:improvement_f1measure_requirement}
@@ -111,25 +111,25 @@ Table \ref{tbl:improvement_f1measure_requirement} shows the improvement of our a
 \noindent\rqii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} After asserting the efficiency of NLP classifiers predicting \SATD we want to better understand which are the words that developers use when writing \SATD comments. Answering this question will provide insightful information that can guide future research direction and broaden our understanding on \SATD.     
+\noindent \textbf{Motivation:} After asserting the efficiency of Stanford Classifier identifying \SATD comments we want to better understand what words developers use when indicating \SATD comments. Answering this question will provide insightful information that can guide future research direction, broaden our understanding on \SATD and also help us to detect it.     
 
 \vspace{1mm}
-\noindent \textbf{Approach:} As mentioned before, we use the Stanford Classifier to predict \SATD comments, and the first part of the prediction process is to generate the features (i.e., words) that will be used to classify the comments. These features, are fragments of data that possesses a class (i.e., design debt, requirement debt or without technical debt) and a weight. These features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class that has more weight, therefore positive weight features that matches the comment being classified will result in a higher weight, and the class that has the higher weight will be assumed as the predicted class.
+\noindent \textbf{Approach:} As mentioned before, we use the Stanford Classifier to identify \SATD comments, and the first part of the identification process is to generate the features (i.e., words) that will be used to classify the comments. These features, are fragments of data that possesses a class (i.e., design debt, requirement debt or without technical debt) and a weight. These features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class with highest weight. 
 
-For example, given three different features: `hack' with a weight of 5.3 , `dirty' with weigh of 3.2 both for design debt and `ignore' meaning that the comment is not a technical debt with a weight of 4.1. When classifying the following comment ``this is a dirty hack and should not be ignored'', all features would have been matched, and the vote decision would be like this: design debt weight = 8.5 (i.e., feature 1 plus feature 2) and without classification weight = 4.1 resulting in a comment classified as  design debt.
+For example, we have two design debt features: `hack' and `dirty' with weight of 5.3 and 3.2 respectively, and one without technical debt feature: `ignored' with weight of 4.1. When classifying the following comment ``this is a dirty hack and should not be ignored'', all features would have been matched, and the vote decision would be: design debt weight = 8.5 (i.e., feature `hack' weight plus feature `dirty' weight) and without technical debt weight = 4.1 resulting in a comment classified as design debt.
 
-For each project analyzed we collect the features used to predict the \SATD comments. These features are provided by the tool as output and stored in a text file. The features are written in the file based on the weight that it has, ordered by highest weight to the lowest weight meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different files. 
+For each project analyzed we collect the features used to predict the \SATD comments. These features are provided by Stanford Classifier as output and stored in a text file. The features are written in the file based on the weight that it has, ordered by highest weight to the lowest weight meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different files. 
 
-This way, we determined the top 10 features (i.e, most relevant based on the weight) for design \SATD and requirement \SATD.
+we determined the top 10 features (i.e, most relevant based on the weight) for design \SATD and requirement \SATD.
 
 \vspace{1mm}
 \noindent \textbf{Results:} 
 \todo{generate ranking again considering the unique top ten words for each project}
 \todo{if the word is not in the list give the highest value (11)}
 
-Table \ref{tbl:top_ten_features} shows the top 10 features for the identification of \SATD in the ten studied projects ordered by relevance. The first column we  present the ranking of the word. The second column we list the features used in the identification of design \SATD, and the third column is the list of features used to identify requirement \SATD.
+Table \ref{tbl:top_ten_features} shows the top 10 features for the identification of \SATD in the ten studied projects ordered by relevance. In the first column we present the ranking of the word. In the second column we list the features used in the identification of design \SATD, and the third column is the list of features used to identify requirement \SATD.
 
-\begin{table}[!hbt]
+\begin{table}[!thb]
     \begin{center}
         \caption{Top ten features for Self-Admitted Technical Debt}
         \label{tbl:top_ten_features}
@@ -152,11 +152,11 @@ Table \ref{tbl:top_ten_features} shows the top 10 features for the identificatio
     \end{center}    
 \end{table}
 
-It is possible that the same feature is used to classify design debt and requirement debt. However, the weight of this feature can be different accordingly with the type being classified. As we can see in Table \ref{tbl:top_ten_features}, `FIXME:' appears in both columns although it has a higher ranking when classifying requirement debt than design debt. 
+It is possible that the same feature is used to classify design debt and requirement debt. However, the weight of this feature can be different accordingly with the type being classified. As we can see in Table \ref{tbl:top_ten_features}, `fixme' and `todo' appears in both columns although they have a higher ranking when classifying requirement debt than design debt. 
 
-In spite of the fact that features with higher weights will have more impact during the classification the final vote is given based on the combined weight of all matching features. In average the number of features to classify design debt was of 6,196 whereas for requirement debt was of 2,889.
+In spite of the fact that features with higher weights will have more impact during the classification, the final vote is given based on the combined weight of all matching features. In average, the number of features to classify design debt were 6,196 whereas for requirement debt they were 2,889. This shows why our recall is much better than Potdar and Shihab's ~\cite{Potdar2014ICSME}. 
 
-\conclusionbox{We find that the most common words in design \SATD comments: `hack', `workaround', `kludge', `yuck!', `fixme', `todo', `stupidity', `ugly', `unused?' and `sucks'. Whereas, for requirement \SATD comments the most common words are: `todo', `needed', `implementation', `fixme', `xxx', `auto-generated', `ends?', `configurable', `convention' and `apparently'.}
+\conclusionbox{We find that the most common words indicating \SATD comments are: `hack', `workaround', `kludge', `yuck!', `fixme', `todo', `stupidity', `ugly', `unused?', `sucks', `needed', `implementation', `xxx', `auto-generated', `ends?', `configurable', `convention' and `apparently'.}
 
 \vspace{3mm}
 \noindent\rqiii
