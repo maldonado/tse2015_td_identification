@@ -120,7 +120,7 @@ For example, we have two design debt features: `hack' and `dirty' with weight of
 
 For each project analyzed we collect the features used to predict the \SATD comments. These features are provided by Stanford Classifier as output and stored in a text file. The features are written in the file based on the weight that it has, ordered by highest weight to the lowest weight meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different files. 
 
-we determined the top 10 features (i.e, most relevant based on the weight) for design \SATD and requirement \SATD.
+We determined the top 10 features (i.e, most relevant based on the weight) for design and requirement \SATD comments.
 
 \vspace{1mm}
 \noindent \textbf{Results:} 
@@ -162,25 +162,30 @@ In spite of the fact that features with higher weights will have more impact dur
 \noindent\rqiii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} Answering this research question will allow us to better estimate effort for future research in the area. More specifically, it will be beneficial to 1) make this kind of analysis more efficient, so manual classification of comments, that is time consuming and difficult by nature, can be kept to a minimum. 2) Helping researchers interested in applying the same technique to analyze \SATD in domains not covered in our study, another programming languages than Java, or even comments written in languages other than English. 
+\noindent \textbf{Motivation:} We shown that we can effectively identify \SATD comments. However, the classification of \SATD comments depends on the training dataset that was manually created. But, how much training data do we need to classify these comments? If we need a high number of comments to create our training dataset our approach will be more difficult to be extended and applied in different contexts. In the other hand, if a small dataset can be used to identify \SATD comments this approach can be applied to applications other than Java and even to comments written in different idioms. 
 
 \vspace{1mm}
 \noindent \textbf{Approach:} We executed the classification process several times with an increasing number of comments being added to the training dataset while collecting the results to analyze the changes between each iteration. 
 
-We first select a project that will be used to create the test dataset and we keep it separated from the other nine projects. Second, we take the comments of one of the nine remainder projects to create the training dataset. Third, we run the classification process and collect the results. Fourth, we incrementally add the comments of another project to the training dataset and repeat the classification process collecting the results. 
+We first select a project that will be classified by the Stanford Classifier. 
 
-We cycle trough this steps until we had added all nine projects comments in the training dataset. 
+Second, with one of the remainder projects, we select all \SATD comments (i.e., design or requirement debt accordingly with what we want to classify), and all comments without technical debt as well. These comments are added to the training dataset and fed into the Standford Classifier. Then, the results of the classification are collected and stored to analysis. 
 
-We apply this approach for each one of our ten studied projects classifying design and requirement \SATD comments. We ranked the projects that contained more \SATD of the specific type being classified so that they can be added first to training dataset. 
+Third, the comments of other project is added to the training dataset and the results of the classification are collected once more. The order that projects are added to the training dataset is not random. We add first projects which has more \SATD comments of the specific type that we are trying to identify. We cycle through the above steps until we had added the comments of all nine projects to the training dataset. 
 
-Intuitively we expect that the performance of the classifier would improve with each iteration as more comments are being added to the dataset. However, we find that this is not what always happen, and that the addition of more comments can decrease the performance of the classifier in given scenarios.
+Fourth, we select another project to be classified by the Stanford Classifier, and we repeat this process until we have analyzed all our projects. 
+ 
+To determine how much data is necessary to effectively identify \SATD comments we analyze the iteration with highest F1 measure and the number of comments used in the training dataset to achieve this mark. Based on the maximum F1 measure we calculate how close the others iterations were from achieving the same value. 
 
-Due to that, we determined which iteration has the highest performance for each project. We called this iteration as the maximum F1 measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1 measure value to calculate the percentage of the maximum F1 measure it represents.
-
-Lastly, for each type of technical debt classified we determined which is the iteration that is the most significant across all projects by calculating the average of the percentage of the maximum F1 measure.
+For example, if the maximum F1 measure was 85.0 achieved in the 8th iteration, and during the 4th iteration we had a F1 measure of 80.0 we say that 94\% of the maximum F1 measure was achieved in the 4th iteration. Once the percentage of the maximum F1 measure is calculated for all iterations we analyze the quantity of comments used in the training dataset by them. 
 
 \vspace{1mm}
-\noindent \textbf{Results:} We find that, in the identification of design \SATD comments, the F1 measure improves significantly in the first three iterations and, after that, the improvement rate keep a more stead pace. Figure \ref{fig:design_ant_result} shows this behavior using Apache Ant as an example. For the sake of space we only provide the figure of one analyzed project, but we performed this analysis for all ten projects and Apache Ant is a good representation of our dataset. 
+\noindent \textbf{Results:} Intuitively we expect that the performance of the classifier would improve with each iteration as more comments are being added to the dataset. However, we find that this is not what always happen, and that the addition of more comments can decrease the performance of the classifier in given scenarios.
+
+We determined which iteration has the highest performance for each project. We called this iteration as the maximum F1 measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1 measure value to calculate the percentage of the maximum F1 measure it represents.
+
+We find that, in the identification of design \SATD comments, the F1 measure improves significantly in the first three iterations and, after that, the improvement rate is more steady. Figure \ref{fig:design_ant_result} shows this behavior using Apache Ant as an example. For the sake of space we only provide the figure of one analyzed project, but we performed this analysis for all ten projects and Apache Ant is a good representation of our results. 
+
 
 % the scale of the figure does not match the numbers presented fix it later
 \begin{figure}[thb!]
@@ -191,11 +196,11 @@ Lastly, for each type of technical debt classified we determined which is the it
   \label{fig:design_ant_result}
 \end{figure}
 
-The values of the F1 measure shown In Figure \ref{fig:design_ant_result} are in order execution: 0.159, 0.260, 0.474, 0.497, 0.515 ,0.526 ,0.557 ,0.539 and 0.517.
+In Figure \ref{fig:design_ant_result} we show the F1 measure performance for each analyzed iteration of Ant project. The three highest values of the F1 measure are: 52.6, 53.9 and 55.7 obtained during the 6th, 8th and the 7th iteration respectively.
 
-Analyzing Apache Ant, we notice that it has a F1 measure of 0.474 in the third iteration and 0.557 in the seventh iteration, which is the maximum F1 measure achieved for the project. The F1 measure achieved in the third iteration represents 85\% of the maximum F1 measure achieved in the seventh iteration, and this percentage was reached using 1,499 comments whereas the maximum F1 measure used 2,404 comments in the training dataset. Therefore, for Apache Ant we could achieve 85\% of the maximum result using only 62\% of the comments. Therefore, we find that the third iteration provides a good trade off between prediction performance and number of comments to create the training dataset.
+We notice that in the 3rd iteration the F1 measure was 47.4, and the maximum F1 measure achieved for the project (i.e., 7th iteration) was 55.7. The F1 measure achieved in the 3rd iteration represents 85\% of the maximum F1 measure achieved in the 7th iteration, and this percentage was reached using 1,499 comments (i.e., from 3 projects) whereas the maximum F1 measure used 2,404 comments (i.e., from 7 projects) in the training dataset. Therefore, for Apache Ant we could achieve 85\% of the maximum result using only 62\% of the comments. We argue that the third iteration provides a good tradeoff between prediction performance and number of comments used to create the training dataset.
 
-Analyzing the evolution of the F1 measure through the iterations we notice that there are drops in the performance even with the addition of more comments in the training dataset. Therefore, we analyzed the iterations individually to determine which iteration performs better. Based on the average of the percentage of the maximum F1 measure we find that the best performance of the classifier is achieved during the eighth iteration when identifying design \SATD comments. 
+Analyzing the performance of the F1 measure through the iterations we notice that there are drops in the performance even with the addition of more comments in the training dataset. Therefore, we analyzed the iterations individually to determine which iteration performs better. Based on the average of the percentage of the maximum F1 measure we find that the best performance of the classifier is achieved during the eighth iteration when identifying design \SATD comments. 
 
 At the eighth iteration the average of the maximum F1 measure is of 96.57\% using in average 2,353 comments to create the training dataset. In comparison, the ninth iteration have an average of the maximum F1 measure of 95.99\% which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432). 
 
