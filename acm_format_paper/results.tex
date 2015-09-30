@@ -165,50 +165,28 @@ In spite of the fact that features with higher weights will have more impact dur
 \noindent \textbf{Motivation:} We shown that we can effectively identify \SATD comments. However, the classification of \SATD comments depends on the training dataset that was manually created. But, how much training data do we need to classify these comments? If we need a high number of comments to create our training dataset our approach will be more difficult to be extended and applied in different contexts. In the other hand, if a small dataset can be used to identify \SATD comments this approach can be applied to applications other than Java and even to comments written in different idioms. 
 
 \vspace{1mm}
-\noindent \textbf{Approach:} We executed the classification process several times with an increasing number of comments being added to the training dataset while collecting the results to analyze the changes between each iteration. 
+\noindent \textbf{Approach:} We executed the classification process several times with an increasing number of comments being added to the training dataset while collecting the results to analyze the changes between each iteration.
 
-We first select a project that will be classified by the Stanford Classifier. 
+We first select a project that will be classified by the Stanford Classifier.
 
-Second, with one of the remainder projects, we select all \SATD comments (i.e., design or requirement debt accordingly with what we want to classify), and all comments without technical debt as well. These comments are added to the training dataset and fed into the Standford Classifier. Then, the results of the classification are collected and stored to analysis. 
+Second, with one of the remainder projects, we select all \SATD comments (i.e., design or requirement debt accordingly with what we want to classify), and all comments without technical debt as well. These comments are added to the training dataset and fed into the Standford Classifier. Then, the results of the classification are collected and stored to analysis.
 
-Third, the comments of other project is added to the training dataset and the results of the classification are collected once more. The order that projects are added to the training dataset is not random. We add first projects which has more \SATD comments of the specific type that we are trying to identify. We cycle through the above steps until we had added the comments of all nine projects to the training dataset. 
+Third, the comments of other project is added to the training dataset and the results of the classification are collected once more. The order that projects are added to the training dataset is not random. We add first projects which has more \SATD comments of the specific type that we are trying to identify. We cycle through the above steps until we had added the comments of all nine projects to the training dataset.
 
-Fourth, we select another project to be classified by the Stanford Classifier, and we repeat this process until we have analyzed all our projects. 
+Fourth, we select another project to be classified by the Stanford Classifier, and we repeat this process until we have analyzed all our projects.
  
-To determine how much data is necessary to effectively identify \SATD comments we analyze the iteration with highest F1 measure and the number of comments used in the training dataset to achieve this mark. Based on the maximum F1 measure we calculate how close the others iterations were from achieving the same value. 
+To determine how much data is necessary to effectively identify \SATD comments we analyze the iteration with highest F1 measure and the number of comments used in the training dataset to achieve this mark. Based on the maximum F1 measure we calculate how close the others iterations were from achieving the same value.
 
-For example, if the maximum F1 measure was 85.0 achieved in the 8th iteration, and during the 4th iteration we had a F1 measure of 80.0 we say that 94\% of the maximum F1 measure was achieved in the 4th iteration. Once the percentage of the maximum F1 measure is calculated for all iterations we analyze the quantity of comments used in the training dataset by them. 
+For example, if the maximum F1 measure was 0.85 achieved in the 8th iteration, and during the 4th iteration we had a F1 measure of 0.80 we say that 94\% of the maximum F1 measure was achieved in the 4th iteration. Once the percentage of the maximum F1 measure is calculated for all iterations we analyze the quantity of comments used in the training dataset by them.
 
-\vspace{1mm}
-\noindent \textbf{Results:} Intuitively we expect that the performance of the classifier would improve with each iteration as more comments are being added to the dataset. However, we find that this is not what always happen, and that the addition of more comments can decrease the performance of the classifier in given scenarios.
-
-We determined which iteration has the highest performance for each project. We called this iteration as the maximum F1 measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1 measure value to calculate the percentage of the maximum F1 measure it represents.
-
-We find that, in the identification of design \SATD comments, the F1 measure improves significantly in the first three iterations and, after that, the improvement rate is more steady. Figure \ref{fig:design_ant_result} shows this behavior using Apache Ant as an example. For the sake of space we only provide the figure of one analyzed project, but we performed this analysis for all ten projects and Apache Ant is a good representation of our results. 
-
-
-% the scale of the figure does not match the numbers presented fix it later
 \begin{figure}[thb!]
   \centering
   \includegraphics[width = 0.48\textwidth]{figures/design_ant.pdf}
   \vspace{-3mm}
-  \caption{Apache Ant Design Debt classification}
+  \caption{Ant Design Debt classification}
   \label{fig:design_ant_result}
 \end{figure}
 
-In Figure \ref{fig:design_ant_result} we show the F1 measure performance for each analyzed iteration of Ant project. The three highest values of the F1 measure are: 52.6, 53.9 and 55.7 obtained during the 6th, 8th and the 7th iteration respectively.
-
-We notice that in the 3rd iteration the F1 measure was 47.4, and the maximum F1 measure achieved for the project (i.e., 7th iteration) was 55.7. The F1 measure achieved in the 3rd iteration represents 85\% of the maximum F1 measure achieved in the 7th iteration, and this percentage was reached using 1,499 comments (i.e., from 3 projects) whereas the maximum F1 measure used 2,404 comments (i.e., from 7 projects) in the training dataset. Therefore, for Apache Ant we could achieve 85\% of the maximum result using only 62\% of the comments. We argue that the third iteration provides a good tradeoff between prediction performance and number of comments used to create the training dataset.
-
-Analyzing the performance of the F1 measure through the iterations we notice that there are drops in the performance even with the addition of more comments in the training dataset. Therefore, we analyzed the iterations individually to determine which iteration performs better. Based on the average of the percentage of the maximum F1 measure we find that the best performance of the classifier is achieved during the eighth iteration when identifying design \SATD comments. 
-
-At the eighth iteration the average of the maximum F1 measure is of 96.57\% using in average 2,353 comments to create the training dataset. In comparison, the ninth iteration have an average of the maximum F1 measure of 95.99\% which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432). 
-
-Table \ref{tbl:design_iteration_performance} presents the percentage of the maximum F1 measure for each one the iterations. The first column shows the iteration number. The second column shows the average of comments used in the training dataset of that specific iteration. The third column give us the percentage of the total comments that are being used in the training dataset. 
-
-We found that, the third iteration presents an average of the maximum F1 measure of 92.47\%, and uses 1,444 comments in average in the training dataset. This means using only 59.37\% of the total comments classified in this study (i.e., 2,432 design \SATD). 
-
-% the scale of the figure does not match the numbers presented fix it later
 \begin{figure}[thb!]
   \centering
   \includegraphics[width = 0.48\textwidth]{figures/implementation_argo.pdf}
@@ -217,33 +195,54 @@ We found that, the third iteration presents an average of the maximum F1 measure
   \label{fig:implementation_argo_result}
 \end{figure}
 
-For requirement \SATD comments we find that although there is variation in the F1 measure value during the first 3 iterations they are not so preeminent as the variation found in design \SATD analysis. The F1 measure in requirement \SATD tend to be more constant through the iterations, and the first iteration has already a high percentage of the maximum F1 measured achieved for each project. Figure \ref{fig:implementation_argo_result} shows the evolution of the F1 measure over the iterations for requirement \SATD identification in ArgoUml. 
+\vspace{1mm}
+\noindent \textbf{Results:} Intuitively we expect that the performance of the classifier would improve with each iteration as more comments are being added to the training dataset. However, we find that this is not what always happens, and that the addition of more comments can decrease the performance of the classifier in given scenarios. One of the reasons for this is that the weight of features is given through empirical probability, and consequently features that appears more will have a higher weight. Although this is an effective process for the majority of cases that we studied, it can be misleading when classifying comments that has different context from the comments found in the training dataset. 
 
-The values of the F1 measure shown In Figure \ref{fig:implementation_argo_result} are in order execution: 0.721, 0.673, 0.729, 0.752, 0.749, 0.754, 0.772, 0.769 and 0.760.
+Therefore, we determined which iteration has the highest performance for each project. We called this iteration as the maximum F1 measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1 measure value to calculate the percentage of the maximum F1 measure that it represents. We calculate these values for design and requirement debt separately.
 
-ArgoUML has F1 measure of 0.721 during the first iteration, 0.729 in the third iteration and 0.772 in the seventh iteration which was the highest F1 measure achieved. The improvement in the F1 measure between the first and third iteration is very low as it is between the fourth and the sixth iteration. In the first iteration the classifier was trained with 150 requirement \SATD comments, which means 27\% of the comments that where used in the ninth iteration. A reduction of 73\% of the necessary training data to achieve almost the same result in terms of F1 measure in this case. 
+\vspace{1mm}
+\noindent \textbf{Design debt:} We find that the F1 measure improves significantly in the first three iterations and, after that, the improvement rate is more steady. Figure \ref{fig:design_ant_result} shows this behavior using Ant as an example. For the sake of space we only provide the figure of one analyzed project, but we performed this analysis for all ten projects and Ant is a good representation of our results. 
 
-We analyzed the average percentage of the maximum F1 measure while identifying requirement \SATD comments. The seventh iteration was the one with highest average percentage of the maximum F1 measure achieving a value of 89.89\%. In the seventh iteration an average of 1,055 requirement \SATD comments were used in the training dataset representing 97\% of all requirement \SATD comments that we classified during this study.
+The three highest values of the F1 measure in Figure \ref{fig:design_ant_result} are: 0.526, 0.539 and 0.557 obtained during the 6th, 8th and the 7th iteration respectively.
 
-We find that the first iteration has a hight average of percentage of the maximum F1 across all projects (i.e., 83\%). Although this percentage still lower than the achieved at the seventh iteration (i.e., 88\%), the training dataset used an average of 600 \SATD comments representing a reduction of 44\% in the necessary comments to create an effective training dataset to classify requirement \SATD comments. Table \ref{tbl:requirement_iteration_performance} shows the average maximum F1 measure for each iteration. 
+We notice that in the 3rd iteration the F1 measure was 0.474, and the maximum F1 measure achieved for the project (i.e., 7th iteration) was 0.557. The F1 measure achieved in the 3rd iteration represents 85\% of the maximum F1 measure achieved in the 7th iteration, and this percentage was reached using 1,499 comments (i.e., from 3 projects) whereas the maximum F1 measure used 2,404 comments (i.e., from 7 projects) in the training dataset. Therefore, for Ant we could achieve 85\% of the maximum result using only 62\% of the comments. We argue that the third iteration provides a good tradeoff between prediction performance and number of comments used to create the training dataset.
+
+Because the collected results are slightly different from each other, we analyzed the iterations individually to determine which iteration has the best performance across all projects. To measure that, we calculate the average percentage of the maximum F1 measure for each iteration. For example, we take the average percentage of the maximum F1 measure achieved during the 1st iteration for all projects, then we calculate the same value for all 2nd iterations and so on. We find that, in average, the best performance is achieved during the 8th iteration.
+
+At the 8th iteration the average of the maximum F1 measure is of 96.57\% using on average 2,353 comments to create the training dataset. In comparison, the 9th iteration have an average of the maximum F1 measure of 95.99\% which is slightly lower than the average obtained in the 8th iteration, and uses more comments in the training dataset (i.e., 2,432). As mentioned before, the addition of more comments not necessary implies in more performance.
+
+Table \ref{tbl:design_iteration_performance} shows the average percentage of the maximum F1 measure for each iteration. The first column shows the iteration number. The second column shows the average percentage of the maximum F1 measure achieved for each iteration. The third column presents the delta interval of the average percentage of the maximum F1 measure between one iteration and another. The fourth column shows the average of comments used in the training dataset of that specific iteration.
+
+We found that, the third iteration presents an average of the maximum F1 measure of 92.47\%, and uses 1,444 comments in average in the training dataset. This means using only 59.37\% of the total comments classified in this study (i.e., 2,432 design \SATD). 
+
+\vspace{1mm}
+\noindent \textbf{Requirement debt:} We find that although there is variation in the F1 measure value during the first 3 iterations they are not so preeminent as the variation found in design \SATD analysis. The F1 measure in requirement \SATD tend to be more constant through the iterations, and the first iteration has already a high percentage of the maximum F1 measured achieved for each project. This shows that the way the developers indicate requirement debt does not vary between different application domains as much as in design debt. This uniformity in requirement \SATD comments allows a good classification even with a small number of comments in the training dataset.  
+
+Figure \ref{fig:implementation_argo_result} shows the performance of the F1 measure over the iterations in ArgoUml. The highest values of the F1 measure shown in Figure \ref{fig:implementation_argo_result} are in order execution: 0.772 (7th), 0.769 (8th) and 0.760 (9th).
+
+ArgoUML has F1 measure of 0.721 during the 1st iteration, 0.729 in the third iteration and 0.772 in the seventh iteration which was the highest F1 measure achieved. The improvement in the F1 measure between the 1st and 3rd iteration is very low as it is between the 4th and the 6th iteration. In the 1st iteration the classifier was trained with 150 requirement \SATD comments, which means 27\% of the comments that where used in the 9th iteration. A reduction of 73\% of the necessary training data to achieve almost the same result in terms of F1 measure in this case. 
+
+We also analyzed the average percentage of the maximum F1 measure between all iterations across the projects. The 7th iteration was the one with the highest average percentage of the maximum F1 measure achieving a value of 89.89\%. In the 7th iteration an average of 1,055 requirement \SATD comments were used in the training dataset representing 97\% of all requirement \SATD comments that we classified during this study.
+
+We find that the 1st iteration has a hight average of percentage of the maximum F1 across all projects (i.e., 83\%). Although this percentage still lower than the achieved at the 7th iteration (i.e., 88\%), the training dataset of the 1st iteration sized, on average, 601 \SATD comments. This means a reduction of 44\% in the necessary amount of comments to create an effective training dataset to classify requirement \SATD comments. Table \ref{tbl:requirement_iteration_performance} shows the average maximum F1 measure, the delta interval of the average maximum F1 measure between each iteration and the average number of comments used to create the training dataset. 
 
 \begin{table}[!thb]
     \begin{center}
-        \caption{Average maximum F1 measure for Design Debt}
+        \caption{Average maximum F1 measure for Design Debt  for all projects}
         \label{tbl:design_iteration_performance}
-        \begin{tabular}{l| c c }
+        \begin{tabular}{l| c c c}
         \toprule
-        \thead{Iteration\\Number} & \thead{\% of maximum\\F1 measure} & \thead{Average\\comments} \\
+        \thead{Iteration\\Number} & \thead{Average\%\\of maximum\\F1 measure} & \thead{$\Delta$\\between\\iterations} & \thead{Average\\comments} \\
         \midrule
-         1  &  0.684  & 756   \\  
-         2  &  0.805  & 1,106 \\  
-         3  &  0.863  & 1,444 \\  
-         4  &  0.879  & 1,717 \\  
-         5  &  0.857  & 1,919 \\  
-         6  &  0.931  & 2,108 \\  
-         7  &  0.950  & 2,251 \\  
-         8  &  0.958  & 2,353 \\  
-         9  &  0.966  & 2,432 \\  
+         1  &  0.718 &  -      & 756   \\  
+         2  &  0.856 &  0.138  & 1,106 \\  
+         3  &  0.924 &  0.068  & 1,444 \\  
+         4  &  0.912 & -0.012  & 1,717 \\  
+         5  &  0.927 &  0.015  & 1,919 \\  
+         6  &  0.930 &  0.003  & 2,108 \\  
+         7  &  0.963 &  0.033  & 2,251 \\  
+         8  &  0.965 &  0.002  & 2,353 \\  
+         9  &  0.959 & -0.006  & 2,432 \\  
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -251,28 +250,26 @@ We find that the first iteration has a hight average of percentage of the maximu
 
 \begin{table}[!thb]
 	\begin{center}
-		\caption{Average maximum F1 measure for Requirement Debt}
+		\caption{Average maximum F1 measure for Requirement Debt for all projects}
 		\label{tbl:requirement_iteration_performance}
-		\begin{tabular}{l| c c }
+		\begin{tabular}{l| c c c}
 			\toprule
-			\thead{Iteration\\Number} & \thead{\% of maximum\\F1 measure} & \thead{Average\\comments} \\
+			\thead{Iteration\\Number} & \thead{Average\%\\of maximum\\F1 measure} & \thead{$\Delta$\\between\\iterations} & \thead{Average\\comments} \\
 			\midrule
-			1  &  0.684  & 756 \\  
-			2  &  0.805  & 1,106 \\  
-			3  &  0.863  & 1,444 \\  
-			4  &  0.879  & 1,717 \\  
-			5  &  0.857  & 1,919 \\  
-			6  &  0.931  & 2,108 \\  
-			7  &  0.950  & 2,251 \\  
-			8  &  0.958  & 2,353 \\  
-			9  &  0.966  & 2,432 \\  
+			1  &  0.862 &   -      &  601   \\  
+            2  &  0.834 & -0.028   &  748   \\
+            3  &  0.838 &  0.004   &  876   \\  
+            4  &  0.834 & -0.004   &  970   \\
+            5  &  0.823 & -0.011   &  1,014  \\
+            6  &  0.832 &  0.009   &  1,037  \\
+			7  &  0.898 &  0.066   &  1,055  \\  
+            8  &  0.885 & -0.013   &  1,071  \\  
+            9  &  0.873 & -0.012   &  1,085  \\  
 			\bottomrule
 		\end{tabular}
 	\end{center}    
 \end{table}
 
-During the execution of the experiment we notice that the classification can vary accordingly with the project being classified and the data used as test. We also intuitively know that developers from different projects express them selfs differently. These characteristics can be observed during the iterative classification where the addition of more comments not necessarily implies in a improvement on the F1 measure.
+It is important to notice that, this results shows that it is possible to identify \SATD with a lower number of comments. Using a lower number of comments to create the training dataset makes the approach more applicable as the number of \SATD comments is rather scarce.    
 
-One of the reasons for this is that the weight of features is given trough empirical probability, and consequently features that appears with more frequency will have a higher weight. Although this is an effective process for the majority of cases that we studied, it can be misleading when classifying comments that has different context. With smaller datasets such as the training data for requirement \SATD, the addition of comments that does not represent the way that developers write comments in the classified project will actually decrease the F1 measure performance. 
-
-\conclusionbox{We find that the design \SATD comments can be classified effectively using a training dataset of 1,444 these comments. Similarly requirement \SATD can be classified building a training dataset with 1,055 comments of this category.}
+\conclusionbox{We find that the design \SATD comments can be classified effectively using a training dataset of 1,444 comments. Similarly, requirement \SATD can be classified with as many as 601 comments of this type.}

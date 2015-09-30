@@ -5,7 +5,7 @@
   \label{fig:approach}
 \end{figure*}
 
-The main goal of our study is to automatically identify \SATD trough source code comments. To do that, we first extract comments from ten open source projects. Second, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remainder of comments into \SATD types (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data to the Stanford  Classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each.
+The main goal of our study is to automatically identify \SATD through source code comments. To do that, we first extract comments from ten open source projects. Second, we apply four filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remainder of comments into \SATD types (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data to the Stanford  Classifier. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections details each.
 
 \subsection{Project Data Extraction} % (fold)
 \label{sub:data_extraction}
@@ -71,8 +71,6 @@ Commented source code is found in the projects due to many different reasons. On
 Javadoc comments rarely mention self-admitted technical debt. For the Javadoc comments that does mention self-admitted technical debt, we notice that they usually contains one of the task-reserved words (i.e., ``todo'', ``fixme'', or ``xxx''). Therefore, our heuristic remove all comments of the type Javadoc unless they contain at least one of the task-reserved words. To do so, we create a simple regular expression that search for the task-reserved words before removing the comment.  
 
 The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,140 meaning a reduction of 80.82\% in the number of comments to be manually analyzed. Using the filtering heuristics we were able to remove from 39.25\% to 85.54\% of all comments. Table \ref{tab:project_details} provides the number of comments kept after the filtering heuristics for each project.
-
-% The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Ant project, applying the above steps helped reduce the number of comments from 21,587 to 4,140 comments meaning that 19.17\% of the comments were kept for analysis. The percentage of comments that were kept for analysis ranges from 14.45\% to 40.64\%. Table \ref{tab:project_details} provides the number of comments kept after the filtering heuristics for each project.
 
 % subsection filtering_comments (end)
 
