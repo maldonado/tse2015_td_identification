@@ -1,4 +1,3 @@
-\todo{write compare diferent results using other classifiers}
 \todo{calculate the overlap of the top 10 words of each project with the top 10 list of rq2}
 In this paper we propose an approach to identify \SATD comments using Stanford Classifier. This tool, once trained correctly, can automatically classify natural language text. We create a training dataset of \SATD comments and analyzed the classification performance across ten open source projects. In RQ1, we show that our approach can outperform the current state-of-the-art in 9 out of 10 projects while identifying requirement debt. However, is not clear the reason why the approach was not as effective in this project as it was in the others.
 
@@ -8,12 +7,11 @@ Intuitively we know that each project has its own particularities, and that each
 
 For a great deal of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers feeling that this is not the appropriate solution for the problem in hand. However, relying just in these words for the identification of \SATD is not good enough as shown in Figures \ref{fig:f1_measure_comparison_design_debt} and \ref{fig:f1_measure_comparison_requirement_debt}. Therefore, NPL techniques as proposed in our word is need in order to effectively identify \SATD comments.
 
-In our work we set the Stanford Classifier to execute the classification using logistic regression algorithms. However would be interesting to see how other classification algorithms would perform with our dataset. Therefore, we setup Stanford Classifier to execute using two other different algorithms a Naive Bayes generative classifier and a binary classifier. 
+In our work we set the Stanford Classifier to execute the classification using a logistic regression algorithm. However would be interesting to see how other classifier algorithms perform with our dataset. Therefore, we setup Stanford Classifier to execute using two other different algorithms a Naive Bayes generative classifier and a Binary classifier. 
+
+Comparing the average F1 measure achieved was  
 
 
-
-
- 
 
 
 
