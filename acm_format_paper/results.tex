@@ -1,5 +1,38 @@
 The goal of our research is to develop an automatic way to detect design and requirement \SATD comments. To do so, we first manually classify a large number of comments identifying which ones are \SATD. With the resulting dataset, we train Stanford Classifier to identify design and requirement \SATD (RQ1). Second, we inspect the features used by Stanford Classifier to identify \SATD. These features are words frequently found in comments with technical debt. We present which are the 10 most common words that indicates design and requirement \SATD (RQ2). Then, we investigate how variations in the amount of training data affects the performance of Stanford Classifier classification (RQ3). We detail the motivation, approach and present the results of each of our research questions in the remainder of this section.    
 
+
+\begin{figure*}[!thb]
+  \centering
+  \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design.pdf}
+  \label{fig:f1_measure_comparison_design_debt}}
+  \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparison_requeriment.pdf}
+  \label{fig:f1_measure_comparison_requirement_debt}}
+  \caption{F1 measure comparison}
+\end{figure*}
+
+\begin{table*}[!thb]
+    \begin{center}
+        \caption{Improvement over the baseline F1 measure for design and requirement debt}
+        \label{tbl:improvement_f1measure}
+        \begin{tabular}{l| c c c c c }
+        \toprule
+        \thead{Project} & \thead{Design Debt \\F1 measure} & \thead{Requirement Debt \\F1 measure} & \thead{Baseline\\F1} & \thead{Design Debt \\Improvement} & \thead{Requirement Debt \\Improvement}\\
+        \midrule
+         Apache Ant      &  0.517 & 0.364 & 0.142  &  3.6  x   &  2.5  x  \\
+         Apache Jmeter   &  0.731 & 0.255 & 0.108  &  6.7  x   &  2.3  x  \\
+         ArgoUML         &  0.814 & 0.760 & 0.040  &  20.3 x   &  19   x  \\
+         Columba         &  0.601 & 0.934 & 0.065  &  9.2  x   &  14.3 x  \\
+         EMF             &  0.470 & 0.381 & 0.087  &  5.4  x   &  4.3  x  \\
+         Hibernate       &  0.744 & 0.476 & 0.118  &  6.3  x   &  4    x  \\
+         JEdit           &  0.509 & 0.091 & 0.264  &  1.9  x   &  -3.4 x  \\
+         JFreeChart      &  0.492 & 0.500 & 0.044  &  11.1 x   &  11.3 x  \\
+         JRuby           &  0.783 & 0.462 & 0.078  &  10   x   &  5.9  x  \\
+         SQuirrel        &  0.540 & 0.875 & 0.044  &  12.2 x   &  19.8 x  \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table*}
+
 \vspace{3mm}
 \noindent\rqi
 \vspace{3mm}
@@ -33,77 +66,15 @@ Lastly, for each project we obtained the comment patterns baseline and the naive
 
 It is important to notice that each one of the selected baselines for comparison has one strong point. The comment patterns approach has a high precision, but it lacks recall, i.e., this approach points correctly to \SATD comments, but as the approach depends on keywords, it identifies a very small set of all the \SATD comments in the project. The less sophisticated naive baseline provides a high recall because we try to classify comments between two categories (i.e with or without technical debt), meaning a 50\% chance to randomly get one of the two classifications. 
 
-\begin{figure}[thb!]
-   \centering
-  \includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design.pdf}
-  \vspace{-3mm}
-  \caption{F1 measure comparison Design Debt}
-  \label{fig:f1_measure_comparison_design_debt}
-\end{figure}
-
-For all the projects, the F1 measure achieved by Stanford Classifier is higher than the other baselines F1 measures. The highest F1 measure obtained for design debt was in ArgoUML with a value of 0.814. On the other hand, the lowest F1 measure obtained was in EMF with a value of 0.470. On average, the obtained F1 measure was 0.620. In comparison, the average F1 measure obtained using comment patterns was of 0.099, and the naive baseline F1 measure 0.086. Consequently, our approach to identify design \SATD outperforms, in average, 6 times the state-of-the-art approach and 7 times the naive baseline. Table \ref{tbl:improvement_f1measure_design} shows the improvement of our approach over the comment patterns baseline for each project. 
+For all the projects, the F1 measure achieved by Stanford Classifier is higher than the other baselines F1 measures. The highest F1 measure obtained for design debt was in ArgoUML with a value of 0.814. On the other hand, the lowest F1 measure obtained was in EMF with a value of 0.470. On average, the obtained F1 measure was 0.620. In comparison, the average F1 measure obtained using comment patterns was of 0.099, and the naive baseline F1 measure 0.086. Consequently, our approach to identify design \SATD outperforms, in average, 6 times the state-of-the-art approach and 7 times the naive baseline. Table \ref{tbl:improvement_f1measure} shows the improvement of our approach over the comment patterns baseline for each project. 
  
-Similarly, Figure \ref{fig:f1_measure_comparison_requeriment} shows the comparison between the three F1 measures while identifying requirement \SATD.
-
-\begin{figure}[thb!]
-  \centering
-  \includegraphics[width=0.48\textwidth]{figures/f1_measure_comparison_requeriment.pdf}
-  \vspace{-3mm}
-  \caption{F1 measure comparison Requirement Debt}
-  \label{fig:f1_measure_comparison_requeriment}
-\end{figure}
+Similarly, Figure \ref{fig:f1_measure_comparison_requirement_debt} shows the comparison between the three F1 measures while identifying requirement \SATD.
 
 We find that in 90\% of the analyzed projects the F1 measure obtained by our approach surpass the comment patterns baseline, and in 100\% of the analyzed cases we outperform the naive baseline. Is important to mention that the comment patterns baseline calculated is the same for design and for requirement debt. This happens because the comment patterns approach does not distinguish different types of \SATD. 
 
 Our highest F1 measure was obtained for Columba project with 0.934, and the lowest value was of 0.091 on JEdit. Although there was a big fluctuation between the maximum and minimum value obtained our average F1 measure was of 0.510. Despite the fact that this number is slightly lower than the average obtained while  identifying design debt, the amount of requirement \SATD comments that are present in projects are very low. For example, Columba project has only 134 occurrences of requirement \SATD scattered among 6,393 comments (i.e, requirement debt comments and without \SATD comments). This is an example that our approach can identify \SATD in the unbalanced dataset. 
 
-Table \ref{tbl:improvement_f1measure_requirement} shows the improvement of our approach over the comment patterns approach. For SQuirrel the F1 measure was of 0.875 whereas the comment pattern F1 measure was of 0.044, which means that there was an improvement of 19.8 times in the identification of requirement \SATD comments using our approach. The exception is JEdit where the F1 measure was of 0.091 and the comment pattern F1 measure was of 0.264. However, we argue that using the comment patterns approach is not guaranteed that every \SATD found will be a requirement \SATD as our approach proposes. Even though 0.091 is our lowest F1 measure we still outperform the naive baseline F1 measured by 30 times, i.e., the naive baseline F1 measure was of 0.003 for JEdit. 
-
-\begin{table}[!thb]
-    \begin{center}
-        \caption{Improvement over the random F1 measure for design}
-        \label{tbl:improvement_f1measure_design}
-        \begin{tabular}{l| c c c }
-        \toprule
-        \thead{Project} & \thead{F1} & \thead{Baseline\\F1} & \thead{Improvement}\\
-        \midrule
-         Apache Ant      &  0.517 &  0.142  &  3.6  x\\
-         Apache Jmeter   &  0.731 &  0.108  &  6.7  x\\
-         ArgoUML         &  0.814 &  0.040  &  20.3 x\\
-         Columba         &  0.601 &  0.065  &  9.2  x\\
-         EMF             &  0.470 &  0.087  &  5.4  x\\
-         Hibernate       &  0.744 &  0.118  &  6.3  x\\
-         JEdit           &  0.509 &  0.264  &  1.9  x\\
-         JFreeChart      &  0.492 &  0.044  &  11.1 x\\
-         JRuby           &  0.783 &  0.078  &  10   x\\
-         SQuirrel        &  0.540 &  0.044  &  12.2 x\\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
-
-\begin{table}[!thb]
-    \begin{center}
-        \caption{Improvement over the random F1 measure for requirements}
-        \label{tbl:improvement_f1measure_requirement}
-        \begin{tabular}{l| c c c }
-        \toprule
-        \thead{Project} & \thead{F1} & \thead{Baseline\\F1} & \thead{Improvement}\\
-        \midrule
-         Apache Ant      & 0.364 & 0.142  &  2.5  x\\
-         Apache Jmeter   & 0.255 & 0.108  &  2.3  x\\
-         ArgoUML         & 0.760 & 0.040  &  19   x\\
-         Columba         & 0.934 & 0.065  &  14.3 x\\
-         EMF             & 0.381 & 0.087  &  4.3  x\\
-         Hibernate       & 0.476 & 0.118  &  4    x\\
-         JEdit           & 0.091 & 0.264  &  N/A   \\
-         JFreeChart      & 0.500 & 0.044  &  11.3 x\\
-         JRuby           & 0.462 & 0.078  &  5.9  x\\
-         SQuirrel        & 0.875 & 0.044  &  19.8 x\\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table}
+Table \ref{tbl:improvement_f1measure} shows the improvement of our approach over the comment patterns approach. For SQuirrel the F1 measure was of 0.875 whereas the comment pattern F1 measure was of 0.044, which means that there was an improvement of 19.8 times in the identification of requirement \SATD comments using our approach. The exception is JEdit where the F1 measure was of 0.091 and the comment pattern F1 measure was of 0.264. However, we argue that using the comment patterns approach is not guaranteed that every \SATD found will be a requirement \SATD as our approach proposes. Even though 0.091 is our lowest F1 measure we still outperform the naive baseline F1 measured by 30 times, i.e., the naive baseline F1 measure was of 0.003 for JEdit. 
 
 \conclusionbox{We find that the Stanford Classifier, is more effective identifying \SATD comments than the current state-of-art approach. We achieved an average F1 measure of 0.62 while identifying design debt and an average of 0.51 while classifying requirement debt.}
 
@@ -135,7 +106,7 @@ Table \ref{tbl:top_ten_features} shows the top 10 features for the identificatio
         \label{tbl:top_ten_features}
         \begin{tabular}{l| l l }
         \toprule
-        \thead{Order} & \thead{Design\\TD} & \thead{Requirement\\TD}  \\
+        \thead{Order} & \thead{Design\\Debt} & \thead{Requirement\\Debt}  \\
         \midrule
          1  & hack       &   todo              \\
          2  & workaround &   needed            \\
