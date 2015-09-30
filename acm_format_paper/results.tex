@@ -1,6 +1,5 @@
 The goal of our research is to develop an automatic way to detect design and requirement \SATD comments. To do so, we first manually classify a large number of comments identifying which ones are \SATD. With the resulting dataset, we train Stanford Classifier to identify design and requirement \SATD (RQ1). Second, we inspect the features used by Stanford Classifier to identify \SATD. These features are words frequently found in comments with technical debt. We present which are the 10 most common words that indicates design and requirement \SATD (RQ2). Then, we investigate how variations in the amount of training data affects the performance of Stanford Classifier classification (RQ3). We detail the motivation, approach and present the results of each of our research questions in the remainder of this section.    
 
-
 \begin{figure*}[!thb]
   \centering
   \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design.pdf}
@@ -94,11 +93,7 @@ For each project analyzed we collect the features used to predict the \SATD comm
 We determined the top 10 features (i.e, most relevant based on the weight) for design and requirement \SATD comments.
 
 \vspace{1mm}
-\noindent \textbf{Results:} 
-\todo{generate ranking again considering the unique top ten words for each project}
-\todo{if the word is not in the list give the highest value (11)}
-
-Table \ref{tbl:top_ten_features} shows the top 10 features for the identification of \SATD in the ten studied projects ordered by relevance. In the first column we present the ranking of the word. In the second column we list the features used in the identification of design \SATD, and the third column is the list of features used to identify requirement \SATD.
+\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 features for the identification of \SATD in the ten studied projects ordered by relevance. In the first column we present the ranking of the word. In the second column we list the features used in the identification of design \SATD, and the third column is the list of features used to identify requirement \SATD.
 
 \begin{table}[!thb]
     \begin{center}
@@ -110,14 +105,14 @@ Table \ref{tbl:top_ten_features} shows the top 10 features for the identificatio
         \midrule
          1  & hack       &   todo              \\
          2  & workaround &   needed            \\
-         3  & kludge     &   implementation    \\
-         4  & yuck!      &   fixme             \\
-         5  & fixme      &   xxx               \\
-         6  & todo       &   auto-generated    \\
-         7  & stupidity  &   ends?             \\
-         8  & ugly       &   configurable      \\
-         9  & unused?    &   convention        \\
-         10 & sucks      &   apparently        \\
+         3  & yuck!      &   implementation    \\
+         4  & kludge     &   fixme             \\
+         5  & stupidity  &   xxx               \\
+         6  & needed?    &   ends?             \\
+         7  & columns?   &   convention        \\
+         8  & unused?    &   configurable      \\
+         9  & wtf?       &   apparently        \\
+         10 & todo       &   auto-generated    \\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -127,7 +122,7 @@ It is possible that the same feature is used to classify design debt and require
 
 In spite of the fact that features with higher weights will have more impact during the classification, the final vote is given based on the combined weight of all matching features. In average, the number of features to classify design debt were 6,196 whereas for requirement debt they were 2,889. This shows why our recall is much better than Potdar and Shihab's ~\cite{Potdar2014ICSME}. 
 
-\conclusionbox{We find that the most common words indicating \SATD comments are: `hack', `workaround', `kludge', `yuck!', `fixme', `todo', `stupidity', `ugly', `unused?', `sucks', `needed', `implementation', `xxx', `auto-generated', `ends?', `configurable', `convention' and `apparently'.}
+\conclusionbox{We find that the most common words indicating \SATD comments are: `hack', `workaround', `yuck!', `kludge', `stupidity', `needed', `columns?', `unsed?', `wtf?', `todo', `implementation', `fixme', `xxx', `ends?', `convention', `configurable', `apparently' and `auto-generated'.}
 
 \vspace{3mm}
 \noindent\rqiii
@@ -150,7 +145,7 @@ To determine how much data is necessary to effectively identify \SATD comments w
 
 For example, if the maximum F1 measure was 0.85 achieved in the 8th iteration, and during the 4th iteration we had a F1 measure of 0.80 we say that 94\% of the maximum F1 measure was achieved in the 4th iteration. Once the percentage of the maximum F1 measure is calculated for all iterations we analyze the quantity of comments used in the training dataset by them.
 
-\begin{figure}[thb!]
+\begin{figure}[t]
   \centering
   \includegraphics[width = 0.48\textwidth]{figures/design_ant.pdf}
   \vspace{-3mm}
@@ -158,7 +153,7 @@ For example, if the maximum F1 measure was 0.85 achieved in the 8th iteration, a
   \label{fig:design_ant_result}
 \end{figure}
 
-\begin{figure}[thb!]
+\begin{figure}[t]
   \centering
   \includegraphics[width = 0.48\textwidth]{figures/implementation_argo.pdf}
   \vspace{-3mm}
