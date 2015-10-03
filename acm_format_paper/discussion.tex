@@ -1,97 +1,11 @@
-\todo{calculate the overlap of the top 10 words of each project with the top 10 list of rq2}
 In this paper we propose an approach to identify \SATD comments using Stanford Classifier. This tool, once trained correctly, can automatically classify natural language text. We create a training dataset of \SATD comments and analyzed the classification performance across ten open source projects. In RQ1, we show that our approach can outperform the current state-of-the-art in 9 out of 10 projects while identifying requirement debt. However, is not clear the reason why the approach was not as effective in this project as it was in the others.
 
 Investigating JEdit comments we notice two main reasons 1) the project has 10,322 comments of those only 14 are requirement \SATD. The data distribution represents a to challenge the classification task. Even though the dataset is very unbalanced our precision was of 0.125 which compared with the naive baseline precision, 0.001 our approach is still more useful. 2) Most requirement \SATD comments in this project are in the middle of long comments. A lot of features identifies what is not \SATD, (i.e., due to the unbalanced dataset), and therefore long comments can generate `noise' that hinders the classification. One possible way to reduce this effect is through the addition of similar data. 
 
 Intuitively we know that each project has its own particularities, and that each group of developers, must often, create a unique way to communicate their concerns with each other. This unique trait of source code comments is inherited from the natural language itself and render the fully automated prediction of every single \SATD very unlikely. Even analyzing a old aged project, changes in the context of the application and turnover of developers can reflect changes in the way that source code comments are written. 
 
-For a great deal of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers feeling that this is not the appropriate solution for the problem in hand. However, relying just in these words for the identification of \SATD is not good enough as shown in Figures \ref{fig:f1_measure_comparison_design_debt} and \ref{fig:f1_measure_comparison_requirement_debt}. Therefore, NPL techniques as proposed in our word is need in order to effectively identify \SATD comments.
+For a great deal of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers feeling that this is not the appropriate solution for the problem in hand. However, relying just in these words for the identification of \SATD is not good enough as shown in Figures \ref{fig:f1_measure_comparison_design_debt} and \ref{fig:f1_measure_comparison_requirement_debt}. Therefore, NLP techniques, as proposed in our work, is needed in order to effectively identify \SATD comments.
 
-In our work we set the Stanford Classifier to execute the classification using a logistic regression algorithm. However would be interesting to see how other classifier algorithms perform with our dataset. Therefore, we setup Stanford Classifier to execute using two other different algorithms a Naive Bayes generative classifier and a Binary classifier. 
+In our work, all the classification done by Stanford Classifier used a Logistic Regression classifier. However, would be interesting to see how other  algorithms perform when classifying our dataset. Then, we choose two other algorithms to execute the classification with: Naive Bayes generative classifier and Binary classifier.
 
-Comparing the average F1 measure achieved was  
-
-
-
-
-
-% Analyzing project :apache-ant-1.7.0
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 9
-% True positives: 0
-% True negatives: 3997
-% False positives: 9
-% False negatives: 16
-% Analyzing project :apache-jmeter-2.10
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 8
-% True positives: 0
-% True negatives: 7780
-% False positives: 8
-% False negatives: 22
-% Analyzing project :argouml
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 9
-% True positives: 0
-% True negatives: 8126
-% False positives: 9
-% False negatives: 651
-% Analyzing project :columba-1.4-src
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 2
-% True positives: 0
-% True negatives: 6272
-% False positives: 2
-% False negatives: 134
-% Analyzing project :emf-2.4.1
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 5
-% True positives: 0
-% True negatives: 4292
-% False positives: 5
-% False negatives: 16
-% Analyzing project :hibernate-distribution-3.3.2.GA
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 3
-% True positives: 0
-% True negatives: 2493
-% False positives: 3
-% False negatives: 64
-% Analyzing project :jEdit-4.2
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 6
-% True positives: 0
-% True negatives: 10060
-% False positives: 6
-% False negatives: 14
-% Analyzing project :jfreechart-1.0.19
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 1
-% True positives: 0
-% True negatives: 4213
-% False positives: 1
-% False negatives: 25
-% Analyzing project :jruby-1.4.0
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 8
-% True positives: 0
-% True negatives: 4267
-% False positives: 8
-% False negatives: 114
-% Analyzing project :sql12
-% Precision:  0.0
-% Recall:     0.0
-% Total td found: 9
-% True positives: 0
-% True negatives: 6935
-% False positives: 9
-% False negatives: 150
+As show in Figure \todo{}, while comparing the performance between the three different algorithms we find that the Naive Bayes has the worst average F1 measure, \todo{}. The reason behind the low F1 measure average is that the Naive Bayes algorithm favors recall at the expense of precision. The other two algorithms presents more balanced results than Naive Bayes, and the difference in performance between them are not as accentuate. The Logistic Regression classifier was \todo{} and the Binary classifier was \todo{}. Although the Binary classification has a slightly better performance, for our research purpose, the Logistical Regression algorithm provide more insightful features as outcome. These features were analyzed and presented in RQ2. 
