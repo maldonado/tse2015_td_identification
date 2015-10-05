@@ -1,4 +1,4 @@
-Our work uses code comments to detect \SATD through the use of a natural language processing technique. Therefore, we divide the related work into four categories: source code comments, technical debt, code smell detection and NLP.
+Our work uses code comments to detect \SATD through the use of a natural language processing technique. Therefore, we divide the related work into three categories: source code comments, technical debt and Natural Language Processing in Software Engineering.
 
 \subsection{Source Code Comments}
 
@@ -14,12 +14,26 @@ A number of studies have focused on the study of, detection and management of te
 
 Other work focused on the detection of technical debt. Zazworka \textit{et al.} \cite{Zazworka2013CSE} conducted an experiment to compare the efficiency of automated tools in comparison with human elicitation regarding the detection of technical debt. They found that there is small overlap between the two approaches, and thus it is better to combine them than replace one with the other. In addition, they concluded that automated tools are more efficient in finding defect debt, whereas developers can realize more abstract categories of technical debt.
 
-In follow on work, Zazworka \textit{et al.}~\cite{Zazworka2011MTD} conducted a study to measure the impact of technical debt on software quality. They focused on a particular kind of design debt, namely God Classes. They found that God Classes are more likely to change, and therefore, have a higher impact in software quality. Fontana \textit{et al.}~\cite{Fontana2012MTD} investigated design technical debt appearing in the form of code smells. They used metrics to find three different code smells, namely God Classes, Data Classes and Duplicated Code. They proposed an approach to classify which one of the different code smells should be addressed first, based on a risk scale. Also related here, Potdar and Shihab~\cite{Potdar2014ICSME} used code comments to detect technical debt.They extracted the comments of four projects and analyzed more than 101,762 comments to come up with 62  patterns that indicates self-admitted technical debt. Their findings show that 2.4\% - 31\% of the files in a project contain self-admitted technical debt.
+In follow on work, Zazworka \textit{et al.}~\cite{Zazworka2011MTD} conducted a study to measure the impact of technical debt on software quality. They focused on a particular kind of design debt, namely God Classes. They found that God Classes are more likely to change, and therefore, have a higher impact in software quality. Fontana \textit{et al.}~\cite{Fontana2012MTD} investigated design technical debt appearing in the form of code smells. They used metrics to find three different code smells, namely God Classes, Data Classes and Duplicated Code. They proposed an approach to classify which one of the different code smells should be addressed first, based on a risk scale. 
 
-Our work is different from the work that uses code smells to detect design technical debt since we use code comments to detect technical debt. Also, our focus is on \emph{self-admitted} design and requirement technical debt. Moreover, our approach does not rely on code metrics and thresholds to identify technical debt and can be used to identify bad quality code symptoms other than bad smells.  
+Our work is different from the work that uses code smells to detect design technical debt since we use code comments to detect technical debt. Moreover, our approach does not rely on code metrics and thresholds to identify technical debt and can be used to identify bad quality code symptoms other than bad smells.
 
-\subsection{Code Smell Detection}
+More recently, Potdar and Shihab~\cite{Potdar2014ICSME} extracted the comments of four projects and analyzed more than 101,762 comments to come up with 62  patterns that indicates self-admitted technical debt. Their findings shows that 2.4\% - 31\% of the files in a project contain self-admitted technical debt. Later, Maldonado and Shihab ~\cite{Maldonado2015MTD} examined more than 33 thousands comments classifying the different types of TD found on them. Farias \textit{et al.} ~\cite{Farias2015MTD} proposes a contextualized vocabulary model for identifying TD on comments that uses word classes and code tags in the process. Ernst \textit{et al.} ~\cite{Ernst2015FSE} conducted a survey with 1,831 participants and found that architectural decisions are the most important source of technical debt.
 
-Other work build tools and techniques to facilitate the detection of code smells. Moha \textit{et al.} \cite{Moha2010TSE} proposed DECOR, a tool that incorporates a set of techniques to identify code smells in the source code. They used a domain specific language (DSL) to specify code smell detection rules. Their approach automatically generates detection algorithms based on the code smell specifications. They evaluated their techniques in 11 open-source projects and found that DECOR can effectively detect code smells, with an average precision of 60.5\% and recall of 100\%. Palomba \textit{et al.} \cite{Palomba2013} proposed an approach to identify code smells based on the evolution of the source code. In order to do that they mined the history change from the source code repository and then they searched for bad smells. They show that using their approach (HIST), they are able to identify 5 different bad smells. Tsantalis \textit{et al.} \cite{Tsantalis2009TSE} proposed a methodology that identified Feature Envy bad smells and evaluated the refactoring to remove the bad smell.
+Our work also uses code comments to detect design technical debt. However, we use these code comments train a NLP Classifier to automatically identify TD. Also, our focus is on \emph{self-admitted} design and requirement technical debt.
 
-Our work complements the prior work on code smell detection, since we propose the use of code comments to detect \SATD. Analyzing the source code comments using our approach in addition to the source code analysis techniques already employed in prior work can lead to optimal results, since our analysis showed that our approach yields results that are complementary to what code smell approaches detects.
+\subsection{NLP in Software Engineering}
+
+A number of studies using NLP in software engineering are related to tracing requirements, program comprehension and software maintenance. 
+For example, Lormans and van Deursen~\cite{Lormans2006CSRM} used latent semantic indexing (LSI) to create traceable links between requirements and test cases and requirements to design implementations as well. Hayes \textit{et al.}~\cite{Hayes2005, Hayes2006TSE} created a tool called RETRO that applies information retrieval techniques to trace and map requirements to designs. 
+
+Yadla \textit{et al.}~\cite{yadla2005tracing} further developed the RETRO tool and linked requirements to issue reports. In the other hand, Runeson \textit{et al.}~\cite{Runeson2007ICSE} implemented NPL based tool to automatically identify duplicated issues reports, they found that 2/3 of the possible duplicates examined in their study can be found with their tool. 
+
+Canfora and Cerulo \textit{et al.}~\cite{Canfora2005ISSM} links a change request with the correspondent set of source files using NLP techniques. The performance of the approach is evaluated in four open source projects.  
+
+Our work is different of the afore mentioned since we use NLP techniques in code comments to identify \SATD.
+
+
+
+
+
