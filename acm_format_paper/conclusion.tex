@@ -4,7 +4,7 @@ Our work focuses on in the identification of \SATD through the use of Natural Pr
 
 The comments of these projects were manually classified into specif types of technical debt such as design, requirement, defect, documentation and test debt. This dataset with 63,015 comments were applied as training datasets to Stanford Classifier, and then this tool is used to identify  design and requirement \SATD automatically.
 
-We first evaluated the performance of our approach by comparing our F1 measure with other two baselines F1 measure, the comment patterns baseline and the naive baseline. Our approach greatly outperform both baselines, in the identification of design \SATD, our F1 measure is 3.6 - 20.3 x better than best ranked baseline (i.e., comment patterns baseline). Similarly, while classifying requirement \SATD, we surpass the naive baseline by 6 - 54.4 times.
+We first evaluated the performance of our approach by comparing our F1 measure with other two baselines F1 measure, the comment patterns baseline and the naive baseline. Our approach greatly outperform both baselines, in the identification of design \SATD, our F1 measure is 3.6 - 20.3 x better than best ranked baseline (i.e., comment patterns baseline). Similarly, while classifying requirement \SATD, we surpass the naive baseline by 2.1 - 166.6 times.
 
 Then, we explored the characteristics of the features (i.e., words) used to classify \SATD. We find that the words used to express design and requirement \SATD are different from each other. The three most strong indicators of design \SATD are `hack', `workaround' and `yuck!'. Whereas, `todo', `needed' and `implementation' are the strongest indicators for requirement debt.
  
