@@ -95,7 +95,7 @@ pip-delete-this-directory.txt
 
 # Unit test / coverage reports
 htmlcov/
-.tox/
+.tox/gs
 .coverage
 .coverage.*
 .cache
@@ -121,5 +121,5 @@ target/
 *.sublime-workspace
 
 datasets
-.test
+gs.test
 .train

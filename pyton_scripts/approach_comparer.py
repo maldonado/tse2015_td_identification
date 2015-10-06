@@ -36,6 +36,7 @@ for test_project_result in test_projects:
     f1measure = 0.000
 
 
+    # cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('IMPLEMENTATION', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
     cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and b.projectname like '%"+test_project+"%'")
     comments = cursor.fetchall()
     for comment in comments:
@@ -54,16 +55,16 @@ for test_project_result in test_projects:
 
     recall = float(true_positive) / float((true_positive + false_negative))
     precision = float(true_positive) / float((true_positive + false_positive))
-    f1measure = ((precision * recall) / (precision + recall)) * 2
+    # f1measure = ((precision * recall) / (precision + recall)) * 2
     print 'Precision:  ' + str(precision)
     print 'Recall:     '    + str(recall)
-    print 'F1 measure: ' +str(f1measure)
+    # print 'F1 measure: ' +str(f1measure)
 
-    # print 'Total td found: '+str(td_counter)
-    # print 'True positives: '+str(true_positive)
-    # print 'True negatives: '+str(true_negative)
-    # print 'False positives: '+str(false_positive)
-    # print 'False negatives: '+str(false_negative)
+    print 'Total td found: '+str(td_counter)
+    print 'True positives: '+str(true_positive)
+    print 'True negatives: '+str(true_negative)
+    print 'False positives: '+str(false_positive)
+    print 'False negatives: '+str(false_negative)
 
                 
 

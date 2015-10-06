@@ -10,7 +10,7 @@ password = sys.argv[1]
 
 execution_options = {
                      # 'DEFECT': {'DEFECT', 'WITHOUT_CLASSIFICATION'}, 
-                     # 'DESIGN': {'DESIGN', 'WITHOUT_CLASSIFICATION'}, 
+                     'DESIGN': {'DESIGN', 'WITHOUT_CLASSIFICATION'}, 
                      # 'DOCUMENTATION': {'DOCUMENTATION', 'WITHOUT_CLASSIFICATION'}, 
                      'IMPLEMENTATION': {'IMPLEMENTATION', 'WITHOUT_CLASSIFICATION'} 
                      # 'TEST': {'TEST', 'WITHOUT_CLASSIFICATION'}
@@ -18,7 +18,7 @@ execution_options = {
 
 execution_types = {  
                      # 'DEFECT': {'DEFECT'}, 
-                     # 'DESIGN': {'DESIGN'}, 
+                     'DESIGN': {'DESIGN'}, 
                      # 'DOCUMENTATION': {'DOCUMENTATION'}, 
                      'IMPLEMENTATION': {'IMPLEMENTATION'}
                      # 'TEST': {'TEST'}
@@ -26,7 +26,7 @@ execution_types = {
 
 dataset_directories = {
                        # 'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/', 
-                       # 'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/',
+                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/',
                        # 'DOCUMENTATION':'/Users/evermal/git/npl_tools/datasets/documentation_vs_without_classification/',
                        'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/'
                        # 'TEST':'/Users/evermal/git/npl_tools/datasets/test_vs_without_classification/'
@@ -57,6 +57,7 @@ def write_classifier_properties_file(path):
     f.write("1.useNGrams=false\n")
     f.write("1.useSplitWords\n") 
     f.write('1.splitWordsRegexp "\s"\n')
+    # f.write("useBinary=true\n")
     # f.write("1.usePrefixSuffixNGrams=true\n")
     # f.write("1.maxNGramLeng=4\n")
     # f.write("1.minNGramLeng=1\n")

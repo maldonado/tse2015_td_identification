@@ -1,13 +1,25 @@
-In this paper we propose an approach to identify \SATD comments using a maximum entropy classifier tool. This machine learning process heavily relies on the training dataset to produce the expected outcome, and therefore the better is the training dataset the better will be the prediction of the tool. 
+\begin{figure*}[!thb]
+  \centering
+  \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/classifier_algorithms_comparison_design.pdf}
+  \label{fig:algorithms_comparison_design}}
+  \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/classifier_algorithms_comparison_requirement.pdf}
+  \label{fig:algorithms_comparison_requirement}}
+  \caption{Classification algorithms performance comparison}
+  \label{fig:algorithms_comparison}
+\end{figure*}
 
-During our study we analyzed the performance of the classifier across 10 different projects that belongs to different application domains, what granted us a diversified training dataset that allowed us to identify \SATD in all projects. However, it was clear that for some projects our training dataset had a better fit than for others. For example, while identifying design \SATD in ArgoUML we achieved a F1 measure of 0.814 whereas for JFreeChart the F1 measure is only 0.492. 
+In this paper we propose an approach to identify \SATD comments using Stanford Classifier. This tool, once trained correctly, can automatically classify natural language text. We create a training dataset of \SATD comments and analyzed the classification performance across ten open source projects. In RQ1, we show that our approach can outperform the current state-of-the-art in 10 out of 10 projects while identifying design and requirement debt. However, is not clear the reason why the approach was not as effective in this project as it was in the others.
+
+Investigating JEdit comments we notice two main reasons 1) the project has 10,322 comments of those only 14 are requirement \SATD. The data distribution represents a challenge to the classification. Even though the dataset is very unbalanced our precision was of 0.125 which compared with the naive baseline precision of 0.001 shows that our approach is still more useful. 2) Most requirement \SATD comments in this project are in the middle of long comments. A lot of features identifies what is not \SATD, (i.e., due to the unbalanced dataset), and therefore long comments can generate `noise' that hinders the classification performance. One possible way to reduce this effect is through the addition of more similar data. 
 
 Intuitively we know that each project has its own particularities, and that each group of developers, must often, create a unique way to communicate their concerns with each other. This unique trait of source code comments is inherited from the natural language itself and render the fully automated prediction of every single \SATD very unlikely. Even analyzing a old aged project, changes in the context of the application and turnover of developers can reflect changes in the way that source code comments are written. 
 
-However, for a great deal of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers feeling that this is not the appropriate solution for the problem in hand. By addressing these most identifiable traits of source code comments we shown that our approach can detect \SATD effectively. 
+For a great deal of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers feeling that this is not the appropriate solution for the problem in hand. However, relying just in these words for the identification of \SATD is not good enough as shown in Figures \ref{fig:f1_measure_comparison_design_debt} and \ref{fig:f1_measure_comparison_requirement_debt}. Therefore, NLP techniques, as proposed in our work, is needed in order to effectively identify \SATD comments.
 
-We envision our approach being used to identify \SATD in other projects and ultimately evolving to a tool that will help developers to keep track and solve problems related with technical debt. Using the same methodology as ours future research in the technical debt area can extend the approach to other programming languages either making use of our already classified comments dataset or with brand new classified comments belonging to different contexts. 
+In our work, all the classification done by Stanford Classifier used a Logistic Regression classifier. However, would be interesting to see how other  algorithms perform when classifying our dataset. Then, we choose two other algorithms to execute the classification with: Naive Bayes generative classifier and Binary classifier.
 
-More analysis is needed to fine tune the use of the current training dataset in order to achieve maximum efficiency in the prediction of \SATD comments. For example, using subsets of our training dataset can be more suitable for some applications than using the whole dataset due to domain particularities. 
+As show in Figures \ref{fig:algorithms_comparison_design} and \ref{fig:algorithms_comparison_requirement}, while comparing the performance between the three different algorithms we find that the Naive Bayes has the worst average F1 measure: 0.308 and 0.101 for design and requirement \SATD respectively. The reason behind the low F1 measure average is that the Naive Bayes algorithm favors recall at the expense of precision. For example, while classifying design debt, the average recall was of 0.847 and precision 0.195.
 
-However, the results thus far are not to be neglected as our approach performs 20 times better than the current state-of-the-art approach in some cases.
+The other two algorithms presents more balanced results than Naive Bayes, and the difference in performance between them are not as accentuate. The Logistic Regression classifier achieved these F1 measures: 0.620 and 0.509 while the Binary classifier F1 measures for design and requirement \SATD was 0.634 and 0.510 respectively. 
+
+Although the Binary classification has a slightly better performance, for our research purpose, the Logistical Regression algorithm provide more insightful features as outcome. These features were analyzed and presented in RQ2. 
