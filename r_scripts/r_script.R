@@ -22,7 +22,7 @@ legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Na
 
 
 # generate figure to compare f1measure of different classification algorithms for requirement debt
-mydata <- data.frame(Ant = c(0.364, 0.414, 0.030),ArgoUML = c(0.255, 0.760, 0.335),Columba = c(0.760, 0.934, 0.189),EMF = c(0.934, 0.381, 0.020),Hibernate = c(0.381, 0.485, 0.097),JEdit = c(0.476, 0.095, 0.020)JFreeChart = c(0.091, 0.459, 0.039),Jmeter = c(0.500, 0.286, 0.029),JRuby = c(0.462, 0.468, 0.137),SQuirrel = c(0.875, 0.820, 0.121))
+mydata <- data.frame(Ant = c(0.364, 0.414, 0.030),ArgoUML = c(0.255, 0.760, 0.335),Columba = c(0.760, 0.934, 0.189),EMF = c(0.934, 0.381, 0.020),Hibernate = c(0.381, 0.485, 0.097),JEdit = c(0.476, 0.095, 0.020),JFreeChart = c(0.091, 0.459, 0.039),Jmeter = c(0.500, 0.286, 0.029),JRuby = c(0.462, 0.468, 0.137),SQuirrel = c(0.875, 0.820, 0.121))
 barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
 legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Naive Bayes F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 
