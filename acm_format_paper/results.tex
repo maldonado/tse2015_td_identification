@@ -61,8 +61,6 @@ To determine how effective Stanford Classifier classification is we compare its 
 
 The second approach is the random classifier baseline. For this baseline we calculated the random chance to correctly classify a \SATD comment. The precision of this approach is calculated by taking the total number of \SATD over the total number of comments of each project. For example, Ant has 4,140 comments, of those, only 95 comments are design \SATD. The chance to randomly find a design \SATD comment is of 0.023 (i.e., $\frac{95}{4140}$). Similarly, to calculate recall  we take into consideration the two possible classifications available: one of the types of \SATD (i.e., design or requirement debt) and without technical debt. Therefore, there is a 50\% chance that the comment will be a \SATD. 
 
-% Lastly, for each project we obtained the comment patterns baseline and the random classifier baseline. Then, we store all results in a database to perform our analysis. 
-
 \vspace{1mm}
 
 \noindent \textbf{Results:} We find that the Stanford Classifier classification greatly outperforms the comment patterns baseline and the naive baseline as well. Figure \ref{fig:f1_measure_comparison_design_debt} presents the comparison between the Stanford Classifier F1 measure, the comment patterns baseline F1 measure and the random classifier baseline F1 measure while identifying design \SATD. We choose to use the F1 measure to compare the performance between the approaches as this measurement provides the harmonic mean of precision and recall.
@@ -139,14 +137,14 @@ In spite of the fact that features with higher weights will have more impact dur
 \noindent\rqiii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} We shown that we can effectively identify \SATD comments. However, the classification of \SATD comments depends on the training dataset that was manually created. But, how much training data do we need to classify these comments? If we need a high number of comments to create our training dataset our approach will be more difficult to be extended and applied in different contexts. In the other hand, if a small dataset can be used to identify \SATD comments this approach can be applied to applications other than Java and even to comments written in different idioms. 
+\noindent \textbf{Motivation:} We have shown that we can effectively identify \SATD comments. However, the classification of \SATD comments depends on the training dataset that was manually created. But, how much training data do we need to classify these comments? If we need a high number of comments to create our training dataset, our approach will be more difficult to be extended and applied in different contexts. On the other hand, if a small dataset can be used to identify \SATD comments this approach can be applied to applications other than Java and even to comments written in different idioms. 
 
 \vspace{1mm}
 \noindent \textbf{Approach:} We executed the classification process several times with an increasing number of comments being added to the training dataset while collecting the results to analyze the changes between each iteration.
 
 We first select a project that will be classified by the Stanford Classifier.
 
-Second, with one of the remainder projects, we select all \SATD comments (i.e., design or requirement debt accordingly with what we want to classify), and all comments without technical debt as well. These comments are added to the training dataset and fed into the Standford Classifier. Then, the results of the classification are collected and stored to analysis.
+Second, with one of the remainder projects, we select all \SATD comments (i.e., design or requirement debt accordingly with what we want to classify), and all comments without technical debt as well. These comments are added to the training dataset and fed into the Standford Classifier. Then, the results of the classification are collected and stored for analysis.
 
 Third, the comments of other project is added to the training dataset and the results of the classification are collected once more. The order that projects are added to the training dataset is not random. We add first projects which has more \SATD comments of the specific type that we are trying to identify. We cycle through the above steps until we had added the comments of all nine projects to the training dataset.
 
