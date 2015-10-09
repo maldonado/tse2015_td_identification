@@ -28,7 +28,7 @@ The goal of our research is to develop an automatic way to detect design and req
         JRuby        &  0.783  & 0.079 & 0.131 &  9.9$\times$    &  5.9$\times$    & 0.462  &  0.045  & 10.2$\times$  \\
         SQuirrel     &  0.540  & 0.045 & 0.055 &  12$\times$     & 9.8$\times$     & 0.875  &  0.040  & 21.8$\times$  \\
         \midrule 
-        Average      &  0.620  & 0.099 & 0.086 &   8.6$\times$   & 9.4$\times$     & 0.509  &  0.032  & 29.9$\times$  \\ 
+        Average      &  0.620  & 0.099 & 0.086 &   6.2$\times$   & 7.2$\times$     & 0.509  &  0.032  & 15.9$\times$  \\ 
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -68,9 +68,8 @@ The second approach is the random classifier baseline. For this baseline we calc
 It is important to notice that each one of the selected baselines for comparison has one strong point. The comment patterns approach has a high precision, but it lacks recall, i.e., this approach points correctly to \SATD comments, but as the approach depends on keywords, it identifies a very small subset of all the \SATD comments in the project. The less sophisticated random classifier baseline provides a high recall because we try to classify comments between two categories (i.e with or without technical debt), meaning a 50\% chance to randomly get one of the two classifications. 
 
 For all the projects, the F1 measure achieved by the Stanford Classifier is higher than the other baselines F1 measures. The highest F1 measure obtained for design debt was in ArgoUML with a value of 0.814. On the other hand, the lowest F1 measure obtained was in EMF with a value of 0.470. On average, the obtained F1 measure was 0.620. In comparison, the average F1 measure obtained using comment patterns was of 0.099, and the random classifier baseline F1 measure 0.086. Consequently, our approach to identify design \SATD outperforms, in average, 6 times the state-of-the-art approach and 7 times the random classifier baseline. 
-\everton{Ask about this averages}
-The second, third and fourth columns of Table \ref{tbl:improvement_f1measure} shows our approach F1 measure, the comment patterns baseline F1 measure and the random classifier baseline F1 measure respectively for each project. In addition, fifth and sixth columns present how many times our approach surpass the comment patterns baseline and the random classifier baseline.   
-\everton{Table reference is not working}
+
+The second, third and fourth columns of Table \ref{tbl:improvement_f1measure} shows our approach F1 measure, the comment patterns baseline F1 measure and the random classifier baseline F1 measure respectively for each project while classifying design \SATD. In addition, fifth and sixth columns present how many times our approach surpass the comment patterns baseline and the random classifier baseline.   
  
 Similarly, Figure \ref{fig:f1_measure_comparison_requirement_debt} shows the comparison between the three F1 measures while identifying requirement \SATD.
 
