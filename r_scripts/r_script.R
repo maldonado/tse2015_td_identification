@@ -4,15 +4,15 @@ barplot(as.matrix(mydata),  ylab="Percentage",  ylim=c(0, 1), beside=TRUE, col= 
 legend("topright", c("Precision", "Recall", "F1","Baseline P", "Baseline R", "Baseline F1"), cex=0.8, fill=terrain.colors(6))
 
 # generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (design debt)
-mydata <- data.frame(Ant = c(0.517,0.142,0.045) ,Jmeter = c(0.731,0.108,0.075),ArgoUML = c(0.814,0.040,0.151),Columba = c(0.601,0.065,0.038),SQuirrel = c(0.540,0.044,0.055),Hibernate = c(0.744,0.118,0.214),EMF = c(0.470,0.087,0.035),JFreeChart = c(0.492,0.044,0.080), JEdit = c(0.509,0.264,0.037), JRuby = c(0.783,0.078,0.131) )
+mydata <- data.frame(Ant=c(0.517, 0.143, 0.045),ArgoUML=c(0.814, 0.040, 0.151),Columba=c(0.601, 0.065, 0.038),EMF=c(0.470, 0.088, 0.035),Hibernate=c(0.744, 0.119, 0.214),JEdit=c(0.509, 0.265, 0.037),JFreeChart=c(0.492, 0.044, 0.080),Jmeter=c(0.731, 0.109, 0.075),JRuby=c(0.783, 0.079, 0.131),SQuirrel=c(0.540, 0.045, 0.055))
 barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-legend(24, 1, c("Our approach F1 measure", "Baseline F1 measure", "Naive Baseline F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+legend(24, 1, c("Our approach F1 measure", "Comment patterns F1 measure", "Random F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 
 
 # generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (requirement debt)
-mydata <- data.frame(Ant = c(0.364, 0, 0.008),ArgoUML = c(0.760, 0, 0.005),Columba = c(0.934, 0, 0.125),EMF = c(0.381, 0,  0.04),Hibernate = c(0.476, 0, 0.007),JEdit = c(0.091, 0, 0.042),JFreeChart = c(0.500, 0, 0.003),Jmeter = c(0.255, 0, 0.011),JRuby = c(0.462, 0, 0.045),SQuirrel = c(0.875, 0,  0.04))
+mydata <- data.frame(Ant=c(0.364, 0, 0.008),ArgoUML=c(0.760, 0, 0.125),Columba=c(0.934, 0, 0.040),EMF=c(0.381, 0, 0.007),Hibernate=c(0.476, 0, 0.042),JEdit=c(0.091, 0, 0.003),Jmeter=c(0.255, 0, 0.005),JFreeChart=c(0.500, 0, 0.011),JRuby=c(0.462, 0, 0.045),SQuirrel=c(0.875, 0, 0.040))
 barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-legend("topright", c("Our approach F1 measure", "Baseline F1 measure", "Naive Baseline F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+legend(23, 1, c("Our approach F1 measure", "Comment patterns F1 measure", "Random F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 
 
 # generate figure to compare f1measure of different classification algorithms for design debt
