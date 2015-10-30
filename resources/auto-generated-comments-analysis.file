@@ -1,0 +1,85 @@
+comment_classification=# select a.projectname, a.filename, count(*)  from comment_class a , processed_comment b where a.id = b.commentclassid and b.commenttext like '%Auto-generated%' group by 1, 2 order by 1,2;
+
+    projectname     |                filename                 | count
+--------------------+-----------------------------------------+-------
+ apache-ant-1.7.0   | AccessControlEntry.java                 |     1 - inside constructor, not used constructor in the class
+ apache-ant-1.7.0   | FTP.java                                |     1 - inside method, implemented method with comment not removed
+ apache-ant-1.7.0   | SQLExecTest.java                        |     1 - inside method, override without implementation 
+ apache-jmeter-2.10 | ObjectProperty.java                     |     1 - inside constructor,implemented constructor with comment not removed
+ argouml            | ActivityDiagramGraphModel.java          |     2
+ argouml            | ActivityGraphsHelperEUMLImpl.java       |    11
+ argouml            | CollaborationsFactoryEUMLImpl.java      |     6
+ argouml            | CollaborationsHelperEUMLImpl.java       |    32
+ argouml            | CommonBehaviorFactoryEUMLImpl.java      |    24
+ argouml            | CommonBehaviorHelperEUMLImpl.java       |    35
+ argouml            | CoreFactoryEUMLImpl.java                |     4
+ argouml            | ExtensionMechanismsFactoryEUMLImpl.java |     9
+ argouml            | ExtensionMechanismsHelperEUMLImpl.java  |     5
+ argouml            | MetaTypesEUMLImpl.java                  |     6
+ argouml            | ModelEventPumpEUMLImpl.java             |     1
+ argouml            | ModelManagementFactoryEUMLImpl.java     |     1
+ argouml            | ModelManagementHelperEUMLImpl.java      |    10
+ argouml            | ModuleInterfaceForTesting1.java         |     2
+ argouml            | SequenceDiagramGraphModel.java          |     2
+ argouml            | SplashScreen.java                       |     2
+ argouml            | StateMachinesFactoryEUMLImpl.java       |    22
+ argouml            | StateMachinesHelperEUMLImpl.java        |    30
+ argouml            | StatusBar.java                          |     2
+ argouml            | TestCrTooManyAssoc.java                 |     1
+ argouml            | TestCrTooManyAttr.java                  |     1
+ argouml            | TestCrTooManyOper.java                  |     1
+ argouml            | TestCrTooManyTransitions.java           |     1
+ argouml            | UMLActivityDiagram.java                 |     1
+ argouml            | UMLDeploymentDiagram.java               |     2
+ argouml            | UMLEditableComboBox.java                |    15
+ argouml            | UMLStateDiagram.java                    |     2
+ argouml            | UseCasesHelperEUMLImpl.java             |     8
+ argouml            | XMLPropPanelFactory.java                |     1
+ argouml            | XmiReaderEUMLImpl.java                  |     1
+ columba-1.4-src    | BasicResultPanel.java                   |     2
+ columba-1.4-src    | CalendarComponent.java                  |     2
+ columba-1.4-src    | ChatMediator.java                       |     1
+ columba-1.4-src    | ClearRecentFlagPlugin.java              |     1
+ columba-1.4-src    | ConfigurationDialog.java                |     1
+ columba-1.4-src    | DefaultCloseableIterator.java           |     1
+ columba-1.4-src    | DefaultFrameController.java             |     1
+ columba-1.4-src    | DummyObservable.java                    |     8
+ columba-1.4-src    | DummyQueryEngine.java                   |     1
+ columba-1.4-src    | Extension.java                          |     1
+ columba-1.4-src    | FrameManager.java                       |     1
+ columba-1.4-src    | FrameMediatorAdapter.java               |     9
+ columba-1.4-src    | GenericResultPanel.java                 |     1
+ columba-1.4-src    | HTMLResultView.java                     |     1
+ columba-1.4-src    | IMAPQueryEngine.java                    |     1
+ columba-1.4-src    | JDICHTMLViewerPlugin.java               |     3
+ columba-1.4-src    | JavaHTMLViewerPlugin.java               |     2
+ columba-1.4-src    | MailTagList.java                        |     1
+ columba-1.4-src    | NewAllDayAppointmentAction.java         |     1
+ columba-1.4-src    | NullWorkerStatusController.java         |     1
+ columba-1.4-src    | RoasterTree.java                        |     2
+ columba-1.4-src    | SearchResultView.java                   |     1
+ columba-1.4-src    | SignatureView.java                      |     4
+ columba-1.4-src    | StoreEventDelegator.java                |     2
+ columba-1.4-src    | TestServer.java                         |    42
+ jfreechart-1.0.19  | SWTGraphics2D.java                      |    10
+ jruby-1.4.0        | JavaProxyClass.java                     |     1
+ jruby-1.4.0        | JavaProxyClassFactory.java              |     3
+ sql12              | ArtifactInstallerImpl.java              |     1
+ sql12              | DerbyDialectExt.java                    |     1
+ sql12              | DialectExternalTest.java                |     1
+ sql12              | DummyPlugin.java                        |    56
+ sql12              | FirebirdDialectExt.java                 |     4
+ sql12              | InformixDialectExt.java                 |     4
+ sql12              | IngresDialectExt.java                   |     4
+ sql12              | MockDatabaseObjectInfo.java             |     1
+ sql12              | MockPlugin.java                         |    18
+ sql12              | MockSQLAlias.java                       |     1
+ sql12              | MockTableInfo.java                      |     4
+ sql12              | OracleDialectExt.java                   |     1
+ sql12              | SQLReplaceExecutionListener.java        |     2
+ sql12              | SplashScreenTestUI.java                 |     1
+ sql12              | TableExportCsvDlgTestUI.java            |     1
+
+
+
+
