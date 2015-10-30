@@ -16,15 +16,15 @@ execution_types = {
 
 dataset_directories = {
                        # 'DEFECT':'/Users/evermal/git/npl_tools/datasets/defect_vs_without_classification/capitalized_training/whole_word/', 
-                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/binary_classifier/',
-                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/binary_classifier/'
+                       'DESIGN':'/Users/evermal/git/npl_tools/datasets/design_vs_without_classification/removing_auto_generated/',
+                       'IMPLEMENTATION':'/Users/evermal/git/npl_tools/datasets/implementation_vs_without_classification/removing_auto_generated/'
 }
 
 try:
     # fill this information before execution
     order = "decrescent/"
-    classification_id = '5'
-    classification_description = 'classification with whole words as features, training dataset without capital letters and pontuation using binary classifier'
+    classification_id = '7'
+    classification_description = 'classification with whole words as features, training dataset without capital letters and pontuation after auto generated results have been removed'
 
     # getting training dataset numbers
     coments_in_training_data_regex = "(?:numDatums:\s)(\d*)?"

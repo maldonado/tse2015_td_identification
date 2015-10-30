@@ -13,6 +13,7 @@ password = sys.argv[1]
 # getting training dataset numbers
 technical_debt_regex = 'hack|retarded|at\sa\sloss|stupid|remove\sthis\scode|ugly|take\scare|something.s\sgone\swrong|nuke|is\sproblematic|may\scause\sproblem|hacky|unknown\swhy\swe\sever\sexperience\sthis|treat\sthis\sas\sa\ssoft\serror|silly|workaround\sfor\sbug|kludge|fixme|this\sisn.t\squite\sright|trial\sand\serror|give\sup|this\sis\swrong|hang\sour\sheads\sin\sshame|temporary\ssolution|causes\sissue|something\sbad\sis\sgoing\son|cause\sfor\sissue|this\sdoesn.t\slook\sright|is\sthis\snext\sline\ssafe|this\sindicates\sa\smore\sfundamental\sproblem|temporary\scrutch|this\scan\sbe\sa\smess|this\sisn.t\svery\ssolid|this\sis\stemporary\sand\swill\sgo\saway|is\sthis\sline\sreally\ssafe|there\sis\sa\sproblem|some\sfatal\serror|something\sserious\sis\swrong|don.t\suse\sthis|get\srid\sof\sthis|doubt\sthat\sthis\swould\swork|this\sis\sbs|give\sup\sand\sgo\saway|risk\sof\sthis\sblowing\sup|just\sabandon\sit|prolly\sa\sbug|probably\sa\sbug|hope\severything\swill\swork|toss\sit|barf|something\sbad\shappened|fix\sthis\scrap|yuck|certainly\sbuggy|remove\sme\sbefore\sproduction|you\scan\sbe\sunhappy\snow|this\sis\suncool|bail\sout|it\sdoesn.t\swork\syet|crap|inconsistency|abandon\sall\shope|kaboom'
 
+
 connection = None
 
 # connect to the database 
@@ -36,8 +37,8 @@ for test_project_result in test_projects:
     f1measure = 0.000
 
 
-    # cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('IMPLEMENTATION', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
-    cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and b.projectname like '%"+test_project+"%'")
+    cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('IMPLEMENTATION', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
+    # cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and b.projectname like '%"+test_project+"%'")
     comments = cursor.fetchall()
     for comment in comments:
         match = re.search(technical_debt_regex, comment[0])
