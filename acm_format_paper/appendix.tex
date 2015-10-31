@@ -1,12 +1,13 @@
 \appendix{}
 \label{sec:appendix}
 
-\begin{figure*}[thb!]
-  \centering
-  \includegraphics[width=0.90\textwidth]{figures/baseline_comparison_design.pdf}
-  \caption{Classification design debt vs old approach}
-  \label{fig:design_vs_baseline}
-\end{figure*}
+% commented because it is outdated.
+% \begin{figure*}[thb!]
+%   \centering
+%   \includegraphics[width=0.90\textwidth]{figures/baseline_comparison_design.pdf}
+%   \caption{Classification design debt vs old approach}
+%   \label{fig:design_vs_baseline}
+% \end{figure*}
 
 \begin{table*}[!hbt]
     \begin{center}
@@ -16,16 +17,16 @@
         \toprule
         \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Baseline\\P} & \thead{Baseline\\R} & \thead{Baseline\\F1} & \thead{Rdn\\P} & \thead{Rdn\\R} & \thead{Rdn\\F1} \\
         \midrule
-        Ant           &  0.554   &  0.484  &  0.517  &   0.550   & 0.082  & 0.143  &  0.023 &  0.5 &  0.045  \\
-        ArgoUML       &  0.788   &  0.843  &  0.814  &   0.791   & 0.021  & 0.040  &  0.089 &  0.5 &  0.151  \\
-        Columba       &  0.792   &  0.484  &  0.601  &   0.833   & 0.034  & 0.065  &  0.020 &  0.5 &  0.038  \\
-        EMF           &  0.574   &  0.397  &  0.470  &   0.500   & 0.048  & 0.088  &  0.018 &  0.5 &  0.035  \\
-        Hibernate     &  0.877   &  0.645  &  0.744  &   0.909   & 0.064  & 0.119  &  0.136 &  0.5 &  0.214  \\
-        JEdit         &  0.779   &  0.378  &  0.509  &   0.870   & 0.156  & 0.265  &  0.019 &  0.5 &  0.037  \\
-        JFreeChart    &  0.646   &  0.397  &  0.492  &   0.833   & 0.023  & 0.044  &  0.043 &  0.5 &  0.080  \\
-        Jmeter        &  0.808   &  0.668  &  0.731  &   0.733   & 0.059  & 0.109  &  0.040 &  0.5 &  0.075  \\
-        JRuby         &  0.798   &  0.770  &  0.783  &   0.765   & 0.042  & 0.079  &  0.075 &  0.5 &  0.131  \\
-        SQuirrel      &  0.544   &  0.536  &  0.540  &   0.500   & 0.023  & 0.045  &  0.029 &  0.5 &  0.055  \\
+        Ant           &    0.554 &  0.484 & 0.517 & 0.526 & 0.105 &  0.175 &  0.024 &  0.5 &  0.045  \\
+        ArgoUML       &    0.808 &  0.668 & 0.731 & 0.733 &  0.07 &  0.127 &   0.04 &  0.5 &  0.075  \\
+        Columba       &    0.788 &  0.843 & 0.814 & 0.786 & 0.041 &  0.078 &  0.092 &  0.5 &  0.155  \\
+        EMF           &    0.792 &  0.484 & 0.601 & 0.833 & 0.079 &  0.145 &   0.02 &  0.5 &  0.038  \\
+        Hibernate     &    0.574 &  0.397 & 0.470 &   0.5 & 0.064 &  0.114 &  0.018 &  0.5 &  0.035  \\
+        JEdit         &    0.877 &  0.645 & 0.744 & 0.906 & 0.082 &   0.15 &  0.136 &  0.5 &  0.214  \\
+        JFreeChart    &    0.779 &  0.378 & 0.509 & 0.867 & 0.199 &  0.324 &  0.019 &  0.5 &  0.037  \\
+        Jmeter        &    0.646 &  0.397 & 0.492 & 0.833 & 0.027 &  0.053 &  0.043 &  0.5 &   0.08  \\
+        JRuby         &    0.798 &  0.770 & 0.783 & 0.765 & 0.076 &  0.138 &  0.075 &  0.5 &  0.131  \\
+        SQuirrel      &    0.544 &  0.536 & 0.540 & 0.471 & 0.038 &  0.071 &   0.03 &  0.5 &  0.056  \\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -40,16 +41,16 @@
         \toprule
         \textbf{Project} & \textbf{P} & \textbf{R} & \textbf{F1} & \thead{Baseline\\P} & \thead{Baseline\\R} & \thead{Baseline\\F1} & \thead{Rdn\\P} & \thead{Rdn\\R} & \thead{Rdn\\F1} \\
         \midrule
-        Ant           & 0.353 &  0.375 & 0.364 & 0 & 0 & 0 & 0.004 &0.5 & 0.008  \\
-        ArgoUML       & 0.802 &  0.722 & 0.760 & 0 & 0 & 0 & 0.071 &0.5 & 0.125  \\
-        Columba       & 0.914 &  0.955 & 0.934 & 0 & 0 & 0 & 0.021 &0.5 & 0.040  \\
-        EMF           & 0.800 &  0.250 & 0.381 & 0 & 0 & 0 & 0.004 &0.5 & 0.007  \\
-        Hibernate     & 0.610 &  0.391 & 0.476 & 0 & 0 & 0 & 0.022 &0.5 & 0.042  \\
-        JEdit         & 0.125 &  0.071 & 0.091 & 0 & 0 & 0 & 0.001 &0.5 & 0.003  \\
-        Apache Jmeter & 0.167 &  0.545 & 0.255 & 0 & 0 & 0 & 0.003 &0.5 & 0.005  \\
-        JFreeChart    & 0.373 &  0.760 & 0.500 & 0 & 0 & 0 & 0.006 &0.5 & 0.011  \\
-        JRuby         & 0.709 &  0.342 & 0.462 & 0 & 0 & 0 & 0.024 &0.5 & 0.045  \\
-        SQuirrel      & 0.913 &  0.840 & 0.875 & 0 & 0 & 0 & 0.021 &0.5 & 0.040  \\
+        Ant           &  0.154 & 0.154 &  0.154 & 0.0 & 0.0 & 0.0 & 0.003 &  0.5 &  0.006 \\
+        ArgoUML       &  0.663 & 0.540 &  0.595 & 0.0 & 0.0 & 0.0 & 0.045 &  0.5 &  0.083 \\
+        Columba       &  0.755 & 0.860 &  0.804 & 0.0 & 0.0 & 0.0 & 0.007 &  0.5 &  0.013 \\
+        EMF           &  0.800 & 0.250 &  0.381 & 0.0 & 0.0 & 0.0 & 0.004 &  0.5 &  0.007 \\
+        Hibernate     &  0.610 & 0.391 &  0.476 & 0.0 & 0.0 & 0.0 & 0.022 &  0.5 &  0.042 \\
+        JEdit         &  0.125 & 0.071 &  0.091 & 0.0 & 0.0 & 0.0 & 0.001 &  0.5 &  0.003 \\
+        JFreeChart    &  0.220 & 0.600 &  0.321 & 0.0 & 0.0 & 0.0 & 0.003 &  0.5 &  0.007 \\
+        Jmeter        &  0.153 & 0.524 &  0.237 & 0.0 & 0.0 & 0.0 & 0.003 &  0.5 &  0.005 \\
+        JRuby         &  0.686 & 0.318 &  0.435 & 0.0 & 0.0 & 0.0 & 0.023 &  0.5 &  0.044 \\
+        SQuirrel      &  0.657 & 0.460 &  0.541 & 0.0 & 0.0 & 0.0 & 0.007 &  0.5 &  0.014 \\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -63,18 +64,18 @@
         \label{tbl:td_distribution}
         \begin{tabular}{l|SSSSSSS}
         \toprule
-        \multirow{2}{*}{Project} & \multicolumn{4}{c}{TD Distribution} \\ & {Design} & {Req.} & {Defect} & {Other} & \multirow{-2}{*}{Total TD comments} & \multirow{-2}{*}{Total comments} &  \multirow{-2}{*}{TD \%} \\
+        \multirow{2}{*}{Project} & \multicolumn{3}{c}{TD Distribution} \\ & {Design} & {Req.}  & {Other} & \multirow{-2}{*}{Total TD comments} & \multirow{-2}{*}{Total comments} &  \multirow{-2}{*}{TD \%} \\
         \midrule
-        Ant             & 95  & 16 & 13 & 10  & 134   & 4,140  & 3.2       \\
-        Jmeter          & 316 & 22 & 22 & 15  & 375   & 8,163  & 4.6       \\
-        ArgoUML         & 801 & 651& 127& 74  & 1653  & 9,788  & 16.8      \\
-        Columba         & 126 & 134& 13 & 22  & 295   & 6,569  & 4.4       \\
-        EMF             & 78  & 16 & 8  & 2   & 104   & 4,401  & 2.3       \\
-        Hibernate       & 355 & 64 & 52 & 1   & 472   & 2,968  & 15.9      \\
-        JEdit           & 196 & 14 & 43 & 3   & 256   & 10,322 & 2.4       \\
-        JFreeChart      & 184 & 25 & 9  & 1   & 219   & 4,436  & 4.9       \\
-        JRuby           & 343 & 114& 161& 8   & 626   & 4,901  & 12.7      \\
-        SQuirrel        & 209 & 150& 24 & 3   & 386   & 7,330  & 5.2       \\
+        Ant            &  95 &  13  &  23 &   131 &   4,137  & 03.1 \\
+        ArgoUML        &  801 & 411 & 201 & 1.413 &   9,548  & 14.7 \\
+        Columba        &  126 &  43 &  35 &   204 &   6,478  & 03.1 \\
+        EMF            &  78 &  16  &  10 &   104 &   4,401  & 02.3 \\
+        Hibernate      &  355 &  64 &  53 &   472 &   2,968  & 15.9 \\
+        JEdit          &  196 &  14 &  46 &   256 &  10,322  & 02.4 \\
+        JFreeChart     &  184 &  15 &  10 &   209 &   4,423  & 04.7 \\
+        Jmeter         &  316 &  21 &  37 &   374 &   8,162  & 04.5 \\
+        JRuby          &  343 & 110 & 169 &   622 &   4,897  & 12.7 \\
+        SQuirrel       &  209 & 50  & 27  &   286 &   7,230  & 03.9 \\
         \bottomrule
         \end{tabular}
     \end{center}    
