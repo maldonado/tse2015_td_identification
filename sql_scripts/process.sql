@@ -345,7 +345,7 @@ select b.projectname, a.commenttext from processed_comment a, comment_class b wh
 
 
 -- gettinh precision , recall , random and baselines .... 
-select projectname, classifiedPrecision, classifiedRecall, classifiedF1, baselinePrecision, baselineRecall, baselineF1, classifiedRandomPrecision, classifiedRandomRecall, classifiedRandomF1 from classifier_results where projectsTrainedWith = 9 and category = 'DESIGN' and classificationid = '6'
+select projectname, classifiedPrecision, classifiedRecall, classifiedF1, baselinePrecision, baselineRecall, baselineF1, classifiedRandomPrecision, classifiedRandomRecall, classifiedRandomF1 from classifier_results where projectsTrainedWith = 9 and category = 'DESIGN' and classificationid = '7'
 
 
 -- getting  best iterations

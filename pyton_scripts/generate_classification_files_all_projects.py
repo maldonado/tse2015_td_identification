@@ -57,7 +57,7 @@ def write_classifier_properties_file(path):
     f.write("1.useNGrams=false\n")
     f.write("1.useSplitWords\n") 
     f.write('1.splitWordsRegexp "\s"\n')
-    # f.write("useBinary=true\n")
+    f.write("useBinary=true\n")
     # f.write("1.usePrefixSuffixNGrams=true\n")
     # f.write("1.maxNGramLeng=4\n")
     # f.write("1.minNGramLeng=1\n")
