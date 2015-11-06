@@ -100,6 +100,17 @@ create table significative_sample (
     reviewerClassification text
 );
 
+drop table if exists performance_per_iteration;
+create table performance_per_iteration (
+    classificationid text,
+    category text, 
+    projectname text,
+    projectstrainedwith numeric,
+    totalTrainingComments numeric, 
+    classifiedF1 numeric,
+    percentage_of_maximum_performance numeric 
+);
+
 insert into significative_sample (processedCommentId,commentText,classification) 
   select id, commentText, classification 
     from processed_comment where classification = 'WITHOUT_CLASSIFICATION' limit 609
