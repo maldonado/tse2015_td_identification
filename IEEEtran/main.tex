@@ -1,0 +1,248 @@
+
+%% bare_jrnl_compsoc.tex
+%% V1.4b
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+% \ifCLASSOPTIONcompsoc
+%   \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
+% \else
+%   \usepackage[caption=false,font=footnotesize]{subfig}
+% \fi
+\ifCLASSOPTIONcaptionsoff
+  \usepackage[nomarkers]{endfloat}
+ \let\MYoriglatexcaption\caption
+ \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
+\fi
+
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{dblfloatfix}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{subfigure}
+
+
+
+% author comments with colors 
+\newcommand{\emad}[1]{\textcolor{red}{{\it [Emad: #1]}}}
+\newcommand{\nikos}[1]{\textcolor{red}{{\it [Nikos: #1]}}}
+\newcommand{\everton}[1]{\textcolor{blue}{{\it [Everton: #1]}}}
+\newcommand{\todo}[1]{\colorbox{yellow}{\textbf{[#1]}}}
+
+% conclusion box for summarize the research questions
+\newcommand{\conclusionbox}[1]{%
+       \vspace{2mm}
+       \framebox[0.45\textwidth][c]{%
+              \parbox[b]{0.42\textwidth}{%
+                     {\it #1}
+              }
+       }
+       \vspace{2mm}
+}
+
+% research questions 
+\newcommand{\rqi}{\textbf{RQ1. Is it possible to effectively identify/predict \SATD using NLP techniques?\\}}
+\newcommand{\rqii}{\textbf{RQ2. What are the most impacting words in the classification \SATD?\\}}
+\newcommand{\rqiii}{\textbf{RQ3. How much training data is necessary for successfully predict \SATD?\\}}
+
+% commands for common terms in the text
+
+\newcommand{\SATD}{self-admitted technical debt\xspace}
+
+\hyphenation{}
+
+
+\begin{document}
+
+\title{Using Source Code Comments to Automatically Detect Self-Admitted Technical Debt}
+
+
+\author{Everton~da S.~Maldonado,
+        Nikolaos~Tsantalis,~\IEEEmembership{Member,~IEEE,}
+        and~Emad~Shihab,~\IEEEmembership{Member,~IEEE,}% <-this % stops a space
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem E. da S. Maldonado, N. Tsantalis and E. Shihab are with the Department
+of Computer Science and Software Engineering, Concordia University, Montreal, Quebec, Canada H3G 1M8.\protect\\
+E-mail: e\_silvam@encs.concordia.ca}}
+
+
+% The paper headers
+\markboth{IEEE TRANSACTIONS ON SOFTWARE ENGINEERING,~Vol.~XX, No.~X, MONTH~2015}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+% The publisher's ID mark at the bottom of the page is less important with
+% Computer Society journal papers as those publications place the marks
+% outside of the main text columns and, therefore, unlike regular IEEE
+% journals, the available text space is not reduced by their presence.
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+% or like this to get the Computer Society new two part style.
+%\IEEEpubid{\makebox[\columnwidth]{\hfill 0000--0000/00/\$00.00~\copyright~2015 IEEE}%
+%\hspace{\columnsep}\makebox[\columnwidth]{Published by the IEEE Computer Society\hfill}}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark (Computer Society jorunal
+% papers don't need this extra clearance.)
+
+% for Computer Society papers, we must declare the abstract and index terms
+% PRIOR to the title within the \IEEEtitleabstractindextext IEEEtran
+% command as these need to go into the title area created by \maketitle.
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+During the development of a software system developers face unpredictable difficulties, and in many cases they apply unconventional solutions such as hacks and workarounds. The \textit{metaphor technical debt} was created to express this trade off between productivity and quality. More recently, our work has shown that it is possible to detect technical debt using source code comments (i.e., self-admitted technical debt), and that the most common types of self-admitted technical debt are design and requirement debt. However, this approach heavily depends on the manual classification of source comments. In this paper we present an approach to automatically identify design and requirement \SATD using a maximum entropy classifier. We studied ten open source projects: Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We find that the average F1 measure achieved when identifying \SATD outperforms the state-of-the-art technique average F1 measure 4.5 times. During our analysis we evaluate and present the top 10 most impacting words while classifying \SATD. Lastly, we find that training datasets as small as 1,444 design debt comments and 380 requirement debt comments can be used to identify \SATD comments. To facilitate future work we make publicly available the dataset of classified comments used in this study containing more than 62K comments. 
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+Technical debt, Source code comments, Natural language processing, Empirical study.
+\end{IEEEkeywords}}
+
+
+% make the title area
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+
+\IEEEraisesectionheading{\section{Introduction}\label{sec:introduction}}
+
+\IEEEPARstart{D}{evelopers} often have to deal with conflicting goals that require software to be delivered quickly, with high quality, and on budget. In practice, achieving all of these goals at the same time can be challenging, causing a tradeoff to be made. Often, these tradeoffs lead developers to take \emph{shortcuts} or use \emph{workarounds}. Although such shortcuts help developers in meeting their short-term goals, they may have a negative impact in the long-term.
+
+Technical debt is a metaphor coined to express sub-optimal solutions that are taken consciously in a software project in order to achieve some short-term goals~\cite{Cunningham1992WPM}. Generally, these decisions allow the project to move faster in the short-term, but introduce an increased cost (i.e., debt) to maintain this software in the long run~\cite{Seaman2011,Kruchten2013IWMTD}. Prior work has shown that technical debt is widespread in the software domain, is unavoidable, and can have a negative impact on the quality of the software~\cite{Lim2012Software}.
+
+Due to the importance of technical debt, a number of studies empirically examined technical debt and proposed techniques to enable its detection and management. The main findings of the prior work are that 1) there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}. 2) Static source code analysis helps detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. 3) More recently, our work shown that it is possible to identify technical debt through source comments (i.e., \SATD)~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
+
+The recovery of technical debt through source code comments has three main advantages over traditional approaches based on source code analysis and metric rules to detect code smells.
+First, it is more lightweight compared to source code analysis, since it does not require the construction of Abstract Syntax Trees or other more advanced source code representations, such as control flow graphs, and program dependence graphs in order to match structural code smell patterns and compute metrics.
+The source code comments can be easily and efficiently extracted from source code files using regular expressions.
+Second, it does not depend on arbitrary metric threshold values, which are required in all metric-based code smell detection approaches.
+Deriving appropriate threshold values is a challenging open problem that has attracted the attention and effort of several researchers~\cite{Oliveira:2014,Fontana:2015,Fontana:EMSE:2015}.
+Finally, and more importantly, it is a more reliable approach for the recovery of technical debt, since it is based on comments written by the developers themselves, who admit the existence of technical problems that should be addressed in the future.
+On the contrary, all approaches based on source code analysis suffer from high false positive rates~\cite{Ferme:2013} (i.e., they flag a large number of source code elements as problematic, while they are not perceived as such by the developers), because they rely only on the structure of the source code to detect code smells without taking into account the developer's opinion and the project domain.
+
+Despite the advantages of recovering technical debt from source code comments, the research in \SATD, thus far, heavily relies on manual inspection of code comments. The manual inspection of code comments is subject to the reader bias, it is time consuming and, as any other manual task, susceptible to errors. These limitations in the identification of \SATD comments renders the current approach difficult to be applied.
+
+In this paper we investigate the efficiency of Natural Language Processing techniques to automatically detect the two most common types of \SATD comments, design and requirement debt. We analyze ten open source projects from different application domains, namely, Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. We extract and classify the source comments of these projects. Then, using the classified dataset we execute a maximum entropy classifier tool (i.e., the Stanford Classifier)~\cite{Manning2014ACL}, to identify design and requirement \SATD comments.
+
+We achieved an average F1 measure of 0.620 while identifying design \SATD, and an average F1 measure of 0.403 while identifying requirement \SATD. Which means that our performance is on average 4.5 times better than the current state-of-the-art approach to identify design \SATD~\cite{Potdar2014ICSME}. The current-state-of-the art approach uses 64 comment patterns (i.e., words and phrases) derived after the manual examination of more than 100k comments.
+
+To better understand how developers express technical debt we analyze the 10 most prevalent words in \SATD comments. For example, words as `hack', `workaround' and `yuck!' are used to express design \SATD. Whereas, `todo', `needed' and `implementation' are a strong indicators of requirement debt.
+
+Then, to determine the most efficient way to apply our approach we analyze the amount of training data necessary to identify \SATD. We find that training datasets with at least 1,444 design \SATD comments can achieve good prediction performance. Similarly, for requirement \SATD, training datasets with at least 380 source comments containing requirement \SATD can identify this type of technical debt with success.  
+
+The contributions of our work are the following:
+\begin{enumerate}
+  \item We provide a automatic approach for identifying design and requirement \SATD.
+  \item We analyze the amount of necessary data to effectively apply our approach, making it possible to replicate our study in different contexts than ours (i.e., different idioms or programming languages).
+  \item We made the dataset used in this work publicly available. We believe that these are good contributions to future work in the area, and to researchers who are willing to devise new approaches to address the problem of identifying technical debt through the use of code comments.
+\end{enumerate}
+
+The rest of the paper is organized as follows. Section \ref{sec:approach} describes our approach. We setup our case study and present our
+results in Section \ref{sec:case_study_results}. We discuss the implication of our findings in Section \ref{sec:discussion}. In Section \ref{sec:related_work} we show related previous work. Section \ref{sec:threats_to_validity} present the threats to validity and Section \ref{sec:conclusion} presents our conclusions and future work.  
+
+\section{Approach}
+\label{sec:approach}
+\input{approach}
+
+\section{Case study Results}
+\label{sec:case_study_results}
+\input{results}
+
+\section{Discussion}
+\label{sec:discussion}
+\input{discussion}
+
+\section{Related Work}
+\label{sec:related_work}
+\input{related_work}
+
+\section{Threats to validity}
+\label{sec:threats_to_validity}
+\input{threats_to_validity}
+
+\section{Conclusion and Future work}
+\label{sec:conclusion}
+\input{conclusion}
+
+
+\appendices
+
+
+\ifCLASSOPTIONcompsoc
+  % The Computer Society usually uses the plural form
+  \section*{Acknowledgments}
+\else
+  % regular IEEE prefers the singular form
+  \section*{Acknowledgment}
+\fi
+
+
+The authors would like to thank...
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography} 
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{Everton da S. Maldonado}
+Biography text here.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}{Nikolaos Tsantalis}
+Biography text here.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}{Emad Shihab}
+Biography text here.
+\end{IEEEbiography}
+
+
+%\vfill
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+% that's all folks
+\end{document}
+
+

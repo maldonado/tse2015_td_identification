@@ -1,0 +1,17 @@
+Technical debt is a term being used to express non optimal solutions, such as hacks and workarounds, that are applied during the software development process. Although these non optimal solutions can help achieve immediate pressing goals, most often they will have a negative impact on the project maintainability. 
+
+Our work focuses on in the identification of \SATD through the use of Natural Processing Language. We analyzed the comments of 10 open source projects namely Apache Ant, Apache Jmeter, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JRuby and SQuirrel. These projects are considered well commented and they belong to different application domains.
+
+The comments of these projects were manually classified into specific types of technical debt such as design, requirement, defect, documentation and test debt. This dataset with 62,566 comments was applied as training datasets to the Stanford Classifier, and then this tool was used to identify  design and requirement \SATD automatically.
+
+We first evaluated the performance of our approach by comparing our F1 measure with two other baselines F1 measure, the comment patterns baseline and the random classifier baseline. Our approach greatly outperforms both baselines, in the identification of design \SATD, our F1 measure is 1.5 - 10.4 times better than best ranked baseline (i.e., comment patterns baseline). Similarly, while classifying requirement \SATD, we surpass the random classifier baseline by 7 - 61.8 times.
+
+Then, we explored the characteristics of the features (i.e., words) used to classify \SATD. We find that the words used to express design and requirement \SATD are different from each other. The three most strong indicators of design \SATD are `hack', `workaround' and `yuck!'. Whereas, `todo', `needed' and `implementation' are the strongest indicators for requirement debt.
+ 
+In addition, we find that even using a low number of \SATD comments in a training dataset a high classification performance can be achieved Accordingly with our results, developers use a richer vocabulary to express design \SATD and a training dataset of at least 1,444 design \SATD comments is necessary to obtain a satisfactory classification. On the other hand, requirement \SATD is expressed in a more uniform way, and with a training dataset of 601 \SATD comments it is possible to classify with success requirement \SATD automatically.
+
+More analysis is needed to fine tune the use of the current training dataset in order to achieve maximum efficiency in the prediction of \SATD comments. For example, using subsets of our training dataset can be more suitable for some applications than using the whole dataset due to domain particularities. However, the results thus far are not to be neglected as our approach performs 20.3 times better than the current state-of-the-art approach in some cases.
+
+We also contribute with the dataset created in this study making it publicly available, we believe that it will be a good starting point for researchers interested in identifying technical debt through comments and even using different types of Natural Language Processing techniques. 
+
+In a future work we plan to use the findings of this study to build a tool that will support software engineers in the task of identifying and managing the \SATD portfolio. 
