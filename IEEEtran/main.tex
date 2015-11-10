@@ -151,14 +151,14 @@ We perform a leave-one-out cross-project validation (i.e., we train on nine proj
 To better understand how developers express technical debt we analyze the 10 most prevalent words in \SATD comments. For example, words as `hack', `workaround' and `yuck!' are used to express design \SATD, whereas, words such as `todo', `needed' and `implementation' are a strong indicators of requirement debt. Moreover, to determine the most efficient way to apply our approach we analyze the amount of training data necessary to identify \SATD. We find that training datasets with at least 1,444 design \SATD comments can achieve high prediction performance. Similarly, for requirement \SATD, training datasets with at least 380 source comments containing requirement \SATD can identify this type of technical debt with high accuracy.  
 
 The main contributions of our work are the following:
-\begin{enumerate}
+\begin{itemize}
   \item We provide an automatic, NLP-based, approach for identifying design and requirement \SATD.
   \item We examine and report the words that best indicate design and requirement \SATD.
   \item We show that using a small training set of comments, we are able to effectively detect design and requirement \SATD.
   %analyze the amount of necessary data to effectively apply our approach, making it possible to replicate our study in different contexts than ours (i.e., different idioms or programming languages).
   \item We make our dataset used in this work publicly available so that others can advance work in the area of \SATD
   %. We believe that these are good contributions to future work in the area, and to researchers who are willing to devise new approaches to address the problem of identifying technical debt through the use of code comments.
-\end{enumerate}
+\end{itemize}
 
 The rest of the paper is organized as follows. Section \ref{sec:approach} describes our approach. We setup our case study and present our
 results in Section \ref{sec:case_study_results}. We discuss the implication of our findings in Section \ref{sec:discussion}. In Section \ref{sec:related_work} we present the related work. Section \ref{sec:threats_to_validity} presents the threats to validity and Section \ref{sec:conclusion} presents our conclusions and future work.  
