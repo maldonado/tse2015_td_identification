@@ -54,7 +54,7 @@
     \begin{center}
         \caption{Technical Debt distribution per type}
         \label{tbl:td_distribution}
-        \begin{tabular}{l|SSSSSSS}
+        \begin{tabular}{l|ccccccc}
         \toprule
         \multirow{2}{*}{Project} & \multicolumn{3}{c}{TD Distribution} \\ & {Design} & {Req.}  & {Other} & \multirow{-2}{*}{Total TD comments} & \multirow{-2}{*}{Total comments} &  \multirow{-2}{*}{TD \%} \\
         \midrule
@@ -133,18 +133,21 @@
         \label{tbl:design_features_per_project}
         \begin{tabular}{l| c c c }
         \toprule
-        \textbf{Project} & \thead{Design TD\\features} & \thead{No TD\\Features} & \thead{Total\\Features} \\
+        \textbf{Project} & \thead{Positive\\Design TD\\Features} & \thead{Negative\\Design TD\\Features} & \thead{Total\\Features} \\
         \midrule
-        Apache Ant    &  6,559 & 35,517 & 42,052  \\
-        Apache Jmeter &  6,414 & 35,110 & 41,500  \\
-        ArgoUML       &  4,802 & 33,894 & 38,689  \\
-        Columba       &  6,555 & 34,446 & 40,977  \\
-        EMF           &  6,636 & 35,331 & 41,943  \\
-        Hibernate     &  6,071 & 35,476 & 41,524  \\
-        JEdit         &  6,269 & 33,950 & 40,196  \\
-        JFreeChart    &  6,551 & 35,544 & 42,171  \\
-        JRuby         &  5,991 & 34,716 & 40,686  \\
-        SQuirrel      &  6,116 & 31,863 & 37,955  \\
+        Ant          &5,299 & 23,623 &28,922 \\
+        ArgoUML      &3,917 & 26,012 &29,929 \\
+        Columba      &5,255 & 24,182 &29,437 \\
+        EMF          &5,346 & 23,667 &29,013 \\
+        Hibernate    &4,914 & 24,070 &28,984 \\
+        JEdit        &5,042 & 24,644 &29,686 \\
+        JFreeChart   &5,361 & 23,530 &28,891 \\
+        Jmeter       &5,172 & 23,916 &29,088 \\
+        JRuby        &4,856 & 24,553 &29,409 \\
+        SQuirrel     &4,982 & 25,146 &30,128 \\
+        \midrule
+        Average       & 5,014  & 24,334 & 29,348  \\      
+        Total unique  & 6,327  & 31,518 & 35,828  \\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -158,16 +161,19 @@
         \toprule
         \textbf{Project} & \thead{Requirement TD\\features} & \thead{No TD\\Features} & \thead{Total\\Features} \\
         \midrule
-        Apache Ant    & 3,015  & 35,926 & 38,888  \\
-        Apache Jmeter & 3,456  & 35,165 & 38,568  \\
-        ArgoUML       & 2,785  & 33,693 & 36,467  \\
-        Columba       & 2,181  & 35,821 & 37,948  \\
-        EMF           & 2,852  & 36,025 & 38,823  \\
-        Hibernate     & 2,691  & 36,155 & 38,794  \\
-        JEdit         & 3,194  & 34,092 & 37,233  \\
-        JFreeChart    & 2,470  & 36,630 & 39,046  \\
-        JRuby         & 3,129  & 34,856 & 37,931  \\
-        SQuirrel      & 3,118  & 32,327 & 35,128  \\
+        Ant           & 1,812 & 27,673 & 29,485  \\
+        ArgoUML       & 2,779 & 27,260 & 30,039  \\
+        Columba       & 2,433 & 27,561 & 29,994  \\
+        EMF           & 1,889 & 27,637 & 29,526  \\
+        Hibernate     & 2,748 & 26,654 & 29,402  \\
+        JEdit         & 1,831 & 28,267 & 30,098  \\
+        JFreeChart    & 1,902 & 27,439 & 29,341  \\
+        Jmeter        & 1,893 & 27,716 & 29,609  \\
+        JRuby         & 2,850 & 27,085 & 29,935  \\
+        SQuirrel      & 1,814 & 26,914 & 28,728  \\
+        \midrule
+        Average       & 2,195  & 27,420 & 29,615 \\      
+        Total unique  & 4,015  & 32,954 & 32,954 \\
         \bottomrule
         \end{tabular}
     \end{center}    
