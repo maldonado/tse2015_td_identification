@@ -114,6 +114,7 @@ dim(reviewer1)
 dbHasCompleted(postgresql)
 
 library(RPostgreSQL)
+library(psych)
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
 postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample order by processedcommentid")
@@ -121,3 +122,6 @@ reviewer2 <- fetch(postgresql, n=-1)
 dim(reviewer2)
 dbHasCompleted(postgresql)
 xy.df <- data.frame(reviewer1,reviewer2)
+ck <- cohen.kappa(xy.df)
+ck
+ck$agree
