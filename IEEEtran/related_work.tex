@@ -18,7 +18,7 @@ In a follow up work, Zazworka \textit{et al.}~\cite{Zazworka2011MTD} conducted a
 
 Our work is different from the work that uses code smells to detect design technical debt since we use code comments to detect technical debt. Moreover, our approach does not rely on code metrics and thresholds to identify technical debt and can be used to identify bad quality code symptoms other than bad smells.
 
-More recently, Potdar and Shihab~\cite{Potdar2014ICSME} extracted the comments of four projects and analyzed more than 101,762 comments to come up with 62  patterns that indicates self-admitted technical debt. Their findings shows that 2.4\% - 31\% of the files in a project contain self-admitted technical debt. Later, Maldonado and Shihab ~\cite{Maldonado2015MTD} examined more than 33 thousands comments classifying the different types of TD found on them. Farias \textit{et al.} ~\cite{Farias2015MTD} proposed a contextualized vocabulary model for identifying TD on comments that uses word classes and code tags in the process. Ernst \textit{et al.} ~\cite{Ernst2015FSE} conducted a survey with 1,831 participants and found that architectural decisions are the most important source of technical debt.
+More recently, Potdar and Shihab~\cite{Potdar2014ICSME} extracted the comments of four projects and analyzed more than 101,762 comments to come up with 62  patterns that indicates self-admitted technical debt. Their findings shows that 2.4\% - 31\% of the files in a project contain self-admitted technical debt. Later, Maldonado and Shihab ~\cite{Maldonado2015MTD} examined more than 33 thousands comments classifying the different types of TD found on them. Farias \textit{et al.} ~\cite{Farias2015MTD} \emad{check bib} proposed a contextualized vocabulary model for identifying TD on comments that uses word classes and code tags in the process. Ernst \textit{et al.} ~\cite{Ernst2015FSE} conducted a survey with 1,831 participants and found that architectural decisions are the most important source of technical debt.
 
 Our work also uses code comments to detect design technical debt. However, we use these code comments to train a NLP Classifier to automatically identify technical debt. Also, our focus is on \emph{self-admitted} design and requirement technical debt.
 
@@ -29,6 +29,6 @@ For example, Lormans and van Deursen~\cite{Lormans2006CSRM} used latent semantic
 
 Yadla \textit{et al.}~\cite{yadla2005tracing} further developed the RETRO tool and linked requirements to issue reports. On the other hand, Runeson \textit{et al.}~\cite{Runeson2007ICSE} implemented a NLP-based tool to automatically identify duplicated issues reports, they found that 2/3 of the possible duplicates examined in their study can be found with their tool. 
 
-Canfora and Cerulo \cite{Canfora2005ISSM} link a change request with the correspondent set of source files using NLP techniques. The performance of the approach is evaluated in four open source projects.  
+Canfora and Cerulo \cite{Canfora2005ISSM} emad{check bib} link a change request with the correspondent set of source files using NLP techniques. The performance of the approach is evaluated in four open source projects.  
 
 Our work is different from the aforementioned since we apply NLP techniques on code comments to identify \SATD.
