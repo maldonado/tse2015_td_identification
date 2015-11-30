@@ -2,15 +2,20 @@
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (design debt)
 mydata <- data.frame(Ant= c(0.517, 0.175,  0.045),ArgoUML= c(0.814, 0.078,  0.155),Columba= c(0.601, 0.145,  0.038),EMF= c(0.470, 0.114,  0.035),Hibernate= c(0.744,  0.15,  0.214),JEdit= c(0.509, 0.324,  0.037),JFreeChart= c(0.492, 0.053,   0.08),Jmeter= c(0.731, 0.127,  0.075),JRuby= c(0.783, 0.138,  0.131),SQuirrel= c(0.540, 0.071,  0.056))
-barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-legend(24, 1, c("Our approach F1 measure", "Comment patterns F1 measure", "Random classifier F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3,  mgp = c(3, 2, 1) )
+legend(27, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1 Measure", mgp = c(4, 0, 0), cex.lab=2.8)
+
+# title(xlab = "Projects",   mgp = c(4.5, 1, 0), cex.lab=2.3)
 
 # figure 2 
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (requirement debt)
 mydata <- data.frame(Ant= c(0.154, 0.0, 0.006 ),ArgoUML= c(0.595, 0.0, 0.083 ),Columba= c(0.804, 0.0, 0.013 ),EMF= c(0.381, 0.0, 0.007 ),Hibernate= c(0.476, 0.0, 0.042 ),JEdit= c(0.091, 0.0, 0.003 ),JFreeChart= c(0.321, 0.0, 0.007 ),Jmeter= c(0.237, 0.0, 0.005 ),JRuby= c(0.435, 0.0, 0.044 ),SQuirrel= c(0.541, 0.0, 0.014 ))
-barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-legend(23, 1, c("Our approach F1 measure", "Comment patterns F1 measure", "Random classifier F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.1, cex.names=2.3,  mgp = c(2.8, 1.2, 0.5) )
+legend(24, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1 Measure", mgp = c(4.3, 1, 0), cex.lab=2.3)
+
 
 # figure 3 and 4 
 # size 10 x 7.5

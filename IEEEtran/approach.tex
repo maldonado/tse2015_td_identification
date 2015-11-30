@@ -18,24 +18,26 @@ Since there are many different definitions for the SLOC metric we clarify that, 
 
 The number of contributors was extracted from OpenHub, an on-line community and public directory that offers analytics, search services and tools for open source software \cite{Openhub:home}. It is important to note that the number of comments shown for each project does not represent the number of commented lines, but rather the number of individual line, block, and Javadoc comments. In total, we obtained 259,229 comments, found in 16,249 Java classes. The size of the selected projects varies between 81,307 and 228,191 SLOC's, and the number of contributors of these projects ranges from 9 to 326. 
 
+
 \begin{table*}[thb!]
     \begin{center}
-    \caption{Details of Studied Projects \emad{make the headings and project names}}
+    \caption{Details of Studied Projects}
     \label{tab:project_details}
             \begin{tabular}{l| c c r c || c c c || c c c}
             \toprule
-            \thead{Project}   & \thead{Release}  & \thead{\# of classes}   & \thead{SLOC} & \thead{\# of \\contributors}  & \thead{\# of \\comments}   & \thead{\# of \\comments \\after filtering} & \thead{\# of \\TD \\comments} & \thead{\% of \\Design \\Debt} & \thead{\% of \\Requirement \\Debt} & \thead{\% of \\Other \\Debts}\\ 
+            
+            \textbf{\thead{Project}}   & \textbf{\thead{Release}}  & \textbf{\thead{\# of classes}}   & \textbf{\thead{SLOC}} & \textbf{\thead{\# of \\contributors}}  & \textbf{\thead{\# of \\comments}}   & \textbf{\thead{\# of \\comments \\after filtering}} & \textbf{\thead{\# of \\TD \\comments}} & \textbf{\thead{\% of \\Design \\Debt}} & \textbf{\thead{\% of \\Requirement \\Debt}} & \textbf{\thead{\% of \\Other \\Debts}}\\ 
             \midrule 
-            Ant            & 1.7.0    & 1,475 & 115,881 & 74  & 21,587 &   4,137 &    131 &  72.51  & 09.92  & 17.55 \\
-            ArgoUML        & 0.34     & 2,609 & 176,839 & 87  & 67,716 &   9,548 &  1,413 &  56.68  & 29.08  & 14.22 \\
-            Columba        & 1.4      & 1,711 & 100,200 & 9   & 33,895 &   6,478 &    204 &  61.76  & 21.07  & 17.15 \\
-            EMF            & 2.4.1    & 1,458 & 228,191 & 30  & 25,229 &   4,401 &    104 &  75.00  & 15.38  & 09.61 \\
-            Hibernate      & 3.3.2 GA & 1,356 & 173,467 & 226 & 11,630 &   2,968 &    472 &  75.21  & 13.55  & 11.22 \\
-            JEdit          & 4.2      &   800 &  88,583 & 57  & 16,991 &  10,322 &    256 &  76.56  & 05.46  & 17.96 \\
-            JFreeChart     & 1.0.19   & 1,065 & 132,296 & 19  & 23,474 &   4,423 &    209 &  88.03  & 07.17  & 04.78 \\
-            Jmeter         & 2.10     & 1,181 &  81,307 & 33  & 20,084 &   8,162 &    374 &  84.49  & 05.61  & 09.89 \\
-            JRuby          & 1.4.0    & 1,486 & 150,060 & 328 & 11,149 &   4,897 &    622 &  55.14  & 17.68  & 27.17 \\ 
-            SQuirrel       & 3.0.3    & 3,108 & 215,234 & 46  & 27,474 &   7,230 &    286 &  73.07  & 17.48  & 09.44 \\ 
+            \textbf{Ant}            & 1.7.0    & 1,475 & 115,881 & 74  & 21,587 &   4,137 &    131 &  72.51  & 09.92  & 17.55 \\
+            \textbf{ArgoUML}        & 0.34     & 2,609 & 176,839 & 87  & 67,716 &   9,548 &  1,413 &  56.68  & 29.08  & 14.22 \\
+            \textbf{Columba}        & 1.4      & 1,711 & 100,200 & 9   & 33,895 &   6,478 &    204 &  61.76  & 21.07  & 17.15 \\
+            \textbf{EMF}            & 2.4.1    & 1,458 & 228,191 & 30  & 25,229 &   4,401 &    104 &  75.00  & 15.38  & 09.61 \\
+            \textbf{Hibernate}      & 3.3.2 GA & 1,356 & 173,467 & 226 & 11,630 &   2,968 &    472 &  75.21  & 13.55  & 11.22 \\
+            \textbf{JEdit}          & 4.2      &   800 &  88,583 & 57  & 16,991 &  10,322 &    256 &  76.56  & 05.46  & 17.96 \\
+            \textbf{JFreeChart}     & 1.0.19   & 1,065 & 132,296 & 19  & 23,474 &   4,423 &    209 &  88.03  & 07.17  & 04.78 \\
+            \textbf{Jmeter}         & 2.10     & 1,181 &  81,307 & 33  & 20,084 &   8,162 &    374 &  84.49  & 05.61  & 09.89 \\
+            \textbf{JRuby}          & 1.4.0    & 1,486 & 150,060 & 328 & 11,149 &   4,897 &    622 &  55.14  & 17.68  & 27.17 \\ 
+            \textbf{SQuirrel}       & 3.0.3    & 3,108 & 215,234 & 46  & 27,474 &   7,230 &    286 &  73.07  & 17.48  & 09.44 \\ 
             \bottomrule             
         \end{tabular}
     \end{center}
@@ -83,7 +85,7 @@ During the classification process we notice that not all types of debt mentioned
 
 % We manually classified 63,015 comments into different types of self-admitted technical debt. During the classification process we notice that not all types of debt mentioned in \cite{Alves2014MTD} could be found in code comments. However, we were able to identify the following types of debt in the source comments: design debt, defect debt, documentation debt, requirement debt and test debt. The classification took approximately 185 hours and was performed by the first author of the paper. 
 
-To mitigate the risk of creating a dataset that is biased, we extracted a statistically significant sample of our dataset and asked another student to classify it. To prepare the student for the task we gave a one hour explanation about the different kinds of \SATD, and walked the student through a couple of examples of each different type of \SATD comment. The statistically significant sample was created based on the total number of comments (62,566) with a confidence level of 99\% and a confidence interval of 5\%. Resulting in a stratified sample of 659 comments. We composed the stratified sample according to the percentage of each classification found in the original dataset. Therefore, the stratified sample was composed of: 92\% of comments with no \SATD (609 comments), 4\% of design debt comments (29 comments), 2\% of requirements debt comments (5 comments), 0.75\% test debt (2 comments) and 0.15\% of documentation debt (1 comment). Lastly, we evaluate the level of agreement between both reviewers of the stratified sample by calculating the Cohen's kappa coefficient ~\cite{cohen1960coefficient}. Cohen's Kappa coefficient has been commonly used to evaluate inter-rater agreement level for categorical scales, and provides the proportion of agreement corrected for chance. The result coefficient is scaled to vary between -1 and 1 where negative values means poorer than chance agreement, zero indicates exactly chance agreement and positive value indicates better than chance agreement ~\cite{fleiss1973equivalence}. In our work, the level of agreement measured between the reviewers was of 0.81.   
+To mitigate the risk of creating a dataset that is biased, we extracted a statistically significant sample of our dataset and asked another student to classify it. To prepare the student for the task we gave a one hour explanation about the different kinds of \SATD, and walked the student through a couple of examples of each different type of \SATD comment. The statistically significant sample was created based on the total number of comments (62,566) with a confidence level of 99\% and a confidence interval of 5\%. Resulting in a stratified sample of 659 comments. We composed the stratified sample according to the percentage of each classification found in the original dataset. Therefore, the stratified sample was composed of: 92\% of comments with no \SATD (609 comments), 4\% of design debt comments (29 comments), 2\% of requirements debt comments (5 comments), 0.75\% test debt (2 comments) and 0.15\% of documentation debt (1 comment). Lastly, we evaluate the level of agreement between both reviewers of the stratified sample by calculating the Cohen's kappa coefficient ~\cite{cohen1960coefficient}. \everton{Cohen's Kappa coefficient has been commonly used to evaluate inter-rater agreement level for categorical scales, and provides the proportion of agreement corrected for chance. The result coefficient is scaled to vary between -1 and 1 where negative values means poorer than chance agreement, zero indicates exactly chance agreement and positive value indicates better than chance agreement ~\cite{fleiss1973equivalence}. In our work, the level of agreement measured between the reviewers was of 0.81.}   
 
 % subsection manual_classification (end)
 
