@@ -99,15 +99,25 @@ To mitigate the risk of creating a dataset that is biased, we extracted a statis
 
 % \todo{explain in detail the nlp tool , why we use it and how it works.} 
 
-Our next step is to use the classified \SATD comments to create a training dataset that can be used with a NLP classifier. A NLP classifier is a machine learning tool that takes as input a number of data items along with a classification for each data item. In addition, it takes a test dataset that will be classified according to what it learns from the training data. The output of the tool is the classification itself, and the features used to achieve this classification. The features, in our case, are words that are frequently found in the training dataset. These features are automatically created by the Stanford NLP Classifier ~\cite{Manning2014ACL}. 
+Our next step is to use the classified \SATD comments as a training dataset for the Stanford NLP Classifier~\cite{Manning2014ACL}.
+A NLP classifier, in general, takes as input a number of data items along with a classification for each data item,
+and automatically generates \textit{features} (i.e., words) from each \textit{datum}, which are associated with positive or negative numeric \textit{votes} for each class.
+The weights of the features are learned automatically based on the manually classified training data items (supervised learning).
+The Stanford classifier builds a \textit{maximum entropy model}, which is equivalent to a multi-class regression model,
+and it is trained to maximize the conditional likelihood of the classes taking into account feature dependences when calculating the feature weights.
 
-In our case, the data is composed by a comment and the manual classification that was attributed to it. According to our findings in previous work~\cite{Maldonado2015MTD} the two most common types of \SATD are design and requirement debt. Therefore, we train the Stanford NLP Classifier to predict these two specific types of \SATD comments.
+After the training phase, the NLP Classifier can take as input a test dataset that will be classified according to the model built during the training phase.
+The output for each data item of the test dataset is the classification, along with the features contributing positively or negatively in this classification.
+
+In our case, the training dataset is composed by source code comments and the manual classification that was attributed to each comment.
+According to our findings in previous work~\cite{Maldonado2015MTD}, the two most common types of \SATD are design and requirement debt (defect, test, and documentation debt together represent less that 10\% of all \SATD comments).
+Therefore, we train the Stanford NLP Classifier on a sub-dataset containing only these two specific types of \SATD comments.
 
 %For example, camel case uses lower and upper case letters to aggregate more than one word together (i.e., methodNameHere).
+In order to avoid having repeated features differing only in letter case (e.g., ``Hack'', ``hack'', ``HACK''), or in preceding/succeeding punctuation characters (e.g., ``Hack:'', ``Hack!''), we perform a preprocessing of the training and test datasets to clean up the original comments written by the developers. More specifically, we remove the character structures that are used in the Java language syntax to indicate comments (i.e., `//' or `/*' and `*/'), the punctuation characters, and any excess whitespace characters (e.g., ` ', `\textbackslash t', `\textbackslash n'), and finally we convert all remaining words to lowercase.
 
-Comments are written in natural language, but they also contain Java syntax elements like `//'. Other characteristics of comments are writing conventions, such as camel case for representing code elements. These characteristics of comments can be misinterpreted by the NLP classifier tool, resulting in meaningless prediction features (i.e., words). Therefore, we first remove the character structures that are used in the Java language syntax to indicate comments (i.e., `//' or `/*' and `*/'). Second, we remove characters that represent an escape sequence such as `\textbackslash t' or `\textbackslash n'. Third, we remove the excess blank spaces from the comments. Fourth, we make all the words in the comments lowercase.
-
+%Comments are written in natural language, but they also contain Java syntax elements like `//'. Other characteristics of comments are writing conventions, such as camel case for representing code elements. These characteristics of comments can be misinterpreted by the NLP classifier tool, resulting in meaningless prediction features (i.e., words). Therefore, we first remove the character structures that are used in the Java language syntax to indicate comments (i.e., `//' or `/*' and `*/'). Second, we remove characters that represent an escape sequence such as `\textbackslash t' or `\textbackslash n'. Third, we remove the excess blank spaces from the comments. Fourth, we make all the words in the comments lowercase.
+\begin{comment}
 For each execution of the Stanford Classifier we provide two separate datasets. One is the training dataset and the other is the test dataset. The training dataset is used to extract the features that will be used to predict \SATD comments, and the test dataset is used to evaluate how good the extracted features were in predicting \SATD. Both datasets files are composed by two columns. The first column is the label (i.e., manual classification of the comment) and the second column is the comment itself. All comments in the files are formatted as described above, removing the chance of having the same feature written in upper and lower case, and consequently reducing the probability of overlapping features/words.
-
-\nikos{I think it would be helpful to give an example of a comment, and the features (words) used to classify it as technical debt}
+\end{comment}
 % subsection run_the_nlp_classifier)
