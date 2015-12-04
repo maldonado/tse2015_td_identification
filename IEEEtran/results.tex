@@ -3,7 +3,7 @@ The goal of our research is to develop an automatic way to detect design and req
 \begin{figure*}[!thb]
   \centering
   % \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design.pdf}
-  \subfigure[Design Debt]{\includegraphics[width=0.4\textwidth]{figures/f1_measure_comparisom_design_1.pdf}
+  \subfigure[Design Debt]{\includegraphics[width=0.49\textwidth]{figures/f1_measure_comparisom_design_1.pdf}
   \label{fig:f1_measure_comparison_design_debt}}
   % \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_requirement.pdf}
   \subfigure[Requirement Debt]{\includegraphics[width=0.4\textwidth]{figures/f1_measure_comparisom_requirement_1.pdf}
@@ -23,12 +23,11 @@ The goal of our research is to develop an automatic way to detect design and req
         \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{5}{c|}{\textbf{\thead{Design debt}}} & \multicolumn{3}{c}{\textbf{\thead{Requirement debt}}} 
         % indicates that from now on we are filling the content of the next line
         \\ 
-
+        % \cline{2-2}
+        \cmidrule{2-9}
         % remainder columns
         & {\textbf{\thead{Our\\approach}}} & {\textbf{\thead{Comment\\patterns}}} & {\textbf{\thead{Random\\classifier}}} & {\textbf{\thead{Improvement over\\comment patterns}}} & {\textbf{\thead{Improvement over\\random classifier}}} & {\textbf{\thead{Our\\approach}}} & {\textbf{\thead{Random\\classifier}}} & {\textbf{\thead{Improvement over\\random classifier}}} \\
-
-        
-        
+  
         \midrule                                                  
         \textbf{Ant}          &  0.517  &  0.175 & 0.045 &  2.9$\times$   &  11.4$\times$  & 0.154  &  0.006  & 25.6$\times$  \\
         \textbf{ArgoUML}      &  0.814  &  0.078 & 0.155 &  10.4$\times$  &  5.2$\times$   & 0.595  &  0.083  & 7.1$\times$   \\
@@ -47,7 +46,6 @@ The goal of our research is to develop an automatic way to detect design and req
     \end{center}    
 \end{table*}
 
-
 \vspace{3mm}
 \noindent\rqi
 \vspace{3mm}
@@ -55,7 +53,6 @@ The goal of our research is to develop an automatic way to detect design and req
 \noindent \textbf{Motivation:} As shown in previous work \cite{Potdar2014ICSME, Maldonado2015MTD}, \SATD comments can be found in the source code. However, there is no automatic way to identify these technical debt comments. The methods proposed so far heavily rely on manual examination of source code, and there is no evidence on how well these approaches perform. Moreover, the state-of-the-art approaches to detect \SATD do not discriminate between the different types of technical debt (e.g., design, test, requirements).
 
 Therefore, we want to determine if NLP tools such as, the Stanford NLP Classifier, can help us to surpass these limitations. NLP tools can automatically classify comments based on specific linguistic characteristics of these comments. Answering this question is important since it helps us understand the opportunities and limitations of using NLP techniques to automatic identify \SATD comments. 
-
 
 %These characteristics are obtained through the training dataset that we created. 
 
@@ -66,29 +63,25 @@ Therefore, we want to determine if NLP tools such as, the Stanford NLP Classifie
 
 %As described in Section \ref{sec:approach}, in a combined effort between this work and our previous study on \SATD \cite{Maldonado2015MTD} we manually classify comments from ten open source projects. 
 
-
-
 We train the NLP classifier using our manually created dataset. The dataset contains comments with and without \SATD, and each comment contains its own classification (i.e., without technical debt, design debt or requirement debt). Then, we add to the training dataset all comments classified as without technical debt and the comments classified as the specific type of \SATD that we want to detect/predict. We use comments from 9 out of 10 projects that we analyzed to create the training dataset. The comments from the remaining one project is used to evaluate the classification performed by the NLP tool. We choose to create the training dataset using comments from 9 out of 10 projects since we want to train the NLP tool with the most diverse data possible (i.e., comments from different domains of applications). However, we discuss the implications of using different amounts of training data in RQ3. We repeat this process for each of the ten projects, each time training on 9 projects and testing on the remaining 1 project.
 
 Based on the training dataset, the NLP tool will classify each comment in the test dataset. The resulting classification is compared with the manual classification provided in the test dataset and evaluated. If a comment in the test dataset has the same classification as the classification suggested by the NLP tool, we will have a true positive (tp) or a true negative (tn). \everton{True positives are the cases where the NLP tool correctly identifies \SATD comments, and true negatives are comments without technical debt that are classified as without technical debt}. Similarly, when the classification provided by the tool diverges from the classification provided in the test dataset we have false positives or false negatives. False positives (fp) are comments classified as being \SATD when they are not, and false negatives (fn) are comments classified as without technical debt when they really are \SATD comments. Using the tp, tn, fp, and fn, we are able to evaluate the performance of the different detection approaches in terms of precision (i.e., $\frac{tp}{tp + fp}$), recall (i.e., $\frac{tp}{tp + fn}$) and F1 measure (i.e., $2 \times \frac{P \times R}{P + R}$). To determine how effective the NLP classification is, we compare its F1 measure with the F1 measure of two other approaches. We use the F1 measure to compare the performance between the approaches as this measurement provides the harmonic mean of precision and recall. Using the F1 measure allows us to incorporate the tradeoff between precision and recall and present one value that evaluates both measures.
 
-
-We compare the performance of our NLP-based appraoch to two other approaches. \everton{the previous statement is necessary ?}The first approach is the current state-of-the-art in detection of \SATD comments devised by Potdar and Shihab ~\cite{Potdar2014ICSME}. This approach uses 62 comment patterns (i.e., keywords) that were noticed as recurrent in \SATD comments during the manual inspection of 101,762 comments. The second approach is the simple (random) baseline, which assumes that the detection of \SATD is random. The precision of this approach is calculated by taking the total number of \SATD over the total number of comments of each project. For example, Ant has 4,137 comments, of those, only 95 comments are design \SATD. The chance of randomly finding a design \SATD comment is 0.022 (i.e., $\frac{95}{4,137}$). Similarly, to calculate the recall we take into consideration the two possible classifications available: one is the type of \SATD (e.g., design) and without technical debt. Therefore, there is a 50\% chance that the comment will be a \SATD. 
+We compare the performance of our NLP-based approach to two other approaches. \everton{the previous statement is necessary ?}The first approach is the current state-of-the-art in detection of \SATD comments devised by Potdar and Shihab ~\cite{Potdar2014ICSME}. This approach uses 62 comment patterns (i.e., keywords) that were noticed as recurrent in \SATD comments during the manual inspection of 101,762 comments. The second approach is the simple (random) baseline, which assumes that the detection of \SATD is random. The precision of this approach is calculated by taking the total number of \SATD over the total number of comments of each project. For example, Ant has 4,137 comments, of those, only 95 comments are design \SATD. The chance of randomly finding a design \SATD comment is 0.022 (i.e., $\frac{95}{4,137}$). Similarly, to calculate the recall we take into consideration the two possible classifications available: one is the type of \SATD (e.g., design) and without technical debt. Therefore, there is a 50\% chance that the comment will be a \SATD. 
 
 \vspace{1mm}
 
-\noindent \textbf{Results - design debt:} Table \ref{tbl:improvement_f1measure} presents the F1 measure of the three approaches, as well as the improvement achieved by our appraoch compared to the two compared approaches. We see that for all the projects, the F1 measure achieved by our approach is higher than the other baseline's F1 measures. The F1 measure obtained by our NLP-based appraoch ranges between 0.470 - 0.814, with an average of 0.620. In comparison, the F1 measure using the comment patterns ranges between 0.071 - 0.324, with an average of 0.137, and the simple (random) baseline classifier achieves F1 measures in the range of 0.035 - 0.214, with an average of 0.086. Figure \ref{fig:f1_measure_comparison_design_debt} visualizes the comparison of the F1 measure for our approach, the comment patterns approach and the simple (random) baseline classifier. We see from both, Table \ref{tbl:improvement_f1measure} and Figure \ref{fig:f1_measure_comparison_design_debt} that on average, our approach to identify design \SATD outperforms, the state-of-the-art comment pattern approach by 4.5 times and the simple (random) baseline approach by a factor of 7.1 times. 
+\noindent \textbf{Results - design debt:} Table \ref{tbl:improvement_f1measure} presents the F1 measure of the three approaches, as well as the improvement achieved by our approach compared to the two compared approaches. We see that for all the projects, the F1 measure achieved by our approach is higher than the other baseline's F1 measures. The F1 measure obtained by our NLP-based approach ranges between 0.470 - 0.814, with an average of 0.620. In comparison, the F1 measure using the comment patterns ranges between 0.071 - 0.324, with an average of 0.137, and the simple (random) baseline classifier achieves F1 measures in the range of 0.035 - 0.214, with an average of 0.086. Figure \ref{fig:f1_measure_comparison_design_debt} visualizes the comparison of the F1 measure for our approach, the comment patterns approach and the simple (random) baseline classifier. We see from both, Table \ref{tbl:improvement_f1measure} and Figure \ref{fig:f1_measure_comparison_design_debt} that on average, our approach to identify design \SATD outperforms, the state-of-the-art comment pattern approach by 4.5 times and the simple (random) baseline approach by a factor of 7.1 times. 
 
 It is important to note that each one of the selected baselines for comparison has one strong point. The comment patterns approach has a high precision, but it lacks recall, i.e., this approach points correctly to \SATD comments, but as the approach depends on keywords, it identifies a very small subset of all the \SATD comments in the project. 
 
 %The less sophisticated random classifier baseline provides a high recall because we try to classify comments between two categories (i.e with or without technical debt), meaning a 50\% chance to randomly get one of the two classifications. 
 
-
 %The second, third and fourth columns of Table \ref{tbl:improvement_f1measure} shows our approach F1 measure, the comment patterns baseline F1 measure and the random classifier baseline F1 measure respectively for each project while classifying design \SATD. In addition, fifth and sixth columns present how many times our approach surpass the comment patterns baseline and the random classifier baseline.   
  
-\noindent \textbf{Results - requirement debt:}  The last three columns of Table \ref{tbl:improvement_f1measure} presents the performance of our approach, the performance of the simple (random) baseline approach and the improvement of our approach over the simple (random) baseline. The comment patterns appraoch was not able to identify an requirement \SATD, hence we omit the presentation of its results. For all projects, the F1 measure obtained by our approach surpass the simple (random) baseline classifier. Our appraoch achieves a F1 measure between 0.091 - 0.804 with an average of 0.403, whereas the simple (random) baseline achieves F1 measure in the range of 0.003 - 0.083, with an average of 0.022. Figure \ref{fig:f1_measure_comparison_requirement_debt} visualizes the performance comparison of the two approaches.
+\noindent \textbf{Results - requirement debt:}  The last three columns of Table \ref{tbl:improvement_f1measure} presents the performance of our approach, the performance of the simple (random) baseline approach and the improvement of our approach over the simple (random) baseline. The comment patterns approach was not able to identify an requirement \SATD, hence we omit the presentation of its results. For all projects, the F1 measure obtained by our approach surpass the simple (random) baseline classifier. Our approach achieves a F1 measure between 0.091 - 0.804 with an average of 0.403, whereas the simple (random) baseline achieves F1 measure in the range of 0.003 - 0.083, with an average of 0.022. Figure \ref{fig:f1_measure_comparison_requirement_debt} visualizes the performance comparison of the two approaches.
 
-Generally, it is clear that requirement \SATD is less common than design \SATD, which makes it more difficult to detect. That said, our NLP-base approach provides a significant improvement over the simple (random) baseline appraoch, with an average improvement of 18 times.
+Generally, it is clear that requirement \SATD is less common than design \SATD, which makes it more difficult to detect. That said, our NLP-base approach provides a significant improvement over the simple (random) baseline approach, with an average improvement of 18 times.
 
 %Despite the fact that this number is slightly lower than the average obtained while identifying design debt, the quantity of requirement \SATD comments that are present in the projects is very small, which makes its classification more difficult. For example, JEdit has 14 requirement \SATD comments distributed over a total of 10,080 comments (i.e, requirement debt comments plus without \SATD comments). Nevertheless, our approach can identify \SATD even in this unbalanced dataset as we still outperform the random classifier baseline F1 measured by 30.3 times, i.e., the random classifier baseline F1 measure was of 0.003 for JEdit. 
 
@@ -97,10 +90,6 @@ Generally, it is clear that requirement \SATD is less common than design \SATD, 
 %Similarly, Figure \ref{fig:f1_measure_comparison_requirement_debt} shows the comparison between the three F1 measures while identifying requirement \SATD.
 
 %We find that the comment patterns approach is not an appropriate approach for identifying requirement \SATD, since it was not able to identify any of the requirement \SATD comments in our analyzed projects. Therefore, we use only the random classifier baseline to compare with our results.
-
-
-
-
 
 %The seventh column Table \ref{tbl:improvement_f1measure} shows the F1 measure of our approach, the eighth column presents the random classifier baseline F1 measure, and the ninth column shows the improvement of our approach over the random classifier baseline. For example, on SQuirrel project the F1 measure was of 0.541 whereas the random classifier baseline F1 measure was of 0.014, which means that there was an improvement of 38.6 times in the identification of requirement \SATD comments using our approach. 
 
@@ -112,7 +101,7 @@ Generally, it is clear that requirement \SATD is less common than design \SATD, 
 \noindent\rqii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} After asserting the efficiency of our NLP-based appraoch in identifying \SATD comments we want to better understand what words developers use when indicating this technical debt. Answering this question will provide insightful information that can guide future research direction, broaden our understanding on \SATD and also help us to detect it.     
+\noindent \textbf{Motivation:} After asserting the efficiency of our NLP-based approach in identifying \SATD comments we want to better understand what words developers use when indicating this technical debt. Answering this question will provide insightful information that can guide future research direction, broaden our understanding on \SATD and also help us to detect it.     
 
 \vspace{1mm}
 \noindent \textbf{Approach:} To perform its detection, the NLP tool learns optimal features that can be used to detect \SATD. These features, are fragments of data (e.g., words) that are associated with a specific type of debt (e.g., design debt, requirement debt or without technical debt). Moreover, each of the features has a weight, which represents how strongly the feature relates to a specific type of debt. The NLP tool uses the labeled training data that we input to determine the features and their weigh. Then, the features and their corresponding weights are used to determine if a comment belongs to a specific type of \SATD.
@@ -154,7 +143,7 @@ From Table~\ref{tbl:top_ten_features} we observe that top ranked textual feature
 
 We also observe that it is possible a single textual feature can be used to indicate design and requirement \SATD. However, in such cases, the ranking of the textual features in for design and requirement \SATD is different. For example, the work todo is ranked 10 for design debt, whereas it is ranked first for requirement debt. This finding makes intuitive sense, since requirement debt will naturally be related to the implementation of future functionality.
 
-It is important to note here that although we present the top 10 textual features, the classification of the comments is based on a combination of several textual features. In fact, on average, the number of features to classify design debt is 6,196 and 2,889 for requirement debt. The exact number of unique textual features used to detect \SATD for each project in shown in Tabel \emad{Everton add table}. The fact that opur NLP-based approarch leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art~\cite{Potdar2014ICSME}, which only uses 62 patterns that are composed of \todo{X} unique textual features.
+It is important to note here that although we present the top 10 textual features, the classification of the comments is based on a combination of several textual features. In fact, on average, the number of features to classify design debt is 6,196 and 2,889 for requirement debt. The exact number of unique textual features used to detect \SATD for each project in shown in Table \emad{Everton add table}. The fact that our NLP-based approach leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art~\cite{Potdar2014ICSME}, which only uses 62 patterns that are composed of \todo{X} unique textual features.
 
 %This shows why our recall is much better than Potdar and Shihab's ~\cite{Potdar2014ICSME}. 
 
@@ -200,9 +189,6 @@ For example, if the maximum F1-measure is 0.85 and is achieved in the 8th iterat
   \caption{ArgoUml Requirement Debt classification}
   \label{fig:implementation_argo_result}
 \end{figure}
-
-
-
 
 %Therefore, we determined which iteration has the highest performance for each project. We called this iteration as the maximum F1 measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1 measure value to calculate the percentage of the maximum F1 measure that it represents. We calculate these values for design and requirement debt separately.
 
@@ -274,8 +260,6 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 
 %It is important to notice that, this results shows that it is possible to identify \SATD with a lower number of comments. Using a lower number of comments to create the training dataset makes the approach more applicable as the number of \SATD comments is rather scarce.    
 
-
 The results of this RQ show that, contrary to our initial intuition, more data need not result in higher classification accuracy. In fact, we find that in some cases, the addition of more comments can decrease the performance of the classifier. One of the reasons for this is that the weight of features is given through empirical probability, and consequently features that appear more will have a higher weight. Although this is an effective process for the majority of cases that we studied, it can be misleading when classifying comments that have different contexts, i.e., in cross-project classification.
-
 
 \conclusionbox{We find that using our NLP-based approach, design \SATD comments can be classified effectively using a training dataset of 1,106 - 1,444 comments. Similarly, requirement \SATD can be classified with as little as 380 comments of this type.}

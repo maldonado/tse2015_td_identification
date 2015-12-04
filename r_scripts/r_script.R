@@ -2,9 +2,9 @@
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (design debt)
 mydata <- data.frame(Ant= c(0.517, 0.175,  0.045),ArgoUML= c(0.814, 0.078,  0.155),Columba= c(0.601, 0.145,  0.038),EMF= c(0.470, 0.114,  0.035),Hibernate= c(0.744,  0.15,  0.214),JEdit= c(0.509, 0.324,  0.037),JFreeChart= c(0.492, 0.053,   0.08),Jmeter= c(0.731, 0.127,  0.075),JRuby= c(0.783, 0.138,  0.131),SQuirrel= c(0.540, 0.071,  0.056))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3,  mgp = c(3, 2, 1) )
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,2,1) )
 legend(27, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
-title(ylab = "F1 Measure", mgp = c(4, 0, 0), cex.lab=2.8)
+title(ylab = "F1 Measure", mgp = c(3, 0, 0), cex.lab=2.3)
 
 # title(xlab = "Projects",   mgp = c(4.5, 1, 0), cex.lab=2.3)
 
