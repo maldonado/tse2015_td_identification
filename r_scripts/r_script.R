@@ -54,7 +54,7 @@ con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classificat
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jEdit%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jfreechart%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jruby%' and category = 'DESIGN' and classificationid=7  order by 1,2")
-postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%sql12%' and category = 'DESIGN' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%sql12%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 data1 <- fetch(postgresql, n=-1)
 dim(data1)
 dbHasCompleted(postgresql)
@@ -64,7 +64,11 @@ plot(data1$projectstrainedwith, data1$classifiedf1, type="b",
      xlim=c(0, 10), ylim=c(0, 1))
 lines(data1$projectstrainedwith, data1$classifiedrandomf1, type="b", pch=22, col="blue", lty=0)
 lines(data1$projectstrainedwith, data1$baselinef1, type="b", pch=21, col="darkgreen", lty=0)
+abline(h=(data1$classifiedf1[which.max(data1$classifiedf1)] * .9), col="dark grey", lty=3)
+abline(h=(data1$classifiedf1[which.max(data1$classifiedf1)] * .8), col="dark grey", lty=3)
 legend(6, 1, c("Our approach", "Comment patterns baseline", "Random classifier baseline" ), col= c("red", "darkgreen",  "blue"), pch = c(2, 21, 22), bty = "n" , cex=1.1)
+
+
 
 # figure 5 
 # size 29 x 15
