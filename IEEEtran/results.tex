@@ -115,7 +115,7 @@ For each analyzed project, we collect the features used to predict the \SATD com
 
 %We determined the top 10 features (i.e, most relevant based on the weight) for design and requirement \SATD comments.
 
-\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 textual features used to identify  \SATD in the ten studied projects, ordered by their weight \emad{relevance or weight?}. The first column we present the ranking of each textual feature, the second column lists the features used in the identification of \emph{design} \SATD, and the third column lists the textual features used to identify \emph{requirement} \SATD.
+\noindent \textbf{Results:} Table \ref{tbl:top_ten_features} shows the top 10 textual features used to identify  \SATD in the ten studied projects, ordered by their \everton{relevance}. The first column we present the ranking of each textual feature, the second column lists the features used in the identification of \emph{design} \SATD, and the third column lists the textual features used to identify \emph{requirement} \SATD.
 
 \begin{table}[!thb]
     \begin{center}
@@ -140,11 +140,40 @@ For each analyzed project, we collect the features used to predict the \SATD com
     \end{center}    
 \end{table}
 
-From Table~\ref{tbl:top_ten_features} we observe that top ranked textual features, i.e., hack, workaround, yuck!, kludge and stupidity, are related to design \SATD indicate sloppy or mediocre source code. Other textual features such as needed?, columns?, unused?, wtf? and todo, are questioning the usefulness or utility of specific source code. For requirement \SATD, the top ranked features, i.e., todo, needed, implementation, and fixme, indicate the need to enhance or complete the implementation in the future. Other lower ranked textual features such as xxx, ends?, convention, configurable, apparently and fudging, indicates potential future enhancements that make the code more configurable and/or generic. \emad{not sure if I am using the right words here - maybe even add 1 or 2 examples here}
+From Table~\ref{tbl:top_ten_features} we observe that top ranked textual features, i.e., hack, workaround, yuck!, kludge and stupidity, are related to design \SATD indicate sloppy or mediocre source code. \everton{For example we have the following comment that was extract from Jmeter: \textit{``\textbf{Hack} to allow entire URL to be provided in host field''}. Other textual features such as needed?, columns?, unused?, wtf? and todo, are questioning the usefulness or utility of specific source code. As this other comment, also extracted from Jmeter, can show: \textit{``TODO: - is this \textbf{needed?}''}. For requirement \SATD, the top ranked features, i.e., todo, needed, implementation, and fixme, indicate the need to enhance or complete the implementation in the future. This comment from JRuby is an example: \textit{``\textbf{TODO:} implement, won't do this now''}. Other lower ranked textual features such as xxx, ends?, convention, configurable, apparently and fudging, indicates potential future enhancements that make the code more configurable and/or generic.} 
 
 We also observe that it is possible a single textual feature to indicate both design and requirement \SATD. However, in such cases, the ranking of the textual features for design and requirement \SATD is different. For example, the work todo is ranked tenth for design debt, whereas it is ranked first for requirement debt. This finding is intuitive, since requirement debt will naturally be related to the implementation of future functionality.
 
-It is important to note here that although we present the top 10 textual features, the classification of the comments is based on a combination of several textual features. In fact, on average, the number of features used to classify design debt is 6,196 and 2,889 for requirement debt. The exact number of unique textual features used to detect \SATD for each project is shown in Table \emad{Everton add table}. The fact that our NLP-based approach leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art~\cite{Potdar2014ICSME}, which only uses 62 patterns that are composed of \todo{X} unique textual features.
+\everton{It is important to note here that although we present the top 10 textual features, the classification of the comments is based on a combination of several textual features. In fact, two different types of textual features are used to classify the comments: positive weight features and negative weight features. Positive weight features will increase the total weight of the vote suggesting that the classification should be equal to the class of the feature (i.e., design or requirement debt). On the other hand, negative weight features will decrease the total weight of the vote suggesting a classification different from the class that the feature belongs (i.e, without technical debt). On average, the number of positive weight features used to classify design debt is 5,014 and 2,195 for requirement debt. The exact number of unique textual features used to detect \SATD for each project is shown in Table \ref{tbl:features_per_project}. The fact that our NLP-based approach leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art~\cite{Potdar2014ICSME}, which only uses 62 patterns. In comparison, our approach are composed of 35,828 design unique textual features and 34,056 requirement unique textual features.}
+
+\begin{table*}[!hbt]
+    \begin{center}
+        \caption{Design and Requirement Debt features per project}
+        \label{tbl:features_per_project}
+        \begin{tabular}{l| c c c|| c c c}
+        \toprule
+        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Design debt}}} & \multicolumn{3}{c}{\textbf{\thead{Requirement debt}}} 
+        \\
+        \cmidrule{2-7}
+        & \textbf{\thead{Positive\\Weight\\Features}} & \textbf{\thead{Negative\\Weight\\Features}} & \textbf{\thead{\# of\\Features}} & \textbf{\thead{Positive\\Weight\\Features}} & \textbf{\thead{Negative\\Weight\\Features}} & \textbf{\thead{\# of\\Features}}\\
+        \midrule
+        Ant          & 5,299 & 23,623 & 28,922 & 1,812 & 27,673 & 29,485 \\
+        ArgoUML      & 3,917 & 26,012 & 29,929 & 2,779 & 27,260 & 30,039 \\
+        Columba      & 5,255 & 24,182 & 29,437 & 2,433 & 27,561 & 29,994 \\
+        EMF          & 5,346 & 23,667 & 29,013 & 1,889 & 27,637 & 29,526 \\
+        Hibernate    & 4,914 & 24,070 & 28,984 & 2,748 & 26,654 & 29,402 \\
+        JEdit        & 5,042 & 24,644 & 29,686 & 1,831 & 28,267 & 30,098 \\
+        JFreeChart   & 5,361 & 23,530 & 28,891 & 1,902 & 27,439 & 29,341 \\
+        Jmeter       & 5,172 & 23,916 & 29,088 & 1,893 & 27,716 & 29,609 \\
+        JRuby        & 4,856 & 24,553 & 29,409 & 2,850 & 27,085 & 29,935 \\
+        SQuirrel     & 4,982 & 25,146 & 30,128 & 1,814 & 26,914 & 28,728 \\
+        \midrule
+        Average       & 5,014 & 24,334 & 29,348 & 2,195  & 27,420 & 29,615 \\      
+        Total unique  & 6,327  & 31,518 & 35,828   & 4,015  & 32,954 & 34,056 \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table*}
 
 %This shows why our recall is much better than Potdar and Shihab's ~\cite{Potdar2014ICSME}. 
 
