@@ -135,6 +135,8 @@ ck <- cohen.kappa(xy.df)
 ck
 ck$agree
 
+# __________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 # Textual similarity between requirement and design comments IMPLEMENTATION = 0.0389864024682, DESIGN = 0.0290795195597
 library(RPostgreSQL)
 library(vioplot)
@@ -153,3 +155,5 @@ dbHasCompleted(postgresql)
 
 vioplot(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity, names=c("Design", "Requirement"),   col="gold")
 title("Textual Similarity Between Design and Requiremt Debt Comments", ylab="Cosine Distance")
+
+wilcox.test(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity)
