@@ -46,6 +46,9 @@ CREATE TABLE processed_comment (
     jdeodorant_hit text, 
     refactoring_list_name text
 );
+
+alter table processed_comment add column textual_similarity numeric
+
 pg_dump -Fc -Uevermal comment_classification > ~/Dropbox/research/database_backups/comment_classification/comment_classification_backup.dump
 #1 create table in postgresql
 drop table if exists classifier_results;

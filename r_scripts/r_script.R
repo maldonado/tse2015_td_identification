@@ -44,7 +44,7 @@ postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classif
 
 library(RPostgreSQL)
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%ant%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jmeter%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%argo%' and category = 'DESIGN' and classificationid=7  order by 1,2")
@@ -116,7 +116,7 @@ barplot(as.matrix(mydata),  ylab="Percentage",  ylim=c(0, 1), beside=TRUE, col= 
 # Cohen's kappa FOR THE DATASET
 library(RPostgreSQL)
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
 postgresql <- dbSendQuery(con, "select classification from significative_sample order by processedcommentid")
 reviewer1 <- fetch(postgresql, n=-1)
 dim(reviewer1)
@@ -125,7 +125,7 @@ dbHasCompleted(postgresql)
 library(RPostgreSQL)
 library(psych)
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='evermalton')
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
 postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample order by processedcommentid")
 reviewer2 <- fetch(postgresql, n=-1)
 dim(reviewer2)
@@ -134,3 +134,22 @@ xy.df <- data.frame(reviewer1,reviewer2)
 ck <- cohen.kappa(xy.df)
 ck
 ck$agree
+
+# Textual similarity between requirement and design comments IMPLEMENTATION = 0.0389864024682, DESIGN = 0.0290795195597
+library(RPostgreSQL)
+library(vioplot)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+
+postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'DESIGN'")
+design_similarity_results <- fetch(postgresql, n=-1)
+dim(design_similarity_results)
+
+postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'IMPLEMENTATION'")
+implementation_similarity_results <- fetch(postgresql, n=-1)
+dim(implementation_similarity_results)
+
+dbHasCompleted(postgresql)
+
+vioplot(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity, names=c("Design", "Requirement"),   col="gold")
+title("Textual Similarity Between Design and Requiremt Debt Comments", ylab="Cosine Distance")
