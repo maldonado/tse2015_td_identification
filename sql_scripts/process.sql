@@ -48,6 +48,7 @@ CREATE TABLE processed_comment (
 );
 
 alter table processed_comment add column textual_similarity numeric
+alter table processed_comment add column treated_commenttext text
 
 pg_dump -Fc -Uevermal comment_classification > ~/Dropbox/research/database_backups/comment_classification/comment_classification_backup.dump
 #1 create table in postgresql

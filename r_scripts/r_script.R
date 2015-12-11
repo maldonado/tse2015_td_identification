@@ -78,6 +78,42 @@ mydata <- data.frame(Ant= c(0.154, 0.207 , 0.057),ArgoUML= c(0.595, 0.611 , 0.02
 barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
 legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Naive Bayes F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 
+# Textual similarity between requirement and design comments IMPLEMENTATION = 0.0389864024682, DESIGN = 0.0290795195597
+library(RPostgreSQL)
+library(vioplot)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+
+postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'DESIGN'")
+design_similarity_results <- fetch(postgresql, n=-1)
+dim(design_similarity_results)
+
+postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'IMPLEMENTATION'")
+implementation_similarity_results <- fetch(postgresql, n=-1)
+dim(implementation_similarity_results)
+
+dbHasCompleted(postgresql)
+
+vioplot(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity, names=c("Design", "Requirement"),   col="gold")
+title("Textual Similarity Between Design and Requiremt Debt Comments", ylab="Cosine Similarity")
+
+wilcox.test(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity)
+
+# average size of comments
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+postgresql <- dbSendQuery(con, "select a.treated_commenttext from processed_comment a, comment_class b  where a.commentclassid = b.id and classification = 'IMPLEMENTATION' and projectname='jEdit-4.2'")
+treated_commenttext_list <- fetch(postgresql, n=-1)
+dim(treated_commenttext_list)
+dbHasCompleted(postgresql)
+
+treated_commenttext_list$treated_commenttext
+
+barplot(nchar(treated_commenttext_list$treated_commenttext), main="Box plot", ylab="Miles per Gallon")
+
+max(nchar(treated_commenttext_list$treated_commenttext))
+mean(nchar(treated_commenttext_list$treated_commenttext))
 # __________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
@@ -130,24 +166,3 @@ ck
 ck$agree
 
 # __________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
-# Textual similarity between requirement and design comments IMPLEMENTATION = 0.0389864024682, DESIGN = 0.0290795195597
-library(RPostgreSQL)
-library(vioplot)
-drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
-
-postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'DESIGN'")
-design_similarity_results <- fetch(postgresql, n=-1)
-dim(design_similarity_results)
-
-postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'IMPLEMENTATION'")
-implementation_similarity_results <- fetch(postgresql, n=-1)
-dim(implementation_similarity_results)
-
-dbHasCompleted(postgresql)
-
-vioplot(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity, names=c("Design", "Requirement"),   col="gold")
-title("Textual Similarity Between Design and Requiremt Debt Comments", ylab="Cosine Distance")
-
-wilcox.test(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity)
