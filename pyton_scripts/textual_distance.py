@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= '')
 cursor = connection.cursor()
 
-cursor.execute("select commenttext, id from processed_comment where classification = 'DESIGN' order by 2")
+cursor.execute("select commenttext, id from processed_comment where classification = 'IMPLEMENTATION' order by 2")
 processed_comment_list = cursor.fetchall()
 
 formatted_comment_list = []
@@ -18,8 +18,8 @@ for processed_comment in processed_comment_list:
     formatted_comment_list.append(formatted_comment)
     formatted_comment_id_list.append(processed_comment[1])
 
-vect = TfidfVectorizer(min_df=1)
-# vect = TfidfVectorizer(min_df=1, stop_words='english')
+# vect = TfidfVectorizer(min_df=1)
+vect = TfidfVectorizer(min_df=1, stop_words='english')
 tfidf = vect.fit_transform(formatted_comment_list)
 
 # .A transforms a sparse matrix to a dense one, for the purpose of printing it. .T means transpose
@@ -32,6 +32,7 @@ print len(formatted_comment_id_list)
 print len(pairwise_similarity_means)
 
 print pairwise_similarity_lists.mean()
+
 
 print 'inserting data ...'
 for x in xrange(0, len(formatted_comment_id_list)):
