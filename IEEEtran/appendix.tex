@@ -1,7 +1,13 @@
+
 \appendix{}
 \label{sec:appendix}
 
-\begin{table*}[!hbt]
+\subsection*{Detailed Precision and Recall Values}
+
+In Section~\ref{sec:case_study_results}, we presented the F1-measures for all projects when answering our RQs. In this appendix, we added the detailed precision and recall values that make up the F1-measures.
+
+
+\begin{table*}[h!]
     \begin{center}
         \caption{Classification results vs Baseline vs Random for Design Debt}
         \label{tbl:classifier_results_vs_baseline_design}
@@ -31,7 +37,7 @@
 \end{table*}
                  
 
-\begin{table*}[!hbt]
+\begin{table*}
     \begin{center}
         \caption{Classification results vs Baseline vs Random for Requirement Debt}
         \label{tbl:classifier_results_vs_baseline_requirement}
@@ -85,68 +91,7 @@
 %     \end{center}    
 % \end{table}
 
-\clearpage
 
-\begin{table*}[!thb]
-    \begin{center}
-        \caption{Comparison between different classifiers design debt}
-        \label{tbl:improvement_f1measure_between_classifiers_design}
-        \begin{tabular}{l| c c c|| c c c|| c c c }
-        \toprule
-
-        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Logistic Regression}}} & \multicolumn{3}{c||}{\textbf{\thead{Naive Bayes}}} & \multicolumn{3}{c}{\textbf{\thead{Binary}}} 
-        
-        \\ 
-        \cmidrule{2-10}
-        
-        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}}\\
-        \midrule                                                  
-        Ant          &  0.554 & 0.484 &  0.517 &  0.072 & 0.874 & 0.134 &  0.620 & 0.516 & 0.563  \\
-        ArgoUML      &  0.788 & 0.843 &  0.814 &  0.358 & 0.985 & 0.525 &  0.790 & 0.858 & 0.822  \\
-        Columba      &  0.792 & 0.484 &  0.601 &  0.181 & 0.786 & 0.294 &  0.840 & 0.500 & 0.627  \\
-        EMF          &  0.574 & 0.397 &  0.470 &  0.057 & 0.872 & 0.106 &  0.633 & 0.397 & 0.488  \\
-        Hibernate    &  0.877 & 0.645 &  0.744 &  0.288 & 0.890 & 0.435 &  0.895 & 0.670 & 0.767  \\
-        JEdit        &  0.779 & 0.378 &  0.509 &  0.227 & 0.791 & 0.353 &  0.807 & 0.342 & 0.480  \\
-        JFreeChart   &  0.646 & 0.397 &  0.492 &  0.140 & 0.560 & 0.224 &  0.658 & 0.397 & 0.495  \\
-        Jmeter       &  0.808 & 0.668 &  0.731 &  0.224 & 0.801 & 0.350 &  0.819 & 0.671 & 0.737  \\
-        JRuby        &  0.798 & 0.770 &  0.783 &  0.275 & 0.971 & 0.429 &  0.815 & 0.808 & 0.811  \\
-        SQuirrel     &  0.544 & 0.536 &  0.540 &  0.133 & 0.947 & 0.233 &  0.567 & 0.550 & 0.558  \\
-        \midrule                                                  
-        Average      &  0.716 &   0.5602 &  0.6201 &  0.1955  & 0.8477  & 0.3083 & 0.7444  & 0.5709 & 0.6348  \\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table*}
-
-\begin{table*}[!thb]
-    \begin{center}
-        \caption{Comparison between different classifiers requirement debt}
-        \label{tbl:improvement_f1measure_between_classifiers_requirement}
-        \begin{tabular}{l| c c c|| c c c|| c c c }
-        \toprule
-        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Logistic Regression}}} & \multicolumn{3}{c||}{\textbf{\thead{Naive Bayes}}} & \multicolumn{3}{c}{\textbf{\thead{Binary}}} 
-        
-        \\ 
-        \cmidrule{2-10}
-        
-        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}}\\
-        \midrule                                                  
-        Ant          &  0.154 & 0.154 & 0.154 & 0.007 &  0.769 & 0.013 & 0.188 & 0.231 & 0.207 \\
-        ArgoUML      &  0.663 & 0.540 & 0.595 & 0.119 &  0.808 & 0.207 & 0.659 & 0.569 & 0.611 \\
-        Columba      &  0.755 & 0.860 & 0.804 & 0.030 &  0.930 & 0.057 & 0.755 & 0.860 & 0.804 \\
-        EMF          &  0.800 & 0.250 & 0.381 & 0.009 &  1.000 & 0.018 & 0.800 & 0.250 & 0.381 \\
-        Hibernate    &  0.610 & 0.391 & 0.476 & 0.041 &  0.781 & 0.078 & 0.615 & 0.375 & 0.466 \\
-        JEdit        &  0.125 & 0.071 & 0.091 & 0.011 &  0.857 & 0.022 & 0.143 & 0.071 & 0.095 \\
-        JFreeChart   &  0.220 & 0.600 & 0.321 & 0.009 &  0.800 & 0.018 & 0.179 & 0.467 & 0.259 \\
-        Jmeter       &  0.153 & 0.524 & 0.237 & 0.011 &  0.952 & 0.022 & 0.180 & 0.524 & 0.268 \\
-        JRuby        &  0.686 & 0.318 & 0.435 & 0.058 &  0.836 & 0.109 & 0.679 & 0.327 & 0.442 \\
-        SQuirrel     &  0.657 & 0.460 & 0.541 & 0.018 &  0.900 & 0.036 & 0.455 & 0.500 & 0.476 \\
-        \midrule                                                  
-        Average      & 0.4823 &  0.4168 & 0.4035 & 0.0313 & 0.8633 & 0.058  & 0.4653 & 0.4174 & 0.4009 \\
-        \bottomrule
-        \end{tabular}
-    \end{center}    
-\end{table*} 
 
 % \clearpage
 
@@ -204,9 +149,14 @@
 
 \clearpage
 
+\subsection*{Investigating the Amount of Training Data Required vs. Classification Performance}
+
+In Section~\ref{sec:case_study_results} (RQ3), we presented the Figures for Ant and ArogUML only. Here, we present the same Figures for all projects, for both, design and requirement \SATD.
+
+
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_argo.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_argo.pdf}
   % \vspace{-3mm}
   \caption{Argo Design Debt classification}
   \label{fig:design_argo}
@@ -214,7 +164,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_columba.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_columba.pdf}
   % \vspace{-3mm}
   \caption{Columba Design Debt classification}
   \label{fig:design_columba}
@@ -222,7 +172,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_emf.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_emf.pdf}
   % \vspace{-3mm}
   \caption{Emf Design Debt classification}
   \label{fig:design_emf}
@@ -230,14 +180,14 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_hibernate.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_hibernate.pdf}
   \caption{Hibernate Design Debt classification}
   \label{fig:design_hibernate}
 \end{figure}
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_jedit.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_jedit.pdf}
   % \vspace{-3mm}
   \caption{JEdit Design Debt classification}
   \label{fig:design_jedit}
@@ -247,7 +197,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_jfreechart.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_jfreechart.pdf}
   % \vspace{-3mm}
   \caption{JFreeChart Design Debt classification}
   \label{fig:design_jfreechart}
@@ -255,7 +205,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_jmeter.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_jmeter.pdf}
   % \vspace{-3mm}
   \caption{Jmeter Design Debt classification}
   \label{fig:design_jmeter}
@@ -263,7 +213,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_jruby.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_jruby.pdf}
   % \vspace{-3mm}
   \caption{JRuby Design Debt classification}
   \label{fig:design_jruby}
@@ -271,7 +221,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/design_sql12.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/design_sql12.pdf}
   % \vspace{-3mm}
   \caption{SQuirrel Design Debt classification}
   \label{fig:design_sql}
@@ -281,7 +231,7 @@
  
 \begin{figure}[thb!]    
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_ant.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_ant.pdf}
   % \vspace{-3mm}
   \caption{Ant Requirement Debt classification}
   \label{fig:implementation_ant}
@@ -289,7 +239,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_columba.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_columba.pdf}
   % \vspace{-3mm}
   \caption{Columba Requirement Debt classification}
   \label{fig:implementation_columba}
@@ -297,7 +247,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_emf.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_emf.pdf}
   % \vspace{-3mm}
   \caption{Emf Requirement Debt classification}
   \label{fig:implementation_emf}
@@ -305,14 +255,14 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_hibernate.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_hibernate.pdf}
   \caption{Hibernate Requirement Debt classification}
   \label{fig:implementation_hibernate}
 \end{figure}
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_jedit.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_jedit.pdf}
   % \vspace{-3mm}
   \caption{JEdit Requirement Debt classification}
   \label{fig:implementation_jedit}
@@ -322,7 +272,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_jfreechart.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_jfreechart.pdf}
   % \vspace{-3mm}
   \caption{JFreeChart Requirement Debt classification}
   \label{fig:implementation_jfreechart}
@@ -330,7 +280,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_jmeter.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_jmeter.pdf}
   % \vspace{-3mm}
   \caption{Jmeter Requirement Debt classification}
   \label{fig:implementation_jmeter}
@@ -338,7 +288,7 @@
 
 \begin{figure}[thb!]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/appendix/iteration_details/implementation_jruby.pdf}
+  \includegraphics[width=0.45\textwidth]{figures/appendix/iteration_details/implementation_jruby.pdf}
   % \vspace{-3mm}
   \caption{JRuby Requirement Debt classification}
   \label{fig:implementation_jruby}
@@ -433,4 +383,71 @@
 %         \end{tabular}
 %     \end{center}    
 % \end{table}
+
+
+\clearpage
+\subsection*{Detailed Precision and Recall Values When Different Underlying Classifiers are Used}
+
+When presenting the results in Section~\ref{sec:underlying_classifier}, we only presented the F1-measures. Here, we present the detailed precision and recall values that make up the F1-measures presented earlier.
+
+\begin{table*}[!thb]
+    \begin{center}
+        \caption{Comparison between different classifiers design debt}
+        \label{tbl:improvement_f1measure_between_classifiers_design}
+        \begin{tabular}{l| c c c|| c c c|| c c c }
+        \toprule
+
+        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Logistic Regression}}} & \multicolumn{3}{c||}{\textbf{\thead{Naive Bayes}}} & \multicolumn{3}{c}{\textbf{\thead{Binary}}} 
+        
+        \\ 
+        \cmidrule{2-10}
+        
+        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}}\\
+        \midrule                                                  
+        Ant          &  0.554 & 0.484 &  0.517 &  0.072 & 0.874 & 0.134 &  0.620 & 0.516 & 0.563  \\
+        ArgoUML      &  0.788 & 0.843 &  0.814 &  0.358 & 0.985 & 0.525 &  0.790 & 0.858 & 0.822  \\
+        Columba      &  0.792 & 0.484 &  0.601 &  0.181 & 0.786 & 0.294 &  0.840 & 0.500 & 0.627  \\
+        EMF          &  0.574 & 0.397 &  0.470 &  0.057 & 0.872 & 0.106 &  0.633 & 0.397 & 0.488  \\
+        Hibernate    &  0.877 & 0.645 &  0.744 &  0.288 & 0.890 & 0.435 &  0.895 & 0.670 & 0.767  \\
+        JEdit        &  0.779 & 0.378 &  0.509 &  0.227 & 0.791 & 0.353 &  0.807 & 0.342 & 0.480  \\
+        JFreeChart   &  0.646 & 0.397 &  0.492 &  0.140 & 0.560 & 0.224 &  0.658 & 0.397 & 0.495  \\
+        Jmeter       &  0.808 & 0.668 &  0.731 &  0.224 & 0.801 & 0.350 &  0.819 & 0.671 & 0.737  \\
+        JRuby        &  0.798 & 0.770 &  0.783 &  0.275 & 0.971 & 0.429 &  0.815 & 0.808 & 0.811  \\
+        SQuirrel     &  0.544 & 0.536 &  0.540 &  0.133 & 0.947 & 0.233 &  0.567 & 0.550 & 0.558  \\
+        \midrule                                                  
+        Average      &  0.716 &   0.5602 &  0.6201 &  0.1955  & 0.8477  & 0.3083 & 0.7444  & 0.5709 & 0.6348  \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table*}
+
+\begin{table*}[!thb]
+    \begin{center}
+        \caption{Comparison between different classifiers requirement debt}
+        \label{tbl:improvement_f1measure_between_classifiers_requirement}
+        \begin{tabular}{l| c c c|| c c c|| c c c }
+        \toprule
+        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Logistic Regression}}} & \multicolumn{3}{c||}{\textbf{\thead{Naive Bayes}}} & \multicolumn{3}{c}{\textbf{\thead{Binary}}} 
+        
+        \\ 
+        \cmidrule{2-10}
+        
+        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}}\\
+        \midrule                                                  
+        Ant          &  0.154 & 0.154 & 0.154 & 0.007 &  0.769 & 0.013 & 0.188 & 0.231 & 0.207 \\
+        ArgoUML      &  0.663 & 0.540 & 0.595 & 0.119 &  0.808 & 0.207 & 0.659 & 0.569 & 0.611 \\
+        Columba      &  0.755 & 0.860 & 0.804 & 0.030 &  0.930 & 0.057 & 0.755 & 0.860 & 0.804 \\
+        EMF          &  0.800 & 0.250 & 0.381 & 0.009 &  1.000 & 0.018 & 0.800 & 0.250 & 0.381 \\
+        Hibernate    &  0.610 & 0.391 & 0.476 & 0.041 &  0.781 & 0.078 & 0.615 & 0.375 & 0.466 \\
+        JEdit        &  0.125 & 0.071 & 0.091 & 0.011 &  0.857 & 0.022 & 0.143 & 0.071 & 0.095 \\
+        JFreeChart   &  0.220 & 0.600 & 0.321 & 0.009 &  0.800 & 0.018 & 0.179 & 0.467 & 0.259 \\
+        Jmeter       &  0.153 & 0.524 & 0.237 & 0.011 &  0.952 & 0.022 & 0.180 & 0.524 & 0.268 \\
+        JRuby        &  0.686 & 0.318 & 0.435 & 0.058 &  0.836 & 0.109 & 0.679 & 0.327 & 0.442 \\
+        SQuirrel     &  0.657 & 0.460 & 0.541 & 0.018 &  0.900 & 0.036 & 0.455 & 0.500 & 0.476 \\
+        \midrule                                                  
+        Average      & 0.4823 &  0.4168 & 0.4035 & 0.0313 & 0.8633 & 0.058  & 0.4653 & 0.4174 & 0.4009 \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table*} 
 
