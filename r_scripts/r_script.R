@@ -12,9 +12,9 @@ title(ylab = "F1 Measure", mgp = c(3, 0, 0), cex.lab=2.3)
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (requirement debt)
 mydata <- data.frame(Ant= c(0.154, 0.0, 0.006 ),ArgoUML= c(0.595, 0.0, 0.083 ),Columba= c(0.804, 0.0, 0.013 ),EMF= c(0.381, 0.0, 0.007 ),Hibernate= c(0.476, 0.0, 0.042 ),JEdit= c(0.091, 0.0, 0.003 ),JFreeChart= c(0.321, 0.0, 0.007 ),Jmeter= c(0.237, 0.0, 0.005 ),JRuby= c(0.435, 0.0, 0.044 ),SQuirrel= c(0.541, 0.0, 0.014 ))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.1, cex.names=2.3,  mgp = c(2.8, 1.2, 0.5) )
-legend(24, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
-title(ylab = "F1 Measure", mgp = c(4.3, 1, 0), cex.lab=2.3)
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,2,1) )
+legend(27, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1 Measure", mgp = c(3, 0, 0), cex.lab=2.3)
 
 
 # figure 3 and 4 
@@ -68,34 +68,42 @@ legend(6, 1, c("Our approach", "Comment patterns", "Random classifier" ), col= c
 # size 29 x 15
 # generate figure to compare f1measure of different classification algorithms for design debt
 mydata <- data.frame(Ant= c(0.517 , 0.563 , 0.134 ),ArgoUML= c(0.814 , 0.822 , 0.525 ),Columba= c(0.601 , 0.627 , 0.294 ),EMF= c(0.470 , 0.488 , 0.106 ),Hibernate= c(0.744 , 0.767 , 0.435 ),JEdit= c(0.509 , 0.480 , 0.353 ),JFreeChart= c(0.492 , 0.495 , 0.224 ),Jmeter= c(0.731 , 0.737 , 0.350 ),JRuby= c(0.783 , 0.811 , 0.429 ),SQuirrel= c(0.540 , 0.558 , 0.233 ))
-barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Naive Bayes F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=1, cex.names=2.3, mgp = c(0, 0.8, 0.5) )
+legend(24, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1 Measure", mgp = c(2.2, 0, 0), cex.lab=2.0)
+
+# barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
+# legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Naive Bayes F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+
+
 
 # figure 5 
 # size 29 x 15
 # generate figure to compare f1measure of different classification algorithms for requirement debt
 mydata <- data.frame(Ant= c(0.154, 0.207 , 0.057),ArgoUML= c(0.595, 0.611 , 0.022),Columba= c(0.804, 0.804 , 0.207),EMF= c(0.381, 0.381 , 0.018),Hibernate= c(0.476, 0.466 , 0.078),JEdit= c(0.091, 0.095 , 0.022),JFreeChart= c(0.321, 0.259 , 0.018),Jmeter= c(0.237, 0.268 , 0.013),JRuby= c(0.435, 0.442 , 0.109),SQuirrel= c(0.541, 0.476 , 0.036))
-barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Naive Bayes F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=1, cex.names=2.3, mgp = c(0, 0.8, 0.5) )
+legend(24, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1 Measure", mgp = c(2.2, 0, 0), cex.lab=2.0)
 
 # Textual similarity between requirement and design comments IMPLEMENTATION = 0.0389864024682, DESIGN = 0.0290795195597
-library(RPostgreSQL)
-library(vioplot)
-drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
-
-postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'DESIGN'")
-design_similarity_results <- fetch(postgresql, n=-1)
-dim(design_similarity_results)
-
-postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'IMPLEMENTATION'")
-implementation_similarity_results <- fetch(postgresql, n=-1)
-dim(implementation_similarity_results)
-
-dbHasCompleted(postgresql)
-
-vioplot(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity, names=c("Design", "Requirement"),   col="gold")
-title("Textual Similarity Between Design and Requiremt Debt Comments", ylab="Cosine Similarity")
+  library(RPostgreSQL)
+  library(vioplot)
+  drv <- dbDriver("PostgreSQL")
+  con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+  
+  postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'DESIGN'")
+  design_similarity_results <- fetch(postgresql, n=-1)
+  dim(design_similarity_results)
+  
+  postgresql <- dbSendQuery(con, "select textual_similarity from processed_comment where classification = 'IMPLEMENTATION'")
+  implementation_similarity_results <- fetch(postgresql, n=-1)
+  dim(implementation_similarity_results)
+  
+  dbHasCompleted(postgresql)
+  
+  vioplot(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity, names=c("Design", "Requirement"),   col="gold")
+  # title("Textual Similarity Between Design and Requiremt Debt Comments", ylab="Cosine Similarity")
+  title(ylab="Cosine Similarity")
 
 wilcox.test(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity)
 
