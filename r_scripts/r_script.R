@@ -106,6 +106,8 @@ title(ylab = "F1 Measure", mgp = c(2.2, 0, 0), cex.lab=2.0)
   title(ylab="Cosine Similarity")
 
 wilcox.test(design_similarity_results$textual_similarity, implementation_similarity_results$textual_similarity)
+summary(design_similarity_results)
+summary(implementation_similarity_results)
 
 # average size of comments
 library(RPostgreSQL)
