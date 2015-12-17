@@ -1,24 +1,24 @@
 # figure 2 
 # size 29 x 15
-# generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (design debt)
+# generate figure to compare f1measure, baseline f1measure and rdn F1-Measure for all projects (design debt)
 mydata <- data.frame(Ant= c(0.517, 0.175,  0.045),ArgoUML= c(0.814, 0.078,  0.155),Columba= c(0.601, 0.145,  0.038),EMF= c(0.470, 0.114,  0.035),Hibernate= c(0.744,  0.15,  0.214),JEdit= c(0.509, 0.324,  0.037),JFreeChart= c(0.492, 0.053,   0.08),Jmeter= c(0.731, 0.127,  0.075),JRuby= c(0.783, 0.138,  0.131),SQuirrel= c(0.540, 0.071,  0.056))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,2,1) )
-legend(27, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
-title(ylab = "F1 Measure", mgp = c(3, 0, 0), cex.lab=2.3)
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
+par("mar"=c(5,4,4,1)+3) 
 
-# title(xlab = "Projects",   mgp = c(4.5, 1, 0), cex.lab=2.3)
 
 # figure 2 
 # size 29 x 15
-# generate figure to compare f1measure, baseline f1measure and rdn F1 measure for all projects (requirement debt)
+# generate figure to compare f1measure, baseline f1measure and rdn F1-Measure for all projects (requirement debt)
 mydata <- data.frame(Ant= c(0.154, 0.0, 0.006 ),ArgoUML= c(0.595, 0.0, 0.083 ),Columba= c(0.804, 0.0, 0.013 ),EMF= c(0.381, 0.0, 0.007 ),Hibernate= c(0.476, 0.0, 0.042 ),JEdit= c(0.091, 0.0, 0.003 ),JFreeChart= c(0.321, 0.0, 0.007 ),Jmeter= c(0.237, 0.0, 0.005 ),JRuby= c(0.435, 0.0, 0.044 ),SQuirrel= c(0.541, 0.0, 0.014 ))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,2,1) )
-legend(27, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
-title(ylab = "F1 Measure", mgp = c(3, 0, 0), cex.lab=2.3)
-
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
+par("mar"=c(5,4,4,1)+3) 
 
 # figure 3 and 4 
-# size 10 x 7.5
+# size 12 x 9.5
 # generate comparison between td classified and random measured
 postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%ant%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jmeter%' and category = 'DESIGN' and classificationid=7  order by 1,2")
@@ -48,12 +48,23 @@ con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classificat
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%ant%' and category = 'DESIGN' and classificationid=7  order by 1,2")
 # postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%argo%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
 
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%ant%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%columba%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%emf%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%hibernate%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jEdit%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jfreechart%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jmeter%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%jruby%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1 , classifiedrandomf1, baselinef1 from classifier_results where projectname like '%sql12%' and category = 'IMPLEMENTATION' and classificationid=7  order by 1,2")
+# 
+
 data1 <- fetch(postgresql, n=-1)
 dim(data1)
 dbHasCompleted(postgresql)
 plot(data1$projectstrainedwith, data1$classifiedf1, type="b",
      col="red", lty=0, pch=2, lwd=2,
-     xlab="Projects used in training dataset", ylab="F1 measure",
+     xlab="Projects used in training dataset", ylab="F1-Measure",
      xlim=c(0, 10), ylim=c(0, 1))
 lines(data1$projectstrainedwith, data1$classifiedrandomf1, type="b", pch=22, col="blue", lty=0)
 lines(data1$projectstrainedwith, data1$baselinef1, type="b", pch=21, col="darkgreen", lty=0)
@@ -61,29 +72,31 @@ abline(h=(data1$classifiedf1[which.max(data1$classifiedf1)] * .9), col="black", 
 text(0.1, y=(data1$classifiedf1[which.max(data1$classifiedf1)] * .9 + 0.02), "90%", col = "black") 
 abline(h=(data1$classifiedf1[which.max(data1$classifiedf1)] * .8), col="black", lty=2)
 text(0.1, y=(data1$classifiedf1[which.max(data1$classifiedf1)] * .8 + 0.02), "80%", col = "black") 
-legend(6, 1, c("Our approach", "Comment patterns", "Random classifier" ), col= c("red", "darkgreen",  "blue"), pch = c(2, 21, 22), bty = "n" , cex=1.1)
+legend(6, 1, c("NLP-based", "Comment patterns", "Random classifier" ), col= c("red", "darkgreen",  "blue"), pch = c(2, 21, 22), bty = "n" , cex=1.1)
 
 
-# figure 5 
+# figure 4a 
 # size 29 x 15
 # generate figure to compare f1measure of different classification algorithms for design debt
 mydata <- data.frame(Ant= c(0.517 , 0.563 , 0.134 ),ArgoUML= c(0.814 , 0.822 , 0.525 ),Columba= c(0.601 , 0.627 , 0.294 ),EMF= c(0.470 , 0.488 , 0.106 ),Hibernate= c(0.744 , 0.767 , 0.435 ),JEdit= c(0.509 , 0.480 , 0.353 ),JFreeChart= c(0.492 , 0.495 , 0.224 ),Jmeter= c(0.731 , 0.737 , 0.350 ),JRuby= c(0.783 , 0.811 , 0.429 ),SQuirrel= c(0.540 , 0.558 , 0.233 ))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=1, cex.names=2.3, mgp = c(0, 0.8, 0.5) )
-legend(24, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
-title(ylab = "F1 Measure", mgp = c(2.2, 0, 0), cex.lab=2.0)
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+legend(21, 1, c("Logistic Regression",  "Binary", "Naive Bayes"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
+par("mar"=c(5,4,4,1)+3) 
 
 # barplot(as.matrix(mydata),  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3), cex.lab=2,  cex.axis=2.3, cex.names=2.3, mgp = c(3, 2, 1) )
-# legend("topright", c("Logistic Regression F1 measure",  "Binary F1 measure", "Naive Bayes F1 measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+# legend("topright", c("Logistic Regression F1-Measure",  "Binary F1-Measure", "Naive Bayes F1-Measure"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 
 
 
-# figure 5 
+# figure 4b 
 # size 29 x 15
 # generate figure to compare f1measure of different classification algorithms for requirement debt
 mydata <- data.frame(Ant= c(0.154, 0.207 , 0.057),ArgoUML= c(0.595, 0.611 , 0.022),Columba= c(0.804, 0.804 , 0.207),EMF= c(0.381, 0.381 , 0.018),Hibernate= c(0.476, 0.466 , 0.078),JEdit= c(0.091, 0.095 , 0.022),JFreeChart= c(0.321, 0.259 , 0.018),Jmeter= c(0.237, 0.268 , 0.013),JRuby= c(0.435, 0.442 , 0.109),SQuirrel= c(0.541, 0.476 , 0.036))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=1, cex.names=2.3, mgp = c(0, 0.8, 0.5) )
-legend(24, 1, c("Our approach", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
-title(ylab = "F1 Measure", mgp = c(2.2, 0, 0), cex.lab=2.0)
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+legend(21, 1, c("Logistic Regression",  "Binary", "Naive Bayes"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
+par("mar"=c(5,4,4,1)+3) 
 
 # Textual similarity between requirement and design comments IMPLEMENTATION = 0.0389864024682, DESIGN = 0.0290795195597
   library(RPostgreSQL)
@@ -151,7 +164,7 @@ legend("topright", c("Anagrams", "CapitalLetters", "Lowercase"), cex=0.8, fill=t
 # impact of the changes in the training dataset average requirements
 mydata <- data.frame(Anagrams= c(0.607) , CapitalLetters= c(0.5228), Lowercase= c(0.5721))
 barplot(as.matrix(mydata),  ylab="Percentage",  ylim=c(0, 1), beside=TRUE, col= terrain.colors(3))
-# legend("topright", c("Ana", "Recall", "F1","Baseline P", "Baseline R", "Baseline F1"), cex=0.8, fill=terrain.colors(6))
+# legend("topright", c("Anagrams", "Recall", "F1","Baseline P", "Baseline R", "Baseline F1"), cex=0.8, fill=terrain.colors(6))
 
 # Cohen's kappa FOR THE DATASET
 library(RPostgreSQL)
