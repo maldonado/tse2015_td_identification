@@ -146,9 +146,19 @@ We also observe that it is possible a single textual feature to indicate both de
 
 It is important to note here that although we present the top 10 textual features, the classification of the comments can be based on a combination of several textual features. In fact, two different types of textual features are used to classify the comments: positive weight features and negative weight features. Positive weight features will increase the total weight of the vote suggesting that the classification should be equal to the class of the feature (i.e., design or requirement debt). On the other hand, negative weight features will decrease the total weight of the vote suggesting a classification different from the class that the feature belongs (i.e, without technical debt). On average, the number of positive weight features used to classify design debt is 5,014 and 2,195 for requirement debt. The exact number of unique textual features used to detect \SATD for each project is shown in Table \ref{tbl:features_per_project}. The fact that our NLP-based approach leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art~\cite{Potdar2014ICSME}, which only uses 62 patterns. In comparison, our approach leverages 35,828 unique textual features for design debt and 34,056 unique textual features to detect requirement debt.
 
+\begin{figure*}[!thb]
+	\centering
+	\subfigure[Ant Design Debt Classification]{\includegraphics[width=0.49\textwidth]{figures/design_ant.pdf}
+		\label{fig:design_ant_result}}
+	\subfigure[ArgoUml Requirement Debt Classification]{\includegraphics[width=0.49\textwidth]{figures/implementation_argo.pdf}
+		\label{fig:implementation_argo_result}}
+	\caption{F1-measure Achieved per Iteration }
+\end{figure*}
+
+
 \begin{table*}[!hbt]
     \begin{center}
-        \caption{Design and Requirement Debt features per project}
+        \caption{Design and Requirement Debt Features per Project}
         \label{tbl:features_per_project}
         \begin{tabular}{l| c c c|| c c c}
         \toprule
@@ -157,19 +167,19 @@ It is important to note here that although we present the top 10 textual feature
         \cmidrule{2-7}
         & \textbf{\thead{Positive\\Weight\\Features}} & \textbf{\thead{Negative\\Weight\\Features}} & \textbf{\thead{\# of\\Features}} & \textbf{\thead{Positive\\Weight\\Features}} & \textbf{\thead{Negative\\Weight\\Features}} & \textbf{\thead{\# of\\Features}}\\
         \midrule
-        Ant          & 5,299 & 23,623 & 28,922 & 1,812 & 27,673 & 29,485 \\
-        ArgoUML      & 3,917 & 26,012 & 29,929 & 2,779 & 27,260 & 30,039 \\
-        Columba      & 5,255 & 24,182 & 29,437 & 2,433 & 27,561 & 29,994 \\
-        EMF          & 5,346 & 23,667 & 29,013 & 1,889 & 27,637 & 29,526 \\
-        Hibernate    & 4,914 & 24,070 & 28,984 & 2,748 & 26,654 & 29,402 \\
-        JEdit        & 5,042 & 24,644 & 29,686 & 1,831 & 28,267 & 30,098 \\
-        JFreeChart   & 5,361 & 23,530 & 28,891 & 1,902 & 27,439 & 29,341 \\
-        Jmeter       & 5,172 & 23,916 & 29,088 & 1,893 & 27,716 & 29,609 \\
-        JRuby        & 4,856 & 24,553 & 29,409 & 2,850 & 27,085 & 29,935 \\
-        SQuirrel     & 4,982 & 25,146 & 30,128 & 1,814 & 26,914 & 28,728 \\
+        \textbf{Ant}          & 5,299 & 23,623 & 28,922 & 1,812 & 27,673 & 29,485 \\
+        \textbf{ArgoUML}      & 3,917 & 26,012 & 29,929 & 2,779 & 27,260 & 30,039 \\
+        \textbf{Columba}      & 5,255 & 24,182 & 29,437 & 2,433 & 27,561 & 29,994 \\
+        \textbf{EMF}          & 5,346 & 23,667 & 29,013 & 1,889 & 27,637 & 29,526 \\
+        \textbf{Hibernate}    & 4,914 & 24,070 & 28,984 & 2,748 & 26,654 & 29,402 \\
+        \textbf{JEdit}        & 5,042 & 24,644 & 29,686 & 1,831 & 28,267 & 30,098 \\
+        \textbf{JFreeChart}   & 5,361 & 23,530 & 28,891 & 1,902 & 27,439 & 29,341 \\
+        \textbf{Jmeter}       & 5,172 & 23,916 & 29,088 & 1,893 & 27,716 & 29,609 \\
+        \textbf{JRuby}        & 4,856 & 24,553 & 29,409 & 2,850 & 27,085 & 29,935 \\
+        \textbf{SQuirrel}     & 4,982 & 25,146 & 30,128 & 1,814 & 26,914 & 28,728 \\
         \midrule
-        Average       & 5,014 & 24,334 & 29,348 & 2,195  & 27,420 & 29,615 \\      
-        Total unique  & 6,327  & 31,518 & 35,828   & 4,015  & 32,954 & 34,056 \\
+        \textbf{Average}       & 5,014 & 24,334 & 29,348 & 2,195  & 27,420 & 29,615 \\      
+        \textbf{Total unique}  & 6,327  & 31,518 & 35,828   & 4,015  & 32,954 & 34,056 \\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -183,10 +193,10 @@ It is important to note here that although we present the top 10 textual feature
 \noindent\rqiii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} Thus far, we have shown that our NLP-based approach can effectively identify \SATD comments. However, we conjuncture that the performance of the classification depends on the amount of training data. At the same time, creating the training dataset is expensive and manually intensive. So, the question that arises is: how much training data do we need to effectively classify the \SATD comments? If we need a high number of comments to create our training dataset, our approach will be more difficult to extend and applied for other projects. On the other hand, if a small dataset can be used to identify \SATD comments, then this approach can be applied with minimal effort, i.e., less training data. That said, intuitively we expect that the performance of the classifier would improve as more comments are being added to the training dataset.
+\noindent \textbf{Motivation:} Thus far, we have shown that our NLP-based approach can effectively identify \SATD comments. However, we conjuncture that the performance of the classification depends on the amount of training data. At the same time, creating the training dataset is expensive and manually intensive. So, the question that arises is: how much training data do we need to effectively classify the \SATD comments? If we need a high number of comments to create our training dataset, our approach will be more difficult to extend and applied for other projects. On the other hand, if a small dataset can be used to identify \SATD comments, then this approach can be applied with minimal effort, i.e., less training data. That said, intuitively we expect that the performance of the NLP Classifier would improve as more comments are being added to the training dataset.
 
 
-\noindent \textbf{Approach:} To answer our research question, we followed a systematic process where we incrementally add training data and evaluate the performance of the classification. Since we have 10 projects in our dataset, we use one project as testing data, and the remaining nine projects to train. However, we do not train the classifier with all nine projects, instead, we add each project incrementally. We repeated this process for each project and report on our findings.
+\noindent \textbf{Approach:} To answer our research question, we followed a systematic process where we incrementally add training data and evaluate the performance of the classification. Since we have 10 projects in our dataset, we use one project as testing data, and the remaining nine projects to train. However, we do not train the NLP Classifier with all nine projects, instead, we add each project incrementally. We repeated this process for each project and report on our findings.
 
 %We executed the classification process several times with an increasing number of comments being added to the training dataset while collecting the results to analyze the changes between each iteration.
 
@@ -201,24 +211,24 @@ It is important to note here that although we present the top 10 textual feature
 To determine how much data is required to effectively identify \SATD comments, we compute the F1-measure after each iteration (an iteration is simply a run with a different size of training data). We record the iteration that achieves the highest F1-measure and the number of projects used in the training dataset to achieve this F1-measure. Then, we record the number of projects needed to achieve at least 90\% and 80\% of the maximum F1-measure.
 %Based on the maximum F1-measure we calculate how close the others iterations were from achieving the same value.
 
-For example, if the maximum F1-measure is 0.85 and it is achieved in the 8th iteration (i.e., using 8 projects in the training dataset), and during the 4th iteration we achieve a F1-measure of 0.80, then we say that we can achieve at least 90\% (94\% to be exact) of the maximum F1-measure with a training dataset constructed from just 4 projects. Since the results will differ for the different projects, we repeat this analysis for all projects and present the average F1-measures across all projects.
+For example, if the maximum F1-measure is 0.85 and it is achieved in the eighth iteration (i.e., using 8 projects in the training dataset), and during the fourth iteration we achieve a F1-measure of 0.80, then we say that we can achieve at least 90\% (94\% to be exact) of the maximum F1-measure with a training dataset constructed from just 4 projects. Since the results will differ for the different projects, we repeat this analysis for all projects and present the average F1-measures across all projects.
 % Once the percentage of the maximum F1-measure is calculated for all iterations we analyze the quantity of comments used in the training dataset by them.
 
-\begin{figure}[t]
-  \centering
-  \includegraphics[width = 0.48\textwidth]{figures/design_ant.pdf}
-  \vspace{-3mm}
-  \caption{Ant Design Debt classification}
-  \label{fig:design_ant_result}
-\end{figure}
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width = 0.48\textwidth]{figures/implementation_argo}
-  \vspace{-3mm}
-  \caption{ArgoUml Requirement Debt classification}
-  \label{fig:implementation_argo_result}
-\end{figure}
+%\begin{figure}[t]
+%  \centering
+%  \includegraphics[width = 0.48\textwidth]{figures/design_ant.pdf}
+%  \vspace{-3mm}
+%  \caption{Ant Design Debt classification}
+%  \label{fig:design_ant_result}
+%\end{figure}
+%
+%\begin{figure}[t]
+%  \centering
+%  \includegraphics[width = 0.48\textwidth]{figures/implementation_argo}
+%  \vspace{-3mm}
+%  \caption{ArgoUml Requirement Debt classification}
+%  \label{fig:implementation_argo_result}
+%\end{figure}
 
 %Therefore, we determined which iteration has the highest performance for each project. We called this iteration as the maximum F1-measure. To know how close the other iterations were from reaching the maximum performance we use the iteration F1-measure value to calculate the percentage of the maximum F1-measure that it represents. We calculate these values for design and requirement debt separately.
 
@@ -229,7 +239,7 @@ For example, if the maximum F1-measure is 0.85 and it is achieved in the 8th ite
 % \emad{Everton, copy the correct results from the commented out paragraph here. Also add the horizontal lines to the figures.}
 %We notice that in the 3rd iteration the F1-measure was 0.474, and the maximum F1-measure achieved for the project (i.e., 7th iteration) was 0.557. The F1-measure achieved in the 3rd iteration represents 85\% of the maximum F1-measure achieved in the 7th iteration, and this percentage was reached using 1,499 comments (i.e., from 3 projects) whereas the maximum F1-measure used 2,404 comments (i.e., from 7 projects) in the training dataset. Therefore, for Ant we could achieve 85\% of the maximum result using only 62\% of the comments. We argue that the third iteration provides a good tradeoff between prediction performance and number of comments used to create the training dataset.
 
-We analyzed all iterations from all projects to determine the iterations that achieve the best F1-measure performance. To measure that, we calculate the average percentage of the maximum F1-measure for each iteration. For example, we take the average percentage of the maximum F1-measure achieved during the 1st iteration for all projects, then we calculate the same value for all 2nd iterations and so on. We find that, the best performance is achieved during the 8th iteration, with an average maximum F1-measure of 96.57\% using (on average) 2,353 comments to create the training dataset. In comparison, the 9th iteration has an average  maximum F1-measure of 95.99\%, which is slightly lower than the average obtained in the 8th iteration, and uses more comments in the training dataset (i.e., 2,432).
+We analyzed all iterations from all projects to determine the iterations that achieve the best F1-measure performance. To measure that, we calculate the average percentage of the maximum F1-measure for each iteration. For example, we take the average percentage of the maximum F1-measure achieved during the first iteration for all projects, then we calculate the same value for all second iterations and so on. We find that, the best performance is achieved during the eighth iteration, with an average maximum F1-measure of 96.57\% using (on average) 2,353 comments to create the training dataset. In comparison, the nineth iteration has an average  maximum F1-measure of 95.99\%, which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432).
 % \nikos{there is something wrong in the wording here. This paragraph is hard to understand}
 %As mentioned before, the addition of more comments not necessary implies more performance.
 
@@ -249,21 +259,21 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 
 \begin{table}[!thb]
     \begin{center}
-        \caption{Average maximum F1-measure for Design Debt  for all projects}
+        \caption{Average Maximum F1-measure for Design Debt for All Projects}
         \label{tbl:design_iteration_performance}
         \begin{tabular}{l| c c c}
         \toprule
-        \thead{Iteration\\Number} & \thead{Average\%\\of maximum\\F1-measure} & \thead{$\Delta$\\between\\iterations} & \thead{Average\\comments} \\
+        \textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\between\\iterations}} & \textbf{\thead{Average\\comments}} \\ 
         \midrule
-         1  &  0.718 &  -      & 756   \\  
-         2  &  0.856 & 0.138   & 1,106 \\  
-         3  &  0.924 & 0.068   & 1,444 \\  
-         4  &  0.912 & -0.012  & 1,717 \\  
-         5  &  0.927 & 0.016   & 1,919 \\  
-         6  &  0.930 & 0.002   & 2,108 \\  
-         7  &  0.963 & 0.029   & 2,251 \\  
-         8  &  0.965 & 0.006   & 2,353 \\  
-         9  &  0.959 & -0.002  & 2,432 \\  
+         \textbf{1}  &  0.718 &  -      & 756   \\  
+         \textbf{2}  &  0.856 & 0.138   & 1,106 \\  
+         \textbf{3}  &  0.924 & 0.068   & 1,444 \\  
+         \textbf{4}  &  0.912 & -0.012  & 1,717 \\  
+         \textbf{5}  &  0.927 & 0.016   & 1,919 \\  
+         \textbf{6}  &  0.930 & 0.002   & 2,108 \\  
+         \textbf{7}  &  0.963 & 0.029   & 2,251 \\  
+         \textbf{8}  &  0.965 & 0.006   & 2,353 \\  
+         \textbf{9}  &  0.959 & -0.002  & 2,432 \\  
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -271,21 +281,21 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 
 \begin{table}[!thb]
 	\begin{center}
-		\caption{Average maximum F1-measure for Requirement Debt for all projects}
+		\caption{Average Maximum F1-measure for Requirement Debt for All Projects}
 		\label{tbl:requirement_iteration_performance}
 		\begin{tabular}{l| c c c}
 			\toprule
-			\thead{Iteration\\Number} & \thead{Average\%\\of maximum\\F1-measure} & \thead{$\Delta$\\between\\iterations} & \thead{Average\\comments} \\
+			\textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\between\\iterations}} & \textbf{\thead{Average\\comments}} \\
 			\midrule
-			1  &  0.873 &   -      &  380 \\  
-      2  &  0.772 & -0.101   &  481 \\
-      3  &  0.778 & 0.006    &  541 \\  
-      4  &  0.806 & 0.028    &  588 \\
-      5  &  0.795 & -0.011   &  620  \\
-      6  &  0.819 & 0.024    &  638  \\
-			7  &  0.837 & 0.018    &  654  \\  
-      8  &  0.833 & -0.004   &  668  \\  
-      9  &  0.805 & -0.028   &  681  \\  
+			\textbf{1}  &  0.873 &   -      &  380 \\  
+	        \textbf{2}  &  0.772 & -0.101   &  481 \\
+	        \textbf{3}  &  0.778 & 0.006    &  541 \\  
+	        \textbf{4}  &  0.806 & 0.028    &  588 \\
+	        \textbf{5}  &  0.795 & -0.011   &  620  \\
+	        \textbf{6}  &  0.819 & 0.024    &  638  \\
+			\textbf{7}  &  0.837 & 0.018    &  654  \\  
+	        \textbf{8}  &  0.833 & -0.004   &  668  \\  
+	        \textbf{9}  &  0.805 & -0.028   &  681  \\  
 			\bottomrule
 		\end{tabular}
 	\end{center}    
@@ -293,6 +303,6 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 
 %It is important to notice that, this results shows that it is possible to identify \SATD with a lower number of comments. Using a lower number of comments to create the training dataset makes the approach more applicable as the number of \SATD comments is rather scarce.    
 
-The results of this RQ show that, contrary to our initial intuition, more data need not result in higher classification accuracy. In fact, we find that in some cases, the addition of more comments can decrease the performance of the classifier. One of the reasons for this is that the weight of features is given through empirical probability, and consequently features that appear more will have a higher weight. Although this is an effective process for the majority of the cases we studied, it can be misleading when classifying comments that have different contexts, i.e., in cross-project classification.
+The results of this RQ show that, contrary to our initial intuition, more data may not result in higher classification accuracy. In fact, we find that in some cases, the addition of more comments can decrease the performance of the classifier. One of the reasons for this is that the weight of features is given through empirical probability, and consequently features that appear more will have a higher weight. Although this is an effective process for the majority of the cases we studied, it can be misleading when classifying comments that have different contexts, i.e., in cross-project classification.
 
 \conclusionbox{We find that using our NLP-based approach, design \SATD comments can be classified effectively using a training dataset of 1,106 - 1,444 comments. Similarly, requirement \SATD can be classified with as little as 380 comments of this type.}
