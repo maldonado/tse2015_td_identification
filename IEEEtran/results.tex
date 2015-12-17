@@ -2,10 +2,10 @@ The goal of our research is to develop an automatic way to detect design and req
 
 \begin{figure*}[!thb]
   \centering
-  % \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design.pdf}
+  
   \subfigure[Design Debt]{\includegraphics[width=0.49\textwidth]{figures/f1_measure_comparisom_design_1.pdf}
   \label{fig:f1_measure_comparison_design_debt}}
-  % \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_requirement.pdf}
+  
   \subfigure[Requirement Debt]{\includegraphics[width=0.49\textwidth]{figures/f1_measure_comparisom_requirement_1.pdf}
   \label{fig:f1_measure_comparison_requirement_debt}}
   \caption{Visualization of the F1-measure for Different Approaches}
@@ -239,11 +239,11 @@ For example, if the maximum F1-measure is 0.85 and it is achieved in the eighth 
 % \emad{Everton, copy the correct results from the commented out paragraph here. Also add the horizontal lines to the figures.}
 %We notice that in the 3rd iteration the F1-measure was 0.474, and the maximum F1-measure achieved for the project (i.e., 7th iteration) was 0.557. The F1-measure achieved in the 3rd iteration represents 85\% of the maximum F1-measure achieved in the 7th iteration, and this percentage was reached using 1,499 comments (i.e., from 3 projects) whereas the maximum F1-measure used 2,404 comments (i.e., from 7 projects) in the training dataset. Therefore, for Ant we could achieve 85\% of the maximum result using only 62\% of the comments. We argue that the third iteration provides a good tradeoff between prediction performance and number of comments used to create the training dataset.
 
-We analyzed all iterations from all projects to determine the iterations that achieve the best F1-measure performance. To measure that, we calculate the average percentage of the maximum F1-measure for each iteration. For example, we take the average percentage of the maximum F1-measure achieved during the first iteration for all projects, then we calculate the same value for all second iterations and so on. We find that, the best performance is achieved during the eighth iteration, with an average maximum F1-measure of 96.57\% using (on average) 2,353 comments to create the training dataset. In comparison, the nineth iteration has an average  maximum F1-measure of 95.99\%, which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432).
+We analyzed all iterations from all projects to determine the iterations that achieve the best F1-measure performance. To measure that, we calculate the average percentage of the maximum F1-measure for each iteration. For example, we take the average percentage of the maximum F1-measure achieved during the first iteration for all projects, then we calculate the same value for all second iterations and so on. We find that, the best performance is achieved during the eighth iteration, with an average maximum F1-measure of 96.57\% using (on average) 2,353 comments to create the training dataset. In comparison, the ninth iteration has an average  maximum F1-measure of 95.99\%, which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432).
 % \nikos{there is something wrong in the wording here. This paragraph is hard to understand}
 %As mentioned before, the addition of more comments not necessary implies more performance.
 
-Table \ref{tbl:design_iteration_performance} shows the average percentage of the maximum F1-measure for each iteration. The first column shows the iteration number. The second column shows the average percentage of the maximum F1-measure achieved for each iteration. The third column presents the delta of the average percentage of the maximum F1-measure between one iteration and the previous one. The fourth column shows the average number of comments used in the training dataset of that specific iteration. From Table~\ref{tbl:design_iteration_performance} we observe that, on average, we can achieve more than 80\% and 90\% of the maximum F1-measure in the second and third iterations, respectively. To achieve more than 80\% and 90\% of the maximum F1-measure, we require 1,106 (49.13\% of total comments required in 7th iteration) and 1,444 (64.14\% of total comments required in 7th iteration) comments, respectively. Moreover, we see that the second and third iterations provide the highest delta between iterations.
+Table \ref{tbl:design_iteration_performance} shows the average percentage of the maximum F1-measure for each iteration. The first column shows the iteration number. The second column shows the average percentage of the maximum F1-measure achieved for each iteration. The third column presents the delta of the average percentage of the maximum F1-measure between one iteration and the previous one. The fourth column shows the average number of comments used in the training dataset of that specific iteration. From Table~\ref{tbl:design_iteration_performance} we observe that, on average, we can achieve more than 80\% and 90\% of the maximum F1-measure in the second and third iterations, respectively. To achieve more than 80\% and 90\% of the maximum F1-measure, we require 1,106 (49.13\% of total comments required in seventh iteration) and 1,444 (64.14\% of total comments required in seventh iteration) comments, respectively. Moreover, we see that the second and third iterations provide the highest delta between iterations.
 
 \noindent \textbf{Results - requirement debt:} We find that although there is a variation in the F1-measure value during the first 3 iterations, they are not as preeminent as the variation found in design \SATD analysis. The F1-measure in requirement \SATD tends to be more constant through the iterations, and the first iteration has already a high percentage of the maximum F1-measure achieved for each project. This shows that the way the developers indicate requirement debt does not vary between different application domains as much as in design debt. This uniformity in requirement \SATD comments allows a good classification even with a small number of comments in the training dataset. We elaborate more on this point later in Section~\ref{sec:discussion}.
 
@@ -293,7 +293,7 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 	        \textbf{4}  &  0.806 & 0.028    &  588 \\
 	        \textbf{5}  &  0.795 & -0.011   &  620  \\
 	        \textbf{6}  &  0.819 & 0.024    &  638  \\
-			\textbf{7}  &  0.837 & 0.018    &  654  \\  
+			    \textbf{7}  &  0.837 & 0.018    &  654  \\  
 	        \textbf{8}  &  0.833 & -0.004   &  668  \\  
 	        \textbf{9}  &  0.805 & -0.028   &  681  \\  
 			\bottomrule
