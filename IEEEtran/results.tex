@@ -105,13 +105,13 @@ Generally, it is clear that requirement \SATD is less common than design \SATD, 
 \noindent \textbf{Motivation:} After asserting the efficiency of our NLP-based approach in identifying \SATD comments we want to better understand what words developers use when indicating this technical debt. Answering this question will provide insightful information that can guide future research directions, broaden our understanding on \SATD and also help us to detect it.     
 
 \vspace{1mm}
-\noindent \textbf{Approach:} To perform its detection, the NLP Classifier learns optimal features that can be used to detect \SATD. These features, are fragments of data (e.g., words) that are associated with a specific class (e.g., design debt, requirement debt, or without technical debt). Moreover, each feature has a weight, which represents how strongly the feature relates to a specific type of debt. The NLP tool uses the labeled training data that we input to determine the features and their weigh. Then, the features and their corresponding weights are used to determine if a comment belongs to a specific type of \SATD.
+\noindent \textbf{Approach:} To perform its detection, the NLP Classifier learns optimal features that can be used to detect \SATD. These features, are fragments of data (e.g., words) that are associated with a specific class (i.e., design debt, requirement debt, or without technical debt). Moreover, each feature has a weight, which represents how strongly the feature relates to a specific type of debt. The NLP Classifier uses the classified training data that we input to determine the features and their weigh. Then, the features and their corresponding weights are used to determine if a comment belongs to a specific type of \SATD.
 
-For example, if the NLP tool, based on the training data, determines that the two features ``hack'' and ``dirty'' are related to design debt with weight 5.3 and 3.2, respectively, and the feature ``something'' relates to the non-technical debt class with a weight of 4.1. Then, if we aim to classify the comment ``this is a dirty hack it's better do to something'' in our test data, all features will be analyzed and the following score would be calculated design debt weight = 8.5 (i.e., feature `hack' weight plus feature `dirty' weight) and without technical debt weight = 4.1 resulting in a comment classified as design debt.
+For example, if the NLP Classifier, based on the training data, determines that the two features ``hack'' and ``dirty'' are related to design debt with weight 5.3 and 3.2, respectively, and the feature ``something'' relates to the without technical debt class with a weight of 4.1. Then, if we aim to classify the comment ``this is a dirty hack it's better do to something'' in our test data, all features will be analyzed and the following score would be calculated: design debt weight = 8.5 (i.e., feature `hack' weight plus feature `dirty' weight) and without technical debt weight = 4.1 resulting in a comment classified as design debt.
 
 %The features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class with highest weight. 
 
-For each analyzed project, we collect the features used to predict the \SATD comments. These features are provided by the NLP tool as output and stored in a text file. The features are written in the file based on the weight that they have, ordered by highest weight to the lowest weight, meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different projects. 
+For each analyzed project, we collect the features used to predict the \SATD comments. These features are provided by the NLP Classifier as output and stored in a text file. The features are written in the file based on the weight that they have, ordered by highest weight to the lowest weight, meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different projects. 
 
 %We determined the top 10 features (i.e, most relevant based on the weight) for design and requirement \SATD comments.
 
@@ -125,16 +125,16 @@ For each analyzed project, we collect the features used to predict the \SATD com
         \toprule
         \textbf{Rank} & \textbf{Design Debt} & \textbf{Requirement Debt}  \\
         \midrule
-         1  & hack       &   todo              \\
-         2  & workaround &   needed            \\
-         3  & yuck!      &   implementation    \\
-         4  & kludge     &   fixme             \\
-         5  & stupidity  &   xxx               \\
-         6  & needed?    &   ends?             \\
-         7  & columns?   &   convention        \\
-         8  & unused?    &   configurable      \\
-         9  & wtf?       &   apparently        \\
-         10 & todo       &   fudging           \\
+         \textbf{1}  & hack       &   todo              \\
+         \textbf{2}  & workaround &   needed            \\
+         \textbf{3}  & yuck!      &   implementation    \\
+         \textbf{4}  & kludge     &   fixme             \\
+         \textbf{5}  & stupidity  &   xxx               \\
+         \textbf{6}  & needed?    &   ends?             \\
+         \textbf{7}  & columns?   &   convention        \\
+         \textbf{8}  & unused?    &   configurable      \\
+         \textbf{9}  & wtf?       &   apparently        \\
+         \textbf{10} & todo       &   fudging           \\
         \bottomrule
         \end{tabular}
     \end{center}    
@@ -142,7 +142,7 @@ For each analyzed project, we collect the features used to predict the \SATD com
 
 From Table~\ref{tbl:top_ten_features} we observe that top ranked textual features, i.e., hack, workaround, yuck!, kludge and stupidity, are related to design \SATD indicate sloppy or mediocre source code. For example we have the following comment that was extracted from Jmeter: \textit{``\textbf{Hack} to allow entire URL to be provided in host field''}. Other textual features such as needed?, columns?, unused?, wtf? and todo, are questioning the usefulness or utility of specific source code. As this other comment, also extracted from Jmeter, shows: \textit{``TODO: - is this \textbf{needed?}''}. For requirement \SATD, the top ranked features, i.e., todo, needed, implementation, and fixme, indicate the need to enhance or complete the implementation in the future. This comment from JRuby is an example: \textit{``\textbf{TODO:} implement, won't do this now''}. Other lower ranked textual features such as xxx, ends?, convention, configurable, apparently and fudging, indicate potential future enhancements that make the code more configurable and/or generic.
 
-We also observe that it is possible a single textual feature to indicate both design and requirement \SATD. However, in such cases, the ranking of the textual features for design and requirement \SATD is different. For example, the work todo is ranked tenth for design debt, whereas it is ranked first for requirement debt. This finding is intuitive, since requirement debt will naturally be related to the implementation of future functionality.
+We also observe that it is possible a single textual feature to indicate both design and requirement \SATD. However, in such cases, the ranking of the textual features for design and requirement \SATD is different. For example, the word ``todo'' is ranked tenth for design debt, whereas it is ranked first for requirement debt. This finding is intuitive, since requirement debt will naturally be related to the implementation of future functionality.
 
 It is important to note here that although we present the top 10 textual features, the classification of the comments can be based on a combination of several textual features. In fact, two different types of textual features are used to classify the comments: positive weight features and negative weight features. Positive weight features will increase the total weight of the vote suggesting that the classification should be equal to the class of the feature (i.e., design or requirement debt). On the other hand, negative weight features will decrease the total weight of the vote suggesting a classification different from the class that the feature belongs (i.e, without technical debt). On average, the number of positive weight features used to classify design debt is 5,014 and 2,195 for requirement debt. The exact number of unique textual features used to detect \SATD for each project is shown in Table \ref{tbl:features_per_project}. The fact that our NLP-based approach leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art~\cite{Potdar2014ICSME}, which only uses 62 patterns. In comparison, our approach leverages 35,828 unique textual features for design debt and 34,056 unique textual features to detect requirement debt.
 
