@@ -1,0 +1,229 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.apache.tools.ant.filters.LineContains::addConfiguredContains(org.apache.tools.ant.filters.LineContains.Contains):void	org.apache.tools.ant.filters.LineContains.Contains	0.8806184662909904	
+Move Method	org.apache.tools.ant.filters.ReplaceTokens::addConfiguredToken(org.apache.tools.ant.filters.ReplaceTokens.Token):void	org.apache.tools.ant.filters.ReplaceTokens.Token	0.8806213775644826	
+Move Method	org.apache.tools.ant.types.FileList::addConfiguredFile(org.apache.tools.ant.types.FileList.FileName):void	org.apache.tools.ant.types.FileList.FileName	0.8806264101883098	
+Move Method	org.apache.tools.ant.filters.StripLineComments::addConfiguredComment(org.apache.tools.ant.filters.StripLineComments.Comment):void	org.apache.tools.ant.filters.StripLineComments.Comment	0.8806328664523011	
+Move Method	org.apache.tools.ant.types.optional.depend.ClassfileSet::addConfiguredRoot(org.apache.tools.ant.types.optional.depend.ClassfileSet.ClassRoot):void	org.apache.tools.ant.types.optional.depend.ClassfileSet.ClassRoot	0.880672073760091	
+Move Method	org.apache.tools.ant.taskdefs.SubAnt::addConfiguredTarget(org.apache.tools.ant.taskdefs.Ant.TargetElement):void	org.apache.tools.ant.taskdefs.Ant.TargetElement	0.8806864143072033	
+Move Method	org.apache.tools.ant.taskdefs.cvslib.CvsTagDiff::writeTagEntry(org.w3c.dom.Document, java.io.PrintWriter, org.apache.tools.ant.taskdefs.cvslib.CvsTagEntry):void	org.apache.tools.ant.taskdefs.cvslib.CvsTagEntry	0.8806987008216043	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::preConfigure(org.apache.tools.ant.taskdefs.optional.junit.BaseTest):void	org.apache.tools.ant.taskdefs.optional.junit.BaseTest	0.8807081988776326	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::actOnTestResult(org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.TestResultHolder, org.apache.tools.ant.taskdefs.optional.junit.JUnitTest, java.lang.String):void	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.TestResultHolder	0.8807278968373106	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.EjbInfo::classesToGenerate():java.lang.String[]	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.Classname	0.8807434223820028	
+Move Method	org.apache.tools.ant.taskdefs.Available::checkFile(java.io.File, java.lang.String):boolean	org.apache.tools.ant.taskdefs.Available.FileDir	0.8807670117600013	
+Move Method	org.apache.tools.ant.taskdefs.optional.depend.Depend::warnOutOfDateButNotDeleted(org.apache.tools.ant.taskdefs.optional.depend.Depend.ClassFileInfo, java.lang.String, java.lang.String):void	org.apache.tools.ant.taskdefs.optional.depend.Depend.ClassFileInfo	0.8807691832784219	
+Move Method	org.apache.tools.ant.types.XMLCatalog::urlLookup(org.apache.tools.ant.types.ResourceLocation):org.xml.sax.InputSource	org.apache.tools.ant.types.ResourceLocation	0.8807836032687419	
+Move Method	org.apache.tools.ant.types.XMLCatalog::filesystemLookup(org.apache.tools.ant.types.ResourceLocation):org.xml.sax.InputSource	org.apache.tools.ant.types.ResourceLocation	0.8807886531431244	
+Move Method	org.apache.tools.ant.util.ConcatResourceInputStream::logConcatResourceInputStream(java.lang.String, int):void	org.apache.tools.ant.ProjectComponent	0.8807909532509866	
+Move Method	org.apache.tools.ant.util.ConcatFileInputStream::logConcatFileInputStream(java.lang.String, int):void	org.apache.tools.ant.ProjectComponent	0.8807909546607957	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::getJarBaseName(java.lang.String):java.lang.String	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8807932857339924	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.EjbInfo::sourceClassesModified(java.io.File):long	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.Classname	0.8807935659188135	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::validateConfig():void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8807945893761018	
+Move Method	org.apache.tools.bzip2.CBZip2OutputStream::mainQSort3(org.apache.tools.bzip2.CBZip2OutputStream.Data, int, int, int):void	org.apache.tools.bzip2.CBZip2OutputStream.Data	0.8807996304657387	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc::buildArgumentList(org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.EjbInfo):java.lang.String[]	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.EjbInfo	0.8808006380068352	
+Move Method	org.apache.tools.ant.taskdefs.cvslib.ChangeLogWriter::printEntry(org.w3c.dom.Document, java.io.PrintWriter, org.apache.tools.ant.taskdefs.cvslib.CVSEntry):void	org.apache.tools.ant.taskdefs.cvslib.CVSEntry	0.8808014262118611	
+Move Method	org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter::setupRmicCommand(java.lang.String[]):org.apache.tools.ant.types.Commandline	org.apache.tools.ant.taskdefs.Rmic	0.880802686663922	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::getManifestFile(java.lang.String):java.io.File	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.880803213188111	
+Move Method	org.apache.tools.ant.util.LeadPipeInputStream::logLeadPipeInputStream(java.lang.String, int):void	org.apache.tools.ant.ProjectComponent	0.8808056872768686	
+Move Method	org.apache.tools.ant.taskdefs.optional.ccm.Continuus::run(org.apache.tools.ant.types.Commandline, org.apache.tools.ant.taskdefs.ExecuteStreamHandler):int	org.apache.tools.ant.types.Commandline	0.8808121981977407	
+Move Method	org.apache.tools.ant.taskdefs.optional.net.FTP.FTPDirectoryScanner::accountForIncludedDir(java.lang.String, org.apache.tools.ant.taskdefs.optional.net.FTP.FTPDirectoryScanner.AntFTPFile, boolean):void	org.apache.tools.ant.taskdefs.optional.net.FTP.FTPDirectoryScanner.AntFTPFile	0.8808150555269408	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::createSupport():org.apache.tools.ant.types.FileSet	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808159484655305	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setManifest(java.io.File):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808159484655305	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setDependency(java.lang.String):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808159484655305	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setFlatdestdir(boolean):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808159484655305	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.XalanExecutor::getOutputStream():java.io.OutputStream	org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer	0.8808164545858072	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.EjbInfo::getName():java.lang.String	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.Classname	0.8808164590892338	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::usingBaseJarName():boolean	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808173001612677	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::getDescriptorHandler(java.io.File):org.apache.tools.ant.taskdefs.optional.ejb.DescriptorHandler	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.880817721087297	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::createDTD():org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.DTDLocation	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808189828817373	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setBasenameterminator(java.lang.String):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808189828817373	
+Move Method	org.apache.tools.ant.types.XMLCatalog::classpathLookup(org.apache.tools.ant.types.ResourceLocation):org.xml.sax.InputSource	org.apache.tools.ant.types.ResourceLocation	0.8808190068401772	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setNaming(org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.NamingScheme):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808201602399535	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setSrcdir(java.io.File):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808203212963543	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::getOutput(org.apache.tools.ant.taskdefs.optional.junit.FormatterElement, org.apache.tools.ant.taskdefs.optional.junit.JUnitTest):java.io.File	org.apache.tools.ant.taskdefs.optional.junit.FormatterElement	0.8808204861349999	
+Move Method	org.apache.tools.bzip2.CBZip2OutputStream::sendMTFValues3(int, int):void	org.apache.tools.bzip2.CBZip2OutputStream.Data	0.880820628558005	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setBasejarname(java.lang.String):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808211261446975	
+Move Method	org.apache.tools.ant.taskdefs.Javac::getCurrentCompilerArgs():java.lang.String[]	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.8808214336547001	
+Move Method	org.apache.tools.ant.taskdefs.ResourceCount::setRefid(org.apache.tools.ant.types.Reference):void	org.apache.tools.ant.types.Reference	0.8808217483162575	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar::setDescriptordir(java.io.File):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808223209628737	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::addSupportClasses(java.util.Hashtable):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808229057456765	
+Move Method	org.apache.tools.ant.taskdefs.ExecTask::setupRedirector():void	org.apache.tools.ant.taskdefs.Redirector	0.8808229571219478	
+Move Method	org.apache.tools.ant.taskdefs.optional.javah.SunJavah::setupJavahCommand(org.apache.tools.ant.taskdefs.optional.Javah):org.apache.tools.ant.types.Commandline	org.apache.tools.ant.taskdefs.optional.Javah	0.8808233753073108	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::getVendorDDPrefix(java.lang.String, java.lang.String):java.lang.String	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808234860434283	
+Move Method	org.apache.tools.ant.taskdefs.Java::setupRedirector():void	org.apache.tools.ant.taskdefs.Redirector	0.8808239359246165	
+Move Method	org.apache.tools.ant.taskdefs.Javac::getCompilerVersion():java.lang.String	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.8808242574398708	
+Move Method	org.apache.tools.ant.helper.ProjectHelperImpl::configureId(java.lang.Object, org.xml.sax.AttributeList):void	org.apache.tools.ant.Project	0.8808243201506238	
+Move Method	org.apache.tools.ant.taskdefs.Java::setupEnvironment(org.apache.tools.ant.taskdefs.Execute):void	org.apache.tools.ant.taskdefs.Execute	0.880824915592219	
+Move Method	org.apache.tools.bzip2.CBZip2OutputStream::sendMTFValues0(int, int):void	org.apache.tools.bzip2.CBZip2OutputStream.Data	0.8808252455944066	
+Move Method	org.apache.tools.ant.taskdefs.Sync::removeOrphanFiles(java.util.Set, java.io.File):int[]	org.apache.tools.ant.types.AbstractFileSet	0.8808253198266627	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::parseEjbFiles(java.lang.String, javax.xml.parsers.SAXParser):java.util.Hashtable	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808268259801328	
+Move Method	org.apache.tools.ant.taskdefs.Rmic::getCompiler():java.lang.String	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.8808271265512326	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::checkAndAddDependants(java.util.Hashtable):void	org.apache.tools.ant.taskdefs.optional.ejb.EjbJar.Config	0.8808272774572428	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.BatchTest::addFileSet(org.apache.tools.ant.types.FileSet):void	org.apache.tools.ant.types.resources.Resources	0.8808273478393219	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::addSourceFiles(java.util.Vector):void	org.apache.tools.ant.taskdefs.Javadoc.ResourceCollectionContainer	0.8808298482327888	
+Move Method	org.apache.tools.ant.AntTypeDefinition::innerCreateAndSet(java.lang.Class, org.apache.tools.ant.Project):java.lang.Object	org.apache.tools.ant.Project	0.8808300403864207	
+Move Method	org.apache.tools.ant.DirectoryScanner::findFile(java.io.File, java.lang.String, boolean):java.io.File	org.apache.tools.ant.util.FileUtils	0.880830282778299	
+Move Method	org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter::getCompileClasspath():org.apache.tools.ant.types.Path	org.apache.tools.ant.taskdefs.Rmic	0.8808307404221867	
+Move Method	org.apache.tools.ant.taskdefs.optional.Cab::createListFile(java.util.Vector):java.io.File	org.apache.tools.ant.util.FileUtils	0.8808308874668296	
+Move Method	org.apache.tools.ant.taskdefs.optional.Native2Ascii::setImplementation(java.lang.String):void	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.8808317535413996	
+Move Method	org.apache.tools.ant.taskdefs.Execute::killedProcess():boolean	org.apache.tools.ant.taskdefs.ExecuteWatchdog	0.8808318593857032	
+Move Method	org.apache.tools.ant.taskdefs.AbstractCvsTask::executeToString(org.apache.tools.ant.taskdefs.Execute):java.lang.String	org.apache.tools.ant.taskdefs.Execute	0.8808321615194903	
+Move Method	org.apache.tools.ant.taskdefs.optional.jdepend.JDependTask::addClasspathEntry(java.lang.String):void	org.apache.tools.ant.types.Path	0.8808324149281763	
+Move Method	org.apache.tools.ant.types.DataType::getCheckedRef(java.lang.Class, java.lang.String, org.apache.tools.ant.Project):java.lang.Object	org.apache.tools.ant.types.Reference	0.8808334628743963	
+Move Method	org.apache.tools.ant.taskdefs.optional.XMLValidateTask::createDTD():org.apache.tools.ant.types.DTDLocation	org.apache.tools.ant.types.XMLCatalog	0.8808335042808908	
+Move Method	org.apache.tools.ant.taskdefs.FixCRLF::setTablengthFixCRLF(int):void	org.apache.tools.ant.filters.FixCrLfFilter	0.880833522766155	
+Move Method	org.apache.tools.ant.types.RedirectorElement::configure(org.apache.tools.ant.taskdefs.Redirector, java.lang.String):void	org.apache.tools.ant.taskdefs.Redirector	0.8808338412123741	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.DotnetCompile::addReferenceFilesets(org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand, long):int	org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand	0.8808338500820396	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::executeExternalCompile(java.lang.String[], int, boolean):int	org.apache.tools.ant.util.FileUtils	0.8808339661984332	
+Move Method	org.apache.tools.ant.taskdefs.Length::handleResources(org.apache.tools.ant.taskdefs.Length.Handler):void	org.apache.tools.ant.taskdefs.Length.Handler	0.880834034319794	
+Move Method	org.apache.tools.ant.taskdefs.Expand::extractFile(org.apache.tools.ant.util.FileUtils, java.io.File, java.io.File, java.io.InputStream, java.lang.String, java.util.Date, boolean, org.apache.tools.ant.util.FileNameMapper):void	org.apache.tools.ant.util.FileUtils	0.8808341736829226	
+Move Method	org.apache.tools.ant.taskdefs.Java::setClassnameJava(java.lang.String):void	org.apache.tools.ant.types.CommandlineJava	0.8808342982818353	
+Move Method	org.apache.tools.ant.taskdefs.Java::setJar(java.io.File):void	org.apache.tools.ant.types.CommandlineJava	0.8808343398269147	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::addClasspathEntry(java.lang.String):boolean	org.apache.tools.ant.types.Path	0.8808343810596883	
+Move Method	org.apache.tools.ant.helper.ProjectHelper2.AntHandler::onStartChild(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes, org.apache.tools.ant.helper.AntXMLContext):org.apache.tools.ant.helper.ProjectHelper2.AntHandler	org.apache.tools.ant.helper.AntXMLContext	0.8808344581945586	
+Move Method	org.apache.tools.ant.helper.ProjectHelper2.AntHandler::characters(char[], int, int, org.apache.tools.ant.helper.AntXMLContext):void	org.apache.tools.ant.helper.AntXMLContext	0.8808344592182447	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTest::shouldRun(org.apache.tools.ant.Project):boolean	org.apache.tools.ant.Project	0.8808348155847484	
+Move Method	org.apache.tools.ant.types.FilterSet::handleMissingFile(java.lang.String):void	org.apache.tools.ant.types.EnumeratedAttribute	0.880834818930271	
+Move Method	org.apache.tools.ant.taskdefs.XSLTProcess::addConfiguredStyle(org.apache.tools.ant.types.resources.Resources):void	org.apache.tools.ant.types.resources.Resources	0.8808348361968131	
+Move Method	org.apache.tools.ant.taskdefs.optional.unix.Symlink::findLinks(java.util.Vector):java.util.HashSet	org.apache.tools.ant.util.FileUtils	0.8808351866337032	
+Move Method	org.apache.tools.ant.taskdefs.ExecuteJava::fork(org.apache.tools.ant.ProjectComponent):int	org.apache.tools.ant.types.Commandline	0.8808353386898339	
+Move Method	org.apache.tools.ant.taskdefs.optional.TraXLiaison::resourceToURI(org.apache.tools.ant.types.Resource):java.lang.String	org.apache.tools.ant.util.FileUtils	0.8808354857236967	
+Move Method	org.apache.tools.ant.taskdefs.optional.depend.Depend::getCheckClassPath():org.apache.tools.ant.types.Path	org.apache.tools.ant.types.Path	0.8808355201425851	
+Move Method	org.apache.tools.ant.PropertyHelper::copyInheritedProperties(org.apache.tools.ant.Project):void	org.apache.tools.ant.Project	0.8808355760226159	
+Move Method	org.apache.tools.ant.taskdefs.FixCRLF::setCr(org.apache.tools.ant.taskdefs.FixCRLF.AddAsisRemove):void	org.apache.tools.ant.filters.FixCrLfFilter	0.8808355918661658	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand::scanOneFileset(org.apache.tools.ant.DirectoryScanner, java.util.Hashtable, long):int	org.apache.tools.ant.DirectoryScanner	0.8808358701028762	
+Move Method	org.apache.tools.ant.taskdefs.optional.net.FTP::findFileName(org.apache.commons.net.ftp.FTPClient):java.io.File	org.apache.tools.ant.util.FileUtils	0.8808363884713748	
+Move Method	org.apache.tools.ant.helper.AntXMLContext::configureId(java.lang.Object, org.xml.sax.Attributes):void	org.apache.tools.ant.Project	0.8808364324423303	
+Move Method	org.apache.tools.ant.DirectoryScanner::isSymlink(java.io.File, java.util.Vector):boolean	org.apache.tools.ant.util.FileUtils	0.8808365289999105	
+Move Method	org.apache.tools.ant.taskdefs.optional.depend.ClassFile::getClassRefs():java.util.Vector	org.apache.tools.ant.taskdefs.optional.depend.constantpool.ConstantPool	0.8808365445082529	
+Move Method	org.apache.tools.ant.taskdefs.optional.Javah::setImplementation(java.lang.String):void	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.880836704990422	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::createTempPropertiesFile(java.lang.String):java.io.File	org.apache.tools.ant.util.FileUtils	0.8808369655865018	
+Move Method	org.apache.tools.ant.taskdefs.optional.vss.MSVSS::getFileTimeStamp():java.lang.String	org.apache.tools.ant.types.EnumeratedAttribute	0.8808371717444948	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::writeExternalArgs(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808371829353155	
+Move Method	org.apache.tools.ant.taskdefs.Rmic::setCompiler(java.lang.String):void	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.8808372551630277	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::assumeJava12():boolean	org.apache.tools.ant.taskdefs.Javac	0.8808375458875299	
+Move Method	org.apache.tools.ant.taskdefs.optional.ANTLR::createClasspath():org.apache.tools.ant.types.Path	org.apache.tools.ant.types.CommandlineJava	0.880837577365323	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::assumeJava13():boolean	org.apache.tools.ant.taskdefs.Javac	0.8808375930892509	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::assumeJava14():boolean	org.apache.tools.ant.taskdefs.Javac	0.8808375930892509	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::assumeJava15():boolean	org.apache.tools.ant.taskdefs.Javac	0.8808375930892509	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::assumeJava16():boolean	org.apache.tools.ant.taskdefs.Javac	0.8808375930892509	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.JonasDeploymentTool::getGenicClassName(org.apache.tools.ant.types.Path):java.lang.String	org.apache.tools.ant.types.Path	0.880837727831232	
+Move Method	org.apache.tools.ant.taskdefs.Copy::getDueTo(java.lang.Exception):java.lang.String	org.apache.tools.ant.util.FileUtils	0.88083782472521	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::mergeFormatters(org.apache.tools.ant.taskdefs.optional.junit.JUnitTest):org.apache.tools.ant.taskdefs.optional.junit.FormatterElement[]	org.apache.tools.ant.taskdefs.optional.junit.JUnitTest	0.8808381688115525	
+Move Method	org.apache.tools.ant.types.resources.ZipResource::setEntry(org.apache.tools.zip.ZipEntry):void	org.apache.tools.zip.ZipEntry	0.8808382404825627	
+Move Method	org.apache.tools.ant.taskdefs.optional.Cab::appendFiles(java.util.Vector, org.apache.tools.ant.DirectoryScanner):void	org.apache.tools.ant.DirectoryScanner	0.8808382947160185	
+Move Method	org.apache.tools.ant.taskdefs.Java::run(org.apache.tools.ant.types.CommandlineJava):void	org.apache.tools.ant.taskdefs.Redirector	0.8808387310134023	
+Move Method	org.apache.tools.ant.taskdefs.Ant::addAlmostAll(java.util.Hashtable):void	org.apache.tools.ant.Project	0.8808387390764482	
+Move Method	org.apache.tools.ant.AntClassLoader::getResourceURL(java.io.File, java.lang.String):java.net.URL	org.apache.tools.ant.util.FileUtils	0.8808387745229089	
+Move Method	org.apache.tools.ant.IntrospectionHelper::throwNotSupported(org.apache.tools.ant.Project, java.lang.Object, java.lang.String):void	org.apache.tools.ant.Project	0.8808387967674279	
+Move Method	org.apache.tools.ant.taskdefs.Java::setClasspath(org.apache.tools.ant.types.Path):void	org.apache.tools.ant.types.Path	0.8808388840440533	
+Move Method	org.apache.tools.ant.taskdefs.XSLTProcess::setClasspath(org.apache.tools.ant.types.Path):void	org.apache.tools.ant.types.Path	0.8808388927783153	
+Move Method	org.apache.tools.ant.ComponentHelper::checkTaskClassComponentHelper(java.lang.Class):void	org.apache.tools.ant.Project	0.8808389131934269	
+Move Method	org.apache.tools.ant.taskdefs.Ant::copyReference(java.lang.String, java.lang.String):void	org.apache.tools.ant.Project	0.8808390015144989	
+Move Method	org.apache.tools.ant.taskdefs.Java::createBootclasspath():org.apache.tools.ant.types.Path	org.apache.tools.ant.types.CommandlineJava	0.880839384742433	
+Move Method	org.apache.tools.ant.taskdefs.Copy::getMapper():org.apache.tools.ant.util.FileNameMapper	org.apache.tools.ant.types.Mapper	0.8808393996014592	
+Move Method	org.apache.tools.ant.Project::setFileLastModified(java.io.File, long):void	org.apache.tools.ant.util.FileUtils	0.880839615408507	
+Move Method	org.apache.tools.ant.taskdefs.optional.depend.Depend::getClassFiles(org.apache.tools.ant.types.Path):java.util.Vector	org.apache.tools.ant.types.Path	0.8808396533587145	
+Move Method	org.apache.tools.ant.taskdefs.SubAnt::setBuildpath(org.apache.tools.ant.types.Path):void	org.apache.tools.ant.types.Path	0.8808400410574706	
+Move Method	org.apache.tools.ant.PropertyHelper::getPropertyHook(java.lang.String, java.lang.String, boolean):java.lang.Object	org.apache.tools.ant.Project	0.8808401206888572	
+Move Method	org.apache.tools.ant.taskdefs.Available::checkResource(java.lang.String):boolean	org.apache.tools.ant.AntClassLoader	0.8808402092455034	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand::addArgument(java.lang.String, java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808402152901832	
+Move Method	org.apache.tools.ant.util.ProxySetup::enableProxies():void	org.apache.tools.ant.Project	0.880840231475088	
+Move Method	org.apache.tools.ant.taskdefs.MatchingTask::getDirectoryScanner(java.io.File):org.apache.tools.ant.DirectoryScanner	org.apache.tools.ant.types.AbstractFileSet	0.8808402640987301	
+Move Method	org.apache.tools.ant.taskdefs.Patch::setBackups(boolean):void	org.apache.tools.ant.types.Commandline	0.8808403586909007	
+Move Method	org.apache.tools.ant.taskdefs.Patch::setIgnorewhitespace(boolean):void	org.apache.tools.ant.types.Commandline	0.8808403586909007	
+Move Method	org.apache.tools.ant.taskdefs.Patch::setStrip(int):void	org.apache.tools.ant.types.Commandline	0.8808403586909007	
+Move Method	org.apache.tools.ant.taskdefs.Patch::setQuiet(boolean):void	org.apache.tools.ant.types.Commandline	0.8808403586909007	
+Move Method	org.apache.tools.ant.taskdefs.Patch::setReverse(boolean):void	org.apache.tools.ant.types.Commandline	0.8808403586909007	
+Move Method	org.apache.tools.ant.taskdefs.Rmic::moveGeneratedFile(java.io.File, java.io.File, java.lang.String, org.apache.tools.ant.taskdefs.rmic.RmicAdapter):void	org.apache.tools.ant.util.FileUtils	0.8808403863651825	
+Move Method	org.apache.tools.ant.taskdefs.optional.script.ScriptDef::executeScript(java.util.Map, java.util.Map, org.apache.tools.ant.taskdefs.optional.script.ScriptDefBase):void	org.apache.tools.ant.util.ScriptRunnerBase	0.8808405819559557	
+Move Method	org.apache.tools.ant.Task::reconfigure():void	org.apache.tools.ant.RuntimeConfigurable	0.8808406283597916	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::logAndAddFilesToCompile(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808406330292762	
+Move Method	org.apache.tools.ant.taskdefs.Patch::setDestfile(java.io.File):void	org.apache.tools.ant.types.Commandline	0.8808407499306561	
+Move Method	org.apache.tools.ant.types.resolver.ApacheCatalogResolver::addPublicEntry(java.lang.String, java.lang.String, java.net.URL):void	org.apache.tools.ant.types.XMLCatalog	0.880840827389574	
+Move Method	org.apache.tools.ant.types.resolver.ApacheCatalogResolver::addURIEntry(java.lang.String, java.lang.String, java.net.URL):void	org.apache.tools.ant.types.XMLCatalog	0.880840827389574	
+Move Method	org.apache.tools.ant.ComponentHelper::getClassLoader(java.lang.ClassLoader):java.lang.ClassLoader	org.apache.tools.ant.Project	0.8808409290063932	
+	current system		0.8808410633034307	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool::needToRebuild(java.util.Hashtable, java.io.File):boolean	org.apache.tools.ant.Task	0.8808411868765662	
+Move Method	org.apache.tools.ant.taskdefs.Sync::configureTask(org.apache.tools.ant.Task):void	org.apache.tools.ant.Task	0.8808412604269436	
+Move Method	org.apache.tools.ant.taskdefs.Expand::getMapper():org.apache.tools.ant.util.FileNameMapper	org.apache.tools.ant.types.Mapper	0.8808413261474975	
+Move Method	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc::getCmpDescriptors():java.lang.String[]	org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc.EjbcHandler	0.88084142332129	
+Move Method	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter::assumeJava11():boolean	org.apache.tools.ant.taskdefs.Javac	0.880841487965972	
+Move Method	org.apache.tools.ant.ProjectComponent::log(java.lang.String, int):void	org.apache.tools.ant.Project	0.8808416864073809	
+Move Method	org.apache.tools.ant.ComponentHelper::createComponent(org.apache.tools.ant.UnknownElement, java.lang.String, java.lang.String):java.lang.Object	org.apache.tools.ant.UnknownElement	0.8808417330264462	
+Move Method	org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask::haveEntries(org.apache.tools.ant.types.Path):boolean	org.apache.tools.ant.types.Path	0.8808421534275126	
+Move Method	org.apache.tools.ant.filters.util.ChainReaderHelper::setProjectOnObject(java.lang.Object):void	org.apache.tools.ant.Project	0.8808425508981987	
+Move Method	org.apache.tools.ant.Project::addFilterProject(java.lang.String, java.lang.String):void	org.apache.tools.ant.types.FilterSet	0.8808426560047493	
+Move Method	org.apache.tools.ant.taskdefs.MatchingTask::XsetItems(java.lang.String):void	org.apache.tools.ant.types.AbstractFileSet	0.8808429370971518	
+Move Method	org.apache.tools.ant.taskdefs.MatchingTask::XsetIgnore(java.lang.String):void	org.apache.tools.ant.types.AbstractFileSet	0.8808429370971518	
+Move Method	org.apache.tools.ant.taskdefs.Java::setupCommandLine(org.apache.tools.ant.taskdefs.Execute, java.lang.String[]):void	org.apache.tools.ant.taskdefs.Execute	0.8808429776394555	
+Move Method	org.apache.tools.ant.ComponentHelper::getDefinition(java.lang.String):org.apache.tools.ant.AntTypeDefinition	org.apache.tools.ant.ComponentHelper.AntTypeTable	0.8808431599678763	
+Move Method	org.apache.tools.ant.taskdefs.optional.jsp.compilers.DefaultJspCompilerAdapter::logAndAddFilesToCompile(org.apache.tools.ant.taskdefs.optional.jsp.JspC, java.util.Vector, org.apache.tools.ant.types.CommandlineJava):void	org.apache.tools.ant.types.CommandlineJava	0.8808432050027787	
+Move Method	org.apache.tools.ant.taskdefs.Java::createClasspath():org.apache.tools.ant.types.Path	org.apache.tools.ant.types.CommandlineJava	0.8808434868592019	
+Move Method	org.apache.tools.ant.taskdefs.compilers.JavacExternal::execOnVMS(org.apache.tools.ant.types.Commandline, int):boolean	org.apache.tools.ant.types.Commandline	0.880843750794803	
+Move Method	org.apache.tools.ant.ComponentHelper::validDefinition(org.apache.tools.ant.AntTypeDefinition):boolean	org.apache.tools.ant.AntTypeDefinition	0.8808441622350844	
+Move Method	org.apache.tools.ant.types.CommandlineJava::getJar():java.lang.String	org.apache.tools.ant.types.Commandline	0.880844471934139	
+Move Method	org.apache.tools.ant.types.CommandlineJava::getClassname():java.lang.String	org.apache.tools.ant.types.Commandline	0.880844471934139	
+Move Method	org.apache.tools.ant.taskdefs.Java::fork(java.lang.String[]):int	org.apache.tools.ant.taskdefs.Redirector	0.88084457396606	
+Move Method	org.apache.tools.ant.taskdefs.Javac::checkParameters():void	org.apache.tools.ant.types.Path	0.8808445855306715	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::addArgIf(boolean, java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setMaxmemory(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setAdditionalparam(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setExtdirs(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setLocale(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setEncoding(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setDocencoding(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808453925363254	
+Move Method	org.apache.tools.ant.taskdefs.optional.ReplaceRegExp::doReplace(org.apache.tools.ant.types.RegularExpression, org.apache.tools.ant.types.Substitution, java.lang.String, int):java.lang.String	org.apache.tools.ant.types.Substitution	0.8808454958893364	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setAccess(org.apache.tools.ant.taskdefs.Javadoc.AccessType):void	org.apache.tools.ant.types.Commandline	0.8808457802547072	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::addArgIfNotEmpty(java.lang.String, java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808457837760808	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setOverview(java.io.File):void	org.apache.tools.ant.types.Commandline	0.8808457837760808	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setExtdirs(org.apache.tools.ant.types.Path):void	org.apache.tools.ant.types.Commandline	0.8808457837760808	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setStylesheetfile(java.io.File):void	org.apache.tools.ant.types.Commandline	0.8808457837760808	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc::setHelpfile(java.io.File):void	org.apache.tools.ant.types.Commandline	0.8808457837760808	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.DotnetBaseMatchingTask::addFilesToCommand(java.util.Hashtable, org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand):void	org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand	0.8808459819129051	
+Move Method	org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs::runCmd(org.apache.tools.ant.types.Commandline, org.apache.tools.ant.taskdefs.ExecuteStreamHandler):int	org.apache.tools.ant.types.Commandline	0.8808460781748202	
+Move Method	org.apache.tools.ant.types.resources.Files::hasPatterns(org.apache.tools.ant.types.PatternSet):boolean	org.apache.tools.ant.types.PatternSet	0.8808461367901477	
+Move Method	org.apache.tools.ant.taskdefs.ExecTask::runExec(org.apache.tools.ant.taskdefs.Execute):void	org.apache.tools.ant.types.Commandline	0.8808472063883059	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.NetCommand::addArgument(java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808472948531046	
+Move Method	org.apache.tools.ant.taskdefs.optional.Javah::logAndAddFilesToCompile(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808477777723034	
+Move Method	org.apache.tools.ant.types.resources.JavaResource::getClasspath():org.apache.tools.ant.types.Path	org.apache.tools.ant.types.DataType	0.8808478287964879	
+Move Method	org.apache.tools.ant.taskdefs.AbstractCvsTask::addCommandArgument(org.apache.tools.ant.types.Commandline, java.lang.String):void	org.apache.tools.ant.types.Commandline	0.8808479995791619	
+Move Method	org.apache.tools.ant.Target::testIfCondition():boolean	org.apache.tools.ant.Project	0.8808492787591625	
+Move Method	org.apache.tools.ant.Target::testUnlessCondition():boolean	org.apache.tools.ant.Project	0.8808492787591625	
+Move Method	org.apache.tools.ant.taskdefs.optional.SchemaValidate::setNoNamespaceURL(java.lang.String):void	org.apache.tools.ant.taskdefs.optional.SchemaValidate.SchemaLocation	0.8808496938281785	
+Move Method	org.apache.tools.ant.taskdefs.optional.SchemaValidate::setNoNamespaceFile(java.io.File):void	org.apache.tools.ant.taskdefs.optional.SchemaValidate.SchemaLocation	0.8808496938281785	
+Move Method	org.apache.tools.ant.taskdefs.Touch::addFileset(org.apache.tools.ant.types.FileSet):void	org.apache.tools.ant.types.resources.BaseResourceCollectionContainer	0.8808499321081495	
+Move Method	org.apache.tools.ant.types.resources.ArchiveResource::getArchive():org.apache.tools.ant.types.Resource	org.apache.tools.ant.types.DataType	0.8808506726014557	
+Move Method	org.apache.tools.ant.taskdefs.Sync::logRemovedCount(int, java.lang.String, java.lang.String, java.lang.String):void	org.apache.tools.ant.taskdefs.Copy	0.8808511855041199	
+Move Method	org.apache.tools.ant.types.spi.Service::addConfiguredProvider(org.apache.tools.ant.types.spi.Provider):void	org.apache.tools.ant.types.spi.Provider	0.8808516731642904	
+Move Method	org.apache.tools.ant.types.Mapper::getImplementationClass():java.lang.Class	org.apache.tools.ant.types.Mapper.MapperType	0.8808524087802898	
+Move Method	org.apache.tools.ant.taskdefs.Rmic::getCurrentCompilerArgs():java.lang.String[]	org.apache.tools.ant.util.facade.FacadeTaskHelper	0.8808527846008405	
+Move Method	org.apache.tools.ant.taskdefs.optional.vss.MSVSS::formatCommandLine(org.apache.tools.ant.types.Commandline):java.lang.String	org.apache.tools.ant.types.Commandline	0.8808528015565463	
+Move Method	org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter::logAndAddFilesToCompile(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808534596931967	
+Move Method	org.apache.tools.ant.ComponentHelper::sameDefinition(org.apache.tools.ant.AntTypeDefinition, org.apache.tools.ant.AntTypeDefinition):boolean	org.apache.tools.ant.AntTypeDefinition	0.8808538789401159	
+Move Method	org.apache.tools.ant.taskdefs.optional.extension.LibraryDisplayer::displaySpecification(org.apache.tools.ant.taskdefs.optional.extension.Specification):void	org.apache.tools.ant.taskdefs.optional.extension.Specification	0.8808539677044649	
+Move Method	org.apache.tools.ant.taskdefs.Jar::addConfiguredService(org.apache.tools.ant.types.spi.Service):void	org.apache.tools.ant.types.spi.Service	0.8808551896366001	
+Move Method	org.apache.tools.ant.taskdefs.SQLExec.Transaction::runTransaction(java.io.PrintStream):void	org.apache.tools.ant.types.Resource	0.8808553851860139	
+Move Method	org.apache.tools.ant.AntClassLoader::log(java.lang.String, int):void	org.apache.tools.ant.Project	0.8808555077648217	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.JUnitTask::addConfiguredSysproperty(org.apache.tools.ant.types.Environment.Variable):void	org.apache.tools.ant.types.Environment.Variable	0.8808570364948876	
+Move Method	org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout::getOutCommand(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808580071802286	
+Move Method	org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout::getBranchCommand(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808580071802286	
+Move Method	org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout::getCommentCommand(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808580071802286	
+Move Method	org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout::getCommentFileCommand(org.apache.tools.ant.types.Commandline):void	org.apache.tools.ant.types.Commandline	0.8808580071802286	
+Move Method	org.apache.tools.ant.taskdefs.VerifyJar.BufferingOutputFilter::clearBufferingOutputFilter():void	org.apache.tools.ant.taskdefs.VerifyJar.BufferingOutputFilterReader	0.8808587439797568	
+Move Method	org.apache.tools.mail.MailMessage::disconnect():void	org.apache.tools.mail.SmtpResponseReader	0.8808594044541938	
+Move Method	org.apache.tools.ant.taskdefs.optional.junit.BatchTest::getFilenames():java.lang.String[]	org.apache.tools.ant.types.resources.Resources	0.8808606809150589	
+Move Method	org.apache.tools.mail.MailMessage::getReady():void	org.apache.tools.mail.SmtpResponseReader	0.8808623130530668	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet::isRebuildNeeded(org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet.Schema, long):boolean	org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet.Schema	0.8808623293839788	
+Move Method	org.apache.tools.ant.taskdefs.optional.SchemaValidate::getNoNamespaceSchemaURL():java.lang.String	org.apache.tools.ant.taskdefs.optional.SchemaValidate.SchemaLocation	0.8808632050145198	
+Move Method	org.apache.tools.ant.taskdefs.optional.javah.Kaffeh::setupKaffehCommand(org.apache.tools.ant.taskdefs.optional.Javah):org.apache.tools.ant.types.Commandline	org.apache.tools.ant.taskdefs.optional.Javah	0.8808684968009777	
+Move Method	org.apache.tools.mail.MailMessage::send(java.lang.String, int[]):void	org.apache.tools.mail.MailPrintStream	0.880871333937724	
+Move Method	org.apache.tools.ant.helper.ProjectHelper2::parse(org.apache.tools.ant.Project, java.lang.Object, org.apache.tools.ant.helper.ProjectHelper2.RootHandler):void	org.apache.tools.ant.util.FileUtils	0.880873569432957	
+Move Method	org.apache.tools.ant.taskdefs.Javadoc.GroupArgument::getTitle():java.lang.String	org.apache.tools.ant.taskdefs.Javadoc.Html	0.8808764440526313	
+Move Method	org.apache.tools.ant.taskdefs.optional.native2ascii.DefaultNative2Ascii::setup(org.apache.tools.ant.types.Commandline, org.apache.tools.ant.taskdefs.optional.Native2Ascii):void	org.apache.tools.ant.types.Commandline	0.8808767208293147	
+Move Method	org.apache.tools.ant.taskdefs.cvslib.ChangeLogWriter::printChangeLog(java.io.PrintWriter, org.apache.tools.ant.taskdefs.cvslib.CVSEntry[]):void	org.apache.tools.ant.util.DOMElementWriter	0.8808769769104661	
+Move Method	org.apache.tools.ant.types.resources.CompressedResource::getResource():org.apache.tools.ant.types.Resource	org.apache.tools.ant.types.DataType	0.880877136412271	
+Move Method	org.apache.tools.ant.taskdefs.optional.native2ascii.DefaultNative2Ascii::addFiles(org.apache.tools.ant.types.Commandline, org.apache.tools.ant.ProjectComponent, java.io.File, java.io.File):void	org.apache.tools.ant.types.Commandline	0.8808818931251564	
+Move Method	org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet::validate():void	org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet.Schema	0.8808822048144503	
+Move Method	org.apache.tools.ant.taskdefs.Untar::expandStream(java.lang.String, java.io.InputStream, java.io.File):void	org.apache.tools.ant.taskdefs.Untar.UntarCompressionMethod	0.8808858810707307	
+Move Method	org.apache.tools.ant.taskdefs.DependSet.HideMissingBasedir::basedirExists():boolean	org.apache.tools.ant.types.AbstractFileSet	0.8808958955767159	
+Move Method	org.apache.tools.ant.taskdefs.Execute.CommandLauncher::exec(org.apache.tools.ant.Project, java.lang.String[], java.lang.String[]):java.lang.Process	org.apache.tools.ant.Project	0.8809476596262085	

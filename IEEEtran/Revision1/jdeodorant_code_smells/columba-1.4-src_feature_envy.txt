@@ -1,0 +1,131 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.columba.core.scripting.extensions.ExtensionPointManager::addExtensionPoint(org.columba.core.scripting.extensions.AbstractExtensionPoint):void	org.columba.core.scripting.extensions.AbstractExtensionPoint	0.8868390654127065	
+Move Method	org.columba.addressbook.parser.XMLContactDocumentParser::addAddress(org.columba.addressbook.model.AddressModel):void	org.columba.addressbook.model.AddressModel	0.8869138646006638	
+Move Method	org.columba.core.scripting.extensions.ExtensionEventBus::fireEvent(org.columba.core.scripting.extensions.ExtensionEvent):void	org.columba.core.scripting.extensions.ExtensionEvent	0.8869237042237917	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::fillPhoneView(org.columba.addressbook.model.PhoneModel, javax.swing.JComboBox, javax.swing.JTextField):void	org.columba.addressbook.model.PhoneModel	0.8869691312612932	
+Move Method	org.columba.core.gui.plugin.PluginTree::addPlugin(org.columba.api.plugin.PluginMetadata):void	org.columba.api.plugin.PluginMetadata	0.8869707740953359	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::fillIMView(org.columba.addressbook.model.InstantMessagingModel, javax.swing.JComboBox, javax.swing.JTextField):void	org.columba.addressbook.model.InstantMessagingModel	0.886975181775699	
+Move Method	org.columba.core.gui.profiles.ProfileManager::addProfile(org.columba.core.gui.profiles.Profile):void	org.columba.core.gui.profiles.Profile	0.8869864679738887	
+Move Method	org.columba.mail.gui.composer.AttachmentView::add(org.columba.ristretto.message.MimePart):void	org.columba.mail.gui.composer.AttachmentView.AttachmentImageIconLoader	0.8869935679924581	
+Move Method	org.columba.core.gui.util.AboutDialog.MemoryMonitorThread::updateDisplay():void	org.columba.core.gui.util.AboutDialog.MemoryPanel	0.8870145406123331	
+Move Method	org.columba.addressbook.parser.XMLContactDocumentParser::addPhone(org.columba.addressbook.model.PhoneModel):void	org.columba.addressbook.model.PhoneModel	0.8870249262264897	
+Move Method	org.columba.addressbook.parser.XMLContactDocumentParser::addInstantMessaging(org.columba.addressbook.model.InstantMessagingModel):void	org.columba.addressbook.model.InstantMessagingModel	0.8870309786874879	
+Move Method	org.columba.mail.gui.composer.ComposerController::layoutEditorContainer():void	org.columba.mail.gui.composer.TextEditorPanel	0.8870318054970533	
+Move Method	org.columba.mail.gui.tree.TreeViewTransferHandler::importMessageReferences(org.columba.mail.gui.tree.TreeView, org.columba.mail.gui.table.MessageReferencesTransfer):boolean	org.columba.mail.gui.table.MessageReferencesTransfer	0.887033686366018	
+Move Method	org.columba.mail.gui.config.filter.plugins.DefaultCriteriaRow::updateComponents(boolean):void	org.columba.core.filter.FilterCriteria	0.8870419975909501	
+Move Method	org.columba.core.print.cPage::getPrintableAreaSize():org.columba.core.print.cSize	org.columba.core.print.cSize	0.887052901922251	
+Move Method	org.columba.core.scripting.FileObserverThread::getNewScripts():java.io.File[]	org.columba.core.scripting.config.BeanshellConfig	0.8870582092145062	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::updateFullNameDialogComponents(boolean):void	org.columba.addressbook.gui.dialog.contact.FullNameDialog	0.887062492327765	
+Move Method	org.columba.mail.gui.message.MessageController::layoutComponents():void	org.columba.mail.gui.message.viewer.SpamStatusViewer	0.8870629361714963	
+Move Method	org.columba.core.scripting.config.Options::getInternalPollingInterval():int	org.columba.core.config.DefaultItem	0.8870650325582164	
+Move Method	org.columba.core.command.CommandProcessor::addOp(org.columba.core.command.Command, int):void	org.columba.core.command.Command	0.8870653802354138	
+Move Method	org.columba.mail.composer.MessageComposer::initHeader():org.columba.mail.message.SendableHeader	org.columba.mail.gui.composer.ComposerModel	0.8870685231692611	
+Move Method	org.columba.addressbook.gui.table.TableController::addMouseListenerToHeaderInTable():void	org.columba.addressbook.gui.table.model.SortDecorator	0.8870686212067169	
+Move Method	org.columba.mail.gui.composer.AttachmentController::updateComponents(boolean):void	org.columba.mail.gui.composer.AttachmentView	0.8870698706534248	
+Move Method	org.columba.mail.gui.composer.HeaderController::updateComponents(boolean):void	org.columba.mail.gui.composer.HeaderView	0.8870712579733611	
+Move Method	org.columba.mail.gui.message.viewer.AttachmentsViewer::getLocalReference():org.columba.mail.command.MailFolderCommandReference	org.columba.mail.command.MailFolderCommandReference	0.8870723458067274	
+Move Method	org.columba.mail.gui.table.TableViewTransferHandler::importMessageReferences(org.columba.mail.gui.table.TableView, org.columba.mail.gui.table.MessageReferencesTransfer):boolean	org.columba.mail.gui.table.MessageReferencesTransfer	0.8870759444841916	
+Move Method	org.columba.mail.smtp.SMTPServer::sendMessage(org.columba.mail.composer.SendableMessage, org.columba.api.command.IWorkerStatusController):void	org.columba.mail.composer.SendableMessage	0.8870780220812182	
+Move Method	org.columba.mail.gui.message.viewer.AttachmentsViewer::setMimePartTree(org.columba.ristretto.message.MimeTree):boolean	org.columba.mail.gui.message.viewer.AttachmentModel	0.8870825322064578	
+Move Method	org.columba.core.xml.XmlIO::_writeSubNode(java.io.Writer, org.columba.core.xml.XmlElement, int):void	org.columba.core.xml.XmlElement	0.8870829552266593	
+Move Method	org.columba.mail.smtp.SMTPServer::getName():java.lang.String	org.columba.mail.config.AccountItem	0.8870839446297425	
+Move Method	org.columba.core.scripting.interpreter.InterpreterManager::executeScript(org.columba.core.scripting.model.ColumbaScript):void	org.columba.core.scripting.model.ColumbaScript	0.8870850764332355	
+Move Method	org.columba.mail.gui.composer.command.OpenMessageWithComposerCommand::initHeader(org.columba.ristretto.message.Message):void	org.columba.mail.gui.composer.ComposerModel	0.8870855245589927	
+Move Method	org.columba.core.gui.statusbar.StatusBar::updateGui():void	org.columba.core.command.Worker	0.8870860973044682	
+Move Method	org.columba.chat.ui.conversation.SendingMessageController::enableButton():void	org.columba.chat.ui.conversation.ChatMediator	0.8870869959964077	
+Move Method	org.columba.mail.gui.composer.command.ReplyCommand::initMimeHeader(org.columba.ristretto.message.MimePart):void	org.columba.mail.gui.composer.ComposerModel	0.8870880466538393	
+Move Method	org.columba.mail.smtp.SMTPServer::pop3Authentification():void	org.columba.mail.config.AccountItem	0.8870887310538035	
+Move Method	org.columba.mail.pop3.command.FetchNewMessagesCommand::downloadMessage(java.lang.Object, org.columba.api.command.IWorkerStatusController):void	org.columba.mail.pop3.POP3Server	0.8870893215206695	
+Move Method	org.columba.mail.config.Identity::setSignature(java.io.File):void	org.columba.core.xml.XmlElement	0.8870895536414908	
+Move Method	org.columba.mail.pop3.POP3Server::getFolder():org.columba.mail.folder.IMailbox	org.columba.mail.config.AccountItem	0.8870897952850586	
+Move Method	org.columba.mail.gui.config.account.OutgoingServerPanel::updateAuthenticationComboBox():void	org.columba.mail.config.AccountItem	0.887090632901317	
+Move Method	org.columba.mail.gui.composer.HeaderController::getHeaderItemList(int):java.util.List<org.columba.addressbook.facade.IHeaderItem>	org.columba.mail.gui.composer.HeaderView	0.8870907300799155	
+Move Method	org.columba.core.gui.docking.DockingPanel::setActive(boolean):void	org.columba.core.gui.docking.TitleBar	0.887091009343417	
+Move Method	org.columba.core.base.SwingWorker::interrupt():void	org.columba.core.base.SwingWorker.ThreadVar	0.8870932523916663	
+Move Method	org.columba.core.gui.profiles.ProfileManager::setAlwaysAsk(boolean):void	org.columba.core.xml.XmlIO	0.8870935018605669	
+Move Method	org.columba.mail.config.Identity::setOrganisation(java.lang.String):void	org.columba.core.xml.XmlElement	0.8870942260957837	
+Move Method	org.columba.mail.mailchecking.AbstractMailCheckingAction::createName():void	org.columba.mail.config.AccountItem	0.8870942480859804	
+Move Method	org.columba.mail.gui.config.account.IncomingServerPanel::updateAuthenticationComboBox():void	org.columba.mail.config.AccountItem	0.8870948193893906	
+Move Method	org.columba.mail.gui.contact.list.ContactList::getContactList(int):org.columba.addressbook.facade.IHeaderItem	org.columba.mail.gui.contact.list.ContactListModel	0.8870954447937436	
+Move Method	org.columba.addressbook.gui.list.AddressbookListView::setHeaderItemListAddressbookListView(java.util.List<org.columba.addressbook.model.IBasicModelPartial>):void	org.columba.addressbook.gui.list.AddressbookListModel	0.8870954457550115	
+Move Method	org.columba.addressbook.gui.list.AddressbookListView::getAddressbookListView(int):org.columba.addressbook.model.IBasicModelPartial	org.columba.addressbook.gui.list.AddressbookListModel	0.8870954457550115	
+Move Method	org.columba.mail.gui.contact.list.ContactList::setHeaderItemListContactList(java.util.List<org.columba.addressbook.facade.IHeaderItem>):void	org.columba.mail.gui.contact.list.ContactListModel	0.8870954534207354	
+Move Method	org.columba.mail.config.AccountItem::isDefault():boolean	org.columba.core.config.DefaultItem	0.8870955442727804	
+Move Method	org.columba.addressbook.folder.AddressbookTreeNode::getAttributes():java.util.Hashtable	org.columba.core.config.DefaultItem	0.887096623951077	
+Move Method	org.columba.mail.gui.composer.ComposerController::updateComponents(boolean):void	org.columba.mail.gui.composer.PriorityController	0.8870974013823301	
+Move Method	org.columba.mail.gui.composer.ComposerController::checkState():boolean	org.columba.mail.gui.composer.SubjectController	0.8870974388214986	
+Move Method	org.columba.mail.gui.message.viewer.HeaderViewer::layoutComponents():void	org.columba.mail.gui.message.viewer.SpamStatusViewer	0.8870984713083073	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::fillSortStringComboBox():void	org.columba.addressbook.gui.dialog.contact.FullNameDialog	0.8870985384801595	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::fillIMModel(javax.swing.JTextField, javax.swing.JComboBox, org.columba.addressbook.model.ContactModel):void	org.columba.addressbook.model.ContactModel	0.8870986592117889	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::fillPhoneModel(javax.swing.JTextField, javax.swing.JComboBox, org.columba.addressbook.model.ContactModel):void	org.columba.addressbook.model.ContactModel	0.8870986592117889	
+Move Method	org.columba.addressbook.gui.dialog.contact.ContactEditorDialog::fillEmailModel(javax.swing.JTextField, javax.swing.JComboBox, org.columba.addressbook.model.ContactModel):void	org.columba.addressbook.model.ContactModel	0.8870986592117889	
+Move Method	org.columba.mail.config.MailConfig::getMailConfig(java.lang.String):org.columba.core.xml.XmlElement	org.columba.core.config.Config	0.8870989692511545	
+Move Method	org.columba.mail.gui.composer.command.ReplyCommand::initHeader(org.columba.mail.folder.IMailbox, java.lang.Object[]):void	org.columba.mail.gui.composer.ComposerModel	0.8870996962820338	
+Move Method	org.columba.core.gui.frame.FrameManager::storeViews():void	org.columba.core.xml.XmlElement	0.8870997713864759	
+Move Method	org.columba.core.gui.frame.DefaultContainer::loadPositions(org.columba.core.config.ViewItem):void	org.columba.core.gui.frame.DefaultFrameController	0.8870999654136886	
+Move Method	org.columba.mail.gui.composer.ComposerController::saveConfiguration():void	org.columba.mail.gui.composer.ComposerModel	0.8871001871318761	
+Move Method	org.columba.mail.gui.composer.command.OpenMessageWithComposerCommand::initAttachments(org.columba.ristretto.message.MimeTree, org.columba.ristretto.message.MimePart):void	org.columba.mail.gui.composer.ComposerModel	0.8871004468113444	
+Move Method	org.columba.core.gui.profiles.ProfileManager::isAlwaysAsk():boolean	org.columba.core.xml.XmlElement	0.8871004970240508	
+Move Method	org.columba.core.gui.frame.FrameManager::saveDefaultView(org.columba.core.config.ViewItem):void	org.columba.core.xml.XmlElement	0.887101185963616	
+Move Method	org.columba.core.gui.dialog.DateChooserDialog::getDate():java.util.Date	org.columba.core.gui.base.DateChooser	0.8871018743227373	
+Move Method	org.columba.core.gui.dialog.DateChooserDialog::setDate(java.util.Date):void	org.columba.core.gui.base.DateChooser	0.8871018743227373	
+Move Method	org.columba.mail.gui.message.viewer.AttachmentsViewer::getSelectedMimePart():org.columba.ristretto.message.StreamableMimePart	org.columba.mail.gui.message.viewer.AttachmentModel	0.8871026209259764	
+	current system		0.8871033451662547	
+Move Method	org.columba.mail.config.Identity::getSignature():java.io.File	org.columba.core.xml.XmlElement	0.8871035703619871	
+Move Method	org.columba.mail.smtp.SMTPServer::getLoginMethod():int	org.columba.mail.config.AccountItem	0.8871040777550164	
+Move Method	org.columba.mail.gui.composer.AttachmentController::isSelectAllActionEnabled():boolean	org.columba.mail.gui.composer.AttachmentView	0.8871048810000107	
+Move Method	org.columba.mail.gui.table.TableController::initTooltips():void	org.columba.mail.gui.table.ColumnHeaderTooltips	0.8871062238130512	
+Move Method	org.columba.core.gui.util.ThrobberIcon::update():void	org.columba.core.gui.base.AnimatedGIFComponent	0.8871066877268438	
+Move Method	org.columba.addressbook.config.AddressbookConfig::getAddressbookConfig(java.lang.String):org.columba.core.xml.XmlElement	org.columba.core.config.Config	0.8871072175217264	
+Move Method	org.columba.mail.folder.imap.IMAPRootFolder::findSpecialFolders():void	org.columba.mail.config.AccountItem	0.8871072521439379	
+Move Method	org.columba.mail.gui.tree.FolderTreeModel::getFolder(org.columba.mail.gui.tree.util.TreeNodeList):org.columba.mail.folder.IMailFolder	org.columba.mail.gui.tree.util.TreeNodeList	0.8871076498650887	
+Move Method	org.columba.mail.gui.tree.TreeViewTransferHandler::exportFolder(org.columba.mail.gui.tree.TreeView, org.columba.mail.folder.IMailbox):void	org.columba.mail.gui.tree.TreeView	0.887108374787874	
+Move Method	org.columba.mail.pop3.command.FetchNewMessagesCommand::synchronize():java.util.List	org.columba.mail.pop3.POP3Server	0.8871087900778564	
+Move Method	org.columba.mail.gui.tree.FolderTreeModel::add(org.columba.core.xml.XmlElement, org.columba.mail.folder.IMailFolder):org.columba.mail.folder.IMailFolder	org.columba.core.xml.XmlElement	0.8871091989846259	
+Move Method	org.columba.mail.gui.message.command.SaveAttachmentTemporaryCommand::waitForCommandToComplete():void	org.columba.core.base.Semaphore	0.8871114159191208	
+Move Method	org.columba.mail.gui.composer.AttachmentController::cut():void	org.columba.mail.gui.composer.AttachmentView	0.8871117428875395	
+Move Method	org.columba.mail.composer.SendableMessage::getSourceStream():java.io.InputStream	org.columba.core.io.CloneStreamMaster	0.8871117576571191	
+Move Method	org.columba.mail.spam.spamassassin.IPCHelper::getOutputString():java.lang.String	org.columba.mail.spam.spamassassin.IPCHelper.StreamThread	0.8871119448962391	
+Move Method	org.columba.mail.spam.spamassassin.IPCHelper::getErrorString():java.lang.String	org.columba.mail.spam.spamassassin.IPCHelper.StreamThread	0.8871119755878955	
+Move Method	org.columba.mail.gui.composer.AttachmentController::addFileAttachment(java.io.File):void	org.columba.mail.gui.composer.AttachmentView	0.8871119773266959	
+Move Method	org.columba.core.base.IPCHelper::getErrorString():java.lang.String	org.columba.core.base.IPCHelper.StreamThread	0.8871119854703448	
+Move Method	org.columba.core.base.IPCHelper::getOutputString():java.lang.String	org.columba.core.base.IPCHelper.StreamThread	0.8871119854703448	
+Move Method	org.columba.mail.parser.PassiveHeaderParserInputStream::getHeader():org.columba.ristretto.message.Header	org.columba.core.base.Barrier	0.8871129870520866	
+Move Method	org.columba.addressbook.gui.table.TableController::getSelectedItem():org.columba.addressbook.facade.IContactItem	org.columba.addressbook.gui.table.model.SortDecorator	0.8871131768626404	
+Move Method	org.columba.core.print.cPoint::getPoint():java.awt.Point	org.columba.core.print.cUnit	0.8871144003899516	
+Move Method	org.columba.core.print.cPoint::add(org.columba.core.print.cPoint):org.columba.core.print.cPoint	org.columba.core.print.cUnit	0.8871144027260374	
+Move Method	org.columba.core.print.cPoint::subHeight(org.columba.core.print.cUnit):org.columba.core.print.cPoint	org.columba.core.print.cUnit	0.8871144027260374	
+Move Method	org.columba.core.print.cPoint::addHeight(org.columba.core.print.cUnit):org.columba.core.print.cPoint	org.columba.core.print.cUnit	0.8871144035884266	
+Move Method	org.columba.core.print.cSize::getDimension2D():java.awt.geom.Dimension2D	org.columba.core.print.cUnit	0.887114403592092	
+Move Method	org.columba.core.print.cSize::getDimension():java.awt.Dimension	org.columba.core.print.cUnit	0.887114403592092	
+Move Method	org.columba.core.print.cPoint::getPoint2D():java.awt.geom.Point2D.Double	org.columba.core.print.cUnit	0.8871144043491556	
+Move Method	org.columba.core.print.cSize::subHeight(org.columba.core.print.cUnit):org.columba.core.print.cSize	org.columba.core.print.cUnit	0.8871144061370776	
+Move Method	org.columba.addressbook.gui.table.TableController::getUids():java.lang.String[]	org.columba.addressbook.gui.table.model.FilterDecorator	0.8871148568152942	
+Move Method	org.columba.core.filemonitor.FileMonitorService::monitorFile(java.io.File, org.columba.core.filemonitor.FileObserver):void	org.columba.core.filemonitor.ObserverThread	0.8871153413873195	
+Move Method	org.columba.core.scripting.FileObserverThread::execChangedFiles(java.util.List):void	org.columba.core.scripting.interpreter.InterpreterManager	0.8871156975950664	
+Move Method	org.columba.mail.gui.composer.AttachmentController::removeSelected():void	org.columba.mail.gui.composer.AttachmentView	0.8871172554979304	
+Move Method	org.columba.mail.gui.composer.AttachmentController::delete():void	org.columba.mail.gui.composer.AttachmentView	0.8871175196249336	
+Move Method	org.columba.mail.config.MailConfig::getMainFrameOptionsConfig():org.columba.mail.config.MainFrameOptionsXmlConfig	org.columba.core.config.Config	0.8871177050348352	
+Move Method	org.columba.mail.config.MailConfig::getAccountList():org.columba.mail.config.AccountList	org.columba.core.config.Config	0.8871177053520488	
+Move Method	org.columba.mail.config.MailConfig::getFolderConfig():org.columba.mail.config.FolderXmlConfig	org.columba.core.config.Config	0.8871177061249566	
+Move Method	org.columba.mail.config.MailConfig::getComposerOptionsConfig():org.columba.mail.config.ComposerOptionsXmlConfig	org.columba.core.config.Config	0.8871177061695188	
+Move Method	org.columba.mail.gui.tree.TreeViewTransferHandler::canHandleMessageImport(org.columba.mail.gui.tree.TreeView, org.columba.mail.folder.IMailFolder):boolean	org.columba.mail.gui.tree.TreeView	0.8871190546691458	
+Move Method	org.columba.core.gui.menu.MenuXMLDecoder::extendMenuBar(org.columba.core.gui.menu.ExtendableMenuBar, java.io.InputStream):void	org.columba.core.gui.menu.ExtendableMenuBar	0.887119275165122	
+Move Method	org.columba.mail.gui.tree.TreeViewTransferHandler::importFolderReferences(org.columba.mail.gui.tree.TreeView, org.columba.mail.gui.tree.FolderTransfer):boolean	org.columba.mail.gui.tree.TreeView	0.8871199695942417	
+Move Method	org.columba.mail.gui.tree.TreeViewTransferHandler::canHandleFolderImport(org.columba.mail.gui.tree.TreeView, org.columba.mail.folder.IMailFolder):boolean	org.columba.mail.gui.tree.TreeView	0.8871199726275318	
+Move Method	org.columba.mail.pop3.POP3Server::getMessage(java.lang.Object, org.columba.api.command.IWorkerStatusController):org.columba.mail.message.ColumbaMessage	org.columba.mail.pop3.POP3Store	0.8871202037185427	
+Move Method	org.columba.mail.gui.composer.util.ExternalEditor::writeToFile(org.columba.mail.gui.composer.AbstractEditorController):java.io.File	org.columba.mail.gui.composer.AbstractEditorController	0.8871214643745696	
+Move Method	org.columba.mail.composer.MessageComposer::composeTextMimePart(boolean):org.columba.ristretto.message.StreamableMimePart	org.columba.mail.gui.composer.ComposerModel	0.8871233542695048	
+Move Method	org.columba.mail.gui.message.viewer.HeaderViewer::updateGUI():void	org.columba.mail.gui.message.viewer.HeaderViewer.HeaderPanel	0.8871237029085269	
+Move Method	org.columba.addressbook.gui.tree.AddressbookTreeModel::add(org.columba.core.xml.XmlElement, org.columba.addressbook.folder.AddressbookTreeNode):org.columba.addressbook.folder.AddressbookTreeNode	org.columba.core.xml.XmlElement	0.8871263089911234	
+Move Method	org.columba.core.command.TaskManager::exists(org.columba.core.command.Worker):boolean	org.columba.core.base.Mutex	0.887128302163369	
+Move Method	org.columba.mail.composer.MessageComposer::composeHtmlMimePart(boolean):org.columba.ristretto.message.StreamableMimePart	org.columba.mail.gui.composer.ComposerModel	0.8871312581682941	
+Move Method	org.columba.mail.gui.composer.util.ExternalEditor::startExternalEditor(org.columba.mail.gui.composer.AbstractEditorController):boolean	org.columba.mail.gui.composer.AbstractEditorController	0.8871322538800827	
+Move Method	org.columba.mail.gui.composer.command.OpenMessageWithComposerCommand::initBody(org.columba.ristretto.message.Message, boolean):void	org.columba.mail.gui.composer.ComposerModel	0.887140804031907	
+Move Method	org.columba.core.command.CommandProcessor::operationFinished(org.columba.api.command.ICommand, org.columba.core.command.Worker):void	org.columba.core.base.Mutex	0.8871515244866962	
+Move Method	org.columba.core.command.TaskManager::unregister(org.columba.core.base.SwingWorker.ThreadVar):void	org.columba.core.base.Mutex	0.8871518580930298	
+Move Method	org.columba.core.command.TaskManager::register(org.columba.core.command.Worker):void	org.columba.core.base.Mutex	0.8871518582521277	
+Move Method	org.columba.mail.gui.composer.ComposerController::updateComponents(boolean):void	org.columba.mail.gui.composer.AccountController	0.8871579013765798	
+Move Method	org.columba.core.base.SwingWorker::get():java.lang.Object	org.columba.core.base.SwingWorker.ThreadVar	0.8871710745296297	
+Move Method	org.columba.core.scripting.service.ServiceManager::getServiceInstance(org.columba.core.plugin.Extension):org.columba.core.scripting.service.api.IColumbaService	org.columba.core.plugin.Extension	0.8871774080233861	
+Move Method	org.columba.addressbook.folder.XmlDataStorage::getFile(java.lang.String):java.io.File	org.columba.addressbook.folder.AbstractFolder	0.8872177094829348	

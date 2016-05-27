@@ -1,0 +1,182 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.gjt.sp.jedit.gui.ToolBarManager::addToolBar(java.awt.Container, java.util.ArrayList, org.gjt.sp.jedit.gui.ToolBarManager.Entry):void	org.gjt.sp.jedit.gui.ToolBarManager.Entry	0.881610231426213	
+Move Method	org.gjt.sp.jedit.options.EditingOptionPane::saveMode():void	org.gjt.sp.jedit.options.EditingOptionPane.ModeProperties	0.8816612426130239	
+Move Method	installer.TarEntry::parseTarHeader(installer.TarHeader, byte[]):void	installer.TarHeader	0.8816932288717351	
+Move Method	installer.TarEntry::nameTarHeader(installer.TarHeader, java.lang.String):void	installer.TarHeader	0.8817158431709979	
+Move Method	installer.TarEntry::writeEntryHeader(byte[]):void	installer.TarHeader	0.8817368975175931	
+Move Method	gnu.regexp.RE::getMinMax(char[], int, gnu.regexp.IntPair, gnu.regexp.RESyntax):int	gnu.regexp.IntPair	0.8817762178105176	
+Move Method	macos.Delegate::handleOpenFile(com.apple.eawt.ApplicationEvent):void	com.apple.eawt.ApplicationEvent	0.8818169994719448	
+Move Method	installer.SwingInstall::install():void	installer.SwingInstall.ChooseDirectory	0.8818208468907045	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::lineInStructureScope(int):boolean	org.gjt.sp.jedit.textarea.StructureMatcher.Match	0.8818518725263391	
+Move Method	org.gjt.sp.jedit.pluginmgr.ManagePanel.EntryCompare::compareNames(org.gjt.sp.jedit.pluginmgr.ManagePanel.Entry, org.gjt.sp.jedit.pluginmgr.ManagePanel.Entry):int	org.gjt.sp.jedit.pluginmgr.ManagePanel.Entry	0.881858567612065	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::isStructureHighlightVisible():boolean	org.gjt.sp.jedit.textarea.StructureMatcher.Match	0.8818682500915819	
+Move Method	bsh.BSHAllocationExpression::primitiveArrayAllocation(bsh.BSHPrimitiveType, bsh.BSHArrayDimensions, bsh.CallStack, bsh.Interpreter):java.lang.Object	bsh.BSHPrimitiveType	0.8818699891890422	
+Move Method	macos.Delegate::handleOpenFile(org.gjt.sp.jedit.msg.ViewUpdate):void	org.gjt.sp.jedit.msg.ViewUpdate	0.8818763077018439	
+Move Method	macos.Delegate::handleAbout(com.apple.eawt.ApplicationEvent):void	com.apple.eawt.ApplicationEvent	0.8818771211982095	
+Move Method	macos.Delegate::handlePreferences(com.apple.eawt.ApplicationEvent):void	com.apple.eawt.ApplicationEvent	0.8818771211982095	
+Move Method	org.gjt.sp.jedit.textarea.DisplayManager::_setScreenLineCount(int, int, int):void	org.gjt.sp.jedit.textarea.DisplayManager.Anchor	0.8818784706062016	
+Move Method	org.gjt.sp.jedit.textarea.DisplayManager.BufferChangeHandler::preContentRemoved(org.gjt.sp.jedit.textarea.DisplayManager.Anchor, int, int):void	org.gjt.sp.jedit.textarea.DisplayManager.Anchor	0.8818809605109083	
+Move Method	org.gjt.sp.jedit.textarea.ChunkCache::xToSubregionOffset(org.gjt.sp.jedit.textarea.ChunkCache.LineInfo, int, boolean):int	org.gjt.sp.jedit.textarea.ChunkCache.LineInfo	0.8818889003713327	
+Move Method	org.gjt.sp.jedit.browser.FileCellRenderer::getEntryWidth(org.gjt.sp.jedit.browser.VFSDirectoryEntryTableModel.Entry, java.awt.Font, java.awt.font.FontRenderContext):int	org.gjt.sp.jedit.browser.VFSDirectoryEntryTableModel.Entry	0.8818902836102065	
+Move Method	org.gjt.sp.jedit.textarea.DisplayManager.BufferChangeHandler::contentInserted(org.gjt.sp.jedit.textarea.DisplayManager.Anchor, int, int):void	org.gjt.sp.jedit.textarea.DisplayManager.Anchor	0.8818993287576162	
+Move Method	org.gjt.sp.jedit.View::handleBufferUpdate(org.gjt.sp.jedit.msg.BufferUpdate):void	org.gjt.sp.jedit.msg.BufferUpdate	0.8819118921686481	
+Move Method	bsh.SimpleNode::getLineNumber():int	bsh.Token	0.8819186891788389	
+Move Method	bsh.BSHAllocationExpression::arrayNewInstance(java.lang.Class, bsh.BSHArrayDimensions, bsh.CallStack):java.lang.Object	bsh.BSHArrayDimensions	0.8819188368259242	
+Move Method	macos.Delegate::openFile(com.apple.cocoa.application.NSPasteboard, java.lang.String):java.lang.String	com.apple.cocoa.application.NSPasteboard	0.8819223818530263	
+Move Method	macos.Delegate::openSelection(com.apple.cocoa.application.NSPasteboard, java.lang.String):java.lang.String	com.apple.cocoa.application.NSPasteboard	0.8819223818530263	
+Move Method	macos.Delegate::handleFileCodes(org.gjt.sp.jedit.msg.BufferUpdate):void	org.gjt.sp.jedit.msg.BufferUpdate	0.8819234165787379	
+Move Method	org.gjt.sp.jedit.options.AbbrevsOptionPane::add(org.gjt.sp.jedit.options.AbbrevsModel, java.lang.String, java.lang.String):void	org.gjt.sp.jedit.options.AbbrevsModel	0.881925191342133	
+Move Method	org.gjt.sp.jedit.help.HelpTOCPanel::loadTOC(javax.swing.tree.DefaultMutableTreeNode, java.lang.String):void	org.gjt.sp.jedit.help.HelpViewer	0.8819264524791713	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::showStructureStatusMessage(boolean):void	org.gjt.sp.jedit.textarea.StructureMatcher.Match	0.8819265492506083	
+Move Method	org.gjt.sp.jedit.textarea.DisplayManager::getScrollLineCount():int	org.gjt.sp.jedit.textarea.DisplayManager.Anchor	0.8819285773442477	
+Move Method	org.gjt.sp.jedit.browser.VFSDirectoryEntryTable::resizeColumnsAppropriately():void	org.gjt.sp.jedit.browser.FileCellRenderer	0.8819324802926062	
+Move Method	org.gjt.sp.jedit.ActionSet::removeAction(java.lang.String):void	org.gjt.sp.jedit.ActionContext	0.8819330209535523	
+Move Method	org.gjt.sp.jedit.textarea.ExtensionManager::paintScreenLineRange(org.gjt.sp.jedit.textarea.JEditTextArea, java.awt.Graphics2D, int, int, int, int):void	org.gjt.sp.jedit.textarea.JEditTextArea	0.8819368561714295	
+Move Method	org.gjt.sp.util.WorkThread::doRequest(org.gjt.sp.util.WorkThreadPool.Request):void	org.gjt.sp.util.WorkThreadPool.Request	0.8819374437407607	
+Move Method	macos.Delegate::insertSelection(com.apple.cocoa.application.NSPasteboard, java.lang.String):java.lang.String	com.apple.cocoa.application.NSPasteboard	0.8819374624146321	
+Move Method	org.gjt.sp.jedit.PluginJAR::startPlugin():void	org.gjt.sp.jedit.EditPlugin	0.8819424290360277	
+Move Method	org.gjt.sp.jedit.browser.VFSDirectoryEntryTable::maybeReloadDirectoryVFSDirectoryEntryTable(java.lang.String):void	org.gjt.sp.jedit.browser.BrowserView	0.881943526459111	
+Move Method	bsh.EvalError::getErrorText():java.lang.String	bsh.SimpleNode	0.8819448277889759	
+Move Method	bsh.EvalError::getErrorLineNumber():int	bsh.SimpleNode	0.8819448277889759	
+Move Method	bsh.EvalError::getErrorSourceFile():java.lang.String	bsh.SimpleNode	0.8819448277889759	
+Move Method	org.gjt.sp.jedit.Mode::accept(java.lang.String, java.lang.String):boolean	gnu.regexp.RE	0.881946337315868	
+Move Method	org.gjt.sp.jedit.ActionSet::removeAllActions():void	org.gjt.sp.jedit.ActionContext	0.8819463942860246	
+Move Method	org.gjt.sp.jedit.Buffer::checkFileForSave(org.gjt.sp.jedit.View, org.gjt.sp.jedit.io.VFS, java.lang.String):boolean	org.gjt.sp.jedit.io.VFS	0.8819507253178336	
+Move Method	org.gjt.sp.jedit.syntax.DisplayTokenHandler::canMerge(org.gjt.sp.jedit.syntax.Chunk, org.gjt.sp.jedit.syntax.Chunk, javax.swing.text.Segment):boolean	org.gjt.sp.jedit.syntax.Chunk	0.8819511543828163	
+Move Method	org.gjt.sp.jedit.buffer.BufferIORequest::writeMarkers(org.gjt.sp.jedit.Buffer, java.io.OutputStream):void	org.gjt.sp.jedit.Buffer	0.8819550728065898	
+Move Method	org.gjt.sp.jedit.gui.DockableWindowManager.DockableLayout::adjustDockingAreasToFit(java.awt.Dimension, int, int, int, int, int, int, int, int, java.awt.Dimension, java.awt.Dimension):int[]	org.gjt.sp.jedit.gui.PanelWindowContainer	0.8819554065638009	
+Move Method	org.gjt.sp.jedit.Buffer::checkFileForLoad(org.gjt.sp.jedit.View, org.gjt.sp.jedit.io.VFS, java.lang.String):boolean	org.gjt.sp.jedit.io.VFS	0.8819558722266277	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::shiftTallCaretLeft(org.gjt.sp.jedit.textarea.Selection.Rect):void	org.gjt.sp.jedit.textarea.Selection.Rect	0.8819564001950642	
+Move Method	org.gjt.sp.jedit.textarea.Selection.Rect::getColumnOnOtherLine(org.gjt.sp.jedit.Buffer, int, int):int	org.gjt.sp.jedit.Buffer	0.8819569210623501	
+Move Method	org.gjt.sp.jedit.buffer.BufferIORequest::readMarkers(org.gjt.sp.jedit.Buffer, java.io.InputStream):void	org.gjt.sp.jedit.Buffer	0.8819574958368426	
+Move Method	org.gjt.sp.jedit.textarea.StructureMatcher.Highlight::paintHighlight(java.awt.Graphics, int, int, int, int, org.gjt.sp.jedit.textarea.StructureMatcher.Match):void	org.gjt.sp.jedit.textarea.StructureMatcher.Match	0.8819588991096805	
+Move Method	org.gjt.sp.jedit.JARClassLoader::deactivate():void	org.gjt.sp.jedit.PluginJAR	0.8819591064091993	
+Move Method	org.gjt.sp.jedit.browser.VFSFileNameField::goToParent():void	org.gjt.sp.jedit.browser.VFSBrowser	0.8819597791958033	
+Move Method	installer.TarEntry::isDirectory():boolean	installer.TarHeader	0.8819600847044307	
+Move Method	org.gjt.sp.jedit.search.SearchBar::incrementalSearch(int, boolean):boolean	org.gjt.sp.jedit.View	0.8819604289974339	
+Move Method	bsh.Name::invokeLocalMethod(bsh.Interpreter, java.lang.Object[], bsh.CallStack, bsh.SimpleNode):java.lang.Object	bsh.NameSpace	0.8819621359296795	
+Move Method	org.gjt.sp.jedit.search.SearchDialog::synchronizeMultiFileSettings():void	org.gjt.sp.jedit.gui.HistoryTextField	0.8819628852219719	
+Move Method	org.gjt.sp.jedit.textarea.StructureMatcher.Highlight::getOffsets(int, org.gjt.sp.jedit.textarea.StructureMatcher.Match):int[]	org.gjt.sp.jedit.textarea.JEditTextArea	0.8819645763335732	
+Move Method	org.gjt.sp.jedit.buffer.BufferIORequest::write(org.gjt.sp.jedit.Buffer, java.io.OutputStream):void	org.gjt.sp.jedit.Buffer	0.8819648670450414	
+Move Method	org.gjt.sp.jedit.browser.VFSFileChooserDialog::doFileExistsWarning(java.lang.String):boolean	org.gjt.sp.jedit.browser.VFSBrowser	0.8819652354582712	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::doWordWrap(boolean):boolean	org.gjt.sp.jedit.Buffer	0.8819653004153354	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::tallCaretDelete(org.gjt.sp.jedit.textarea.Selection.Rect, boolean):void	org.gjt.sp.jedit.Buffer	0.8819659949142916	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::formatParagraph():void	org.gjt.sp.jedit.Buffer	0.8819662709638157	
+Move Method	installer.TarEntry::getUserId():int	installer.TarHeader	0.8819663303270869	
+Move Method	installer.TarEntry::getGroupId():int	installer.TarHeader	0.8819663303270869	
+Move Method	installer.TarEntry::getUserName():java.lang.String	installer.TarHeader	0.8819663303270869	
+Move Method	installer.TarEntry::getGroupName():java.lang.String	installer.TarHeader	0.8819663303270869	
+Move Method	bsh.Interpreter::setClassLoader(java.lang.ClassLoader):void	bsh.NameSpace	0.8819666477761293	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::joinLines():void	org.gjt.sp.jedit.Buffer	0.8819666574502429	
+Move Method	installer.TarEntry::getSize():long	installer.TarHeader	0.8819667865570947	
+Move Method	installer.TarEntry::setSize(long):void	installer.TarHeader	0.8819667995657668	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::getSelectedText(org.gjt.sp.jedit.textarea.Selection):java.lang.String	org.gjt.sp.jedit.textarea.Selection	0.881966815964501	
+Move Method	org.gjt.sp.jedit.pluginmgr.InstallPanel::updateModel():void	org.gjt.sp.jedit.pluginmgr.InstallPanel.PluginTableModel	0.8819671232562499	
+Move Method	installer.TarEntry::setModTime(long):void	installer.TarHeader	0.8819672245025908	
+Move Method	installer.TarEntry::setModTime(java.util.Date):void	installer.TarHeader	0.8819672245025908	
+Move Method	installer.TarEntry::getModTime():java.util.Date	installer.TarHeader	0.8819672245025908	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::lineComment():void	org.gjt.sp.jedit.Buffer	0.8819675095508996	
+Move Method	org.gjt.sp.jedit.gui.OptionsDialog::addOptionGroup(org.gjt.sp.jedit.OptionGroup):void	org.gjt.sp.jedit.OptionGroup	0.881967575663546	
+Move Method	installer.TarEntry::getNameTarEntry():java.lang.String	installer.TarHeader	0.8819680007629763	
+Move Method	installer.TarEntry::equals(installer.TarEntry):boolean	installer.TarHeader	0.8819680137719774	
+Move Method	installer.TarEntry::isDescendent(installer.TarEntry):boolean	installer.TarHeader	0.8819680137719774	
+Move Method	installer.TarEntry::setName(java.lang.String):void	installer.TarHeader	0.8819680137719774	
+Move Method	org.gjt.sp.jedit.View::handleEditPaneUpdate(org.gjt.sp.jedit.msg.EditPaneUpdate):void	org.gjt.sp.jedit.gui.StatusBar	0.8819681838799425	
+Move Method	org.gjt.sp.jedit.Buffer::invalidateCachedFoldLevels():void	org.gjt.sp.jedit.buffer.LineManager	0.8819685573882994	
+Move Method	org.gjt.sp.jedit.Buffer::endCompoundEdit():void	org.gjt.sp.jedit.buffer.UndoManager	0.8819688626149874	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::deleteParagraph():void	org.gjt.sp.jedit.Buffer	0.8819689293473402	
+Move Method	org.gjt.sp.jedit.syntax.TokenMarker::substitute(gnu.regexp.REMatch, char[]):char[]	gnu.regexp.REMatch	0.8819690933840133	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::spacesToTabs():void	org.gjt.sp.jedit.Buffer	0.8819691828088129	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::tabsToSpaces():void	org.gjt.sp.jedit.Buffer	0.8819691828088129	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::xToScreenLineOffset(int, int, boolean):int	org.gjt.sp.jedit.Buffer	0.8819693003250973	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::deleteLine():void	org.gjt.sp.jedit.Buffer	0.8819698695409586	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::rangeComment():void	org.gjt.sp.jedit.Buffer	0.8819700845147872	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::setText(java.lang.String):void	org.gjt.sp.jedit.Buffer	0.8819701758323052	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::offsetToXY(int):java.awt.Point	org.gjt.sp.jedit.Buffer	0.8819707337504497	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::scrollTo(int, boolean):void	org.gjt.sp.jedit.Buffer	0.8819707357040232	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::removeTrailingWhiteSpace():void	org.gjt.sp.jedit.Buffer	0.8819707357040232	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::shiftIndentLeft():void	org.gjt.sp.jedit.Buffer	0.8819707357040232	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::insertEnterAndIndent():void	org.gjt.sp.jedit.Buffer	0.8819709653796449	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::addExplicitFold():void	org.gjt.sp.jedit.Buffer	0.8819710291353065	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::toUpperCase():void	org.gjt.sp.jedit.Buffer	0.8819711245504301	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::toLowerCase():void	org.gjt.sp.jedit.Buffer	0.8819711245504301	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::backspaceWord(boolean):void	org.gjt.sp.jedit.Buffer	0.88197138905625	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::deleteWord(boolean):void	org.gjt.sp.jedit.Buffer	0.8819714279236418	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::shiftIndentRight():void	org.gjt.sp.jedit.Buffer	0.8819716159204738	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::indentSelectedLines():void	org.gjt.sp.jedit.Buffer	0.881971649018899	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::deleteToEndOfLine():void	org.gjt.sp.jedit.Buffer	0.8819716928788928	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::deleteToStartOfLine():void	org.gjt.sp.jedit.Buffer	0.8819716928788928	
+Move Method	bsh.BSHAllocationExpression::constructWithInterfaceBody(java.lang.Class, java.lang.Object[], bsh.BSHBlock, bsh.CallStack, bsh.Interpreter):java.lang.Object	bsh.CallStack	0.8819717072563176	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::getRectParams(int, int):org.gjt.sp.jedit.textarea.JEditTextArea.RectParams	org.gjt.sp.jedit.Buffer	0.8819718099961305	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::insertTab():void	org.gjt.sp.jedit.Buffer	0.8819720351567297	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::showGoToLineDialog():void	org.gjt.sp.jedit.Buffer	0.8819721853966259	
+	current system		0.8819722273703753	
+Move Method	bsh.BshMethod::hasModifierBshMethod(java.lang.String):boolean	bsh.Modifiers	0.8819722563470229	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::swapMarkerAndCaret(char):void	org.gjt.sp.jedit.Buffer	0.881972403396539	
+Move Method	org.objectweb.asm.CodeWriter::getCode():byte[]	org.objectweb.asm.ByteVector	0.8819726285040352	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::insertTabAndIndent():void	org.gjt.sp.jedit.Buffer	0.8819728514377303	
+Move Method	bsh.BSHMethodDeclaration::getReturnTypeDescriptor(bsh.CallStack, bsh.Interpreter, java.lang.String):java.lang.String	bsh.BSHReturnType	0.8819728555199629	
+Move Method	org.gjt.sp.jedit.EditPane::propertiesChanged():void	org.gjt.sp.jedit.textarea.JEditTextArea	0.8819728697368772	
+Move Method	org.gjt.sp.jedit.search.HyperSearchRequest::doHyperSearch(org.gjt.sp.jedit.Buffer, int, int, javax.swing.tree.DefaultMutableTreeNode):int	org.gjt.sp.jedit.Buffer	0.8819731227136473	
+Move Method	installer.TarEntry::setUserId(int):void	installer.TarHeader	0.881973301744149	
+Move Method	installer.TarEntry::setGroupId(int):void	installer.TarHeader	0.881973301744149	
+Move Method	installer.TarEntry::setUserName(java.lang.String):void	installer.TarHeader	0.881973301744149	
+Move Method	installer.TarEntry::setGroupName(java.lang.String):void	installer.TarHeader	0.881973301744149	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::getScreenLineOfOffset(int):int	org.gjt.sp.jedit.Buffer	0.8819734784482549	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::offsetToXY(int, int, java.awt.Point):java.awt.Point	org.gjt.sp.jedit.textarea.ChunkCache	0.8819741695222857	
+Move Method	org.gjt.sp.jedit.browser.VFSFileNameField::doComplete(java.lang.String):void	org.gjt.sp.jedit.browser.VFSBrowser	0.8819743143908674	
+Move Method	org.gjt.sp.jedit.JARClassLoader::getZipFileJARClassLoader():java.util.zip.ZipFile	org.gjt.sp.jedit.PluginJAR	0.8819744746609107	
+Move Method	org.gjt.sp.jedit.browser.VFSBrowser::reloadDirectory():void	org.gjt.sp.jedit.browser.BrowserView	0.8819749403355084	
+Move Method	org.gjt.sp.jedit.syntax.XModeHandler::addKeyword(java.lang.String, byte):void	org.gjt.sp.jedit.syntax.KeywordMap	0.8819751520938607	
+Move Method	org.gjt.sp.jedit.textarea.DisplayManager::setScreenLineCount(int, int):void	org.gjt.sp.jedit.buffer.LineManager	0.8819760879062178	
+Move Method	org.gjt.sp.jedit.Buffer::getContextSensitiveProperty(int, java.lang.String):java.lang.String	org.gjt.sp.jedit.Mode	0.8819769083721845	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::setSelectedText(org.gjt.sp.jedit.textarea.Selection, java.lang.String):void	org.gjt.sp.jedit.Buffer	0.8819769685091442	
+Move Method	org.gjt.sp.jedit.textarea.DisplayManager::getScreenLineCount(int):int	org.gjt.sp.jedit.buffer.LineManager	0.8819776457487404	
+Move Method	org.gjt.sp.jedit.textarea.Gutter::addExtension(org.gjt.sp.jedit.textarea.TextAreaExtension):void	org.gjt.sp.jedit.textarea.ExtensionManager	0.8819780529322704	
+Move Method	org.gjt.sp.jedit.textarea.Gutter::addExtensionGutter(int, org.gjt.sp.jedit.textarea.TextAreaExtension):void	org.gjt.sp.jedit.textarea.ExtensionManager	0.8819780529322704	
+Move Method	org.gjt.sp.jedit.textarea.Gutter::removeExtensionGutter(org.gjt.sp.jedit.textarea.TextAreaExtension):void	org.gjt.sp.jedit.textarea.ExtensionManager	0.8819780529322704	
+Move Method	org.gjt.sp.jedit.browser.VFSBrowser::setFilenameFilter(java.lang.String):void	org.gjt.sp.jedit.gui.HistoryTextField	0.8819782133018427	
+Move Method	org.objectweb.asm.CodeWriter::getCodeSize():int	org.objectweb.asm.ByteVector	0.8819785550164964	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::getPhysicalLineOfScreenLine(int):int	org.gjt.sp.jedit.textarea.ChunkCache	0.8819787290099528	
+Move Method	org.gjt.sp.jedit.Buffer::isTransactionInProgress():boolean	org.gjt.sp.jedit.buffer.UndoManager	0.8819789471945831	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::foldStructureChanged():void	org.gjt.sp.jedit.textarea.ChunkCache	0.8819795927592583	
+Move Method	org.gjt.sp.jedit.Buffer::getLineEndOffsetBuffer(int):int	org.gjt.sp.jedit.buffer.LineManager	0.8819808520120588	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::getScreenLineEndOffset(int):int	org.gjt.sp.jedit.textarea.ChunkCache	0.8819810078050395	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::getScreenLineStartOffset(int):int	org.gjt.sp.jedit.textarea.ChunkCache	0.8819817442928638	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::narrowToFold():void	org.gjt.sp.jedit.textarea.DisplayManager	0.8819817451750382	
+Move Method	bsh.Variable::hasModifierVariable(java.lang.String):boolean	bsh.Modifiers	0.8819819147576778	
+Move Method	org.gjt.sp.jedit.textarea.JEditTextArea::invalidateScreenLineRange(int, int):void	org.gjt.sp.jedit.textarea.ChunkCache	0.8819824616049458	
+Move Method	org.gjt.sp.jedit.textarea.TextAreaPainter::addExtension(org.gjt.sp.jedit.textarea.TextAreaExtension):void	org.gjt.sp.jedit.textarea.ExtensionManager	0.8819832823753778	
+Move Method	org.gjt.sp.jedit.textarea.TextAreaPainter::removeExtensionTextAreaPainter(org.gjt.sp.jedit.textarea.TextAreaExtension):void	org.gjt.sp.jedit.textarea.ExtensionManager	0.8819832823753778	
+Move Method	org.gjt.sp.jedit.EditPane::loadCaretInfo():void	org.gjt.sp.jedit.textarea.JEditTextArea	0.8819838637857514	
+Move Method	bsh.NameSpace::unwrapVariable(bsh.Variable):java.lang.Object	bsh.Variable	0.8819838871732969	
+Move Method	org.gjt.sp.jedit.Buffer::isFoldEnd(int):boolean	org.gjt.sp.jedit.buffer.LineManager	0.8819845593990795	
+Move Method	org.gjt.sp.jedit.Buffer::getLineText(int, javax.swing.text.Segment):void	org.gjt.sp.jedit.buffer.LineManager	0.8819846596906471	
+Move Method	org.gjt.sp.jedit.JARClassLoader::getResourceAsPath(java.lang.String):java.lang.String	org.gjt.sp.jedit.PluginJAR	0.8819851102735073	
+Move Method	bsh.BSHAmbiguousName::toLHS(bsh.CallStack, bsh.Interpreter):bsh.LHS	bsh.CallStack	0.8819857134265622	
+Move Method	bsh.BSHAmbiguousName::toObject(bsh.CallStack, bsh.Interpreter, boolean):java.lang.Object	bsh.CallStack	0.8819857238383584	
+Move Method	bsh.BSHAmbiguousName::toClass(bsh.CallStack, bsh.Interpreter):java.lang.Class	bsh.CallStack	0.8819857352321605	
+Move Method	org.gjt.sp.jedit.EditPane::saveCaretInfo():void	org.gjt.sp.jedit.textarea.JEditTextArea	0.8819858357650366	
+Move Method	org.gjt.sp.jedit.Buffer::isFoldStart(int):boolean	org.gjt.sp.jedit.buffer.LineManager	0.8819859677757982	
+Move Method	org.gjt.sp.jedit.textarea.TextAreaPainter::addExtensionTextAreaPainter(int, org.gjt.sp.jedit.textarea.TextAreaExtension):void	org.gjt.sp.jedit.textarea.ExtensionManager	0.8819870701618072	
+Move Method	org.gjt.sp.jedit.Buffer::getLineText(int):java.lang.String	org.gjt.sp.jedit.buffer.LineManager	0.8819878150447519	
+Move Method	org.gjt.sp.jedit.Buffer::beginCompoundEditBuffer():void	org.gjt.sp.jedit.buffer.UndoManager	0.8819878888068424	
+Move Method	org.gjt.sp.jedit.Buffer::getLineStartOffset(int):int	org.gjt.sp.jedit.buffer.LineManager	0.8819880716049686	
+Move Method	bsh.BSHMethodDeclaration::evalReturnType(bsh.CallStack, bsh.Interpreter):java.lang.Class	bsh.BSHReturnType	0.8819934288252373	
+Move Method	org.gjt.sp.jedit.pluginmgr.Roster.Install::copy(org.gjt.sp.jedit.pluginmgr.PluginManagerProgress, java.io.InputStream, java.io.OutputStream, boolean):boolean	org.gjt.sp.jedit.pluginmgr.PluginManagerProgress	0.8819949448856481	
+Move Method	bsh.BSHAllocationExpression::constructObject(java.lang.Class, java.lang.Object[], bsh.CallStack):java.lang.Object	bsh.CallStack	0.8819950145112104	
+Move Method	org.gjt.sp.jedit.textarea.ChunkCache::lineToChunkList(int, java.util.List):void	org.gjt.sp.jedit.syntax.DisplayTokenHandler	0.8819967609634213	
+Move Method	org.gjt.sp.jedit.gui.EditAbbrevDialog::getAbbrev():java.lang.String	org.gjt.sp.jedit.gui.AbbrevEditor	0.8819997544458894	
+Move Method	org.gjt.sp.jedit.gui.EditAbbrevDialog::getExpansion():java.lang.String	org.gjt.sp.jedit.gui.AbbrevEditor	0.8819997544458894	
+Move Method	org.objectweb.asm.ClassWriter::put122(int, int, int):void	org.objectweb.asm.ByteVector	0.882000292296829	
+Move Method	org.gjt.sp.jedit.Buffer::beginCompoundEdit():void	org.gjt.sp.util.ReadWriteLock	0.8820026092129661	
+Move Method	org.gjt.sp.jedit.Buffer::createPosition(int):javax.swing.text.Position	org.gjt.sp.jedit.buffer.PositionManager	0.8820056632170347	
+Move Method	org.gjt.sp.jedit.View::removeToolBarView(java.awt.Component):void	org.gjt.sp.jedit.gui.ToolBarManager	0.8820088647931114	
+Move Method	org.gjt.sp.jedit.Buffer::getTextBuffer(int, int, javax.swing.text.Segment):void	org.gjt.sp.jedit.buffer.ContentManager	0.8820142105633063	
+Move Method	org.gjt.sp.jedit.Buffer::getTextBuffer(int, int):java.lang.String	org.gjt.sp.jedit.buffer.ContentManager	0.8820169714058996	
+Move Method	org.gjt.sp.jedit.View::addToolBarView(int, int, java.awt.Component):void	org.gjt.sp.jedit.gui.ToolBarManager	0.8820209034415853	
+Move Method	org.gjt.sp.jedit.Java14.MouseWheelHandler::moveCaret(org.gjt.sp.jedit.textarea.JEditTextArea, int, boolean):void	org.gjt.sp.jedit.textarea.JEditTextArea	0.8820341710780377	
+Move Method	org.gjt.sp.jedit.Java14.MouseWheelHandler::scrollPage(org.gjt.sp.jedit.textarea.JEditTextArea, int):void	org.gjt.sp.jedit.textarea.JEditTextArea	0.8820350622942071	
+Move Method	org.gjt.sp.jedit.Buffer::getLineOfOffset(int):int	org.gjt.sp.jedit.buffer.ContentManager	0.8820352756849279	
+Move Method	bsh.BSHAllocationExpression::arrayAllocation(bsh.BSHArrayDimensions, java.lang.Class, bsh.CallStack, bsh.Interpreter):java.lang.Object	bsh.BSHArrayDimensions	0.8820375757827514	
+Move Method	bsh.This::invokeMethod(java.lang.String, java.lang.Object[], bsh.Interpreter, bsh.CallStack, bsh.SimpleNode, boolean):java.lang.Object	bsh.NameSpace	0.8820386930586332	

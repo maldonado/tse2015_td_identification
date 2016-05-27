@@ -1,0 +1,140 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.jfree.chart.renderer.category.CategoryStepRenderer::drawLine(java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryStepRenderer.State, org.jfree.chart.plot.PlotOrientation, double, double, double, double):void	org.jfree.chart.renderer.category.CategoryStepRenderer.State	0.9156671930116034	
+Move Method	org.jfree.chart.title.LegendTitle::createLegendItemBlock(org.jfree.chart.LegendItem):org.jfree.chart.block.Block	org.jfree.chart.LegendItem	0.915781240082651	
+Move Method	org.jfree.chart.plot.PiePlot::getArcCenter(org.jfree.chart.plot.PiePlotState, java.lang.Comparable):java.awt.geom.Point2D	org.jfree.chart.plot.PiePlotState	0.9157889263323884	
+Move Method	org.jfree.data.time.ohlc.OHLCSeries::add(org.jfree.data.time.ohlc.OHLCItem):void	org.jfree.data.time.ohlc.OHLCItem	0.9157978562719543	
+Move Method	org.jfree.chart.plot.PiePlot::drawRightLabel(java.awt.Graphics2D, org.jfree.chart.plot.PiePlotState, org.jfree.chart.plot.PieLabelRecord):void	org.jfree.chart.plot.PiePlotState	0.9158111194825663	
+Move Method	org.jfree.chart.plot.PiePlot::drawLeftLabel(java.awt.Graphics2D, org.jfree.chart.plot.PiePlotState, org.jfree.chart.plot.PieLabelRecord):void	org.jfree.chart.plot.PiePlotState	0.9158111250493476	
+Move Method	org.jfree.chart.renderer.OutlierListCollection::updateOutlierList(org.jfree.chart.renderer.OutlierList, org.jfree.chart.renderer.Outlier):boolean	org.jfree.chart.renderer.OutlierList	0.9158159153385551	
+Move Method	org.jfree.chart.MouseWheelHandler::handleZoomable(org.jfree.chart.plot.Zoomable, java.awt.event.MouseWheelEvent):void	org.jfree.chart.ChartPanel	0.9158368245753694	
+Move Method	org.jfree.chart.plot.MeterPlot::drawArcForInterval(java.awt.Graphics2D, java.awt.geom.Rectangle2D, org.jfree.chart.plot.MeterInterval):void	org.jfree.chart.plot.MeterInterval	0.9158394740926068	
+Move Method	org.jfree.chart.block.GridArrangement::arrangeFF(org.jfree.chart.block.BlockContainer, java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint):org.jfree.ui.Size2D	org.jfree.chart.block.RectangleConstraint	0.9158402644460478	
+Move Method	org.jfree.chart.plot.JThermometer::getValue():java.lang.Number	org.jfree.data.general.DefaultValueDataset	0.9158433523179673	
+Move Method	org.jfree.chart.plot.WaferMapPlot::drawChipGrid(java.awt.Graphics2D, java.awt.geom.Rectangle2D):void	org.jfree.data.general.WaferMapDataset	0.9158476435150575	
+Move Method	org.jfree.chart.fx.ChartViewerSkin::addChartMouseListenerChartViewerSkin(org.jfree.chart.fx.interaction.ChartMouseListenerFX):void	org.jfree.chart.fx.ChartCanvas	0.9158496076758158	
+Move Method	org.jfree.chart.panel.CrosshairOverlay::drawHorizontalCrosshair(java.awt.Graphics2D, java.awt.geom.Rectangle2D, double, org.jfree.chart.plot.Crosshair):void	org.jfree.chart.plot.Crosshair	0.9158594413317113	
+Move Method	org.jfree.chart.panel.CrosshairOverlay::drawVerticalCrosshair(java.awt.Graphics2D, java.awt.geom.Rectangle2D, double, org.jfree.chart.plot.Crosshair):void	org.jfree.chart.plot.Crosshair	0.9158594413317113	
+Move Method	org.jfree.chart.plot.PolarPlot::refreshAngleTicks():java.util.List	org.jfree.chart.axis.TickUnit	0.9158597073472364	
+Move Method	org.jfree.chart.axis.ModuloAxis::getDisplayLength():double	org.jfree.data.Range	0.91586039949427	
+Move Method	org.jfree.data.time.DynamicTimeSeriesCollection::getX(org.jfree.data.time.RegularTimePeriod):long	org.jfree.data.time.RegularTimePeriod	0.9158626423852692	
+Move Method	org.jfree.chart.JFreeChart::drawTitle(org.jfree.chart.title.Title, java.awt.Graphics2D, java.awt.geom.Rectangle2D, boolean):org.jfree.chart.entity.EntityCollection	org.jfree.chart.title.Title	0.9158630043377229	
+Move Method	org.jfree.chart.axis.DateTickUnit::addToDate(java.util.Date, java.util.TimeZone):java.util.Date	org.jfree.chart.axis.DateTickUnitType	0.9158639800072795	
+Move Method	org.jfree.chart.axis.ColorBar::autoAdjustRange():void	org.jfree.chart.plot.ColorPalette	0.9158650928539003	
+Move Method	org.jfree.chart.renderer.category.AbstractCategoryItemRenderer::updateCrosshairValues(org.jfree.chart.plot.CategoryCrosshairState, java.lang.Comparable, java.lang.Comparable, double, int, double, double, org.jfree.chart.plot.PlotOrientation):void	org.jfree.chart.plot.CategoryCrosshairState	0.91586520289967	
+Move Method	org.jfree.chart.axis.DateTickUnit::rollDate(java.util.Date, java.util.TimeZone):java.util.Date	org.jfree.chart.axis.DateTickUnitType	0.9158656784283817	
+Move Method	org.jfree.chart.axis.DateAxis::calculateDateForPosition(org.jfree.data.time.RegularTimePeriod, org.jfree.chart.axis.DateTickMarkPosition):java.util.Date	org.jfree.data.time.RegularTimePeriod	0.9158665117729797	
+Move Method	org.jfree.chart.StandardChartTheme::applyToPiePlot(org.jfree.chart.plot.PiePlot):void	org.jfree.chart.plot.PiePlot	0.915866945749636	
+Move Method	org.jfree.data.general.WaferMapDataset::getChipValue(java.lang.Comparable, java.lang.Comparable):java.lang.Number	org.jfree.data.DefaultKeyedValues2D	0.9158691614363216	
+Move Method	org.jfree.chart.axis.ModuloAxis::mapValueToFixedRange(double):double	org.jfree.data.Range	0.915870002551881	
+Move Method	org.jfree.chart.StandardChartTheme::applyToMeterPlot(org.jfree.chart.plot.MeterPlot):void	org.jfree.chart.plot.MeterPlot	0.9158713460102481	
+Move Method	org.jfree.chart.StandardChartTheme::applyToPolarPlot(org.jfree.chart.plot.PolarPlot):void	org.jfree.chart.plot.PolarPlot	0.9158733418293412	
+Move Method	org.jfree.chart.renderer.category.BarRenderer::calculateSeriesWidth(double, org.jfree.chart.axis.CategoryAxis, int, int):double	org.jfree.chart.axis.CategoryAxis	0.9158742811727888	
+Move Method	org.jfree.chart.plot.CombinedDomainCategoryPlot::findSubplot(org.jfree.chart.plot.PlotRenderingInfo, java.awt.geom.Point2D):org.jfree.chart.plot.CategoryPlot	org.jfree.chart.plot.PlotRenderingInfo	0.9158745585840835	
+Move Method	org.jfree.chart.StandardChartTheme::applyToAbstractRenderer(org.jfree.chart.renderer.AbstractRenderer):void	org.jfree.chart.renderer.AbstractRenderer	0.9158745943016481	
+Move Method	org.jfree.chart.renderer.xy.AbstractXYItemRenderer::updateCrosshairValues(org.jfree.chart.plot.CrosshairState, double, double, int, int, double, double, org.jfree.chart.plot.PlotOrientation):void	org.jfree.chart.plot.CrosshairState	0.9158749861993877	
+Move Method	org.jfree.data.xy.DefaultTableXYDataset::setAutoWidthDefaultTableXYDataset(boolean):void	org.jfree.data.xy.IntervalXYDelegate	0.9158751089110202	
+Move Method	org.jfree.data.xy.DefaultTableXYDataset::setIntervalPositionFactorDefaultTableXYDataset(double):void	org.jfree.data.xy.IntervalXYDelegate	0.9158751096838266	
+Move Method	org.jfree.data.xy.DefaultTableXYDataset::setIntervalWidth(double):void	org.jfree.data.xy.IntervalXYDelegate	0.9158751096838266	
+Move Method	org.jfree.chart.StandardChartTheme::applyToSpiderWebPlot(org.jfree.chart.plot.SpiderWebPlot):void	org.jfree.chart.plot.SpiderWebPlot	0.9158756323302565	
+Move Method	org.jfree.chart.StandardChartTheme::applyToSymbolAxis(org.jfree.chart.axis.SymbolAxis):void	org.jfree.chart.axis.SymbolAxis	0.9158757561459712	
+Move Method	org.jfree.chart.plot.MeterPlot::valueToAngle(double):double	org.jfree.data.Range	0.9158760129059935	
+Move Method	org.jfree.chart.plot.JThermometer::setOutlinePaint(java.awt.Paint):void	org.jfree.chart.plot.Plot	0.9158773800375212	
+Move Method	org.jfree.chart.plot.JThermometer::setValueLocation(int):void	org.jfree.chart.plot.ThermometerPlot	0.9158774180086057	
+Move Method	org.jfree.chart.plot.JThermometer::setUnitsJThermometer(int):void	org.jfree.chart.plot.ThermometerPlot	0.9158774180086057	
+Move Method	org.jfree.chart.plot.JThermometer::setValueFontJThermometer(java.awt.Font):void	org.jfree.chart.plot.ThermometerPlot	0.9158774180086057	
+Move Method	org.jfree.chart.renderer.category.LevelRenderer::calculateSeriesWidth(double, org.jfree.chart.axis.CategoryAxis, int, int):double	org.jfree.chart.axis.CategoryAxis	0.9158774458877534	
+Move Method	org.jfree.chart.block.AbstractBlock::trimToContentWidth(org.jfree.data.Range):org.jfree.data.Range	org.jfree.data.Range	0.91587768122835	
+Move Method	org.jfree.chart.block.AbstractBlock::trimToContentHeight(org.jfree.data.Range):org.jfree.data.Range	org.jfree.data.Range	0.91587768122835	
+Move Method	org.jfree.chart.renderer.xy.AbstractXYItemRenderer::drawDomainLine(java.awt.Graphics2D, org.jfree.chart.plot.XYPlot, org.jfree.chart.axis.ValueAxis, java.awt.geom.Rectangle2D, double, java.awt.Paint, java.awt.Stroke):void	org.jfree.chart.axis.ValueAxis	0.9158779608767874	
+Move Method	org.jfree.chart.renderer.category.AbstractCategoryItemRenderer::getRangeAxisAbstractCategoryItemRenderer(org.jfree.chart.plot.CategoryPlot, int):org.jfree.chart.axis.ValueAxis	org.jfree.chart.plot.CategoryPlot	0.9158780348586792	
+Move Method	org.jfree.chart.renderer.category.AbstractCategoryItemRenderer::getDomainAxisAbstractCategoryItemRenderer(org.jfree.chart.plot.CategoryPlot, int):org.jfree.chart.axis.CategoryAxis	org.jfree.chart.plot.CategoryPlot	0.9158780420625472	
+Move Method	org.jfree.chart.renderer.xy.XYLineAndShapeRenderer::drawPrimaryLineAsPath(org.jfree.chart.renderer.xy.XYItemRendererState, java.awt.Graphics2D, org.jfree.chart.plot.XYPlot, org.jfree.data.xy.XYDataset, int, int, int, org.jfree.chart.axis.ValueAxis, org.jfree.chart.axis.ValueAxis, java.awt.geom.Rectangle2D):void	org.jfree.chart.plot.XYPlot	0.9158785707476551	
+Move Method	org.jfree.chart.renderer.xy.XYLineAndShapeRenderer::drawPrimaryLine(org.jfree.chart.renderer.xy.XYItemRendererState, java.awt.Graphics2D, org.jfree.chart.plot.XYPlot, org.jfree.data.xy.XYDataset, int, int, int, org.jfree.chart.axis.ValueAxis, org.jfree.chart.axis.ValueAxis, java.awt.geom.Rectangle2D):void	org.jfree.chart.plot.XYPlot	0.9158786285662948	
+	current system		0.9158788182076281	
+Move Method	org.jfree.chart.renderer.category.AbstractCategoryItemRenderer::drawRangeLine(java.awt.Graphics2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.ValueAxis, java.awt.geom.Rectangle2D, double, java.awt.Paint, java.awt.Stroke):void	org.jfree.chart.axis.ValueAxis	0.9158788868146783	
+Move Method	org.jfree.data.xy.XYSeriesCollection::setIntervalWidth(double):void	org.jfree.data.xy.IntervalXYDelegate	0.9158791556525437	
+Move Method	org.jfree.data.xy.XYSeriesCollection::setIntervalPositionFactorXYSeriesCollection(double):void	org.jfree.data.xy.IntervalXYDelegate	0.9158791575069212	
+Move Method	org.jfree.data.xy.XYSeriesCollection::setAutoWidthXYSeriesCollection(boolean):void	org.jfree.data.xy.IntervalXYDelegate	0.9158791575069212	
+Move Method	org.jfree.data.time.TimeTableXYDataset::clearTimeTableXYDataset():void	org.jfree.data.DefaultKeyedValues2D	0.915879288772855	
+Move Method	org.jfree.chart.title.TextTitle::arrangeRN(java.awt.Graphics2D, org.jfree.data.Range):org.jfree.ui.Size2D	org.jfree.data.Range	0.9158793900989778	
+Move Method	org.jfree.chart.ChartTransferable::createBufferedImage(org.jfree.chart.JFreeChart, int, int, int, int, int, int):java.awt.image.BufferedImage	org.jfree.chart.JFreeChart	0.9158795179644131	
+Move Method	org.jfree.chart.plot.XYPlot::drawDomainCrosshair(java.awt.Graphics2D, java.awt.geom.Rectangle2D, org.jfree.chart.plot.PlotOrientation, double, org.jfree.chart.axis.ValueAxis, java.awt.Stroke, java.awt.Paint):void	org.jfree.chart.axis.ValueAxis	0.9158796218017801	
+Move Method	org.jfree.chart.plot.XYPlot::drawRangeCrosshair(java.awt.Graphics2D, java.awt.geom.Rectangle2D, org.jfree.chart.plot.PlotOrientation, double, org.jfree.chart.axis.ValueAxis, java.awt.Stroke, java.awt.Paint):void	org.jfree.chart.axis.ValueAxis	0.9158796218017801	
+Move Method	org.jfree.chart.plot.CategoryPlot::drawRangeCrosshair(java.awt.Graphics2D, java.awt.geom.Rectangle2D, org.jfree.chart.plot.PlotOrientation, double, org.jfree.chart.axis.ValueAxis, java.awt.Stroke, java.awt.Paint):void	org.jfree.chart.axis.ValueAxis	0.9158796376428586	
+Move Method	org.jfree.chart.plot.ContourPlot::drawDomainMarker(java.awt.Graphics2D, org.jfree.chart.plot.ContourPlot, org.jfree.chart.axis.ValueAxis, org.jfree.chart.plot.Marker, java.awt.geom.Rectangle2D):void	org.jfree.chart.axis.ValueAxis	0.9158798060180349	
+Move Method	org.jfree.chart.plot.ContourPlot::drawRangeMarker(java.awt.Graphics2D, org.jfree.chart.plot.ContourPlot, org.jfree.chart.axis.ValueAxis, org.jfree.chart.plot.Marker, java.awt.geom.Rectangle2D):void	org.jfree.chart.axis.ValueAxis	0.9158798060180349	
+Move Method	org.jfree.chart.axis.ValueAxis::zoomRange(double, double):void	org.jfree.data.Range	0.9158798252296473	
+Move Method	org.jfree.data.general.WaferMapDataset::getUniqueValues():java.util.Set	org.jfree.data.DefaultKeyedValues2D	0.91588033070898	
+Move Method	org.jfree.experimental.chart.swt.editor.SWTPlotEditor::updatePlotProperties(org.jfree.chart.plot.Plot):void	org.jfree.experimental.chart.swt.editor.SWTAxisEditor	0.9158809406493027	
+Move Method	org.jfree.chart.ChartPanel::generateSVG(int, int):java.lang.String	org.jfree.chart.JFreeChart	0.9158810306083272	
+Move Method	org.jfree.chart.ChartPanel::writeAsPDF(java.io.File, int, int):void	org.jfree.chart.JFreeChart	0.9158810306083272	
+Move Method	org.jfree.chart.StandardChartTheme::applyToBlockContainer(org.jfree.chart.block.BlockContainer):void	org.jfree.chart.block.BlockContainer	0.9158813992990418	
+Move Method	org.jfree.chart.axis.ColorBar::setMaximumValue(double):void	org.jfree.chart.plot.ColorPalette	0.9158814539183562	
+Move Method	org.jfree.chart.axis.ColorBar::setMinimumValue(double):void	org.jfree.chart.plot.ColorPalette	0.9158814539183562	
+Move Method	org.jfree.chart.title.LegendTitle::addItemBlock(org.jfree.chart.LegendItem):void	org.jfree.chart.block.BlockContainer	0.9158829056925077	
+Move Method	org.jfree.chart.JFreeChart::setTitle(java.lang.String):void	org.jfree.chart.title.TextTitle	0.9158830252392018	
+Move Method	org.jfree.data.time.TimeTableXYDataset::getTimePeriod(int):org.jfree.data.time.TimePeriod	org.jfree.data.DefaultKeyedValues2D	0.9158831461753836	
+Move Method	org.jfree.data.time.TimeTableXYDataset::remove(org.jfree.data.time.TimePeriod, java.lang.Comparable, boolean):void	org.jfree.data.DefaultKeyedValues2D	0.9158833155264233	
+Move Method	org.jfree.chart.plot.JThermometer::setValueJThermometer(java.lang.Number):void	org.jfree.data.general.DefaultValueDataset	0.9158835294776969	
+Move Method	org.jfree.chart.plot.ContourPlot::contourRenderer(java.awt.Graphics2D, java.awt.geom.Rectangle2D, org.jfree.chart.plot.PlotRenderingInfo, org.jfree.chart.plot.ContourPlot, org.jfree.chart.axis.ValueAxis, org.jfree.chart.axis.ValueAxis, org.jfree.chart.axis.ColorBar, org.jfree.data.contour.ContourDataset, org.jfree.chart.plot.CrosshairState):void	org.jfree.chart.plot.CrosshairState	0.9158842369985869	
+Move Method	org.jfree.chart.axis.CategoryAxis::calculateTextBlockWidth(org.jfree.text.TextBlock, org.jfree.chart.axis.CategoryLabelPosition, java.awt.Graphics2D):double	org.jfree.chart.axis.CategoryLabelPosition	0.9158850577158474	
+Move Method	org.jfree.chart.axis.CategoryAxis::calculateTextBlockHeight(org.jfree.text.TextBlock, org.jfree.chart.axis.CategoryLabelPosition, java.awt.Graphics2D):double	org.jfree.chart.axis.CategoryLabelPosition	0.9158850577158474	
+Move Method	org.jfree.data.time.TimeSeries::findValueRange(org.jfree.data.Range, org.jfree.data.time.TimePeriodAnchor, java.util.TimeZone):org.jfree.data.Range	org.jfree.data.Range	0.9158851863716986	
+Move Method	org.jfree.chart.axis.ValueAxis::setUpperBound(double):void	org.jfree.data.Range	0.9158853678401011	
+Move Method	org.jfree.chart.axis.ValueAxis::setLowerBound(double):void	org.jfree.data.Range	0.9158854101164441	
+Move Method	org.jfree.data.gantt.XYTaskDataset::getItemStartValue(int, int):double	org.jfree.data.gantt.TaskSeriesCollection	0.9158855119406537	
+Move Method	org.jfree.data.gantt.XYTaskDataset::getItemEndValue(int, int):double	org.jfree.data.gantt.TaskSeriesCollection	0.9158855119406537	
+Move Method	org.jfree.data.gantt.XYTaskDataset::getItemValue(int, int):double	org.jfree.data.gantt.TaskSeriesCollection	0.9158855918958442	
+Move Method	org.jfree.data.general.DefaultPieDataset::clearDefaultPieDataset():void	org.jfree.data.DefaultKeyedValues	0.9158856378345186	
+Move Method	org.jfree.data.xy.CategoryTableXYDataset::setIntervalPositionFactorCategoryTableXYDataset(double):void	org.jfree.data.xy.IntervalXYDelegate	0.915885648156106	
+Move Method	org.jfree.data.xy.CategoryTableXYDataset::setIntervalWidth(double):void	org.jfree.data.xy.IntervalXYDelegate	0.9158856533620258	
+Move Method	org.jfree.data.xy.CategoryTableXYDataset::setAutoWidthCategoryTableXYDataset(boolean):void	org.jfree.data.xy.IntervalXYDelegate	0.9158856593423692	
+Move Method	org.jfree.chart.renderer.OutlierList::isOverlapped(org.jfree.chart.renderer.Outlier):boolean	org.jfree.chart.renderer.Outlier	0.9158861202472548	
+Move Method	org.jfree.chart.axis.ColorBar::drawColorBar(java.awt.Graphics2D, java.awt.geom.Rectangle2D, org.jfree.ui.RectangleEdge):void	org.jfree.chart.plot.ColorPalette	0.9158871981775462	
+Move Method	org.jfree.chart.renderer.category.StackedBarRenderer3D::drawStackHorizontal(java.util.List, java.lang.Comparable, java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset):void	org.jfree.chart.renderer.category.CategoryItemRendererState	0.9158872513638376	
+Move Method	org.jfree.chart.renderer.category.StackedBarRenderer3D::drawStackVertical(java.util.List, java.lang.Comparable, java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset):void	org.jfree.chart.renderer.category.CategoryItemRendererState	0.9158872513638376	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::addValue(java.lang.Number, java.lang.Comparable, java.lang.Comparable):void	org.jfree.data.DefaultKeyedValues2D	0.9158874007644616	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::clearDefaultCategoryDataset():void	org.jfree.data.DefaultKeyedValues2D	0.9158874430445146	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::removeColumnDefaultCategoryDataset(java.lang.Comparable):void	org.jfree.data.DefaultKeyedValues2D	0.9158874437150669	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::removeRowDefaultCategoryDataset(java.lang.Comparable):void	org.jfree.data.DefaultKeyedValues2D	0.9158874447954395	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::removeRowDefaultCategoryDataset(int):void	org.jfree.data.DefaultKeyedValues2D	0.9158874457571707	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::removeColumnDefaultCategoryDataset(int):void	org.jfree.data.DefaultKeyedValues2D	0.9158874458760782	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::removeValueDefaultCategoryDataset(java.lang.Comparable, java.lang.Comparable):void	org.jfree.data.DefaultKeyedValues2D	0.9158874470319665	
+Move Method	org.jfree.data.xy.CategoryTableXYDataset::add(java.lang.Number, java.lang.Number, java.lang.String, boolean):void	org.jfree.data.DefaultKeyedValues2D	0.9158883558317187	
+Move Method	org.jfree.data.xy.CategoryTableXYDataset::remove(java.lang.Number, java.lang.String, boolean):void	org.jfree.data.DefaultKeyedValues2D	0.9158883721202891	
+Move Method	org.jfree.data.xy.CategoryTableXYDataset::clearCategoryTableXYDataset():void	org.jfree.data.DefaultKeyedValues2D	0.9158883721202891	
+Move Method	org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset::getItem(int, int):org.jfree.data.statistics.BoxAndWhiskerItem	org.jfree.data.KeyedObjects2D	0.9158886844297887	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::addItem(java.lang.Number, java.lang.Number, java.lang.Number, java.lang.Comparable, java.lang.Comparable):void	org.jfree.data.KeyedObjects2D	0.9158889442079627	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::setItem(java.lang.Number, java.lang.Number, java.lang.Number, java.lang.Comparable, java.lang.Comparable):void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::removeItem(java.lang.Comparable, java.lang.Comparable):void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::removeRowTestIntervalCategoryDataset(int):void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::removeRowTestIntervalCategoryDataset(java.lang.Comparable):void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::removeColumnTestIntervalCategoryDataset(int):void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::removeColumnTestIntervalCategoryDataset(java.lang.Comparable):void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.data.general.TestIntervalCategoryDataset::clearTestIntervalCategoryDataset():void	org.jfree.data.KeyedObjects2D	0.9158889468910902	
+Move Method	org.jfree.chart.axis.ModuloAxis::transEnd(double, java.awt.geom.Rectangle2D, org.jfree.ui.RectangleEdge, double, double):double	org.jfree.data.Range	0.9158892460382793	
+Move Method	org.jfree.chart.axis.ModuloAxis::transStart(double, java.awt.geom.Rectangle2D, org.jfree.ui.RectangleEdge, double, double):double	org.jfree.data.Range	0.9158892872017845	
+Move Method	org.jfree.data.general.DefaultPieDataset::setValueDefaultPieDataset(java.lang.Comparable, java.lang.Number):void	org.jfree.data.DefaultKeyedValues	0.9158904079701385	
+Move Method	org.jfree.data.general.DefaultPieDataset::insertValueDefaultPieDataset(int, java.lang.Comparable, java.lang.Number):void	org.jfree.data.DefaultKeyedValues	0.9158904308499584	
+Move Method	org.jfree.data.general.DefaultPieDataset::remove(java.lang.Comparable):void	org.jfree.data.DefaultKeyedValues	0.9158904308499584	
+Move Method	org.jfree.data.general.DefaultPieDataset::sortByKeysDefaultPieDataset(org.jfree.util.SortOrder):void	org.jfree.data.DefaultKeyedValues	0.9158904308499584	
+Move Method	org.jfree.data.general.DefaultPieDataset::sortByValuesDefaultPieDataset(org.jfree.util.SortOrder):void	org.jfree.data.DefaultKeyedValues	0.9158904308499584	
+Move Method	org.jfree.chart.plot.PiePlot::clearSectionOutlineStrokes(boolean):void	org.jfree.chart.StrokeMap	0.9158913060172428	
+Move Method	org.jfree.chart.plot.PiePlot::clearSectionPaints(boolean):void	org.jfree.chart.PaintMap	0.9158913095157311	
+Move Method	org.jfree.chart.plot.PiePlot::clearSectionOutlinePaints(boolean):void	org.jfree.chart.PaintMap	0.9158913095157311	
+Move Method	org.jfree.chart.plot.PiePlot::setSectionPaint(java.lang.Comparable, java.awt.Paint):void	org.jfree.chart.PaintMap	0.9158921328273415	
+Move Method	org.jfree.chart.plot.PiePlot::setSectionOutlineStroke(java.lang.Comparable, java.awt.Stroke):void	org.jfree.chart.StrokeMap	0.9158921354916011	
+Move Method	org.jfree.chart.plot.PiePlot::setSectionOutlinePaint(java.lang.Comparable, java.awt.Paint):void	org.jfree.chart.PaintMap	0.9158921389917621	
+Move Method	org.jfree.chart.plot.PiePlot::getSectionOutlineStroke(int):java.awt.Stroke	org.jfree.chart.StrokeMap	0.9158921391332236	
+Move Method	org.jfree.chart.plot.PiePlot::getSectionPaint(int):java.awt.Paint	org.jfree.chart.PaintMap	0.915892142631212	
+Move Method	org.jfree.chart.plot.PiePlot::getSectionOutlinePaint(int):java.awt.Paint	org.jfree.chart.PaintMap	0.915892142631212	
+Move Method	org.jfree.chart.plot.CombinedDomainXYPlot::findSubplot(org.jfree.chart.plot.PlotRenderingInfo, java.awt.geom.Point2D):org.jfree.chart.plot.XYPlot	org.jfree.chart.plot.PlotRenderingInfo	0.9158933529609724	
+Move Method	org.jfree.chart.plot.CombinedRangeXYPlot::findSubplot(org.jfree.chart.plot.PlotRenderingInfo, java.awt.geom.Point2D):org.jfree.chart.plot.XYPlot	org.jfree.chart.plot.PlotRenderingInfo	0.915894607836216	
+Move Method	org.jfree.chart.axis.Axis::labelLocationX(org.jfree.chart.axis.AxisLabelLocation, java.awt.geom.Rectangle2D):double	org.jfree.chart.axis.AxisLabelLocation	0.9158946236738127	
+Move Method	org.jfree.chart.axis.Axis::labelLocationY(org.jfree.chart.axis.AxisLabelLocation, java.awt.geom.Rectangle2D):double	org.jfree.chart.axis.AxisLabelLocation	0.9158946236738127	
+Move Method	org.jfree.chart.axis.Axis::labelAnchorH(org.jfree.chart.axis.AxisLabelLocation):org.jfree.ui.TextAnchor	org.jfree.chart.axis.AxisLabelLocation	0.9158946236738127	
+Move Method	org.jfree.chart.axis.Axis::labelAnchorV(org.jfree.chart.axis.AxisLabelLocation):org.jfree.ui.TextAnchor	org.jfree.chart.axis.AxisLabelLocation	0.9158946236738127	
+Move Method	org.jfree.data.category.DefaultCategoryDataset::setValueDefaultCategoryDataset(java.lang.Number, java.lang.Comparable, java.lang.Comparable):void	org.jfree.data.DefaultKeyedValues2D	0.9158975030490646	
+Move Method	org.jfree.chart.block.CenterArrangement::arrangeNN(org.jfree.chart.block.BlockContainer, java.awt.Graphics2D):org.jfree.ui.Size2D	org.jfree.chart.block.BlockContainer	0.9159203350912225	
+Move Method	org.jfree.chart.block.CenterArrangement::arrangeFN(org.jfree.chart.block.BlockContainer, java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint):org.jfree.ui.Size2D	org.jfree.chart.block.BlockContainer	0.9159203364794036	
+Move Method	org.jfree.experimental.chart.swt.editor.SWTOtherEditor::updateChartProperties(org.jfree.chart.JFreeChart):void	org.jfree.chart.JFreeChart	0.9160056291965432	

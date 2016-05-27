@@ -1,0 +1,750 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.jruby.RubyString::trNext(org.jruby.RubyString.TR, org.jruby.Ruby, org.jcodings.Encoding):int	org.jruby.RubyString.TR	0.946685549819089	
+Move Method	org.jruby.RubyString::trNext(org.jruby.RubyString.TR):int	org.jruby.RubyString.TR	0.9466855524109214	
+Move Method	org.jruby.RubyString::trFind(int, boolean[], org.jruby.RubyString.TrTables):boolean	org.jruby.RubyString.TrTables	0.9466900543646232	
+Move Method	org.jruby.internal.runtime.methods.DefaultMethod::incrementCallCount():int	org.jruby.internal.runtime.methods.DefaultMethod.DynamicMethodBox	0.9467487071829181	
+Move Method	org.jruby.internal.runtime.methods.DefaultMethod::setCallCount(int):void	org.jruby.internal.runtime.methods.DefaultMethod.DynamicMethodBox	0.9467487073737886	
+Move Method	org.jruby.internal.runtime.methods.DefaultMethod::getCallCount():int	org.jruby.internal.runtime.methods.DefaultMethod.DynamicMethodBox	0.9467487076656536	
+Move Method	org.jruby.internal.runtime.methods.InterpretedMethod::pre(org.jruby.runtime.ThreadContext, java.lang.String, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block, org.jruby.Ruby):void	org.jruby.runtime.ThreadContext	0.9467661925932683	
+Move Method	org.jruby.ast.util.SexpMaker::valiasNode(org.jruby.ast.VAliasNode):void	org.jruby.ast.VAliasNode	0.9467713200067713	
+Move Method	org.jruby.runtime.callback.InvocationCallbackFactory::endCall(org.objectweb.asm.ClassWriter, org.objectweb.asm.MethodVisitor, java.lang.String):java.lang.Class	org.jruby.util.JRubyClassLoader	0.9467730499996205	
+Move Method	org.jruby.ast.util.SexpMaker::xStrNode(org.jruby.ast.XStrNode):void	org.jruby.ast.XStrNode	0.9467762068172638	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildXStr(org.jruby.ast.XStrNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.XStrNode	0.946778405504275	
+Move Method	org.jruby.ast.util.SexpMaker::aliasNode(org.jruby.ast.AliasNode):void	org.jruby.ast.AliasNode	0.9467841841248534	
+Move Method	org.jruby.ast.util.SexpMaker::dotNode(org.jruby.ast.DotNode):void	org.jruby.ast.DotNode	0.9467849857409537	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::getAnnotatedMethodClass(org.jruby.anno.JavaMethodDescriptor):java.lang.Class	org.jruby.anno.JavaMethodDescriptor	0.946785242927502	
+Move Method	org.jruby.RubyHash::visitAll(org.jruby.RubyHash.Visitor):void	org.jruby.RubyHash.Visitor	0.946791258524147	
+Move Method	org.jruby.ast.util.SexpMaker::blockArgNode(org.jruby.ast.BlockArgNode):void	org.jruby.ast.BlockArgNode	0.9467922886633988	
+Move Method	org.jruby.ast.util.SexpMaker::undefNode(org.jruby.ast.UndefNode):void	org.jruby.ast.UndefNode	0.9467955052914072	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildAlias(org.jruby.ast.AliasNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.AliasNode	0.9467960830721267	
+Move Method	org.jruby.ast.util.SexpMaker::dRegexpNode(org.jruby.ast.DRegexpNode):void	org.jruby.ast.DRegexpNode	0.9467961306756983	
+Move Method	org.jruby.ast.util.SexpMaker::regexpNode(org.jruby.ast.RegexpNode):void	org.jruby.ast.RegexpNode	0.9468009522386659	
+Move Method	org.jruby.RubyModule::getCacheToken():java.lang.Object	org.jruby.RubyModule.Generation	0.946802855534399	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildRegexp(org.jruby.ast.RegexpNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.RegexpNode	0.9468032004246533	
+Move Method	org.jruby.ext.ffi.StructLayout.Array::get(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.ext.ffi.MemoryOp	0.9468052789627814	
+Move Method	org.jruby.ast.util.SexpMaker::argumentNode(org.jruby.ast.ArgumentNode):void	org.jruby.ast.ArgumentNode	0.9468056901906462	
+Move Method	org.jruby.anno.TypePopulator::populateMethod(org.jruby.internal.runtime.methods.JavaMethod, int, java.lang.String, boolean, org.jruby.internal.runtime.methods.CallConfiguration):void	org.jruby.internal.runtime.methods.JavaMethod	0.9468058422247132	
+Move Method	org.jruby.runtime.assigner.PreManyRest1Post0Assigner::assignNilTo(org.jruby.Ruby, org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block, int):void	org.jruby.ast.ListNode	0.9468135992640963	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::prepareAnnotatedMethod(org.jruby.RubyModule, org.jruby.internal.runtime.methods.JavaMethod, org.jruby.anno.JavaMethodDescriptor):void	org.jruby.anno.JavaMethodDescriptor	0.9468152019847537	
+Move Method	org.jruby.ast.util.SexpMaker::classVarNode(org.jruby.ast.ClassVarNode):void	org.jruby.ast.ClassVarNode	0.9468152229209973	
+Move Method	org.jruby.ast.util.SexpMaker::floatNode(org.jruby.ast.FloatNode):void	org.jruby.ast.FloatNode	0.9468164097196083	
+Move Method	org.jruby.ast.util.SexpMaker::bignumNode(org.jruby.ast.BignumNode):void	org.jruby.ast.BignumNode	0.9468164102886731	
+Move Method	org.jruby.ext.socket.RubyUNIXSocket::unixpath(org.jruby.ext.socket.RubyUNIXSocket.LibCSocket.sockaddr_un, com.kenai.jaffl.byref.IntByReference):java.lang.String	org.jruby.ext.socket.RubyUNIXSocket.LibCSocket.sockaddr_un	0.9468172976596091	
+Move Method	org.jruby.ast.util.SexpMaker::nthRefNode(org.jruby.ast.NthRefNode):void	org.jruby.ast.NthRefNode	0.9468173283130548	
+Move Method	org.jruby.ast.util.SexpMaker::classVarDeclNode(org.jruby.ast.ClassVarDeclNode):void	org.jruby.ast.ClassVarDeclNode	0.9468173678998113	
+Move Method	org.jruby.parser.ParserSupport::negateFloat(org.jruby.ast.FloatNode):org.jruby.ast.FloatNode	org.jruby.ast.FloatNode	0.9468175611523039	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildFloat(org.jruby.ast.FloatNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.FloatNode	0.9468186085277133	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildBignum(org.jruby.ast.BignumNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.BignumNode	0.9468186090968049	
+Move Method	org.jruby.parser.ParserSupport::gettable(org.jruby.lexer.yacc.Token):org.jruby.ast.Node	org.jruby.lexer.yacc.Token	0.9468193000490053	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildNthRef(org.jruby.ast.NthRefNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.NthRefNode	0.9468195270180008	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildOpAsgn(org.jruby.ast.OpAsgnNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.OpAsgnNode	0.9468207039639733	
+Move Method	org.jruby.ast.util.SexpMaker::classVarAsgnNode(org.jruby.ast.ClassVarAsgnNode):void	org.jruby.ast.ClassVarAsgnNode	0.946820852102239	
+Move Method	org.jruby.ast.util.SexpMaker::backRefNode(org.jruby.ast.BackRefNode):void	org.jruby.ast.BackRefNode	0.9468212343232638	
+Move Method	org.jruby.ast.util.SexpMaker::vcallNode(org.jruby.ast.VCallNode):void	org.jruby.ast.VCallNode	0.9468212419191446	
+Move Method	org.jruby.ext.ffi.StructLayout.Array::each(org.jruby.runtime.ThreadContext, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.ext.ffi.MemoryOp	0.9468213624135133	
+Move Method	org.jruby.ext.ffi.StructLayout.Array::put(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.ext.ffi.MemoryOp	0.9468213688184742	
+Move Method	org.jruby.ast.util.SexpMaker::globalVarNode(org.jruby.ast.GlobalVarNode):void	org.jruby.ast.GlobalVarNode	0.946822038649706	
+Move Method	org.jruby.parser.Ruby19Parser::case492_line1886(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468227032032663	
+Move Method	org.jruby.parser.Ruby19Parser::case491_line1877(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468227032032663	
+Move Method	org.jruby.ast.util.SexpMaker::globalAsgnNode(org.jruby.ast.GlobalAsgnNode):void	org.jruby.ast.GlobalAsgnNode	0.9468228435676395	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::endClass(org.objectweb.asm.ClassWriter, java.lang.String):java.lang.Class	org.jruby.util.JRubyClassLoader	0.9468234246513827	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildBackref(org.jruby.ast.BackRefNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.BackRefNode	0.9468234328888564	
+Move Method	org.jruby.ext.ffi.StructLayout.Array::size(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.ext.ffi.Type	0.9468235073927198	
+Move Method	org.jruby.ast.util.SexpMaker::instAsgnNode(org.jruby.ast.InstAsgnNode):void	org.jruby.ast.InstAsgnNode	0.9468244122593994	
+Move Method	org.jruby.ast.util.SexpMaker::symbolNode(org.jruby.ast.SymbolNode):void	org.jruby.ast.SymbolNode	0.9468244515948908	
+Move Method	org.jruby.parser.Ruby19Parser::case254_line1004(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468254255279624	
+Move Method	org.jruby.parser.Ruby19Parser::case252_line983(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468254255279624	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildClassVar(org.jruby.ast.ClassVarNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.ClassVarNode	0.9468254640062219	
+Move Method	org.jruby.ast.util.SexpMaker::strNode(org.jruby.ast.StrNode):void	org.jruby.ast.StrNode	0.9468256036071422	
+Move Method	org.jruby.ast.util.SexpMaker::opElementAsgnNode(org.jruby.ast.OpElementAsgnNode):void	org.jruby.ast.OpElementAsgnNode	0.9468261799123057	
+Move Method	org.jruby.ext.ffi.StructLayout.Member::alignmentMember(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.ext.ffi.Type	0.9468266024532702	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildSymbol(org.jruby.ast.SymbolNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.SymbolNode	0.9468266500144011	
+Move Method	org.jruby.ast.util.SexpMaker::instVarNode(org.jruby.ast.InstVarNode):void	org.jruby.ast.InstVarNode	0.9468270272142928	
+Move Method	org.jruby.runtime.assigner.PreManyRest0Post0Assigner::assignNilTo(org.jruby.Ruby, org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block, int):void	org.jruby.ast.ListNode	0.9468273436393269	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildStr(org.jruby.ast.StrNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.StrNode	0.9468278018316858	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildClassVarDecl(org.jruby.ast.ClassVarDeclNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.ClassVarDeclNode	0.9468286664668086	
+Move Method	org.jruby.compiler.ir.compiler_pass.opts.LocalOptimizationPass::addMethodGuard(org.jruby.compiler.ir.IR_Method, org.jruby.compiler.ir.operands.Label, java.util.Map<java.lang.String,org.jruby.compiler.ir.CodeVersion>, java.util.ListIterator):void	org.jruby.compiler.ir.IR_Method	0.9468299798001201	
+Move Method	org.jruby.RubyHash::internalKeyExist(org.jruby.RubyHash.RubyHashEntry, int, org.jruby.runtime.builtin.IRubyObject):boolean	org.jruby.RubyHash.RubyHashEntry	0.9468305069925251	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::loadReceiver(java.lang.String, org.jruby.anno.JavaMethodDescriptor, org.jruby.compiler.impl.SkinnyMethodAdapter):void	org.jruby.anno.JavaMethodDescriptor	0.9468315845434153	
+Move Method	org.jruby.ext.ffi.jffi.CallbackManager::getClosureInfo(org.jruby.Ruby, org.jruby.ext.ffi.CallbackInfo):org.jruby.ext.ffi.jffi.CallbackManager.ClosureInfo	org.jruby.ext.ffi.CallbackInfo	0.946831588023387	
+Move Method	org.jruby.parser.ParserSupport::addRootNode(org.jruby.ast.Node, org.jruby.lexer.yacc.ISourcePosition):org.jruby.ast.Node	org.jruby.parser.RubyParserResult	0.9468317120151561	
+Move Method	org.jruby.ext.ffi.StructByValue::newStruct(org.jruby.Ruby, byte[], int):org.jruby.ext.ffi.Struct	org.jruby.ext.ffi.Type	0.9468320079664072	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildClassVarAsgn(org.jruby.ast.ClassVarAsgnNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.ClassVarAsgnNode	0.9468321506206246	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildGlobalVar(org.jruby.ast.GlobalVarNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.GlobalVarNode	0.9468322796529167	
+Move Method	org.jruby.parser.Ruby19Parser::case499_line1911(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468326020882327	
+Move Method	org.jruby.parser.Ruby19Parser::case503_line1925(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468326020882327	
+Move Method	org.jruby.ext.ffi.StructLayout.Member::sizeMember(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.ext.ffi.Type	0.9468327559425768	
+Move Method	org.jruby.ast.ArgsNode::getOptionalArgsCount():int	org.jruby.ast.ListNode	0.9468328310985803	
+Move Method	org.jruby.ast.util.SexpMaker::flipNode(org.jruby.ast.FlipNode):void	org.jruby.ast.FlipNode	0.9468329751119631	
+Move Method	org.jruby.lexer.yacc.StringTerm::parseRegexpFlags(org.jruby.lexer.yacc.LexerSource):int	org.jruby.lexer.yacc.LexerSource	0.9468333754408182	
+Move Method	org.jruby.ast.util.SexpMaker::fixnumNode(org.jruby.ast.FixnumNode):void	org.jruby.ast.FixnumNode	0.9468335989097966	
+Move Method	org.jruby.parser.ParserSupport::new_fcall_noargs(org.jruby.lexer.yacc.Token, org.jruby.ast.IterNode):org.jruby.ast.Node	org.jruby.lexer.yacc.Token	0.9468341341587824	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildGlobalAsgn(org.jruby.ast.GlobalAsgnNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.GlobalAsgnNode	0.9468341420038716	
+Move Method	org.jruby.ast.util.SexpMaker::fCallNode(org.jruby.ast.FCallNode):void	org.jruby.ast.FCallNode	0.9468342190090621	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildInstVar(org.jruby.ast.InstVarNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.InstVarNode	0.9468345885971811	
+Move Method	org.jruby.util.Sprintf.Args::warning(org.jruby.common.IRubyWarnings.ID, java.lang.String):void	org.jruby.Ruby	0.9468345887560426	
+Move Method	org.jruby.ast.util.SexpMaker::dVarNode(org.jruby.ast.DVarNode):void	org.jruby.ast.DVarNode	0.9468345942965293	
+Move Method	org.jruby.ast.util.SexpMaker::localVarNode(org.jruby.ast.LocalVarNode):void	org.jruby.ast.LocalVarNode	0.9468345942965293	
+Move Method	org.jruby.parser.ParserSupport::allowDubyExtension(org.jruby.lexer.yacc.ISourcePosition):void	org.jruby.parser.ParserConfiguration	0.9468347121898057	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildInstAsgn(org.jruby.ast.InstAsgnNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.InstAsgnNode	0.9468348960545647	
+Move Method	org.jruby.ast.ArgsNode::assignOptArgs(org.jruby.runtime.builtin.IRubyObject[], org.jruby.Ruby, org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, int):int	org.jruby.ast.ListNode	0.9468350056889246	
+Move Method	org.jruby.lexer.yacc.RubyYaccLexer::resetStacks():void	org.jruby.lexer.yacc.StackState	0.9468352389599732	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildFixnum(org.jruby.ast.FixnumNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.FixnumNode	0.9468357975893283	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildDVar(org.jruby.ast.DVarNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.DVarNode	0.9468367935755462	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildLocalVar(org.jruby.ast.LocalVarNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.LocalVarNode	0.9468367935755462	
+Move Method	org.jruby.runtime.callback.InvocationCallbackFactory::checkArity(org.jruby.compiler.impl.SkinnyMethodAdapter, org.jruby.runtime.Arity):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468368705697906	
+Move Method	org.jruby.test.TestUnitTestSuite::setupInterpreter(org.jruby.Ruby):void	org.jruby.Ruby	0.946837003395662	
+Move Method	org.jruby.ext.ffi.StructLayout.Array::getOffset(org.jruby.runtime.builtin.IRubyObject):long	org.jruby.ext.ffi.Type	0.946837065111751	
+Move Method	org.jruby.runtime.InterpretedBlock::post(org.jruby.runtime.ThreadContext, org.jruby.runtime.Binding, org.jruby.runtime.Visibility, org.jruby.runtime.Frame):void	org.jruby.runtime.ThreadContext	0.9468372771230068	
+Move Method	org.jruby.internal.runtime.GlobalVariables::set(java.lang.String, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468373143246315	
+Move Method	org.jruby.ast.util.SexpMaker::callNode(org.jruby.ast.CallNode):void	org.jruby.ast.CallNode	0.9468378535517117	
+Move Method	org.jruby.compiler.impl.BaseBodyCompiler::shouldUseBoxedArgs(org.jruby.parser.StaticScope):boolean	org.jruby.parser.StaticScope	0.9468379425458345	
+Move Method	org.jruby.parser.ParserSupport::warnUnlessEOption(org.jruby.common.IRubyWarnings.ID, org.jruby.ast.Node, java.lang.String):void	org.jruby.parser.ParserConfiguration	0.9468379948973551	
+Move Method	org.jruby.ast.util.SexpMaker::dAsgnNode(org.jruby.ast.DAsgnNode):void	org.jruby.ast.DAsgnNode	0.9468380802565043	
+Move Method	org.jruby.RubyMethod::arity():org.jruby.RubyFixnum	org.jruby.internal.runtime.methods.DynamicMethod	0.9468383615187966	
+Move Method	org.jruby.parser.Ruby19Parser::case255_line1013(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468385542170903	
+Move Method	org.jruby.parser.Ruby19Parser::case253_line992(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468385542170903	
+Move Method	org.jruby.parser.ParserSupport::warningUnlessEOption(org.jruby.common.IRubyWarnings.ID, org.jruby.ast.Node, java.lang.String):void	org.jruby.parser.ParserConfiguration	0.9468387998239811	
+Move Method	org.jruby.runtime.load.LoadService::tryLoadingLibraryOrScript(org.jruby.Ruby, org.jruby.runtime.load.LoadService.SearchState):boolean	org.jruby.runtime.load.LoadService.SearchState	0.9468392429633817	
+Move Method	org.jruby.parser.ParserSupport::new_args(org.jruby.lexer.yacc.ISourcePosition, org.jruby.ast.ListNode, org.jruby.ast.ListNode, org.jruby.ast.RestArgNode, org.jruby.ast.ListNode, org.jruby.ast.BlockArgNode):org.jruby.ast.Node	org.jruby.ast.ListNode	0.9468393643507015	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildVCall(org.jruby.ast.VCallNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.VCallNode	0.9468395251346008	
+Move Method	org.jruby.runtime.callback.InvocationCallbackFactory::callMethodMissingIfNecessary(org.jruby.compiler.impl.SkinnyMethodAdapter, org.objectweb.asm.Label, org.objectweb.asm.Label):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468399207208225	
+Move Method	org.jruby.lexer.yacc.RubyYaccLexer::readEscape():int	org.jruby.lexer.yacc.LexerSource	0.9468404346874593	
+Move Method	org.jruby.ast.MultipleAsgn19Node::getPreCount():int	org.jruby.ast.ListNode	0.946840437620406	
+Move Method	org.jruby.ast.MultipleAsgn19Node::getPostCount():int	org.jruby.ast.ListNode	0.946840437620406	
+Move Method	org.jruby.ast.MultipleAsgnNode::getPreCount():int	org.jruby.ast.ListNode	0.9468404388962524	
+Move Method	org.jruby.lexer.yacc.StringTerm::escaped(org.jruby.lexer.yacc.LexerSource, org.jruby.util.ByteList):void	org.jruby.lexer.yacc.LexerSource	0.9468405919071087	
+Move Method	org.jruby.ast.util.SexpMaker::attrAssignNode(org.jruby.ast.AttrAssignNode):void	org.jruby.ast.AttrAssignNode	0.9468412823401661	
+Move Method	org.jruby.runtime.load.LoadService::createLibrary(org.jruby.runtime.load.LoadService.SearchState, org.jruby.runtime.load.LoadServiceResource):org.jruby.runtime.load.Library	org.jruby.runtime.load.LoadService.SearchState	0.9468416578971814	
+Move Method	org.jruby.lexer.yacc.RubyYaccLexer::scanOct(int):char	org.jruby.lexer.yacc.LexerSource	0.9468417619019511	
+Move Method	org.jruby.lexer.yacc.RubyYaccLexer::isNext_identchar():boolean	org.jruby.lexer.yacc.LexerSource	0.9468418215402982	
+Move Method	org.jruby.ast.OpAsgnNode::getVariableName():java.lang.String	org.jruby.runtime.CallSite	0.946842026467027	
+Move Method	org.jruby.ast.OpAsgnNode::getVariableNameAsgn():java.lang.String	org.jruby.runtime.CallSite	0.946842026467027	
+Move Method	org.jruby.compiler.ir.IR_Builder::needsDefinitionCheck(org.jruby.ast.Node):boolean	org.jruby.ast.Node	0.9468423909646075	
+Move Method	org.jruby.ast.util.SexpMaker::constNode(org.jruby.ast.ConstNode):void	org.jruby.ast.ConstNode	0.946842591420816	
+Move Method	org.jruby.RubyProc::handleReturnJump(org.jruby.Ruby, org.jruby.exceptions.JumpException.ReturnJump, org.jruby.internal.runtime.JumpTarget):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468425989984954	
+Move Method	org.jruby.RubyProc::handleRetryJump(org.jruby.Ruby, org.jruby.exceptions.JumpException.RetryJump):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468425989984954	
+Move Method	org.jruby.compiler.ASTCompiler::needsDefinitionCheck(org.jruby.ast.Node):boolean	org.jruby.ast.Node	0.946842623344006	
+Move Method	org.jruby.Ruby::parse(java.lang.String, java.lang.String, org.jruby.runtime.DynamicScope, int, boolean):org.jruby.ast.Node	org.jruby.parser.Parser	0.9468426416372827	
+Move Method	org.jruby.Ruby::parseEval(org.jruby.util.ByteList, java.lang.String, org.jruby.runtime.DynamicScope, int):org.jruby.ast.Node	org.jruby.parser.Parser	0.9468426473706353	
+Move Method	org.jruby.Ruby::parse(org.jruby.util.ByteList, java.lang.String, org.jruby.runtime.DynamicScope, int, boolean):org.jruby.ast.Node	org.jruby.parser.Parser	0.9468426473706353	
+Move Method	org.jruby.compiler.ASTCompiler::getLiteralSend(org.jruby.ast.CallNode):java.lang.String	org.jruby.ast.CallNode	0.9468427715880189	
+Move Method	org.jruby.runtime.callback.InvocationCallbackFactory::dispatchWithoutSTI(org.jruby.compiler.impl.SkinnyMethodAdapter, org.objectweb.asm.Label):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468429840841458	
+Move Method	org.jruby.ast.util.SexpMaker::constDeclNode(org.jruby.ast.ConstDeclNode):void	org.jruby.ast.ConstDeclNode	0.9468430308040087	
+Move Method	org.jruby.RubyIO::fwrite(org.jruby.util.ByteList):int	org.jruby.util.io.OpenFile	0.9468430973431177	
+Move Method	org.jruby.parser.ParserSupport::new_call_noargs(org.jruby.ast.Node, org.jruby.lexer.yacc.Token, org.jruby.ast.IterNode):org.jruby.ast.Node	org.jruby.lexer.yacc.Token	0.9468434706714198	
+Move Method	org.jruby.runtime.marshal.UnmarshalStream::registerLinkTarget(org.jruby.runtime.builtin.IRubyObject):void	org.jruby.runtime.marshal.UnmarshalCache	0.9468434989365724	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::loadArguments(org.jruby.compiler.impl.SkinnyMethodAdapter, org.jruby.anno.JavaMethodDescriptor, int):void	org.jruby.anno.JavaMethodDescriptor	0.9468435700865108	
+Move Method	org.jruby.Ruby::parseInline(java.io.InputStream, java.lang.String, org.jruby.runtime.DynamicScope):org.jruby.ast.Node	org.jruby.parser.Parser	0.9468439161705325	
+Move Method	org.jruby.RubyClass::notVisibleAndNotMethodMissing(org.jruby.internal.runtime.methods.DynamicMethod, java.lang.String, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.CallType):boolean	org.jruby.internal.runtime.methods.DynamicMethod	0.9468441469747394	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildDAsgn(org.jruby.ast.DAsgnNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.DAsgnNode	0.946844401609787	
+Move Method	org.jruby.Ruby::parseFile(java.io.InputStream, java.lang.String, org.jruby.runtime.DynamicScope, int):org.jruby.ast.Node	org.jruby.parser.Parser	0.9468445609880328	
+Move Method	org.jruby.parser.ParserSupport::getRestArgNode(org.jruby.lexer.yacc.Token):org.jruby.ast.ArgumentNode	org.jruby.parser.StaticScope	0.9468447054401026	
+Move Method	org.jruby.parser.Ruby19Parser::case486_line1837(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.parser.Ruby19Parser::case88_line623(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.parser.Ruby19Parser::case395_line1496(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.parser.Ruby19Parser::case457_line1742(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.parser.Ruby19Parser::case326_line1244(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.parser.Ruby19Parser::case80_line586(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.parser.Ruby19Parser::case363_line1366(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468447446537429	
+Move Method	org.jruby.ast.util.SexpMaker::localAsgnNode(org.jruby.ast.LocalAsgnNode):void	org.jruby.ast.LocalAsgnNode	0.9468447505395138	
+Move Method	org.jruby.RubyProc::op_equal(org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468449487154085	
+Move Method	org.jruby.runtime.CompiledBlock::post(org.jruby.runtime.ThreadContext, org.jruby.runtime.Binding, org.jruby.runtime.Visibility, org.jruby.runtime.Frame):void	org.jruby.runtime.ThreadContext	0.9468452825010574	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject[], org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.runtime.callsite.CachingCallSite::callMethodMissing(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.internal.runtime.methods.DynamicMethod, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.methods.DynamicMethod	0.946845377658926	
+Move Method	org.jruby.parser.Ruby19Parser::case232_line925(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468456227442347	
+Move Method	org.jruby.RubyIO::close2(org.jruby.Ruby):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468456827435328	
+Move Method	org.jruby.runtime.Interpreted19Block::post(org.jruby.runtime.ThreadContext, org.jruby.runtime.Binding, org.jruby.runtime.Visibility, org.jruby.runtime.Frame):void	org.jruby.runtime.ThreadContext	0.9468457283878005	
+Move Method	org.jruby.parser.Ruby19Parser::case335_line1273(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468458735668828	
+Move Method	org.jruby.parser.Ruby19Parser::case332_line1264(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468458735668828	
+Move Method	org.jruby.parser.Ruby19Parser::case331_line1261(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468458735668828	
+Move Method	org.jruby.parser.Ruby19Parser::case336_line1276(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468458735668828	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildConstDeclAssignment(org.jruby.ast.ConstDeclNode, org.jruby.compiler.ir.IR_Scope, org.jruby.compiler.ir.operands.Operand):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.ConstDeclNode	0.9468460174095293	
+Move Method	org.jruby.Ruby::tryCompile(org.jruby.ast.Node, org.jruby.util.JRubyClassLoader):org.jruby.ast.executable.Script	org.jruby.RubyInstanceConfig	0.9468460264125771	
+Move Method	org.jruby.parser.ParserSupport::gettable2(org.jruby.ast.Node):org.jruby.ast.Node	org.jruby.ast.Node	0.946846065131827	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::checkArity(org.jruby.anno.JRubyMethod, org.jruby.compiler.impl.SkinnyMethodAdapter, int):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468461330319313	
+Move Method	org.jruby.parser.Ruby19Parser::case302_line1162(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468461625144954	
+Move Method	org.jruby.util.IOChannel::write(org.jruby.runtime.CallSite, java.nio.ByteBuffer):int	org.jruby.runtime.CallSite	0.9468461747311652	
+Move Method	org.jruby.Main::showVersion():void	org.jruby.RubyInstanceConfig	0.9468461779611977	
+Move Method	org.jruby.Main::showCopyright():void	org.jruby.RubyInstanceConfig	0.9468461779611977	
+Move Method	org.jruby.Main::printProperties():void	org.jruby.RubyInstanceConfig	0.9468461779611977	
+Move Method	org.jruby.parser.DefaultRubyParser::case309_line1158(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468462000529574	
+Move Method	org.jruby.Main::run():int	org.jruby.RubyInstanceConfig	0.9468462177289012	
+Move Method	org.jruby.lexer.yacc.StringTerm::parseEscapeIntoBuffer(org.jruby.lexer.yacc.LexerSource, org.jruby.util.ByteList):void	org.jruby.lexer.yacc.LexerSource	0.9468462903672322	
+Move Method	org.jruby.parser.Ruby19Parser::case487_line1847(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468463462817723	
+Move Method	org.jruby.parser.Ruby19Parser::case242_line951(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport19	0.9468463544968495	
+Move Method	org.jruby.util.IOChannel::read(org.jruby.runtime.CallSite, java.nio.ByteBuffer):int	org.jruby.runtime.CallSite	0.9468463843947412	
+Move Method	org.jruby.compiler.ir.IR_Builder::receiveArgs(org.jruby.ast.ArgsNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.ArgsNode	0.9468463922472459	
+Move Method	org.jruby.ast.WhenNode::when(org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.ThreadContext, org.jruby.Ruby, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.ast.Node	0.9468464727181484	
+Move Method	org.jruby.RubySymbol::to_int(org.jruby.Ruby):org.jruby.RubyFixnum	org.jruby.Ruby	0.9468465321379421	
+Move Method	org.jruby.javasupport.JavaMethod::invokeWithExceptionHandling(java.lang.reflect.Method, java.lang.Object, java.lang.Object[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.javasupport.JavaUtil.JavaConverter	0.9468465961259448	
+Move Method	org.jruby.anno.TypePopulator::populateModuleMethod(org.jruby.RubyModule, org.jruby.internal.runtime.methods.JavaMethod):org.jruby.internal.runtime.methods.DynamicMethod	org.jruby.internal.runtime.methods.JavaMethod	0.9468472452785786	
+Move Method	org.jruby.RubyStringScanner::extractBegLen(org.jruby.Ruby, int, int):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyString	0.9468473216728756	
+Move Method	org.jruby.parser.Ruby19Parser::case298_line1144(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847362929992	
+Move Method	org.jruby.parser.Ruby19Parser::case20_line372(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847362929992	
+Move Method	org.jruby.parser.Ruby19Parser::case303_line1168(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847362929992	
+Move Method	org.jruby.parser.DefaultRubyParser::case20_line362(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847400402737	
+Move Method	org.jruby.parser.DefaultRubyParser::case305_line1140(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847400402737	
+Move Method	org.jruby.parser.DefaultRubyParser::case310_line1164(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847400402737	
+Move Method	org.jruby.compiler.ASTCompiler::compileGetDefinitionBase(org.jruby.ast.Node, org.jruby.compiler.BodyCompiler):void	org.jruby.ast.Node	0.9468474307384417	
+Move Method	org.jruby.RubyTempfile::defaultTmpDir(org.jruby.Ruby, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468474709278731	
+Move Method	org.jruby.compiler.ASTCompiler::getBlock(org.jruby.ast.Node):org.jruby.compiler.CompilerCallback	org.jruby.ast.Node	0.9468475799558506	
+Move Method	org.jruby.parser.Ruby19Parser::case94_line648(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847702448348	
+Move Method	org.jruby.parser.Ruby19Parser::case85_line601(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847702448348	
+Move Method	org.jruby.parser.Ruby19Parser::case86_line610(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847702448348	
+Move Method	org.jruby.parser.Ruby19Parser::case93_line639(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946847702448348	
+Move Method	org.jruby.compiler.ASTCompiler::compileAnd(org.jruby.ast.Node, org.jruby.compiler.BodyCompiler, boolean):void	org.jruby.ast.Node	0.9468477032362161	
+Move Method	org.jruby.compiler.ASTCompiler::compileOr(org.jruby.ast.Node, org.jruby.compiler.BodyCompiler, boolean):void	org.jruby.ast.Node	0.9468477032362161	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildDRegexp(org.jruby.ast.DRegexpNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.DRegexpNode	0.9468477058606429	
+Move Method	org.jruby.parser.DefaultRubyParser::case88_line625(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468477744415164	
+Move Method	org.jruby.parser.DefaultRubyParser::case79_line578(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468477744415164	
+Move Method	org.jruby.parser.DefaultRubyParser::case80_line587(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468477744415164	
+Move Method	org.jruby.parser.DefaultRubyParser::case87_line616(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468477744415165	
+Move Method	org.jruby.ast.util.SexpMaker::colon3Node(org.jruby.ast.Colon3Node):void	org.jruby.ast.Colon3Node	0.9468478278030097	
+Move Method	org.jruby.runtime.CompiledBlock19::post(org.jruby.runtime.ThreadContext, org.jruby.runtime.Binding, org.jruby.runtime.Visibility, org.jruby.runtime.Frame):void	org.jruby.runtime.ThreadContext	0.9468478411620532	
+Move Method	org.jruby.Ruby::parseEval(java.lang.String, java.lang.String, org.jruby.runtime.DynamicScope, int):org.jruby.ast.Node	org.jruby.parser.Parser	0.9468480982118233	
+Move Method	org.jruby.parser.Ruby19Parser::case301_line1158(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946848136731283	
+Move Method	org.jruby.parser.Ruby19Parser::case308_line1192(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946848136731283	
+Move Method	org.jruby.parser.DefaultRubyParser::case315_line1189(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468481393918963	
+Move Method	org.jruby.parser.DefaultRubyParser::case308_line1154(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468481393918963	
+Move Method	org.jruby.RubyBasicObject::variableTableGetSize():int	org.jruby.RubyClass	0.9468481792502499	
+Move Method	org.jruby.compiler.impl.StandardASMCompiler::endInit():void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468482372148335	
+Move Method	org.jruby.compiler.impl.StandardASMCompiler::endClassInit():void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468482372148335	
+Move Method	org.jruby.parser.ParserSupport::new_call_blockpass(org.jruby.ast.Node, org.jruby.lexer.yacc.Token, org.jruby.ast.BlockPassNode):org.jruby.ast.Node	org.jruby.lexer.yacc.Token	0.9468482717764426	
+Move Method	org.jruby.parser.ParserSupport::new_fcall_simpleargs(org.jruby.lexer.yacc.Token, org.jruby.ast.ArrayNode, org.jruby.ast.Node):org.jruby.ast.Node	org.jruby.lexer.yacc.Token	0.9468483031089721	
+Move Method	org.jruby.parser.ParserSupport::new_fcall_blockpass(org.jruby.lexer.yacc.Token, org.jruby.ast.BlockPassNode):org.jruby.ast.Node	org.jruby.lexer.yacc.Token	0.9468483031089721	
+Move Method	org.jruby.parser.Ruby19Parser::case305_line1179(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468483430738515	
+Move Method	org.jruby.parser.DefaultRubyParser::case312_line1175(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468483457396186	
+Move Method	org.jruby.parser.Ruby19Parser::case392_line1476(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468483570031754	
+Move Method	org.jruby.compiler.impl.StandardInvocationCompiler::invokeDynamicNoBlockZero(java.lang.String, org.jruby.compiler.CompilerCallback):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.946848385283034	
+Move Method	org.jruby.parser.DefaultRubyParser::case240_line932(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468483944050498	
+Move Method	org.jruby.parser.DefaultRubyParser::case360_line1335(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468483944050498	
+Move Method	org.jruby.ext.ffi.StructLayout::getCacheableFieldIndex(org.jruby.ext.ffi.StructLayout.Member):int	org.jruby.ext.ffi.StructLayout.Member	0.9468483986482881	
+Move Method	org.jruby.ext.ffi.StructLayout::getReferenceFieldIndex(org.jruby.ext.ffi.StructLayout.Member):int	org.jruby.ext.ffi.StructLayout.Member	0.9468483998789883	
+Move Method	org.jruby.compiler.impl.StandardInvocationCompiler::invokeDynamicNoBlockSpecificArity(java.lang.String, org.jruby.compiler.CompilerCallback, org.jruby.compiler.ArgumentsCallback):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468484004083598	
+Move Method	org.jruby.parser.DefaultRubyParser::case233_line907(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484421677936	
+Move Method	org.jruby.parser.DefaultRubyParser::case243_line944(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484421677936	
+Move Method	org.jruby.parser.Ruby19Parser::case25_line397(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484469503817	
+Move Method	org.jruby.parser.Ruby19Parser::case186_line737(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484469503817	
+Move Method	org.jruby.parser.Ruby19Parser::case187_line753(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484469503817	
+Move Method	org.jruby.parser.Ruby19Parser::case309_line1196(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484471899944	
+Move Method	org.jruby.Ruby::printErrorPos(org.jruby.runtime.ThreadContext, java.io.PrintStream):void	org.jruby.runtime.ThreadContext	0.9468484751155064	
+Move Method	org.jruby.parser.DefaultRubyParser::case174_line701(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484840671626	
+Move Method	org.jruby.parser.DefaultRubyParser::case25_line391(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484840671626	
+Move Method	org.jruby.parser.DefaultRubyParser::case316_line1193(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468484847481969	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildConditionalLoop(org.jruby.compiler.ir.IR_Scope, org.jruby.ast.Node, org.jruby.ast.Node, boolean, boolean):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.Node	0.9468484873229681	
+Move Method	org.jruby.parser.DefaultRubyParser::case235_line915(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946848488705594	
+Move Method	org.jruby.parser.DefaultRubyParser::case246_line956(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946848488705594	
+Move Method	org.jruby.parser.DefaultRubyParser::case241_line936(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946848488705594	
+Move Method	org.jruby.parser.DefaultRubyParser::case247_line960(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468485340645147	
+Move Method	org.jruby.runtime.ThreadContext::setErrorInfoThreadContext(org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyThread	0.9468485535338863	
+Move Method	org.jruby.parser.Ruby19Parser::case306_line1182(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468486535326994	
+Move Method	org.jruby.parser.Ruby19Parser::case22_line382(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468486582615718	
+Move Method	org.jruby.runtime.Interpreted19Block::setupBlockArg(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block, org.jruby.runtime.Block.Type):void	org.jruby.ast.ArgsNode	0.946848682646786	
+Move Method	org.jruby.runtime.Interpreted19Block::setupBlockArgs(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block, org.jruby.runtime.Block.Type, boolean):void	org.jruby.ast.ArgsNode	0.946848682646786	
+Move Method	org.jruby.parser.DefaultRubyParser::case313_line1178(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468486910960561	
+Move Method	org.jruby.parser.DefaultRubyParser::case22_line372(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468486957343493	
+Move Method	org.jruby.Ruby::newSystemStackError(java.lang.String, java.lang.StackOverflowError):org.jruby.exceptions.RaiseException	org.jruby.RubyInstanceConfig	0.9468487462099573	
+Move Method	org.jruby.RubyStringScanner::inspect2():org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyString	0.9468487648473289	
+Move Method	org.jruby.compiler.ir.IR_Builder::setupCallClosure(org.jruby.ast.Node, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.Node	0.9468487772724533	
+Move Method	org.jruby.runtime.ThreadContext::setConstantInModule(java.lang.String, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468487860536595	
+Move Method	org.jruby.RubyProc::handleBreakJump(org.jruby.Ruby, org.jruby.runtime.Block, org.jruby.exceptions.JumpException.BreakJump, org.jruby.internal.runtime.JumpTarget):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468489735242189	
+Move Method	org.jruby.compiler.impl.AbstractVariableCompiler::assignHeapLocal(int, int, boolean):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468490479179434	
+Move Method	org.jruby.runtime.DynamicScope::getBackRef(org.jruby.Ruby):org.jruby.runtime.builtin.IRubyObject	org.jruby.parser.StaticScope	0.9468490595557997	
+Move Method	org.jruby.runtime.DynamicScope::getLastLine(org.jruby.Ruby):org.jruby.runtime.builtin.IRubyObject	org.jruby.parser.StaticScope	0.946849062659853	
+Move Method	org.jruby.RubyStringIO::truncate(org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyString	0.9468492719742475	
+Move Method	org.jruby.internal.runtime.methods.DynamicMethod::handleRedo(org.jruby.Ruby):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468492844318918	
+Move Method	org.jruby.RubyStringScanner::inspect1():org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyString	0.9468493166841345	
+Move Method	org.jruby.parser.Ruby19Parser::case205_line832(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493371481662	
+Move Method	org.jruby.parser.Ruby19Parser::case23_line388(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493371481662	
+Move Method	org.jruby.parser.Ruby19Parser::case279_line1087(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493371481662	
+Move Method	org.jruby.parser.DefaultRubyParser::case23_line378(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493397430442	
+Move Method	org.jruby.parser.DefaultRubyParser::case192_line775(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493397430442	
+Move Method	org.jruby.parser.Ruby19Parser::case204_line829(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493703806616	
+Move Method	org.jruby.parser.Ruby19Parser::case203_line826(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493703806616	
+Move Method	org.jruby.parser.DefaultRubyParser::case190_line769(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493729755404	
+Move Method	org.jruby.parser.DefaultRubyParser::case191_line772(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493729755404	
+Move Method	org.jruby.parser.DefaultRubyParser::case440_line1644(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468493729755404	
+Move Method	org.jruby.compiler.impl.BaseBodyCompiler::println():void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468494380988262	
+Move Method	org.jruby.RubyIO::incrementLineno(org.jruby.Ruby, org.jruby.util.io.OpenFile):void	org.jruby.util.io.OpenFile	0.9468494716582176	
+Move Method	org.jruby.RubyClass::superclass19(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468495610996103	
+Move Method	org.jruby.compiler.impl.AbstractVariableCompiler::assignHeapLocal(org.jruby.compiler.CompilerCallback, int, int, boolean):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468495625114506	
+Move Method	org.jruby.runtime.load.LoadService::debugLogFound(java.lang.String, java.lang.String):void	org.jruby.Ruby	0.9468496048711855	
+Move Method	org.jruby.parser.Ruby19Parser::case384_line1448(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496205778764	
+Move Method	org.jruby.parser.Ruby19Parser::case7_line324(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496205778764	
+Move Method	org.jruby.runtime.load.LoadService::canonicalizePath(java.lang.String):java.lang.String	org.jruby.Ruby	0.9468496210060984	
+Move Method	org.jruby.parser.Ruby19Parser::case300_line1155(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496226443428	
+Move Method	org.jruby.parser.DefaultRubyParser::case307_line1151(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496253101423	
+Move Method	org.jruby.parser.Ruby19Parser::case241_line947(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496523360138	
+Move Method	org.jruby.parser.Ruby19Parser::case2_line283(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496523360138	
+Move Method	org.jruby.parser.DefaultRubyParser::case248_line964(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case7_line314(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case222_line871(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case236_line920(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case220_line864(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case231_line899(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case239_line929(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case280_line1051(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496581699031	
+Move Method	org.jruby.parser.DefaultRubyParser::case242_line940(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496897379208	
+Move Method	org.jruby.parser.DefaultRubyParser::case24_line382(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496897379208	
+Move Method	org.jruby.parser.DefaultRubyParser::case2_line274(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496897379208	
+Move Method	org.jruby.parser.DefaultRubyParser::case238_line926(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496897379208	
+Move Method	org.jruby.parser.DefaultRubyParser::case232_line903(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468496897379208	
+Move Method	org.jruby.parser.DefaultRubyParser::case244_line948(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468497204908711	
+Move Method	org.jruby.parser.DefaultRubyParser::case245_line952(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468497504594503	
+Move Method	org.jruby.runtime.load.LoadService::addPath(java.lang.String):void	org.jruby.Ruby	0.9468498063279178	
+Move Method	org.jruby.ext.ffi.CallbackInfo::to_s(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyObject	0.946849851343971	
+Move Method	org.jruby.util.io.ChannelDescriptor::checkNewModes(org.jruby.util.io.ModeFlags):void	org.jruby.util.io.ModeFlags	0.9468500022178888	
+Move Method	org.jruby.RubyModule.KindOf::isKindOf(org.jruby.runtime.builtin.IRubyObject, org.jruby.RubyModule):boolean	org.jruby.RubyModule	0.9468500060190599	
+Move Method	org.jruby.util.io.ChannelStream::flushWrite(boolean):boolean	org.jruby.util.io.ChannelDescriptor	0.9468500125265363	
+Move Method	org.jruby.javasupport.JavaClass::installClassConstants(java.lang.Class<?>, org.jruby.RubyClass):void	org.jruby.RubyModule	0.9468501979838758	
+Move Method	org.jruby.runtime.DynamicScope::toString(java.lang.StringBuffer, java.lang.String):java.lang.String	org.jruby.parser.StaticScope	0.9468502173518099	
+Move Method	org.jruby.Ruby::fastGetModule(java.lang.String):org.jruby.RubyModule	org.jruby.RubyModule	0.9468502863080325	
+Move Method	org.jruby.runtime.load.LoadService::checkEmptyLoad(java.lang.String):void	org.jruby.Ruby	0.9468503629036775	
+Move Method	org.jruby.internal.runtime.methods.DynamicMethod::handleReturn(org.jruby.runtime.ThreadContext, org.jruby.exceptions.JumpException.ReturnJump):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.ThreadContext	0.9468503951795444	
+Move Method	org.jruby.compiler.impl.BaseBodyCompiler::getCompiledClass():void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468504623069143	
+Move Method	org.jruby.compiler.impl.AbstractVariableCompiler::retrieveHeapLocal(int, int):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468504958042977	
+Move Method	org.jruby.RubyIO::op_binmode(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468505875586293	
+Move Method	org.jruby.RubyString::toEncoding(org.jruby.Ruby):org.jcodings.Encoding	org.jruby.Ruby	0.946850613894281	
+Move Method	org.jruby.parser.Ruby19Parser::case374_line1417(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case371_line1399(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case456_line1738(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case496_line1905(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case382_line1442(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case218_line875(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case76_line571(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case194_line791(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case57_line509(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case376_line1424(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case394_line1493(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case53_line497(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case31_line429(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case221_line890(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case78_line579(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case58_line512(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case81_line589(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case50_line486(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case206_line839(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case375_line1420(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case4_line313(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case379_line1433(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case494_line1898(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case381_line1439(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case378_line1430(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case30_line426(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case280_line1090(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case377_line1427(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case56_line506(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case89_line627(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case55_line503(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case506_line1942(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case41_line459(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case229_line916(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case52_line494(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case1_line280(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case387_line1462(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case328_line1251(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case380_line1436(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case95_line657(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case443_line1711(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case442_line1708(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case314_line1217(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case87_line619(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case48_line478(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case240_line944(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case49_line481(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case479_line1815(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case54_line500(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.Ruby19Parser::case385_line1456(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506167199012	
+Move Method	org.jruby.parser.DefaultRubyParser::case345_line1290(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case193_line782(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case343_line1283(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case81_line596(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case1_line271(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case57_line507(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case72_line556(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case53_line495(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case352_line1313(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case348_line1299(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case89_line634(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case49_line479(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case230_line896(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case205_line818(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case216_line852(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case208_line827(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case410_line1556(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case83_line604(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case58_line510(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case339_line1261(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case74_line563(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case50_line484(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case346_line1293(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case423_line1587(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case344_line1287(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case30_line420(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case362_line1352(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case342_line1280(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case56_line504(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case321_line1214(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case55_line501(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case82_line601(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case181_line735(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case41_line457(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case422_line1582(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case52_line492(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case4_line303(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case347_line1296(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case409_line1553(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case48_line476(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case350_line1307(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case452_line1708(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case54_line498(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case75_line566(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.parser.DefaultRubyParser::case462_line1749(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506193148114	
+Move Method	org.jruby.RubyIO::checkDescriptor(org.jruby.Ruby, org.jruby.util.io.ChannelDescriptor):void	org.jruby.util.io.OpenFile	0.9468506254699554	
+Move Method	org.jruby.parser.Ruby19Parser::case99_line669(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.Ruby19Parser::case83_line595(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.Ruby19Parser::case92_line636(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.Ruby19Parser::case82_line592(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.Ruby19Parser::case91_line633(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.Ruby19Parser::case84_line598(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.Ruby19Parser::case90_line630(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506286087045	
+Move Method	org.jruby.parser.DefaultRubyParser::case84_line607(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506312942114	
+Move Method	org.jruby.parser.DefaultRubyParser::case85_line610(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506312942114	
+Move Method	org.jruby.parser.DefaultRubyParser::case78_line575(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506312942114	
+Move Method	org.jruby.parser.DefaultRubyParser::case76_line569(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506312942114	
+Move Method	org.jruby.parser.DefaultRubyParser::case86_line613(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506312942114	
+Move Method	org.jruby.parser.DefaultRubyParser::case77_line572(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506312942114	
+Move Method	org.jruby.parser.Ruby19Parser::case207_line842(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case222_line893(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case357_line1345(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case216_line869(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case200_line817(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case209_line848(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case202_line823(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case344_line1301(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case211_line854(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case356_line1342(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case212_line857(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case217_line872(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case199_line814(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case223_line896(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case210_line851(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case197_line808(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case215_line866(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case214_line863(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case208_line845(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case201_line820(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case480_line1818(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case24_line392(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case198_line811(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case354_line1333(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.Ruby19Parser::case213_line860(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506333361904	
+Move Method	org.jruby.parser.DefaultRubyParser::case435_line1629(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case198_line797(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case184_line751(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case210_line833(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case203_line812(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case186_line757(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case189_line766(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case197_line794(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case195_line788(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case209_line830(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case201_line806(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case200_line803(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case188_line763(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case187_line760(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case194_line785(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case199_line800(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case185_line754(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case196_line791(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case202_line809(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850635931101	
+Move Method	org.jruby.parser.DefaultRubyParser::case234_line911(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850652121371	
+Move Method	org.jruby.RubyString::subpatSetCheck(org.jruby.Ruby, int, org.joni.Region):int	org.jruby.Ruby	0.9468506590032206	
+Move Method	org.jruby.parser.DefaultRubyParser::case446_line1672(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468506632649276	
+Move Method	org.jruby.RubyString::countCommon(org.jruby.Ruby, boolean[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468506678689728	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::invokeCCallTrace(org.jruby.compiler.impl.SkinnyMethodAdapter):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468507187721004	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::invokeCReturnTrace(org.jruby.compiler.impl.SkinnyMethodAdapter):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468507187721004	
+	current system		0.9468507721753275	
+Move Method	org.jruby.util.SunSignalFacade::trap(org.jruby.Ruby, org.jruby.util.SunSignalFacade.JRubySignalHandler):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468507775089142	
+Move Method	org.jruby.RubyClass::generateMethodAnnotations(java.util.Map<java.lang.Class,java.util.Map<java.lang.String,java.lang.Object>>, org.jruby.compiler.impl.SkinnyMethodAdapter, java.util.List<java.util.Map<java.lang.Class,java.util.Map<java.lang.String,java.lang.Object>>>):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468507883760655	
+Move Method	org.jruby.RubyString::op_aref(org.jruby.Ruby, int):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468508515023664	
+Move Method	org.jruby.RubyIO::readNotAll(org.jruby.runtime.ThreadContext, org.jruby.util.io.OpenFile, int, org.jruby.RubyString):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468508561498649	
+Move Method	org.jruby.parser.Ruby19Parser::case321_line1231(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case16_line351(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case196_line801(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case299_line1149(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case422_line1625(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case349_line1317(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case466_line1776(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case348_line1314(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case18_line361(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case476_line1806(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case220_line887(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case471_line1791(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case59_line515(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case256_line1023(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case45_line469(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case475_line1803(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case350_line1320(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case239_line941(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case184_line727(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case46_line472(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case6_line321(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case389_line1470(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case345_line1305(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case39_line454(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case219_line884(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case473_line1797(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case225_line902(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case386_line1458(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case289_line1118(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case185_line732(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case469_line1785(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case342_line1295(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case250_line977(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case63_line529(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case416_line1603(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case51_line488(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case508_line1950(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case227_line909(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case478_line1812(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case372_line1401(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case44_line466(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case37_line448(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case429_line1651(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case294_line1133(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case17_line354(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case38_line451(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case224_line899(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case407_line1538(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case340_line1289(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case477_line1809(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case472_line1794(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case304_line1173(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case351_line1323(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case251_line980(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case347_line1311(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case467_line1779(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case285_line1108(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case346_line1308(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case341_line1292(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case15_line348(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case424_line1632(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case275_line1075(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case474_line1800(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case36_line445(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case286_line1111(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case292_line1126(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case343_line1298(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case293_line1130(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case339_line1286(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case468_line1782(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case195_line794(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case353_line1329(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case470_line1788(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case352_line1326(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508841588384	
+Move Method	org.jruby.parser.Ruby19Parser::case188_line772(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case98_line666(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case26_line413(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case271_line1057(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case100_line672(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case112_line708(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case270_line1054(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.946850894996137	
+Move Method	org.jruby.parser.Ruby19Parser::case233_line928(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508997236748	
+Move Method	org.jruby.parser.Ruby19Parser::case388_line1464(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508997236748	
+Move Method	org.jruby.parser.Ruby19Parser::case21_line377(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508997236748	
+Move Method	org.jruby.parser.Ruby19Parser::case513_line1972(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508997236748	
+Move Method	org.jruby.parser.Ruby19Parser::case3_line296(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468508997236748	
+Move Method	org.jruby.parser.Ruby19Parser::case514_line1982(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509101542513	
+Move Method	org.jruby.parser.DefaultRubyParser::case356_line1325(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case15_line338(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case300_line1122(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case340_line1263(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case59_line513(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case330_line1229(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case212_line839(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case45_line467(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case391_line1480(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case46_line470(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case295_line1107(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case31_line423(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case257_line991(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case353_line1315(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case173_line696(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case354_line1320(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case39_line452(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case383_line1448(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case263_line1011(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case432_line1620(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case389_line1473(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case306_line1145(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case439_line1641(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case351_line1309(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case311_line1169(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case16_line341(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case63_line525(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case214_line845(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case438_line1638(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case18_line351(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case292_line1100(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case51_line486(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case172_line691(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case437_line1635(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case374_line1387(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case44_line464(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case225_line883(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case37_line446(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case6_line311(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case434_line1626(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case464_line1757(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case284_line1073(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case433_line1623(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case207_line824(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case206_line821(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case291_line1097(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case182_line738(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case264_line1014(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case36_line443(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case183_line745(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case218_line858(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case17_line344(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case229_line893(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case260_line1001(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case38_line449(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case211_line836(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case299_line1119(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case436_line1632(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case298_line1115(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509219425616	
+Move Method	org.jruby.parser.DefaultRubyParser::case92_line643(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case279_line1048(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case94_line649(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case278_line1045(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case93_line646(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case26_line407(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case175_line717(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.parser.DefaultRubyParser::case104_line672(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509326787743	
+Move Method	org.jruby.ext.ffi.StructByValue::to_s(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyModule	0.94685093340758	
+Move Method	org.jruby.ext.ffi.Factory::init(org.jruby.Ruby, org.jruby.RubyModule):void	org.jruby.RubyModule	0.9468509355178887	
+Move Method	org.jruby.Ruby::getModule(java.lang.String):org.jruby.RubyModule	org.jruby.RubyModule	0.9468509371857868	
+Move Method	org.jruby.parser.DefaultRubyParser::case21_line367(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case3_line286(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case221_line868(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case32_line426(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case396_line1502(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case204_line815(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case470_line1789(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509373157337	
+Move Method	org.jruby.parser.DefaultRubyParser::case448_line1681(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509622249028	
+Move Method	org.jruby.parser.DefaultRubyParser::case450_line1694(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.parser.ParserSupport	0.9468509764277471	
+Move Method	org.jruby.RubyIO::ctl(org.jruby.Ruby, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468510011691132	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::loadArgumentWithCast(org.jruby.compiler.impl.SkinnyMethodAdapter, int, java.lang.Class):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468510636565585	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::loadBlockForPre(org.jruby.compiler.impl.SkinnyMethodAdapter, int, boolean):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468510636565585	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildLocalAsgn(org.jruby.ast.LocalAsgnNode, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.LocalAsgnNode	0.9468510712789343	
+Move Method	org.jruby.runtime.marshal.UnmarshalStream::findClass(java.lang.String):org.jruby.RubyClass	org.jruby.Ruby	0.9468511387765927	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::loadBlock(org.jruby.compiler.impl.SkinnyMethodAdapter, int, boolean):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468512283013694	
+Move Method	org.jruby.parser.Ruby19Parser::case365_line1373(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.9468512695568503	
+Move Method	org.jruby.Ruby::addBuiltinIfAllowed(java.lang.String, org.jruby.runtime.load.Library):void	org.jruby.runtime.load.LoadService	0.9468513354154008	
+Move Method	org.jruby.parser.ParserSupport19::arg_var(org.jruby.lexer.yacc.Token):int	org.jruby.lexer.yacc.Token	0.9468515334258278	
+Move Method	org.jruby.runtime.DynamicScope::getFlipScope():org.jruby.runtime.DynamicScope	org.jruby.parser.StaticScope	0.9468515450186071	
+Move Method	org.jruby.RubyModule::attr_writer(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.ThreadContext	0.9468517152280066	
+Move Method	org.jruby.RubyModule::attr_accessor(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.ThreadContext	0.9468517152280066	
+Move Method	org.jruby.RubyModule::attr(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.ThreadContext	0.9468517197900932	
+Move Method	org.jruby.RubyIO::stat(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468519450151867	
+Move Method	org.jruby.RubyModule::attr_reader(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.ThreadContext	0.9468522215876578	
+Move Method	org.jruby.compiler.ir.IR_Builder::buildColon3(org.jruby.ast.Colon3Node, org.jruby.compiler.ir.IR_Scope):org.jruby.compiler.ir.operands.Operand	org.jruby.ast.Colon3Node	0.9468522543246088	
+Move Method	org.jruby.internal.runtime.methods.InvocationMethodFactory::invokeCallConfigPost(org.jruby.compiler.impl.SkinnyMethodAdapter, java.lang.String, org.jruby.internal.runtime.methods.CallConfiguration):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468524177873117	
+Move Method	org.jruby.java.proxies.JavaProxy::getJavaObject():org.jruby.javasupport.JavaObject	org.jruby.RubyClass.VariableAccessor	0.9468524892002509	
+Move Method	org.jruby.parser.Ruby19Parser::case355_line1337(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.9468527699306379	
+Move Method	org.jruby.parser.DefaultRubyParser::case338_line1251(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.9468527724268012	
+Move Method	org.jruby.RubyThread::prepareRaiseException(org.jruby.Ruby, org.jruby.runtime.builtin.IRubyObject[], org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468530229272188	
+Move Method	org.jruby.parser.Ruby19Parser::case366_line1377(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.946853059327525	
+Move Method	org.jruby.parser.DefaultRubyParser::case337_line1247(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.946853082503488	
+Move Method	org.jruby.parser.DefaultRubyParser::case336_line1243(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.946853082503488	
+Move Method	org.jruby.parser.DefaultRubyParser::case430_line1609(java.lang.Object, java.lang.Object[], int):java.lang.Object	org.jruby.lexer.yacc.RubyYaccLexer	0.9468531050112938	
+Move Method	org.jruby.RubyIO::getPartial(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[], boolean):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468531317022579	
+Move Method	org.jruby.compiler.impl.BaseBodyCompiler::getNewEnsureName():java.lang.String	org.jruby.compiler.impl.StandardASMCompiler	0.9468531402082023	
+Move Method	org.jruby.RubyModule::setVisibility(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[], org.jruby.runtime.Visibility):void	org.jruby.runtime.ThreadContext	0.9468532659887124	
+Move Method	org.jruby.RubyRegexp::kcode(org.jruby.runtime.ThreadContext):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.KCode	0.9468532695489253	
+Move Method	org.jruby.RubyRegexp::initializeCommon19(org.jruby.RubyString, int):org.jruby.RubyRegexp	org.jruby.RubyString	0.9468535092821614	
+Move Method	org.jruby.RubyIO::close():org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468536468157274	
+Move Method	org.jruby.compiler.impl.StandardInvocationCompiler::invokeDynamicSelfNoBlockZero(java.lang.String):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468536582129579	
+Move Method	org.jruby.compiler.impl.StandardInvocationCompiler::invokeDynamicSelfNoBlockSpecificArity(java.lang.String, org.jruby.compiler.ArgumentsCallback):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468536840728493	
+Move Method	org.jruby.RubyArgsFile.ArgsFileData::inplaceEdit(org.jruby.runtime.ThreadContext, java.lang.String, java.lang.String):void	org.jruby.Ruby	0.9468537283986483	
+Move Method	org.jruby.compiler.impl.BaseBodyCompiler::getNewRescueName():java.lang.String	org.jruby.compiler.impl.StandardASMCompiler	0.9468538037926241	
+Move Method	org.jruby.RubyMethod::mproc(org.jruby.runtime.ThreadContext, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.ThreadContext	0.9468538886647743	
+Move Method	org.jruby.RubyIO::readAll(org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.io.OpenFile	0.9468538975670366	
+Move Method	org.jruby.util.io.OpenFile::checkClosed(org.jruby.Ruby):void	org.jruby.Ruby	0.9468540002911051	
+Move Method	org.jruby.ext.ffi.StructLayout.Array::getOffset(int):long	org.jruby.ext.ffi.Type	0.9468540587754536	
+Move Method	org.jruby.ast.OpAsgnNode::getOperatorName():java.lang.String	org.jruby.runtime.CallSite	0.9468540951553731	
+Move Method	org.jruby.RubyIO::waitWritable(org.jruby.util.io.ChannelDescriptor):boolean	org.jruby.util.io.ChannelDescriptor	0.9468542786362204	
+Move Method	org.jruby.RubyIO::waitReadable(org.jruby.util.io.ChannelDescriptor):boolean	org.jruby.util.io.ChannelDescriptor	0.9468543168985522	
+Move Method	org.jruby.ext.socket.RubyUNIXSocket::recvfrom(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468544589251852	
+Move Method	org.jruby.lexer.yacc.StringTerm::parseSimpleStringIntoBuffer(org.jruby.lexer.yacc.LexerSource, org.jruby.util.ByteList):int	org.jruby.lexer.yacc.LexerSource	0.9468546654053511	
+Move Method	org.jruby.RubyClass::checkNotInitialized():void	org.jruby.Ruby	0.9468552679346707	
+Move Method	org.jruby.javasupport.proxy.JavaProxyClass.ProxyMethodImpl::nameOnInspection():java.lang.String	org.jruby.javasupport.proxy.JavaProxyClass	0.946855354476233	
+Move Method	org.jruby.runtime.ThreadContext::getMethodNameFromFrame(org.jruby.runtime.Frame):java.lang.String	org.jruby.runtime.Frame	0.9468556171032906	
+Move Method	org.jruby.compiler.impl.StandardASMCompiler::getNewField(java.lang.String, java.lang.String, java.lang.Object):java.lang.String	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468558508953125	
+Move Method	org.jruby.RubyIO::readCheck(org.jruby.util.io.Stream):void	org.jruby.util.io.OpenFile	0.9468558852093754	
+Move Method	org.jruby.javasupport.JavaMethod::invokeDirectWithExceptionHandling(java.lang.reflect.Method, java.lang.Object, java.lang.Object[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.compiler.util.HandleFactory.Handle	0.9468559965481081	
+Move Method	org.jruby.javasupport.JavaMethod::invokeDirectWithExceptionHandling(java.lang.reflect.Method, java.lang.Object):org.jruby.runtime.builtin.IRubyObject	org.jruby.compiler.util.HandleFactory.Handle	0.9468559965481081	
+Move Method	org.jruby.javasupport.JavaMethod::invokeDirectWithExceptionHandling(java.lang.reflect.Method, java.lang.Object, java.lang.Object):org.jruby.runtime.builtin.IRubyObject	org.jruby.compiler.util.HandleFactory.Handle	0.9468559965481081	
+Move Method	org.jruby.javasupport.JavaMethod::invokeDirectWithExceptionHandling(java.lang.reflect.Method, java.lang.Object, java.lang.Object, java.lang.Object):org.jruby.runtime.builtin.IRubyObject	org.jruby.compiler.util.HandleFactory.Handle	0.9468559965481081	
+Move Method	org.jruby.javasupport.JavaMethod::invokeDirectWithExceptionHandling(java.lang.reflect.Method, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object):org.jruby.runtime.builtin.IRubyObject	org.jruby.compiler.util.HandleFactory.Handle	0.9468559965481081	
+Move Method	org.jruby.javasupport.JavaMethod::invokeDirectWithExceptionHandling(java.lang.reflect.Method, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object):org.jruby.runtime.builtin.IRubyObject	org.jruby.compiler.util.HandleFactory.Handle	0.9468559965481081	
+Move Method	org.jruby.RubyArray::index(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468562802585624	
+Move Method	org.jruby.RubyArray::rindex(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468562802585624	
+Move Method	org.jruby.parser.ParserSupport19::is_local_id(org.jruby.lexer.yacc.Token):boolean	org.jruby.lexer.yacc.Token	0.9468563673213968	
+Move Method	org.jruby.RubyThread::join(org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.ThreadService	0.9468566332664797	
+Move Method	org.jruby.javasupport.JavaSupport::loadJavaClass(java.lang.String):java.lang.Class	org.jruby.Ruby	0.9468568238468276	
+Move Method	org.jruby.ast.OpElementAsgnNode::getOperatorName():java.lang.String	org.jruby.runtime.CallSite	0.9468571663976388	
+Move Method	org.jruby.Ruby::getInputStream():java.io.InputStream	org.jruby.internal.runtime.GlobalVariables	0.9468571921576919	
+Move Method	org.jruby.Ruby::getOutputStream():java.io.PrintStream	org.jruby.internal.runtime.GlobalVariables	0.9468571921576919	
+Move Method	org.jruby.Ruby::runScriptBody(org.jruby.ast.executable.Script):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.ThreadService	0.9468575437073854	
+Move Method	org.jruby.Ruby::evalScriptlet(java.lang.String):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.ThreadService	0.9468575444490642	
+Move Method	org.jruby.RubyArray::eachIndex(org.jruby.runtime.ThreadContext, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.946857619390912	
+Move Method	org.jruby.Ruby::loadScript(org.jruby.ast.executable.Script):void	org.jruby.internal.runtime.ThreadService	0.946857785354792	
+Move Method	org.jruby.RubyObject::specificEval(org.jruby.runtime.ThreadContext, org.jruby.RubyModule, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468580806694092	
+Move Method	org.jruby.RubyClass::shouldCallMethodMissing(org.jruby.internal.runtime.methods.DynamicMethod, java.lang.String, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.CallType):boolean	org.jruby.internal.runtime.methods.DynamicMethod	0.9468582523347089	
+Move Method	org.jruby.runtime.marshal.MarshalStream::registerLinkTarget(org.jruby.runtime.builtin.IRubyObject):void	org.jruby.runtime.marshal.MarshalCache	0.9468587962107934	
+Move Method	org.jruby.Ruby::runScript(org.jruby.ast.executable.Script):org.jruby.runtime.builtin.IRubyObject	org.jruby.internal.runtime.ThreadService	0.9468588264509505	
+Move Method	org.jruby.Ruby::printRubiniusTrace(org.jruby.RubyException):void	org.jruby.internal.runtime.ThreadService	0.946858960952635	
+Move Method	org.jruby.Ruby::getErrorStream():java.io.PrintStream	org.jruby.internal.runtime.GlobalVariables	0.9468590831696628	
+Move Method	org.jruby.javasupport.JavaObject::marshal_load(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyClass.VariableAccessor	0.9468592171259156	
+Move Method	org.jruby.RubyString::match19(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[], org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468592253405239	
+Move Method	org.jruby.RubyHash::fetch(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject[], org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468592443091735	
+Move Method	org.jruby.RubyStringScanner::extractRange(org.jruby.Ruby, int, int):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyString	0.9468593312291566	
+Move Method	org.jruby.RubyObject::specificEval(org.jruby.runtime.ThreadContext, org.jruby.RubyModule, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468594062473514	
+Move Method	org.jruby.RubyRegexp::match19Common(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, int, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468595307099308	
+Move Method	org.jruby.parser.ParserSupport19::shadowing_lvar(org.jruby.lexer.yacc.Token):void	org.jruby.lexer.yacc.Token	0.946859589136561	
+Move Method	org.jruby.util.io.ChannelStream::refillBuffer():int	org.jruby.util.io.ChannelDescriptor	0.9468597149643139	
+Move Method	org.jruby.util.Sprintf.Args::raiseArgumentError(java.lang.String):void	org.jruby.Ruby	0.9468597527891696	
+Move Method	org.jruby.compiler.impl.AbstractVariableCompiler::unwrapParentScopes(int):void	org.jruby.compiler.impl.SkinnyMethodAdapter	0.9468597855277692	
+Move Method	org.jruby.runtime.Interpreted19Block::evalBlockBody(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.ast.Node	0.9468598403507733	
+Move Method	org.jruby.RubyObject::specificEval(org.jruby.runtime.ThreadContext, org.jruby.RubyModule, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468604637566785	
+Move Method	org.jruby.ast.RescueNode::executeBody(org.jruby.Ruby, org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.ast.Node	0.9468614055653778	
+Move Method	org.jruby.RubyZlib.Deflate::append(org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.ZlibDeflate	0.9468615187278422	
+Move Method	org.jruby.RubyZlib.Deflate::params(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.ZlibDeflate	0.9468615187278422	
+Move Method	org.jruby.RubyZlib.Deflate::set_dictionary(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.ZlibDeflate	0.9468615187278422	
+Move Method	org.jruby.util.io.ChannelStream::checkWritable():void	org.jruby.util.io.ModeFlags	0.9468615264973991	
+Move Method	org.jruby.ext.socket.RubyBasicSocket::number(org.jruby.Ruby, long):org.jruby.runtime.builtin.IRubyObject	org.jruby.Ruby	0.9468616128744565	
+Move Method	org.jruby.RubyObject::specificEval(org.jruby.runtime.ThreadContext, org.jruby.RubyModule, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.builtin.IRubyObject, org.jruby.runtime.Block):org.jruby.runtime.builtin.IRubyObject	org.jruby.runtime.Block	0.9468620430033517	
+Move Method	org.jruby.RubyZlib.Deflate::flush(org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.ZlibDeflate	0.9468625914844361	
+Move Method	org.jruby.JRubyApplet::invokeCallback(org.jruby.RubyProc, org.jruby.runtime.builtin.IRubyObject[]):void	org.jruby.RubyProc	0.9468627358338398	
+Move Method	org.jruby.runtime.load.LoadService::debugLogTry(java.lang.String, java.lang.String):void	org.jruby.Ruby	0.9468637766740421	
+Move Method	org.jruby.RubyZlib.Deflate::deflate(org.jruby.runtime.builtin.IRubyObject[]):org.jruby.runtime.builtin.IRubyObject	org.jruby.util.ZlibDeflate	0.9468642005252398	
+Move Method	org.jruby.util.io.ChannelStream::checkReadable():void	org.jruby.util.io.ModeFlags	0.9468706694743315	
+Move Method	org.jruby.runtime.load.LoadService::debugLogFound(org.jruby.runtime.load.LoadServiceResource):void	org.jruby.runtime.load.LoadServiceResource	0.9468720751882598	
+Move Method	org.jruby.runtime.InterpretedBlock::evalBlockBody(org.jruby.runtime.ThreadContext, org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.ast.Node	0.9468775807023418	
+Move Method	org.jruby.RubyIO::getOpenFileChecked():org.jruby.util.io.OpenFile	org.jruby.util.io.OpenFile	0.9468814409102685	
+Move Method	org.jruby.RubyZlib.RubyGzipWriter::write(org.jruby.runtime.builtin.IRubyObject):org.jruby.runtime.builtin.IRubyObject	org.jruby.RubyZlib.RubyGzipWriter.HeaderModifyableGZIPOutputStream	0.9468888312585058	
+Move Method	org.jruby.RubyModule::invalidateCacheDescendants():void	org.jruby.RubyModule.Generation	0.9468933071749134	
+Move Method	org.jruby.ext.ffi.jffi.CallbackMarshaller::marshal(org.jruby.ext.ffi.jffi.Invocation, com.kenai.jffi.InvocationBuffer, org.jruby.runtime.Block):void	org.jruby.ext.ffi.jffi.Invocation	0.9468934945496524	
+Move Method	org.jruby.javasupport.JavaClass.ConstantField::install(org.jruby.RubyModule):void	org.jruby.RubyModule	0.9469790775974969	
