@@ -1,0 +1,56 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.argouml.model.mdr.MDRModelImplementation::shutdown():void	org.argouml.model.mdr.ModelEventPumpMDRImpl	0.9867118515140286	
+Move Method	org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl::deleteStereotype(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867173959969857	
+Move Method	org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl::deleteTagDefinition(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867175035310373	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::deleteStateMachine(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867188615339496	
+Move Method	org.argouml.model.mdr.CollaborationsFactoryMDRImpl::deleteAssociationRole(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867213156775592	
+Move Method	org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl::deleteInstance(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.986721390702255	
+Move Method	org.argouml.model.mdr.CollaborationsFactoryMDRImpl::deleteMessage(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867214270557605	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteAssociationEnd(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867215033265082	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteClassifier(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867216952626306	
+Move Method	org.argouml.model.mdr.CollaborationsFactoryMDRImpl::deleteClassifierRole(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867217390137666	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteModelElement(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867220636513463	
+Move Method	org.argouml.model.mdr.UseCasesFactoryMDRImpl::deleteExtend(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.986722522117006	
+Move Method	org.argouml.model.mdr.UseCasesFactoryMDRImpl::deleteExtensionPoint(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867228499782059	
+Move Method	org.argouml.model.mdr.UseCasesFactoryMDRImpl::deleteUseCase(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867231398052729	
+Move Method	org.argouml.model.mdr.FacadeMDRImpl::getModelElementAssociated(java.lang.Object, boolean):java.util.List	org.argouml.model.mdr.MDRModelImplementation	0.9867231802684323	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getExtensionMechanisms():org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.986723740478672	
+Move Method	org.argouml.model.mdr.FacadeMDRImpl::getMetaClasses():java.util.Collection<javax.jmi.model.MofClass>	org.argouml.model.mdr.MDRModelImplementation	0.9867243410609062	
+	current system		0.9867245373469425	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::deleteTransition(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867246659559242	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::deleteStateVertex(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867247556070377	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::deleteCompositeState(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867248631412714	
+Move Method	org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl::deleteLinkEnd(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867254755239432	
+Move Method	org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl::deleteStimulus(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.986725686752615	
+Move Method	org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl::deleteAction(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867258587081503	
+Move Method	org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl::deleteSignal(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867258835384516	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteNamespace(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867266839106683	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteBinding(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867269101578354	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteAttribute(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867269175200499	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteGeneralizableElement(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867270080031271	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::deleteOperation(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867272178804238	
+Move Method	org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl::doCopyTagDefinition(org.omg.uml.foundation.core.TagDefinition, org.omg.uml.foundation.core.TagDefinition):void	org.argouml.model.mdr.MDRModelImplementation	0.9867272760842613	
+Move Method	org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl::doCopyStereotype(org.omg.uml.foundation.core.Stereotype, org.omg.uml.foundation.core.Stereotype):void	org.argouml.model.mdr.MDRModelImplementation	0.9867286371214088	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getModelManagement():org.argouml.model.mdr.ModelManagementFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867293871779437	
+Move Method	org.argouml.model.mdr.CollaborationsHelperMDRImpl::getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole):java.util.Collection	org.argouml.model.mdr.MDRModelImplementation	0.9867294128763942	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::deleteNonNull(org.omg.uml.foundation.core.ModelElement):void	org.argouml.model.mdr.MDRModelImplementation	0.9867301528457653	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::deleteState(java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867306662105207	
+Move Method	org.argouml.model.mdr.ModelManagementFactoryMDRImpl::doCopyPackage(org.omg.uml.modelmanagement.UmlPackage, org.omg.uml.modelmanagement.UmlPackage):void	org.argouml.model.mdr.MDRModelImplementation	0.9867316497685448	
+Move Method	org.argouml.model.mdr.CollaborationsHelperMDRImpl::getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.ClassifierRole):java.util.Collection	org.argouml.model.mdr.MDRModelImplementation	0.9867331669255803	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getActivityGraphs():org.argouml.model.mdr.ActivityGraphsFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867355609787902	
+Move Method	org.argouml.model.mdr.ModelEventPumpMDRImpl::formatElement(java.lang.Object):java.lang.String	org.argouml.model.mdr.MDRModelImplementation	0.9867356797827779	
+Move Method	org.argouml.model.mdr.ModelEventPumpMDRImpl::getClassName(java.lang.Object):java.lang.String	org.argouml.model.mdr.MDRModelImplementation	0.9867358642127307	
+Move Method	org.argouml.model.mdr.ModelManagementHelperMDRImpl::getOwnerShipPath(java.lang.Object):java.util.List	org.argouml.model.mdr.MDRModelImplementation	0.9867358642372572	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::doCopyModelElement(java.lang.Object, java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867364994554099	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getStateMachines():org.argouml.model.mdr.StateMachinesFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867369888231922	
+Move Method	org.argouml.model.mdr.ModelManagementHelperMDRImpl::getAllImportedElements(java.util.Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object):void	org.argouml.model.mdr.MDRModelImplementation	0.9867373167716235	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getCollaborations():org.argouml.model.mdr.CollaborationsFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867492152456375	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getUseCases():org.argouml.model.mdr.UseCasesFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867506838521146	
+Move Method	org.argouml.model.mdr.ExtensionMechanismsHelperMDRImpl::isApplicableStereo(java.lang.Object, org.omg.uml.foundation.core.Stereotype):boolean	org.argouml.model.mdr.MDRModelImplementation	0.9867518152613506	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getCore():org.argouml.model.mdr.CoreFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867580980539312	
+Move Method	org.argouml.model.mdr.UmlFactoryMDRImpl::getCommonBehavior():org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	org.argouml.model.mdr.MDRModelImplementation	0.9867584120087427	
+Move Method	org.argouml.model.mdr.CoreFactoryMDRImpl::getCorePackage():org.omg.uml.foundation.core.CorePackage	org.argouml.model.mdr.MDRModelImplementation	0.9867819817418517	
+Move Method	org.argouml.model.mdr.ModelManagementFactoryMDRImpl::getModelManagementPackage():org.omg.uml.modelmanagement.ModelManagementPackage	org.argouml.model.mdr.MDRModelImplementation	0.9867925152691147	
+Move Method	org.argouml.model.mdr.CollaborationsFactoryMDRImpl::getCollabPkg():org.omg.uml.behavioralelements.collaborations.CollaborationsPackage	org.argouml.model.mdr.MDRModelImplementation	0.9867959377699412	
+Move Method	org.argouml.model.mdr.StateMachinesFactoryMDRImpl::getSmPackage():org.omg.uml.behavioralelements.statemachines.StateMachinesPackage	org.argouml.model.mdr.MDRModelImplementation	0.9868073898692581	
+Move Method	org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl::getCbPackage():org.omg.uml.behavioralelements.commonbehavior.CommonBehaviorPackage	org.argouml.model.mdr.MDRModelImplementation	0.986853039510885	

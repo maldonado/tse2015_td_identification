@@ -1,0 +1,2 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+	current system		0.9952260351246079	

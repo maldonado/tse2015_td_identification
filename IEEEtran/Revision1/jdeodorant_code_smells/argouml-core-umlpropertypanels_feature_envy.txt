@@ -1,0 +1,13 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildCheckBox(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.CheckBoxData):void	org.argouml.core.propertypanels.model.CheckBoxData	0.9108947192708174	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::createLabel(java.lang.Object, org.argouml.core.propertypanels.model.PanelData, javax.swing.JPanel):void	org.argouml.core.propertypanels.model.PanelData	0.9114475051195311	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildTextArea(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.911974310937838	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildSingleRow(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.9120755254284542	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildList(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.9120755254284542	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildTextboxPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.9121577392460555	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildComboPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.912177280783463	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildOptionBox(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.9122575759549367	
+Move Method	org.argouml.core.propertypanels.ui.SwingUIFactory::buildCheckGroup(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData):void	org.argouml.core.propertypanels.model.ControlData	0.9123301672883777	
+	current system		0.9123642987780538	
+Move Method	org.argouml.core.propertypanels.ui.UMLExpressionBodyField::update():void	org.argouml.core.propertypanels.ui.UMLExpressionModel	0.9124010256815979	
+Move Method	org.argouml.core.propertypanels.ui.UMLExpressionLanguageField::update():void	org.argouml.core.propertypanels.ui.UMLExpressionModel	0.912401025681598	

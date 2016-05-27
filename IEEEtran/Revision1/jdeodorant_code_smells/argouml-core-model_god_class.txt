@@ -1,0 +1,1 @@
+org.argouml.model.TestXmi	[org.argouml.model.TestXmi::testXmiWriter():void, org.argouml.model.TestXmi::writeFile(java.io.File):void]	0.9946416268645443

@@ -1,0 +1,98 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.argouml.ui.SwingWorker::interrupt():void	org.argouml.ui.SwingWorker.ThreadVar	0.9094927944088993	
+Move Method	org.argouml.profile.UserDefinedProfile.UserDefinedFigNodeStrategy::addDesrciptor(org.argouml.profile.UserDefinedProfile.FigNodeDescriptor):void	org.argouml.profile.UserDefinedProfile.FigNodeDescriptor	0.9094948498538672	
+Move Method	org.argouml.notation.providers.uml.AbstractMessageNotationUml::recCountPredecessors(java.lang.Object, org.argouml.notation.providers.uml.AbstractMessageNotationUml.MsgPtr):int	org.argouml.notation.providers.uml.AbstractMessageNotationUml.MsgPtr	0.9095029349164231	
+Move Method	org.argouml.uml.diagram.activity.ui.FigPartition.SelectionPartition::setHandleBox(org.argouml.uml.diagram.activity.ui.FigPartition, int, int, int, int):void	org.argouml.uml.diagram.activity.ui.FigPartition	0.9095312235360613	
+Move Method	org.argouml.uml.diagram.ui.FigAssociation::updateMultiplicity():void	org.argouml.uml.diagram.ui.FigAssociation.EndDecoration	0.9095422771180605	
+Move Method	org.argouml.ui.SwingWorker::start():void	org.argouml.ui.SwingWorker.ThreadVar	0.9095490709949637	
+Move Method	org.argouml.uml.generator.ui.ClassGenerationDialog.TableModelClassChecks::isSupposedToBeGeneratedAsLanguage(org.argouml.uml.generator.Language, java.lang.Object):boolean	org.argouml.uml.generator.Language	0.909549326940487	
+Move Method	org.argouml.cognitive.Designer::isConsidering(org.argouml.cognitive.Decision):boolean	org.argouml.cognitive.Decision	0.9095618995819098	
+Move Method	org.argouml.uml.generator.ui.ClassGenerationDialog::saveLanguage(java.lang.Object, org.argouml.uml.generator.Language):void	org.argouml.uml.generator.Language	0.9095630061762504	
+Move Method	org.argouml.cognitive.ui.ToDoPane::selectItem(org.argouml.cognitive.ToDoItem):void	org.argouml.cognitive.ui.ToDoPerspective	0.909565485706688	
+Move Method	org.argouml.uml.reveng.ImportCommon::addFiguresToDiagrams(java.util.Collection):void	org.argouml.uml.reveng.DiagramInterface	0.9095656871458548	
+Move Method	org.argouml.persistence.PersistenceManager::getQuickViewDump(org.argouml.kernel.Project):java.lang.String	org.argouml.persistence.UmlFilePersister	0.909571411091514	
+Move Method	org.argouml.cognitive.ToDoItem::checkOffs(org.argouml.cognitive.ListSet):void	org.argouml.cognitive.ListSet	0.9095721174309636	
+Move Method	org.argouml.ui.SwingWorker::get():java.lang.Object	org.argouml.ui.SwingWorker.ThreadVar	0.9095728420887391	
+Move Method	org.argouml.persistence.ResolvedCriticXMLHelper::getOffenderList():java.util.Vector<org.argouml.persistence.OffenderXMLHelper>	org.argouml.cognitive.ResolvedCritic	0.9095731005355961	
+Move Method	org.argouml.uml.diagram.ui.FigNodeModelElement::textEdited(org.tigris.gef.presentation.FigText):void	org.argouml.notation.NotationProvider	0.9095738480654757	
+Move Method	org.argouml.uml.diagram.ui.FigAssociationEnd::updateMultiplicity():void	org.argouml.uml.diagram.ui.FigSingleLineTextWithNotation	0.9095749886470997	
+Move Method	org.argouml.uml.reveng.DiagramInterface::addClassifier(java.lang.Object, boolean):void	org.argouml.uml.diagram.static_structure.ClassDiagramGraphModel	0.9095751992478714	
+Move Method	org.argouml.persistence.ToDoItemXMLHelper::getMoreInfoURL():java.lang.String	org.argouml.cognitive.ToDoItem	0.9095756101875712	
+Move Method	org.argouml.ui.ProjectBrowser::targetChanged(java.lang.Object):void	org.argouml.ui.ProjectBrowser.TitleHandler	0.9095759297261323	
+Move Method	org.argouml.persistence.ToDoItemXMLHelper::getPriority():java.lang.String	org.argouml.cognitive.ToDoItem	0.9095763378601993	
+Move Method	org.argouml.uml.diagram.ui.FigNodeModelElement::textEditStarted(org.tigris.gef.presentation.FigText):void	org.argouml.notation.NotationProvider	0.9095766012407797	
+Move Method	org.argouml.persistence.SAXParserBase::ignoreElement(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095767761600144	
+Move Method	org.argouml.persistence.SAXParserBase::notImplemented(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095767761600144	
+Move Method	org.argouml.uml.diagram.ui.FigEdgeModelElement::textEdited(org.tigris.gef.presentation.FigText):void	org.argouml.notation.NotationProvider	0.9095772330007151	
+Move Method	org.argouml.uml.diagram.ui.FigAssociation.EndDecoration::renderingChanged():void	org.argouml.uml.diagram.ui.FigSingleLineTextWithNotation	0.9095781329317152	
+Move Method	org.argouml.notation.providers.uml.OperationNotationUml::tokenOpenBrace(org.argouml.util.MyTokenizer, java.util.List<java.lang.String>):java.util.List<java.lang.String>	org.argouml.util.MyTokenizer	0.9095784260784151	
+Move Method	org.argouml.cognitive.ToDoList::explicitlyResolve(org.argouml.cognitive.ToDoItem, java.lang.String):boolean	org.argouml.cognitive.ToDoItem	0.9095790956973233	
+Move Method	org.argouml.ui.ProjectBrowser::assemblePanels():java.awt.Component	org.argouml.ui.cmd.GenericArgoMenuBar	0.9095794626867214	
+Move Method	org.argouml.uml.diagram.use_case.ui.FigExtend::updateConditionText():void	org.argouml.uml.diagram.ui.FigTextGroup	0.9095796580960887	
+Move Method	org.argouml.cognitive.ToDoItem::getProgressToDoItem():int	org.argouml.cognitive.critics.Wizard	0.9095799660771064	
+Move Method	org.argouml.uml.diagram.ui.FigNodeModelElement::getStereotypeCount():int	org.argouml.uml.diagram.ui.FigStereotypesGroup	0.9095803170772828	
+Move Method	org.argouml.persistence.ToDoItemXMLHelper::getHeadlineToDoItemXMLHelper():java.lang.String	org.argouml.cognitive.ToDoItem	0.9095805112091152	
+Move Method	org.argouml.persistence.ToDoItemXMLHelper::getDescriptionToDoItemXMLHelper():java.lang.String	org.argouml.cognitive.ToDoItem	0.9095805112091152	
+Move Method	org.argouml.cognitive.ToDoList::addOffenders(org.argouml.cognitive.ListSet):void	org.argouml.cognitive.ListSet	0.9095809866678303	
+Move Method	org.argouml.cognitive.ToDoList::addPosters(org.argouml.cognitive.Poster):void	org.argouml.cognitive.ListSet	0.9095809866678303	
+Move Method	org.argouml.uml.diagram.collaboration.ui.FigAssociationRole::addMessage(org.argouml.uml.diagram.ui.FigMessage):void	org.argouml.uml.diagram.collaboration.ui.FigMessageGroup	0.9095811377336098	
+	current system		0.9095811491336985	
+Move Method	org.argouml.kernel.ProjectSettings::getShowAssociationNames():java.lang.String	org.argouml.notation.NotationSettings	0.9095813734978212	
+Move Method	org.argouml.kernel.ProjectSettings::getShowVisibility():java.lang.String	org.argouml.notation.NotationSettings	0.9095813734978212	
+Move Method	org.argouml.kernel.ProjectSettings::getShowMultiplicity():java.lang.String	org.argouml.notation.NotationSettings	0.9095813734978212	
+Move Method	org.argouml.kernel.ProjectSettings::getUseGuillemots():java.lang.String	org.argouml.notation.NotationSettings	0.909581373579063	
+Move Method	org.argouml.kernel.ProjectSettings::getShowInitialValue():java.lang.String	org.argouml.notation.NotationSettings	0.909581373579063	
+Move Method	org.argouml.kernel.ProjectSettings::getShowProperties():java.lang.String	org.argouml.notation.NotationSettings	0.909581373579063	
+Move Method	org.argouml.kernel.ProjectSettings::getShowTypes():java.lang.String	org.argouml.notation.NotationSettings	0.909581373579063	
+Move Method	org.argouml.kernel.ProjectSettings::getShowSingularMultiplicities():java.lang.String	org.argouml.notation.NotationSettings	0.909581373579063	
+Move Method	org.argouml.kernel.ProjectSettings::getNotationName():org.argouml.notation.NotationName	org.argouml.notation.NotationSettings	0.9095813737367741	
+Move Method	org.argouml.kernel.ProjectSettings::setDefaultShadowWidth(int):void	org.argouml.uml.diagram.DiagramSettings	0.909581559632625	
+Move Method	org.argouml.kernel.ProjectSettings::setHideBidirectionalArrows(boolean):void	org.argouml.uml.diagram.DiagramSettings	0.9095815600536145	
+Move Method	org.argouml.kernel.ProjectSettings::getDefaultShadowWidth():java.lang.String	org.argouml.uml.diagram.DiagramSettings	0.9095816479423123	
+Move Method	org.argouml.kernel.ProjectSettings::getShowBoldNames():java.lang.String	org.argouml.uml.diagram.DiagramSettings	0.9095816483429993	
+Move Method	org.argouml.kernel.ProjectSettings::getDefaultStereotypeView():java.lang.String	org.argouml.uml.diagram.DiagramSettings	0.9095816483429993	
+Move Method	org.argouml.ui.targetmanager.TargetManager::navigateForwardTargetManager():void	org.argouml.ui.targetmanager.TargetManager.HistoryManager	0.9095838930469446	
+Move Method	org.argouml.ui.targetmanager.TargetManager::navigateBackwardTargetManager():void	org.argouml.ui.targetmanager.TargetManager.HistoryManager	0.9095838930469446	
+Move Method	org.argouml.kernel.ProjectImpl::checkProfileFor(java.lang.Object, java.lang.Object):void	org.argouml.kernel.ProfileConfiguration	0.9095847824806429	
+Move Method	org.argouml.uml.diagram.ui.FigNodeModelElement::determineDefaultPathVisible():void	org.argouml.notation.NotationSettings	0.9095848660323649	
+Move Method	org.argouml.kernel.ProjectSettings::setDefaultStereotypeView(int):void	org.argouml.uml.diagram.DiagramSettings	0.9095849886719392	
+Move Method	org.argouml.kernel.ProjectSettings::getHideBidirectionalArrowsValue():boolean	org.argouml.uml.diagram.DiagramSettings	0.9095850707916867	
+Move Method	org.argouml.kernel.ProjectSettings::init():void	org.argouml.uml.diagram.DiagramSettings	0.9095850774902932	
+Move Method	org.argouml.ui.explorer.ExplorerTree::selectChildren(org.argouml.ui.explorer.ExplorerTreeModel, org.argouml.ui.explorer.ExplorerTreeNode, java.util.Set):void	org.argouml.ui.explorer.ExplorerTreeModel	0.909586738790809	
+Move Method	org.argouml.persistence.PersistenceManager::fixXmiExtension(java.lang.String):java.lang.String	org.argouml.persistence.XmiFilePersister	0.9095870616187739	
+Move Method	org.argouml.uml.diagram.ui.FigEdgeModelElement::updateStereotypeText():void	org.argouml.uml.diagram.ui.FigStereotypesGroup	0.9095872089169553	
+Move Method	org.argouml.uml.diagram.ui.TabDiagram::setNewTargets(org.argouml.ui.targetmanager.TargetEvent):void	org.argouml.ui.targetmanager.TargetEvent	0.9095874964926125	
+Move Method	org.argouml.uml.diagram.ui.FigSingleLineTextWithNotation::textEdited():void	org.argouml.notation.NotationProvider	0.9095886606268102	
+Move Method	org.argouml.uml.diagram.ui.FigNodeModelElement::updateStereotypeText():void	org.argouml.uml.diagram.ui.FigStereotypesGroup	0.9095890114414339	
+Move Method	org.argouml.uml.diagram.ui.FigCompartmentBox::setCompartmentBounds(org.argouml.uml.diagram.ui.FigCompartment, java.awt.Rectangle, java.awt.Rectangle):void	org.argouml.uml.diagram.ui.FigCompartment	0.9095893083753993	
+Move Method	org.argouml.persistence.ArgoParser::handleMember(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095895123386759	
+Move Method	org.argouml.persistence.ArgoParser::handleAuthorName(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleAuthorEmail(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleVersion(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleDescription(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleSearchpath(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleHistoryfile(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleNotationLanguage(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowBoldNames(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleUseGuillemots(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowVisibility(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowMultiplicity(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowInitialValue(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowProperties(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowTypes(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowStereotypes(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowSingularMultiplicities(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleDefaultShadowWidth(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleFontName(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleFontSize(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleShowAssociationNames(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.persistence.ArgoParser::handleHideBidirectionalArrows(org.argouml.persistence.XMLElement):void	org.argouml.persistence.XMLElement	0.9095897471863803	
+Move Method	org.argouml.uml.diagram.ui.FigCompartmentBox::setCompartmentVisible(org.argouml.uml.diagram.ui.FigCompartment, boolean):void	org.argouml.uml.diagram.ui.FigCompartment	0.9095897830071632	
+Move Method	org.argouml.uml.ui.UMLExpressionLanguageField::update():void	org.argouml.uml.ui.UMLExpressionModel2	0.9096019826827193	
+Move Method	org.argouml.persistence.UmlFilePersister::writeProject(org.argouml.kernel.Project, java.io.OutputStream, org.argouml.persistence.AbstractFilePersister.ProgressMgr):void	org.argouml.persistence.AbstractFilePersister.ProgressMgr	0.9096041044773164	
+Move Method	org.argouml.persistence.XmiFilePersister::writeProject(org.argouml.kernel.Project, java.io.OutputStream, org.argouml.persistence.AbstractFilePersister.ProgressMgr):void	org.argouml.persistence.AbstractFilePersister.ProgressMgr	0.9096045862824399	
+Move Method	org.argouml.ui.SwingWorker::deactivateGlassPane():void	org.argouml.swingext.GlassPane	0.909612241292165	
+Move Method	org.argouml.profile.UserDefinedProfile::loadFigNodes(java.util.Collection):void	org.argouml.profile.UserDefinedProfile.UserDefinedFigNodeStrategy	0.9096183246202109	
+Move Method	org.argouml.uml.ui.SaveGraphicsManager::fixExtension(java.lang.String):java.lang.String	org.argouml.util.SuffixFilter	0.9096208137455184	
+Move Method	org.argouml.uml.ui.UMLStimulusActionTextField::update():void	org.argouml.uml.ui.UMLStimulusActionTextProperty	0.9096243014488727	
+Move Method	org.argouml.uml.ui.UMLExpressionBodyField::update():void	org.argouml.uml.ui.UMLExpressionModel2	0.9096338787939916	

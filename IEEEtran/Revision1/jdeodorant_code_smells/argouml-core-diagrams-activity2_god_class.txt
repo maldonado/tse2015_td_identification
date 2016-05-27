@@ -1,0 +1,1 @@
+org.argouml.activity2.diagram.ModePlaceDiagramElement	[org.argouml.activity2.diagram.ModePlaceDiagramElement::java.lang.String style, org.argouml.activity2.diagram.ModePlaceDiagramElement::createDiagramElement(org.tigris.gef.base.Layer, java.lang.Object, org.argouml.uml.diagram.DiagramSettings):org.tigris.gef.di.GraphNode]	0.936876291427349

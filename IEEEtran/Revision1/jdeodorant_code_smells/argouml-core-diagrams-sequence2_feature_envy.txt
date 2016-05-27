@@ -1,0 +1,4 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.argouml.sequence2.diagram.FigActivation::isActivatorEnd(org.argouml.sequence2.diagram.FigMessage):boolean	org.argouml.sequence2.diagram.FigMessage	0.8970804216908529	
+	current system		0.8982708424835036	
+Move Method	org.argouml.sequence2.diagram.FigClassifierRole::createActivations():void	org.argouml.sequence2.diagram.FigLifeLine	0.8988643124395954	

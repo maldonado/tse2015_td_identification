@@ -1,0 +1,9 @@
+Refactoring Type	Source Entity	Target Class	Entity Placement	Rate it!
+Move Method	org.argouml.model.euml.CommandStackImpl::redo():void	org.argouml.model.euml.EUMLModelImplementation	0.9881334012006141	
+Move Method	org.argouml.model.euml.CommandStackImpl::undo():void	org.argouml.model.euml.EUMLModelImplementation	0.9881334012006141	
+Move Method	org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl::getMetaModelName(org.eclipse.uml2.uml.Class):java.lang.String	org.argouml.model.euml.EUMLModelImplementation	0.9881758545322504	
+Move Method	org.argouml.model.euml.FacadeEUMLImpl::getValueSpecification(org.eclipse.uml2.uml.ValueSpecification):java.lang.String	org.argouml.model.euml.EUMLModelImplementation	0.9881876787552849	
+	current system		0.9881997323822472	
+Move Method	org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl::getMetaclass(java.lang.Object):org.eclipse.uml2.uml.Class	org.argouml.model.euml.EUMLModelImplementation	0.9882139614809006	
+Move Method	org.argouml.model.euml.CommandStackImpl::canRedo():boolean	org.argouml.model.euml.EUMLModelImplementation	0.9882660461810937	
+Move Method	org.argouml.model.euml.CommandStackImpl::canUndo():boolean	org.argouml.model.euml.EUMLModelImplementation	0.9882660461810937	
