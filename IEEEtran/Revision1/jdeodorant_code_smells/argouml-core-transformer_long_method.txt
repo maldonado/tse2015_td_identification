@@ -1,0 +1,6 @@
+org.argouml.transformer.SimpleStateTransformer.SimpleStateToCompositeState	public void actionPerformed(java.awt.event.ActionEvent) 	figs	B2	1/4
+org.argouml.transformer.SimpleStateTransformer.SimpleStateToCompositeState	public void actionPerformed(java.awt.event.ActionEvent) 	figs	B4	1/4
+org.argouml.transformer.SimpleStateTransformer.SimpleStateToCompositeState	public void actionPerformed(java.awt.event.ActionEvent) 	figs	B5	1/4
+org.argouml.transformer.SimpleStateTransformer.SimpleStateToCompositeState	public void actionPerformed(java.awt.event.ActionEvent) 	figs	B7	1/4
+org.argouml.transformer.SimpleStateTransformer.SimpleStateToCompositeState	public void actionPerformed(java.awt.event.ActionEvent) 	figs	B9	1/4
+org.argouml.transformer.EventTransformer.EventTransformerAction	public void actionPerformed(java.awt.event.ActionEvent) 	transitions	B1	3/4

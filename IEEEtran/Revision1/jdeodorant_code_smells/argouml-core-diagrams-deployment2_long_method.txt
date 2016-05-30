@@ -1,0 +1,4 @@
+org.argouml.deployment2.diagram.UMLDeploymentDiagram	protected javax.swing.Action getAssociationAction(java.lang.Object, boolean) 	label	B1	0/9
+org.argouml.deployment2.diagram.FigNode	public java.awt.Dimension getMinimumSize() 	h	B1	2/4
+org.argouml.deployment2.diagram.FigNode	public java.awt.Dimension getMinimumSize() 	w	B1	2/4
+org.argouml.deployment2.diagram.FigNode.FigCube	public void paint(java.awt.Graphics) 	p	B1	7/8

@@ -1,0 +1,70 @@
+org.argouml.sequence2.diagram.FigMessage	protected void updateListeners(java.lang.Object, java.lang.Object) 	listeners	B1	0/6
+org.argouml.sequence2.diagram.FigMessage	public Vector#RAW getPopUpActions(java.awt.event.MouseEvent) 	index	B2	0/6
+org.argouml.sequence2.diagram.ModeBroomMessages	public void mouseDragged(java.awt.event.MouseEvent) 	crY	B1	0/4
+org.argouml.sequence2.diagram.ModeCreateMessage	private void ensureSpace(org.argouml.sequence2.diagram.FigMessage) 	heightPlusGap	B1	0/4
+org.argouml.sequence2.diagram.ModeCreateMessage	private void ensureSpace(org.argouml.sequence2.diagram.FigMessage) 	heightPlusGap	B4	0/4
+org.argouml.sequence2.diagram.SequenceDiagramRenderer	protected org.tigris.gef.presentation.FigNode getFigNodeForAssociationEnd(org.argouml.uml.diagram.ArgoDiagram, java.lang.Object) 	element	B1	0/4
+org.argouml.model.InitializeModel	private static org.argouml.model.ModelImplementation initializeModelImplementation(java.lang.String) 	implType	B1	0/3
+org.argouml.sequence2.diagram.FigMessage	private synchronized void updateActivations() 	source	B1	0/3
+org.argouml.sequence2.diagram.SequenceDiagramGraphModel	public void setCollaboration(java.lang.Object) 	interactions	B1	0/3
+org.argouml.sequence2.diagram.TestSequenceDiagramFactory	public void testCreateDiagram() 	col	B1	0/3
+org.argouml.sequence2.diagram.UMLSequenceDiagram	public org.argouml.uml.diagram.DiagramElement createDiagramElement(java.lang.Object, java.awt.Rectangle) 	LOG	B8	0/3
+org.argouml.sequence2.diagram.FigMessage	private synchronized void updateActivations() 	dest	B4	0/3
+org.argouml.sequence2.diagram.SequenceDiagramGraphModel	private java.lang.Object createMessage1(java.lang.Object, java.lang.Object, java.lang.Object) 	associationRole	B15	0/3
+org.argouml.sequence2.TestSequenceDiagramModule	protected void setUp() throws java.lang.Exception	theModule	B1	0/2
+org.argouml.sequence2.diagram.UMLSequenceDiagram	public void postLoad() 	correctInteraction	B1	2/10
+org.argouml.sequence2.diagram.UMLSequenceDiagram	public void postLoad() 	correctInteraction	B2	0/7
+org.argouml.sequence2.diagram.UMLSequenceDiagram	public void postLoad() 	correctInteraction	B3	0/6
+org.argouml.sequence2.diagram.UMLSequenceDiagram	public void postLoad() 	correctInteraction	B4	0/4
+org.argouml.sequence2.diagram.SelectionMessage	private void handleMovement() 	dest	B1	1/5
+org.argouml.sequence2.diagram.SelectionMessage	private void handleMovement() 	dest	B6	0/3
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	minimumHeight	B1	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	minimumHeight	B3	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	minimumHeight	B4	0/3
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	minimumHeight	B5	0/2
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B1	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B3	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B4	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B7	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B29	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B31	0/3
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B35	0/3
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	newCenterX	B36	0/2
+org.argouml.sequence2.diagram.FigClassifierRole	private void updateMinimumHeight() 	yMax	B1	3/7
+org.argouml.sequence2.diagram.FigClassifierRole	private void updateMinimumHeight() 	yMax	B3	0/3
+org.argouml.sequence2.diagram.FigClassifierRole	private void updateMinimumHeight() 	yMax	B4	0/2
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStackedActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentAct	B4	1/3
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStackedActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentAct	B5	0/2
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	oldCenterX	B1	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	oldCenterX	B3	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	oldCenterX	B4	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	oldCenterX	B7	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	oldCenterX	B29	1/5
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	oldCenterX	B30	0/2
+org.argouml.sequence2.diagram.ModeCreateMessage	public void endAttached(org.tigris.gef.presentation.FigEdge) 	returnEdge	B3	0/4
+org.argouml.sequence2.diagram.ModeCreateMessage	public void endAttached(org.tigris.gef.presentation.FigEdge) 	returnEdge	B4	1/2
+org.argouml.sequence2.diagram.TestFigClassifierRole	public void testUpdateNameText() 	fig	B1	1/4
+org.argouml.sequence2.diagram.SelectionMessage	private void handleMovement() 	source	B1	1/3
+org.argouml.sequence2.diagram.TestFigClassifierRole	public void testUpdateNameText() 	bases	B1	1/3
+org.argouml.sequence2.diagram.FigClassifierRole.FigClassifierRolePort	public java.awt.Point getClosestPoint(java.awt.Point) 	x	B1	3/9
+org.argouml.sequence2.diagram.ModeCreateMessage	public void endAttached(org.tigris.gef.presentation.FigEdge) 	scr	B1	2/5
+org.argouml.sequence2.diagram.ModeCreateMessage	public void endAttached(org.tigris.gef.presentation.FigEdge) 	scr	B14	1/3
+org.argouml.sequence2.diagram.UMLSequenceDiagram	protected java.lang.Object[] getUmlActions() 	actionList	B2	3/4
+org.argouml.sequence2.diagram.FigMessage	private void updateArrow() 	arrowHead	B1	2/5
+org.argouml.sequence2.diagram.FigMessage	private void updateArrow() 	arrowHead	B3	2/5
+org.argouml.sequence2.diagram.SequenceDiagramGraphModel	private java.lang.Object createMessage1(java.lang.Object, java.lang.Object, java.lang.Object) 	action	B1	6/13
+org.argouml.sequence2.diagram.SelectionClassifierRole	public void dragHandle(int, int, int, int, org.tigris.gef.presentation.Handle) 	deltaY	B9	1/2
+org.argouml.sequence2.diagram.SelectionMessage	public void keyPressed(java.awt.event.KeyEvent) 	ke	B1	1/2
+org.argouml.sequence2.diagram.SequenceDiagramGraphModel	private java.lang.Object getInteraction() 	LOG	B1	1/2
+org.argouml.sequence2.diagram.SequenceDiagramGraphModel	public java.lang.Object getCollaboration() 	LOG	B1	1/2
+org.argouml.sequence2.diagram.ModePlaceClassifierRole	private void postProcessing() 	figClassifierRoleFound	B3	2/3
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B1	21/23
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B3	19/20
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B4	18/19
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B5	5/6
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B6	4/5
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B7	3/4
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B12	2/3
+org.argouml.sequence2.diagram.FigLifeLine	private List<org.argouml.sequence2.diagram.FigActivation> createStandardActivations(List<org.argouml.sequence2.diagram.FigMessage>) 	currentActivation	B14	1/2
+org.argouml.sequence2.diagram.UMLSequenceDiagram	private org.argouml.sequence2.diagram.FigClassifierRole makeNewFigCR(java.lang.Object, java.awt.Point) 	bounds	B2	8/10
+org.argouml.sequence2.diagram.UMLSequenceDiagram	public void postLoad() 	LOG	B1	21/25

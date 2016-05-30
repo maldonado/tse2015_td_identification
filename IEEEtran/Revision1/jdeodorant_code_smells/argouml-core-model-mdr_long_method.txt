@@ -1,0 +1,321 @@
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	LOG	B1	0/31
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	LOG	B3	0/31
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	LOG	B5	0/31
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	elements	B1	0/31
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	elements	B3	0/31
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	elements	B5	0/31
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	elements	B19	0/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	elements	B20	0/3
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.ClassifierRole) 	listToRemove	B4	0/17
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.ClassifierRole) 	listToRemove	B7	0/5
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<java.lang.String> getAllMetaDatatypeNames() 	LOG	B2	0/15
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getAssociatedClasses(java.lang.Object) 	associations	B2	0/15
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getAssociatedClasses(java.lang.Object) 	it	B2	0/15
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getAssociatedClasses(java.lang.Object) 	it	B3	0/11
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getAssociatedClasses(java.lang.Object) 	otherEnds	B2	0/15
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getAssociatedClasses(java.lang.Object) 	otherEnds	B3	0/11
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getAssociatedClasses(java.lang.Object) 	otherEnds	B5	0/8
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	results	B1	0/14
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	results	B3	0/14
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	results	B4	0/12
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void setImportedElements(java.lang.Object, Collection#RAW) 	currentImports	B2	0/14
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void setImportedElements(java.lang.Object, Collection#RAW) 	currentImports	B3	0/11
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void setImportedElements(java.lang.Object, Collection#RAW) 	currentImports	B7	0/7
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	modelImpl	B1	0/14
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	modelImpl	B3	0/14
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	modelImpl	B4	0/12
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private void getAllImportedElements(Collection<org.omg.uml.foundation.core.ModelElement>, java.lang.Object) 	modelImpl	B14	0/2
+org.argouml.model.mdr.FacadeMDRImpl	public java.lang.String getName(java.lang.Object) 	result	B24	0/13
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteModelElement(java.lang.Object) 	modelImpl	B1	0/11
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteModelElement(java.lang.Object) 	modelImpl	B3	0/11
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteModelElement(java.lang.Object) 	modelImpl	B4	0/10
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteCompositeState(java.lang.Object) 	modelImpl	B1	0/11
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteCompositeState(java.lang.Object) 	modelImpl	B3	0/11
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteCompositeState(java.lang.Object) 	modelImpl	B4	0/10
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteInstance(java.lang.Object) 	modelImpl	B1	0/10
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteInstance(java.lang.Object) 	modelImpl	B3	0/10
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void removeImportedElement(java.lang.Object, java.lang.Object) 	c	B2	0/10
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void removeImportedElement(java.lang.Object, java.lang.Object) 	it	B2	0/10
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteInstance(java.lang.Object) 	it	B1	0/10
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteInstance(java.lang.Object) 	it	B3	0/10
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteInstance(java.lang.Object) 	it	B4	0/7
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void removeImportedElement(java.lang.Object, java.lang.Object) 	match	B2	0/10
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void removeImportedElement(java.lang.Object, java.lang.Object) 	match	B3	0/5
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.BehavioralFeature> getAllBehavioralFeatures(java.lang.Object) 	it	B4	0/9
+org.argouml.model.mdr.ExtensionMechanismsHelperMDRImpl	public void setTaggedValue(java.lang.Object, Collection#RAW) 	tv	B2	0/9
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public List#RAW getDebugInfo() 	modelElementNode	B4	0/9
+org.argouml.model.mdr.TestReadCompressedFilesAndHref	void assertLoadModel(java.lang.String, java.lang.String, java.lang.String) 	reader	B1	0/9
+org.argouml.model.mdr.ExtensionMechanismsHelperMDRImpl	public void setTaggedValue(java.lang.Object, Collection#RAW) 	taggedValues	B2	0/9
+org.argouml.model.mdr.ExtensionMechanismsHelperMDRImpl	public void setTaggedValue(java.lang.Object, Collection#RAW) 	taggedValues	B3	0/7
+org.argouml.model.mdr.MDRModelImplementation	public void initializeFactories(org.omg.uml.UmlPackage) 	LOG	B1	0/8
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	allOfType	B5	0/8
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	allOfType	B7	0/8
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	allOfType	B9	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.GeneralizableElement> getAllSupertypes(java.lang.Object) 	newlyAdded	B4	0/7
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.GeneralizableElement> getAllSupertypes(java.lang.Object) 	toBeAdded	B4	0/7
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.GeneralizableElement> getAllSupertypes(java.lang.Object) 	toBeAdded	B4	0/7
+org.argouml.model.mdr.UseCasesFactoryMDRImpl	void deleteExtensionPoint(java.lang.Object) 	modelImpl	B1	0/7
+org.argouml.model.mdr.UseCasesFactoryMDRImpl	void deleteExtensionPoint(java.lang.Object) 	modelImpl	B3	0/7
+org.argouml.model.mdr.UseCasesFactoryMDRImpl	void deleteExtensionPoint(java.lang.Object) 	modelImpl	B4	0/5
+org.argouml.model.mdr.ExtensionMechanismsHelperMDRImpl	public void setTaggedValue(java.lang.Object, Collection#RAW) 	tvs	B3	0/7
+org.argouml.model.mdr.TestReadCompressedFilesAndHref	void assertLoadModel(java.lang.String, java.lang.String, java.lang.String) 	file	B2	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B2	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B4	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B6	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B8	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B12	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B14	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B16	0/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B18	0/7
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setAggregation2(java.lang.Object, java.lang.Object) 	other	B1	0/6
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setAggregation2(java.lang.Object, java.lang.Object) 	other	B3	0/6
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setAggregation2(java.lang.Object, java.lang.Object) 	other	B5	0/6
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllBehavioralFeatures(java.lang.Object) 	features	B1	0/6
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteStimulus(java.lang.Object) 	it	B1	0/6
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteStimulus(java.lang.Object) 	it	B3	0/6
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteStimulus(java.lang.Object) 	it	B4	0/5
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteStimulus(java.lang.Object) 	modelImpl	B1	0/6
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteStimulus(java.lang.Object) 	modelImpl	B3	0/6
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteStimulus(java.lang.Object) 	modelImpl	B4	0/5
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private Map<java.lang.String,Collection<java.lang.String>> buildTypeMap(javax.jmi.model.ModelPackage) 	LOG	B2	0/6
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private Map<java.lang.String,Collection<java.lang.String>> buildTypeMap(javax.jmi.model.ModelPackage) 	LOG	B3	0/5
+org.argouml.model.mdr.ActivityGraphsFactoryMDRImpl	public org.omg.uml.behavioralelements.activitygraphs.ActivityGraph buildActivityGraph(java.lang.Object) 	namespace	B5	0/6
+org.argouml.model.mdr.ActivityGraphsFactoryMDRImpl	public org.omg.uml.behavioralelements.activitygraphs.ActivityGraph buildActivityGraph(java.lang.Object) 	namespace	B6	0/5
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	public org.omg.uml.behavioralelements.statemachines.StateMachine buildStateMachine(java.lang.Object) 	namespace	B5	0/6
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	public org.omg.uml.behavioralelements.statemachines.StateMachine buildStateMachine(java.lang.Object) 	namespace	B6	0/5
+org.argouml.model.mdr.StateMachinesHelperMDRImpl	public java.lang.Object findOperationByName(java.lang.Object, java.lang.String) 	parent	B16	0/6
+org.argouml.model.mdr.AbstractMDRModelImplementationTestCase	protected void init() 	modelImplementation	B1	0/5
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteAssociationEnd(java.lang.Object) 	modelImpl	B1	0/5
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteAssociationEnd(java.lang.Object) 	modelImpl	B3	0/5
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	public void copyTaggedValues(java.lang.Object, java.lang.Object) 	taggedValues	B1	0/5
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	public void copyTaggedValues(java.lang.Object, java.lang.Object) 	taggedValues	B3	0/5
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public void setImportedElements(java.lang.Object, Collection#RAW) 	toAddEIs	B7	0/5
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteState(java.lang.Object) 	modelImpl	B1	0/5
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteState(java.lang.Object) 	modelImpl	B3	0/5
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteStateMachine(java.lang.Object) 	modelImpl	B1	0/5
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteStateMachine(java.lang.Object) 	modelImpl	B3	0/5
+org.argouml.model.mdr.StateMachinesHelperMDRImpl	public java.lang.Object getStatebyName(java.lang.String, java.lang.Object) 	path	B2	0/5
+org.argouml.model.mdr.UmlFactoryMDRImpl	private void buildValidConnectionMap() 	validItems	B2	0/5
+org.argouml.model.mdr.UseCasesFactoryMDRImpl	void deleteUseCase(java.lang.Object) 	modelImpl	B1	0/5
+org.argouml.model.mdr.UseCasesFactoryMDRImpl	void deleteUseCase(java.lang.Object) 	modelImpl	B3	0/5
+org.argouml.model.mdr.XmiReferenceResolverImpl	private void registerInt(java.lang.String, java.lang.String, javax.jmi.reflect.RefObject) 	idToObject	B1	0/5
+org.argouml.model.mdr.XmiReferenceResolverImpl	private void registerInt(java.lang.String, java.lang.String, javax.jmi.reflect.RefObject) 	map	B1	0/5
+org.argouml.model.mdr.XmiReferenceResolverImpl	public void readExternalDocument(java.lang.String) 	is	B2	0/5
+org.argouml.model.mdr.XmiReferenceResolverImpl	public void readExternalDocument(java.lang.String) 	reader	B2	0/5
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.ClassifierRole) 	ns	B4	0/5
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.ClassifierRole) 	ns	B12	0/5
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.ClassifierRole) 	ns	B13	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<java.lang.String> getAllMetatypeNames() 	LOG	B2	0/5
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<java.lang.String> getAllMetatypeNames() 	LOG	B3	0/4
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	public void copyTaggedValues(java.lang.Object, java.lang.Object) 	it	B1	0/5
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	public void copyTaggedValues(java.lang.Object, java.lang.Object) 	it	B3	0/5
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	public void copyTaggedValues(java.lang.Object, java.lang.Object) 	it	B4	0/2
+org.argouml.model.mdr.DataTypesFactoryMDRImpl	private List<org.omg.uml.foundation.datatypes.MultiplicityRange> parseRanges(java.lang.String) 	LOG	B3	0/5
+org.argouml.model.mdr.DataTypesFactoryMDRImpl	private List<org.omg.uml.foundation.datatypes.MultiplicityRange> parseRanges(java.lang.String) 	LOG	B4	0/4
+org.argouml.model.mdr.DataTypesFactoryMDRImpl	private List<org.omg.uml.foundation.datatypes.MultiplicityRange> parseRanges(java.lang.String) 	LOG	B6	0/2
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.Attribute> getAllAttributes(java.lang.Object) 	modelImpl	B6	0/5
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.Attribute> getAllAttributes(java.lang.Object) 	modelImpl	B9	0/2
+org.argouml.model.mdr.CoreFactoryMDRImpl	public java.lang.Object buildTemplateParameter(java.lang.Object, java.lang.Object, java.lang.Object) 	parameter	B1	0/4
+org.argouml.model.mdr.CoreFactoryMDRImpl	public java.lang.Object buildTemplateParameter(java.lang.Object, java.lang.Object, java.lang.Object) 	parameter	B3	0/4
+org.argouml.model.mdr.CoreFactoryMDRImpl	public void copyEnumeration(java.lang.Object, java.lang.Object) 	literalTo	B3	0/4
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteClassifier(java.lang.Object) 	modelImpl	B1	0/4
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteClassifier(java.lang.Object) 	modelImpl	B3	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	public void removeClientDependency(java.lang.Object, java.lang.Object) 	deps	B2	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setFeatures(java.lang.Object, Collection#RAW) 	featuresList	B2	0/4
+org.argouml.model.mdr.ExtensionMechanismsHelperMDRImpl	public void setDataValues(java.lang.Object, java.lang.String[]) 	dataValues	B2	0/4
+org.argouml.model.mdr.MetaTypesMDRImpl	public java.lang.String getName(java.lang.Object) 	clazz	B1	0/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	LOG	B1	0/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	LOG	B3	0/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public List#RAW getDebugInfo() 	propertyNode	B6	0/4
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	name	B1	0/4
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	name	B3	0/4
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	name	B5	0/4
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllModelElementsOfKind(java.lang.Object, java.lang.Object) 	name	B7	0/4
+org.argouml.model.mdr.Registry	Collection<T> getMatches(java.lang.String, java.lang.String) 	entry	B2	0/4
+org.argouml.model.mdr.Registry	void register(T, java.lang.String, java.lang.String[]) 	entry	B1	0/4
+org.argouml.model.mdr.Registry	void register(T, java.lang.String, java.lang.String[]) 	list	B6	0/4
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteTransition(java.lang.Object) 	modelImpl	B1	0/4
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteTransition(java.lang.Object) 	modelImpl	B3	0/4
+org.argouml.model.mdr.StateMachinesHelperMDRImpl	public java.lang.Object getStatebyName(java.lang.String, java.lang.Object) 	index	B2	0/4
+org.argouml.model.mdr.UndoCoreHelperDecorator	public void setMultiplicity(java.lang.Object, int, int) 	lowerStr	B1	0/4
+org.argouml.model.mdr.UndoCoreHelperDecorator	public void setMultiplicity(java.lang.Object, int, int) 	upperStr	B1	0/4
+org.argouml.model.mdr.UndoCoreHelperDecorator	public void setMultiplicity(java.lang.Object, int, int) 	upperStr	B4	0/4
+org.argouml.model.mdr.XmiReaderImpl	private Collection<javax.jmi.reflect.RefObject> convertAndLoadUml13(java.lang.String, javax.jmi.reflect.RefPackage, org.netbeans.api.xmi.XMIReader, org.xml.sax.InputSource) throws java.io.FileNotFoundException, org.argouml.model.UmlException, java.io.IOException, javax.jmi.xmi.MalformedXMIException	xformedInput	B1	0/4
+org.argouml.model.mdr.XmiReferenceResolverImpl	private void registerInt(java.lang.String, java.lang.String, javax.jmi.reflect.RefObject) 	map	B1	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	private org.omg.uml.foundation.datatypes.Multiplicity createMultiplicity(java.lang.String) 	allDigits	B1	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	private org.omg.uml.foundation.datatypes.Multiplicity createMultiplicity(java.lang.String) 	allDigits	B2	0/3
+org.argouml.model.mdr.CoreHelperMDRImpl	private org.omg.uml.foundation.datatypes.Multiplicity createMultiplicity(java.lang.String) 	allDigits	B3	0/2
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteAction(java.lang.Object) 	modelImpl	B1	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteAction(java.lang.Object) 	modelImpl	B3	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteLinkEnd(java.lang.Object) 	modelImpl	B1	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteLinkEnd(java.lang.Object) 	modelImpl	B3	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteSignal(java.lang.Object) 	modelImpl	B1	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	void deleteSignal(java.lang.Object) 	modelImpl	B3	0/3
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteGeneralizableElement(java.lang.Object) 	modelImpl	B1	0/3
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteGeneralizableElement(java.lang.Object) 	modelImpl	B3	0/3
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteOperation(java.lang.Object) 	modelImpl	B1	0/3
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteOperation(java.lang.Object) 	modelImpl	B3	0/3
+org.argouml.model.mdr.CoreHelperMDRImpl	private static void getAllParents(Collection<org.omg.uml.foundation.core.GeneralizableElement>, org.omg.uml.foundation.core.GeneralizableElement) 	result	B2	0/3
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.BehavioralFeature> getAllBehavioralFeatures(java.lang.Object) 	contents	B1	0/3
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.BehavioralFeature> getAllBehavioralFeatures(java.lang.Object) 	contents	B3	0/3
+org.argouml.model.mdr.MDRModelImplementation	void deleteExtent(org.omg.uml.UmlPackage) 	extents	B1	0/3
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	private static void getContents(Collection<org.omg.uml.foundation.core.ModelElement>, org.omg.uml.modelmanagement.UmlPackage) 	results	B2	0/3
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	public org.omg.uml.behavioralelements.statemachines.Guard buildGuard(java.lang.Object) 	LOG	B2	0/3
+org.argouml.model.mdr.UseCasesHelperMDRImpl	public Collection#RAW getSpecificationPath(java.lang.Object) 	set	B1	0/3
+org.argouml.model.mdr.XmiReferenceProviderImpl	public org.netbeans.api.xmi.XMIReferenceProvider.XMIReference getReference(javax.jmi.reflect.RefObject) 	systemId	B8	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	public org.omg.uml.behavioralelements.commonbehavior.Signal buildSignal(java.lang.Object) 	namespace	B1	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	public org.omg.uml.behavioralelements.commonbehavior.Signal buildSignal(java.lang.Object) 	namespace	B10	0/3
+org.argouml.model.mdr.CommonBehaviorFactoryMDRImpl	public org.omg.uml.behavioralelements.commonbehavior.Signal buildSignal(java.lang.Object) 	namespace	B11	0/2
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.GeneralizableElement> getChildren(java.lang.Object) 	generalizations	B3	0/3
+org.argouml.model.mdr.CoreHelperMDRImpl	public Collection<org.omg.uml.foundation.core.GeneralizableElement> getChildren(java.lang.Object) 	generalizations	B4	0/2
+org.argouml.model.mdr.TestReadCompressedFilesAndHref	private void collectSubdirs(java.io.File, Collection<java.io.File>) 	f	B2	0/3
+org.argouml.model.mdr.TestReadCompressedFilesAndHref	private void collectSubdirs(java.io.File, Collection<java.io.File>) 	f	B3	0/2
+org.argouml.model.mdr.UmlFactoryMDRImpl	private void setNewDeferrableEvent(org.omg.uml.behavioralelements.statemachines.State, org.omg.uml.behavioralelements.statemachines.Event) 	parent	B1	0/3
+org.argouml.model.mdr.UmlFactoryMDRImpl	private void setNewDeferrableEvent(org.omg.uml.behavioralelements.statemachines.State, org.omg.uml.behavioralelements.statemachines.Event) 	parent	B2	0/2
+org.argouml.model.mdr.TestReadCompressedFilesAndHref	void assertLoadModel(java.lang.String, java.lang.String, java.lang.String) 	inputSource	B3	0/3
+org.argouml.model.mdr.UmlFactoryMDRImpl	private void buildValidConnectionMap() 	modeElementPair	B5	0/3
+org.argouml.model.mdr.UmlFactoryMDRImpl	private void buildValidConnectionMap() 	modeElementPair	B6	0/3
+org.argouml.model.mdr.UmlFactoryMDRImpl	private void buildValidConnectionMap() 	reversedModeElementPair	B7	0/3
+org.argouml.model.mdr.ActivityGraphsHelperMDRImpl	public void setContents(java.lang.Object, Collection#RAW) 	contents	B2	0/2
+org.argouml.model.mdr.ActivityGraphsHelperMDRImpl	public void setInStates(java.lang.Object, Collection#RAW) 	newStates	B2	0/2
+org.argouml.model.mdr.CollaborationsFactoryMDRImpl	void deleteAssociationRole(java.lang.Object) 	modelImpl	B2	0/2
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteAttribute(java.lang.Object) 	modelImpl	B1	0/2
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteAttribute(java.lang.Object) 	modelImpl	B3	0/2
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteBinding(java.lang.Object) 	modelImpl	B1	0/2
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteBinding(java.lang.Object) 	modelImpl	B3	0/2
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	void deleteStereotype(java.lang.Object) 	modelImpl	B1	0/2
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	void deleteStereotype(java.lang.Object) 	modelImpl	B3	0/2
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	void deleteTagDefinition(java.lang.Object) 	modelImpl	B1	0/2
+org.argouml.model.mdr.ExtensionMechanismsFactoryMDRImpl	void deleteTagDefinition(java.lang.Object) 	modelImpl	B3	0/2
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getIncomings(java.lang.Object) 	trans	B5	0/2
+org.argouml.model.mdr.FacadeMDRImpl	public Collection#RAW getOutgoings(java.lang.Object) 	trans	B5	0/2
+org.argouml.model.mdr.MDRModelImplementation	private static org.netbeans.api.mdr.MDRepository getDefaultRepository() 	LOG	B1	0/2
+org.argouml.model.mdr.MDRModelImplementation	public org.omg.uml.UmlPackage getUmlPackage() 	LOG	B1	0/2
+org.argouml.model.mdr.MDRModelImplementation	public void initializeFactories(org.omg.uml.UmlPackage) 	theModelEventPump	B1	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	elements	B1	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	elements	B3	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void unregisterModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	elements	B1	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void unregisterModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	elements	B3	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void unregisterModelEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	elements	B5	0/2
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public Collection#RAW getAllBehavioralFeatures(java.lang.Object) 	i	B2	0/2
+org.argouml.model.mdr.Registry	void register(T, java.lang.String, java.lang.String[]) 	subkeys	B1	0/2
+org.argouml.model.mdr.Registry	void register(T, java.lang.String, java.lang.String[]) 	subkeys	B3	0/2
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteStateVertex(java.lang.Object) 	modelImpl	B1	0/2
+org.argouml.model.mdr.StateMachinesFactoryMDRImpl	void deleteStateVertex(java.lang.Object) 	modelImpl	B3	0/2
+org.argouml.model.mdr.TestReadCompressedFilesAndHref	private void setProfilePathSubdirs(org.argouml.model.mdr.XmiReaderImpl, java.io.File) 	reader	B2	0/2
+org.argouml.model.mdr.UmlHelperMDRImpl	public void deleteCollection(Collection#RAW) 	it	B2	0/2
+org.argouml.model.mdr.UmlHelperMDRImpl	public void deleteCollection(Collection#RAW) 	modelImpl	B2	0/2
+org.argouml.model.mdr.UseCasesFactoryMDRImpl	private org.omg.uml.behavioralelements.usecases.Actor buildActor(org.omg.uml.foundation.core.Namespace, java.lang.Object) 	ns	B1	0/2
+org.argouml.model.mdr.XmiReferenceResolverImpl	public java.net.URL toURL(java.lang.String) 	reverseUrlMap	B17	0/2
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole) 	listToRemove	B3	1/25
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole) 	listToRemove	B4	1/24
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole) 	listToRemove	B7	0/20
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole) 	listToRemove	B13	0/11
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole) 	listToRemove	B14	0/10
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	private Collection#RAW getAllPossibleBases(org.omg.uml.behavioralelements.collaborations.AssociationRole) 	listToRemove	B17	0/5
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B22	2/7
+org.argouml.model.mdr.UmlHelperMDRImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B20	2/7
+org.argouml.model.mdr.StateMachinesHelperMDRImpl	public java.lang.Object findOperationByName(java.lang.Object, java.lang.String) 	pack	B5	2/14
+org.argouml.model.mdr.StateMachinesHelperMDRImpl	public java.lang.Object findOperationByName(java.lang.Object, java.lang.String) 	pack	B7	0/12
+org.argouml.model.mdr.StateMachinesHelperMDRImpl	public java.lang.Object findOperationByName(java.lang.Object, java.lang.String) 	pack	B13	0/12
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setAttributes(java.lang.Object, List#RAW) 	result	B2	1/6
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setAttributes(java.lang.Object, List#RAW) 	result	B3	0/4
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setOperations(java.lang.Object, List#RAW) 	result	B2	1/6
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setOperations(java.lang.Object, List#RAW) 	result	B3	0/4
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	public void setActivator(java.lang.Object, java.lang.Object) 	listToChange	B1	1/9
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	public void setActivator(java.lang.Object, java.lang.Object) 	listToChange	B3	1/9
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	public void setActivator(java.lang.Object, java.lang.Object) 	listToChange	B5	1/9
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	public void setActivator(java.lang.Object, java.lang.Object) 	listToChange	B7	1/9
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	public void setActivator(java.lang.Object, java.lang.Object) 	listToChange	B9	0/8
+org.argouml.model.mdr.CollaborationsHelperMDRImpl	public void setActivator(java.lang.Object, java.lang.Object) 	listToChange	B16	0/8
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	LOG	B2	2/9
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	LOG	B4	2/9
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	LOG	B6	0/7
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	LOG	B8	0/7
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	LOG	B10	0/3
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	LOG	B11	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerClassEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	listenedClasses	B2	1/5
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerClassEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	listenedClasses	B4	0/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void unregisterClassEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	listenedClasses	B2	1/5
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void unregisterClassEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	listenedClasses	B4	0/4
+org.argouml.model.mdr.MDRModelImplementation	javax.jmi.reflect.RefPackage createExtent(java.lang.String, boolean) 	LOG	B1	1/8
+org.argouml.model.mdr.MDRModelImplementation	javax.jmi.reflect.RefPackage createExtent(java.lang.String, boolean) 	extents	B1	1/8
+org.argouml.model.mdr.FacadeMDRImpl	private void getReferenceOrAttribute(javax.jmi.reflect.RefFeatured, java.lang.Object, Collection<javax.jmi.reflect.RefBaseObject>, boolean) 	returns	B1	2/11
+org.argouml.model.mdr.FacadeMDRImpl	private void getReferenceOrAttribute(javax.jmi.reflect.RefFeatured, java.lang.Object, Collection<javax.jmi.reflect.RefBaseObject>, boolean) 	returns	B3	2/11
+org.argouml.model.mdr.FacadeMDRImpl	private void getReferenceOrAttribute(javax.jmi.reflect.RefFeatured, java.lang.Object, Collection<javax.jmi.reflect.RefBaseObject>, boolean) 	returns	B6	2/11
+org.argouml.model.mdr.FacadeMDRImpl	private void getReferenceOrAttribute(javax.jmi.reflect.RefFeatured, java.lang.Object, Collection<javax.jmi.reflect.RefBaseObject>, boolean) 	returns	B8	0/9
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	LOG	B7	2/14
+org.argouml.model.mdr.CoreFactoryMDRImpl	private org.omg.uml.foundation.core.UmlAssociation buildAssociation(org.omg.uml.foundation.core.Classifier, boolean, org.omg.uml.foundation.datatypes.AggregationKind, org.omg.uml.foundation.core.Classifier, boolean, org.omg.uml.foundation.datatypes.AggregationKind) 	ns	B1	2/8
+org.argouml.model.mdr.CoreFactoryMDRImpl	private org.omg.uml.foundation.core.UmlAssociation buildAssociation(org.omg.uml.foundation.core.Classifier, boolean, org.omg.uml.foundation.datatypes.AggregationKind, org.omg.uml.foundation.core.Classifier, boolean, org.omg.uml.foundation.datatypes.AggregationKind) 	ns	B3	2/8
+org.argouml.model.mdr.CoreFactoryMDRImpl	private org.omg.uml.foundation.core.UmlAssociation buildAssociation(org.omg.uml.foundation.core.Classifier, boolean, org.omg.uml.foundation.datatypes.AggregationKind, org.omg.uml.foundation.core.Classifier, boolean, org.omg.uml.foundation.datatypes.AggregationKind) 	ns	B5	0/6
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	elementsInDeletionOrder	B7	2/14
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	elementsInDeletionOrder	B9	2/11
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	elementsInDeletionOrder	B70	2/10
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	elementsInDeletionOrder	B72	2/10
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	elementsInDeletionOrder	B76	2/10
+org.argouml.model.mdr.FacadeMDRImpl	private List#RAW getModelElementAssociated(java.lang.Object, boolean) 	types	B3	4/7
+org.argouml.model.mdr.FacadeMDRImpl	private List#RAW getModelElementAssociated(java.lang.Object, boolean) 	types	B5	0/3
+org.argouml.model.mdr.Registry	void unregister(T, java.lang.String, java.lang.String[]) 	entry	B1	0/7
+org.argouml.model.mdr.Registry	void unregister(T, java.lang.String, java.lang.String[]) 	entry	B3	2/5
+org.argouml.model.mdr.CollaborationsFactoryMDRImpl	public org.omg.uml.behavioralelements.collaborations.Message buildActivator(java.lang.Object, java.lang.Object) 	theInteraction	B1	1/5
+org.argouml.model.mdr.XmiReferenceResolverImpl	public java.net.URL toURL(java.lang.String) 	relativeUri	B14	2/5
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void registerClassEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	LOG	B2	1/4
+org.argouml.model.mdr.TestMDRModelImplementationCreate	public void testMDRModelImplementation() throws org.argouml.model.UmlException, java.io.FileNotFoundException	source	B1	1/4
+org.argouml.model.mdr.XmiReaderImpl	private java.io.File copySource(org.xml.sax.InputSource) throws java.io.IOException	out	B1	1/4
+org.argouml.model.mdr.CommonBehaviorHelperMDRImpl	public void setScript(java.lang.Object, java.lang.Object) 	modelImpl	B2	2/4
+org.argouml.model.mdr.CommonBehaviorHelperMDRImpl	public void setScript(java.lang.Object, java.lang.Object) 	modelImpl	B4	0/2
+org.argouml.model.mdr.CoreFactoryMDRImpl	public org.omg.uml.foundation.core.Abstraction buildRealization(java.lang.Object, java.lang.Object, java.lang.Object) 	ns	B1	3/8
+org.argouml.model.mdr.CoreFactoryMDRImpl	public org.omg.uml.foundation.core.Abstraction buildRealization(java.lang.Object, java.lang.Object, java.lang.Object) 	ns	B3	1/6
+org.argouml.model.mdr.CoreFactoryMDRImpl	public org.omg.uml.foundation.core.UmlAssociation buildAssociation(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, boolean) 	ns	B1	2/7
+org.argouml.model.mdr.CoreFactoryMDRImpl	public org.omg.uml.foundation.core.UmlAssociation buildAssociation(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, boolean) 	ns	B3	2/7
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	events	B1	6/19
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	events	B3	6/19
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	events	B5	6/19
+org.argouml.model.mdr.CoreHelperMDRImpl	public void setFeatures(java.lang.Object, Collection#RAW) 	featuresList	B2	1/3
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void unregisterClassEvent(java.beans.PropertyChangeListener, java.lang.Object, java.lang.String[]) 	LOG	B2	1/3
+org.argouml.model.mdr.TestMDRModelImplementationCreate	public void testMDRModelImplementation() throws org.argouml.model.UmlException, java.io.FileNotFoundException	fileModel	B1	1/3
+org.argouml.model.mdr.XmiReaderImpl	private java.io.File copySource(org.xml.sax.InputSource) throws java.io.IOException	LOG	B1	1/3
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource serialTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.UmlException	result	B3	1/3
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource serialTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.UmlException	result	B5	1/3
+org.argouml.model.mdr.XmiReaderImpl	public Map<java.lang.String,java.lang.Object> getXMIUUIDToObjectMap() 	entrySet	B2	1/3
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource chainedTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.XmiException	result	B2	6/8
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource chainedTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.XmiException	result	B6	1/3
+org.argouml.model.mdr.MetaTypesMDRImpl	public java.lang.String getName(java.lang.Object) 	endName	B1	8/11
+org.argouml.model.mdr.MetaTypesMDRImpl	public java.lang.String getName(java.lang.Object) 	endName	B6	0/3
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	modelImpl	B1	2/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	modelImpl	B3	2/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	modelImpl	B5	2/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	modelImpl	B7	1/3
+org.argouml.model.mdr.ModelEventPumpMDRImpl	public void change(org.netbeans.api.mdr.events.MDRChangeEvent) 	modelImpl	B8	0/2
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	names	B2	3/6
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	names	B4	3/6
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	names	B6	1/4
+org.argouml.model.mdr.ModelEventPumpMDRImpl	private void verifyAttributeNames(javax.jmi.reflect.RefObject, java.lang.String[]) 	names	B8	1/4
+org.argouml.model.mdr.CoreFactoryMDRImpl	public org.omg.uml.foundation.core.Comment buildComment(java.lang.Object, java.lang.Object) 	commentsModel	B1	2/5
+org.argouml.model.mdr.CoreFactoryMDRImpl	public org.omg.uml.foundation.core.Comment buildComment(java.lang.Object, java.lang.Object) 	commentsModel	B3	2/5
+org.argouml.model.mdr.CoreFactoryMDRImpl	void deleteNamespace(java.lang.Object) 	modelImpl	B4	1/2
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void deleteExtent(java.lang.Object) 	LOG	B1	1/2
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void deleteExtent(java.lang.Object) 	modelImpl	B1	1/2
+org.argouml.model.mdr.XmiReferenceResolverImpl	public java.net.URL toURL(java.lang.String) 	pendingProfiles	B13	1/2
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource chainedTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.XmiException	xsltStreamSource	B3	2/4
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource serialTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.UmlException	xsltStreamSource	B3	2/4
+org.argouml.model.mdr.CoreHelperMDRImpl	private void setMultiplicityInternal(java.lang.Object, org.omg.uml.foundation.datatypes.Multiplicity) 	LOG	B1	2/3
+org.argouml.model.mdr.CoreHelperMDRImpl	private void setMultiplicityInternal(java.lang.Object, org.omg.uml.foundation.datatypes.Multiplicity) 	LOG	B11	1/2
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource serialTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.UmlException	LOG	B1	7/10
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource serialTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.UmlException	LOG	B2	6/9
+org.argouml.model.mdr.XmiReaderImpl	private org.xml.sax.InputSource serialTransform(java.lang.String[], org.xml.sax.InputSource) throws org.argouml.model.UmlException	LOG	B3	2/5
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	modelImpl	B1	13/22
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	modelImpl	B3	13/22
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	modelImpl	B5	13/22
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	modelImpl	B7	13/22
+org.argouml.model.mdr.UmlFactoryMDRImpl	public void delete(java.lang.Object) 	modelImpl	B9	13/22
+org.argouml.model.mdr.MetaTypesMDRImpl	public java.lang.String getName(java.lang.Object) 	startName	B1	5/8
+org.argouml.model.mdr.MDRModelImplementation	private void cleanExtents() 	LOG	B1	3/4
+org.argouml.model.mdr.MDRModelImplementation	private void cleanExtents() 	LOG	B2	2/3
+org.argouml.model.mdr.MDRModelImplementation	private void cleanExtents() 	LOG	B3	1/2
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public java.lang.Object getElement(List<java.lang.String>, java.lang.Object) 	found	B4	7/9
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public java.lang.Object getElement(List<java.lang.String>, java.lang.Object) 	found	B6	7/9
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public java.lang.Object getElement(List<java.lang.String>, java.lang.Object) 	found	B7	6/7
+org.argouml.model.mdr.ModelManagementHelperMDRImpl	public java.lang.Object getElement(List<java.lang.String>, java.lang.Object) 	found	B10	1/2
+org.argouml.model.mdr.XmiReaderImpl	public void consumeHeader(java.io.InputStream) 	stream	B1	3/4
+org.argouml.model.mdr.TestMDRModelImplementationCreate	public void testMDRModelImplementation() throws org.argouml.model.UmlException, java.io.FileNotFoundException	mi	B1	6/7

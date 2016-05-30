@@ -1,0 +1,3 @@
+org.argouml.model.Model	public static java.lang.Throwable initialise(java.lang.String) 	newImplementation	B1	0/4
+org.argouml.model.InitializeModel	private static org.argouml.model.ModelImplementation initializeModelImplementation(java.lang.String) 	implType	B1	0/3
+org.argouml.model.TestXmi	private Collection#RAW readXmi(java.lang.String) throws org.argouml.model.UmlException, java.io.FileNotFoundException	inputSource	B1	1/3

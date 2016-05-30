@@ -1,0 +1,12 @@
+org.argouml.state2.diagram.FigVertex	public void setEnclosingFig(org.tigris.gef.presentation.Fig) 	region	B1	1/17
+org.argouml.state2.diagram.FigVertex	public void setEnclosingFig(org.tigris.gef.presentation.Fig) 	region	B3	0/16
+org.argouml.state2.diagram.FigVertex	public java.awt.Dimension getMinimumSize() 	h	B1	3/9
+org.argouml.state2.diagram.FigVertex	public java.awt.Dimension getMinimumSize() 	w	B1	3/6
+org.argouml.state2.diagram.FigVertex	public java.awt.Dimension getMinimumSize() 	w	B3	1/4
+org.argouml.state2.diagram.FigVertex.FigRegionCompartment	public java.awt.Dimension getMinimumSize() 	minHeight	B1	3/6
+org.argouml.state2.diagram.FigVertex.FigRegionCompartment	public java.awt.Dimension getMinimumSize() 	minHeight	B2	3/5
+org.argouml.state2.diagram.FigVertex	protected void modelChanged(java.beans.PropertyChangeEvent) 	LOG	B1	2/3
+org.argouml.state2.diagram.FigVertex	protected void modelChanged(java.beans.PropertyChangeEvent) 	LOG	B3	2/3
+org.argouml.state2.diagram.FigVertex	protected void modelChanged(java.beans.PropertyChangeEvent) 	LOG	B4	1/2
+org.argouml.state2.diagram.FigVertex.FigRegionCompartment	public java.awt.Dimension getMinimumSize() 	minWidth	B1	3/5
+org.argouml.state2.diagram.FigVertex.FigRegionCompartment	public java.awt.Dimension getMinimumSize() 	minWidth	B2	3/4

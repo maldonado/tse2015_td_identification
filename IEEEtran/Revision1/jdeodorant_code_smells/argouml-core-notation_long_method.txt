@@ -1,0 +1,3 @@
+org.argouml.notation2.NotationManager	public void addListener(org.argouml.notation2.NotatedItem) 	nl	B1	0/3
+org.argouml.notation2.StereotypeUmlNotation	public void propertyChange(java.beans.PropertyChangeEvent) 	event	B1	3/4
+org.argouml.notation2.NameUmlNotation	public void propertyChange(java.beans.PropertyChangeEvent) 	event	B1	4/5

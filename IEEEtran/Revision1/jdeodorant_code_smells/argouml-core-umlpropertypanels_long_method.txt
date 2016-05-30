@@ -1,0 +1,192 @@
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpressionDialog	private void buildFirstPanel() 	contentPanel	B1	0/47
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.ParameterDirectionGetterSetter	public void set(java.lang.Object, java.lang.Object) 	kind	B1	0/11
+org.argouml.core.propertypanels.ui.UMLCallActionOperationComboBoxModel	protected void buildModelList() 	i	B7	0/9
+org.argouml.core.propertypanels.ui.UMLCallActionOperationComboBoxModel	protected void buildModelList() 	i	B8	0/7
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.VisibilityGetterSetter	public void set(java.lang.Object, java.lang.Object) 	kind	B1	0/8
+org.argouml.core.propertypanels.ui.UMLComponentInstanceClassifierComboBoxModel	protected void buildModelList() 	list	B1	0/8
+org.argouml.core.propertypanels.ui.UMLValueSpecificationPanel	private org.argouml.core.propertypanels.ui.UMLValueSpecificationValueField createField(java.lang.String) 	c	B1	0/8
+org.argouml.core.propertypanels.ui.UMLValueSpecificationPanel	private org.argouml.core.propertypanels.ui.UMLValueSpecificationValueField createField(java.lang.String) 	c	B3	0/8
+org.argouml.core.propertypanels.ui.UMLLinkedList	private final void showPopup(java.awt.event.MouseEvent) 	LOG	B2	0/8
+org.argouml.core.propertypanels.ui.UMLLinkedList	private final void showPopup(java.awt.event.MouseEvent) 	LOG	B3	0/3
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.ConcurrencyGetterSetter	public void set(java.lang.Object, java.lang.Object) 	kind	B1	0/7
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.AggregationGetterSetter	public void set(java.lang.Object, java.lang.Object) 	kind	B1	0/6
+org.argouml.core.propertypanels.model.MetaDataCache	private org.w3c.dom.Document getDocument() throws java.io.IOException, org.w3c.dom.DOMException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException	inputSource	B1	0/6
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void createLabel(java.lang.Object, org.argouml.core.propertypanels.model.PanelData, javax.swing.JPanel) 	label	B1	0/6
+org.argouml.core.propertypanels.ui.UMLEditableComboBox.UMLComboBoxEditor.UMLImagePanel	public void setIcon(javax.swing.Icon) 	imageIconLabel	B1	0/6
+org.argouml.core.propertypanels.model.MetaDataCache	private void addCheckboxes(org.argouml.core.propertypanels.model.ControlData, org.w3c.dom.Element) 	controlData	B2	0/6
+org.argouml.core.propertypanels.model.MetaDataCache	private void addCheckboxes(org.argouml.core.propertypanels.model.ControlData, org.w3c.dom.Element) 	controlData	B3	0/5
+org.argouml.core.propertypanels.ui.UMLAssociationRoleBaseComboBoxModel	protected void addOtherModelEventListeners(java.lang.Object) 	others	B1	0/6
+org.argouml.core.propertypanels.ui.UMLAssociationRoleBaseComboBoxModel	protected void addOtherModelEventListeners(java.lang.Object) 	others	B2	0/4
+org.argouml.core.propertypanels.ui.UMLAssociationRoleBaseComboBoxModel	protected void addOtherModelEventListeners(java.lang.Object) 	others	B4	0/2
+org.argouml.core.propertypanels.ui.ExpressionModel	private void setExpression(java.lang.String, java.lang.String) 	newExpression	B4	0/5
+org.argouml.core.propertypanels.ui.UMLTagDefinitionTypedValuesListModel	protected void buildModelList() 	taggedValues	B2	0/5
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel	protected void buildModelList() 	elements	B1	0/5
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel	protected void buildModelList() 	elements	B2	0/3
+org.argouml.core.propertypanels.ui.UMLTagDefinitionTypedValuesListModel	protected void buildModelList() 	i	B2	0/5
+org.argouml.core.propertypanels.ui.UMLTagDefinitionTypedValuesListModel	protected void buildModelList() 	i	B3	0/3
+org.argouml.core.propertypanels.ui.UMLTagDefinitionTypedValuesListModel	protected void buildModelList() 	typedValues	B2	0/5
+org.argouml.core.propertypanels.ui.UMLTagDefinitionTypedValuesListModel	protected void buildModelList() 	typedValues	B3	0/3
+org.argouml.core.propertypanels.ui.UMLCallActionOperationComboBoxModel	protected void buildModelList() 	ns	B2	0/5
+org.argouml.core.propertypanels.ui.UMLCallActionOperationComboBoxModel	protected void buildModelList() 	ns	B3	0/4
+org.argouml.core.propertypanels.ui.ExpressionModel	public void setBody(java.lang.String) 	lang	B5	0/5
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void setBody(java.lang.String) 	lang	B5	0/5
+org.argouml.core.propertypanels.model.MetaDataCache	private org.w3c.dom.Document getDocument() throws java.io.IOException, org.w3c.dom.DOMException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException	filename	B1	0/4
+org.argouml.core.propertypanels.model.MetaDataCache	private void addCheckboxes(org.argouml.core.propertypanels.model.ControlData, org.w3c.dom.Element) 	cbd	B3	0/4
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildCheckGroup(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	p	B1	0/4
+org.argouml.core.propertypanels.ui.UMLAssociationRoleBaseComboBoxModel	protected void addOtherModelEventListeners(java.lang.Object) 	types	B1	0/4
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void propertyChange(java.beans.PropertyChangeEvent) 	LOG	B2	0/4
+org.argouml.core.propertypanels.ui.UMLOFSStateListModel.ActionAddOFSState	static void removeTopStateFrom(Collection#RAW) 	ret	B2	0/4
+org.argouml.core.propertypanels.ui.UMLSignalComboBoxModel.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	o	B1	0/4
+org.argouml.core.propertypanels.ui.UMLValueSpecificationModel	public void propertyChange(java.beans.PropertyChangeEvent) 	LOG	B2	0/4
+org.argouml.core.propertypanels.ui.LabelledComponent	private void toggleExpansion(org.argouml.core.propertypanels.ui.Expandable) 	c	B1	0/4
+org.argouml.core.propertypanels.ui.LabelledComponent	private void toggleExpansion(org.argouml.core.propertypanels.ui.Expandable) 	c	B4	0/4
+org.argouml.core.propertypanels.ui.LabelledComponent	private void toggleExpansion(org.argouml.core.propertypanels.ui.Expandable) 	c	B6	0/4
+org.argouml.core.propertypanels.ui.LabelledComponent	private void toggleExpansion(org.argouml.core.propertypanels.ui.Expandable) 	c	B7	0/2
+org.argouml.core.propertypanels.ui.UMLComboBoxModel	private void buildModelListTimed() 	LOG	B1	0/4
+org.argouml.core.propertypanels.ui.UMLComboBoxModel	private void buildModelListTimed() 	LOG	B2	0/2
+org.argouml.core.propertypanels.ui.UMLMessagePredecessorListModel	protected void buildModelList() 	it	B1	0/4
+org.argouml.core.propertypanels.ui.UMLMessagePredecessorListModel	protected void buildModelList() 	it	B2	0/2
+org.argouml.core.propertypanels.ui.RowSelector	public void mousePressed(java.awt.event.MouseEvent) 	popup	B2	0/4
+org.argouml.core.propertypanels.ui.RowSelector	public void mousePressed(java.awt.event.MouseEvent) 	popup	B3	0/3
+org.argouml.core.propertypanels.ui.RowSelector	public void mousePressed(java.awt.event.MouseEvent) 	popup	B6	0/3
+org.argouml.core.propertypanels.ui.RowSelector	public void mousePressed(java.awt.event.MouseEvent) 	popup	B8	0/3
+org.argouml.core.propertypanels.ui.RowSelector	public void mousePressed(java.awt.event.MouseEvent) 	popup	B9	0/2
+org.argouml.core.propertypanels.ui.RowSelector	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B2	0/4
+org.argouml.core.propertypanels.ui.RowSelector	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B3	0/3
+org.argouml.core.propertypanels.ui.RowSelector	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B6	0/3
+org.argouml.core.propertypanels.ui.RowSelector	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B8	0/3
+org.argouml.core.propertypanels.ui.RowSelector	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B9	0/2
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildComboPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	model	B4	0/4
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextArea(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	text	B11	0/4
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildComboPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	model	B28	0/4
+org.argouml.core.propertypanels.ui.ExpressionModel	public void setBody(java.lang.String) 	mustChange	B2	0/3
+org.argouml.core.propertypanels.ui.ExpressionModel	public void setLanguage(java.lang.String) 	mustChange	B2	0/3
+org.argouml.core.propertypanels.ui.LabelledComponent	private void setIcon() 	expander	B2	0/3
+org.argouml.core.propertypanels.ui.UMLAssociationEndTypeComboBoxModel.ActionSetAssociationEndType	public void actionPerformed(java.awt.event.ActionEvent) 	newClassifier	B3	0/3
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel.ActionSetGeneralizationPowertype	public void actionPerformed(java.awt.event.ActionEvent) 	newClassifier	B3	0/3
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel	protected void buildMinimalModelList() 	element	B1	0/3
+org.argouml.core.propertypanels.ui.UMLMethodSpecificationComboBoxModel.ActionSetMethodSpecification	public void actionPerformed(java.awt.event.ActionEvent) 	newOperation	B4	0/3
+org.argouml.core.propertypanels.ui.UMLModelElementNamespaceComboBoxModel.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	newNamespace	B3	0/3
+org.argouml.core.propertypanels.ui.UMLStubStateComboBoxModel	protected void buildModelList() 	stateMachine	B1	0/3
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldLiteralBoolean	public void buildPanel() 	falseButton	B1	0/3
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldLiteralBoolean	public void buildPanel() 	trueButton	B1	0/3
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldLiteralString	public void buildPanel() 	stringField	B1	0/3
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpression	public void buildPanel() 	curBody	B1	0/3
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpressionDialog	private void buildFirstPanel() 	curBody	B1	0/3
+org.argouml.core.propertypanels.ui.ExpressionModel	public void setLanguage(java.lang.String) 	body	B5	0/3
+org.argouml.core.propertypanels.ui.UMLCallEventOperationComboBoxModel	protected void buildModelList() 	ns	B2	0/3
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpression	protected void updateModel() 	tabValues	B2	0/3
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void setLanguage(java.lang.String) 	body	B5	0/3
+org.argouml.core.propertypanels.ui.RowSelector.DeleteAction	public void actionPerformed(java.awt.event.ActionEvent) 	ce	B5	0/3
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextArea(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	osta	B9	0/3
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextArea(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	conditionArea	B13	0/3
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.ResidentElementGetterSetter.AddCommand	protected List#RAW getSelected() 	it	B2	0/2
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.ResidentElementGetterSetter	public Collection#RAW getOptions(java.lang.Object, Collection<Class<?>>) 	it	B2	0/2
+org.argouml.core.propertypanels.model.MetaDataCache	private List<Class<?>> stringToMetaTypes(java.lang.String) 	metaTypeByName	B2	0/2
+org.argouml.core.propertypanels.model.MetaDataCache	private List<Class<?>> stringToMetaTypes(java.lang.String) 	st	B2	0/2
+org.argouml.core.propertypanels.ui.CheckBox.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	getterSetter	B1	0/2
+org.argouml.core.propertypanels.ui.RadioButtonPanel.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	getterSetter	B1	0/2
+org.argouml.core.propertypanels.ui.UMLMultiplicityPanel.MultiplicityComboBoxModel	public void setSelectedItem(java.lang.Object) 	anItem	B1	0/2
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseClicked(java.awt.event.MouseEvent) 	LOG	B3	0/2
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mousePressed(java.awt.event.MouseEvent) 	LOG	B3	0/2
+org.argouml.core.propertypanels.ui.UMLPlainTextDocument	private final void updateText(java.lang.String) 	textValue	B1	0/2
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpression	public void buildPanel() 	curLanguage	B1	0/2
+org.argouml.core.propertypanels.ui.UMLStructuralFeatureTypeComboBoxModel	protected void buildModelList() 	elements	B1	1/12
+org.argouml.core.propertypanels.ui.UMLStructuralFeatureTypeComboBoxModel	protected void buildModelList() 	elements	B3	0/10
+org.argouml.core.propertypanels.ui.LabelledLayout	public java.awt.Dimension preferredLayoutSize(java.awt.Container) 	preferredHeight	B1	1/9
+org.argouml.core.propertypanels.ui.LabelledLayout	public java.awt.Dimension preferredLayoutSize(java.awt.Container) 	preferredHeight	B2	0/6
+org.argouml.core.propertypanels.ui.UMLValueSpecificationPanel	private JComboBox#RAW uiSelect() 	iSel	B1	2/12
+org.argouml.core.propertypanels.ui.UMLValueSpecificationPanel	private JComboBox#RAW uiSelect() 	iSel	B2	0/8
+org.argouml.core.propertypanels.ui.UMLValueSpecificationPanel	private JComboBox#RAW uiSelect() 	iSel	B3	0/6
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void setBody(java.lang.String) 	mustChange	B1	1/6
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void setBody(java.lang.String) 	mustChange	B2	0/3
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void setLanguage(java.lang.String) 	mustChange	B1	1/6
+org.argouml.core.propertypanels.ui.UMLExpressionModel	public void setLanguage(java.lang.String) 	mustChange	B2	0/3
+org.argouml.core.propertypanels.ui.UMLTemplateParameterDefaultElementComboBoxModel	protected void buildModelList() 	elements	B1	1/5
+org.argouml.core.propertypanels.ui.UMLTemplateParameterDefaultElementComboBoxModel	protected void buildModelList() 	elements	B3	0/3
+org.argouml.core.propertypanels.ui.UMLTemplateParameterParameterComboBoxModel	protected void buildModelList() 	elements	B1	1/5
+org.argouml.core.propertypanels.ui.UMLTemplateParameterParameterComboBoxModel	protected void buildModelList() 	elements	B3	0/3
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseReleased(java.awt.event.MouseEvent) 	LOG	B4	1/4
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseReleased(java.awt.event.MouseEvent) 	LOG	B5	0/2
+org.argouml.core.propertypanels.ui.UmlControl	protected javax.swing.JPanel createSingleButtonPanel(List<javax.swing.Action>) 	toolbar	B1	1/8
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B2	1/4
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B4	1/3
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseReleased(java.awt.event.MouseEvent) 	popup	B5	0/2
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextboxPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	target	B1	1/3
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextboxPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	target	B2	0/2
+org.argouml.core.propertypanels.ui.UMLEditableComboBox.UMLComboBoxEditor	public void setItem(java.lang.Object) 	panel	B1	1/3
+org.argouml.core.propertypanels.ui.UMLEditableComboBox.UMLComboBoxEditor	public void setItem(java.lang.Object) 	panel	B2	0/2
+org.argouml.core.propertypanels.ui.UMLStructuralFeatureTypeComboBoxModel.ActionSetStructuralFeatureType	public void actionPerformed(java.awt.event.ActionEvent) 	newClassifier	B1	1/6
+org.argouml.core.propertypanels.ui.UmlControl	protected javax.swing.JPanel createSingleButtonPanel(List<javax.swing.Action>) 	toolbar	B1	1/6
+org.argouml.core.propertypanels.ui.UMLLinkAssociationComboBoxModel.ActionSetLinkAssociation	public void actionPerformed(java.awt.event.ActionEvent) 	newAssoc	B1	2/6
+org.argouml.core.propertypanels.ui.UMLLinkAssociationComboBoxModel.ActionSetLinkAssociation	public void actionPerformed(java.awt.event.ActionEvent) 	newAssoc	B3	0/3
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildComboPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	comp	B1	16/93
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	row	B1	6/31
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	row	B3	5/29
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	row	B4	5/27
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	row	B12	3/20
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	row	B13	3/15
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	y	B1	6/31
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	y	B3	5/29
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	y	B4	5/27
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	y	B12	3/20
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	y	B13	3/15
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	totalHeight	B1	6/31
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	totalHeight	B3	5/29
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	totalHeight	B4	5/27
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	unknownHeightCount	B1	6/31
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	unknownHeightCount	B3	5/29
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	unknownHeightCount	B4	5/27
+org.argouml.core.propertypanels.ui.UMLComponentInstanceClassifierComboBoxModel.ActionSet	public void actionPerformed(java.awt.event.ActionEvent) 	classifiers	B1	1/5
+org.argouml.core.propertypanels.ui.UMLTemplateParameterParameterComboBoxModel	protected void buildMinimalModelList() 	list	B1	1/5
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpressionDialog	private void updateFields() 	listModel	B1	2/5
+org.argouml.core.propertypanels.ui.UMLValueSpecificationValueFieldOpaqueExpressionDialog	private void updateFields() 	listModel	B2	0/3
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildComboPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	comp	B1	17/85
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	labelWidth	B1	4/11
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	labelWidth	B3	3/10
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	labelWidth	B4	3/9
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	labelWidth	B5	2/8
+org.argouml.core.propertypanels.ui.LabelledLayout	private void layoutSection(java.awt.Container, int, int, ArrayList#RAW, int) 	labelWidth	B7	0/2
+org.argouml.core.propertypanels.ui.UMLCollaborationRepresentedClassifierComboBoxModel.ActionSetRepresentedClassifierCollaboration	public void actionPerformed(java.awt.event.ActionEvent) 	newValue	B1	1/4
+org.argouml.core.propertypanels.ui.UMLCollaborationRepresentedOperationComboBoxModel.ActionSetRepresentedOperationCollaboration	public void actionPerformed(java.awt.event.ActionEvent) 	newValue	B1	1/4
+org.argouml.core.propertypanels.ui.UMLTemplateParameterParameterComboBoxModel	protected void buildMinimalModelList() 	LOG	B1	1/4
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextboxPanel(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	document	B1	3/11
+org.argouml.core.propertypanels.ui.SwingUIFactory	private void buildTextArea(javax.swing.JPanel, java.lang.Object, org.argouml.core.propertypanels.model.ControlData) 	p	B1	12/32
+org.argouml.core.propertypanels.ui.UMLLinkedList	private final void showPopup(java.awt.event.MouseEvent) 	popup	B2	5/7
+org.argouml.core.propertypanels.ui.UMLLinkedList	private final void showPopup(java.awt.event.MouseEvent) 	popup	B3	1/2
+org.argouml.core.propertypanels.ui.RowSelector	public void mousePressed(java.awt.event.MouseEvent) 	e	B1	1/2
+org.argouml.core.propertypanels.ui.RowSelector	public void mouseReleased(java.awt.event.MouseEvent) 	e	B1	1/2
+org.argouml.core.propertypanels.ui.UMLComboBoxModel	public void removeElement(java.lang.Object) 	objects	B6	1/2
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseClicked(java.awt.event.MouseEvent) 	e	B1	1/2
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mousePressed(java.awt.event.MouseEvent) 	e	B1	1/2
+org.argouml.core.propertypanels.ui.UMLMutableLinkedList	public void mouseReleased(java.awt.event.MouseEvent) 	e	B1	1/2
+org.argouml.core.propertypanels.ui.LabelledLayout	public java.awt.Dimension preferredLayoutSize(java.awt.Container) 	preferredWidth	B1	2/4
+org.argouml.core.propertypanels.ui.UMLAssociationEndTypeComboBoxModel.ActionSetAssociationEndType	public void actionPerformed(java.awt.event.ActionEvent) 	end	B1	2/4
+org.argouml.core.propertypanels.ui.UMLLinkAssociationComboBoxModel	protected void buildModelList() 	linkEnds	B1	2/4
+org.argouml.core.propertypanels.ui.UMLMetaClassComboBoxModel.ActionSetTagDefinitionType	public void actionPerformed(java.awt.event.ActionEvent) 	newType	B1	2/4
+org.argouml.core.propertypanels.ui.UMLModelElementNamespaceComboBoxModel.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	m	B1	2/4
+org.argouml.core.propertypanels.ui.UMLStructuralFeatureTypeComboBoxModel.ActionSetStructuralFeatureType	public void actionPerformed(java.awt.event.ActionEvent) 	oldClassifier	B1	2/4
+org.argouml.core.propertypanels.ui.UMLAssociationEndTypeComboBoxModel.ActionSetAssociationEndType	public void actionPerformed(java.awt.event.ActionEvent) 	oldClassifier	B1	4/6
+org.argouml.core.propertypanels.ui.UMLAssociationEndTypeComboBoxModel.ActionSetAssociationEndType	public void actionPerformed(java.awt.event.ActionEvent) 	oldClassifier	B2	1/2
+org.argouml.core.propertypanels.ui.UMLModelElementNamespaceComboBoxModel.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	oldNamespace	B1	4/6
+org.argouml.core.propertypanels.ui.UMLModelElementNamespaceComboBoxModel.SetAction	public void actionPerformed(java.awt.event.ActionEvent) 	oldNamespace	B2	1/2
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel.ActionSetGeneralizationPowertype	public void actionPerformed(java.awt.event.ActionEvent) 	oldClassifier	B1	6/8
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel.ActionSetGeneralizationPowertype	public void actionPerformed(java.awt.event.ActionEvent) 	oldClassifier	B2	1/2
+org.argouml.core.propertypanels.ui.UMLMetaClassComboBoxModel.ActionSetTagDefinitionType	public void actionPerformed(java.awt.event.ActionEvent) 	oldType	B1	6/8
+org.argouml.core.propertypanels.ui.UMLMetaClassComboBoxModel.ActionSetTagDefinitionType	public void actionPerformed(java.awt.event.ActionEvent) 	oldType	B2	1/2
+org.argouml.core.propertypanels.ui.UMLGeneralizationPowertypeComboBoxModel.ActionSetGeneralizationPowertype	public void actionPerformed(java.awt.event.ActionEvent) 	gen	B1	4/6
+org.argouml.core.propertypanels.ui.UMLLinkAssociationComboBoxModel.ActionSetLinkAssociation	public void actionPerformed(java.awt.event.ActionEvent) 	link	B1	4/6
+org.argouml.core.propertypanels.ui.UMLLinkAssociationComboBoxModel.ActionSetLinkAssociation	public void actionPerformed(java.awt.event.ActionEvent) 	oldAssoc	B1	4/6
+org.argouml.core.propertypanels.ui.UMLMetaClassComboBoxModel.ActionSetTagDefinitionType	public void actionPerformed(java.awt.event.ActionEvent) 	tagDef	B1	4/6
+org.argouml.core.propertypanels.ui.UMLMethodSpecificationComboBoxModel.ActionSetMethodSpecification	public void actionPerformed(java.awt.event.ActionEvent) 	oldOperation	B1	7/9
+org.argouml.core.propertypanels.ui.UMLMethodSpecificationComboBoxModel.ActionSetMethodSpecification	public void actionPerformed(java.awt.event.ActionEvent) 	oldOperation	B2	4/5
+org.argouml.core.propertypanels.ui.UMLMethodSpecificationComboBoxModel.ActionSetMethodSpecification	public void actionPerformed(java.awt.event.ActionEvent) 	oldOperation	B3	1/2
+org.argouml.core.propertypanels.ui.UMLMethodSpecificationComboBoxModel.ActionSetMethodSpecification	public void actionPerformed(java.awt.event.ActionEvent) 	method	B1	5/7
+org.argouml.core.propertypanels.ui.UMLMethodSpecificationComboBoxModel.ActionSetMethodSpecification	public void actionPerformed(java.awt.event.ActionEvent) 	method	B2	3/4
+org.argouml.core.propertypanels.model.GetterSetterManagerImpl.DeferrableEventGetterSetter.AddCommand	protected void doIt(Collection#RAW) 	oldOnes	B1	4/5
+org.argouml.core.propertypanels.model.MetaDataCache	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	metaTypeByName	B1	7/8
+org.argouml.core.propertypanels.model.MetaDataCache	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	metaTypeByName	B2	6/7
+org.argouml.core.propertypanels.model.MetaDataCache	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	metaTypeByName	B3	5/6
+org.argouml.core.propertypanels.model.MetaDataCache	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	nameByMetaType	B1	7/8
+org.argouml.core.propertypanels.model.MetaDataCache	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	nameByMetaType	B2	6/7
+org.argouml.core.propertypanels.model.MetaDataCache	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	nameByMetaType	B3	5/6

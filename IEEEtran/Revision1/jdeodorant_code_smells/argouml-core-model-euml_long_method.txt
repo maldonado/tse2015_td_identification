@@ -1,0 +1,144 @@
+org.argouml.model.euml.ModelEventPumpEUMLImpl	public List#RAW getDebugInfo() 	modelElementNode	B4	0/13
+org.argouml.model.euml.ModelEventPumpEUMLImpl	public List#RAW getDebugInfo() 	modelElementNode	B14	0/2
+org.argouml.model.euml.EUMLModelImplementation	private void initializeEditingDomain() 	packageRegistry	B2	0/12
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	list	B1	0/12
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	list	B3	0/12
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	list	B8	0/2
+org.argouml.model.euml.CoreHelperEUMLImpl	private org.argouml.model.euml.RunnableClass getRunnableClassForRemoveCommand(org.eclipse.uml2.uml.Element) 	cmd	B1	0/7
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setAggregation1(java.lang.Object, java.lang.Object) 	it	B1	0/7
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setAggregation1(java.lang.Object, java.lang.Object) 	other	B1	0/7
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void addTaggedValue(java.lang.Object, java.lang.Object) 	newValue	B6	0/7
+org.argouml.model.euml.StateMachinesFactoryEUMLImpl	public java.lang.Object buildTransition(java.lang.Object, java.lang.Object, java.lang.Object) 	region	B1	0/7
+org.argouml.model.euml.StateMachinesFactoryEUMLImpl	public java.lang.Object buildTransition(java.lang.Object, java.lang.Object, java.lang.Object) 	region	B3	0/7
+org.argouml.model.euml.StateMachinesFactoryEUMLImpl	public java.lang.Object buildTransition(java.lang.Object, java.lang.Object, java.lang.Object) 	region	B5	0/7
+org.argouml.model.euml.UmlHelperEUMLImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B4	0/7
+org.argouml.model.euml.UmlHelperEUMLImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B6	0/7
+org.argouml.model.euml.UmlHelperEUMLImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B8	0/7
+org.argouml.model.euml.UmlHelperEUMLImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B10	0/7
+org.argouml.model.euml.UmlHelperEUMLImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B12	0/7
+org.argouml.model.euml.EUMLModelImplementation	private void initializeEditingDomain() 	adapterFactory	B1	0/6
+org.argouml.model.euml.EUMLModelImplementation	private void initializeEditingDomain() 	factories	B1	0/5
+org.argouml.model.euml.StateMachinesHelperEUMLImpl	public void setContainer(java.lang.Object, java.lang.Object) 	region	B1	0/5
+org.argouml.model.euml.StateMachinesHelperEUMLImpl	public void setContainer(java.lang.Object, java.lang.Object) 	region	B3	0/5
+org.argouml.model.euml.StateMachinesHelperEUMLImpl	public void setContainer(java.lang.Object, java.lang.Object) 	region	B4	0/4
+org.argouml.model.euml.RootContainerAdapter	public void setHoldEvents(boolean) 	pump	B1	0/5
+org.argouml.model.euml.RootContainerAdapter	public void setHoldEvents(boolean) 	pump	B2	0/4
+org.argouml.model.euml.RootContainerAdapter	public void setHoldEvents(boolean) 	pump	B3	0/3
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setType(java.lang.Object, java.lang.Object) 	typedElement	B1	0/4
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setType(java.lang.Object, java.lang.Object) 	typedElement	B3	0/4
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setType(java.lang.Object, java.lang.Object) 	typedElement	B5	0/4
+org.argouml.model.euml.MetaTypesEUMLImpl	public java.lang.String getName(java.lang.Object) 	clazz	B1	0/4
+org.argouml.model.euml.ModelManagementHelperEUMLImpl	public List<java.lang.String> getPathList(java.lang.Object) 	name	B1	0/4
+org.argouml.model.euml.ChangeCommand	private boolean isValid(java.lang.String, java.lang.Object[]) 	i	B1	0/4
+org.argouml.model.euml.ChangeCommand	private boolean isValid(java.lang.String, java.lang.Object[]) 	i	B3	0/4
+org.argouml.model.euml.ChangeCommand	private boolean isValid(java.lang.String, java.lang.Object[]) 	i	B4	0/3
+org.argouml.model.euml.ChangeCommand	private boolean isValid(java.lang.String, java.lang.Object[]) 	i	B5	0/2
+org.argouml.model.euml.UmlFactoryEUMLImpl	public Collection#RAW getExtentPackages(java.lang.String) 	result	B2	0/4
+org.argouml.model.euml.UmlFactoryEUMLImpl	public Collection#RAW getExtentPackages(java.lang.String) 	result	B3	0/3
+org.argouml.model.euml.UmlFactoryEUMLImpl	public Collection#RAW getExtentPackages(java.lang.String) 	result	B4	0/2
+org.argouml.model.euml.CoreHelperEUMLImpl	private org.argouml.model.euml.RunnableClass getRunnableClassForAddCommand(org.eclipse.uml2.uml.Element, int, org.eclipse.uml2.uml.Element) 	cmd	B1	0/3
+org.argouml.model.euml.CoreHelperEUMLImpl	public Collection<java.lang.String> getAllMetatypeNames() 	o	B3	0/3
+org.argouml.model.euml.FacadeEUMLImpl	public java.lang.String getTipString(java.lang.Object) 	name	B1	0/3
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	ns	B1	0/3
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	ns	B3	0/3
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	ns	B5	0/3
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void addListeners(List<java.util.EventListener>, java.lang.Object, java.lang.String, Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	listeners	B2	0/3
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void addListeners(List<java.util.EventListener>, java.lang.Object, java.lang.String, Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	listeners	B3	0/2
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void setTaggedValue(java.lang.Object, java.lang.Object, java.lang.Object) 	newValue	B12	0/3
+org.argouml.model.euml.FacadeEUMLImpl	public java.lang.Object getValueOfTag(java.lang.Object, java.lang.Object) 	newValue	B8	0/3
+org.argouml.model.euml.UmlFactoryEUMLImpl	private void buildValidConnectionMap() 	modeElementPair	B6	0/3
+org.argouml.model.euml.UmlFactoryEUMLImpl	private void buildValidConnectionMap() 	modeElementPair	B7	0/3
+org.argouml.model.euml.UmlFactoryEUMLImpl	private void buildValidConnectionMap() 	reversedModeElementPair	B8	0/3
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setAnnotatedElements(java.lang.Object, Collection#RAW) 	elems	B1	0/2
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setAnnotatedElements(java.lang.Object, Collection#RAW) 	elems	B3	0/2
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setAnnotatedElements(java.lang.Object, Collection#RAW) 	elems	B5	0/2
+org.argouml.model.euml.CoreHelperEUMLImpl	public void setAnnotatedElements(java.lang.Object, Collection#RAW) 	elems	B8	0/2
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public java.lang.Object setBody(java.lang.Object, java.lang.String) 	bodies	B8	0/2
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public java.lang.Object setLanguage(java.lang.Object, java.lang.String) 	langs	B8	0/2
+org.argouml.model.euml.FacadeEUMLImpl	public Collection#RAW getExtendedElements(java.lang.Object) 	iter	B4	0/2
+org.argouml.model.euml.FacadeEUMLImpl	public List#RAW getIncomings(java.lang.Object) 	trans	B5	0/2
+org.argouml.model.euml.FacadeEUMLImpl	public List#RAW getOutgoings(java.lang.Object) 	trans	B5	0/2
+org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener	void removeProperties(java.lang.String[]) 	props	B1	0/2
+org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener	void removeProperties(java.lang.String[]) 	props	B3	0/2
+org.argouml.model.euml.UmlHelperEUMLImpl	public void deleteCollection(Collection#RAW) 	it	B2	0/2
+org.argouml.model.euml.UmlHelperEUMLImpl	public void deleteCollection(Collection#RAW) 	modelImpl	B2	0/2
+org.argouml.model.euml.UseCasesHelperEUMLImpl	public void setExtensionPoints(java.lang.Object, Collection#RAW) 	extensionPoints	B1	0/2
+org.argouml.model.euml.UseCasesHelperEUMLImpl	public void setExtensionPoints(java.lang.Object, Collection#RAW) 	extensionPoints	B3	0/2
+org.argouml.model.euml.UseCasesHelperEUMLImpl	public void setExtensionPoints(java.lang.Object, Collection#RAW) 	extensionPoints	B5	0/2
+org.argouml.model.euml.UseCasesHelperEUMLImpl	public void setExtensionPoints(java.lang.Object, Collection#RAW) 	extensionPoints	B8	0/2
+org.argouml.model.euml.UmlHelperEUMLImpl	public void move(java.lang.Object, java.lang.Object, org.argouml.model.UmlHelper.Direction) 	f	B14	1/7
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public void modifyValueSpecification(java.lang.Object, java.lang.Object[]) 	bodies	B15	2/5
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public void modifyValueSpecification(java.lang.Object, java.lang.Object[]) 	langs	B15	2/5
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void setTaggedValue(java.lang.Object, java.lang.Object, java.lang.Object) 	value	B1	1/16
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void setTaggedValue(java.lang.Object, java.lang.Object, java.lang.Object) 	value	B3	1/16
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void setTaggedValue(java.lang.Object, java.lang.Object, java.lang.Object) 	value	B5	1/16
+org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener	void setProperties(java.lang.String[]) 	props	B1	1/5
+org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener	void setProperties(java.lang.String[]) 	props	B3	0/4
+org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener	void setProperties(java.lang.String[]) 	props	B5	0/2
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	found	B1	0/12
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	found	B3	0/12
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	found	B5	0/7
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	found	B6	1/3
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B1	1/6
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B3	1/6
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B5	1/6
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B6	0/5
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B11	0/5
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B1	1/6
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B3	1/6
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B5	1/6
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B6	0/5
+org.argouml.model.euml.CoreHelperEUMLImpl	public void addAllStereotypes(java.lang.Object, Collection#RAW) 	cmd	B11	0/5
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	l	B5	0/7
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void registerListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	l	B6	1/2
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void addTaggedValue(java.lang.Object, java.lang.Object) 	value	B1	2/14
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void addTaggedValue(java.lang.Object, java.lang.Object) 	value	B3	2/14
+org.argouml.model.euml.ExtensionMechanismsHelperEUMLImpl	public void addTaggedValue(java.lang.Object, java.lang.Object) 	value	B5	2/14
+org.argouml.model.euml.ModelEventPumpEUMLImpl	public void notifyChanged(org.eclipse.emf.common.notify.Notification) 	oppositeRef	B1	1/5
+org.argouml.model.euml.ModelEventPumpEUMLImpl	public void notifyChanged(org.eclipse.emf.common.notify.Notification) 	oppositeRef	B3	1/5
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	modelImpl	B1	1/5
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	modelImpl	B3	1/5
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	modelImpl	B5	1/5
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.Actor buildActor(java.lang.Object, java.lang.Object) 	modelImpl	B7	1/2
+org.argouml.model.euml.MetaTypesEUMLImpl	public java.lang.String getName(java.lang.Object) 	endName	B1	5/9
+org.argouml.model.euml.MetaTypesEUMLImpl	public java.lang.String getName(java.lang.Object) 	endName	B6	0/4
+org.argouml.model.euml.StateMachinesHelperEUMLImpl	public void setStatemachineAsSubmachine(java.lang.Object, java.lang.Object) 	pump	B1	1/3
+org.argouml.model.euml.StateMachinesHelperEUMLImpl	public void setStatemachineAsSubmachine(java.lang.Object, java.lang.Object) 	pump	B3	1/3
+org.argouml.model.euml.UMLUtil	public static java.lang.String toString(java.lang.Object) 	named	B1	1/3
+org.argouml.model.euml.UMLUtil	public static java.lang.String toString(java.lang.Object) 	named	B3	1/3
+org.argouml.model.euml.UMLUtil	public static java.lang.String toString(java.lang.Object) 	named	B5	1/3
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public java.lang.Object createValueSpecification(java.lang.Object, java.lang.String) 	tabValues	B2	5/9
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public java.lang.Object createValueSpecification(java.lang.Object, java.lang.String) 	tabValues	B4	4/7
+org.argouml.model.euml.DataTypesHelperEUMLImpl	public java.lang.Object createValueSpecification(java.lang.Object, java.lang.String) 	tabValues	B6	3/6
+org.argouml.model.euml.ModelEventPumpEUMLImpl	void fireEvent(java.lang.Object, java.lang.Object, java.lang.Object, int, java.lang.String, org.eclipse.emf.ecore.EReference) 	propName	B10	1/2
+org.argouml.model.euml.RootContainerAdapter	public void setHoldEvents(boolean) 	events	B1	1/2
+org.argouml.model.euml.StateMachinesHelperEUMLImpl	public void setContainer(java.lang.Object, java.lang.Object) 	LOG	B8	1/2
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.ExtensionPoint buildExtensionPoint(java.lang.Object) 	modelImpl	B1	1/2
+org.argouml.model.euml.UseCasesFactoryEUMLImpl	public org.eclipse.uml2.uml.ExtensionPoint buildExtensionPoint(java.lang.Object) 	modelImpl	B3	1/2
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void unregisterListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	l	B7	2/4
+org.argouml.model.euml.ModelEventPumpEUMLImpl	private void unregisterListener(java.lang.Object, java.util.EventListener, java.lang.String[], Map<java.lang.Object,List<org.argouml.model.euml.ModelEventPumpEUMLImpl.Listener>>) 	l	B8	1/2
+org.argouml.model.euml.MetaTypesEUMLImpl	public java.lang.String getName(java.lang.Object) 	startName	B1	5/9
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B1	6/10
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B3	6/10
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B5	6/10
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B7	6/10
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B9	6/10
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B11	6/10
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B13	3/7
+org.argouml.model.euml.CoreFactoryEUMLImpl	private org.eclipse.uml2.uml.Property buildAssociationEnd(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Boolean, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object) 	modelImpl	B15	3/7
+org.argouml.model.euml.RootContainerAdapter	public void notifyChanged(org.eclipse.emf.common.notify.Notification) 	events	B1	2/3
+org.argouml.model.euml.RootContainerAdapter	public void notifyChanged(org.eclipse.emf.common.notify.Notification) 	events	B2	1/2
+org.argouml.model.euml.RootContainerAdapter	public void notifyChanged(org.eclipse.emf.common.notify.Notification) 	pump	B1	2/3
+org.argouml.model.euml.RootContainerAdapter	public void notifyChanged(org.eclipse.emf.common.notify.Notification) 	pump	B2	1/2
+org.argouml.model.euml.CoreHelperEUMLImpl	public transient void addOwnedElement(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object[]) 	LOG	B1	2/3
+org.argouml.model.euml.CoreHelperEUMLImpl	public transient void addOwnedElement(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object[]) 	LOG	B3	2/3
+org.argouml.model.euml.CoreHelperEUMLImpl	public transient void addOwnedElement(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object[]) 	LOG	B5	2/3
+org.argouml.model.euml.UmlFactoryEUMLImpl	public void deleteExtent(java.lang.Object) 	LOG	B1	3/4
+org.argouml.model.euml.UmlFactoryEUMLImpl	public void deleteExtent(java.lang.Object) 	modelImpl	B1	3/4
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B1	8/10
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B3	8/10
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B5	7/8
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B7	7/8
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B9	6/7
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B10	4/5
+org.argouml.model.euml.XmiReaderEUMLImpl	public Collection#RAW parse(org.xml.sax.InputSource, boolean) throws org.argouml.model.UmlException	needsClosing	B11	2/3
