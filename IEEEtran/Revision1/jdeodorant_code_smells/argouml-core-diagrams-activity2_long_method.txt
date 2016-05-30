@@ -1,0 +1,23 @@
+org.argouml.activity2.diagram.BaseDiagram	private java.lang.Object[] getToolbarActions(org.w3c.dom.Element) 	o	B7	0/12
+org.argouml.activity2.diagram.DiagramElementBuilder	static void buildDiagramElement(org.argouml.activity2.diagram.FigBaseNode, java.lang.String, java.lang.Object, org.argouml.uml.diagram.DiagramSettings) 	fig	B2	0/8
+org.argouml.activity2.diagram.UMLActivityDiagram	public org.argouml.activity2.diagram.DiagramElement createDiagramElement(java.lang.Object, java.awt.Rectangle) 	style	B2	0/8
+org.argouml.activity2.diagram.FigAcceptEventPoly	public java.awt.Point getClosestPoint(java.awt.Point) 	x	B2	0/4
+org.argouml.activity2.diagram.BaseDiagram	private org.w3c.dom.Document getDocument() throws java.io.IOException, org.w3c.dom.DOMException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException	inputSource	B1	0/3
+org.argouml.activity2.diagram.FigCompartment	public void elementAdded(org.argouml.model.AddAssociationEvent) 	fn	B1	0/3
+org.argouml.activity2.diagram.ModePlaceDiagramElement	public void mouseReleased(java.awt.event.MouseEvent) 	LOG	B1	0/2
+org.argouml.activity2.diagram.ModePlaceDiagramElement	public void mouseReleased(java.awt.event.MouseEvent) 	LOG	B3	0/2
+org.argouml.activity2.diagram.FigNamedConcavePentagon	protected org.argouml.activity2.diagram.DiagramElement createBorder(java.awt.Rectangle, java.awt.Color, java.awt.Color) 	xs	B1	1/10
+org.argouml.activity2.diagram.FigNamedPentagon	protected org.argouml.activity2.diagram.DiagramElement createBorder(java.awt.Rectangle, java.awt.Color, java.awt.Color) 	xs	B1	1/10
+org.argouml.activity2.diagram.FigNamedConcavePentagon	protected org.argouml.activity2.diagram.DiagramElement createBorder(java.awt.Rectangle, java.awt.Color, java.awt.Color) 	ys	B1	1/9
+org.argouml.activity2.diagram.FigNamedPentagon	protected org.argouml.activity2.diagram.DiagramElement createBorder(java.awt.Rectangle, java.awt.Color, java.awt.Color) 	ys	B1	1/9
+org.argouml.activity2.diagram.FigBasePresentation	public java.awt.Dimension getMinimumSize() 	w	B1	1/4
+org.argouml.activity2.diagram.FigCompartment	public java.awt.Dimension getMinimumSize() 	minHeight	B1	2/5
+org.argouml.activity2.diagram.FigCompartment	public java.awt.Dimension getMinimumSize() 	minHeight	B2	2/4
+org.argouml.activity2.diagram.FigCompartment	public java.awt.Dimension getMinimumSize() 	minWidth	B1	2/5
+org.argouml.activity2.diagram.FigCompartment	public java.awt.Dimension getMinimumSize() 	minWidth	B2	2/4
+org.argouml.activity2.diagram.BaseDiagram	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	metaTypeByName	B1	7/8
+org.argouml.activity2.diagram.BaseDiagram	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	metaTypeByName	B2	6/7
+org.argouml.activity2.diagram.BaseDiagram	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	metaTypeByName	B3	5/6
+org.argouml.activity2.diagram.BaseDiagram	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	nameByMetaType	B1	7/8
+org.argouml.activity2.diagram.BaseDiagram	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	nameByMetaType	B2	6/7
+org.argouml.activity2.diagram.BaseDiagram	private void populateClassMaps(org.w3c.dom.Element, Map<Class<?>,java.lang.String>, Map<java.lang.String,Class<?>>) 	nameByMetaType	B3	5/6
