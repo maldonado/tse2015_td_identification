@@ -94,6 +94,37 @@ baselineRecall numeric,
 baselineF1 numeric
 ); 
 
+create table classifier_results_ten_fold (
+projectname text,
+classificationid integer,
+classificationDescription text,
+category text,
+projectsTrainedWith integer,
+totalTrainingComments integer,
+withoutClassificationCommentsTrain integer,
+classifiedCommentsTrain integer,
+totalTestComments integer,
+classifiedTP integer, 
+classifiedFN integer,
+classifiedFP integer,
+classifiedTN integer, 
+classifiedAccuracy numeric,
+classifiedPrecision numeric,
+classifiedRecall numeric,
+classifiedF1 numeric,
+withoutClassificationTP integer, 
+withoutClassificationFN integer,
+withoutClassificationFP integer,
+withoutClassificationTN integer, 
+withoutClassificationAccuracy numeric,
+withoutClassificationPrecision numeric,
+withoutClassificationRecall numeric,
+withoutClassificationF1 numeric,
+microAveragedF1 numeric,
+macroAveragedF1 numeric
+);
+
+
 drop table if exists significative_sample;
 create table significative_sample (
     processedCommentId integer,
@@ -369,3 +400,20 @@ select projectname, classifiedf1, projectstrainedwith from classifier_results  w
 
 -- 
 select projectname, classifiedPrecision, classifiedRecall, classifiedF1, baselinePrecision, baselineRecall, baselineF1, classifiedRandomPrecision, classifiedRandomRecall, classifiedRandomF1 from classifier_results where projectsTrainedWith = 9 and category = 'IMPLEMENTATION' and classificationid = '3';
+
+
+drop table if exists tse_smell_detector_results;
+CREATE TABLE tse_smell_detector_results (
+    id serial,
+    projectname text, 
+    classname text,
+    code_smell_list text
+);
+
+drop table if exists tse_jdeodorant_results;
+CREATE TABLE tse_jdeodorant_results (
+    id serial,
+    projectname text, 
+    classname text,
+    code_smell_list text
+);

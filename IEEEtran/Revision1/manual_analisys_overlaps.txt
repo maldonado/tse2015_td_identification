@@ -1,0 +1,128 @@
+All methods having more calls with another class than the one they are implemented.
+
+feature envy (files with satd and feature envy)
+
+org.apache.tools.ant.taskdefs.Execute
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.tools.ant.taskdefs.Execute' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+//TODO: nothing appears to read this but is set using a public setter.
+// MAC OS 9 and previous //TODO: I have no idea how to get it, someone must fix it
+
+org.apache.jmeter.report.gui.action.ReportSave
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.jmeter.report.gui.action.ReportSave' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// NOTUSED private String chosenFile;
+
+org.jruby.RubyMethod
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.jruby.RubyMethod' and 
+a.classification in ('DESIGN', 'IMPLEMENTATION');
+// FIXME: We should not be regenerating this over and over
+// TODO: NOT_ALLOCATABLE_ALLOCATOR is probably ok here. Confirm.
+
+org.jfree.chart.ChartPanel
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.jfree.chart.ChartPanel' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// here we tweak the notify flag on the plot so that only // one notification happens even though we update multiple // axes... (x10)
+
+feature envy (files with satd and without feature envy)
+org.hibernate.action.EntityUpdateAction
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.hibernate.action.EntityUpdateAction' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+//TODO: inefficient if that cache is just going to ignore the updated state!
+
+org.jfree.chart.plot.Crosshair
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.jfree.chart.plot.Crosshair' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// FIXME: clone generator
+
+org.argouml.uml.ui.SourcePathDialog
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.argouml.uml.ui.SourcePathDialog' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// Hack: don't show first column, where the model element object is // placed.
+
+org.jruby.RubyFixnum
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.jruby.RubyFixnum' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// FIXME: I think this chunk is equivalent to MRI id2name (and not our public method  // id2name).  Make into method if used more than once.
+
+long method (files with satd and long method)
+org.gjt.sp.jedit.EditPane
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.gjt.sp.jedit.EditPane' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+silly bug workaround #8694. if you look at the above code note that we restore the saved caret position first then scroll to the saved location. however the caret changing can itself result in scrolling to a different location than what was saved and since movecaretposition() calls updatebrackethighlight() the bracket highlight's out of bounds calculation will rely on a different set of physical first/last lines than what we will end up with eventually. instead of confusing the user with status messages that appear at random when switching buffers we simply hide the message altogether.
+
+org.argouml.uml.diagram.DiagramFactory
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.argouml.uml.diagram.DiagramFactory' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// TODO: Convert all to use standard factory registration
+// TODO: Use our extension registration mechanism for our internal // classes as well, so everything is treated the same
+// TODO: This uses a "last one wins" algorithm for registration // We should warn if a factory is being overwritten.
+
+org.apache.jmeter.visualizers.RenderAsJSON
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.jmeter.visualizers.RenderAsJSON' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// It might be useful also to make this available in the 'Request' tab, for // when posting JSON.
+
+org.apache.tools.ant.Diagnostics
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.tools.ant.Diagnostics' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// report error if something weird happens...this is diagnostic.
+
+long method (files with satd and without long method)
+org.gjt.sp.jedit.menu.EnhancedCheckBoxMenuItem
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.gjt.sp.jedit.menu.EnhancedCheckBoxMenuItem' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+/* XXX magic number */
+
+org.columba.core.backgroundtask.BackgroundTaskManager
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.columba.core.backgroundtask.BackgroundTaskManager' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// TODO we should check if we need an vector or better another list // implementation; checking also, if the list // must be syncronized or not (performance)
+
+org.hibernate.mapping.Column
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.hibernate.mapping.Column' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+//TODO: deprecated, remove eventually
+
+org.apache.jmeter.gui.util.ReportMenuFactory
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.jmeter.gui.util.ReportMenuFactory' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+jmetertreenode and testbeangui are special gui classes and aren't intended to be added to menus todo find a better way of checking this
+
+god class (files with satd and god class)
+org.apache.tools.ant.DirectoryScanner
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.tools.ant.DirectoryScanner' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+two reasons are mentioned in the api docs for file.list (1) dir is not a directory. this is impossible as we wouldn't get here in this case. (2) an io error occurred (why doesn't it throw an exception then???)
+
+org.apache.jmeter.protocol.http.control.CacheManager
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.apache.jmeter.protocol.http.control.CacheManager' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+holder for storing cache details. perhaps add original response later?
+// TODO correct URL?
+
+org.argouml.cognitive.Designer
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.argouml.cognitive.Designer' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+/* TODO: really should be a separate class */
+// local variables - what do they do?
+
+a modelelement has been changed. now we give it priority to be checked by the critics asap. 
+todo why is is synchronised? 
+todo what about whenobjects are first created? @param dm the design material @param reason the reason
+
+this class models the designer who is building a complex design in some application domain and needs continuous feedback to aid in the making of good design decisions.<p> <strong>this area needs work especially as it is a central idea of argo.</strong><p> currently (almost) everything is hardcoded. what can be configurable??<p> the todolist is dependent on this class i.e. each designer has its todolist.<p> each designer has his own agency which is the only class that knows all the critics.<p> this class listens to property changes from ?<p> a designer can create todo items just like the critics. hence the designer implements the poster interface.<p> todo there is a strong dependency cycle between agency and designer. they either need to be merged into a single class or partitioned differently perhaps using an interface to break the cycle. the designer singleton gets passed to almost every single part of the critic subsystem creating strong coupling throughout. - tfm 20070620 @author jason robbins
+
+// TODO: Should we be doing anything on deleted elements? // This throws an exception on remove events. - skip for now - tfm
+
+org.hibernate.loader.Loader
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.hibernate.loader.Loader' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+//use of trim() here is ugly?
+//TODO: the i==entitySpan-1 bit depends upon subclass implementation (very bad)
+// would be great to move all this below here into another method that could also be used // from the new scrolling stuff. // // Would need to change the way the max-row stuff is handled (i.e. behind an interface) so // that I could do the control breaking at the means to know when to stop
+//for arrays, we should end the collection load before resolving //the entities, since the actual array instances are not instantiated //during loading //TODO: or we could do this polymorphically, and have two //      different operations implemented differently for arrays
+//for sets, we should end the collection load after resolving //the entities, since we might call hashCode() on the elements //TODO: or we could do this polymorphically, and have two //      different operations implemented differently for arrays
+//TODO: can we *always* use the "null property" approach for everything?
+//This is not very nice (and quite slow):
+// polymorphism not really handled completely correctly, // perhaps...well, actually its ok, assuming that the // entity name used in the lookup is the same as the // the one used here, which it will be
+//TODO: make this handle multiple collection roles!
+//TODO: can we limit stored procedures ?!
+
+god class (files with satd without god class)
+org.gjt.sp.jedit.io.FileRootsVFS
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.gjt.sp.jedit.io.FileRootsVFS' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// Nasty hardcoded values
+
+net.sourceforge.squirrel_sql.client.plugin.PluginManager
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'net.sourceforge.squirrel_sql.client.plugin.PluginManager' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+TODO: Clean this mess up!!!! Load plugins. Load all plugin jars into class loader.
+
+org.hibernate.transform.PassThroughResultTransformer
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.hibernate.transform.PassThroughResultTransformer' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// todo : we can remove this once the deprecated ctor can be made private...
+
+org.jfree.chart.annotations.CategoryPointerAnnotation
+select * from processed_comment a, comment_class b where a.commentclassid = b.id and b.classname = 'org.jfree.chart.annotations.CategoryPointerAnnotation' and a.classification in ('DESIGN', 'IMPLEMENTATION');
+// TODO: implement the entity for the annotation

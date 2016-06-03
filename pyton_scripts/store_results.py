@@ -116,7 +116,3 @@ except Exception, e:
 
 finally:
     connection.commit()
-
-                
-
-    
