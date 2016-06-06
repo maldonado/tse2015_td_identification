@@ -4,7 +4,7 @@ import subprocess
 import random
 from subprocess import Popen, PIPE
 
-comments_per_iteration = 100
+comments_per_iteration = 500
 
 def write_classifier_file(file_name, result):
     with open (file_name,'a') as classified_seq:
@@ -139,14 +139,14 @@ for testing_part in execution_order.keys():
             if item[0] == 'IMPLEMENTATION':
                 writter_buffer.append(total_training_data.pop(total_training_data.index(item)))
                 requirement_added_counter = requirement_added_counter + 1
-            if requirement_added_counter == 2:
+            if requirement_added_counter == 6:
                 break
         without_classificaiton_added_counter = 0
         for item in total_training_data:
             if item[0] == 'WITHOUT_CLASSIFICATION':
                 writter_buffer.append(total_training_data.pop(total_training_data.index(item)))
                 without_classificaiton_added_counter = without_classificaiton_added_counter + 1
-            if without_classificaiton_added_counter == 98:
+            if without_classificaiton_added_counter == 494:
                 break
         if iteration_counter == number_of_iterations - 1:
             for training_data_counter in range (0, total_training_data_remainder):

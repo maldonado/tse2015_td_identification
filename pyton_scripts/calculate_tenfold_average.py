@@ -5,10 +5,10 @@ import decimal
 import psycopg2
 
 # fill this information before execution
-classificationid = '3'
-new_classificationid = '5' 
-projectname = 'average_classificationid_3'
-category = 'DESIGN'
+classificationid = '7'
+new_classificationid = '9' 
+projectname = 'average_classificationid_7'
+category = 'REQUIREMENT'
 
 # connect to the database 
 connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= '')

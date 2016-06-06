@@ -7,10 +7,10 @@ import re
 
 
 # fill this information before execution
-classification_id = '3'
-classification_description = 'classification with right ratio of design and non design debt comments. Comments added 500 per time'
-repository_path = '/Users/evermal/git/tse2015/tse2015_td_identification/datasets/design/ten_folds_validation/03-ratio_training_500x/'
-execution_td_type = 'DESIGN'
+classification_id = '7'
+classification_description = 'classification with right ratio of requirement and non requirement debt comments. Comments added 500 per time'
+repository_path = '/Users/evermal/git/tse2015/tse2015_td_identification/datasets/requirement/ten_folds_validation/07-ratio_training_500x/'
+execution_td_type = 'REQUIREMENT'
 
 # getting training dataset numbers
 coments_in_training_data_regex = "(?:numDatums:\s)(\d*)?"
