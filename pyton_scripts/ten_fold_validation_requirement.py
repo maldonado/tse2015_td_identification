@@ -76,6 +76,7 @@ all_without_classification_comments = 0
 
 cursor.execute("select classification, treated_commenttext from processed_comment where classification in ('WITHOUT_CLASSIFICATION', 'BUG_FIX') and treated_commenttext != ''")
 all_without_classification_comments = cursor.fetchall()
+print(len(all_without_classification_comments))
 # shuffle the results so the results will not be biased per project (due to the sequential insertion of the files)
 random.shuffle(all_without_classification_comments, random.random)
 all_without_classification_comments_remainder = len(all_without_classification_comments) % 10
