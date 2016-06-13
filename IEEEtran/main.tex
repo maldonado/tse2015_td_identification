@@ -129,17 +129,12 @@ Technical debt, Source code comments, Natural language processing, Empirical stu
 
 \IEEEPARstart{D}{evelopers} often have to deal with conflicting goals that require software to be delivered quickly, with high quality, and on budget. In practice, achieving all of these goals at the same time can be challenging, causing a tradeoff to be made. Often, these tradeoffs lead developers to take \emph{shortcuts} or use \emph{workarounds}. Although such shortcuts help developers in meeting their short-term goals, they may have a negative impact in the long-term.
 
-
-
 Technical debt is a metaphor coined to express sub-optimal solutions that are taken in a software project in order to achieve some short-term goals~\cite{Cunningham1992WPM}. Generally, these decisions allow the project to move faster in the short-term, but introduce an increased cost (i.e., debt) to maintain this software in the long run~\cite{Seaman2011,Kruchten2013IWMTD}. \revised{Fowler points out that technical debt can be incurred deliberately or inadvertently, and that debt can be take on prudently or recklessly by the developers~\cite{Fowler:quadrant}. Moreover,}{R1-1} prior work has shown that technical debt it is widespread in the software domain, is unavoidable, and can have a negative impact on the quality of the software~\cite{Lim2012Software}.
 
+Due to the importance of technical debt, a number of studies empirically examined technical debt and proposed techniques to enable its detection and management. The main findings of the prior work are three-fold. First, there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}.\revised{In addition, these debts can be found in different software artifacts, and different techniques can be applied to identify them. For example, a detailed analysis can show outdated or missing documentation, planned testing that is not executed or unexpected deviancy from the initial architecture during architectural reviews~\cite{Alves2016IST,Xiao2016ICSE}.}{R1-2}   
 
+Second, static source code analysis helps in detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. Third, more recently, our work has shown that it is possible to identify technical debt through source comments, referred to as  \SATD~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
 
-
-Due to the importance of technical debt, a number of studies empirically examined technical debt and proposed techniques to enable its detection and management. The main findings of the prior work are \revised{four-fold. First, there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}. Second, static source code analysis helps in detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. Third, 
-
-Third, more recently, our work has shown that it is possible to identify technical debt through source comments, referred to as  \SATD~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
-}{R1-2}
 
 The recovery of technical debt through source code comments has three main advantages over traditional approaches based on source code analysis. First, it is more lightweight compared to source code analysis, since it does not require the construction of Abstract Syntax Trees or other more advanced source code representations. The source code comments can be easily and efficiently extracted from source code files using regular expressions.
 % such as control flow graphs, and program dependence graphs in order to match structural code smell patterns and compute metrics.
