@@ -97,7 +97,7 @@ In our previous work ~\cite{Maldonado2015MTD} we manually classified 33,093 comm
 Below, we define design and requirement \SATD that we were able to detect and provide example comments to help the reader grasp the different types of self-admitted technical debt comments.
 
 \vspace{1mm}
-\noindent\textbf{Self-admitted design debt:} These comments indicate that there is a problem with the design of the code. They can be comments about misplaced code, lack of abstraction, long methods, poor implementation, workarounds or a temporary solution. Lets consider the following comments:
+\noindent\textbf{Self-admitted design debt:} These comments indicate that there is a problem with the design of the code. They can be comments about misplaced code, lack of abstraction, long methods, poor implementation, workarounds or a temporary solution. Usually these kinds of issues are resolved through refactoring (i.e., restructuring of \emph{existing code}), or by re-implementing \emph{existing} code to make it faster, more secure, more stable and so forth. Lets consider the following comments:
 
 \vspace{1mm}
     \begin{displayquote}
@@ -131,11 +131,12 @@ In the above example comments the authors are certain to be implementing code th
     \begin{displayquote}   
         \textit{``//I can't get my head around this; is encoding treatment needed here?''} - [from Apache Ant]
     \end{displayquote}
-  \vspace{1mm}
+\vspace{1mm}
+
 The above comments expressed doubt and uncertainty when implementing the code and were considered as self-admitted design debt as well.
 
 \vspace{1mm}
-\noindent\textbf{Self-admitted requirement debt:} Requirement debt comments express incompleteness of the method, class or program as observed in the following comments:
+\noindent\textbf{Self-admitted requirement debt:} These comments convey the idea that the implementation of a requirement is not complete.  In general, requirement debt comments express incompleteness of the method, class or program showing that the due code to implement a requirement was not done yet (i.e., \emph{inexistent code}) as it can be observed in the following comments:
 
 \vspace{1mm}
     \begin{displayquote}
@@ -149,6 +150,11 @@ The above comments expressed doubt and uncertainty when implementing the code an
     \begin{displayquote}
         \textit{``TODO: The copy function is not yet * completely implemented - so we will  * have some exceptions here and there.*/''} - [from ArgoUml]  
     \end{displayquote}
+    \vspace{1mm}
+    \begin{displayquote}
+        \textit{``TODO: This dialect is not yet complete. Need to provide implementations wherever \textit{Not yet implemented} appears''} - [from SQuirrel]  
+    \end{displayquote}
+    \vspace{1mm}
 \vspace{1mm}  
 
 }{R1-10}
