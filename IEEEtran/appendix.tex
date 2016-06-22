@@ -777,6 +777,45 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
 % \end{table*}
 
 
+\clearpage
+\begin{table}[h]
+  \begin{minipage}{\textwidth}
+    \begin{center}
+        \caption{Detailed Comparison of F1-measure Between the NLP-based, the Comment Patterns and the Random Baseline Approaches for Requirement Debt}
+        \label{tbl:classifier_results_vs_baseline_requirement}
+        \begin{tabular}{l| c c c}
+        \toprule
+        
+        \textbf{\thead{Project}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} \\
+        \midrule
+        \textbf{Ant}           &  0.547 & 0.481 &  0.512 \\
+        \textbf{ArgoUML}       &  0.822 & 0.815 &  0.819 \\
+        \textbf{Columba}       &  0.754 & 0.746 &  0.750 \\
+        \textbf{EMF}           &  0.581 & 0.383 &  0.462 \\
+        \textbf{Hibernate}     &  0.844 & 0.697 &  0.763 \\
+        \textbf{JEdit}         &  0.745 & 0.333 &  0.461 \\
+        \textbf{JFreeChart}    &  0.611 & 0.442 &  0.513 \\
+        \textbf{Jmeter}        &  0.727 & 0.703 &  0.715 \\
+        \textbf{JRuby}         &  0.801 & 0.746 &  0.773 \\
+        \textbf{SQuirrel}      &  0.641 & 0.552 &  0.593 \\
+        \bottomrule
+        \end{tabular}
+    \end{center}
+  \end{minipage}    
+\end{table}
+
+
+% Cls TECHNICAL_DEBT: TP=52  FN=56  FP=43  TN=3924;  Acc 0.976 P 0.547 R 0.481 F1 0.512
+% Cls TECHNICAL_DEBT: TP=988 FN=224 FP=214 TN=7801;  Acc 0.953 P 0.822 R 0.815 F1 0.819
+% Cls TECHNICAL_DEBT: TP=126 FN=43  FP=41  TN=6218;  Acc 0.987 P 0.754 R 0.746 F1 0.750
+% Cls TECHNICAL_DEBT: TP=36  FN=58  FP=26  TN=4245;  Acc 0.981 P 0.581 R 0.383 F1 0.462
+% Cls TECHNICAL_DEBT: TP=292 FN=127 FP=54  TN=2441;  Acc 0.938 P 0.844 R 0.697 F1 0.763
+% Cls TECHNICAL_DEBT: TP=70  FN=140 FP=24  TN=10040; Acc 0.984 P 0.745 R 0.333 F1 0.461
+% Cls TECHNICAL_DEBT: TP=88  FN=111 FP=56  TN=4142;  Acc 0.962 P 0.611 R 0.442 F1 0.513
+% Cls TECHNICAL_DEBT: TP=237 FN=100 FP=89  TN=7581;  Acc 0.976 P 0.727 R 0.703 F1 0.715
+% Cls TECHNICAL_DEBT: TP=338 FN=115 FP=84  TN=4191;  Acc 0.958 P 0.801 R 0.746 F1 0.773
+% Cls TECHNICAL_DEBT: TP=143 FN=116 FP=80  TN=6828;  Acc 0.973 P 0.641 R 0.552 F1 0.593
+
 
 
 
