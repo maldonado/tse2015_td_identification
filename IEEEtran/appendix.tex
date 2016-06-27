@@ -804,6 +804,28 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
   \end{minipage}    
 \end{table}
 
+\begin{table}[!thb]
+    \begin{center}
+        \caption{Top Ten Textual Features Used to Identify Design and Requirement Self-Admitted Technical Debt}
+        \label{tbl:top_ten_features}
+        \begin{tabular}{l| l l| l }
+        \toprule
+        \textbf{Rank} & \textbf{Design Debt} & \textbf{Requirement Debt}  & \textbf{Technical Debt}\\
+        \midrule
+         \textbf{1}  & hack       &   todo            & hack         \\
+         \textbf{2}  & workaround &   needed          & workaround   \\
+         \textbf{3}  & yuck!      &   implementation  & yuck!        \\
+         \textbf{4}  & kludge     &   fixme           & kludge       \\
+         \textbf{5}  & stupidity  &   xxx             & stupidity    \\
+         \textbf{6}  & needed?    &   ends?           & needed?      \\
+         \textbf{7}  & columns?   &   convention      & unused?      \\
+         \textbf{8}  & unused?    &   configurable    & fixme        \\
+         \textbf{9}  & wtf?       &   apparently      & todo         \\
+         \textbf{10} & todo       &   fudging         & wtf?         \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table}
 
 % Cls TECHNICAL_DEBT: TP=52  FN=56  FP=43  TN=3924;  Acc 0.976 P 0.547 R 0.481 F1 0.512
 % Cls TECHNICAL_DEBT: TP=988 FN=224 FP=214 TN=7801;  Acc 0.953 P 0.822 R 0.815 F1 0.819
