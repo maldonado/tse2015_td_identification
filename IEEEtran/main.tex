@@ -143,12 +143,22 @@ Due to the importance of technical debt, a number of studies empirically examine
 
 The main findings of the prior work are three-fold. First, there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}. Second, static source code analysis helps in detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. Third, more recently, our work has shown that it is possible to identify technical debt through source comments, referred to as  \SATD~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
 
-The recovery of technical debt through source code comments has three main advantages over traditional approaches based on source code analysis. First, it is more lightweight compared to source code analysis, since it does not require the construction of Abstract Syntax Trees or other more advanced source code representations. The source code comments can be easily and efficiently extracted from source code files using regular expressions.
-% such as control flow graphs, and program dependence graphs in order to match structural code smell patterns and compute metrics.
+\revised{
+The recovery of technical debt through source code comments has two main advantages over traditional approaches based on source code analysis.
+First, it is more lightweight compared to source code analysis, since it does not require the construction of Abstract Syntax Trees or other more advanced source code representations.
+For instance, some code smell detectors that also provide refactoring recommendations to resolve the detected code smells~\cite{Tsantalis:2011, Tsantalis:2015}
+generate computationally expensive program representation structures,
+such as program dependence graphs~\cite{Graf:2010}, and method call graphs~\cite{Ali:2012} in order to match structural code smell patterns and compute metrics.
+On the other hand, the source code comments can be easily and efficiently extracted from source code files using regular expressions.
 Second, it does not depend on arbitrary metric threshold values, which are required in all metric-based code smell detection approaches.
 Deriving appropriate threshold values is a challenging open problem that has attracted the attention and effort of several researchers~\cite{Oliveira2014CSMR,Fontana2015WETSoM,Fontana2015EMSE}.
-Finally, and more importantly, it is a more reliable approach for the recovery of technical debt, since it is based on comments written by the developers themselves, who admit the existence of technical problems that should be addressed in the future.
-%On the contrary, all approaches based on source code analysis suffer from high false positive rates~\cite{Ferme:2013} (i.e., they flag a large number of source code elements as problematic, while they are not perceived as such by the developers), because they rely only on the structure of the source code to detect code smells without taking into account the developer's opinion and the project domain. \emad{not sure this is relevant here}
+As a matter of fact, the approaches based on source code analysis suffer from high false positive rates~\cite{Fontana:2016} (i.e., they flag a large number of source code elements as problematic, while they are not perceived as such by the developers), because they rely only on the structure of the source code to detect code smells without taking into account the developers' feedback, the project domain, and the context in which the code smells are detected.
+
+However, relying solely on the developers' comments to recover technical debt is not adequate, because developers might be unaware of the presence of some code smells in their project, or might not be well familiar with good design and coding practices.
+As a result, the detection of technical debt through source code comments can be only used as a complementary approach to existing code smell detectors based on source code analysis.
+We believe that \SATD can be useful to prioritize the pay back of debt (i.e., develop a pay back plan), since the technical debt expressed in the comments written by the developers themselves is definitely more relevant to them.
+}{R1-3}
+
 
 Despite the advantages of recovering technical debt from source code comments, the research in \SATD, thus far, heavily relies on manual inspection of code comments. The current-state-of-the art approach~\cite{Potdar2014ICSME} uses 62 comment patterns (i.e., words and phrases) derived after the manual examination of more than 100k comments. The manual inspection of code comments is subject to reader bias, is time consuming and, as any other manual task, susceptible to errors. These limitations in the identification of \SATD comments renders the current state-of-the-art approach difficult to be applied in practice.
 
