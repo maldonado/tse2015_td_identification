@@ -12,7 +12,7 @@ The main goal of our study is to automatically identify \SATD through source cod
 \subsection{Project Data Extraction} % (fold)
 \label{sub:data_extraction}
 
-To perform our study, we need to analyze the source code comments of software projects. Therefore, we extract the source code of ten open source projects:\revised{Ant is a build tool written in Java, ArgoUML is an UML modeling tool that includes support for all standard UML 1.4 diagrams, Columba is an email client that has a graphical interface with wizards and internationalization support, EMF is a framework and code generation facility for building tools and other applications, Hibernate is a component providing Object Relational Mapping (ORM) support to applications and other components, JEdit is a text editor written in Java, JFreeChart is a chart library for the Java platform, Jmeter is a Java application designed to load test functional behavior and measure performance, JRuby is a pure-Java implementation of the Ruby programming language and SQuirrel SQL is a graphical SQL client written in Java.}{R1-6} We selected these projects since they belong to different application domains, are well commented, vary in size, and in the number of contributors. 
+To perform our study, we need to analyze the source code comments of software projects. Therefore, we extract the source code of ten open source projects:\revised{Ant is a build tool written in Java, ArgoUML is an UML modeling tool that includes support for all standard UML 1.4 diagrams, Columba is an email client that has a graphical interface with wizards and internationalization support, EMF is a modeling framework and code generation facility for building tools and other applications, Hibernate is a component providing Object Relational Mapping (ORM) support to applications and other components, JEdit is a text editor written in Java, JFreeChart is a chart library for the Java platform, JMeter is a Java application designed to load test functional behavior and measure performance, JRuby is a pure-Java implementation of the Ruby programming language and SQuirrel SQL is a graphical SQL client written in Java.}{R1-6} We selected these projects since they belong to different application domains, are well commented, vary in size, and in the number of contributors. 
     
 Table~\ref{tab:project_details} provides details about each of the projects used in our study. The columns of Table~\ref{tab:project_details} present the release used, followed by the number of classes, the total source lines of code (SLOC), the number of contributors, the number of extracted comments, the number of comments analyzed after applying our filtering heuristics, the number of comments that were classified as \SATD, the percentage of these comments that represent design debt, the percentage of \SATD comments classified as requirement debt and finally the percentage of all other types of debt (i.e., defect, documentation and test debt). 
 
@@ -43,7 +43,7 @@ The number of contributors was extracted from OpenHub, an on-line community and 
             \textbf{Hibernate}      & 3.3.2 GA & 1,356 & 173,467 & 226 & 11,630 &   2,968 &    472 &  75.21  & 13.55  & 11.22 \\
             \textbf{JEdit}          & 4.2      &   800 &  88,583 & 57  & 16,991 &  10,322 &    256 &  76.56  & 05.46  & 17.96 \\
             \textbf{JFreeChart}     & 1.0.19   & 1,065 & 132,296 & 19  & 23,474 &   4,423 &    209 &  88.03  & 07.17  & 04.78 \\
-            \textbf{Jmeter}         & 2.10     & 1,181 &  81,307 & 33  & 20,084 &   8,162 &    374 &  84.49  & 05.61  & 09.89 \\
+            \textbf{JMeter}         & 2.10     & 1,181 &  81,307 & 33  & 20,084 &   8,162 &    374 &  84.49  & 05.61  & 09.89 \\
             \textbf{JRuby}          & 1.4.0    & 1,486 & 150,060 & 328 & 11,149 &   4,897 &    622 &  55.14  & 17.68  & 27.17 \\ 
             \textbf{SQuirrel}       & 3.0.3    & 3,108 & 215,234 & 46  & 27,474 &   7,230 &    286 &  73.07  & 17.48  & 09.44 \\ 
             \bottomrule             
@@ -95,10 +95,10 @@ In our previous work ~\cite{Maldonado2015MTD} we manually classified 33,093 comm
 % We manually classified 63,015 comments into different types of self-admitted technical debt. During the classification process we notice that not all types of debt mentioned in \cite{Alves2014MTD} could be found in code comments. However, we were able to identify the following types of debt in the source comments: design debt, defect debt, documentation debt, requirement debt and test debt. The classification took approximately 185 hours and was performed by the first author of the paper. 
 
 \revised{ 
-Below, we define design and requirement \SATD that we were able to detect and provide example comments to help the reader grasp the different types of self-admitted technical debt comments.
+Below, we provide definitions for design and requirement \SATD, and some indicative comments to help the reader understand the different types of self-admitted technical debt comments.
 
 \vspace{1mm}
-\noindent\textbf{Self-admitted design debt:} These comments indicate that there is a problem with the design of the code. They can be comments about misplaced code, lack of abstraction, long methods, poor implementation, workarounds or a temporary solution. Usually these kinds of issues are resolved through refactoring (i.e., restructuring of \emph{existing code}), or by re-implementing \emph{existing} code to make it faster, more secure, more stable and so forth. Lets consider the following comments:
+\noindent\textbf{Self-admitted design debt:} These comments indicate that there is a problem with the design of the code. They can be comments about misplaced code, lack of abstraction, long methods, poor implementation, workarounds, or temporary solutions. Usually these kinds of issues are resolved through refactoring (i.e., restructuring of \emph{existing} code), or by re-implementing \emph{existing} code to make it faster, more secure, more stable and so forth. Let us consider the following comments:
 
 \vspace{1mm}
     \begin{displayquote}
@@ -110,7 +110,9 @@ Below, we define design and requirement \SATD that we were able to detect and pr
     \end{displayquote}
 \vspace{1mm}
 
-These comments are clear examples of what we consider as self-admitted \emph{design debt}. In the above comments, the developers state what needs to be done in order to improve the current design of the code. Although the above comments are easy to understand, during our study we came across more challenging comments that expressed design problems in an indirect way. For example: 
+These comments are clear examples of what we consider as self-admitted \emph{design debt}. In the above comments, the developers state what needs to be done in order to improve the current design of the code, and
+the payback of this kind of design debt can be achieved through refactoring.
+Although the above comments are easy to understand, during our study we came across more challenging comments that expressed design problems in an indirect way. For example: 
 
 \vspace{1mm}
     \begin{displayquote}
@@ -135,9 +137,11 @@ In the above example comments the authors are certain to be implementing code th
 \vspace{1mm}
 
 The above comments expressed doubt and uncertainty when implementing the code and were considered as self-admitted design debt as well.
+The payback of the design debt expressed in the last four example comments can be probably achieved through the re-implementation of the currently existing solution.
 
 \vspace{1mm}
-\noindent\textbf{Self-admitted requirement debt:} These comments convey the idea that the implementation of a requirement is not complete.  In general, requirement debt comments express incompleteness of the method, class or program showing that the due code to implement a requirement was not done yet (i.e., \emph{inexistent code}) as it can be observed in the following comments:
+\noindent\textbf{Self-admitted requirement debt:} These comments convey the opinion of a developer supporting that the implementation of a requirement is not complete.  In general, requirement debt comments express
+that there is still \emph{missing} code that needs to be added in order to complete a \emph{partially} implemented requirement, as it can be observed in the following comments:
 
 \vspace{1mm}
     \begin{displayquote}
