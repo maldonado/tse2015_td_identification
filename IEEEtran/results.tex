@@ -112,7 +112,7 @@ For example, if the NLP Classifier, based on the training data, determines that 
 
 %The features are extracted from the comments in the training dataset, and then applied to the test dataset where they are combined to reach a vote. That is, every feature that is satisfied by the comment being classified (i.e., matched) will be used to predict the class for the comment. The vote is given to the class with highest weight. 
 
-For each analyzed project, we collect the features used to predict the \SATD comments. These features are provided by the NLP Classifier as output and stored in a text file. The features are written in the file based on the weight that they have, ordered by highest weight to the lowest weight, meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different projects. 
+For each analyzed project, we collect the features used to identify the \SATD comments. These features are provided by the NLP Classifier as output and stored in a text file. The features are written in the file based on the weight that they have, ordered by highest weight to the lowest weight, meaning more relevant features to less relevant features respectively. Based on these files, we rank the words calculating the average ranking position of the analyzed feature across the ten different projects. 
 
 %We determined the top 10 features (i.e, most relevant based on the weight) for design and requirement \SATD comments.
 
@@ -288,13 +288,13 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 			\toprule
 			\textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\between\\iterations}} & \textbf{\thead{Average\\comments}} \\
 			\midrule
-			\textbf{1}  &  0.873 &   -      &  380 \\  
-	        \textbf{2}  &  0.772 & -0.101   &  481 \\
-	        \textbf{3}  &  0.778 & 0.006    &  541 \\  
-	        \textbf{4}  &  0.806 & 0.028    &  588 \\
+			\textbf{1}  &  0.873 &   -      &  380  \\  
+	        \textbf{2}  &  0.772 & -0.101   &  481  \\
+	        \textbf{3}  &  0.778 & 0.006    &  541  \\  
+	        \textbf{4}  &  0.806 & 0.028    &  588  \\
 	        \textbf{5}  &  0.795 & -0.011   &  620  \\
 	        \textbf{6}  &  0.819 & 0.024    &  638  \\
-			    \textbf{7}  &  0.837 & 0.018    &  654  \\  
+			\textbf{7}  &  0.837 & 0.018    &  654  \\  
 	        \textbf{8}  &  0.833 & -0.004   &  668  \\  
 	        \textbf{9}  &  0.805 & -0.028   &  681  \\  
 			\bottomrule

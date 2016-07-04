@@ -9,7 +9,11 @@
   \label{fig:algorithms_comparison}
 \end{figure*}
 
-Thus far, we have seen that our NLP-based approach can perform well in classifying \SATD. However, there are some observations that warrant further investigation. For example, when it comes to the different types of \SATD, we find that requirement debt tends to require less training data, which is another interesting point that is worth further investigation. Lastly, when performing our classification, there are a number of underlying classifiers that can be used in the Stanford Classifier, hence we investigate what is the impact of using a different underlying classifier. 
+Thus far, we have seen that our NLP-based approach can perform well in classifying \SATD. However, there are some observations that warrant further investigation. For example, when it comes to the different types of \SATD, we find that requirement debt tends to require less training data, which is another interesting point that is worth further investigation. 
+
+\revised{Moreover, we think that is also interesting to know the performance of our approach when trained to distinguish between \SATD and non-\SATD.}{R2-10} 
+
+ Lastly, when performing our classification, there are a number of underlying classifiers that can be used in the Stanford Classifier, hence we investigate what is the impact of using a different underlying classifier. 
 %In this paper we propose an approach to identify \SATD comments using NLP. This tool, once trained correctly, can automatically classify natural language text. We create a training dataset of \SATD comments and analyzed the classification performance across ten open source projects. In RQ1, we show that our approach can outperform the current state-of-the-art in 10 out of 10 projects while identifying design and requirement debt. However, is not clear the reason why our approach was not equally effective across all projects. For example, JEdit has the worst F1 measure of all projects while classifying requirement \SATD.
 
 %\subsection{Investigating Outliers Projects}
@@ -53,6 +57,71 @@ After calculating the tf-idf we compare each comment to all other comments of th
   \caption{Textual Similarity Between Design and Requirement Debt Comments}
   \label{fig:textual_similarity}
 \end{figure}
+
+\revised{
+\subsection{Distinguishing Self-Admitted Technical Debt from Non-Self-Admitted Technical Debt Comments}
+
+So far, we analyzed the performance of our NLP-based approach to identify distinct types of \SATD (i.e., design and requirement debt). However, a simpler distinction such as \SATD vs non-\SATD can also be interesting in the case that specific categories is not needed. For example, if \SATD is being used as a quality metric assessment the user might not care about the particular type of debt that is present in the code, but for the total quantity of \SATD that there is. 
+
+In order to compute the performance of our NLP-based approach in this new scenario we execute a similar experiment that in RQ1 and RQ2, but with modified training and test datasets. First, we took all design and requirement \SATD comments and assigned them an unique type i.e., technical debt, and the remainder of comments we kept as without technical debt. Second, we run the maximum entropy classifier in a cross project basis, using the comments of 9 projects to train the NLP classifier and the remainder project comments to test the classification. We repeat this process for each of the ten projects, each time training on 9 projects and testing on the remaining 1 project. Lastly, we analyzed the textual features used to identify the self-admitted technical debt comments.
+
+Table \ref{tbl:nlpbased_performance_comparison} compare the F1-measure between design debt, requirement debt and a combination of both. As we can see, the performance when identifying technical debt is very similar with the performance when identifying design debt. This is expected as the majority of technical debt comments in the training dataset are indeed design debt. Nevertheless, the performance achieved when identifying design debt was surpassed in projects where the requirement debt approach performed well, for example, Columba (0.601 to 0.750) and SQuirrel (0.540 to 0.593). 
+
+We find that the average performance using the combination of design and requirement \SATD (0.636) is higher than the performance achieved when calculating them individually (0.620 and 0.403 for design and requirement debt respectively).
+
+ % In addition, Table \todo{} provide precision, recall and F1-measure for each one of the projects.
+
+\begin{table}[!thb]
+  \begin{center}
+    \caption{NLP-based F1-measure Performance Considering Different Types of Self-admitted Technical Debt}
+    \label{tbl:nlpbased_performance_comparison}
+    \begin{tabular}{l| c c c}
+        \toprule
+        \textbf{\thead{Project}} & \textbf{\thead{Design\\debt}} & \textbf{\thead{Requirement\\debt}} & \textbf{\thead{Technical\\debt}} \\
+        \midrule
+        \textbf{Ant}           & 0.517 & 0.154 & 0.512 \\
+        \textbf{ArgoUML}       & 0.814 & 0.595 & 0.819 \\
+        \textbf{Columba}       & 0.601 & 0.804 & 0.750 \\
+        \textbf{EMF}           & 0.470 & 0.381 & 0.462 \\
+        \textbf{Hibernate}     & 0.744 & 0.476 & 0.763 \\
+        \textbf{JEdit}         & 0.509 & 0.091 & 0.461 \\
+        \textbf{JFreeChart}    & 0.492 & 0.321 & 0.513 \\
+        \textbf{Jmeter}        & 0.731 & 0.237 & 0.715 \\
+        \textbf{JRuby}         & 0.783 & 0.435 & 0.773 \\
+        \textbf{SQuirrel}      & 0.540 & 0.541 & 0.593 \\
+        \midrule 
+        \textbf{Average}       & 0.620 & 0.403 & 0.636 \\ 
+        \bottomrule
+    \end{tabular}
+  \end{center}    
+\end{table}
+
+\begin{table}[!thb]
+    \begin{center}
+        \caption{Top Ten Textual Features Used to Identify Design and Requirement Self-Admitted Technical Debt}
+        \label{tbl:top_ten_features_td_vs_non_td}
+        \begin{tabular}{l| l l l }
+        \toprule
+        \textbf{\thead{Project}} & \textbf{\thead{Design\\debt}} & \textbf{\thead{Requirement\\debt}} & \textbf{\thead{Technical\\debt}} \\
+        \midrule
+         \textbf{1}  & hack       &   todo            & hack         \\
+         \textbf{2}  & workaround &   needed          & workaround   \\
+         \textbf{3}  & yuck!      &   implementation  & yuck!        \\
+         \textbf{4}  & kludge     &   fixme           & kludge       \\
+         \textbf{5}  & stupidity  &   xxx             & stupidity    \\
+         \textbf{6}  & needed?    &   ends?           & needed?      \\
+         \textbf{7}  & columns?   &   convention      & unused?      \\
+         \textbf{8}  & unused?    &   configurable    & fixme        \\
+         \textbf{9}  & wtf?       &   apparently      & todo         \\
+         \textbf{10} & todo       &   fudging         & wtf?         \\
+        \bottomrule
+        \end{tabular}
+    \end{center}    
+\end{table}
+
+The third column in Table \ref{tbl:top_ten_features_td_vs_non_td} shows the top 10 textual features used to identify self-admitted technical debt comments. Once more, we find a high similarity between the top 10 textual features used to identify technical debt and the top 10 textual features used to identify design debt. Intuitively, we expected this result, the weigh of the features is attributed in accordance with the frequency that each word is found in the training dataset, and therefore, the top 10 features tend to be this similar as design debt comments are majority in the dataset.    
+
+}{R2-10}
 
 \subsection{Investigating the Impact of the Underlying Classifier of the NLP Classification}
 \label{sec:underlying_classifier}
