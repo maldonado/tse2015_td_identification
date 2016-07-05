@@ -35,18 +35,11 @@ Thus far, we have seen that our NLP-based approach can perform well in classifyi
 
 \subsection{Textual Similarity for Design and Requirement Debt}
 
-% tf-idf formula \(tf-idf_{t,d}=tf_{t,d}\times idf_{t} \)
- % \cite{Manning2008book}
-
 In RQ2, we hypothesize that one of the reasons that requirement \SATD comments need less training data is because requirement \SATD comments are more similar to each other than design \SATD comments. Therefore, we set out to measure the intra-similarity between the requirement debt comments and the intra-similarity of design debt comments and compare the two.
-
-% The tf-idf weight is the resulting computation of two other metrics: \textit{term frequency} (tf) and \textit{inverse document frequency} (idf).
 
 We start by calculating the term frequency-inverse document frequency \textit{tf-idf} weight of each design and requirement \SATD comment. The tf is the simple count of occurrences that a term (i.e., word) has in a document (i.e., comment). The idf takes into account the number of documents that the term appears. However, as the name implies, the more one term is repeated across multiple documents the less relevant it is. Therefore, let \textit{N} be the total number of documents in a collection, the inverse document frequency (idf) of a term \textit{t} is defined as follows: \(idf_{t} = log\frac{N}{df_{t}}\). The total tf-idf weight of a document is equals to the sum of each individual term tf-idf weight in the document. Each document is represented by a \textit{document vector} in a \textit{vector space model}. 
 
 Once we have the tf-idf weights for the comments, we calculate the \textit{cosine similarity} between the comments. The Cosine similarity can be viewed as the \textit{dot product} of the normalized versions of two document vectors (i.e., two comments) ~\cite{Manning2008book}. The computation of the cosine distance will vary between 0 to 1, where 0 means that the comments are not similar at all and 1 means that the comments are identical.
-
-%To validate our hypothesis that requirement \SATD comments are more similar to each other than design \SATD comments, we created two separated datasets: one for each type of mentioned \SATD. Then, we apply to each comment the same preprocessing applied to comments in the training and test datasets as described in Subsection \ref{sub:run_the_nlp_classifier}. In addition, we removed English stop words from the comments as the NPL classification tool would do during the process of feature extraction. Then, we calculate the tf-idf weight and the cosine similarity for each comment. 
 
 After calculating the tf-idf we compare each comment to all other comments of the same class and store its cosine similarity. For example, the requirement \SATD dataset contains 757 comments, which will generate a 757$\times$757 matrix (since we compare each comment to all the other comments). Finally, we took the average cosine similarity of each comment of the same type for design and requirement debt and plotted the distribution in Figure \ref{fig:textual_similarity}. Figure \ref{fig:textual_similarity} shows that the median and the upper quartile for requirement \SATD comments are higher than the median and upper quartile for design \SATD. The median for requirement debt comments is 0.018, whereas, the median for design debt comments is 0.011. To ensure that the difference is statistically significant, we perform a Wilcox test to calculate the p-value. The calculated p-value was \textless 2.2e-16 showing that our results is indeed statistically significant (i.e., p \textless 0.001). Considering our findings, our hypothesis is validated, showing that requirement \SATD comments are more similar between them than design \SATD comments are. This may help explain why requirement debt needs a smaller set of textual features to be detected.
 
@@ -61,13 +54,13 @@ After calculating the tf-idf we compare each comment to all other comments of th
 \revised{
 \subsection{Distinguishing Self-Admitted Technical Debt from Non-Self-Admitted Technical Debt Comments}
 
-So far, we analyzed the performance of our NLP-based approach to identify distinct types of \SATD (i.e., design and requirement debt). However, a simpler distinction such as \SATD vs non-\SATD can also be interesting in the case that specific categories is not needed. For example, if \SATD is being used as a quality metric assessment the user might not care about the particular type of debt that is present in the code, but for the total quantity of \SATD that there is. 
+So far, we analyzed the performance of our NLP-based approach to identify distinct types of \SATD (i.e., design and requirement debt). However, a simpler distinction such as \SATD vs non-\SATD can also be interesting in the case those specific categories are not needed. For example, if \SATD is being used as a quality metric assessment, the user might not care about the particular type of debt that is present in the code, but for the total quantity of \SATD that there is. 
 
 In order to compute the performance of our NLP-based approach in this new scenario we execute a similar experiment that in RQ1 and RQ2, but with modified training and test datasets. First, we took all design and requirement \SATD comments and assigned them an unique type i.e., technical debt, and the remainder of comments we kept as without technical debt. Second, we run the maximum entropy classifier in a cross project basis, using the comments of 9 projects to train the NLP classifier and the remainder project comments to test the classification. We repeat this process for each of the ten projects, each time training on 9 projects and testing on the remaining 1 project. Lastly, we analyzed the textual features used to identify the self-admitted technical debt comments.
 
-Table \ref{tbl:nlpbased_performance_comparison} compare the F1-measure between design debt, requirement debt and a combination of both. As we can see, the performance when identifying technical debt is very similar with the performance when identifying design debt. This is expected as the majority of technical debt comments in the training dataset are indeed design debt. Nevertheless, the performance achieved when identifying design debt was surpassed in projects where the requirement debt approach performed well, for example, Columba (0.601 to 0.750) and SQuirrel (0.540 to 0.593). 
+Table \ref{tbl:nlpbased_performance_comparison} compare the F1-measure between design debt, requirement debt and a combination of both. As we can see, the performance when identifying technical debt is very similar with the performance when identifying design debt. This is expected, as the majority of technical debt comments in the training dataset are indeed design debt. Nevertheless, the performance achieved when identifying design debt was surpassed in projects where our approach performed well identifying requirement debt, for example in Columba (0.601 to 0.750) and SQuirrel (0.540 to 0.593). 
 
-We find that the average performance using the combination of design and requirement \SATD (0.636) is higher than the performance achieved when calculating them individually (0.620 and 0.403 for design and requirement debt respectively).
+We find that the average performance using the combination of design and requirement \SATD is higher (0.636) than the performance achieved when calculating them individually (0.620 and 0.403 for design and requirement debt respectively).
 
  % In addition, Table \todo{} provide precision, recall and F1-measure for each one of the projects.
 
@@ -98,7 +91,7 @@ We find that the average performance using the combination of design and require
 
 \begin{table}[!thb]
     \begin{center}
-        \caption{Top Ten Textual Features Used to Identify Design and Requirement Self-Admitted Technical Debt}
+        \caption{Top Ten Textual Features Used to Identify Different Types Self-Admitted Technical Debt}
         \label{tbl:top_ten_features_td_vs_non_td}
         \begin{tabular}{l| l l l }
         \toprule
@@ -119,7 +112,7 @@ We find that the average performance using the combination of design and require
     \end{center}    
 \end{table}
 
-The third column in Table \ref{tbl:top_ten_features_td_vs_non_td} shows the top 10 textual features used to identify self-admitted technical debt comments. Once more, we find a high similarity between the top 10 textual features used to identify technical debt and the top 10 textual features used to identify design debt. Intuitively, we expected this result, the weigh of the features is attributed in accordance with the frequency that each word is found in the training dataset, and therefore, the top 10 features tend to be this similar as design debt comments are majority in the dataset.    
+Also, when analyzing the top 10 textual features used to classify \SATD, we find once more, a high similarity with the top 10 textual features used to identify design technical debt. The weigh of the features is attributed in accordance with the frequency that each word is found in the training dataset, and therefore, the top 10 features tend to be similar with the design debt ones as design debt comments represents the majority of \SATD comments in the dataset. Table \ref{tbl:top_ten_features_td_vs_non_td} shows a comparison of the top 10 textual features used to identify design, requirement and self-admitted technical debt comments.
 
 }{R2-10}
 
