@@ -13,25 +13,9 @@ Thus far, we have seen that our NLP-based approach can perform well in classifyi
 
 \revised{Moreover, we think that is also interesting to know the performance of our approach when trained to distinguish between \SATD and non-\SATD.}{R2-10} 
 
- Lastly, when performing our classification, there are a number of underlying classifiers that can be used in the Stanford Classifier, hence we investigate what is the impact of using a different underlying classifier. 
-%In this paper we propose an approach to identify \SATD comments using NLP. This tool, once trained correctly, can automatically classify natural language text. We create a training dataset of \SATD comments and analyzed the classification performance across ten open source projects. In RQ1, we show that our approach can outperform the current state-of-the-art in 10 out of 10 projects while identifying design and requirement debt. However, is not clear the reason why our approach was not equally effective across all projects. For example, JEdit has the worst F1 measure of all projects while classifying requirement \SATD.
+Also, when performing our classification, there are a number of underlying classifiers that can be used in the Stanford Classifier, hence we investigate what is the impact of using a different underlying classifier. 
 
-%\subsection{Investigating Outliers Projects}
-%By investigating JEdit comments, we notice two main reasons. First, the project has 10,322 comments. Of those only 14 are requirement \SATD. The data distribution represents a challenge to the classification. Even though the dataset is very unbalanced our precision was 0.125, which compared with the simple (random) baseline precision of 0.001, shows that our approach is still much more useful. Second, most requirement \SATD comments in this project are in the middle of long comments. 
-%
-%\everton {Since our approach creates a high number of prediction features for \SATD comments and also for comments without technical debt (i.e., positive and negative weight features), long comments have more chances to match a larger set of negative weight features that will lead to the without technical debt classification. Therefore, long comments can generate `noise' that hinders the classification performance of requirement \SATD. Based on our dataset, requirement \SATD comments are short comments having, on average, 81 characters. However, the average size of requirement \SATD comments from JEdit is 149 characters, 1.8$\times$ bigger than the overall average. Assuming that long requirement \SATD comments can be found in more projects that are not analyzed in our work, one can add these hypothetical comments to increment the current training dataset. Nevertheless, based on the projects that were analyzed, we argue that the current training dataset can identify requirement \SATD effectively and long requirement \SATD should be treated as exceptions.} 
-
-
-% \nikos{I don't get this point}
-
-% \emad{I do not see the point of the 2 paragraphs below}
-
-% \emad{begin: remove} Intuitively we know that each project has its own particularities, and that each group of developers, must often, create a unique way to communicate their concerns with each other. This unique trait of source code comments is inherited from the natural language itself and renders the fully automated prediction of every single \SATD very unlikely. Even when analyzing a old aged project, changes in the context of the application and turnover of developers can reflect changes in the way that source code comments are written. We can notice the impact of these particularities on the detailed performance analysis conducted in RQ3, where we can notice that the addition of more comments can eventually decrease the F1 measure performance.
-
-% For a great portion of \SATD comments there are common traits. Words as `workaround', `hack' are commonly imbued with criticism and the developers sense that this is not the appropriate solution for the problem in hand. However, relying just in these words for the identification of \SATD is not good enough as shown in Figures \ref{fig:f1_measure_comparison_design_debt} and \ref{fig:f1_measure_comparison_requirement_debt}. Therefore, NLP techniques, as proposed in our work, are needed in order to effectively identify \SATD comments.
-% \emad{end: remove}
-
-
+\revised{Lastly, we analyze the overlap between the files that contains \SATD with files that contains bad smells. This is an interesting point of discussion to provide insights on how technical debt found on comments relates to technical debt found by static analysis tools. }{R2-3}
 
 \subsection{Textual Similarity for Design and Requirement Debt}
 
@@ -123,3 +107,49 @@ In our work, all the classification done by the Stanford Classifier used a Logis
 Figures \ref{fig:algorithms_comparison_design} and \ref{fig:algorithms_comparison_requirement} compare the performance between the three different algorithms. We find that Naive Bayes has the worst average F1-measure of 0.30 and 0.05 for design and requirement technical debt, respectively. Based on our findings, the Naive Bayes algorithm favors recall at the expense of precision. For example, while classifying design debt, the average recall was of 0.84 and precision 0.19. The two other algorithms present more balanced results compared to Naive Bayes, and the difference in performance between them is not as accentuate. The Logistic Regression classifier achieved F1-measures of 0.62 and 0.40, while the binary classifier F1-measures were 0.63 and 0.40, for design and requirement \SATD, respectively. Tables \ref{tbl:improvement_f1measure_between_classifiers_design} and \ref{tbl:improvement_f1measure_between_classifiers_requirement} in the Appendix section provide detailed data for each compared algorithm for all ten projects.
 
 Although the Binary classification has a slightly better performance, for our purpose, the Logistical Regression algorithm provide more insightful features. These features were analyzed and presented in RQ2. 
+
+\revised{
+\subsection{Investigating the Overlap Between Technical Debt Found in Comments and Technical Debt Found by Static Analysis Tools}
+
+Thus far, we analyzed technical debt that was expressed by developers through source code comments. However, there are other ways to identify technical debt, for example architectural reviews, documentation analysis and static analysis tools. To date, using static analysis tools is the most traditional approach to identify technical debt in the source code. In general, static analysis tools parse the source code of a project and calculate metrics and thresholds to identify possible object oriented design violations, also know as bad smells or technical debt. 
+
+In this subsection we analyze the overlap between what our NLP-based approach identifies as technical debt and what a static analysis tool identifies as technical debt. JDeodorant is our static analysis tool of choice as it is capable of identify design debts (i.e., bad smells) in Java projects, and suggest refactoring opportunities to solve them.  
+
+First, we analyzed our 10 open source projects using the static analysis tool. The result of this analysis is a list of Java files that were identified with at least one bad smell. In this process we aimed to identify three common bad smells namely, long method, feature envy and god class. Second, we created a similar list containing the files that were identified with \SATD comments. Lastly, we analyze the overlapping files and present results.   
+
+Table \ref{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant} provides details about each of the projects used in our study. The columns of Table \ref{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant} present the total number of files with \SATD, followed by the number of files containing \SATD comments and long method at the same time, the percentage of files that it represents from the total files with \SATD, the number of files containing \SATD and the bad smell feature envy, the percentage of files with \SATD that this number of files represents, the overlapping number of files between \SATD and god class and its percentage from the total of files with \SATD, and finally, the total number of files containing both \SATD and any type of bad smells as well its percentage from the total files with \SATD. 
+
+Jmeter, for example, has 200 files that contains \SATD comments, and 143 of these files also contains the long method bad smell (i.e., 71.5\%). In addition, we can see that 20.5\% of the files that has \SATD contains feature envy and 48.5\% of them possesses the god class bad smell. In summary we see that 80.5\% of all files that contains a bad smell also contains \SATD comments.     
+
+We find that the bad smell that overlaps the most with \SATD is long method. Intuitively, this is expected as long methods are a very common bad smell and it tends to happen frequently. The overlap between files with \SATD and long method ranged from 43.6\% to 82\% of all files containing \SATD comments, and considering all projects, the average overlap is of 65\%. In addition, 44.2\% of god class files also contains \SATD comments, and for feature envy, the average percent of files with \SATD is of 20.7\%. Taking all bad smells analyzed in consideration we find that, on average, 69.7\% of files containing \SATD also contain a bad smell. 
+
+% talk to nikos ! So far, our analysis compares the intersection of files that contains \SATD comments and bad smells. However, this intersection not necessary means that the \SATD comments in the file are actually addressing the same issue pointed out by the static analysis tool. Therefore, we manually inspect a small sample of 12 overlapping files (i.e., four for each bad smell) and 12 non overlapping files to determine if the \SATD and static analysis tool are identifying the same thing or actually complementing each other.
+
+\begin{table*}[!thb]
+    \begin{center}
+        \caption{Static Analysis Tool and Self-admitted Technical Debt Overlap (Using JDeodorant)}
+        \label{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant}
+        \begin{tabular}{l| c c c c c c c c c}
+        \toprule
+        \textbf{\thead{Project}} & \textbf{\thead{\# of \\files with\\ SATD }} & \textbf{\thead{\# of SATD \\files with \\ long \\method }} & \textbf{\thead{\%  of SATD \\files with \\ long \\method}} & \textbf{\thead{\# of SATD \\files with \\ feature \\envy}} & \textbf{\thead{\% of SATD \\files with \\ feature \\envy}} & \textbf{\thead{\# of SATD\\ files with \\ god \\class}} & \textbf{\thead{\% of SATD\\ files with \\ god \\class}} & \textbf{\thead{\# of SATD\\ files with\\ bad \\smell }} & \textbf{\thead{\% of SATD\\ files with\\ bad \\smell}}\\
+        \midrule
+        
+        \textbf{Ant}            & 73  & 57   & 78.0  & 19 & 26.0  & 42  & 57.5 & 63  & 86.3   \\
+        \textbf{ArgoUML}        & 419 & 255  & 60.8  & 43 & 10.2  & 128 & 30.5 & 283 & 67.5   \\
+        \textbf{Columba}        & 117 & 76   & 64.9  & 18 & 15.3  & 47  & 40.1 & 89  & 76.0   \\
+        \textbf{EMF}            & 53  & 33   & 62.2  & 14 & 26.4  & 28  & 52.8 & 28  & 52.8   \\
+        \textbf{Hibernate}      & 206 & 90   & 43.6  & 44 & 21.3  & 72  & 34.9 & 116 & 56.3   \\
+        \textbf{JEdit}          & 108 & 74   & 68.5  & 23 & 21.2  & 47  & 43.5 & 82  & 75.9   \\
+        \textbf{JFreeChart}     & 106 & 87   & 82.0  & 20 & 18.8  & 52  & 49.0 & 92  & 86.7   \\
+        \textbf{Jmeter}         & 200 & 143  & 71.5  & 41 & 20.5  & 97  & 48.5 & 161 & 80.5   \\
+        \textbf{JRuby}          & 163 & 107  & 65.5  & 43 & 26.3  & 79  & 48.4 & 85  & 52.1   \\
+        \textbf{SQuirrel}       & 156 & 82   & 52.5  & 32 & 20.5  & 58  & 37.1 & 99  & 63.4   \\
+        \midrule
+        \textbf{Average}        &     &      & 65.0  &    & 20.7  &     & 44.2 &     & 69.7  \\
+
+        \bottomrule
+        \end{tabular}
+    \end{center}
+\end{table*} 
+
+}{R2-3}

@@ -384,34 +384,34 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
   \end{minipage}    
 \end{table} 
 
-\clearpage
+% \clearpage
 
-\begin{table}[h]
-  \begin{minipage}{\textwidth}
-    \begin{center}
-        \caption{Intersection Between Static Analysis Tools and Self-admitted Technical Debt Using Code Smell Detector) }
-        \label{tbl:intersection_between_static_analysis_tools_and_self_admitted_technical_debt_code_smell_detector}
-        \begin{tabular}{l| c c c c}
-        \toprule
-        \thead{Project} & \thead{\# of files} & \thead{\# of files with \\bad smell} & \thead{\# of files with \\ SATD}  & \thead{\# of files in common}\\
-        \midrule
-        % without Feature Envy and Lazy Class
-        Apache Ant     & 1,475 & 365 & 68  & 46    \\
-        Apache Jmeter  & 1,181 & 395 & 191 & 113   \\
-        ArgoUML        & 2,610 & 708 & 328 & 191   \\
-        Columba        & 1,711 & 396 & 90  & 44    \\
-        EMF            & 1,458 & 558 & 46  & 36    \\
-        Hibernate      & 1,356 & 493 & 182 & 122   \\
-        JEdit          & 800   & 320 & 104 & 78    \\
-        JFreeChart     & 1,065 & 410 & 97  & 69    \\
-        JRuby          & 1,486 & 787 & 141 & 113   \\
-        SQuirrel       & 3,108 & 609 & 131 & 82    \\
+% \begin{table}[h]
+%   \begin{minipage}{\textwidth}
+%     \begin{center}
+%         \caption{Intersection Between Static Analysis Tools and Self-admitted Technical Debt Using Code Smell Detector) }
+%         \label{tbl:intersection_between_static_analysis_tools_and_self_admitted_technical_debt_code_smell_detector}
+%         \begin{tabular}{l| c c c c}
+%         \toprule
+%         \thead{Project} & \thead{\# of files} & \thead{\# of files with \\bad smell} & \thead{\# of files with \\ SATD}  & \thead{\# of files in common}\\
+%         \midrule
+%         % without Feature Envy and Lazy Class
+%         Apache Ant     & 1,475 & 365 & 68  & 46    \\
+%         Apache Jmeter  & 1,181 & 395 & 191 & 113   \\
+%         ArgoUML        & 2,610 & 708 & 328 & 191   \\
+%         Columba        & 1,711 & 396 & 90  & 44    \\
+%         EMF            & 1,458 & 558 & 46  & 36    \\
+%         Hibernate      & 1,356 & 493 & 182 & 122   \\
+%         JEdit          & 800   & 320 & 104 & 78    \\
+%         JFreeChart     & 1,065 & 410 & 97  & 69    \\
+%         JRuby          & 1,486 & 787 & 141 & 113   \\
+%         SQuirrel       & 3,108 & 609 & 131 & 82    \\
 
-        \bottomrule
-        \end{tabular}
-    \end{center}
-  \end{minipage}    
-\end{table} 
+%         \bottomrule
+%         \end{tabular}
+%     \end{center}
+%   \end{minipage}    
+% \end{table} 
 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
@@ -442,34 +442,34 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
 \end{table} 
 
 
-\begin{table}[h]
-  \begin{minipage}{\textwidth}
-    \begin{center}
-        \caption{Percentage Details Between Static Analysis Tools and Self-admitted Technical Debt Intersection Using JDeodorant)}
-        \label{tbl:percentage_details_between_static_analysis_tools_and_self_admitted_technical_debt_intersection_jdeodorant}
-        \begin{tabular}{l| c c c c c c c c c}
-        \toprule
-        \thead{Project} & \thead{\# of \\files with\\ SATD } & \thead{\# of SATD \\files with \\ long \\method } & \thead{\%  of SATD \\files with \\ long \\method} & \thead{\# of SATD \\files with \\ feature \\envy} & \thead{\% of SATD \\files with \\ feature \\envy} & \thead{\# of SATD\\ files with \\ god \\class} & \thead{\% of SATD\\ files with \\ god \\class} & \thead{\# of SATD\\ files with\\ bad \\smell } & \thead{\% of SATD\\ files with\\ bad \\smell}\\
-        \midrule
+% \begin{table}[h]
+%   \begin{minipage}{\textwidth}
+%     \begin{center}
+%         \caption{Percentage Details Between Static Analysis Tools and Self-admitted Technical Debt Intersection Using JDeodorant)}
+%         \label{tbl:percentage_details_between_static_analysis_tools_and_self_admitted_technical_debt_intersection_jdeodorant}
+%         \begin{tabular}{l| c c c c c c c c c}
+%         \toprule
+%         \thead{Project} & \thead{\# of \\files with\\ SATD } & \thead{\# of SATD \\files with \\ long \\method } & \thead{\%  of SATD \\files with \\ long \\method} & \thead{\# of SATD \\files with \\ feature \\envy} & \thead{\% of SATD \\files with \\ feature \\envy} & \thead{\# of SATD\\ files with \\ god \\class} & \thead{\% of SATD\\ files with \\ god \\class} & \thead{\# of SATD\\ files with\\ bad \\smell } & \thead{\% of SATD\\ files with\\ bad \\smell}\\
+%         \midrule
         
-        Apache Ant     & 73  & 57   & 78.0  & 19 & 26.0  & 42  & 57.5 & 63  & 86.3   \\
-        Apache Jmeter  & 200 & 143  & 71.5  & 41 & 20.5  & 97  & 48.5 & 161 & 80.5   \\
-        ArgoUML        & 419 & 255  & 60.8  & 43 & 10.2  & 128 & 30.5 & 283 & 67.5   \\
-        Columba        & 117 & 76   & 64.9  & 18 & 15.3  & 47  & 40.1 & 89  & 76.0   \\
-        EMF            & 53  & 33   & 62.2  & 14 & 26.4  & 28  & 52.8 & 28  & 52.8   \\
-        Hibernate      & 206 & 90   & 43.6  & 44 & 21.3  & 72  & 34.9 & 116 & 56.3   \\
-        JEdit          & 108 & 74   & 68.5  & 23 & 21.2  & 47  & 43.5 & 82  & 75.9   \\
-        JFreeChart     & 106 & 87   & 82.0  & 20 & 18.8  & 52  & 49.0 & 92  & 86.7   \\
-        JRuby          & 163 & 107  & 65.5  & 43 & 26.3  & 79  & 48.4 & 85  & 52.1   \\
-        SQuirrel       & 156 & 82   & 52.5  & 32 & 20.5  & 58  & 37.1 & 99  & 63.4   \\
-        \midrule
-        Average        &     &      & 65.0  &    & 20.7  &     & 44.2 &     & 69.7  \\
+%         Apache Ant     & 73  & 57   & 78.0  & 19 & 26.0  & 42  & 57.5 & 63  & 86.3   \\
+%         Apache Jmeter  & 200 & 143  & 71.5  & 41 & 20.5  & 97  & 48.5 & 161 & 80.5   \\
+%         ArgoUML        & 419 & 255  & 60.8  & 43 & 10.2  & 128 & 30.5 & 283 & 67.5   \\
+%         Columba        & 117 & 76   & 64.9  & 18 & 15.3  & 47  & 40.1 & 89  & 76.0   \\
+%         EMF            & 53  & 33   & 62.2  & 14 & 26.4  & 28  & 52.8 & 28  & 52.8   \\
+%         Hibernate      & 206 & 90   & 43.6  & 44 & 21.3  & 72  & 34.9 & 116 & 56.3   \\
+%         JEdit          & 108 & 74   & 68.5  & 23 & 21.2  & 47  & 43.5 & 82  & 75.9   \\
+%         JFreeChart     & 106 & 87   & 82.0  & 20 & 18.8  & 52  & 49.0 & 92  & 86.7   \\
+%         JRuby          & 163 & 107  & 65.5  & 43 & 26.3  & 79  & 48.4 & 85  & 52.1   \\
+%         SQuirrel       & 156 & 82   & 52.5  & 32 & 20.5  & 58  & 37.1 & 99  & 63.4   \\
+%         \midrule
+%         Average        &     &      & 65.0  &    & 20.7  &     & 44.2 &     & 69.7  \\
 
-        \bottomrule
-        \end{tabular}
-    \end{center}
-  \end{minipage}    
-\end{table} 
+%         \bottomrule
+%         \end{tabular}
+%     \end{center}
+%   \end{minipage}    
+% \end{table} 
 
 \clearpage
 \begin{figure}[thb!]
