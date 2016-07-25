@@ -1,0 +1,11 @@
+https://books.google.ca/books?hl=en&lr=&id=GbC8cqxGR7YC&oi=fnd&pg=PA841&dq=On+discriminative+vs.+generative+classifiers:+A+comparison+of+logistic+regression+and+naive+Bayes.&ots=ZwO7D25Az2&sig=9Zmq8NkttUg6ihtb61QRk820D5o#v=onepage&q=On%20discriminative%20vs.%20generative%20classifiers%3A%20A%20comparison%20of%20logistic%20regression%20and%20naive%20Bayes.&f=false
+
+http://nlp.stanford.edu/IR-book/
+
+https://en.wikipedia.org/wiki/Active_learning_(machine_learning)
+
+http://nlp.stanford.edu/IR-book/html/htmledition/choosing-what-kind-of-classifier-to-use-1.html
+
+http://nlp.stanford.edu/wiki/Software/Classifier
+
+http://www.jmlr.org/papers/v2/tong01a.html

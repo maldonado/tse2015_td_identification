@@ -7,9 +7,9 @@
   \vspace{-4mm}
 \end{figure*}
 
-The main goal of our study is to automatically identify \SATD through source code comments. To do that, we first extract the comments from ten open source projects. Second, we apply five filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remaining comments into the different types of \SATD (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data for the Stanford NLP Classifier and use the trained model to detect \SATD from source code comments. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections detail each step.
+The main goal of our study is to automatically identify \SATD through source code comments. To do that, we first extract the comments from ten open source projects. Second, we apply five filtering heuristics to remove comments that are irrelevant for the identification of \SATD  (e.g., license comments, commented source code and Javadoc comments). After that, we manually classify the remaining comments into the different types of \SATD (i.e., design debt, requirement debt, defect debt, documentation debt and test debt). Lastly, we use these comments as training data for the \revised{Stanford Classifier}{R2-11} and use the trained model to detect \SATD from source code comments. Figure~\ref{fig:approach} shows an overview of our approach, and the following subsections detail each step.
 
-\subsection{Project Data Extraction} % (fold)
+\subsection{Project Data Extraction}
 \label{sub:data_extraction}
 
 To perform our study, we need to analyze the source code comments of software projects. Therefore, we extract the source code of ten open source projects:\revised{Ant is a build tool written in Java, ArgoUML is an UML modeling tool that includes support for all standard UML 1.4 diagrams, Columba is an email client that has a graphical interface with wizards and internationalization support, EMF is a modeling framework and code generation facility for building tools and other applications, Hibernate is a component providing Object Relational Mapping (ORM) support to applications and other components, JEdit is a text editor written in Java, JFreeChart is a chart library for the Java platform, JMeter is a Java application designed to load test functional behavior and measure performance, JRuby is a pure-Java implementation of the Ruby programming language and SQuirrel SQL is a graphical SQL client written in Java.}{R1-6} We selected these projects since they belong to different application domains, are well commented, vary in size, and in the number of contributors. 
@@ -51,22 +51,18 @@ The number of contributors was extracted from OpenHub, an on-line community and 
     \end{center}
 \end{table*}
 
-
-% subsection data_extraction (end)
-\subsection{Parse Source Code} % (fold)
+\subsection{Parse Source Code} 
 \label{sub:parse_source_code}
 
 After obtaining the source code of all projects, we extract the comments from the source code. We use JDeodorant \cite{Tsantalis2008CSMR}, an open-source Eclipse plug-in, to parse the source code and extract the code comments. JDeodorant provides detailed information about the source code comments such as: their type (i.e., Block, Single-line, or Javadoc) and their location (i.e., the lines where they start and end).  
 
 Due to these features, we adapted JDeodorant to extract the aforementioned information about source code comments and store it in a relational database to facilitate the processing of the data. 
 
-% subsection parse_source_code (end)
-\subsection{Filter Comments} % (fold)
+\subsection{Filter Comments} 
 \label{sub:filter_comments}
 
 Source code comments can be used for different purposes in a project, such as giving context, documenting, expressing thoughts, opinions and authorship, and in some cases, disabling source code from the program. Comments are used freely by developers and with limited formalities, if any at all. This informal environment allows developers to bring to light opinions, insights and even confessions (e.g., self-admitted technical debt). 
 
-% by Potdar and Shihab \cite{Potdar2014ICSME}
 As shown in prior work \revised{[citation removed]}{R2-1}, part of these comments can be identified as self-admitted technical debt, but they are not the majority of cases. With that in mind, we develop and apply 5 filtering heuristics to narrow down the comments eliminating the ones that are less likely to be classified as self-admitted technical debt.
 
 To do so, we developed a Java based tool that reads from the database the data obtained by parsing the source code. Next, it executes the filtering heuristics and stores the results back in the database. The retrieved data contains information like the line number that a class/comment starts/ends and the type, considering the Java syntax, of the comment (i.e., Single-line, Block or Javadoc). With this information we process the filtering heuristics as described next.
@@ -83,16 +79,12 @@ Javadoc comments rarely mention self-admitted technical debt. For the Javadoc co
 
 The steps mentioned above significantly reduced the number of comments in our dataset and helped us focus on the most applicable and insightful comments. For example, in the Ant project, applying the above steps helped to reduce the number of comments from 21,587 to 4,137 meaning a reduction of 80.83\% in the number of comments to be manually analyzed. Using the filtering heuristics we were able to remove from 39.25\% to 85.89\% of all comments. Table \ref{tab:project_details} provides the number of comments kept after the filtering heuristics for each project.
 
-% subsection filtering_comments (end)
-
-\subsection{Manual Classification} % (fold)
+\subsection{Manual Classification}
 \label{sub:manual_classification}
 
 Our goal is to inspect each comment and attribute to it the suitable technical debt classification. Since there are many comments, we developed a Java based tool that shows one comment at a time and gives a list of possible classifications that can be manually assigned to the comment. The list of possible classifications is based on previous work by Alves \textit{et al.}~\cite{Alves2014MTD}. In their work, an ontology on technical debt terms was proposed, and they identified the following types of technical debt across the researched literature: architecture, build, code, defect, design, documentation, infrastructure, people, process, requirement, service, test automation and test debt. During the classification process we notice that not all types of debt mentioned by Alves \emph{et al.}~\cite{Alves2014MTD} could be found in code comments. However, we were able to identify the following types of debt in the source comments: design debt, defect debt, documentation debt, requirement debt and test debt. 
 
 In our previous work ~\cite{Maldonado2015MTD} we manually classified 33,093 comments, and in the current study we manually classified an additional 29,473 comments, which means that we extended our classified comments dataset by 89.06\%. In total, we manually classified 62,566 comments into the five different types of self-admitted technical debt mentioned above. The classification process took approximately 185 hours in total, and was performed by the first author of the paper. It is important to note here that this manual classification step does not need to be repeated in order to apply our approach, since our dataset is publicly available, and thus it can used as is, or even extended with new classified comments. 
-
-% We manually classified 63,015 comments into different types of self-admitted technical debt. During the classification process we notice that not all types of debt mentioned in \cite{Alves2014MTD} could be found in code comments. However, we were able to identify the following types of debt in the source comments: design debt, defect debt, documentation debt, requirement debt and test debt. The classification took approximately 185 hours and was performed by the first author of the paper. 
 
 \revised{ 
 Below, we provide definitions for design and requirement \SATD, and some indicative comments to help the reader understand the different types of self-admitted technical debt comments.
@@ -166,28 +158,17 @@ that there is still \emph{missing} code that needs to be added in order to compl
 
 To mitigate the risk of creating a dataset that is biased, we extracted a statistically significant sample of our dataset and asked another student to classify it. To prepare the student for the task we gave a 1-hour tutorial about the different kinds of \SATD, and walked the student through a couple of examples of each different type of \SATD comment. The statistically significant sample was created based on the total number of comments (62,566) with a confidence level of 99\% and a confidence interval of 5\%. Resulting in a stratified sample of 659 comments. We composed the stratified sample according to the percentage of each classification found in the original dataset. Therefore, the stratified sample was composed of: 92\% of without \SATD comments (609 comments), 4\% of design debt comments (29 comments), 2\% of requirements debt comments (5 comments), 0.75\% test debt (2 comments) and 0.15\% of documentation debt (1 comment). Lastly, we evaluate the level of agreement between both reviewers of the stratified sample by calculating Cohen's kappa coefficient ~\cite{cohen1960coefficient}. Cohen's Kappa coefficient has been commonly used to evaluate inter-rater agreement level for categorical scales, and provides the proportion of agreement corrected for chance. The resulting coefficient is scaled to range between -1 and +1, where negative value means poorer than chance agreement, zero indicates exactly chance agreement, and positive value indicates better than chance agreement ~\cite{fleiss1973equivalence}. The closer the value is to +1, the better. In our work, the level of agreement measured between the reviewers was of +0.81.
 
-% subsection manual_classification (end)
+ \revised{We also measured the level of agreement of design and requirement \SATD individually. This is important because the stratified sample possesses much more without \SATD comments than the other types of debt, and therefore, the coefficient reported above could indicate that the reviewers are agreeing on what is not \SATD instead of agreeing on a particular type of debt. However, we achieved a level of agreement of +0.75 for design \SATD, and +0.85 for requirement \SATD. According to Fleiss~\cite{Fleiss1981measurement} values larger than 0.75 are characterized as excellent.}{R2-10} 
 
-% subsection heuristics_to_remove_irrelevant_comments (end)
-\subsection{NLP Classification} % (fold)
+\subsection{NLP Classification}
 \label{sub:run_the_nlp_classifier}
 
-% \todo{explain in detail the nlp tool , why we use it and how it works.} 
+Our next step is to use the classified \SATD comments as a training dataset for the \revised{Stanford Classifier, which is a Java implementation of a max entropy classifier}{R2-11}~\cite{Manning2014ACL}. A\revised{max entropy classifier}{R2-11}, in general, takes as input a number of data items along with a classification for each data item, and automatically generates \textit{features} (i.e., words) from each \textit{datum}, which are associated with positive or negative numeric \textit{votes} for each class. The weights of the features are learned automatically based on the manually classified training data items (supervised learning). The \revised{Stanford Classifier}{R2-11} builds a \textit{maximum entropy model}, which is equivalent to a multi-class regression model, and it is trained to maximize the conditional likelihood of the classes taking into account feature dependences when calculating the feature weights.
 
-Our next step is to use the classified \SATD comments as a training dataset for the Stanford NLP Classifier~\cite{Manning2014ACL}.
-A NLP Classifier, in general, takes as input a number of data items along with a classification for each data item, and automatically generates \textit{features} (i.e., words) from each \textit{datum}, which are associated with positive or negative numeric \textit{votes} for each class. The weights of the features are learned automatically based on the manually classified training data items (supervised learning). The NLP Classifier builds a \textit{maximum entropy model}, which is equivalent to a multi-class regression model, and it is trained to maximize the conditional likelihood of the classes taking into account feature dependences when calculating the feature weights.
-
-After the training phase, the NLP Classifier can take as input a test dataset that will be classified according to the model built during the training phase. The output for each data item of the test dataset is the classification, along with the features contributing positively or negatively in this classification.
+After the training phase, the \revised{max entropy classifier}{R2-11} can take as input a test dataset that will be classified according to the model built during the training phase. The output for each data item of the test dataset is the classification, along with the features contributing positively or negatively in this classification.
 
 In our case, the training dataset is composed of source code comments and their corresponding manual classification.
 According to our findings in previous work~\cite{Maldonado2015MTD}, the two most common types of \SATD are design and requirement debt (defect, test, and documentation debt together represent less that 10\% of all \SATD comments).
-Therefore, we train the Stanford NLP Classifier on the dataset containing only these two specific types of \SATD comments.
+Therefore, we train the\revised{Stanford Classifier}{R2-11} on the dataset containing only these two specific types of \SATD comments.
 
-%For example, camel case uses lower and upper case letters to aggregate more than one word together (i.e., methodNameHere).
 In order to avoid having repeated features differing only in letter case (e.g., ``Hack'', ``hack'', ``HACK''), or in preceding/succeeding punctuation characters (e.g., ``\textbf{,}hack'', ``hack\textbf{,}''), we preprocess the training and test datasets to clean up the original comments written by the developers. More specifically, we remove the character structures that are used in the Java language syntax to indicate comments (i.e., `//' or `/*' and `*/'), the punctuation characters, and any excess whitespace characters (e.g., ` ', `\textbackslash t', `\textbackslash n'), and finally we convert all comments to lowercase.
-
-%Comments are written in natural language, but they also contain Java syntax elements like `//'. Other characteristics of comments are writing conventions, such as camel case for representing code elements. These characteristics of comments can be misinterpreted by the NLP classifier tool, resulting in meaningless prediction features (i.e., words). Therefore, we first remove the character structures that are used in the Java language syntax to indicate comments (i.e., `//' or `/*' and `*/'). Second, we remove characters that represent an escape sequence such as `\textbackslash t' or `\textbackslash n'. Third, we remove the excess blank spaces from the comments. Fourth, we make all the words in the comments lowercase.
-
-% For each execution of the Stanford Classifier we provide two separate datasets. One is the training dataset and the other is the test dataset. The training dataset is used to extract the features that will be used to predict \SATD comments, and the test dataset is used to evaluate how good the extracted features were in predicting \SATD. Both datasets files are composed by two columns. The first column is the label (i.e., manual classification of the comment) and the second column is the comment itself. All comments in the files are formatted as described above, removing the chance of having the same feature written in upper and lower case, and consequently reducing the probability of overlapping features/words.
-
-% subsection run_the_nlp_classifier)
