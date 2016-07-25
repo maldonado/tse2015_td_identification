@@ -1,7 +1,7 @@
 # figure 2 
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1-Measure for all projects (design debt)
-mydata <- data.frame( Ant= c(0.517, 0.237,  0.045), ArgoUML= c(0.814, 0.107,  0.155), Columba= c(0.601, 0.264,  0.038), EMF= c(0.470, 0.231,  0.035), Hibernate= c(0.744, 0.227,  0.214), JEdit= c(0.509, 0.342,  0.037), JFreeChart= c(0.492, 0.282,   0.08), Jmeter= c(0.731, 0.194,  0.075), JRuby= c(0.783, 0.620,  0.131), SQuirrel= c(0.540, 0.175,  0.056))
+mydata <- data.frame(Ant= c(0.517, 0.237,  0.045), ArgoUML= c(0.814, 0.107,  0.155), Columba= c(0.601, 0.264,  0.038), EMF= c(0.470, 0.231,  0.035), Hibernate= c(0.744, 0.227,  0.214), JEdit= c(0.509, 0.342,  0.037), JFreeChart= c(0.492, 0.282,   0.08), Jmeter= c(0.731, 0.194,  0.075), JRuby= c(0.783, 0.620,  0.131), SQuirrel= c(0.540, 0.175,  0.056))
 barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
 legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
@@ -181,8 +181,8 @@ library(RPostgreSQL)
 library(psych)
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
-# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where classification in ('IMPLEMENTATION','DESIGN','WITHOUT_CLASSIFICATION') order by processedcommentid")
-postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where classification = 'DESIGN' order by processedcommentid")
+postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where classification in ('IMPLEMENTATION','DESIGN','WITHOUT_CLASSIFICATION') order by processedcommentid")
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where classification = 'IMPLE' order by processedcommentid")
 reviewer2 <- fetch(postgresql, n=-1)
 dim(reviewer2)
 dbHasCompleted(postgresql)
@@ -192,3 +192,89 @@ ck
 ck$agree
 
 # __________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+# ten fold validation 
+# size 12 x 9.5
+# generate comparison between td classified and random measured
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '0' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '1' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '2' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '3' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '4' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '5' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '6' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '7' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '8' and category = 'DESIGN' and classificationid=1  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '9' and category = 'DESIGN' and classificationid=1  order by 1,2")
+
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '0' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '1' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '2' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '3' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '4' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '5' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '6' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '7' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '8' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '9' and category = 'REQUIREMENT' and classificationid=6  order by 1,2")
+
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where category = 'DESIGN' and classificationid=4  order by 1,2")
+postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where category = 'DESIGN' and classificationid=5  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where category = 'REQUIREMENT' and classificationid=8  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where category = 'REQUIREMENT' and classificationid=9  order by 1,2")
+
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '0' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '1' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '2' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '3' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '4' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '5' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '6' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '7' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '8' and category = 'DESIGN' and classificationid=3  order by 1,2")
+# postgresql <- dbSendQuery(con, "select projectname, projectstrainedwith, classifiedf1  from classifier_results_ten_fold where projectname = '9' and category = 'DESIGN' and classificationid=3  order by 1,2")
+
+data1 <- fetch(postgresql, n=-1)
+dim(data1)
+dbHasCompleted(postgresql)
+plot(data1$projectstrainedwith, data1$classifiedf1, type="b",
+     col="red", lty=0, pch=2, lwd=2,
+     xlab="Comments used in training dataset", ylab="F1-Measure",
+     xlim=c(0, 57000), ylim=c(0, 1))
+
+# horizontal line to present the 90% of the maximum F1-Measure
+abline(h=(data1$classifiedf1[which.max(data1$classifiedf1)] * .9), col="black", lty=2)
+text(0.1, y=(data1$classifiedf1[which.max(data1$classifiedf1)] * .9 + 0.02), "90%", col = "black") 
+
+# horizontal line to present the 80% of the maximum F1-Measure
+abline(h=(data1$classifiedf1[which.max(data1$classifiedf1)] * .8), col="black", lty=2)
+text(0.1, y=(data1$classifiedf1[which.max(data1$classifiedf1)] * .8 + 0.02), "80%", col = "black") 
+
+# vertical line to present the number of comments used to achieve 90% of the maximum F1-Measure
+abline(v=(data1$projectstrainedwith[min(which(data1$classifiedf1 > data1$classifiedf1[which.max(data1$classifiedf1)] * .9))]), col="black", lty=2)
+text(-0.01, x=(data1$projectstrainedwith[min(which(data1$classifiedf1 > data1$classifiedf1[which.max(data1$classifiedf1)] * .9))]), data1$projectstrainedwith[min(which(data1$classifiedf1 > data1$classifiedf1[which.max(data1$classifiedf1)] * .9))], col = "black")
+
+# vertical line to present the number of comments used to achieve 80% of the maximum F1-Measure
+abline(v=(data1$projectstrainedwith[min(which(data1$classifiedf1 > data1$classifiedf1[which.max(data1$classifiedf1)] * .8))]), col="black", lty=2)
+text(-0.01, x=(data1$projectstrainedwith[min(which(data1$classifiedf1 > data1$classifiedf1[which.max(data1$classifiedf1)] * .8))]), data1$projectstrainedwith[min(which(data1$classifiedf1 > data1$classifiedf1[which.max(data1$classifiedf1)] * .8))], col = "black")
+
+# horizontal line to present the average F1-Measure achieved by the comment patterns approach (DESIGN ONLY)
+abline(h= 0.126822651746, col="darkgreen", lty=1)
+text(50000, y=(0.126822651746 + 0.016), "Comment patterns", col = "black") 
+
+# horizontal line to present the average F1-Measure achieved by the random clsassifier approach (DESIGN ONLY)
+abline(h= 0.0850963354741, col="blue", pch=21)
+text(50000, y=(0.0850963354741 + 0.016), "Random classifier", col = "black") 
+
+# # horizontal line to present the average F1-Measure achieved by the comment patterns approach (REQUIREMENT ONLY)
+# abline(h= 0.0, col="darkgreen", lty=1)
+# text(50000, y=(0.0 + 0.016), "Comment patterns avg.", col = "black") 
+# 
+# # horizontal line to present the average F1-Measure achieved by the random clsassifier approach (REQUIREMENT ONLY)
+# abline(h= 0.0253873499229, col="blue", lty=1)
+# text(50000, y=(0.0253873499229 + 0.016), "Random classifier avg.", col = "black") 
+
+# legend(30000, 1, c("NLP-based", "Comment patterns", "Random classifier"), col= c("red", "darkgreen",  "blue"), pch = c(2, , ) , bty = "n" , cex=1.1)
