@@ -3,9 +3,10 @@
 
 When performing our study, we used well-commented Java projects. Since our approach heavily depends on code comments, our results and performance measures may be impacted by the quantity and quality of comments in a software project. 
 
-\revised{
-Considering the intentional misrepresentation of measures it is possible that even a well commented project does not contain self-admitted technical debt. Given the fact that the developers may opt to not express themselves in source code comments. In our study, we made sure that we chose case studies that were well commented for our analysis.   
+\revised{Considering the intentional misrepresentation of measures it is possible that even a well commented project does not contain self-admitted technical debt. Given the fact that the developers may opt to not express themselves in source code comments. In our study, we made sure that we chose case studies that were well commented for our analysis.}{R1-14}   
 
-Lastly, our approach depends on the correctness of the underlying tools we use. To mitigate this risk, we used tools that are commonly used by practitioners and by the research community such as JDeodorant and the Stanford Classifier.}{R1-14}
+\revised{On the same point, using comments to determine some self-admitted technical debt may not be fully representative since comments or code may not be updated consistently. However, previous work shows that changes in the source code are consistent to changes on comments~\cite{Fluri2007WCRE,Potdar2014ICSME}. In addition, it is possible that a variety of technical debt that is not self-admitted is present in the analyzed projects. However, considering all technical debt is out of the scope of this work.}{R3-2}
+
+\revised{Lastly, our approach depends on the correctness of the underlying tools we use. To mitigate this risk, we used tools that are commonly used by practitioners and by the research community such as JDeodorant and the Stanford Classifier.}{R1-14}
 
 \noindent \textbf{External validity} considers the generalization of our findings. All of our findings were derived from comments in open source projects. \revised{To minimize the threat to external validity, we chose open source projects from different domains. That said, our results may not generalize to other open source or commercial projects, projects written in different languages, projects from different domains and/or technology stacks. In particular, our results may not generalize to projects that have a low number or no comments or that are written on a different idiom than English.}{R1-4} 
