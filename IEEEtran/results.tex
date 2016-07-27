@@ -70,7 +70,7 @@ It is important to note that the comment patterns approach has a high precision,
 
 \noindent \textbf{Results - requirement debt:} \revised{Similarly, the last five columns of Table \ref{tbl:improvement_f1measure} presents the F1-measure performance of the three approaches, and the improvement achieved by our approach over the two other approaches. The comment patterns approach was able to identify requirement \SATD in 3 of the 10 analyzed projects. A possible reason for the low performance of the comment patterns in detecting requirement debt is that the authors of the comment patterns approach did not differentiate between the different types of \SATD when deriving their patterns. Moreover, since most of the debt is design debt, it is possible that the patterns tend to favor the detection of design debt.}{R1-9} 
  
-That said, we find that for all projects, the F1-measure obtained by our approach surpasses the other approaches F1-measures. Our approach achieves a F1-measure between 0.091 - 0.804 with an average of 0.403, whereas the comment pattern approach achieves F1-measure in the range of 0.117 - 0.409 with an average of 0.067. In comparison, the simple (random) baseline ranges between 0.003 - 0.083, with an average of 0.022. Figure \ref{fig:f1_measure_comparison_requirement_debt} visualizes the performance comparison of the two approaches.\revised{We also test the F1-measure obtained by our approach with the other two baselines to determine if the differences in value are statistically significant. We find that the differences are indeed statistically significant (i.e., p\textless0.5) for the comment patterns and the random classifier baselines for both design and requirement \SATD.}{R3-5}
+That said, we find that for all projects, the F1-measure obtained by our approach surpasses the other approaches F1-measures. Our approach achieves a F1-measure between 0.091 - 0.804 with an average of 0.403, whereas the comment pattern approach achieves F1-measure in the range of 0.117 - 0.409 with an average of 0.067. In comparison, the simple (random) baseline ranges between 0.003 - 0.083, with an average of 0.022. Figure \ref{fig:f1_measure_comparison_requirement_debt} visualizes the performance comparison of the two approaches.\revised{We also test the F1-measure obtained by our approach with the other two baselines to determine if the differences in value are statistically significant. We find that the differences are indeed statistically significant (i.e., p\textless0.5) for the comment patterns and the random classifier baselines for both design and requirement \SATD.}{R3-6}
 
 Generally, it is clear that requirement \SATD is less common than design \SATD, which makes it more difficult to detect.\revised{ Nevertheless, our NLP-based approach provides a significant improvement over the comment patterns approach and the simple (random) baseline approach, with an average improvement of 7 and 18 times, respectively.}{R1-9} The tables in this section only present the F1-measure values for brevity reasons, however, we present the detailed precision and recall values in the Appendix section, Table \ref{tbl:classifier_results_vs_baseline_requirement}.
 
@@ -120,16 +120,6 @@ We also observe that it is possible for a single textual feature to indicate bot
 
 It is important to note here that although we present the top 10 textual features, the classification of the comments can be based on a combination of several textual features. In fact, two different types of textual features are used to classify the comments: positive weight features and negative weight features. Positive weight features will increase the total weight of the vote suggesting that the classification should be equal to the class of the feature (i.e., design or requirement debt). On the other hand, negative weight features will decrease the total weight of the vote suggesting a classification different from the class that the feature belongs (i.e, without technical debt). On average, the number of positive weight features used to classify design debt is 5,014 and 2,195 for requirement debt. The exact number of unique textual features used to detect \SATD for each project is shown in Table \ref{tbl:features_per_project}. The fact that our NLP-based approach leverages so many features helps to explain the significant improvement we are able to achieve over the state-of-the-art \revised{[citation removed]}{R2-1}, which only uses 62 patterns. In comparison, our approach leverages 35,828 unique textual features for design debt and 34,056 unique textual features to detect requirement debt.
 
-\begin{figure*}[!thb]
-	\centering
-	\subfigure[Ant Design Debt Classification]{\includegraphics[width=0.49\textwidth]{figures/design_ant.pdf}
-		\label{fig:design_ant_result}}
-	\subfigure[ArgoUml Requirement Debt Classification]{\includegraphics[width=0.49\textwidth]{figures/implementation_argo.pdf}
-		\label{fig:implementation_argo_result}}
-	\caption{F1-measure Achieved per Iteration }
-\end{figure*}
-
-
 \begin{table*}[!hbt]
     \begin{center}
         \caption{Number of Unique Textual Features Use to Detect Design and Requirement Debt for Each Project}
@@ -159,6 +149,23 @@ It is important to note here that although we present the top 10 textual feature
     \end{center}    
 \end{table*}
 
+\begin{figure*}[!thb]
+	\centering
+	\subfigure[Ant Design Debt Classification]{\includegraphics[width=0.49\textwidth]{figures/design_ant.pdf}
+		\label{fig:design_ant_result}}
+        \subfigure[Design Debt Average Percentage of F1-measure]{\includegraphics[width=0.49\textwidth]{figures/design_percentage_f1_measure.pdf}
+    \label{fig:design_percentage_f1_measure}}
+
+    
+	\subfigure[ArgoUml Requirement Debt Classification]{\includegraphics[width=0.49\textwidth]{figures/implementation_argo.pdf}
+		\label{fig:implementation_argo_result}}
+        \subfigure[Requirement Debt]{\includegraphics[width=0.49\textwidth]{figures/requirement_percentage_f1_measure.pdf}
+    \label{fig:requirement_percentage_f1_measure}}
+	\caption{F1-measure Achieved per Iteration }
+\end{figure*}
+
+
+
 \conclusionbox{We find the that design and requirement debt have their own textual features that best indicate such \SATD comments. For design debt, the best indicative textual features indicate sloppy or mediocre source code, whereas for requirement debt they relate to the need to enhance or complete the implementation in the future.}
 
 \vspace{3mm}
@@ -169,7 +176,7 @@ It is important to note here that although we present the top 10 textual feature
 
 \noindent \textbf{Approach:} To answer our research question, \revised{we conducted two different experiments. On both of them we followed a systematic process where we incrementally add training data and evaluate the performance of the classification. However, for the first experiment we added training data in a per-project basis (i.e., a variable number of comments all belonging to the same project at the same time), whereas for the second experiment, we added data 100 comments at a time regardless of the project that it belongs. 
 
-To execute the fist experiment, we use one project as testing data, and the remaining nine projects to train, since we have 10 projects in our dataset.}{R2-14} However, we do not train the \revised{maximum entropy classifier}{R2-11} with all nine projects, instead, we add each project incrementally. We repeated this process for each project and report on our findings.
+To execute the first experiment, we use one project as testing data, and the remaining nine projects to train, since we have 10 projects in our dataset.}{R2-14} However, we do not train the \revised{maximum entropy classifier}{R2-11} with all nine projects, instead, we add each project incrementally. We repeated this process for each project and report on our findings.
 
 \revised{It is important to notice that the order we added each project was not aleatory. After some experimentation we decided that the best way to train the max entropy classifier is to add first to the training dataset projects with more of the \SATD comments being identified. This way we could achieve better classification performance quicker. Furthermore, adding projects in a randomly fashion would impact the classification performance and prevent us to properly analyze the results of the first experiment.}{R2-15}
 
@@ -181,18 +188,18 @@ For example, if the maximum F1-measure is 0.85 and it is achieved in the eighth 
 
 For this experiment, to determine how much data is required to effectively identify \SATD comments we also compute the F1-measure after each iteration and record the iteration that achieves the highest F1-measure. However, instead of recording the number of projects that were used to train the dataset we report the number of comments that was used to achieve this F1-measure. The number of comments is computed in multiples of 100, due to the size of each batch added to the training dataset.
 
-\noindent \textbf{Per-project based experiment results - design debt:}}{R2-14} Figure~\ref{fig:design_ant_result} shows the F1-measure using different sizes of training data for the Ant project. Due to space, we discuss the results for a representative project (Ant) in this section, however, figures for all projects are provided in the Appendix (Figures~\ref{fig:design_argo} -~\ref{fig:implementation_sql}). From Figure~\ref{fig:design_ant_result}, we find that the maximum F1-measure improves as we increase the number of projects (i.e., iterations), achieving the highest F1-measure in the seventh iteration and slightly decreasing afterwards. The horizontal lines in the figure show the 80\% and 90\% of the highest F1-measure. We can see from Figure~\ref{fig:design_ant_result} that with 1,499 comments (i.e., from 3 projects) and 1,815 comments (i.e., from 4 projects), we can achieve 80\% and 90\% of the highest F1-measure, respectively. This amounts to a reduction of  37.6\% and 24.5\% in training data to achieve 80\% and 90\% of the maximum F1-measure, respectively. Considering the tradeoff in accuracy versus the amount of training data, for Ant, using only 3 or 4 projects provides the best tradeoff.
+\noindent \textbf{Per-project based experiment results - design debt:}}{R2-14} Figure~\ref{fig:design_ant_result} shows the F1-measure using different sizes of training data for the Ant project. Due to space, we discuss the results for a representative project (Ant) in this section, however, \revised{Figure~\ref{fig:design_percentage_f1_measure} presents the maximum percentage average achieved for all projects in each one of the analyzed iterations.}{R3-9}. From Figure~\ref{fig:design_ant_result}, we find that the maximum F1-measure improves as we increase the number of projects (i.e., iterations), achieving the highest F1-measure in the seventh iteration and slightly decreasing afterwards. The horizontal lines in the figure show the 80\% and 90\% of the highest F1-measure. We can see from Figure~\ref{fig:design_ant_result} that with 1,499 comments (i.e., from 3 projects) and 1,815 comments (i.e., from 4 projects), we can achieve 80\% and 90\% of the highest F1-measure, respectively. This amounts to a reduction of  37.6\% and 24.5\% in training data to achieve 80\% and 90\% of the maximum F1-measure, respectively. Considering the tradeoff in accuracy versus the amount of training data, for Ant, using only 3 or 4 projects provides the best tradeoff.
 
-We analyzed all iterations from all projects to determine the iterations that achieve the best F1-measure performance. To measure that, we calculate the average percentage of the maximum F1-measure for each iteration. For example, we take the average percentage of the maximum F1-measure achieved during the first iteration for all projects, then we calculate the same value for all second iterations and so on. We find that, the best performance is achieved during the eighth iteration, with an average maximum F1-measure of 96.57\% using (on average) 2,353 comments to create the training dataset. In comparison, the ninth iteration has an average  maximum F1-measure of 95.99\%, which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432).
+We analyzed all iterations from all projects to determine the iterations that achieve the best F1-measure performance. To measure that, we calculate the average percentage of the maximum F1-measure for each iteration\revised{as shown in Figure~\ref{fig:design_percentage_f1_measure}}{R3-9}. For example, we take the average percentage of the maximum F1-measure achieved during the first iteration for all projects, then we calculate the same value for all second iterations and so on. We find that, the best performance is achieved during the eighth iteration, with an average maximum F1-measure of 96.57\% using (on average) 2,353 comments to create the training dataset. In comparison, the ninth iteration has an average  maximum F1-measure of 95.99\%, which is slightly lower than the average obtained in the eighth iteration, and uses more comments in the training dataset (i.e., 2,432).
 
 Table \ref{tbl:design_iteration_performance} shows the average percentage of the maximum F1-measure for each iteration. The first column shows the iteration number. The second column shows the average percentage of the maximum F1-measure achieved for each iteration. The third column presents the delta of the average percentage of the maximum F1-measure between one iteration and the previous one. The fourth column shows the average number of comments used in the training dataset of that specific iteration. From Table~\ref{tbl:design_iteration_performance} we observe that, on average, we can achieve more than 80\% and 90\% of the maximum F1-measure in the second and third iterations, respectively. To achieve more than 80\% and 90\% of the maximum F1-measure, we require 1,106 (49.13\% of total comments required in seventh iteration) and 1,444 (64.14\% of total comments required in seventh iteration) comments, respectively. Moreover, we see that the second and third iterations provide the highest delta between iterations.
 
 \begin{figure*}[!thb]
     \centering
     \subfigure[Design Debt]{\includegraphics[width=0.49\textwidth]{figures/appendix/ten_fold_validation_design/ten_fold_validation_average_100.pdf}
-        \label{fig:design_debt_per_comment_average}}
+    \label{fig:design_debt_per_comment_average}}
     \subfigure[Requirement Debt]{\includegraphics[width=0.49\textwidth]{figures/appendix/ten_fold_validation_requirement/ten_fold_validation_average_100.pdf}
-        \label{fig:requirement_debt_per_comment_average}}
+    \label{fig:requirement_debt_per_comment_average}}
     \caption{F1-measure Achieved per Iteration (Per-comment base) }
 \end{figure*}
 
@@ -205,7 +212,7 @@ The number of design \SATD comments needed to achieve 80\% and 90\% of the maxim
 
 Figure \ref{fig:implementation_argo_result} shows the F1-measure for different iterations in ArgoUML. The highest F1-measure of 0.65 is achieved in the third iteration. From Figure~\ref{fig:implementation_argo_result}, we observe that we achieve more than 80\% of the highest F1-measure in the first iteration and more than 90\% in the second and subsequents iterations. The reduction in comments is 28.64\% and 62.31\% for the 90\% and 80\% of the maximum F1-measure, respectively.
 
-Table \ref{tbl:requirement_iteration_performance} shows the average percentage of the maximum F1-measure for each iteration. Unlike the case of design debt, for requirement debt, the best F1-measure is achieved in the first iteration. This shows that using as few as 380 comments, we can effectively detect requirement \SATD.
+Table \ref{tbl:requirement_iteration_performance} shows the average percentage of the maximum F1-measure for each iteration. Unlike the case of design debt, for requirement debt, the best F1-measure is achieved in the first iteration. This shows that using as few as 380 comments, we can effectively detect requirement \SATD\revised{as we can also see from Figure~\ref{fig:requirement_percentage_f1_measure}.}{R3-9}.
 
 \begin{table}[!thb]
     \begin{center}
@@ -251,7 +258,7 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 	\end{center}    
 \end{table}
 
-\revised{\noindent \textbf{Per-project based experiment results - requirement debt:} Figure~\ref{fig:requirement_debt_per_comment_average} shows the ten fold average F1-measure obtained while identifying requirement \SATD. As intuitively expected, the F1-measure increases as we add more data into the training dataset, and again the biggest improvement happens around the first 10k of comments. For requirement \SATD we achieved 80\% of the maximum F1-measure using 2,600 comments and 90\% of the maximum F1-measure with 11,800. During this experiment we increase the size of the training dataset 100 comments per time, and within each batch of 100 comments we added 2 requirement \SATD comments to keep the same approximate ratio of the total requirement \SATD and without technical debt comments (i.e., $\frac{757}{58,122}$) until we have added all requirement \SATD comments available to train. While training the dataset with 2,600 comments (80\% of the maximum F1-measure) we are in fact adding 52 requirement \SATD comments, whereas to achieve 90\% of the maximum F1-measure we used 236 requirement \SATD comments. The maximum F1-measure achieved was 0.753 using 51,300 comments of which 675 were requirement \SATD, and therefore, this amounts to a reduction of 92.29\% and 65.03\% in training data to achieve 80\% and 90\% of the maximum F1-measure.}{R2-14}
+\revised{\noindent \textbf{Per-comment based experiment results - requirement debt:} Figure~\ref{fig:requirement_debt_per_comment_average} shows the ten fold average F1-measure obtained while identifying requirement \SATD. As intuitively expected, the F1-measure increases as we add more data into the training dataset, and again the biggest improvement happens around the first 10k of comments. For requirement \SATD we achieved 80\% of the maximum F1-measure using 2,600 comments and 90\% of the maximum F1-measure with 11,800. During this experiment we increase the size of the training dataset 100 comments per time, and within each batch of 100 comments we added 2 requirement \SATD comments to keep the same approximate ratio of the total requirement \SATD and without technical debt comments (i.e., $\frac{757}{58,122}$) until we have added all requirement \SATD comments available to train. While training the dataset with 2,600 comments (80\% of the maximum F1-measure) we are in fact adding 52 requirement \SATD comments, whereas to achieve 90\% of the maximum F1-measure we used 236 requirement \SATD comments. The maximum F1-measure achieved was 0.753 using 51,300 comments of which 675 were requirement \SATD, and therefore, this amounts to a reduction of 92.29\% and 65.03\% in training data to achieve 80\% and 90\% of the maximum F1-measure.}{R2-14}
   
 The results of this RQ show that, contrary to our initial intuition, more data may not always result in higher classification accuracy. In fact, we find that in some cases, the addition of more comments can decrease the performance of the classifier. One of the reasons for this is that the weight of features is given through empirical probability, and consequently features that appear more will have a higher weight. Although this is an effective process for the majority of the cases we studied, it can be misleading when classifying comments that have different contexts, i.e., in cross-project classification.
 
