@@ -72,7 +72,7 @@ It is important to note that the comment patterns approach has a high precision,
  
 That said, we find that for all projects, the F1-measure obtained by our approach surpasses the other approaches F1-measures. Our approach achieves a F1-measure between 0.091 - 0.804 with an average of 0.403, whereas the comment pattern approach achieves F1-measure in the range of 0.117 - 0.409 with an average of 0.067. In comparison, the simple (random) baseline ranges between 0.003 - 0.083, with an average of 0.022. Figure \ref{fig:f1_measure_comparison_requirement_debt} visualizes the performance comparison of the two approaches.\revised{We also test the F1-measure obtained by our approach with the other two baselines to determine if the differences in value are statistically significant. We find that the differences are indeed statistically significant (i.e., p\textless0.5) for the comment patterns and the random classifier baselines for both design and requirement \SATD.}{R3-6}
 
-Generally, it is clear that requirement \SATD is less common than design \SATD, which makes it more difficult to detect.\revised{ Nevertheless, our NLP-based approach provides a significant improvement over the comment patterns approach and the simple (random) baseline approach, with an average improvement of 7 and 18 times, respectively.}{R1-9} The tables in this section only present the F1-measure values for brevity reasons, however, we present the detailed precision and recall values in the Appendix section, Table \ref{tbl:classifier_results_vs_baseline_requirement}.
+Generally, it is clear that requirement \SATD is less common than design \SATD, which makes it more difficult to detect.\revised{ Nevertheless, our NLP-based approach provides a significant improvement over the comment patterns approach, with an average improvement of 6 times.}{R1-8} The tables in this section only present the F1-measure values for brevity reasons, however, we present the detailed precision and recall values in the Appendix section, Table \ref{tbl:classifier_results_vs_baseline_requirement}.
 
 \revised{\conclusionbox{We find that our NLP-based approach, is more effective in identifying self-admitted technical debt comments compared to the the current state-of-art approaches. We achieved an average F1-measure of 0.620 when identifying design debt (an average improvement of 2.3x over the state-of-the-art approach) and an average F1-measure of 0.403 when identifying requirement debt (an average improvement of 6x over the state-of-the-art approach).}}{R1-8}
 
@@ -99,11 +99,11 @@ For each analyzed project, we collect the features used to identify the \SATD co
         \toprule
         \textbf{Rank} & \textbf{Design Debt} & \textbf{Requirement Debt}  \\
         \midrule
-         \textbf{1}  & hack       &   todo              \\
-         \textbf{2}  & workaround &   needed            \\
-         \textbf{3}  & yuck!      &   implementation    \\
-         \textbf{4}  & kludge     &   fixme             \\
-         \textbf{5}  & stupidity  &   xxx               \\
+         \textbf{1}  & \textbf{hack}       &   \textbf{todo}     \\
+         \textbf{2}  & \textbf{workaround} &   \textbf{needed}   \\
+         \textbf{3}  & yuck!      &   \textbf{implementation}    \\
+         \textbf{4}  & kludge     &   \textbf{fixme}             \\
+         \textbf{5}  & stupidity  &   \textbf{xxx}               \\
          \textbf{6}  & needed?    &   ends?             \\
          \textbf{7}  & columns?   &   convention        \\
          \textbf{8}  & unused?    &   configurable      \\

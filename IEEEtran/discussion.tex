@@ -136,8 +136,6 @@ JMeter, for example, has 200 files that contain \SATD comments, and 143 of these
 We find that the code smell that overlaps the most with \SATD is Long Method. Intuitively, this is expected, since Long Method is a common code smell and may have multiple instances per file, because it is computed at method level.
 The overlap between files with \SATD and Long Method ranged from 43.6\% to 82\% of all the files containing \SATD comments, and considering all projects, the average overlap is 65\%. In addition, 44.2\% of the files with \SATD comments are also involved in God Class code smells, and 20.7\% in Feature Envy code smells. Taking all examined code smells in consideration we find that, on average, 69.7\% of files containing \SATD are also involved in at least one of the three examined code smells. 
 
-% talk to nikos ! So far, our analysis compares the intersection of files that contains \SATD comments and bad smells. However, this intersection not necessary means that the \SATD comments in the file are actually addressing the same issue pointed out by the static analysis tool. Therefore, we manually inspect a small sample of 12 overlapping files (i.e., four for each bad smell) and 12 non overlapping files to determine if the \SATD and static analysis tool are identifying the same thing or actually complementing each other.
-
 \begin{table*}[!thb]
     \begin{center}
         \caption{Static Analysis Tool and Self-admitted Technical Debt Overlap (Using JDeodorant)}
