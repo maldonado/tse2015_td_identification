@@ -6,7 +6,7 @@ import psycopg2
 import re
 
 
-password = sys.argv[1]
+
 
 
 execution_types = {  
@@ -15,7 +15,7 @@ execution_types = {
                      # 'DOCUMENTATION': {'DOCUMENTATION'}, 
                      'IMPLEMENTATION': {'IMPLEMENTATION'}, 
                      # 'TEST': {'TEST'},
-                     'WITHOUT_CLASSIFICATION': {'WITHOUT_CLASSIFICATION'}
+                     # 'WITHOUT_CLASSIFICATION': {'WITHOUT_CLASSIFICATION'}
 }
 
 try:
@@ -23,7 +23,7 @@ try:
 
     connection = None
     # connect to the database 
-    connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= password)
+    connection = psycopg2.connect(host='localhost', port='5432', database='comment_classification', user='evermal', password= '')
     cursor = connection.cursor()
 
     for key, value in execution_types.iteritems():
@@ -36,17 +36,22 @@ try:
 
         for test_project_result in test_projects:
             test_project = test_project_result[0]
+            print "project name " + test_project
+
             cursor.execute("select count(*) from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname = '"+test_project+"' and a.classification is not null")
             total_comments = cursor.fetchone()
-            print total_comments
+            print "total_comments" + str(total_comments)
+
             cursor.execute("select count(*) from processed_comment a, comment_class b where a.commentclassid = b.id  and b.projectname = '"+test_project+"' and a.classification in ('"+execution_td_type+"')")
             technical_debt_comments = cursor.fetchone();
-            print technical_debt_comments
+            
+            print "technical_debt_comments " + str(technical_debt_comments )
 
             if not "WITHOUT_CLASSIFICATION" in execution_td_type :
                 if technical_debt_comments[0] != 0:          
-                    randon_precision = float(technical_debt_comments[0]) / float((total_comments[0] - technical_debt_comments[0]))
-                    print randon_precision
+                    randon_precision = float(technical_debt_comments[0]) / float(total_comments[0])
+                    # randon_precision = float(technical_debt_comments[0]) / float((total_comments[0] - technical_debt_comments[0]))
+                    # print randon_precision
                     randon_recall = 0.5
                     randon_f1 = ((randon_precision * randon_recall) / (randon_precision + randon_recall)) * 2
                 else:
@@ -64,7 +69,7 @@ try:
                 precision = 0.000
                 f1measure = 0.000
 
-                cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('"+execution_td_type+"', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
+                cursor.execute("select a.treated_commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('"+execution_td_type+"', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
                 # cursor.execute("select a.commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and b.projectname like '%"+test_project+"%'")
                 comments = cursor.fetchall()
 
@@ -86,6 +91,14 @@ try:
                     precision = float(true_positive) / float((true_positive + false_positive))
                     f1measure = ((precision * recall) / (precision + recall)) * 2
 
+                print "first case"
+                print "randon_recall:"+str(randon_recall)
+                print "randon_precision:"+str(randon_precision)
+                print "randon_f1:"+str(randon_f1)
+                print "-------"
+                print "rounded randon_recall:"+str(round(randon_recall, 3))
+                print "rounded randon_precision:"+str(round(randon_precision, 3))
+                print "rounded randon_f1:"+str(round(randon_f1, 3))
                 cursor.execute("update classifier_results set classifiedRandomPrecision = '"+str(round(randon_precision, 3))+"', classifiedRandomRecall = '"+str(round(randon_recall, 3))+"' , classifiedRandomF1 = '"+str(round(randon_f1, 3))+"', baselineprecision = '"+str(round(precision, 3))+"', baselinerecall = '"+str(round(recall, 3))+"' , baselinef1 = '"+str(round(f1measure, 3))+"'  where projectname = '"+test_project+"' and category = '"+execution_td_type+"' and classificationid = " + classification_id ) 
 
             else:
@@ -93,6 +106,15 @@ try:
                 print randon_precision
                 randon_recall = 0.5
                 randon_f1 = ((randon_precision * randon_recall) / (randon_precision + randon_recall)) * 2
+                
+                print "second case"
+                print "randon_recall"+str(randon_recall)
+                print "randon_precision"+str(randon_precision)
+                print "randon_f1"+str(randon_f1)
+                print "-------"
+                print "randon_recall"+str(round(randon_recall, 3))
+                print "randon_precision"+str(round(randon_precision, 3))
+                print "randon_f1"+str(round(randon_f1, 3))
                 cursor.execute("update classifier_results set withoutclassificatiorandomprecision = '"+str(round(randon_precision, 3))+"', withoutclassificatiorandomrecall = '"+str(round(randon_recall, 3))+"' , withoutclassificatiorandomf1 = '"+str(round(randon_f1, 3))+"'  where projectname = '"+test_project+"' and classificationid = "+classification_id)
                 
 except Exception, e:
@@ -100,4 +122,5 @@ except Exception, e:
     connection.rollback()
 
 finally:
+    # pass
     connection.commit()

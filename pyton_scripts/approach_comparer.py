@@ -35,8 +35,8 @@ for test_project_result in test_projects:
     precision = 0.000
     f1measure = 0.000
 
-    cursor.execute("select a.treated_commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('IMPLEMENTATION', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
-    # cursor.execute("select a.treated_commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('DESIGN', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
+    # cursor.execute("select a.treated_commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('IMPLEMENTATION', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
+    cursor.execute("select a.treated_commenttext, a.classification from processed_comment a , comment_class b where a.commentclassid= b.id and a.classification in ('DESIGN', 'WITHOUT_CLASSIFICATION','BUG_FIX_COMMENT') and b.projectname like '%"+test_project+"%'")
     
     comments = cursor.fetchall()
     for comment in comments:
