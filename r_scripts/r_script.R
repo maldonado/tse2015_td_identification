@@ -1,7 +1,7 @@
 # figure 2 
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1-Measure for all projects (design debt)
-mydata <- data.frame(Ant=c(0.517,0.237,0.044),ArgoUML=c(0.814,0.107,0.144),Columba=c(0.601,0.264,0.037),EMF=c(0.470,0.231,0.034),Hibernate=c(0.744,0.227,0.193),JEdit=c(0.509,0.342,0.037),JFreeChart=c(0.492,0.282,0.077),Jmeter=c(0.731,0.194,0.072),JRuby=c(0.783,0.620,0.123),SQuirrel=c(0.540,0.175,0.055))
+mydata <- data.frame(Ant=c(0.517,0.237,0.044),ArgoUML=c(0.814,0.107,0.144),Columba=c(0.601,0.264,0.037),EMF=c(0.470,0.231,0.034),Hibernate=c(0.744,0.227,0.193),JEdit=c(0.509,0.342,0.037),JFreeChart=c(0.492,0.282,0.077),JMeter=c(0.731,0.194,0.072),JRuby=c(0.783,0.620,0.123),SQuirrel=c(0.540,0.175,0.055))
 barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
 legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
@@ -11,7 +11,7 @@ par("mar"=c(5,4,4,1)+3)
 # figure 2 
 # size 29 x 15
 # generate figure to compare f1measure, baseline f1measure and rdn F1-Measure for all projects (requirement debt)
-mydata <- data.frame(Ant=c(0.154,0.000,0.006),ArgoUML=c(0.595,0.000,0.079),Columba=c(0.804,0.117,0.013),EMF=c(0.381,0.000,0.007),Hibernate=c(0.476,0.000,0.041),JEdit=c(0.091,0.000,0.003),JFreeChart=c(0.321,0.000,0.007),Jmeter=c(0.237,0.148,0.005),JRuby=c(0.435,0.409,0.043),SQuirrel=c(0.541,0.000,0.014))
+mydata <- data.frame(Ant=c(0.154,0.000,0.006),ArgoUML=c(0.595,0.000,0.079),Columba=c(0.804,0.117,0.013),EMF=c(0.381,0.000,0.007),Hibernate=c(0.476,0.000,0.041),JEdit=c(0.091,0.000,0.003),JFreeChart=c(0.321,0.000,0.007),JMeter=c(0.237,0.148,0.005),JRuby=c(0.435,0.409,0.043),SQuirrel=c(0.541,0.000,0.014))
 barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
 legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
@@ -78,7 +78,7 @@ legend(6, 1, c("NLP-based", "Comment patterns", "Random classifier" ), col= c("r
 # figure 4a 
 # size 29 x 15
 # generate figure to compare f1measure of different classification algorithms for design debt
-mydata <- data.frame(Ant= c(0.517 , 0.563 , 0.134 ),ArgoUML= c(0.814 , 0.822 , 0.525 ),Columba= c(0.601 , 0.627 , 0.294 ),EMF= c(0.470 , 0.488 , 0.106 ),Hibernate= c(0.744 , 0.767 , 0.435 ),JEdit= c(0.509 , 0.480 , 0.353 ),JFreeChart= c(0.492 , 0.495 , 0.224 ),Jmeter= c(0.731 , 0.737 , 0.350 ),JRuby= c(0.783 , 0.811 , 0.429 ),SQuirrel= c(0.540 , 0.558 , 0.233 ))
+mydata <- data.frame(Ant= c(0.517 , 0.563 , 0.134 ),ArgoUML= c(0.814 , 0.822 , 0.525 ),Columba= c(0.601 , 0.627 , 0.294 ),EMF= c(0.470 , 0.488 , 0.106 ),Hibernate= c(0.744 , 0.767 , 0.435 ),JEdit= c(0.509 , 0.480 , 0.353 ),JFreeChart= c(0.492 , 0.495 , 0.224 ),JMeter= c(0.731 , 0.737 , 0.350 ),JRuby= c(0.783 , 0.811 , 0.429 ),SQuirrel= c(0.540 , 0.558 , 0.233 ))
 barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
 legend(21, 1, c("Logistic Regression",  "Binary", "Naive Bayes"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
@@ -92,7 +92,7 @@ par("mar"=c(5,4,4,1)+3)
 # figure 4b 
 # size 29 x 15
 # generate figure to compare f1measure of different classification algorithms for requirement debt
-mydata <- data.frame(Ant= c(0.154, 0.207 , 0.057),ArgoUML= c(0.595, 0.611 , 0.022),Columba= c(0.804, 0.804 , 0.207),EMF= c(0.381, 0.381 , 0.018),Hibernate= c(0.476, 0.466 , 0.078),JEdit= c(0.091, 0.095 , 0.022),JFreeChart= c(0.321, 0.259 , 0.018),Jmeter= c(0.237, 0.268 , 0.013),JRuby= c(0.435, 0.442 , 0.109),SQuirrel= c(0.541, 0.476 , 0.036))
+mydata <- data.frame(Ant= c(0.154, 0.207 , 0.057),ArgoUML= c(0.595, 0.611 , 0.022),Columba= c(0.804, 0.804 , 0.207),EMF= c(0.381, 0.381 , 0.018),Hibernate= c(0.476, 0.466 , 0.078),JEdit= c(0.091, 0.095 , 0.022),JFreeChart= c(0.321, 0.259 , 0.018),JMeter= c(0.237, 0.268 , 0.013),JRuby= c(0.435, 0.442 , 0.109),SQuirrel= c(0.541, 0.476 , 0.036))
 barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
 legend(21, 1, c("Logistic Regression",  "Binary", "Naive Bayes"), bty = "n" , cex=2.3, fill=terrain.colors(3))
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
