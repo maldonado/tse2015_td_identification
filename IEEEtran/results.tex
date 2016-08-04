@@ -117,31 +117,41 @@ For each analyzed project, we collect the features used to identify the \SATD co
 \end{table}
 
 From Table~\ref{tbl:top_ten_features} we observe that the top ranked textual features for design \SATD, i.e., \textit{hack}, \textit{workaround}, \textit{yuck!}, \textit{kludge} and \textit{stupidity}, indicate sloppy code, or mediocre source code quality. For example, we have the following comment that was found in JMeter:
+\vspace{1mm}
 \begin{displayquote}
 \textit{``\textbf{Hack} to allow entire URL to be provided in host field''}
 \end{displayquote}
+\vspace{1mm}
 Other textual features, such as \textit{needed?}, \textit{unused?} and \textit{wtf?} are questioning the usefulness or utility of a specific source code fragment, as indicated by the following comment also found in JMeter:
+\vspace{1mm}
 \begin{displayquote}
 \textit{``TODO: - is this \textbf{needed?}''}
 \end{displayquote}
-
+\vspace{1mm}
 \revised{For requirement \SATD, the top ranked features, i.e., \textit{todo}, \textit{needed}, \textit{implementation}, \textit{fixme} and \textit{xxx} indicate the need to complete requirements in the future that are currently partially complete. An indicative example is the following one found in JRuby:
+\vspace{1mm}
 \begin{displayquote}
 \textit{``\textbf{TODO:} implement, won't do this now''}
 \end{displayquote}
+\vspace{1mm}
 Some of the remaining lower ranked textual features, such as \textit{convention}, \textit{configurable} and \textit{fudging} also indicate potential incomplete requirements, as shown in the following comments:
+\vspace{1mm}
 \begin{displayquote}
 \textit{``Need to calculate this... just \textbf{fudging} here for now''} [from JEdit]
 \end{displayquote}
+\vspace{1mm}
 \begin{displayquote}
 \textit{``could make this \textbf{configurable}''} [from JFreeChart]
 \end{displayquote}
+\vspace{1mm}
 \begin{displayquote}
 \textit{``TODO: This name of the expression language should be \textbf{configurable} by the user''} [from ArgoUML]
 \end{displayquote}
+\vspace{1mm}
 \begin{displayquote}
 \textit{``TODO: find a way to check the manifest-file, that is found by naming \textbf{convention}''} [from Apache Ant]
 \end{displayquote}
+\vspace{1mm}
 }{R1-11}
 
 It should be noted that the features highlighted in bold in Table~\ref{tbl:top_ten_features} appear in all top-10 lists extracted from each one of the ten training datasets, and therefore can be considered as more \textit{universal} features compared to the others.

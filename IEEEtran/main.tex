@@ -155,7 +155,7 @@ We believe that \SATD can be useful to prioritize the \textit{pay back} of debt 
 
 Despite the advantages of recovering technical debt from source code comments, the research in \SATD, thus far, heavily relies on the manual inspection of code comments. The current-state-of-the art approach~\cite{Potdar2014ICSME} uses 62 comment patterns (i.e., words and phrases) derived after the manual examination of more than 100K comments. The manual inspection of code comments is subject to reader bias, time consuming and, as any other manual task, and susceptible to errors. These limitations in the identification of \SATD comments renders the current state-of-the-art approach difficult to be applied in practice.
 
-Therefore, in this paper we investigate the efficiency of using Natural Language Processing (NLP) techniques to automatically detect the two most common types of \SATD, i.e., design and requirement debt. We analyze ten open source projects from different application domains, namely, Ant, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JMeter, JRuby and SQuirrel SQL. We extract and classify the source comments of these projects. Then, using the classified dataset we train the \revised{Stanford Classifier}{R2-11}~\cite{Manning2014ACL} to identify design and requirement \SATD.
+Therefore, in this paper we investigate the efficiency of using Natural Language Processing (NLP) techniques to automatically detect the two most common types of \SATD, i.e., design and requirement debt. We analyze ten open source projects from different application domains, namely, Ant, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JMeter, JRuby and SQuirrel SQL. We extract and classify the source comments of these projects. Then, using the classified dataset we train the \revised{Stanford Classifier}{R2-11}~\cite{manning2003optimization} to identify design and requirement \SATD.
 The advantages of the \revised{maximum entropy classifier}{R2-11} over keyword-based and pattern-based approaches, such as comment patterns, are twofold. First, the \revised{maximum entropy classifier}{R2-11} automatically extracts the most important features (i.e., words) for each class (i.e., design \SATD, requirement \SATD, and without technical debt) based on a classified training dataset given as input. Second, the \revised{maximum entropy classifier}{R2-11} apart from finding features that contribute positively to the classification of a comment in a given class, finds also features that contribute negatively to the classification of a comment in a given class.
 
 We perform a leave-one-out cross-project validation (i.e., we train on nine projects and test on one project). Our results show that we are able to  achieve an average F1-measure of 0.620 when identifying design \SATD, and an average F1-measure of 0.403 when identifying requirement \SATD. We compare the performance of our approach to a simple (random) baseline and the state-of-the-art approach used to detect \SATD~\cite{Potdar2014ICSME}. Our results show that on average, we outperform the state-of-the-art by\revised{2.3 times, when detecting design debt, and by 6 times when detecting requirement debt.}{R1-8}
@@ -176,14 +176,14 @@ The main contributions of our work are the following:
   %. We believe that these are good contributions to future work in the area, and to researchers who are willing to devise new approaches to address the problem of identifying technical debt through the use of code comments.
 \end{itemize}
 
-The rest of the paper is organized as follows. Section \ref{sec:approach} describes our approach. We setup our case study and present our
+The rest of the paper is organized as follows. Section \ref{sec:approach} describes our approach. We setup our experiment and present our
 results in Section \ref{sec:case_study_results}. We discuss the implications of our findings in Section \ref{sec:discussion}. In Section \ref{sec:related_work} we present the related work. Section \ref{sec:threats_to_validity} presents the threats to validity and Section \ref{sec:conclusion} presents our conclusions and future work.  
 
 \section{Approach}
 \label{sec:approach}
 \input{approach}
 
-\section{Case study Results}
+\section{Experiment Results}
 \label{sec:case_study_results}
 \input{results}
 
@@ -195,11 +195,11 @@ results in Section \ref{sec:case_study_results}. We discuss the implications of 
 \label{sec:related_work}
 \input{related_work}
 
-\section{Threats to validity}
+\section{Threats to Validity}
 \label{sec:threats_to_validity}
 \input{threats_to_validity}
 
-\section{Conclusion and Future work}
+\section{Conclusion and Future Work}
 \label{sec:conclusion}
 \input{conclusion}
 
