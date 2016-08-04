@@ -56,7 +56,7 @@
 
 % research questions 
 \newcommand{\rqi}{\textbf{RQ1. Is it possible to detect more accurately \SATD using NLP techniques?\\}}
-\newcommand{\rqii}{\textbf{RQ2. What are the most impacting words in the classification of \SATD?\\}}
+\newcommand{\rqii}{\textbf{RQ2. What are the most impactful words in the classification of \SATD?\\}}
 \newcommand{\rqiii}{\textbf{RQ3. How much training data is required to effectively detect \SATD?\\}}
 
 % commands for common terms in the text
@@ -112,7 +112,7 @@ E-mail: e\_silvam@encs.concordia.ca}}
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-The metaphor of technical debt was introduced to express the trade off between productivity and quality, i.e., when developers take shortcuts or perform quick hacks. More recently, our work has shown that it is possible to detect technical debt using source code comments (i.e., self-admitted technical debt), and that the most common types of self-admitted technical debt are design and requirement debt. However, all approaches thus far heavily depend on the manual classification of source code comments. In this paper, we present an approach to automatically identify design and requirement self-admitted technical debt using Natural Language Processing (NLP). We study 10 open source projects: Ant, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JMeter, JRuby and SQuirrel SQL and find that 1) we are able to effectively identify self-admitted technical debt, significantly outperforming state-of-the-art techniques; 2) words related to sloppy or mediocre source code are the best indicators of design debt, whereas for requirement debt, words related to enhancing or completing tasks are the best indicators; and 3) we can effectively identify self-admitted technical debt using as little a small training dataset of 1,444 comments for design debt comments and 380 comments to detect requirement debt.
+The metaphor of technical debt was introduced to express the trade off between productivity and quality, i.e., when developers take shortcuts or perform quick hacks. More recently, our work has shown that it is possible to detect technical debt using source code comments (i.e., self-admitted technical debt), and that the most common types of self-admitted technical debt are design and requirement debt. However, all approaches thus far heavily depend on the manual classification of source code comments. In this paper, we present an approach to automatically identify design and requirement self-admitted technical debt using Natural Language Processing (NLP). We study 10 open source projects: Ant, ArgoUML, Columba, EMF, Hibernate, JEdit, JFreeChart, JMeter, JRuby and SQuirrel SQL and find that 1) we are able to accurately identify self-admitted technical debt, significantly outperforming the current state-of-the-art based on fixed keywords and phrases; 2) words related to sloppy code or mediocre source code quality are the best indicators of design debt, whereas words related to the need to complete a partially implemented requirement in the future are the best indicators of requirement debt; and 3) we can effectively identify self-admitted technical debt using as little a small training dataset of 1,444 comments for design debt comments and 380 comments to detect requirement debt.
 
 %To facilitate future work we make our datasets of classified comments publicly available, which are composed of more than 62,000 manually classified comments. 
 \end{abstract}
