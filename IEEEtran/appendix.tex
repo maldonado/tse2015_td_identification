@@ -4,12 +4,13 @@
 
 \subsection*{Detailed Precision and Recall Values}
 
-In Section~\ref{sec:case_study_results}, we presented the F1-measures for all projects when answering our RQs. In this appendix, we added the detailed precision and recall values that make up the F1-measures.
+In Section~\ref{sec:case_study_results}, we presented the F1-measure values for all projects when answering our research questions. In this appendix, we add the detailed precision and recall values that are used to compute the F1-measure values.
 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
     \begin{center}
         \caption{Detailed Comparison of F1-measure Between the NLP-based, the Comment Patterns and the Random Baseline Approaches for Design Debt}
+        \vspace{-3mm}
         \label{tbl:classifier_results_vs_baseline_design}
         \begin{tabular}{l| c c c|| c c c|| c c c}
         \toprule
@@ -42,6 +43,7 @@ In Section~\ref{sec:case_study_results}, we presented the F1-measures for all pr
   \begin{minipage}{\textwidth}
     \begin{center}
         \caption{Detailed Comparison of F1-measure Between the NLP-based, the Comment Patterns and the Random Baseline Approaches for Requirement Debt}
+        \vspace{-3mm}
         \label{tbl:classifier_results_vs_baseline_requirement}
         \begin{tabular}{l| c c c|| c c c|| c c c}
         \toprule
@@ -314,14 +316,15 @@ In Section~\ref{sec:case_study_results}, we presented the F1-measures for all pr
 
 
 \clearpage
-\subsection*{Detailed Precision and Recall Values When Different Underlying Classifiers are Used}
+\subsection*{Detailed Precision and Recall Values When Using Different Classifiers.}
 
-When presenting the results in Section~\ref{sec:underlying_classifier}, we only presented the F1-measures. Here, we present the detailed precision and recall values that make up the F1-measures presented earlier.
+When discussing the results in Section~\ref{sec:underlying_classifier}, we only presented the F1-measure values. Here, we present the detailed precision and recall values that are used to compute the F1-measure values presented earlier.
 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
     \begin{center}
-        \caption{Comparison Between Different Classifiers Algorithms for Design Debt}
+        \caption{Comparison Between Different Classifiers for Design Debt}
+        \vspace{-3mm}
         \label{tbl:improvement_f1measure_between_classifiers_design}
         \begin{tabular}{l| c c c|| c c c|| c c c }
         \toprule
@@ -354,7 +357,8 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
     \begin{center}
-        \caption{Comparison Between Different Classifiers Algorithms for Requirement Debt}
+        \caption{Comparison Between Different Classifiers for Requirement Debt}
+        \vspace{-3mm}
         \label{tbl:improvement_f1measure_between_classifiers_requirement}
         \begin{tabular}{l| c c c|| c c c|| c c c }
         \toprule
@@ -412,33 +416,33 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
 %   \end{minipage}    
 % \end{table} 
 
-\begin{table}[h]
-  \begin{minipage}{\textwidth}
-    \begin{center}
-        \caption{Intersection Between Static Analysis Tools and Self-admitted Technical Debt Using JDeodorant }
-        \label{tbl:intersection_between_static_analysis_tools_and_self_admitted_technical_debt_jdeodorant }
-        \begin{tabular}{l| c c c c c c c c c c}
-        \toprule
-        \thead{Project} & \thead{\# of files} & \thead{\# of \\files with \\ bad \\smell} & \thead{\# of \\files with \\ long \\method } & \thead{\# of \\files with \\ feature \\envy } & \thead{\# of \\files with \\ god \\class } & \thead{\# of \\files with\\ SATD } & \thead{\# of SATD\\ files with\\ bad \\smell } & \thead{\# of SATD \\files with \\ long \\method } & \thead{\# of SATD \\files with \\ feature \\envy} & \thead{\# of SATD\\ files with \\ god \\class}\\
-        \midrule
-        
-        Apache Ant     & 1,475 & 611 & 508 & 110 & 365 & 73  & 63  & 57  & 19 & 42    \\
-        Apache JMeter  & 1,181 & 563 & 487 & 113 & 241 & 200 & 161 & 143 & 41 & 97    \\
-        ArgoUML        & 2,610 & 729 & 654 & 62  & 249 & 419 & 283 & 255 & 43 & 128   \\
-        Columba        & 1,711 & 592 & 505 & 65  & 244 & 117 & 89  & 76  & 18 & 47    \\
-        EMF            & 1,458 & 242 & 362 & 50  & 231 & 53  & 28  & 33  & 14 & 28    \\
-        Hibernate      & 1,356 & 330 & 216 & 69  & 190 & 206 & 116 & 90  & 44 & 72    \\
-        JEdit          & 800   & 310 & 268 & 57  & 133 & 108 & 82  & 74  & 23 & 47    \\
-        JFreeChart     & 1,065 & 582 & 523 & 54  & 231 & 106 & 92  & 87  & 20 & 52    \\
-        JRuby          & 1,486 & 240 & 319 & 87  & 218 & 163 & 85  & 107 & 43 & 79    \\
-        SQuirrel       & 3,108 & 824 & 566 & 204 & 466 & 156 & 99  & 82  & 32 & 58    \\
-                       
-
-        \bottomrule
-        \end{tabular}
-    \end{center}
-  \end{minipage}    
-\end{table} 
+%\begin{table}[h]
+%  \begin{minipage}{\textwidth}
+%    \begin{center}
+%        \caption{Intersection Between Static Analysis Tools and Self-admitted Technical Debt Using JDeodorant }
+%        \label{tbl:intersection_between_static_analysis_tools_and_self_admitted_technical_debt_jdeodorant }
+%        \begin{tabular}{l| c c c c c c c c c c}
+%        \toprule
+%        \thead{Project} & \thead{\# of files} & \thead{\# of \\files with \\ bad \\smell} & \thead{\# of \\files with \\ long \\method } & \thead{\# of \\files with \\ feature \\envy } & \thead{\# of \\files with \\ god \\class } & \thead{\# of \\files with\\ SATD } & \thead{\# of SATD\\ files with\\ bad \\smell } & \thead{\# of SATD \\files with \\ long \\method } & \thead{\# of SATD \\files with \\ feature \\envy} & \thead{\# of SATD\\ files with \\ god \\class}\\
+%        \midrule
+%        
+%        Apache Ant     & 1,475 & 611 & 508 & 110 & 365 & 73  & 63  & 57  & 19 & 42    \\
+%        Apache JMeter  & 1,181 & 563 & 487 & 113 & 241 & 200 & 161 & 143 & 41 & 97    \\
+%        ArgoUML        & 2,610 & 729 & 654 & 62  & 249 & 419 & 283 & 255 & 43 & 128   \\
+%        Columba        & 1,711 & 592 & 505 & 65  & 244 & 117 & 89  & 76  & 18 & 47    \\
+%        EMF            & 1,458 & 242 & 362 & 50  & 231 & 53  & 28  & 33  & 14 & 28    \\
+%        Hibernate      & 1,356 & 330 & 216 & 69  & 190 & 206 & 116 & 90  & 44 & 72    \\
+%        JEdit          & 800   & 310 & 268 & 57  & 133 & 108 & 82  & 74  & 23 & 47    \\
+%        JFreeChart     & 1,065 & 582 & 523 & 54  & 231 & 106 & 92  & 87  & 20 & 52    \\
+%        JRuby          & 1,486 & 240 & 319 & 87  & 218 & 163 & 85  & 107 & 43 & 79    \\
+%        SQuirrel       & 3,108 & 824 & 566 & 204 & 466 & 156 & 99  & 82  & 32 & 58    \\
+%                       
+%
+%        \bottomrule
+%        \end{tabular}
+%    \end{center}
+%  \end{minipage}    
+%\end{table} 
 
 
 % \begin{table}[h]
@@ -774,32 +778,32 @@ When presenting the results in Section~\ref{sec:underlying_classifier}, we only 
 % \end{table*}
 
 
-\clearpage
-\begin{table}[h]
-  \begin{minipage}{\textwidth}
-    \begin{center}
-        \caption{Detailed NLP-based Approach Performance Considering Different Types of Self-admitted Technical Debt}
-        \label{tbl:detailed_nlpbased_performance_comparison}
-        \begin{tabular}{l| c c c}
-        \toprule
-        
-        \textbf{\thead{Project}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} \\
-        \midrule
-        \textbf{Ant}           &  0.547 & 0.481 &  0.512 \\
-        \textbf{ArgoUML}       &  0.822 & 0.815 &  0.819 \\
-        \textbf{Columba}       &  0.754 & 0.746 &  0.750 \\
-        \textbf{EMF}           &  0.581 & 0.383 &  0.462 \\
-        \textbf{Hibernate}     &  0.844 & 0.697 &  0.763 \\
-        \textbf{JEdit}         &  0.745 & 0.333 &  0.461 \\
-        \textbf{JFreeChart}    &  0.611 & 0.442 &  0.513 \\
-        \textbf{JMeter}        &  0.727 & 0.703 &  0.715 \\
-        \textbf{JRuby}         &  0.801 & 0.746 &  0.773 \\
-        \textbf{SQuirrel}      &  0.641 & 0.552 &  0.593 \\
-        \bottomrule
-        \end{tabular}
-    \end{center}
-  \end{minipage}    
-\end{table}
+%\clearpage
+%\begin{table}[h]
+%  \begin{minipage}{\textwidth}
+%    \begin{center}
+%        \caption{Detailed NLP-based Approach Performance Considering Different Types of Self-admitted Technical Debt}
+%        \label{tbl:detailed_nlpbased_performance_comparison}
+%        \begin{tabular}{l| c c c}
+%        \toprule
+%        
+%        \textbf{\thead{Project}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} \\
+%        \midrule
+%        \textbf{Ant}           &  0.547 & 0.481 &  0.512 \\
+%        \textbf{ArgoUML}       &  0.822 & 0.815 &  0.819 \\
+%        \textbf{Columba}       &  0.754 & 0.746 &  0.750 \\
+%        \textbf{EMF}           &  0.581 & 0.383 &  0.462 \\
+%        \textbf{Hibernate}     &  0.844 & 0.697 &  0.763 \\
+%        \textbf{JEdit}         &  0.745 & 0.333 &  0.461 \\
+%        \textbf{JFreeChart}    &  0.611 & 0.442 &  0.513 \\
+%        \textbf{JMeter}        &  0.727 & 0.703 &  0.715 \\
+%        \textbf{JRuby}         &  0.801 & 0.746 &  0.773 \\
+%        \textbf{SQuirrel}      &  0.641 & 0.552 &  0.593 \\
+%        \bottomrule
+%        \end{tabular}
+%    \end{center}
+%  \end{minipage}    
+%\end{table}
 
 % \begin{table}[!thb]
 %     \begin{center}
