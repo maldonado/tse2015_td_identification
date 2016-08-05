@@ -278,3 +278,20 @@ text(50000, y=(0.0850963354741 + 0.016), "Random classifier", col = "black")
 # text(50000, y=(0.0253873499229 + 0.016), "Random classifier avg.", col = "black") 
 
 # legend(30000, 1, c("NLP-based", "Comment patterns", "Random classifier"), col= c("red", "darkgreen",  "blue"), pch = c(2, , ) , bty = "n" , cex=1.1)
+
+# table 2 wilcox test
+
+nlp_based_design = c(0.517,0.814,0.601,0.470,0.744,0.509,0.492,0.731,0.783,0.540)
+comment_patterns = c(0.237,0.107,0.264,0.231,0.227,0.342,0.282,0.194,0.620,0.175)
+randon_classifier = c(0.044,0.144,0.037,0.034,0.193,0.037,0.077,0.072,0.123,0.055)
+
+wilcox.test(nlp_based_design, comment_patterns) 0.0003248
+wilcox.test(nlp_based_design, randon_classifier) 1.083e-05
+
+nlp_based_requirent  = c(0.154,0.595,0.804,0.381,0.476,0.091,0.321,0.237,0.435,0.541) 
+comment_patterns_req = c(0.000,0.000,0.117,0.000,0.000,0.000,0.000,0.148,0.409,0.000)
+randon_classifier_req= c(0.006,0.079,0.013,0.007,0.041,0.003,0.007,0.005,0.043,0.014)
+
+wilcox.test(nlp_based_requirent, comment_patterns_req) 0.001029
+wilcox.test(nlp_based_requirent, randon_classifier_req) 0.0001817
+
