@@ -1,5 +1,5 @@
 % -*- root: main.tex -*-
-Our work uses code comments to detect \SATD using a Natural Language Processing (NLP) technique. Therefore, we divide the related work into three subsections, namely source code comments, technical debt, and NLP in Software Engineering.
+Our work uses code comments to detect \SATD using a Natural Language Processing (NLP) technique. Therefore, we divide the related work into three subsections, namely source code comments, technical debt, and NLP in software engineering.
 
 \subsection{Source Code Comments}
 
@@ -20,7 +20,7 @@ In a follow up work, Zazworka \textit{et al.}~\cite{Zazworka2011MTD} conducted a
 
 Our work is different from the work that uses code smells to detect design technical debt, since we use code comments to detect technical debt. Moreover, our approach does not rely on code metrics and thresholds to identify technical debt and can be used to identify bad quality code symptoms other than bad smells.
 
-More recently, Potdar and Shihab~\cite{Potdar2014ICSME} extracted the comments of four projects and analyzed 101,762 comments to come up with 62  patterns that indicate self-admitted technical debt. Their findings show that 2.4\% - 31\% of the files in a project contain self-admitted technical debt. Our earlier work ~\cite{Maldonado2015MTD} examined more than 33 thousands comments to classify the different types of \SATD found in source code comments. Farias \textit{et al.} ~\cite{Farias2015MTD} proposed a contextualized vocabulary model for identifying technical debt in comments using word classes and code tags in the process. 
+More recently, Potdar and Shihab~\cite{Potdar2014ICSME} extracted the comments of four projects and analyzed 101,762 comments to come up with 62  patterns that indicate self-admitted technical debt. Their findings show that 2.4\% - 31\% of the files in a project contain self-admitted technical debt. Bavota and Russo~\cite{bavota2016MSR} replicated the study of \SATD on a large set of Apache projects and confirmed the findings observed by Potdar and Shihab in their earlier work. Wehaibi \textit{et al.}~\cite{wehaibi2016SANER} examined the impact of \SATD and found that \SATD leads to more complex changes in the future. All three of the aforementioned studies used the comment patterns approach to detect \SATD. Our earlier work~\cite{Maldonado2015MTD} examined more than ~33 thousands comments to classify the different types of \SATD found in source code comments. Farias \textit{et al.}~\cite{Farias2015MTD} proposed a contextualized vocabulary model for identifying technical debt in comments using word classes and code tags in the process. 
 
 Our work also uses code comments to detect design technical debt. However, we use these code comments to train a \revised{maximum entropy classifier}{R2-11} to automatically identify technical debt. Also, our focus is on \emph{self-admitted} design and requirement technical debt.
 

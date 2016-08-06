@@ -1,15 +1,7 @@
 % -*- root: main.tex -*-
 The goal of our research is to develop an automatic way to detect design and requirement \SATD comments. To do so, we first manually classify a large number of comments identifying those containing \SATD. With the resulting dataset, we train the \revised{maximum entropy classifier}{R2-11} to identify design and requirement \SATD (RQ1). To better understand what words indicate \SATD, we inspect the features used by the \revised{maximum entropy classifier}{R2-11} to identify the detected \SATD. These features are words that are frequently found in comments with technical debt. We present the 10 most common words that indicate design and requirement \SATD (RQ2). Since the manual classification required to create our training dataset is expensive, ideally we would like to achieve maximum performance with the least amount of training data. Therefore, we investigate how variations in the size of training data affects the performance of our classification (RQ3). We detail the motivation, approach and present the results of each of our research questions in the remainder of this section. 
 
-\begin{figure*}[!thb]
-  \centering
-  \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design_1.pdf}
-  \label{fig:f1_measure_comparison_design_debt}}
-  \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_requirement_1.pdf}
-  \label{fig:f1_measure_comparison_requirement_debt}}
-  \vspace{-3mm}
-  \caption{Visualization of the F1-measure for Different Approaches}
-\end{figure*}
+
 
 \begin{table*}[!thb]
     \begin{center}
@@ -19,13 +11,13 @@ The goal of our research is to develop an automatic way to detect design and req
         \toprule
         
         % draw first line. The * centralizes the Project column, then set the total size of columns that we have
-        \multirow{5}{*}{\textbf{\thead{Project}}} & \multicolumn{5}{c|}{\textbf{\thead{Design debt}}} & \multicolumn{5}{c}{\textbf{\thead{Requirement debt}}} 
+        \multirow{5}{*}{\textbf{\thead{Project}}} & \multicolumn{5}{c|}{\textbf{\thead{Design Debt}}} & \multicolumn{5}{c}{\textbf{\thead{Requirement Debt}}} 
         % indicates that from now on we are filling the content of the next line
         \\ 
         \cmidrule{2-6}
         \cmidrule{7-11}
         % remainder columns
-        & {\textbf{\thead{Our\\approach}}} & {\textbf{\thead{Comment\\patterns}}} & {\textbf{\thead{Random\\classifier}}} & {\textbf{\thead{IMP over\\comment\\patterns}}} & {\textbf{\thead{IMP over\\random\\classifier}}} & {\textbf{\thead{Our\\approach}}} & {\textbf{\thead{Comment\\patterns}}} & {\textbf{\thead{Random\\classifier}}} & {\textbf{\thead{IMP over\\comment\\patterns}}} & {\textbf{\thead{IMP over\\random\\classifier}}} \\
+        & {\textbf{\thead{Our\\Approach}}} & {\textbf{\thead{Comment\\Patterns}}} & {\textbf{\thead{Random\\Classifier}}} & {\textbf{\thead{Imp. Over\\Comment\\Patterns}}} & {\textbf{\thead{Imp. Over\\Random\\Classifier}}} & {\textbf{\thead{Our\\Approach}}} & {\textbf{\thead{Comment\\Patterns}}} & {\textbf{\thead{Random\\Classifier}}} & {\textbf{\thead{Imp. Over\\Comment\\Patterns}}} & {\textbf{\thead{Imp. Over\\Random\\Classifier}}} \\
   
         \midrule                                                  
         \textbf{Ant}       &0.517&0.237&0.044&2.1$\times$& 11.7 $\times$&0.154&0.000&0.006&-             & 25.6$\times$  \\
@@ -44,6 +36,17 @@ The goal of our research is to develop an automatic way to detect design and req
         \end{tabular}
     \end{center}    
 \end{table*}
+
+
+\begin{figure*}[!thb]
+  \centering
+  \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_design_1.pdf}
+  \label{fig:f1_measure_comparison_design_debt}}
+  \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/f1_measure_comparisom_requirement_1.pdf}
+  \label{fig:f1_measure_comparison_requirement_debt}}
+  \vspace{-3mm}
+  \caption{Visualization of the F1-measure for Different Approaches}
+\end{figure*}
 
 \vspace{3mm}
 \noindent\rqi
@@ -153,7 +156,7 @@ Some of the remaining lower ranked textual features, such as \textit{convention}
 \end{displayquote}
 \vspace{1mm}
 
-It should be noted that the features highlighted in bold in Table~\ref{tbl:top_ten_features} appear in all top-10 lists extracted from each one of the ten training datasets, and therefore can be considered as more \textit{universal} features compared to the others.
+It should be noted that the features highlighted in bold in Table~\ref{tbl:top_ten_features} appear in all top-10 lists extracted from each one of the ten training datasets, and therefore can be considered as more \textit{universal/stable} features compared to the others.
 }{R1-11}
 
 We also observe that it is possible for a single textual feature to indicate both design and requirement \SATD. However, in such cases, the ranking of the feature is different for each kind of debt. For example, the word ``todo'' is ranked tenth for design debt, whereas it is ranked first for requirement debt. This finding is intuitive, since requirement debt will naturally be related to the implementation of future functionality.
@@ -166,7 +169,7 @@ It is important to note here that although we present only the top-10 textual fe
         \label{tbl:features_per_project}
         \begin{tabular}{l| c c c|| c c c}
         \toprule
-        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Design debt}}} & \multicolumn{3}{c}{\textbf{\thead{Requirement debt}}} 
+        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{Design Debt}}} & \multicolumn{3}{c}{\textbf{\thead{Requirement Debt}}} 
         \\
         \cmidrule{2-7}
         & \textbf{\thead{Positive\\Weight\\Features}} & \textbf{\thead{Negative\\Weight\\Features}} & \textbf{\thead{\# of\\Features}} & \textbf{\thead{Positive\\Weight\\Features}} & \textbf{\thead{Negative\\Weight\\Features}} & \textbf{\thead{\# of\\Features}}\\
@@ -213,13 +216,12 @@ It is important to note here that although we present only the top-10 textual fe
 \noindent\rqiii
 \vspace{3mm}
 
-\noindent \textbf{Motivation:} Thus far, we have shown that our NLP-based approach can effectively identify comments expressing \SATD. However, we conjecture that the performance of the classification depends on the amount of training data. At the same time, creating the training dataset is a time consuming and labor intensive task. So, the question that arises is: how much training data do we need to effectively classify the source code comments? If we need a very large number of comments to create our training dataset, our approach will be more difficult to extend and apply for other projects. On the other hand, if a small dataset can be used to reliably identify comments with \SATD, then this approach can be applied with a minimal effort, i.e., less training data. That said, intuitively we expect that the performance of the \revised{maximum entropy classifier}{R2-11} will improve as more comments are being added to the training dataset.
+\noindent \textbf{Motivation:} Thus far, we have shown that our NLP-based approach can effectively identify comments expressing \SATD. However, we conjecture that the performance of the classification depends on the amount of training data. At the same time, creating the training dataset is a time consuming and labor intensive task. So, the question that arises is: how much training data do we need to effectively classify the source code comments? If we need a very large number of comments to create our training dataset, our approach will be more difficult to extend and apply for other projects. On the other hand, if a small dataset can be used to reliably identify comments with \SATD, then this approach can be applied with minimal effort, i.e., less training data. That said, intuitively we expect that the performance of the \revised{maximum entropy classifier}{R2-11} will improve as more comments are being added to the training dataset.
 
 \noindent \textbf{Approach:} To answer this research question, \revised{we follow a systematic process where we incrementally add training data and evaluate the performance of the classification.
-More specifically, we shuffle the comments from all projects into a big dataset. Then, we split this dataset into 10 equally-sized parts making sure that each part has the same ratio of comments with \SATD and without technical debt. Next, we use one of the ten parts to test the max entropy classifier and the other 9 to train it. The training data is incrementally fed into the classifier by batches of 100 comments each time, and we also make sure that each batch contains the same ratio of comments with \SATD and without technical debt. We repeat this process for each one of the 10 parts and report our findings.
+More specifically, we combine the comments from all projects into a single large dataset. Then, we split this dataset into ten equally-sized folds, making sure that each partition has the same ratio of comments of \SATD and without technical debt as the original dataset. Next, we use one of the ten folds for testing and the remaining nine folds as training data. Since we want to examine the impact of the quantity of training data on performance, we train the classifier with batches of 100 comments at a time and test its performance on the testing data. It is important to note that even within the batches of 100 comments, we maintain the same ratio of \SATD and none technical debt comments as in the original dataset. We keep adding comments until all of the training dataset is used. We repeat this process for each one of the ten folds and report the average performance across all folds.
 
-To determine how much training data is required to effectively identify \SATD comments, we compute the F1-measure values after each iteration (i.e., the addition of a batch of 100 comments) and record the iteration that achieves the highest F1-measure.
-Then we find the iterations in which at least 80\% and 90\% of the maximum F1-measure value is achieved, and report the number of comments added up to those iterations.
+We compute the F1-measure values after each iteration (i.e., the addition of a batch of 100 comments) and record the iteration that achieves the highest F1-measure. Then we find the iterations in which at least 80\% and 90\% of the maximum F1-measure value is achieved, and report the number of comments added up to those iterations.
 %However, instead of recording the number of projects that were used to train the dataset we report the number of comments that was used to achieve this F1-measure. The number of comments is computed in multiples of 100, due to the size of each batch added to the training dataset.	
 }{R2-14}
 \begin{comment}
@@ -269,7 +271,7 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
         \label{tbl:design_iteration_performance}
         \begin{tabular}{l| c c c}
         \toprule
-        \textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\between\\iterations}} & \textbf{\thead{Average\\comments}} \\ 
+        \textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of Maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\Between\\Iterations}} & \textbf{\thead{Average\\Comments}} \\ 
         \midrule
          \textbf{1}  &  0.718 &  -      & 756   \\  
          \textbf{2}  &  0.856 & 0.138   & 1,106 \\  
@@ -291,7 +293,7 @@ Table \ref{tbl:requirement_iteration_performance} shows the average percentage o
 		\label{tbl:requirement_iteration_performance}
 		\begin{tabular}{l| c c c}
 			\toprule
-			\textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\between\\iterations}} & \textbf{\thead{Average\\comments}} \\
+			\textbf{\thead{Iteration\\Number}} & \textbf{\thead{Average\%\\of Maximum\\F1-measure}} & \textbf{\thead{$\Delta$\\Between\\Iterations}} & \textbf{\thead{Average\\Comments}} \\
 			\midrule
 			\textbf{1}  &  0.873 &   -      &  380  \\  
 	        \textbf{2}  &  0.772 & -0.101   &  481  \\

@@ -62,7 +62,8 @@
 % commands for common terms in the text
 
 \newcommand{\SATD}{self-admitted technical debt\xspace}
-\newcommand{\revised}[2]{\setlength{\marginparwidth}{1.2cm} \marginpar{\fbox{#2}}{\color{red}{#1}}}
+%\newcommand{\revised}[2]{\setlength{\marginparwidth}{1.2cm} \marginpar{\fbox{#2}}{\color{red}{#1}}}
+\newcommand{\revised}[2]{{#1}}
 
 \hyphenation{}
 
@@ -171,7 +172,7 @@ The main contributions of our work are the following:
   \item We examine and report the words that best indicate design and requirement \SATD.
   \item We show that using a small training set of comments, we are able to effectively detect design and requirement \SATD.
   %analyze the amount of necessary data to effectively apply our approach, making it possible to replicate our study in different contexts than ours (i.e., different idioms or programming languages).
-  \item We make our dataset publicly available, so that others can advance work in the area of \SATD.
+  \item We make our dataset publicly available\footnote{https://github.com/maldonado/tse\_satd\_data}, so that others can advance work in the area of \SATD.
   %. We believe that these are good contributions to future work in the area, and to researchers who are willing to devise new approaches to address the problem of identifying technical debt through the use of code comments.
 \end{itemize}
 
