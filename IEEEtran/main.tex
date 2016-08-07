@@ -76,13 +76,18 @@
 \author{Everton~da S.~Maldonado,
         Emad~Shihab,~\IEEEmembership{Member,~IEEE,}
         and~Nikolaos~Tsantalis,~\IEEEmembership{Member,~IEEE,}% <-this % stops a space
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem E. da S. Maldonado, E. Shihab and N. Tsantalis are with the Department
-of Computer Science and Software Engineering, Concordia University, Montreal, Quebec, Canada H3G 1M8.\protect\\
-E-mail: e\_silvam@encs.concordia.ca}}
+\IEEEcompsocitemizethanks{
+
+\IEEEcompsocthanksitem E. da S. Maldonado and E. Shihab are with the Data-driven Analysis of Software (DAS) lab at the Department
+of Computer Science and Software Engineering, Concordia University, Montreal, Quebec, Canada.
+E-mail: {e\_silvam, eshihab}@encs.concordia.ca
+
+\IEEEcompsocthanksitem N. Tsantalis is with the Department of Computer Science and Software Engineering, Concordia University, Montreal, Quebec, Canada.
+E-mail: tsantalis@encs.concordia.ca}}
 
 
 % The paper headers
-\markboth{IEEE TRANSACTIONS ON SOFTWARE ENGINEERING,~Vol.~XX, No.~X, MONTH~2015}%
+\markboth{IEEE TRANSACTIONS ON SOFTWARE ENGINEERING,~Vol.~XX, No.~X, MONTH~2016}%
 {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
@@ -142,7 +147,7 @@ Technical debt is a metaphor coined to express sub-optimal solutions that are ta
 
 Due to the importance of technical debt, a number of studies empirically examined technical debt and proposed techniques to enable its detection and management. \revised{Some of the approaches analyze the source code to detect technical debt, whereas other approaches leverage various techniques and artifacts, e.g., documentation and architecture reviews, to detect documentation debt, test debt or architecture debt (i.e., unexpected deviance from the initial architecture)~\cite{Alves2016IST,Xiao2016ICSE}.}{R1-2}   
 
-The main findings of the prior work are three-fold. First, there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}. Second, static source code analysis helps in detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. Third, more recently, our work has shown that it is possible to identify technical debt through source comments, referred to as  \SATD~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
+The main findings of prior work are three-fold. First, there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}. Second, static source code analysis helps in detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. Third, more recently, our work has shown that it is possible to identify technical debt through source comments, referred to as  \SATD~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
 
 \revised{
 The recovery of technical debt through source code comments has two main advantages over traditional approaches based on source code analysis. First, it is more lightweight compared to source code analysis, since it does not require the construction of Abstract Syntax Trees or other more advanced source code representations. For instance, some code smell detectors that also provide refactoring recommendations to resolve the detected code smells~\cite{Tsantalis:2011, Tsantalis:2015} generate computationally expensive program representation structures, such as program dependence graphs~\cite{Graf:2010}, and method call graphs~\cite{Ali:2012} in order to match structural code smell patterns and compute metrics. On the other hand, the source code comments can be easily and efficiently extracted from source code files using regular expressions. Second, it does not depend on arbitrary metric threshold values, which are required in all metric-based code smell detection approaches. Deriving appropriate threshold values is a challenging open problem that has attracted the attention and effort of several researchers~\cite{Oliveira2014CSMR,Fontana2015WETSoM,Fontana2015EMSE}. As a matter of fact, the approaches based on source code analysis suffer from high false positive rates~\cite{Fontana:2016} (i.e., they flag a large number of source code elements as problematic, while they are not perceived as such by the developers), because they rely only on the structure of the source code to detect code smells without taking into account the developers' feedback, the project domain, and the context in which the code smells are detected.
@@ -168,7 +173,7 @@ Finally, to determine the most efficient way to apply our approach, we analyze t
 The main contributions of our work are the following:
 \vspace{-1.5mm}
 \begin{itemize}
-  \item We provide an automatic, NLP-based, approach for identifying design and requirement \SATD.
+  \item We provide an automatic, NLP-based, approach to identify design and requirement \SATD.
   \item We examine and report the words that best indicate design and requirement \SATD.
   \item We show that using a small training set of comments, we are able to effectively detect design and requirement \SATD.
   %analyze the amount of necessary data to effectively apply our approach, making it possible to replicate our study in different contexts than ours (i.e., different idioms or programming languages).

@@ -92,6 +92,28 @@ We find that the average performance when detecting design and requirement \SATD
     \end{center}    
 \end{table}
 
+%\begin{table}[!thb]
+%    \begin{center}
+%        \caption{Top-10 Textual Features Used to Identify Different Types of Self-Admitted Technical Debt}
+%        \label{tbl:top_ten_features_td_vs_non_td}
+%        \begin{tabular}{l| l l l }
+%        \toprule
+%        \textbf{\thead{Project}} & \textbf{\thead{Design\\debt}} & \textbf{\thead{Requirement\\debt}} & \textbf{\thead{Technical\\debt}} \\
+%        \midrule
+%         \textbf{1}  & hack       &   todo            & \textbf{hack}         \\
+%         \textbf{2}  & workaround &   needed          & \textbf{workaround}   \\
+%         \textbf{3}  & yuck!      &   implementation  & yuck!        \\
+%         \textbf{4}  & kludge     &   fixme           & kludge       \\
+%         \textbf{5}  & stupidity  &   xxx             & stupidity    \\
+%         \textbf{6}  & needed?    &   ends?           & needed?      \\
+%         \textbf{7}  & columns?   &   convention      & unused?      \\
+%         \textbf{8}  & unused?    &   configurable    & \textbf{fixme}        \\
+%         \textbf{9}  & wtf?       &   apparently      & \textbf{todo}         \\
+%         \textbf{10} & todo       &   fudging         & wtf?         \\
+%        \bottomrule
+%        \end{tabular}
+%    \end{center}    
+%\end{table}
 Table \ref{tbl:top_ten_features_td_vs_non_td} shows a comparison of the top-10 textual features used to detect design and requirement debt comments separately, and those used to detect both types of debt combined in a single class.
 When analyzing the top-10 textual features used to classify \SATD, we find once more, a strong overlap with the top-10 textual features used to classify design debt. The weight of the features is attributed in accordance to the frequency that each word is found in the training dataset, and therefore, the top-10 features tend to be similar with the top-10 design debt features, since design debt comments represent the majority of \SATD comments in the dataset. 
 
