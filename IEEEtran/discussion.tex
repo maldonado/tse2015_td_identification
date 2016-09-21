@@ -3,7 +3,7 @@ Thus far, we have seen that our NLP-based approach can perform well in classifyi
 
 \revised{Moreover, we think that is also interesting to know the performance of our approach when trained to distinguish between \SATD and non-\SATD, i.e., without using fine-grained classes of debt, such as design and requirement debt (Section~\ref{sec:coarse-grained_classes}).}{R2-9} 
 
-Also, when performing our classification, there are several different classifiers that can be used in the Stanford Classifier toolkit, hence we investigate what is the impact of using different classifiers on the accuracy (Section~\ref{sec:underlying_classifier}).
+% Also, when performing our classification, there are several different classifiers that can be used in the Stanford Classifier toolkit, hence we investigate what is the impact of using different classifiers on the accuracy (Section~\ref{sec:underlying_classifier}).
 
 \revised{Lastly, we analyze the overlap between the files that contain \SATD and the files that contain code smells. This is an interesting point of discussion to provide insights on how technical debt found in comments relates to code smells found by static analysis tools (Section~\ref{sec:overlap_with_static_analysis_tools}).}{R2-3}
 
@@ -118,28 +118,6 @@ Table \ref{tbl:top_ten_features_td_vs_non_td} shows a comparison of the top-10 t
 When analyzing the top-10 textual features used to classify \SATD, we find once more, a strong overlap with the top-10 textual features used to classify design debt. The weight of the features is attributed in accordance to the frequency that each word is found in the training dataset, and therefore, the top-10 features tend to be similar with the top-10 design debt features, since design debt comments represent the majority of \SATD comments in the dataset. 
 
 }{R2-9}
-
-\begin{figure*}[!thb]
-  \centering
-  \subfigure[Design Debt]{\includegraphics[width=0.48\textwidth]{figures/classifier_algorithms_comparison_design_1.pdf}
-  \label{fig:algorithms_comparison_design}}
-  \subfigure[Requirement Debt]{\includegraphics[width=0.48\textwidth]{figures/classifier_algorithms_comparison_implementation_1.pdf}
-  \label{fig:algorithms_comparison_requirement}}
-  \caption{Underlying Classifier Algorithms Performance Comparison}
-  \label{fig:algorithms_comparison}
-\end{figure*}
-
-\subsection{Investigating the Impact of Different Classifiers on the Accuracy of the Classification}
-\label{sec:underlying_classifier}
-In our work, the classification performed by the Stanford Classifier used the maximum entropy classifier. However, the Stanford Classifier can use other classifiers too. In order to examine the impact of the underlying classifier on the accuracy of the proposed approach, we investigate two more classifiers, namely the Naive Bayes, and the Binary classifiers.
- 
-Figures~\ref{fig:algorithms_comparison_design} and \ref{fig:algorithms_comparison_requirement} compare the performance between the three different classifiers. We find that the Naive Bayes has the worst average F1-measure of 0.30 and 0.05 for design and requirement technical debt, respectively. Based on our findings, the Naive Bayes algorithm favours recall at the expense of precision. For example, while classifying design debt, the average recall was 0.84 and precision 0.19. The two other algorithms present more balanced results compared to the Naive Bayes, and the difference in their performance is almost negligible. The Logistic Regression classifier achieved F1-measures of 0.62 and 0.40, while the Binary classifier F1-measures were 0.63 and 0.40, for design and requirement \SATD, respectively. Tables \ref{tbl:improvement_f1measure_between_classifiers_design} and \ref{tbl:improvement_f1measure_between_classifiers_requirement} in the Appendix section provide detailed data for each classifier and all ten examined projects.
-
-Although the Binary classifier has a slightly better performance, for our purpose, the Logistical Regression classifier provides more insightful textual features. These features were analyzed and presented in RQ2. 
-
-\revised{According to previous work, developers hate to deal with false positives (i.e., low precision) \cite{Bessey2010FBL,Ernst2015FSE,Sadowski2015ICSE}. Due to this fact, we choose to present our results in this study using the maximum entropy classifier, which has an average precision of 0.716 throughout all projects. However, favouring recall over precision by using the Naives Bayes classifier might still be acceptable, if a manual process to filter out false positives is in place, as reported by Berry et al. \cite{Berry2012book}.}{R2-6}
-
-\revised{One important question to ask when choosing what kind of classifier to use is how much training data is currently available. In most of the cases, the trickiest part of applying a machine learning classifier in real world applications is creating or obtaining enough training data. If you have fairly little data at your disposal, and you are going to train a supervised classifier, then machine learning theory recommends classifiers with high bias, such as the Naive Bayes~\cite{Forman2004PKDD,Ng2001NIPS}. If there is a reasonable amount of labeled data, then you are in good stand to use most kinds of classifiers~\cite{Manning2008book}. For instance, you may wish to use a Support Vector Machine (SVM), a decision tree or, like in our study, a max entropy classifier. If a large amount of data is available, then the choice of classifier probably has little effect on the results and the best choice may be unclear~\cite{Banko2001book}. It may be best to choose a classifier based on the scalability of training, or even runtime efficiency.}{R2-11}
 
 \revised{
 \subsection{Investigating the Overlap Between Technical Debt Found in Comments and Technical Debt Found by Static Analysis Tools}

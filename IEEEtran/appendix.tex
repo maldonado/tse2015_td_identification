@@ -9,29 +9,29 @@ In Section~\ref{sec:case_study_results}, we presented the F1-measure values for 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
     \begin{center}
-        \caption{Detailed Comparison of F1-measure Between the NLP-based, the Comment Patterns and the Random Baseline Approaches for Design Debt}
+        \caption{Detailed Comparison of F1-measure Between the NLP-based and the Comment Patterns Approach for Design Debt}
         \vspace{-3mm}
         \label{tbl:classifier_results_vs_baseline_design}
-        \begin{tabular}{l| c c c|| c c c|| c c c}
+         \begin{tabular}{l| c c c|| c c c}
         \toprule
 
-        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{NLP-based}}} & \multicolumn{3}{c||}{\textbf{\thead{Comment Patterns}}} & \multicolumn{3}{c}{\textbf{\thead{Random Baseline}}} 
+        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{NLP-based}}} & \multicolumn{3}{c}{\textbf{\thead{Comment Patterns}}} 
         
         \\ 
-        \cmidrule{2-10}
+        \cmidrule{2-7}
         
-        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}}\\
+        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} \\
         \midrule
-        \textbf{Ant}           &   0.554 &   0.484 &  0.517 &  0.608 & 0.147 & 0.237 &  0.023 & 0.5 & 0.044 \\
-        \textbf{ArgoUML}       &   0.788 &   0.843 &  0.814 &  0.793 & 0.057 & 0.107 &  0.084 & 0.5 & 0.144 \\
-        \textbf{Columba}       &   0.792 &   0.484 &  0.601 &  0.800 & 0.158 & 0.264 &  0.019 & 0.5 & 0.037 \\
-        \textbf{EMF}           &   0.574 &   0.397 &  0.470 &  0.647 & 0.141 & 0.231 &  0.018 & 0.5 & 0.034 \\
-        \textbf{Hibernate}     &   0.877 &   0.645 &  0.744 &  0.920 & 0.129 & 0.227 &   0.12 & 0.5 & 0.193 \\
-        \textbf{JEdit}         &   0.779 &   0.378 &  0.509 &  0.857 & 0.214 & 0.342 &  0.019 & 0.5 & 0.037 \\
-        \textbf{JFreeChart}    &   0.646 &   0.397 &  0.492 &  0.507 & 0.195 & 0.282 &  0.042 & 0.5 & 0.077 \\
-        \textbf{JMeter}        &   0.808 &   0.668 &  0.731 &  0.813 & 0.110 & 0.194 &  0.039 & 0.5 & 0.072 \\
-        \textbf{JRuby}         &   0.798 &   0.770 &  0.783 &  0.864 & 0.483 & 0.620 &   0.07 & 0.5 & 0.123 \\
-        \textbf{SQuirrel}      &   0.544 &   0.536 &  0.540 &  0.700 & 0.100 & 0.175 &  0.029 & 0.5 & 0.055 \\
+        \textbf{Ant}           &   0.554 &   0.484 &  0.517 &  0.608 & 0.147 & 0.237  \\
+        \textbf{ArgoUML}       &   0.788 &   0.843 &  0.814 &  0.793 & 0.057 & 0.107  \\
+        \textbf{Columba}       &   0.792 &   0.484 &  0.601 &  0.800 & 0.158 & 0.264  \\
+        \textbf{EMF}           &   0.574 &   0.397 &  0.470 &  0.647 & 0.141 & 0.231  \\
+        \textbf{Hibernate}     &   0.877 &   0.645 &  0.744 &  0.920 & 0.129 & 0.227  \\
+        \textbf{JEdit}         &   0.779 &   0.378 &  0.509 &  0.857 & 0.214 & 0.342  \\
+        \textbf{JFreeChart}    &   0.646 &   0.397 &  0.492 &  0.507 & 0.195 & 0.282  \\
+        \textbf{JMeter}        &   0.808 &   0.668 &  0.731 &  0.813 & 0.110 & 0.194  \\
+        \textbf{JRuby}         &   0.798 &   0.770 &  0.783 &  0.864 & 0.483 & 0.620  \\
+        \textbf{SQuirrel}      &   0.544 &   0.536 &  0.540 &  0.700 & 0.100 & 0.175  \\
         \bottomrule
         \end{tabular}
     \end{center}
@@ -42,29 +42,29 @@ In Section~\ref{sec:case_study_results}, we presented the F1-measure values for 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
     \begin{center}
-        \caption{Detailed Comparison of F1-measure Between the NLP-based, the Comment Patterns and the Random Baseline Approaches for Requirement Debt}
+        \caption{Detailed Comparison of F1-measure Between the NLP-based and the Comment Patterns Approach for Requirement Debt}
         \vspace{-3mm}
         \label{tbl:classifier_results_vs_baseline_requirement}
-        \begin{tabular}{l| c c c|| c c c|| c c c}
+        \begin{tabular}{l| c c c|| c c c}
         \toprule
 
-        \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{NLP-based}}} & \multicolumn{3}{c||}{\textbf{\thead{Comment Patterns}}} & \multicolumn{3}{c}{\textbf{\thead{Random Baseline}}} 
+         \multirow{4}{*}{\textbf{\thead{Project}}} & \multicolumn{3}{c||}{\textbf{\thead{NLP-based}}} & \multicolumn{3}{c}{\textbf{\thead{Comment Patterns}}} 
         
         \\ 
-        \cmidrule{2-10}
+        \cmidrule{2-7}
         
-        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}}\\
+        & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} & \textbf{\thead{Precision}} & \textbf{\thead{Recall}} & \textbf{\thead{F1 measure}} \\
         \midrule
-        \textbf{Ant}           &  0.154 & 0.154 &  0.154 & 0.000  &  0.000   & 0.000  & 0.003 & 0.5 & 0.006 \\
-        \textbf{ArgoUML}       &  0.663 & 0.540 &  0.595 & 0.000  &  0.000   & 0.000  & 0.043 & 0.5 & 0.079 \\
-        \textbf{Columba}       &  0.755 & 0.860 &  0.804 & 0.375  &  0.069   & 0.117  & 0.007 & 0.5 & 0.013 \\
-        \textbf{EMF}           &  0.800 & 0.250 &  0.381 & 0.000  &  0.000   & 0.000  & 0.004 & 0.5 & 0.007 \\
-        \textbf{Hibernate}     &  0.610 & 0.391 &  0.476 & 0.000  &  0.000   & 0.000  & 0.022 & 0.5 & 0.041 \\
-        \textbf{JEdit}         &  0.125 & 0.071 &  0.091 & 0.000  &  0.000   & 0.000  & 0.001 & 0.5 & 0.003 \\
-        \textbf{JFreeChart}    &  0.220 & 0.600 &  0.321 & 0.102  &  0.266   & 0.148  & 0.003 & 0.5 & 0.007 \\
-        \textbf{JMeter}        &  0.153 & 0.524 &  0.237 & 0.000  &  0.000   & 0.000  & 0.003 & 0.5 & 0.005 \\
-        \textbf{JRuby}         &  0.686 & 0.318 &  0.435 & 0.573  &  0.318   & 0.409  & 0.022 & 0.5 & 0.043 \\
-        \textbf{SQuirrel}      &  0.657 & 0.460 &  0.541 & 0.000  &  0.000   & 0.000  & 0.007 & 0.5 & 0.014 \\
+        \textbf{Ant}           &  0.154 & 0.154 &  0.154 & 0.000  &  0.000   & 0.000  \\
+        \textbf{ArgoUML}       &  0.663 & 0.540 &  0.595 & 0.000  &  0.000   & 0.000  \\
+        \textbf{Columba}       &  0.755 & 0.860 &  0.804 & 0.375  &  0.069   & 0.117  \\
+        \textbf{EMF}           &  0.800 & 0.250 &  0.381 & 0.000  &  0.000   & 0.000  \\
+        \textbf{Hibernate}     &  0.610 & 0.391 &  0.476 & 0.000  &  0.000   & 0.000  \\
+        \textbf{JEdit}         &  0.125 & 0.071 &  0.091 & 0.000  &  0.000   & 0.000  \\
+        \textbf{JFreeChart}    &  0.220 & 0.600 &  0.321 & 0.102  &  0.266   & 0.148  \\
+        \textbf{JMeter}        &  0.153 & 0.524 &  0.237 & 0.000  &  0.000   & 0.000  \\
+        \textbf{JRuby}         &  0.686 & 0.318 &  0.435 & 0.573  &  0.318   & 0.409  \\
+        \textbf{SQuirrel}      &  0.657 & 0.460 &  0.541 & 0.000  &  0.000   & 0.000  \\
         \bottomrule
         \end{tabular}
     \end{center}
@@ -318,7 +318,7 @@ In Section~\ref{sec:case_study_results}, we presented the F1-measure values for 
 \clearpage
 \subsection*{Detailed Precision and Recall Values When Using Different Classifiers.}
 
-When discussing the results in Section~\ref{sec:underlying_classifier}, we only presented the F1-measure values. Here, we present the detailed precision and recall values that are used to compute the F1-measure values presented earlier.
+When discussing the results, we only presented the F1-measure values. Here, we present the detailed precision and recall values that are used to compute the F1-measure values presented earlier.
 
 \begin{table}[h]
   \begin{minipage}{\textwidth}
