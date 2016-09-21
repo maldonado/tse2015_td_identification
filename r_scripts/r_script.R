@@ -1,17 +1,32 @@
 # _________________________________________________________________________________________________________________________________________________________________
 # Fig. 2. Visualization of the F1-measure for Different Approaches (a) Design Debt
 # size 29 x 15
-mydata <- data.frame(Ant=c(0.517,0.237,0.044),ArgoUML=c(0.814,0.107,0.144),Columba=c(0.601,0.264,0.037),EMF=c(0.470,0.231,0.034),Hibernate=c(0.744,0.227,0.193),JEdit=c(0.509,0.342,0.037),JFreeChart=c(0.492,0.282,0.077),JMeter=c(0.731,0.194,0.072),JRuby=c(0.783,0.620,0.123),SQuirrel=c(0.540,0.175,0.055))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
-legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+# thesis version
+mydata <- data.frame(Ant=c(0.517,0.237),ArgoUML=c(0.814,0.107),Columba=c(0.601,0.264),EMF=c(0.470,0.231),Hibernate=c(0.744,0.227),JEdit=c(0.509,0.342),JFreeChart=c(0.492,0.282),JMeter=c(0.731,0.194),JRuby=c(0.783,0.620),SQuirrel=c(0.540,0.175))
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(2), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+legend(21, 1, c("NLP-based", "Comment patterns"), bty = "n" , cex=2.3, fill=terrain.colors(2))
+
+# tse version
+# mydata <- data.frame(Ant=c(0.517,0.237,0.044),ArgoUML=c(0.814,0.107,0.144),Columba=c(0.601,0.264,0.037),EMF=c(0.470,0.231,0.034),Hibernate=c(0.744,0.227,0.193),JEdit=c(0.509,0.342,0.037),JFreeChart=c(0.492,0.282,0.077),JMeter=c(0.731,0.194,0.072),JRuby=c(0.783,0.620,0.123),SQuirrel=c(0.540,0.175,0.055))
+# barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+# legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
 par("mar"=c(5,4,4,1)+3) 
 
 # Fig. 2. Visualization of the F1-measure for Different Approaches (b) Requirement Debt
 # size 29 x 15
-mydata <- data.frame(Ant=c(0.154,0.000,0.006),ArgoUML=c(0.595,0.000,0.079),Columba=c(0.804,0.117,0.013),EMF=c(0.381,0.000,0.007),Hibernate=c(0.476,0.000,0.041),JEdit=c(0.091,0.000,0.003),JFreeChart=c(0.321,0.000,0.007),JMeter=c(0.237,0.148,0.005),JRuby=c(0.435,0.409,0.043),SQuirrel=c(0.541,0.000,0.014))
-barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
-legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+
+# thesis version
+mydata <- data.frame(Ant=c(0.154,0.000),ArgoUML=c(0.595,0.000),Columba=c(0.804,0.117),EMF=c(0.381,0.000),Hibernate=c(0.476,0.000),JEdit=c(0.091,0.000),JFreeChart=c(0.321,0.000),JMeter=c(0.237,0.148),JRuby=c(0.435,0.409),SQuirrel=c(0.541,0.000))
+barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(2), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+legend(21, 1, c("NLP-based", "Comment patterns"), bty = "n" , cex=2.3, fill=terrain.colors(2))
+
+# tse version
+# mydata <- data.frame(Ant=c(0.154,0.000,0.006),ArgoUML=c(0.595,0.000,0.079),Columba=c(0.804,0.117,0.013),EMF=c(0.381,0.000,0.007),Hibernate=c(0.476,0.000,0.041),JEdit=c(0.091,0.000,0.003),JFreeChart=c(0.321,0.000,0.007),JMeter=c(0.237,0.148,0.005),JRuby=c(0.435,0.409,0.043),SQuirrel=c(0.541,0.000,0.014))
+# barplot(as.matrix(mydata),  ylim=c(0, 1), ylab="",xlab="", beside=TRUE, col= terrain.colors(3), cex.axis=2.3, cex.names=2.3, mgp = c(3,1.8,1) )
+# legend(21, 1, c("NLP-based", "Comment patterns", "Random classifier"), bty = "n" , cex=2.3, fill=terrain.colors(3))
+
 title(ylab = "F1-Measure", mgp = c(4.5, 0, 0), cex.lab=2.3)
 par("mar"=c(5,4,4,1)+3) 
 # _________________________________________________________________________________________________________________________________________________________________
@@ -129,15 +144,50 @@ par("mar"=c(5,4,4,1)+3)
 
 # Stratified sample agreement
 # Cohen's kappa 
+# Sultan
 library(RPostgreSQL)
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
 
-# postgresql <- dbSendQuery(con, "select classification from significative_sample where classification in ('DESIGN') order by processedcommentid") #0.75862069
-# postgresql <- dbSendQuery(con, "select classification from significative_sample where classification in ('IMPLEMENTATION') order by processedcommentid") #0.8461538
-postgresql <- dbSendQuery(con, "select classification from significative_sample where classification in ('WITHOUT_CLASSIFICATION') order by processedcommentid") #0.988505747
-# postgresql <- dbSendQuery(con, "select classification from significative_sample where classification in ('WITHOUT_CLASSIFICATION', 'DESIGN', 'IMPLEMENTATION') order by processedcommentid")
-# postgresql <- dbSendQuery(con, "select classification from significative_sample order by processedcommentid") #0.81
+# postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Sultan' and classification in ('DESIGN') order by processedcommentid") #0.75862069
+# postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Sultan' and classification in ('IMPLEMENTATION') order by processedcommentid") #0.8461538
+# postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Sultan' and classification in ('WITHOUT_CLASSIFICATION') order by processedcommentid") #0.988505747
+postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Sultan' and classification in ('WITHOUT_CLASSIFICATION', 'DESIGN', 'IMPLEMENTATION') order by processedcommentid")
+
+reviewer1 <- fetch(postgresql, n=-1)
+dim(reviewer1)
+dbHasCompleted(postgresql)
+
+library(RPostgreSQL)
+library(psych)
+drv <- dbDriver("PostgreSQL")
+# con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Sultan' and classification = 'DESIGN' order by processedcommentid")
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Sultan' and classification = 'IMPLEMENTATION' order by processedcommentid")
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Sultan' and classification = 'WITHOUT_CLASSIFICATION' order by processedcommentid")
+postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Sultan' and classification in ('WITHOUT_CLASSIFICATION', 'DESIGN', 'IMPLEMENTATION') order by processedcommentid")
+
+reviewer2 <- fetch(postgresql, n=-1)
+dim(reviewer2)
+dbHasCompleted(postgresql)
+xy.df <- data.frame(reviewer1,reviewer2)
+ck <- cohen.kappa(xy.df, alpha=.1)
+ck
+ck$agree
+kappa2(xy.df, "unweighted")
+
+################################################################################################################################### 
+# Rabe
+
+
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
+
+# postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Rabe' and classification in ('DESIGN') order by processedcommentid")
+postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Rabe' and classification in ('IMPLEMENTATION') order by processedcommentid") 
+# postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Rabe' and classification in ('WITHOUT_CLASSIFICATION') order by processedcommentid") 
+# postgresql <- dbSendQuery(con, "select classification from significative_sample where reviewer = 'Rabe' and classification in ('WITHOUT_CLASSIFICATION', 'DESIGN', 'IMPLEMENTATION') order by processedcommentid ")
 reviewer1 <- fetch(postgresql, n=-1)
 dim(reviewer1)
 dbHasCompleted(postgresql)
@@ -146,18 +196,22 @@ library(RPostgreSQL)
 library(psych)
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, host='localhost', port='5432', dbname='comment_classification', user='evermal', password='')
-# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where processedcommentid in (select processedcommentid from significative_sample where classification = 'DESIGN' order by processedcommentid) order by processedcommentid")
-# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where processedcommentid in (select processedcommentid from significative_sample where classification = 'IMPLEMENTATION' order by processedcommentid) order by processedcommentid")
-postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where processedcommentid in (select processedcommentid from significative_sample where classification = 'WITHOUT_CLASSIFICATION' order by processedcommentid) order by processedcommentid")
-# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where processedcommentid in (select processedcommentid from significative_sample where classification in ('WITHOUT_CLASSIFICATION', 'DESIGN', 'IMPLEMENTATION') order by processedcommentid) order by processedcommentid")
-# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample order by processedcommentid")
+
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Rabe' and classification = 'DESIGN' order by processedcommentid")
+postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Rabe' and classification = 'IMPLEMENTATION' order by processedcommentid")
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Rabe' and classification = 'WITHOUT_CLASSIFICATION' order by processedcommentid")
+# postgresql <- dbSendQuery(con, "select reviewerclassification from significative_sample where reviewer = 'Rabe' and classification in ('WITHOUT_CLASSIFICATION', 'DESIGN', 'IMPLEMENTATION') order by processedcommentid")
+
 reviewer2 <- fetch(postgresql, n=-1)
 dim(reviewer2)
 dbHasCompleted(postgresql)
 xy.df <- data.frame(reviewer1,reviewer2)
-ck <- cohen.kappa(xy.df)
+ck <- cohen.kappa(xy.df, alpha=.1)
 ck
 ck$agree
+kappa2(xy.df, "unweighted")
+
+
 # __________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 # Measuring P-value for table 2
