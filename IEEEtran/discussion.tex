@@ -32,7 +32,7 @@ To ensure that the difference is statistically significant, we perform the Wilco
 \revised{
 \subsection{Distinguishing Self-Admitted Technical Debt from Non-Self-Admitted Technical Debt Comments}
 \label{sec:coarse-grained_classes}
-So far, we analyzed the performance of our NLP-based approach to identify distinct types of \SATD (i.e., design and requirement debt). However, a simpler distinction between \SATD and non-debt comments can also be interesting in the case those fine-grained classes of debt are not considered necessary by a user of the proposed NLP-based detection approach. Another reason justifying such a coarse-grained distinction is that the cost of building a training dataset with fine-grained classes of debt is more expensive, mentally challenging, and subjective than building a training dataset with just two classes (i.e., comments with and without technical debt).
+So far, we analyzed the performance of our NLP-based approach to identify distinct types of \SATD (i.e., design and requirement debt). However, a simpler distinction between \SATD and non-debt comments can also be interesting in the case that those fine-grained classes of debt are not considered necessary by a user of the proposed NLP-based detection approach. Another reason justifying such a coarse-grained distinction is that the cost of building a training dataset with fine-grained classes of debt is more expensive, mentally challenging, and subjective than building a training dataset with just two classes (i.e., comments with and without technical debt).
 
 In order to compute the performance of our NLP-based approach using only two classes (i.e., comments with and without technical debt), we repeat RQ1 and RQ2 with modified training and test datasets.
 First, we take all design and requirement \SATD comments and label them with a common class i.e., technical debt, and the remaining comments we kept them labeled as without technical debt.
@@ -167,7 +167,7 @@ Our findings here shows that using code comments to identify technical debt is a
         \label{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant}
         \begin{tabular}{l| c c c c c c c c c}
         \toprule
-        \textbf{\thead{Project}} & \textbf{\thead{\# of \\Files with\\ SATD }} & \textbf{\thead{\# of SATD \\Files with \\ Long \\Method }} & \textbf{\thead{\%  of SATD \\Files with \\ Long \\Method}} & \textbf{\thead{\# of SATD \\Files with \\ Feature \\Envy}} & \textbf{\thead{\% of SATD \\fFles with \\ Feature \\Envy}} & \textbf{\thead{\# of SATD\\ Files with \\ God \\Class}} & \textbf{\thead{\% of SATD\\ Files with \\ God \\Class}} & \textbf{\thead{\# of SATD\\ Files with\\ Any Code \\Smell }} & \textbf{\thead{\% of SATD\\ Files with\\ Any Code \\Smell}}\\
+        \textbf{\thead{Project}} & \textbf{\thead{\# of \\Files with\\ SATD }} & \textbf{\thead{\# of SATD \\Files with \\ Long \\Method }} & \textbf{\thead{\%  of SATD \\Files with \\ Long \\Method}} & \textbf{\thead{\# of SATD \\Files with \\ Feature \\Envy}} & \textbf{\thead{\% of SATD \\Fles with \\ Feature \\Envy}} & \textbf{\thead{\# of SATD\\ Files with \\ God \\Class}} & \textbf{\thead{\% of SATD\\ Files with \\ God \\Class}} & \textbf{\thead{\# of SATD\\ Files with\\ Any Code \\Smell }} & \textbf{\thead{\% of SATD\\ Files with\\ Any Code \\Smell}}\\
         \midrule
         
         \textbf{Ant}            & 73  & 57   & 78.0  & 19 & 26.0  & 42  & 57.5 & 63  & 86.3   \\
