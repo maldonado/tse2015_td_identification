@@ -154,7 +154,9 @@ The recovery of technical debt through source code comments has two main advanta
 
 However, relying solely on the developers' comments to recover technical debt is not adequate, because developers might be unaware of the presence of some code smells in their project, or might not be very familiar with good design and coding practices (i.e., inadvertent debt).
 As a result, the detection of technical debt through source code comments can be only used as a complementary approach to existing code smell detectors based on source code analysis.
-We believe that \SATD can be useful to prioritize the \textit{pay back} of debt (i.e., develop a \textit{pay back} plan), since the technical debt expressed in the comments written by the developers themselves is definitely more relevant to them.
+We believe that \SATD can be useful to prioritize the \textit{pay back} of debt (i.e., develop a \textit{pay back} plan), since the technical debt expressed in the comments written by the developers themselves might be more relevant to them.
+As a matter of fact, in a recent survey~\cite{Vassallo:ICSME:2016} with 152 developers of a large financial organization (ING Netherlands), 88\% of the participants responded that they annotate poor implementation choices (i.e., design technical debt) with comments in the source code (i.e., \SATD), 
+and when time allows, they act on them by trying to refactor such smells using some automated tool support (71\%), or manually (29\%).
 }{R1-3}
 
 
