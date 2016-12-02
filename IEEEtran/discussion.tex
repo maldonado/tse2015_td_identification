@@ -92,28 +92,6 @@ We find that the average performance when detecting design and requirement \SATD
     \end{center}    
 \end{table}
 
-%\begin{table}[!thb]
-%    \begin{center}
-%        \caption{Top-10 Textual Features Used to Identify Different Types of Self-Admitted Technical Debt}
-%        \label{tbl:top_ten_features_td_vs_non_td}
-%        \begin{tabular}{l| l l l }
-%        \toprule
-%        \textbf{\thead{Project}} & \textbf{\thead{Design\\debt}} & \textbf{\thead{Requirement\\debt}} & \textbf{\thead{Technical\\debt}} \\
-%        \midrule
-%         \textbf{1}  & hack       &   todo            & \textbf{hack}         \\
-%         \textbf{2}  & workaround &   needed          & \textbf{workaround}   \\
-%         \textbf{3}  & yuck!      &   implementation  & yuck!        \\
-%         \textbf{4}  & kludge     &   fixme           & kludge       \\
-%         \textbf{5}  & stupidity  &   xxx             & stupidity    \\
-%         \textbf{6}  & needed?    &   ends?           & needed?      \\
-%         \textbf{7}  & columns?   &   convention      & unused?      \\
-%         \textbf{8}  & unused?    &   configurable    & \textbf{fixme}        \\
-%         \textbf{9}  & wtf?       &   apparently      & \textbf{todo}         \\
-%         \textbf{10} & todo       &   fudging         & wtf?         \\
-%        \bottomrule
-%        \end{tabular}
-%    \end{center}    
-%\end{table}
 Table \ref{tbl:top_ten_features_td_vs_non_td} shows a comparison of the top-10 textual features used to detect design and requirement debt comments separately, and those used to detect both types of debt combined in a single class.
 When analyzing the top-10 textual features used to classify \SATD, we find once more, a strong overlap with the top-10 textual features used to classify design debt. The weight of the features is attributed in accordance to the frequency that each word is found in the training dataset, and therefore, the top-10 features tend to be similar with the top-10 design debt features, since design debt comments represent the majority of \SATD comments in the dataset. 
 
@@ -158,6 +136,8 @@ JMeter, for example, has 200 files that contain \SATD comments, and 143 of these
 
 We find that the code smell that overlaps the most with \SATD is Long Method. Intuitively, this is expected, since Long Method is a common code smell and may have multiple instances per file, because it is computed at the method level. The overlap between files with \SATD and Long Method ranged from 43.6\% to 82\% of all the files containing \SATD comments, and considering all projects, the average overlap is 65\%. In addition, 44.2\% of the files with \SATD comments are also involved in God Class code smells, and 20.7\% in Feature Envy code smells. Taking all examined code smells in consideration we find that, on average, 69.7\% of files containing \SATD are also involved in at least one of the three examined code smells. 
 
+\everton{In addition, Table \ref{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant} provides detailed code smell information about each one of the projects used in our study. The columns of Table \ref{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant} shows the total numbers of files, followed by the number of files containing at least one code smell instance. We find that, on average, 29.3\%, 5.5\%, 16.6\% of all files have at least one instance Long Method, Feature Envy or God Class, respectively. Using the results of the statical analysis tool as baseline may provide more insights on how code smells and \SATD are involved. For example, Ant have a total of 1,475 files of these 508 files (i.e., 34.4\%) have at least one Long Method code smell instance. In the other hand, we identified 73 files with \SATD of these 57 files (i.e., 78\%) also have at least one Long Method code smell instance.}
+
 Our findings here shows that using code comments to identify technical debt is a complementary approach to using code smells to detect technical debt. Clearly, there is overlap, however, each approach also identifies unique instances of technical debt.
 
 \begin{table*}[!thb]
@@ -186,6 +166,32 @@ Our findings here shows that using code comments to identify technical debt is a
         \bottomrule
         \end{tabular}
     \end{center}
+\end{table*} 
+
+\begin{table*}[!thb]
+    \begin{center}
+       \caption{Detailed information about the files containing bad smells as detected by JDeodorant}
+       \label{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant}
+       \begin{tabular}{l| c c c c c c c c c  }
+       \toprule
+       \textbf{\thead{Project}} & \textbf{\thead{\# of files}} & \textbf{\thead{\# of \\Files with \\ Long \\Method}} & \textbf{\thead{\% of \\Files with \\ Long \\Method}} & \textbf{\thead{\# of \\Files with \\ Feature \\Envy }} & \textbf{\thead{\% of \\Files with \\ Feature \\Envy }} & \textbf{\thead{\# of \\Files with \\ God \\Class }}  & \textbf{\thead{\% of \\Files with \\ God \\Class }} & \textbf{\thead{\# of \\Files with\\ Any Code \\Smell}} & \textbf{\thead{\% of \\Files with\\ Any Code \\Smell}}\\
+       \midrule
+       
+       \textbf{Ant}          & 1,475 & 508  & 34.4 & 110 & 7.4 & 365 & 24.7 & 612 & 41.4  \\
+       \textbf{ArgoUML}      & 2,609 & 654  & 25.0 & 62  & 2.3 & 249 & 9.5  & 730 & 27.9  \\
+       \textbf{Columba}      & 1,711 & 505  & 29.5 & 65  & 3.7 & 244 & 14.2 & 593 & 34.6  \\
+       \textbf{EMF}          & 1,458 & 362  & 24.8 & 50  & 3.4 & 231 & 15.8 & 448 & 30.7  \\
+       \textbf{Hibernate}    & 1,356 & 216  & 15.9 & 69  & 5.0 & 190 & 14.0 & 331 & 24.4  \\
+       \textbf{JEdit}        & 800   & 268  & 33.5 & 57  & 7.1 & 133 & 16.6 & 311 & 38.8  \\
+       \textbf{JFreeChart}   & 1,065 & 523  & 49.1 & 54  & 5.0 & 231 & 21.6 & 583 & 54.7  \\
+       \textbf{JMeter}       & 1,181 & 487  & 41.2 & 113 & 9.5 & 241 & 20.4 & 564 & 47.7  \\
+       \textbf{JRuby}        & 1,486 & 319  & 21.4 & 87  & 5.8 & 218 & 14.6 & 394 & 26.5  \\
+       \textbf{SQuirrel}     & 3,108 & 566  & 18.2 & 204 & 6.5 & 466 & 14.9 & 825 & 26.5  \\
+       \midrule
+       \textbf{Average}      &       &      & 29.3  &    & 5.5  &    & 16.6 &     & 35.3  \\       
+       \bottomrule
+       \end{tabular}
+   \end{center} 
 \end{table*} 
 
 }{R2-3}
