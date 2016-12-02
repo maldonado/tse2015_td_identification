@@ -119,7 +119,7 @@ Although the Binary classifier has a slightly better performance, for our purpos
 
 \revised{One important question to ask when choosing what kind of classifier to use is how much training data is currently available. In most of the cases, the trickiest part of applying a machine learning classifier in real world applications is creating or obtaining enough training data. If you have fairly little data at your disposal, and you are going to train a supervised classifier, then machine learning theory recommends classifiers with high bias, such as the Naive Bayes~\cite{Forman2004PKDD,Ng2001NIPS}. If there is a reasonable amount of labeled data, then you are in good stand to use most kinds of classifiers~\cite{Manning2008book}. For instance, you may wish to use a Support Vector Machine (SVM), a decision tree or, like in our study, a max entropy classifier. If a large amount of data is available, then the choice of classifier probably has little effect on the results and the best choice may be unclear~\cite{Banko2001book}. It may be best to choose a classifier based on the scalability of training, or even runtime efficiency.}{R2-11}
 
-\revised{
+
 \subsection{Investigating the Overlap Between Technical Debt Found in Comments and Technical Debt Found by Static Analysis Tools}
 \label{sec:overlap_with_static_analysis_tools}
 Thus far, we analyzed technical debt that was expressed by developers through source code comments. However, there are other ways to identify technical debt, such as architectural reviews, documentation analysis, and static analysis tools. To date, using static analysis tools is one of the most popular approaches to identify technical debt in the source code~\cite{Fontana2012MTD}. In general, static analysis tools parse the source code of a project to calculate metrics and identify possible object oriented design violations, also known as code smells, anti-patterns, or design technical debt, based on some fixed metric threshold values. 
@@ -127,25 +127,50 @@ Thus far, we analyzed technical debt that was expressed by developers through so
 We analyze the overlap between what our NLP-based approach identifies as technical debt and what a static analysis tool identifies as technical debt. We selected JDeodorant as the static analysis tool, since it supports the detection of three popular code smells, namely Long Method, God Class, and Feature Envy. We avoided the use of metric-based code smell detection tools, because they tend to have high false positive rates and flag a large portion of the code base as problematic~\cite{Fontana:2016}. On the other hand, JDeodorant detects only actionable code smells (i.e., code smells for which a behavior-preserving refactoring can be applied to resolve them), and does not rely on any metric thresholds, but rather applies static source code analysis to detect structural anomalies and suggest refactoring opportunities to eliminate them~\cite{Tsantalis2008CSMR}.
 
 First, we analyzed our 10 open source projects using JDeodorant. The result of this analysis is a list of Java files that were identified having at least one instance of
-the Long Method, God Class, and Feature Envy code smells. These code smells have been extensively investigated in the literature, and are considered to occur frequently~\cite{Olbrich:2010, Sjoberg:2013}. Second, we created a similar list containing the files that were identified with \SATD comments. Finally, we examined the overlap of the two lists of files. It should be emphasized that we did not examine if the \SATD comments actually discuss the detected code smells, but only if there is a co-occurrence at file-level.
+the Long Method, God Class, and Feature Envy code smells. Table \ref{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant} shows the total number of files and the number/percentage of files that contain each of the aforementioned smells. We find that, on average, 29.3\%, 5.5\%, 16.6\% of all files have at least one instance of the Long Method, Feature Envy or God Class smells, respectively. These code smells have been extensively investigated in the literature, and are considered to occur frequently~\cite{Olbrich:2010, Sjoberg:2013}. Second, we created a similar list containing the files that were identified with \SATD comments. Finally, we examined the overlap of the two lists of files. It should be emphasized that we did not examine if the \SATD comments actually discuss the detected code smells, but only if there is a co-occurrence at file-level.
+
 
 Table \ref{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant} provides details about each one of the projects used in our study. The columns of Table \ref{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant} present the total number of files with \SATD, followed by the number of files containing \SATD comments and at least one code smell instance,
 along with the percentage over the total number of files with \SATD, for Long Method, Feature Envy, God Class, and all code smells combined, respectively. 
 
-JMeter, for example, has 200 files that contain \SATD comments, and 143 of these files also contain at least one Long Method code smell (i.e., 71.5\%). In addition, we can see that 20.5\% of the files that have \SATD are involved in Feature Envy code smells, and 48.5\% of them are involved in God Class code smells. In summary, we see that 80.5\% of the files that contain \SATD comments are also involved in at least one of the three examined code smells.     
+JMeter, for example, has 200 files that contain \SATD comments, and 143 of these files also contain at least one Long Method code smell (i.e., 71.5\%). In addition, we can see that 20.5\% of the files that have \SATD are involved in Feature Envy code smells, and 48.5\% of them are involved in God Class code smells. In summary, we see that 80.5\% of the files that contain \SATD comments are also involved in at least one of the three examined code smells. In general, we observe from Tables~\ref{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant} and~\ref{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant} that the overlap between \SATD and code smells is higher than the ratio of files containing code smells. This indicates that there is some form of agreement between files that have code smells and files containing \SATD.
 
 We find that the code smell that overlaps the most with \SATD is Long Method. Intuitively, this is expected, since Long Method is a common code smell and may have multiple instances per file, because it is computed at the method level. The overlap between files with \SATD and Long Method ranged from 43.6\% to 82\% of all the files containing \SATD comments, and considering all projects, the average overlap is 65\%. In addition, 44.2\% of the files with \SATD comments are also involved in God Class code smells, and 20.7\% in Feature Envy code smells. Taking all examined code smells in consideration we find that, on average, 69.7\% of files containing \SATD are also involved in at least one of the three examined code smells. 
 
-\everton{In addition, Table \ref{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant} provides detailed code smell information about each one of the projects used in our study. The columns of Table \ref{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant} shows the total numbers of files, followed by the number of files containing at least one code smell instance. We find that, on average, 29.3\%, 5.5\%, 16.6\% of all files have at least one instance Long Method, Feature Envy or God Class, respectively. Using the results of the statical analysis tool as baseline may provide more insights on how code smells and \SATD are involved. For example, Ant have a total of 1,475 files of these 508 files (i.e., 34.4\%) have at least one Long Method code smell instance. In the other hand, we identified 73 files with \SATD of these 57 files (i.e., 78\%) also have at least one Long Method code smell instance.}
-
 Our findings here shows that using code comments to identify technical debt is a complementary approach to using code smells to detect technical debt. Clearly, there is overlap, however, each approach also identifies unique instances of technical debt.
+
+\begin{table*}[!thb]
+    \begin{center}
+       \caption{Detailed information about the files containing bad smells as detected by JDeodorant}
+       \label{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant}
+       \begin{tabular}{l| c c c| c c| c c| c c  }
+       \toprule
+       \textbf{\thead{Project}} & \textbf{\thead{\# of files}} & \textbf{\thead{\# of \\Files with \\ Long \\Method}} & \textbf{\thead{\% of \\Files with \\ Long \\Method}} & \textbf{\thead{\# of \\Files with \\ Feature \\Envy }} & \textbf{\thead{\% of \\Files with \\ Feature \\Envy }} & \textbf{\thead{\# of \\Files with \\ God \\Class }}  & \textbf{\thead{\% of \\Files with \\ God \\Class }} & \textbf{\thead{\# of \\Files with\\ Any Code \\Smell}} & \textbf{\thead{\% of \\Files with\\ Any Code \\Smell}}\\
+       \midrule
+       
+       \textbf{Ant}          & 1,475 & 508  & 34.4 & 110 & 7.4 & 365 & 24.7 & 612 & 41.4  \\
+       \textbf{ArgoUML}      & 2,609 & 654  & 25.0 & 62  & 2.3 & 249 & 9.5  & 730 & 27.9  \\
+       \textbf{Columba}      & 1,711 & 505  & 29.5 & 65  & 3.7 & 244 & 14.2 & 593 & 34.6  \\
+       \textbf{EMF}          & 1,458 & 362  & 24.8 & 50  & 3.4 & 231 & 15.8 & 448 & 30.7  \\
+       \textbf{Hibernate}    & 1,356 & 216  & 15.9 & 69  & 5.0 & 190 & 14.0 & 331 & 24.4  \\
+       \textbf{JEdit}        & 800   & 268  & 33.5 & 57  & 7.1 & 133 & 16.6 & 311 & 38.8  \\
+       \textbf{JFreeChart}   & 1,065 & 523  & 49.1 & 54  & 5.0 & 231 & 21.6 & 583 & 54.7  \\
+       \textbf{JMeter}       & 1,181 & 487  & 41.2 & 113 & 9.5 & 241 & 20.4 & 564 & 47.7  \\
+       \textbf{JRuby}        & 1,486 & 319  & 21.4 & 87  & 5.8 & 218 & 14.6 & 394 & 26.5  \\
+       \textbf{SQuirrel}     & 3,108 & 566  & 18.2 & 204 & 6.5 & 466 & 14.9 & 825 & 26.5  \\
+       \midrule
+       \textbf{Average}      &       &      & 29.3  &    & 5.5  &    & 16.6 &     & 35.3  \\       
+       \bottomrule
+       \end{tabular}
+   \end{center} 
+\end{table*} 
 
 \begin{table*}[!thb]
     \begin{center}
         \caption{Overlap between the files containing \SATD and the files containing code smells as detected by JDeodorant}
         \vspace{-5mm}
         \label{tbl:static_analysis_tool_and_self_admitted_technical_debt_overlap_using_jdeodorant}
-        \begin{tabular}{l| c c c c c c c c c}
+        \begin{tabular}{l| c c c| c c| c c| c c}
         \toprule
         \textbf{\thead{Project}} & \textbf{\thead{\# of \\Files with\\ SATD }} & \textbf{\thead{\# of SATD \\Files with \\ Long \\Method }} & \textbf{\thead{\%  of SATD \\Files with \\ Long \\Method}} & \textbf{\thead{\# of SATD \\Files with \\ Feature \\Envy}} & \textbf{\thead{\% of SATD \\Fles with \\ Feature \\Envy}} & \textbf{\thead{\# of SATD\\ Files with \\ God \\Class}} & \textbf{\thead{\% of SATD\\ Files with \\ God \\Class}} & \textbf{\thead{\# of SATD\\ Files with\\ Any Code \\Smell }} & \textbf{\thead{\% of SATD\\ Files with\\ Any Code \\Smell}}\\
         \midrule
@@ -168,30 +193,5 @@ Our findings here shows that using code comments to identify technical debt is a
     \end{center}
 \end{table*} 
 
-\begin{table*}[!thb]
-    \begin{center}
-       \caption{Detailed information about the files containing bad smells as detected by JDeodorant}
-       \label{tbl:detailed_information_about_the_files_containing_bad_smells_as_detected_by_jdeodorant}
-       \begin{tabular}{l| c c c c c c c c c  }
-       \toprule
-       \textbf{\thead{Project}} & \textbf{\thead{\# of files}} & \textbf{\thead{\# of \\Files with \\ Long \\Method}} & \textbf{\thead{\% of \\Files with \\ Long \\Method}} & \textbf{\thead{\# of \\Files with \\ Feature \\Envy }} & \textbf{\thead{\% of \\Files with \\ Feature \\Envy }} & \textbf{\thead{\# of \\Files with \\ God \\Class }}  & \textbf{\thead{\% of \\Files with \\ God \\Class }} & \textbf{\thead{\# of \\Files with\\ Any Code \\Smell}} & \textbf{\thead{\% of \\Files with\\ Any Code \\Smell}}\\
-       \midrule
-       
-       \textbf{Ant}          & 1,475 & 508  & 34.4 & 110 & 7.4 & 365 & 24.7 & 612 & 41.4  \\
-       \textbf{ArgoUML}      & 2,609 & 654  & 25.0 & 62  & 2.3 & 249 & 9.5  & 730 & 27.9  \\
-       \textbf{Columba}      & 1,711 & 505  & 29.5 & 65  & 3.7 & 244 & 14.2 & 593 & 34.6  \\
-       \textbf{EMF}          & 1,458 & 362  & 24.8 & 50  & 3.4 & 231 & 15.8 & 448 & 30.7  \\
-       \textbf{Hibernate}    & 1,356 & 216  & 15.9 & 69  & 5.0 & 190 & 14.0 & 331 & 24.4  \\
-       \textbf{JEdit}        & 800   & 268  & 33.5 & 57  & 7.1 & 133 & 16.6 & 311 & 38.8  \\
-       \textbf{JFreeChart}   & 1,065 & 523  & 49.1 & 54  & 5.0 & 231 & 21.6 & 583 & 54.7  \\
-       \textbf{JMeter}       & 1,181 & 487  & 41.2 & 113 & 9.5 & 241 & 20.4 & 564 & 47.7  \\
-       \textbf{JRuby}        & 1,486 & 319  & 21.4 & 87  & 5.8 & 218 & 14.6 & 394 & 26.5  \\
-       \textbf{SQuirrel}     & 3,108 & 566  & 18.2 & 204 & 6.5 & 466 & 14.9 & 825 & 26.5  \\
-       \midrule
-       \textbf{Average}      &       &      & 29.3  &    & 5.5  &    & 16.6 &     & 35.3  \\       
-       \bottomrule
-       \end{tabular}
-   \end{center} 
-\end{table*} 
 
-}{R2-3}
+
