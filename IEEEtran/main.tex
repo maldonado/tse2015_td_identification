@@ -143,8 +143,6 @@ Technical debt is a metaphor coined to express sub-optimal solutions that are ta
 
 \revised{Technical debt can be deliberately or inadvertently incurred~\cite{Fowler:quadrant}. Inadvertent technical debt is technical debt that is taken on unknowingly. One example of inadvertent technical debt is architectural decay or architectural drift. To date, the majority of the technical debt work has focused on inadvertent technical debt~\cite{Nord2012WICSA}. On the other hand, deliberate technical debt, is debt that is incurred by the developer with knowledge that it is being taken on. One example of such deliberate technical debt, is self-admitted technical debt, which is the focus of our paper.}{R1-1}
 
-%Fowler points out that technical debt can be incurred deliberately or inadvertently, and that debt can be take on prudently or recklessly by the developers~\cite{Fowler:quadrant}. Moreover,}
-
 Due to the importance of technical debt, a number of studies empirically examined technical debt and proposed techniques to enable its detection and management. \revised{Some of the approaches analyze the source code to detect technical debt, whereas other approaches leverage various techniques and artifacts, e.g., documentation and architecture reviews, to detect documentation debt, test debt or architecture debt (i.e., unexpected deviance from the initial architecture)~\cite{Alves2016IST,Xiao2016ICSE}.}{R1-2}   
 
 The main findings of prior work are three-fold. First, there are different types of technical debt, e.g., defect debt, design debt, testing debt, and that among them design debt has the highest impact~\cite{Alves2014MTD,Marinescu2012IBM}. Second, static source code analysis helps in detecting technical debt, (i.e., code smells)~\cite{Marinescu2004ICSM,Marinescu2010CSMR,Zazworka2013CSE}. Third, more recently, our work has shown that it is possible to identify technical debt through source comments, referred to as  \SATD~\cite{Potdar2014ICSME}, and that design and requirement debt are the most common types of \SATD~\cite{Maldonado2015MTD}.
@@ -178,9 +176,7 @@ The main contributions of our work are the following:
   \item We provide an automatic, NLP-based, approach to identify design and requirement \SATD.
   \item We examine and report the words that best indicate design and requirement \SATD.
   \item We show that using a small training set of comments, we are able to effectively detect design and requirement \SATD.
-  %analyze the amount of necessary data to effectively apply our approach, making it possible to replicate our study in different contexts than ours (i.e., different idioms or programming languages).
   \item We make our dataset publicly available, so that others can advance work in the area of \SATD~\cite{rep_package}.
-  %. We believe that these are good contributions to future work in the area, and to researchers who are willing to devise new approaches to address the problem of identifying technical debt through the use of code comments.
 \end{itemize}
 
 The rest of the paper is organized as follows. Section \ref{sec:approach} describes our approach. We setup our experiment and present our
@@ -247,33 +243,16 @@ results in Section \ref{sec:case_study_results}. We discuss the implications of 
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-received the BS degree in
-applied informatics from the University of Macedonia
-in 2004. He is a masters student in the
-Department of Applied Informatics at the University
-of Macedonia, Greece. His research
-interests are in the areas of design patterns
-and object-oriented quality metrics.
-
-s received the BS and MS
-degrees in applied informatics from the University
-of Macedonia in 2004 and 2006, respectively.
-He is a PhD candidate with the
-Department of Applied Informatics at the University
-of Macedonia, Greece. His research
-focuses on design patterns, refactorings, and
-object-oriented quality metrics.
-
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figures/maldonado.jpg}}]{Everton da S. Maldonado}
-Everton da S. Maldonado received his BS degree in Information Systems from University Impacta of Technology, Brazil, in 2009 and his MS degree in Software Engineering from Concordia University, Canada, in 2016. His main research interests are  Mining Software Repositories, Software Quality Assurance, and Software Maintenance. 
+received his BS degree in Information Systems from University Impacta of Technology, Brazil, in 2009 and his MS degree in Software Engineering from Concordia University, Canada, in 2016. His main research interests are  Mining Software Repositories, Software Quality Assurance, Technical Debt and Software Maintenance. 
 \end{IEEEbiography}
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figures/shihab.jpg}}]{Emad Shihab}
-Emad Shihab is an Assistant Professor in the Department of Computer Science and Software Engineering at Concordia University. He received his PhD from Queenâ€™s University. Dr. Shihabâ€™s research interests are in Software Quality Assurance, Mining Software Repositories, Technical Debt, Mobile Applications and Software Architecture. He worked as a software research intern at Research In Motion in Waterloo, Ontario and Microsoft Research in Redmond, Washington. Dr. Shihab is a member of the IEEE and ACM. More information can be found at \url{http://das.encs.concordia.ca}
+is an Assistant Professor in the Department of Computer Science and Software Engineering at Concordia University. He received his PhD from Queenâ€™s University. Dr. Shihab'€™s research interests are in Software Quality Assurance, Mining Software Repositories, Technical Debt, Mobile Applications and Software Architecture. He worked as a software research intern at Research In Motion in Waterloo, Ontario and Microsoft Research in Redmond, Washington. Dr. Shihab is a member of the IEEE and ACM. More information can be found at \url{http://das.encs.concordia.ca}
 \end{IEEEbiography}
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figures/tsantalis.jpg}}]{Nikolaos Tsantalis}
-Nikolaos Tsantalis is an Assistant Professor at the Department of Computer Science and Software Engineering, Concordia University, Montreal, Canada, and holds a Concordia University Research Chair in Web Software Technologies. He received the PhD degree in Computer Science from the University of Macedonia, Thessaloniki, Greece, in 2010. From January 2011 until May 2012, he was a postdoctoral fellow at the Department of Computing Science, University of Alberta, Edmonton, Canada.
+is an Assistant Professor at the Department of Computer Science and Software Engineering, Concordia University, Montreal, Canada, and holds a Concordia University Research Chair in Web Software Technologies. He received the PhD degree in Computer Science from the University of Macedonia, Thessaloniki, Greece, in 2010. From January 2011 until May 2012, he was a postdoctoral fellow at the Department of Computing Science, University of Alberta, Edmonton, Canada.
 His research interests include Software Maintenance, Empirical Software Engineering, Refactoring Recommendation Systems, and Software Quality Assurance.
 In 2016, he has been awarded with an ACM SIGSOFT Distinguished Paper Award and an ACM SIGSOFT Distinguished Artifact Award at FSE.
 He serves regularly as a program committee member of international conferences in the field of software engineering, such as ASE, ICSME, SANER, ICPC, and SCAM.
@@ -281,13 +260,6 @@ He is a member of the IEEE and ACM, and holds a license from the Association of 
 \end{IEEEbiography}
 
 \clearpage
-
-%\vfill
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
-
-% that's all folks
 
 
 %\appendices
